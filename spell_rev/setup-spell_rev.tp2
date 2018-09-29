@@ -1,0 +1,205 @@
+BACKUP ~spell_rev\backup~
+AUTHOR ~marco.montagnoli83@hotmail.it~ // Revised by Bartimaeus
+README ~spell_rev\readme-spell_rev.html~
+//MODDER
+ASK_EVERY_COMPONENT
+
+VERSION ~v4 Beta 15 (Revised V1.00f)~
+
+ALWAYS
+  OUTER_PATCH ~~ BEGIN
+    PATCH_INCLUDE ~spell_rev/settings.ini~
+  END
+  
+  // On EE games, convert tra files to utf-8 so that games don't crash for non-English
+  ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
+    OUTER_SET cd_always = 1
+    
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
+    ACTION_DEFINE_ARRAY cdreload BEGIN arcane divine END // List of tra files that contain strings used for game content that get converted in the next step
+    
+    LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~%MOD_FOLDER%/languages~ noconvert_array = cdnoconvert reload_array = cdreload  END
+  END
+END
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+LANGUAGE ~English~
+         ~english~
+         ~spell_rev\languages\english\arcane.tra~
+         ~spell_rev\languages\english\divine.tra~
+		 ~spell_rev\languages\english\hla.tra~
+         ~spell_rev\languages\english\setup.tra~
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Spell Revisions------*/
+
+BEGIN @10000
+DESIGNATED 0
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+
+// ToBEx
+ACTION_IF install_tobex && (ENGINE_IS ~tob~) BEGIN
+  OUTER_SPRINT ~TOBEX_MOD_DIRECTORY~ ~spell_rev~
+  LOAD_TRA ~spell_rev/tobex_redist/TobEx.tra~
+  INCLUDE ~spell_rev/tobex_redist/TobEx.tpa~
+  
+  COPY_EXISTING ~tobex_ini/ToBExTweak.ini~ ~tobex_ini~
+    REPLACE_TEXTUALLY ~Apply Concentration Check On Damage=0~ ~Apply Concentration Check On Damage=1~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
+  COPY_EXISTING ~concentr.2da~ ~override~
+    SET_2DA_ENTRY 2 1 2 ~1~ // enable concentration check on EE games
+  BUT_ONLY
+END
+
+INCLUDE ~spell_rev/lib/ds.tph~
+
+// actual component
+INCLUDE ~spell_rev/components/main_component.tpa~
+
+// Detectable Spells
+LAF detectable_spells END
+
+LAF detectable_spells
+  INT_VAR
+    append_stats = 0
+    fix_khelben = 0
+    fix_old_ds = 0
+  STR_VAR
+    table = ~spell_rev/lib/ds_sr_extra.2da~
+END
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Deva and Planetar Animations------*/
+
+BEGIN @10001
+DESIGNATED 10
+REQUIRE_PREDICATE (ENGINE_IS ~tob bgee bg2ee~) @10101 // ~This component requires Baldur's Gate II: Throne of Bhaal be installed.~
+
+INCLUDE ~spell_rev/components/celestials.tpa~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Mirror Image Fix------*/
+
+BEGIN @10002
+DESIGNATED 20
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+
+INCLUDE ~spell_rev/components/mirror_image_vs_aoe.tpa~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Dispel Magic Fix------*/
+
+BEGIN @10003
+DESIGNATED 30
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+
+INCLUDE ~spell_rev/components/dispellable_items.tpa~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Cure Sleep Fix------*/
+
+BEGIN @10004
+DESIGNATED 40
+DEPRECATED ~This component has been deprecated~
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
+
+COPY_EXISTING ~bgmain.exe~ ~bgmain.exe~
+  PATCH_FOR_EACH "of" IN 0x1035f4 0x10362c BEGIN
+    READ_BYTE "of" "val"
+    PATCH_IF ("val" = 0x2 || "val" = 0x27) THEN BEGIN
+      WRITE_BYTE "of" 0x27
+    END
+    ELSE BEGIN
+      INNER_ACTION BEGIN
+        FAIL @10106 // ~Couldn't find the right places to patch in your bgmain.exe~
+      END
+    END
+  END
+BUT_ONLY_IF_IT_CHANGES
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Remove Disabled Spells from Spell Selection Screens (Chargen, Sorcerer Level-Up)------*/
+
+BEGIN @10005
+DESIGNATED 50
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
+
+ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
+  COPY ~spell_rev/shared/hidespl_tobex.2da~ ~override/hidespl.2da~
+END ELSE BEGIN
+  COPY ~spell_rev/shared/hidespl_bgee.2da~ ~override/hidespl.2da~
+END
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------NWN-style Spell Deflection------*/
+
+BEGIN ~Spell Deflection blocks AoE spells~
+DESIGNATED 55
+// removing 'bypassing MR' exploit and making spells affectable by spell protections
+
+INCLUDE ~spell_rev/components/nwn_spell_deflection.tpa~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Update Spellbooks of Joinable NPCs------*/
+
+BEGIN @10006
+DESIGNATED 60
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
+FORBID_COMPONENT ~Setup-Divine_Remix.tp2~ 0 @10103 // ~This component will not work properly with Divine Remix installed.~
+
+PRINT @10104 // ~Patching spellbooks of joinable NPCs, this may take a moment...~
+
+// remove old spells, add new ones
+INCLUDE ~spell_rev/components/fix_spellbooks.tpa~
+INCLUDE ~spell_rev/components/fix_spellbooks_arcane.tpa~
+
+/*--------Revised HLAs----------------*/
+BEGIN @10007
+DESIGNATED 65
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bg2ee eet~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+INCLUDE ~spell_rev/lib/kreso_hla.tph~
+
+PRINT @10105 // ~Done!~
+

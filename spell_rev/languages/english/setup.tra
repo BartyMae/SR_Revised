@@ -1,0 +1,16 @@
+@10000=~Spell Revisions~
+@10001=~Deva and Planetar Animations~
+@10002=~Cure Sleep Fix~
+@10003=~Mirror Image Fix~
+@10004=~Dispel Magic Fix~
+@10005=~Remove Disabled Spells from Spell Selection Screens~
+@10006=~Update Spellbooks of Joinable NPCs~
+@10007=~Revised Warrior HLAs~
+
+@10100=~This component requires that the main Spell Revisions component be installed.~
+@10101=~This component requires that Baldur's Gate II: Throne of Bhaal be installed.~
+@10102=~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+@10103=~This component will not work properly if Divine Remix has been installed.~
+@10104=~Please be patient, this may take a moment...~
+@10105=~Done!~
+@10106=~Couldn't find the right places to patch in your bgmain.exe.~
