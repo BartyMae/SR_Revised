@@ -282,6 +282,8 @@ COPY ~spell_rev\shared\dvtelpor.spl~      ~override~  // Teleport Without Error
 
 COPY ~spell_rev\shared\spin113.spl~      ~override~  // Branwen Spiritual Hammer
   SAY NAME1 @55    SAY UNIDENTIFIED_DESC @56
+COPY ~spell_rev\shared\spin828.spl~      ~override~  // Mazzy Haste
+  SAY NAME1 @509    SAY UNIDENTIFIED_DESC @510
 
 COPY ~spell_rev\shared\spin683.spl~      ~override~  // Innate Web Tangle
 COPY ~spell_rev\shared\spin701i.eff~      ~override~
@@ -2519,8 +2521,6 @@ COPY ~spell_rev\spwi6##\spwi625.spl~     ~override~  // Stone to Flesh
   SAY NAME1 @707    SAY UNIDENTIFIED_DESC @708
 /*COPY ~spell_rev\spwi6##\scrl8c.itm~     ~override~  // Scroll used for Summon Nishruu, disabled
   SAY NAME2 @707    SAY IDENTIFIED_DESC   @708*/
-
-//COPY ~spell_rev\spwi6##\spin686.spl~     ~override~  // What is this?
 
 
 /*-----------------------Level 7-----------------------*/
