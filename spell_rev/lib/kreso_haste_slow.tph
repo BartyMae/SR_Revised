@@ -167,6 +167,7 @@ SET savebonus = 0		// saving throw bonus
 SET parameter1 = 9 // param1
 SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
 SET header = 1
+SET insert_point = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 
 SET "loop" = %loop% + 1
@@ -195,6 +196,7 @@ SET savebonus = 0		// saving throw bonus
 SET parameter1 = 9 // param1
 SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
 SET header = 1
+SET insert_point = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 /*SET opcode = 205			// Set opcode
 SET target = 2			// target type
@@ -212,6 +214,7 @@ SET savebonus = 0		// saving throw bonus
 SET parameter1 = 9 // param1
 SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
 SET header = 1
+SET insert_point = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT*/
 END
 BUT_ONLY
