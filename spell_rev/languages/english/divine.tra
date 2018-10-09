@@ -749,7 +749,7 @@ Casting Time: 3
 Area of Effect: 30' radius
 Saving Throw: None
 
-When this spell is cast, all party members within 30 feet of the caster gain a +2 bonus to strength. If a party member ends up with a strength value of 18, then their strength will be set to 18/75.~
+When this spell is cast, all party members within 30 feet of the caster gain a +2 bonus to strength. If a party member ends up with a strength value of 18, then their strength will be set to 18/75. Multiple castings of this spell are not cumulative.~
 
 @95=~Holy Smite~
 @96=~Holy Smite
