@@ -552,7 +552,7 @@ COPY ~spell_rev\sppr3##\skellesu.itm~     ~override~
 COPY ~spell_rev\sppr3##\spandl12.eff~     ~override~
 COPY ~spell_rev\sppr3##\skelgrsu.cre~     ~override~
   SAY NAME1 @4040    SAY NAME2 @4040
-COPY ~spell_rev\sppr3##\skelgrsu.cre~     ~override~
+COPY ~spell_rev\sppr3##\skelgrsu.itm~     ~override~
   SAY NAME1 @4041    SAY NAME2 @4041
 
 COPY ~spell_rev\sppr3##\sppr302.spl~     ~override~  // Call Lightning
