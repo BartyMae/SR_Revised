@@ -1817,7 +1817,7 @@ Level: 6
 School: Alteration
 Sphere: Numbers
 Range: Personal
-Duration: 1 turn + 1 round/level
+Duration: 2 turns
 Casting Time: 6
 Area of Effect: Special
 Saving Throw: None
@@ -1979,7 +1979,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-This powerful abjuration spell causes spells cast against the priest to be absorbed and consumed. This affects a total of 100 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 9th level spell. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
+This powerful abjuration spell causes spells cast against the priest to be absorbed and consumed. This affects a total of 99 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 9th level spell. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
 
 This spell also grants protection from spells cast from scrolls and innate spell-like abilities, but will not protect against area of effect spells that are not centered directly upon the priest (such as Fireball), or stationary area of effect spells (such as Cloudkill and Stinking Cloud).~
 

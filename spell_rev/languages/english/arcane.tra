@@ -162,7 +162,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-This spell grants the wizard otherworldly sight, resulting in preternatural accuracy for a short period of time. For 1 round, the caster makes attacks with a +10 bonus to THAC0 and a +5% bonus to score critical hits. Multiple castings of this spell are not cumulative.~
+This spell grants the wizard otherworldly sight, resulting in preternatural accuracy for a short period of time. For 3 rounds, the caster makes attacks with a +4 bonus to THAC0 and a +5% bonus to score critical hits. Multiple castings of this spell are not cumulative.~
 
 @421=~Magic Missile~
 @422=~Magic Missile
@@ -1725,7 +1725,7 @@ Casting Time: 8
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, the caster opens a special gate to the Elemental Plane of Fire, and a fire elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature.
+Upon casting this spell, the caster opens a special gate to the Elemental Plane of Fire, and a fire elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature. It is particularly difficult to maintain a gate to the Inner Planes, and there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
 
 Lesser Fire Elemental (8 HD):
  ST14, DE16, CO16, IN6, WI11, CH11
@@ -1786,7 +1786,7 @@ Casting Time: 8
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, the caster opens a special gate to the Elemental Plane of Air, and an air elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature.
+Upon casting this spell, the caster opens a special gate to the Elemental Plane of Air, and an air elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature. It is particularly difficult to maintain a gate to the Inner Planes, and there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
 
 Lesser Air Elemental (8 HD):
  ST14, DE17, CO16, IN6, WI11, CH11
@@ -1809,7 +1809,7 @@ Casting Time: 8
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, the caster opens a special gate to the Elemental Plane of Earth, and an earth elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature.
+Upon casting this spell, the caster opens a special gate to the Elemental Plane of Earth, and an earth elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature. It is particularly difficult to maintain a gate to the Inner Planes, and there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
 
 Lesser Earth Elemental (8 HD):
  ST19, DE8, CO18, IN6, WI11, CH11
@@ -1832,7 +1832,7 @@ Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 10 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
+This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 9 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
 
 This spell absorbs spells cast from scrolls and innate spell-like abilities, but will not protect against area of effect spells that are not centered directly upon the caster (such as Fireball), or stationary area of effect spells (such as Cloudkill and Stinking Cloud).~
 
@@ -1994,7 +1994,7 @@ NOTE: True Seeing does not dispel illusionary clones such as those conjured by M
 Level: 6
 School: Abjuration
 Range: Personal
-Duration: 5 rounds
+Duration: 4 rounds
 Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
@@ -2083,7 +2083,7 @@ Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 10 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
+This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 9 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
 
 This spell absorbs spells cast from scrolls and innate spell-like abilities, but will not protect against area of effect spells that are not centered directly upon the caster (such as Fireball), or stationary area of effect spells (such as Cloudkill and Stinking Cloud).~
 
@@ -2141,7 +2141,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Upon completing this spell, the caster opens a special gate to the Elemental Plane of Fire, and a fire elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature.
+Upon completing this spell, the caster opens a special gate to the Elemental Plane of Fire, and a fire elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature. It is particularly difficult to maintain a gate to the Inner Planes, and there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
 
 12th level: 1 fire elemental
 16th level: 1 greater fire elemental
@@ -2178,7 +2178,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Upon completing this spell, the caster opens a special gate to the Elemental Plane of Air, and an air elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature.
+Upon completing this spell, the caster opens a special gate to the Elemental Plane of Air, and an air elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature. It is particularly difficult to maintain a gate to the Inner Planes, and there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
 
 12th level: 1 air elemental
 16th level: 1 greater air elemental
@@ -2215,7 +2215,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Upon completing this spell, the caster opens a special gate to the Elemental Plane of Earth, and an earth elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature.
+Upon completing this spell, the caster opens a special gate to the Elemental Plane of Earth, and an earth elemental is summoned to the vicinity of the caster. The elemental will do the bidding of the caster for the duration of the spell or until they are slain. All of the commands given to the elemental are relayed telepathically, so there is no miscommunication and nor is it necessary to know the language of the summoned creature. It is particularly difficult to maintain a gate to the Inner Planes, and there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
 
 12th level: 1 air elemental
 16th level: 1 greater earth elemental
@@ -2409,20 +2409,12 @@ Known Spells:
 Level: 7
 School: Abjuration
 Range: Personal
-Duration: 5 rounds
+Duration: 4 rounds
 Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 5' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -4 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
-
-Red - 10D6 fire damage (save vs. breath half)
-Orange - Stun for 1 turn (save vs. polymorph neg.)
-Yellow - 10D6 electrical damage (save vs. breath half)
-Green - Death (save vs. poison for 5D4 poison damage)
-Blue - 10D6 cold damage (save vs. breath half)
-Violet - Confusion for 1 turn (save vs. wand neg.)
-Pink - Maze (save vs. spell neg.)~
+When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 5' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.~
 
 @735=~Simbul's Spell Sequencer~
 @736=~Simbul's Spell Sequencer
@@ -2788,7 +2780,7 @@ Known Spells:
 Level: 8
 School: Divination
 Range: Personal
-Duration: 5 rounds
+Duration: 4 rounds
 Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
@@ -2966,7 +2958,7 @@ Casting Time: 1 round
 Area of Effect: Caster
 Saving Throw: None
 
-This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 100 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 9th level spell. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.~
+This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 99 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 9th level spell. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.~
 
 @813=~Spellstrike~
 @814=~Spellstrike
@@ -3046,7 +3038,7 @@ Special Characteristics:
 Level: 9
 School: Abjuration
 Range: Personal
-Duration: 5 rounds
+Duration: 4 rounds
 Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
