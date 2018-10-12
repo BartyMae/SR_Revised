@@ -1900,13 +1900,19 @@ COPY_EXISTING ~icestorm.pro~ ~override~
 COPY ~spell_rev\spwi4##\spwi405.spl~     ~override~  // Improved Invisibility
   SAY NAME1 @569    SAY UNIDENTIFIED_DESC @570
 COPY ~spell_rev\spwi4##\scrl1y.itm~     ~override~
-
   SAY NAME2 @569    SAY IDENTIFIED_DESC   @570
 
+ACTION_IF dispel_globes=1 BEGIN
 COPY ~spell_rev\spwi4##\spwi406.spl~     ~override~  // Minor Globe of Invulnerability
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572
 COPY ~spell_rev\spwi4##\scrl1z.itm~     ~override~
   SAY NAME2 @571    SAY IDENTIFIED_DESC   @572
+END ELSE BEGIN
+COPY ~spell_rev\shared\alternatives\spwi406.spl~     ~override~  // Minor Globe of Invulnerability
+  SAY NAME1 @571000    SAY UNIDENTIFIED_DESC @572000
+COPY ~spell_rev\spwi4##\scrl1z.itm~     ~override~
+  SAY NAME2 @571000    SAY IDENTIFIED_DESC   @572000
+END
 
 COPY ~spell_rev\spwi4##\spwi407.spl~     ~override~  // Monster Summoning IV (disabled, clone of SPWI423)
   SAY NAME1 @603    SAY UNIDENTIFIED_DESC @604
@@ -2179,6 +2185,7 @@ COPY ~spell_rev\spwi5##\scrl6s.itm~     ~override~
 COPY ~spell_rev\spwi5##\spwi510d.spl~     ~override~
 
 ACTION_IF ai_spell_immunity=1 BEGIN
+COPY ~spell_rev\spwi5##\spwi590.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi591.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi592.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi593.spl~     ~override~
@@ -2377,10 +2384,17 @@ COPY ~spell_rev\spwi6##\stalkesu.itm~     ~override~
   SAY NAME1 @9169    SAY NAME2 @9169
 COPY ~spell_rev\spwi6##\stalker.itm~     ~override~
 
+ACTION_IF dispel_globes=1 BEGIN
 COPY ~spell_rev\spwi6##\spwi602.spl~     ~override~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664
 COPY ~spell_rev\spwi6##\scrl7f.itm~     ~override~
   SAY NAME2 @663    SAY IDENTIFIED_DESC   @664
+END ELSE BEGIN
+COPY ~spell_rev\shared\alternatives\spwi602.spl~     ~override~  // Globe of Invulnerability
+  SAY NAME1 @663000    SAY UNIDENTIFIED_DESC @664000
+COPY ~spell_rev\spwi6##\scrl7f.itm~     ~override~
+  SAY NAME2 @663000    SAY IDENTIFIED_DESC   @664000
+END
 
 COPY ~spell_rev\spwi6##\spwi603.spl~     ~override~  // Tenser's Transformation
   SAY NAME1 @665    SAY UNIDENTIFIED_DESC @666
