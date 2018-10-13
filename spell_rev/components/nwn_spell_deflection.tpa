@@ -1,0 +1,571 @@
+
+ACTION_CLEAR_ARRAY spell
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
+
+// AoE spells with MR issue
+
+~sppr304~ => 1 // glyph of warding
+~sppr313~ => 1 // holy smite
+~sppr314~ => 1 // unholy blight
+~sppr503~ => 1 // flame strike
+~sppr705~ => 1 // fire storm
+
+~spwi213~ => 1 // stinking cloud
+~spwi215~ => 1 // web
+~spwi304~ => 1 // fireball
+~spwi313~ => 1 // skull trap
+~spwi404~ => 1 // ice storm
+~spwi502~ => 1 // cloud kill
+~spwi503~ => 1 // cone of cold
+~spwi523~ => 1 // fireburst
+~spwi614~ => 1 // acid fog
+~spwi712~ => 1 // delayed blast fireball
+~spwi714~ => 1 // prismatic spray
+~spwi810~ => 1 // incendiary cloud
+~spwi911~ => 1 // meteor swarm
+//~spwi922~ => 1 // dragon breath
+//~spwi925~ => 1 // comet
+
+// AoE spells without MR issues
+
+~sppr105~ => 1 // entangle
+~sppr208~ => 1 // hold person
+~sppr305~ => 1 // hold animal
+~sppr416~ => 1 // cloak of fear
+~sppr512~ => 1 // greater command
+~sppr517~ => 1 // insect plague
+~sppr609~ => 1 // false dawn
+~sppr704~ => 1 // nature's beauty
+~sppr706~ => 1 // symbol of pain
+~sppr707~ => 1 // sunray
+~sppr709~ => 1 // chaos
+~sppr710~ => 1 // holy word
+~sppr715~ => 1 // unholy word
+~sppr717~ => 1 // creeping doom
+~sppr718~ => 1 // symbol of stun
+~sppr719~ => 1 // symbol of death
+~sppr722~ => 1 // storm of vengeance
+
+~spdr201~ => 1 // web
+~spdr501~ => 1 // cone of cold
+//~spdr601e~ => 1 // chain lighting // does not work correctly due to mix of single-targeting and aoe effects
+
+~spwi101~ => 1 // grease
+~spwi105~ => 1 // color spray
+~spwi106~ => 1 // obscuring mist
+~spwi116~ => 1 // sleep
+~spwi205~ => 1 // horror
+~spwi223~ => 1 // deafness
+~spwi224~ => 1 // glitterdust
+~spwi306~ => 1 // hold person
+~spwi312~ => 1 // slow
+~spwi324~ => 1 // halt undead
+~spwi401~ => 1 // confusion
+~spwi411~ => 1 // emotion despair
+~spwi412~ => 1 // greater malison
+~spwi421~ => 1 // teleport field
+~spwi427~ => 1 // vitriolic sphere
+~spwi507~ => 1 // hold monster
+~spwi508~ => 1 // chaos
+//~spwi615e~ => 1 // chain lightning // does not work correctly due to mix of single-targeting and aoe effects
+~spwi711~ => 1 // chaos
+~spwi720~ => 1 // control undead
+~spwi811~ => 1 // symbol of fear
+~spwi812~ => 1 // abi-dalzim's horrid wilting
+~spwi816~ => 1 // symbol of stun
+~spwi817~ => 1 // symbol of death
+~spwi897~ => 1 // innate symbol of death
+~spwi898~ => 1 // innate symbol of stun
+~spwi899~ => 1 // innate symbol of pain
+~spwi913~ => 1 // wail of the banshee
+~insanity~ => 1
+~dgwhirl~ => 1
+~beguile~ => 1
+
+//SRR additions
+~sppr114~ => 1 // fearie fire
+~sppr211~ => 1 // silence
+~sppr216~ => 1 // fire trap
+//~sppr218~ => 1 // gust of wind // does not work correctly due to mix of self-targeting and aoe effects
+~sppr418~ => 1 // ice storm
+~sppr620~ => 1 // banishment
+~sppr720~ => 1 // earthquake
+~spwi103~ => 1 // burning hands
+~spwi605~ => 1 // banishment
+
+END
+
+ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
+  OUTER_SET $spell("spwi523")=0
+  OUTER_SET $spell("spwi609")=0
+END
+
+/*ACTION_IF FILE_EXISTS_IN_GAME ~tg#come.spl~ BEGIN
+  OUTER_SET $spell("tg#drgb")=1
+  OUTER_SET $spell("tg#come")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~abaz01.spl~ BEGIN
+  OUTER_SET $spell("abaz01")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~amul01.spl~ BEGIN
+  OUTER_SET $spell("amul01")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~balth12.spl~ BEGIN
+  OUTER_SET $spell("balth12")=1
+END
+
+/* ACTION_IF FILE_EXISTS_IN_GAME ~bdneoawe.spl~ BEGIN
+  OUTER_SET $spell("bdneoawe")=1
+END 
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp00.spl~ BEGIN
+  OUTER_SET $spell("bw05sp00")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp00.spl~ BEGIN
+  OUTER_SET $spell("bw05sp00")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp01.spl~ BEGIN
+  OUTER_SET $spell("bw05sp01")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp04.spl~ BEGIN
+  OUTER_SET $spell("bw05sp04")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp05.spl~ BEGIN
+  OUTER_SET $spell("bw05sp05")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvchao.spl~ BEGIN
+  OUTER_SET $spell("cvchao")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvcharm.spl~ BEGIN
+  OUTER_SET $spell("cvcharm")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvdeath.spl~ BEGIN
+  OUTER_SET $spell("cvdeath")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvjen02.spl~ BEGIN
+  OUTER_SET $spell("cvjen02")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvpest.spl~ BEGIN
+  OUTER_SET $spell("cvpest")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvsuns.spl~ BEGIN
+  OUTER_SET $spell("cvsuns")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~cvwail.spl~ BEGIN
+  OUTER_SET $spell("cvwail")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~drake03.spl~ BEGIN
+  OUTER_SET $spell("drake03")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~dvprexpl.spl~ BEGIN
+  OUTER_SET $spell("dvprexpl")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~mels545.spl~ BEGIN
+  OUTER_SET $spell("mels545")=1
+END
+
+/*ACTION_IF FILE_EXISTS_IN_GAME ~melspl07.spl~ BEGIN
+  OUTER_SET $spell("melspl07")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~myst10.spl~ BEGIN
+  OUTER_SET $spell("myst10")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~nabpara.spl~ BEGIN
+  OUTER_SET $spell("nabpara")=1
+END
+
+/*ACTION_IF FILE_EXISTS_IN_GAME ~ohbdemi2.spl~ BEGIN
+  OUTER_SET $spell("ohbdemi2")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ntspwi81.spl~ BEGIN
+  OUTER_SET $spell("ntspwi81")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ohbicew.spl~ BEGIN
+  OUTER_SET $spell("ohbicew")=1
+END
+
+
+/* ACTION_IF FILE_EXISTS_IN_GAME ~ohbquake.spl~ BEGIN
+  OUTER_SET $spell("ohbquake")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ohbwfog.spl~ BEGIN
+  OUTER_SET $spell("ohbwfog")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ohbwi304.spl~ BEGIN
+  OUTER_SET $spell("ohbwi304")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ohrdark.spl~ BEGIN
+  OUTER_SET $spell("ohrdark")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~ohrfear.spl~ BEGIN
+  OUTER_SET $spell("ohrfear")=1
+END
+
+/* ACTION_IF FILE_EXISTS_IN_GAME ~spblun29.spl~ BEGIN
+  OUTER_SET $spell("spblun29")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spcl911b.spl~ BEGIN
+  OUTER_SET $spell("spcl911b")=1
+END */
+
+/*ACTION_IF FILE_EXISTS_IN_GAME ~spcryo01.spl~ BEGIN
+  OUTER_SET $spell("spcryo01")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spctmd01.spl~ BEGIN
+  OUTER_SET $spell("spctmd01")=1
+END
+
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin560.spl~ BEGIN
+  OUTER_SET $spell("spin560")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin562.spl~ BEGIN
+  OUTER_SET $spell("spin562")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin564.spl~ BEGIN
+  OUTER_SET $spell("spin564")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin575.spl~ BEGIN
+  OUTER_SET $spell("spin575")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin597.spl~ BEGIN
+  OUTER_SET $spell("spin597")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin673.spl~ BEGIN
+  OUTER_SET $spell("spin673")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin674.spl~ BEGIN
+  OUTER_SET $spell("spin674")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin675.spl~ BEGIN
+  OUTER_SET $spell("spin675")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin681.spl~ BEGIN
+  OUTER_SET $spell("spin681")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin688.spl~ BEGIN
+  OUTER_SET $spell("spin688")=1
+END
+
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin689.spl~ BEGIN
+  OUTER_SET $spell("spin689")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin692.spl~ BEGIN
+  OUTER_SET $spell("spin692")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin701.spl~ BEGIN
+  OUTER_SET $spell("spin701")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin704.spl~ BEGIN
+  OUTER_SET $spell("spin704")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin789.spl~ BEGIN
+  OUTER_SET $spell("spin789")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin819.spl~ BEGIN
+  OUTER_SET $spell("spin819")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin912.spl~ BEGIN
+  OUTER_SET $spell("spin912")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin914.spl~ BEGIN
+  OUTER_SET $spell("spin914")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin937.spl~ BEGIN
+  OUTER_SET $spell("spin937")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin940.spl~ BEGIN
+  OUTER_SET $spell("spin940")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin976.spl~ BEGIN
+  OUTER_SET $spell("spin976")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin977.spl~ BEGIN
+  OUTER_SET $spell("spin977")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin998.spl~ BEGIN
+  OUTER_SET $spell("spin998")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spin999.spl~ BEGIN
+  OUTER_SET $spell("spin999")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spinds2.spl~ BEGIN
+  OUTER_SET $spell("spinds2")=1
+END
+
+/*ACTION_IF FILE_EXISTS_IN_GAME ~spogre01.spl~ BEGIN
+  OUTER_SET $spell("spogre01")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr250.spl~ BEGIN
+  OUTER_SET $spell("sppr250")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr901.spl~ BEGIN
+  OUTER_SET $spell("sppr901")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr983.spl~ BEGIN
+  OUTER_SET $spell("sppr983")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr988.spl~ BEGIN
+  OUTER_SET $spell("sppr988")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi001.spl~ BEGIN
+  OUTER_SET $spell("spwi001")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi004.spl~ BEGIN
+  OUTER_SET $spell("spwi004")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi009.spl~ BEGIN
+  OUTER_SET $spell("spwi009")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi016.spl~ BEGIN
+  OUTER_SET $spell("spwi016")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi018.spl~ BEGIN
+  OUTER_SET $spell("spwi018")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi953.spl~ BEGIN
+  OUTER_SET $spell("spwi953")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi955.spl~ BEGIN
+  OUTER_SET $spell("spwi955")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi956.spl~ BEGIN
+  OUTER_SET $spell("spwi956")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi957.spl~ BEGIN
+  OUTER_SET $spell("spwi957")=1
+END
+
+/* ACTION_IF FILE_EXISTS_IN_GAME ~spwish24.spl~ BEGIN
+  OUTER_SET $spell("spwish24")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwish25.spl~ BEGIN
+  OUTER_SET $spell("spwish25")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~spwish32.spl~ BEGIN
+  OUTER_SET $spell("spwish32")=1
+END */
+
+ACTION_IF FILE_EXISTS_IN_GAME ~staf12a.spl~ BEGIN
+  OUTER_SET $spell("staf12a")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~staf17.spl~ BEGIN
+  OUTER_SET $spell("staf17")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~staf20.spl~ BEGIN
+  OUTER_SET $spell("staf20")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wand02.spl~ BEGIN
+  OUTER_SET $spell("wand02")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wand05a.spl~ BEGIN
+  OUTER_SET $spell("wand05a")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wand08.spl~ BEGIN
+  OUTER_SET $spell("wand08")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wand13.spl~ BEGIN
+  OUTER_SET $spell("wand13")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wand14.spl~ BEGIN
+  OUTER_SET $spell("wand14")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~wand19.spl~ BEGIN
+  OUTER_SET $spell("wand19")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~yaga01.spl~ BEGIN
+  OUTER_SET $spell("yaga01")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#beng.spl~ BEGIN
+  OUTER_SET $spell("tg#beng")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di10.spl~ BEGIN
+  OUTER_SET $spell("tg#di10")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di12.spl~ BEGIN
+  OUTER_SET $spell("tg#di12")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di13.spl~ BEGIN
+  OUTER_SET $spell("tg#di13")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di14.spl~ BEGIN
+  OUTER_SET $spell("tg#di14")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di15.spl~ BEGIN
+  OUTER_SET $spell("tg#di15")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di16.spl~ BEGIN
+  OUTER_SET $spell("tg#di16")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#di18.spl~ BEGIN
+  OUTER_SET $spell("tg#di18")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#natw.spl~ BEGIN
+  OUTER_SET $spell("tg#natw")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#rec2.spl~ BEGIN
+  OUTER_SET $spell("tg#rec2")=1
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~tg#shoc.spl~ BEGIN
+  OUTER_SET $spell("tg#shoc")=1
+END
+
+/*ACTION_IF FILE_EXISTS_IN_GAME ~tg#volc.spl~ BEGIN
+  OUTER_SET $spell("tg#volc")=1
+END */
+
+
+ACTION_PHP_EACH spell AS i2 => r2 BEGIN
+
+  OUTER_SET found=0
+  OUTER_SPRINT letter ~d~
+  ACTION_FOR_EACH char_check IN d e f g h i j k l m BEGIN
+    ACTION_IF found=0 BEGIN
+      ACTION_IF NOT FILE_EXISTS_IN_GAME ~%i2%%char_check%.spl~ BEGIN
+        OUTER_SET found=1
+        OUTER_SPRINT letter ~%char_check%~
+      END
+    END
+  END
+
+  ACTION_IF found && r2 && (FILE_EXISTS_IN_GAME ~%i2%.spl~) BEGIN
+    COPY_EXISTING ~%i2%.spl~ ~override/%i2%%letter%.spl~ // cloning original into the secondary spell
+      WRITE_ASCII 0x8 ~~ (8) // clearing out the name
+      GET_OFFSET_ARRAY headers 0x64 4 0x68 2 0 0 0x28
+      PHP_EACH headers AS i => r BEGIN
+        WRITE_SHORT (r+0x0c) 1 // target = creature
+        WRITE_SHORT (r+0x26) 1 // projectile = none
+      END
+    BUT_ONLY
+
+    COPY_EXISTING ~%i2%.spl~ ~override~        // modifying the original
+      READ_LONG 0x34  level
+      READ_LONG 0x64  ab_off
+      READ_SHORT 0x68 ab_num
+      READ_LONG 0x6a  ef_off
+      READ_SHORT 0x70 cast_num // global effects aka casting features
+
+      total_eff=cast_num
+      FOR (i=0;i<ab_num;i+=1) BEGIN
+        READ_SHORT  (ab_off+i*0x28+0x1e) ef_num  // effect number
+        READ_SHORT  (ab_off+i*0x28+0x20) ef_ind  // effect index
+        total_eff+=ef_num
+      END
+
+      DELETE_BYTES ef_off ((total_eff - 1)*0x30)
+      DELETE_BYTES ab_off ((ab_num - 1)*0x28)
+      WRITE_SHORT 0x68 1
+      WRITE_LONG 0x6a  (ef_off - (ab_num - 1)*0x28)
+      WRITE_SHORT 0x70 0
+      WRITE_SHORT (ab_off+0x1e) 1
+      WRITE_SHORT (ab_off+0x20) 0
+
+      // ability header
+      WRITE_SHORT (ab_off+0x10) 1 // level required
+
+      // effect
+      offset=(ef_off - (ab_num - 1)*0x28)
+      WRITE_SHORT (offset+0x00) 146   // opcode = cast spell on creature
+      WRITE_BYTE  (offset+0x02) 2     // target = pre-target
+      WRITE_BYTE  (offset+0x03) level   // power level = spell level
+      WRITE_LONG  (offset+0x04) 0     // parameter 1 = caster's level
+      WRITE_LONG  (offset+0x08) 1     // parameter 2 = instant
+      WRITE_BYTE  (offset+0x0c) 1     // timing mode = permanent
+      WRITE_ASCII (offset+0x0d) ~~ (5)  // clearing out the space
+      WRITE_BYTE  (offset+0x12) 100   // probability 1 = 100%
+      WRITE_BYTE  (offset+0x13) 0     // probability 2 = 0%
+      WRITE_ASCIIE (offset+0x14) ~%i2%%letter%~ (8) // resource
+      WRITE_ASCII (offset+0x1c) ~~ (20) // clearing out the space
+    BUT_ONLY
+    
+  END
+
+END // ACTION_PHP_EACH
+
