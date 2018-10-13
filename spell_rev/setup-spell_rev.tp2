@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 //MODDER
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 Beta 15 (Revised V1.00j)~
+VERSION ~v4 Beta 15 (Revised V1.0.1)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
