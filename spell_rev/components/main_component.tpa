@@ -1757,7 +1757,7 @@ COPY ~spell_rev\spwi3##\jellgrsu.eff~     ~override~
 COPY ~spell_rev\spwi3##\jellgrsu.cre~     ~override~
   SAY NAME1 @9058   SAY NAME2 @9058
 COPY ~spell_rev\spwi3##\jellgrsu.itm~     ~override~
-  SAY NAME1 @9057   SAY NAME2 @9057
+  SAY NAME1 @9059   SAY NAME2 @9059
 COPY ~spell_rev\spwi3##\jellocsu.eff~     ~override~
 COPY ~spell_rev\spwi3##\jellocsu.cre~     ~override~
   SAY NAME1 @9060   SAY NAME2 @9060
