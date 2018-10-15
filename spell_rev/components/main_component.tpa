@@ -1683,7 +1683,7 @@ COPY ~spell_rev\spwi2##\hobarcsu.itm~     ~override~
 COPY ~spell_rev\spwi2##\hobshasu.eff~     ~override~
 COPY ~spell_rev\spwi2##\hobshasu.cre~     ~override~
   SAY NAME1 @9056   SAY NAME2 @9056
-COPY ~spell_rev\spwi2##\hobarcsu.itm~     ~override~
+COPY ~spell_rev\spwi2##\hobshasu.itm~     ~override~
   SAY NAME1 @9057   SAY NAME2 @9057
 COPY ~spell_rev\spwi2##\dvhobsha.bcs~     ~override~
 
