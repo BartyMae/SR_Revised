@@ -178,14 +178,20 @@ COPY ~spell_rev\shared\vermtype.itm~     ~override~  // Vermin type characterist
 /* ----Bhaalspawn Abilities---- */
 
 COPY ~spell_rev\shared\spin101.spl~     ~override~  // Cure Light Wounds
+  SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
 COPY ~spell_rev\shared\spin102.spl~     ~override~  // Slow Poison
+  SAY NAME1 @53    SAY UNIDENTIFIED_DESC @54
 COPY ~spell_rev\shared\spin103.spl~     ~override~  // Draw Upon Divine Might
+  SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
 COPY ~spell_rev\shared\spin104.spl~     ~override~  // Larloch's Minor Drain
+  SAY NAME1 @435    SAY UNIDENTIFIED_DESC @436
 COPY ~spell_rev\shared\spin104.eff~     ~override~
 COPY ~spell_rev\shared\spin105.spl~     ~override~  // Horror
+  SAY NAME1 @457    SAY UNIDENTIFIED_DESC @458
 COPY ~spell_rev\shared\spin105.eff~     ~override~
 COPY ~spell_rev\shared\spin106.spl~     ~override~  // Vampiric Touch
-COPY ~spell_rev\shared\spin106.eff~     ~override~ 
+  SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
+COPY ~spell_rev\shared\spin106.eff~     ~override~
 
 /* ----Beast Master Abilities---- */
 
@@ -275,21 +281,23 @@ COPY ~spell_rev\shared\spin120.spl~     ~override~  // Detect Evil
 COPY ~spell_rev\shared\spin121.spl~     ~override~  // Protection from Evil
   SAY NAME1 @13    SAY UNIDENTIFIED_DESC @14
 
-ADD_PROJECTILE ~spell_rev\projectles\dvclfear.pro~
-COPY ~spell_rev\shared\fearaura.spl~      ~override~  // Aura of Fear
-  WRITE_SHORT 0x98 %dvclfear%
-
-COPY ~spell_rev\shared\dvgasfrm.spl~      ~override~  // Gaseous Form
-COPY ~spell_rev\shared\dvgasfrm.itm~      ~override~  // Gaseous Form
-COPY ~spell_rev\shared\dvtelpor.spl~      ~override~  // Teleport Without Error
-
 COPY ~spell_rev\shared\spin113.spl~      ~override~  // Branwen Spiritual Hammer
   SAY NAME1 @55    SAY UNIDENTIFIED_DESC @56
 COPY ~spell_rev\shared\spin828.spl~      ~override~  // Mazzy Haste
   SAY NAME1 @509    SAY UNIDENTIFIED_DESC @510
 
+ADD_PROJECTILE ~spell_rev\projectles\dvclfear.pro~
+COPY ~spell_rev\shared\fearaura.spl~      ~override~  // Aura of Fear
+  WRITE_SHORT 0x98 %dvclfear%
+
+COPY ~spell_rev\shared\dvgasfrm.spl~      ~override~  // Gaseous Form
+COPY ~spell_rev\shared\dvgasfrm.itm~      ~override~
+
+COPY ~spell_rev\shared\dvtelpor.spl~      ~override~  // Teleport Without Error
+
 COPY ~spell_rev\shared\spin683.spl~      ~override~  // Innate Web Tangle
 COPY ~spell_rev\shared\spin701i.eff~      ~override~
+
 COPY ~spell_rev\shared\spin788.spl~      ~override~  // Demilich Soul Trap
 COPY ~spell_rev\shared\spin789.spl~      ~override~  // Demilich Howl
 
@@ -680,7 +688,7 @@ COPY ~spell_rev\sppr3##\dvicespr.wav~     ~override~
 
 COPY ~spell_rev\sppr3##\sppr327.spl~     ~override~  // Dispel Magic (added to spellbook)
   SAY NAME1 @75000    SAY UNIDENTIFIED_DESC @76000
-  
+
 /*COPY ~spell_rev\sppr3##\sppr328.spl~     ~override~  // Contagion (added to spellbook)
   SAY NAME1 @91    SAY UNIDENTIFIED_DESC @92
 COPY ~spell_rev\sppr3##\sppr328d.spl~     ~override~*/
