@@ -1,10 +1,10 @@
 BACKUP ~spell_rev\backup~
-AUTHOR ~marco.montagnoli83@hotmail.it~ // Revised by Bartimaeus
+AUTHOR ~marco.montagnoli83@hotmail.it~ // Subtledoctor Beta, Revised by Bartimaeus
 README ~spell_rev\readme-spell_rev.html~
 //MODDER
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 Beta 15 (Revised V1.0.4)~
+VERSION ~v4 Beta 15 SD rc7 (Revised V1.0.5)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -159,8 +159,12 @@ REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires tha
 
 ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
   COPY ~spell_rev/shared/hidespl_tobex.2da~ ~override/hidespl.2da~
-END ELSE BEGIN
+END
+ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN
   COPY ~spell_rev/shared/hidespl_bgee.2da~ ~override/hidespl.2da~
+END
+ACTION_IF GAME_IS ~iwdee~ BEGIN
+  COPY ~spell_rev/shared/hidespl_iwdee.2da~ ~override/hidespl.2da~
 END
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
@@ -187,13 +191,23 @@ BEGIN @10006
 DESIGNATED 60
 REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
 REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
-FORBID_COMPONENT ~Setup-Divine_Remix.tp2~ 0 @10103 // ~This component will not work properly with Divine Remix installed.~
+//FORBID_COMPONENT ~Setup-Divine_Remix.tp2~ 0 @10103 // ~This component will not work properly with Divine Remix installed.~
+// let's still handle arcane spellbooks... see below
 
 PRINT @10104 // ~Patching spellbooks of joinable NPCs, this may take a moment...~
 
+INCLUDE ~spell_rev/lib/joinable_npcs.tpa~
+
 // remove old spells, add new ones
+
 INCLUDE ~spell_rev/components/fix_spellbooks.tpa~
-INCLUDE ~spell_rev/components/fix_spellbooks_arcane.tpa~
+
+ACTION_IF NOT MOD_IS_INSTALLED ~Divine_Remix~ ~0~ BEGIN
+  LAF fix_divine_spellbooks END
+END
+
+LAF fix_arcane_spellbooks END
+
 
 /*--------Revised HLAs----------------*/
 BEGIN @10007
