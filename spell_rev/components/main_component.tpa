@@ -1233,7 +1233,9 @@ COPY ~spell_rev\sppr7##\sppr730.spl~     ~override~  // Aura of Flaming Death
   SAY NAME1 @289    SAY UNIDENTIFIED_DESC @290
 COPY ~spell_rev\sppr7##\sppr730.eff~     ~override~
 COPY ~spell_rev\sppr7##\sppr730d.spl~     ~override~
+COPY ~spell_rev\sppr7##\sppr730e.eff~     ~override~
 COPY ~spell_rev\sppr7##\sppr730e.spl~     ~override~
+COPY ~spell_rev\sppr7##\sppr730e.eff~     ~override~
 COPY ~spell_rev\sppr7##\dvflmhit.eff~     ~override~
 
 COPY ~spell_rev\sppr7##\sppr731.spl~     ~override~  // Fire Elemental Transformation
@@ -1895,6 +1897,7 @@ COPY ~spell_rev\spwi4##\spwi402.spl~     ~override~  // Dimension Jump ("replace
 
 COPY ~spell_rev\spwi4##\spwi403.spl~     ~override~  // Mestil's Acid Sheath (replaces Fire Shield Blue, moved to 5th level)
   SAY NAME1 @565000    SAY UNIDENTIFIED_DESC @566000
+COPY ~spell_rev\spwi4##\spwi403.eff~     ~override~
 /* COPY ~spell_rev\spwi4##\scrl1w.itm~     ~override~  // Scroll used for Mestil's Acid Sheath
   SAY NAME2 @565    SAY IDENTIFIED_DESC   @566*/
 
@@ -2603,7 +2606,9 @@ COPY ~spell_rev\spwi7##\scrl8j.itm~     ~override~
   SAY NAME2 @733    SAY IDENTIFIED_DESC   @734
 COPY ~spell_rev\spwi7##\spwi708.eff~     ~override~
 COPY ~spell_rev\spwi7##\spwi708d.spl~     ~override~
+COPY ~spell_rev\spwi7##\spwi708d.eff~     ~override~
 COPY ~spell_rev\spwi7##\spwi708e.spl~     ~override~
+COPY ~spell_rev\spwi7##\spwi708e.eff~     ~override~
 COPY ~spell_rev\spwi7##\dvmantle.vvc~     ~override~
 COPY ~spell_rev\spwi7##\dvmantle.bam~     ~override~
 
