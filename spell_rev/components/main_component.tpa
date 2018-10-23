@@ -4,6 +4,18 @@ INCLUDE ~spell_rev\lib\cre_spell_immunity.tph~
 
 /* ----Miscellaneous---- */
 
+// SD: eliminate #bonecir.spl from IWDEE
+ACTION_IF GAME_IS ~iwdee~ BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME "#bonecir.spl" BEGIN
+	DISABLE_FROM_KEY "#bonecir.spl"
+  END
+  ACTION_IF FILE_EXISTS "override/#bonecir.spl" BEGIN
+	DELETE "override/#bonecir.spl"
+  END
+END
+
+COPY ~spell_rev\shared\d5dvsl30.spl~      ~override~  // 30-sec Slow subspell
+
 COPY ~spell_rev\shared\dvimhere.mrk~      ~override~  // Used to detect if SR is installed
 COPY ~spell_rev\shared\dvsrv3.mrk~      ~override~  // Used to detect if SR V3 is installed
 COPY ~spell_rev\shared\dvsrv4here.mrk~      ~override~  // Used to detect if SR V4 is installed
@@ -526,6 +538,7 @@ COPY ~spell_rev\sppr2##\sppr216.spl~     ~override~  // Fire Trap (new druid spe
 COPY ~spell_rev\sppr2##\sppr217.spl~     ~override~  // Regenerate Moderate Wounds (new druid spell)
   SAY NAME1 @303    SAY UNIDENTIFIED_DESC @304
 
+ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr2##\sppr218.spl~     ~override~  // Gust of Wind (new druid spell)
   SAY NAME1 @313    SAY UNIDENTIFIED_DESC @314
 
@@ -546,6 +559,22 @@ ADD_PROJECTILE ~spell_rev\projectles\dvdscent.pro~
 COPY ~spell_rev\sppr2##\dvdscent.spl~     ~override~
   WRITE_SHORT 0x98 %dvdscent%
 COPY ~spell_rev\sppr2##\dvdscent.eff~     ~override~
+END ELSE BEGIN
+COPY ~spell_rev\sppr2##\sppr218.spl~     ~override/sppr222.spl~  // Gust of Wind (new druid spell)
+  SAY NAME1 @313    SAY UNIDENTIFIED_DESC @314
+
+COPY ~spell_rev\sppr2##\sppr220.spl~     ~override/sppr222.spl~  // Animal Summoning II (new druid spell)
+  SAY NAME1 @323    SAY UNIDENTIFIED_DESC @324
+COPY ~spell_rev\sppr2##\dogwasu.eff~     ~override~
+COPY ~spell_rev\sppr2##\dogwasu.cre~     ~override~
+  SAY NAME1 @4036    SAY NAME2 @4036
+COPY ~spell_rev\sppr2##\dogwasu.itm~     ~override~
+  SAY NAME1 @4037    SAY NAME2 @4037
+ADD_PROJECTILE ~spell_rev\projectles\dvdscent.pro~
+COPY ~spell_rev\sppr2##\dvdscent.spl~     ~override~
+  WRITE_SHORT 0x98 %dvdscent%
+COPY ~spell_rev\sppr2##\dvdscent.eff~     ~override~
+END
 
 
 /*-----------------------Level 3-----------------------*/
@@ -651,11 +680,13 @@ COPY ~spell_rev\sppr3##\dvanpack.spl~     ~override~
   WRITE_SHORT 0x98 %dvanpack%
 COPY ~spell_rev\sppr3##\dvanpack.eff~     ~override~
 
+ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr3##\sppr321.spl~     ~override~  // Cause Serious Wounds (disabled at level 4)
   SAY NAME1 @107    SAY UNIDENTIFIED_DESC @108
 COPY ~spell_rev\sppr3##\serious.itm~     ~override~
   SAY NAME1 @107    SAY UNIDENTIFIED_DESC @108
 COPY ~spell_rev\sppr3##\sppr321d.spl~     ~override~
+END
 
 COPY ~spell_rev\sppr3##\sppr322.spl~     ~override~  // Storm Shield (new druid spell)
   SAY NAME1 @1109    SAY UNIDENTIFIED_DESC @1110
@@ -665,6 +696,7 @@ COPY ~spell_rev\sppr3##\spstorms.bam~     ~override~
 COPY ~spell_rev\sppr3##\sppr323.spl~     ~override~  // Regenerate Serious Wounds (new druid spell)
   SAY NAME1 @305    SAY UNIDENTIFIED_DESC @306
 
+ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr3##\sppr324.spl~     ~override~  // Magic Fang (new druid spell)
   SAY NAME1 @327    SAY UNIDENTIFIED_DESC @328
 COPY ~spell_rev\sppr3##\mfang~     ~override~
@@ -674,6 +706,7 @@ COPY ~spell_rev\sppr3##\sppr325.spl~     ~override~  // Spike Growth (new druid 
   SAY NAME1 @333    SAY UNIDENTIFIED_DESC @334
   WRITE_SHORT 0x98 %dvspgrow%
 COPY ~spell_rev\sppr3##\sppr325i.eff~     ~override~
+END
 
 ADD_PROJECTILE ~spell_rev\projectles\dvicespr.pro~
 COPY ~spell_rev\sppr3##\sppr326.spl~     ~override~  // Icelance (new druid spell)
@@ -731,8 +764,10 @@ COPY ~spell_rev\sppr4##\sppr406.spl~     ~override~  // Defensive Harmony
 COPY ~spell_rev\sppr4##\scrl5b.itm~     ~override~
   SAY NAME2 @121    SAY IDENTIFIED_DESC   @122
 
+ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr4##\sppr407.spl~     ~override~  // Protection from Lightning (disabled at level 4)
   SAY NAME1 @123    SAY UNIDENTIFIED_DESC @124
+END
 
 COPY ~spell_rev\sppr4##\sppr408.spl~ ~override~  // Magic Circle against Evil (previously named Protection from Evil 10' Radius)
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
@@ -798,6 +833,7 @@ COPY ~spell_rev\sppr4##\sppr417.spl~     ~override~  // Lesser Restoration
 COPY ~spell_rev\sppr4##\restore.itm~     ~override~
   SAY NAME2 @143    SAY IDENTIFIED_DESC   @144
 
+ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr4##\sppr418.spl~     ~override~  // Ice Storm (added to druid spellbook)
   SAY NAME1 @145    SAY UNIDENTIFIED_DESC @146
 
@@ -808,6 +844,7 @@ COPY ~spell_rev\sppr4##\sppr420.spl~     ~override~  // Polymorph Other (added t
   SAY NAME1 @185    SAY UNIDENTIFIED_DESC @186
 COPY ~spell_rev\sppr4##\dvsquir.itm~     ~override~
     SAY NAME1 @4050
+END
 
 /*-----------------------Level 5-----------------------*/
 
@@ -922,10 +959,12 @@ COPY ~spell_rev\sppr5##\sppr520.spl~     ~override~  // Protection from Acid (ad
 COPY ~spell_rev\sppr5##\sppr521.spl~     ~override~  // Protection from Cold (added to priest spellbook)
   SAY NAME1 @189    SAY UNIDENTIFIED_DESC @190
 
+ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr5##\sppr522.spl~     ~override~  // Protection from Electricity (disabled at level 4)
   SAY NAME1 @123    SAY UNIDENTIFIED_DESC @124
 COPY ~spell_rev\sppr4##\scrl5c.itm~     ~override~
   SAY NAME2 @123    SAY IDENTIFIED_DESC   @124
+END
 
 COPY ~spell_rev\sppr5##\sppr523.spl~     ~override~  // Protection from Fire (disabled at level 3)
   SAY NAME1 @81    SAY UNIDENTIFIED_DESC @82
@@ -2010,11 +2049,15 @@ COPY ~spell_rev\spwi4##\spwi466.itm~     ~override~
 COPY ~spell_rev\spwi4##\spwi467.itm~     ~override~
   SAY NAME1 @9078   SAY NAME2 @9078*/
 
+ACTION_IF enchanted_weapon=1 BEGIN
 COPY ~spell_rev\spwi4##\spwi417.spl~     ~override~  // Enchanted Weapon
   SAY NAME1 @593    SAY UNIDENTIFIED_DESC @594
 COPY ~spell_rev\spwi4##\scrl6m.itm~     ~override~
   SAY NAME2 @593    SAY IDENTIFIED_DESC   @594
 COPY ~spell_rev\spwi4##\enchwp~     ~override~
+END ELSE BEGIN
+COPY ~spell_rev\spwi4##\scrl6m.itm~     ~override~ // For price
+END
 
 COPY ~spell_rev\spwi4##\spwi418.spl~     ~override~  // Fire Shield (previously named Fire Shield Red)
   SAY NAME1 @595    SAY UNIDENTIFIED_DESC @596
@@ -3201,3 +3244,20 @@ COPY ~spell_rev\revised_saves\savecndh.2da~ ~override~  // Dwarf/Halfling save b
 COPY ~spell_rev\revised_saves\savecng.2da~ ~override~  // Gnome save bonuses
 
 END
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+// added by SubtleDoctor:
+
+/*------ SET ARCANE SPELL SCHOOLS ------*/
+
+// and mark arcane spells for spellbook removal 
+
+INCLUDE ~spell_rev/lib/d5_spell_school_list.tpa~
+INCLUDE ~spell_rev/lib/d5_set_spell_schools.tpa~
+LAF set_spell_schools END
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
