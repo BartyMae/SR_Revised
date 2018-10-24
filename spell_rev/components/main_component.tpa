@@ -9,8 +9,8 @@ ACTION_IF GAME_IS ~iwdee~ BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME "#bonecir.spl" BEGIN
 	DISABLE_FROM_KEY "#bonecir.spl"
   END
-  ACTION_IF FILE_EXISTS "override/#bonecir.spl" BEGIN
-	DELETE "override/#bonecir.spl"
+  ACTION_IF FILE_EXISTS "override\#bonecir.spl" BEGIN
+	DELETE "override\#bonecir.spl"
   END
 END
 
@@ -272,7 +272,7 @@ COPY ~spell_rev\shared\spdr501.spl~     ~override~  // Cone of Cold (replaces Ch
 COPY ~spell_rev\shared\spdr601.spl~     ~override~  // Chain Lightning
   SAY NAME1 @687    SAY UNIDENTIFIED_DESC @688
 COPY ~spell_rev\shared\spdr601d.spl~     ~override~
-COPY ~spell_rev\shared\spdr601e.spl~     ~override~
+COPY ~spell_rev\shared\dvdr601.spl~     ~override~
 
 /* ----Stalker Abilities---- */
 
@@ -541,6 +541,7 @@ COPY ~spell_rev\sppr2##\sppr217.spl~     ~override~  // Regenerate Moderate Woun
 ACTION_IF NOT GAME_IS ~iwdee~ BEGIN
 COPY ~spell_rev\sppr2##\sppr218.spl~     ~override~  // Gust of Wind (new druid spell)
   SAY NAME1 @313    SAY UNIDENTIFIED_DESC @314
+COPY ~spell_rev\sppr2##\dvpr218.spl~     ~override~
 
 COPY ~spell_rev\sppr2##\sppr219.spl~     ~override~  // Cause Moderate Wounds (new cleric spell)
   SAY NAME1 @317    SAY UNIDENTIFIED_DESC @318
@@ -560,10 +561,12 @@ COPY ~spell_rev\sppr2##\dvdscent.spl~     ~override~
   WRITE_SHORT 0x98 %dvdscent%
 COPY ~spell_rev\sppr2##\dvdscent.eff~     ~override~
 END ELSE BEGIN
-COPY ~spell_rev\sppr2##\sppr218.spl~     ~override/sppr222.spl~  // Gust of Wind (new druid spell)
+COPY ~spell_rev\sppr2##\sppr218.spl~     ~override\sppr222.spl~  // Gust of Wind (new druid spell)
   SAY NAME1 @313    SAY UNIDENTIFIED_DESC @314
+COPY ~spell_rev\sppr2##\dvpr218.spl~     ~override\dvpr222.spl~
+  REPLACE_TEXTUALLY CASE_INSENSITIVE ~dvpr218~ ~dvpr222~
 
-COPY ~spell_rev\sppr2##\sppr220.spl~     ~override/sppr222.spl~  // Animal Summoning II (new druid spell)
+COPY ~spell_rev\sppr2##\sppr220.spl~     ~override\sppr222.spl~  // Animal Summoning II (new druid spell)
   SAY NAME1 @323    SAY UNIDENTIFIED_DESC @324
 COPY ~spell_rev\sppr2##\dogwasu.eff~     ~override~
 COPY ~spell_rev\sppr2##\dogwasu.cre~     ~override~
@@ -1186,6 +1189,7 @@ COPY ~spell_rev\sppr7##\sppr720.spl~     ~override~  // Earthquake
   SAY NAME1 @261    SAY UNIDENTIFIED_DESC @262
 COPY ~spell_rev\sppr7##\sppr720d.spl~     ~override~
 COPY ~spell_rev\sppr7##\sppr720e.spl~     ~override~
+COPY ~spell_rev\sppr7##\dvpr720.spl~     ~override~
 COPY ~spell_rev\sppr7##\dvquake.eff~     ~override~
 
 
@@ -1272,7 +1276,7 @@ COPY ~spell_rev\sppr7##\sppr730.spl~     ~override~  // Aura of Flaming Death
   SAY NAME1 @289    SAY UNIDENTIFIED_DESC @290
 COPY ~spell_rev\sppr7##\sppr730.eff~     ~override~
 COPY ~spell_rev\sppr7##\sppr730d.spl~     ~override~
-COPY ~spell_rev\sppr7##\sppr730e.eff~     ~override~
+COPY ~spell_rev\sppr7##\sppr730d.eff~     ~override~
 COPY ~spell_rev\sppr7##\sppr730e.spl~     ~override~
 COPY ~spell_rev\sppr7##\sppr730e.eff~     ~override~
 COPY ~spell_rev\sppr7##\dvflmhit.eff~     ~override~
@@ -2384,15 +2388,15 @@ COPY ~spell_rev\spwi5##\scrl7d.itm~     ~override~
 ADD_PROJECTILE ~spell_rev\projectles\dvsunfir.pro~
 COPY ~spell_rev\spwi5##\spwi523.spl~     ~override~  // Fireburst
   SAY NAME1 @655    SAY UNIDENTIFIED_DESC @656
-COPY ~spell_rev\spwi5##\scrlar.itm~     ~override~
-  SAY NAME2 @655    SAY IDENTIFIED_DESC   @656
-COPY ~spell_rev\spwi5##\spwi523d.spl~     ~override~
+COPY ~spell_rev\spwi5##\dvwi523.spl~     ~override~
   WRITE_SHORT 0x98 %dvsunfir%
   SET "loop" = 7
   WHILE ("%loop%" > 0) BEGIN
     WRITE_SHORT (0x98 + 0x28 * ("%loop%" - 1) ) "%dvsunfir%"
     SET "loop" = "%loop%" - 1
   END
+COPY ~spell_rev\spwi5##\scrlar.itm~     ~override~
+  SAY NAME2 @655    SAY IDENTIFIED_DESC   @656
 
 COPY ~spell_rev\spwi5##\spwi526.spl~     ~override~  // Mestil's Acid Sheath (replaces Fire Shield Blue, disabled at level four)
   SAY NAME1 @565    SAY UNIDENTIFIED_DESC @566
@@ -2521,7 +2525,7 @@ COPY ~spell_rev\spwi6##\spwi615.spl~     ~override~  // Chain Lightning
 COPY ~spell_rev\spwi6##\scrl7s.itm~     ~override~
   SAY NAME2 @687    SAY IDENTIFIED_DESC   @688
 COPY ~spell_rev\spwi6##\spwi615d.spl~     ~override~
-COPY ~spell_rev\spwi6##\spwi615e.spl~     ~override~
+COPY ~spell_rev\spwi6##\dvwi615.spl~     ~override~
 
 COPY ~spell_rev\spwi6##\spwi616.spl~     ~override~  // Disintegrate
   SAY NAME1 @689    SAY UNIDENTIFIED_DESC @690
@@ -2973,6 +2977,7 @@ COPY ~spell_rev\spwi9##\scrl9u.itm~     ~override~
 
 COPY ~spell_rev\spwi9##\spwi913.spl~     ~override~  // Wail of the Banshee
   SAY NAME1 @829    SAY UNIDENTIFIED_DESC @830
+COPY ~spell_rev\spwi9##\dvwi913.spl~     ~override~
 COPY ~spell_rev\spwi9##\scrl9v.itm~     ~override~
   SAY NAME2 @829    SAY IDENTIFIED_DESC   @830
 
@@ -3048,6 +3053,7 @@ COPY ~spell_rev\spwi9##\spwi921.spl~     ~override~  // Improved Alacrity
 
 COPY ~spell_rev\spwi9##\spwi922.spl~     ~override~  // Dragon's Breath
   SAY NAME1 @855    SAY UNIDENTIFIED_DESC @856
+COPY ~spell_rev\spwi9##\dvwi922.spl~     ~override~
 
 ACTION_IF celestials=1 BEGIN
 COPY ~spell_rev\spwi9##\spwi923.spl~     ~override~  // Summon Planetar
