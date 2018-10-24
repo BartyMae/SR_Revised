@@ -89,9 +89,7 @@ WIZARD_SHAPECHANGE						=> alteration	// Shapechange
 
 WIZARD_ARMOR 							=> conjuration	// Mage Armor
 WIZARD_GREASE							=> conjuration	// Grease
-ACTION_IF blindess=0 BEGIN
-WIZARD_BLINDNESS						=> conjuration	// SR Obscuring Mist
-END
+//WIZARD_BLINDNESS						=> conjuration	// SR Obscuring Mist
 WIZARD_FRIENDS							=> conjuration	// SR MS I
 WIZARD_HOLD_PORTAL						=> conjuration	// SR Dimension Jump
 WIZARD_MELF_ACID_ARROW					=> conjuration	// Melf's Acid Arrow
@@ -187,9 +185,7 @@ WIZARD_BIGBYS_CLENCHED_FIST				=> evocation	// SR Bigby's Icy Grasp
 WIZARD_METEOR_SWARM						=> evocation	// Meteor Swarm
 WIZARD_BIGBYS_CRUSHING_HAND				=> evocation	// Bigby's Crushing Hand
 
-ACTION_IF blindness=1 BEGIN
-WIZARD_BLINDNESS						=> illusion		// Blindness
-END
+//WIZARD_BLINDNESS						=> illusion		// Blindness
 WIZARD_REFLECTED_IMAGE					=> illusion		// Reflected Image
 WIZARD_SPOOK							=> illusion		// Spook
 WIZARD_BLUR								=> illusion		// Blur
