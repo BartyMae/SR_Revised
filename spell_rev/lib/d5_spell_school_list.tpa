@@ -1,6 +1,6 @@
 	// spell school changes
 
-ACTION_DEFINE_ASSOCIATIVE_ARRAY arcanespell BEGIN
+ACTION_DEFINE_ASSOCIATIVE_ARRAY spell_schools BEGIN
 
 	// Spell Revisions spells
 
