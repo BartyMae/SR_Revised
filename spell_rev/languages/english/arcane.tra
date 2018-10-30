@@ -983,7 +983,7 @@ Casting Time: 3
 Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast, it will dispel one spell protection of 5th level or lower on all enemies within the area of effect. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance and invisibility do not affect this spell.
+When this spell is cast, it will dispel one spell protection of 5th level or lower on all enemies within the area of effect. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Spell Thrust are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, and Spell Shield.~
 
@@ -1018,7 +1018,7 @@ Those affected become unable move or groan, but they remain aware of events arou
 @545=~Melf's Minute Meteors~
 @546=~Melf's Minute Meteors
 Level: 3
-School: Evocation
+School: Conjuration
 Range: Personal
 Duration: Special
 Casting Time: 3
@@ -1355,7 +1355,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-When a Secret Word spell is uttered, it will dispel one spell protection of 7th level or lower on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance and invisibility do not affect this spell.
+When a Secret Word spell is uttered, it will dispel one spell protection of 7th level or lower on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Secret Word are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, and Shield of the Archons.~
 
@@ -1844,7 +1844,7 @@ Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-This abjuration spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 9 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
+This spell causes any spells cast against the wizard to be absorbed and consumed. This affects a total of 9 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 7th level spell. Spells greater than 7th level will not be affected. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
 
 This spell absorbs spells cast from scrolls and innate spell-like abilities, but will not protect against area of effect spells that are not centered directly upon the caster (such as Fireball), or stationary area of effect spells (such as Cloudkill and Stinking Cloud).~
 
@@ -1995,7 +1995,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast upon a target creature there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance and invisibility do not affect this spell.
+When this spell is cast upon a target creature there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Pierce Magic are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Mind Blank.~
 
@@ -2379,7 +2379,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance and invisibility do not affect this spell.
+When this spell is cast it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Ruby Ray of Reversal are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
 
@@ -2393,7 +2393,7 @@ Casting Time: 7
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast on the target creature, it will dispel one spell protection of up to 8th level or lower. At the beginning of each of the next 3 rounds, another spell protection will be removed from the target. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. Magic resistance and invisibility do not affect this spell.
+When this spell is cast on the target creature, it will dispel one spell protection of up to 8th level or lower. At the beginning of each of the next 3 rounds, another spell protection will be removed from the target. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Khelben's Warding Whip are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Mind Blank.~
 
@@ -2772,7 +2772,7 @@ Casting Time: 8
 Area of Effect: 1 creature
 Saving Throw: None
 
-By means of this spell, the wizard may launch a massive attack on a target's physical and magical defenses. Pierce Shield will dispel one spell protection of any level from the target creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. After piercing through magical protections, this powerful spell will breach each and every combat protection on the target creature. Magic resistance and invisibility do not affect this spell.
+By means of this spell, the wizard may launch a massive attack on a target's physical and magical defenses. Pierce Shield will dispel one spell protection of any level from the target creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. After piercing through magical protections, this powerful spell will breach each and every combat protection on the target creature. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Pierce Shield are: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.
 
@@ -2834,7 +2834,7 @@ This spell allows a wizard to prepare a magical trigger that can store spells to
 @783=~Incendiary Cloud~
 @784=~Incendiary Cloud
 Level: 8
-School: Evocation
+School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 8
@@ -3002,7 +3002,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, it will dispel all spell protections on the target. Additionally, the affected creature will suffer 100% spell failure rate for one round, followed by 50% spell failure for the round after. Magic resistance and invisibility do not affect this spell.
+When this spell is cast, it will dispel all spell protections on the target. Additionally, the affected creature will suffer 100% spell failure rate for one round, followed by 50% spell failure for the round after. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Spellstrike are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
 
