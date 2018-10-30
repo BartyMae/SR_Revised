@@ -686,8 +686,8 @@ Hobgoblin Shaman (4 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Known Spells:
- 1° Armor of Faith, Bless, Cure Light Wounds (x2), Resist Fear
- 2° Chant, Hold Person, Silence~
+ 1Â° Armor of Faith, Bless, Cure Light Wounds (x2), Resist Fear
+ 2Â° Chant, Hold Person, Silence~
 
 /*------------------Level 3------------------*/
 
@@ -828,7 +828,7 @@ Ochre Jelly (5 HD):
  SR 0%, CR 0%, PR 0%, MR 100%
  FR 0%, CR 50%, ER 0%, AR 0%
 
-Special Characteristics
+Special Characteristics:
  Magic Resistance: 10%
  Protected Against: Backstabs, Disease, Level Drain, Petrification, Poison, and Stun
  Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects~
@@ -1579,9 +1579,9 @@ Special Characteristics:
  Invisibility (at will)
 
 Known Spells:
- 1° Obscuring Mist, Magic Missile (x2), Shield
- 2° Horror, Mirror Image
- 3° Slow, Dire Charm~
+ 1Â° Obscuring Mist, Magic Missile (x2), Shield
+ 2Â° Horror, Mirror Image
+ 3Â° Slow, Dire Charm~
 
 @619=~Shadow Door~
 @620=~Shadow Door
@@ -2575,11 +2575,11 @@ Special Characteristics:
  Fiery: target suffers 1D4 fire damage
 
 Known Spells:
- 1° Burning Hands, Magic Missile (x2), Shield
- 2° Agannazar's Scorcher, Invisibility (x2)
- 3° Fireball (x3)
- 4° Fire Shield (x2)
- 5° Conjure Lesser Fire Elemental~
+ 1Â° Burning Hands, Magic Missile (x2), Shield
+ 2Â° Agannazar's Scorcher, Invisibility (x2)
+ 3Â° Fireball (x3)
+ 4Â° Fire Shield (x2)
+ 5Â° Conjure Lesser Fire Elemental~
 
 @751=~Summon Djinni~
 @752=~Summon Djinni
@@ -2602,11 +2602,11 @@ Djinni (10 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Known Spells:
- 1° Magic Missile (x3), Shield
- 2° Invisibility (x2), Mirror Image
- 3° Haste, Lightning Bolt (x2)
- 4° Improved Invisibility, Minor Globe of Invulnerability
- 5° Conjure Lesser Air Elemental~
+ 1Â° Magic Missile (x3), Shield
+ 2Â° Invisibility (x2), Mirror Image
+ 3Â° Haste, Lightning Bolt (x2)
+ 4Â° Improved Invisibility, Minor Globe of Invulnerability
+ 5Â° Conjure Lesser Air Elemental~
 
 @753=~Summon Hakeashar~
 @754=~Summon Hakeashar
@@ -3356,13 +3356,13 @@ Special Characteristics:
  Vorpal: 15% chance target dies (save vs. death at -2 neg.)
 
 Known Spells:
- 1° Bless (x3), Resist Fear (x3)
- 2° Aid (x3), Find Trap, Know Opponent, Draw upon Divine Might
- 3° Cure Disease (x2), Holy Smite (x2), Break Enchantment (x2)
- 4° Cure Critical Wounds (x2), Death Ward (x2), Neutralize Poison (x2), Magic Circle against Evil (x2)
- 5° Chaotic Commands (x2), Raise Dead (x2), True Seeing (x2)
- 6° Blade Barrier, Bolt of Glory, Heal
- 7° Greater Restoration, Holy Word~
+ 1Â° Bless (x3), Resist Fear (x3)
+ 2Â° Aid (x3), Find Trap, Know Opponent, Draw upon Divine Might
+ 3Â° Cure Disease (x2), Holy Smite (x2), Break Enchantment (x2)
+ 4Â° Cure Critical Wounds (x2), Death Ward (x2), Neutralize Poison (x2), Magic Circle against Evil (x2)
+ 5Â° Chaotic Commands (x2), Raise Dead (x2), True Seeing (x2)
+ 6Â° Blade Barrier, Bolt of Glory, Heal
+ 7Â° Greater Restoration, Holy Word~
 
 @859=~Summon Dark Planetar~
 @860=~Summon Dark Planetar
@@ -3394,13 +3394,13 @@ Combat Abilities:
  Vorpal: 15% chance target dies (save vs. death at -2 neg.)
 
 Known Spells:
- 1° Doom (x3), Resist Fear (x3)
- 2° Hold Person (x3), Find Trap, Know Opponent, Silence
- 3° Rigid Thinking (x2), Unholy Blight (x2), Break Enchantment (x2)
- 4° Cause Critical Wounds (x2), Mental Domination (x2), Poison (x2), Cloak of Fear (x2)
- 5° Flame Strike (x2), Greater Command (x2), True Seeing (x2)
- 6° Blade Barrier, Dolorous Decay, Harm
- 7° Fire Storm, Unholy Word~
+ 1Â° Doom (x3), Resist Fear (x3)
+ 2Â° Hold Person (x3), Find Trap, Know Opponent, Silence
+ 3Â° Rigid Thinking (x2), Unholy Blight (x2), Break Enchantment (x2)
+ 4Â° Cause Critical Wounds (x2), Mental Domination (x2), Poison (x2), Cloak of Fear (x2)
+ 5Â° Flame Strike (x2), Greater Command (x2), True Seeing (x2)
+ 6Â° Blade Barrier, Dolorous Decay, Harm
+ 7Â° Fire Storm, Unholy Word~
 
 @861=~Comet~
 @862=~Comet
