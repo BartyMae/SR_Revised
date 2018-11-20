@@ -9,51 +9,51 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~sppr313~ => 1 // holy smite
 ~sppr314~ => 1 // unholy blight
 ~sppr503~ => 1 // flame strike
-~sppr705~ => 1 // fire storm
+//~sppr705~ => 1 // fire storm
 
-~spwi213~ => 1 // stinking cloud
-~spwi215~ => 1 // web
+//~spwi213~ => 1 // stinking cloud
+//~spwi215~ => 1 // web
 ~spwi304~ => 1 // fireball
 ~spwi313~ => 1 // skull trap
-~spwi404~ => 1 // ice storm
-~spwi502~ => 1 // cloud kill
+//~spwi404~ => 1 // ice storm
+//~spwi502~ => 1 // cloud kill
 ~spwi503~ => 1 // cone of cold
-~dvwi523~ => 1 // fireburst
-~spwi614~ => 1 // acid fog
+//~spwi523~ => 1 // fireburst
+//~spwi614~ => 1 // acid fog
 ~spwi712~ => 1 // delayed blast fireball
 ~spwi714~ => 1 // prismatic spray
-~spwi810~ => 1 // incendiary cloud
+//~spwi810~ => 1 // incendiary cloud
 ~spwi911~ => 1 // meteor swarm
-~dvwi922~ => 1 // dragon's breath
+~spwi922~ => 1 // dragon's breath
 ~spwi925~ => 1 // comet
 
 // AoE spells without MR issues
 
-~sppr105~ => 1 // entangle
+//~sppr105~ => 1 // entangle
 ~sppr208~ => 1 // hold person
 ~sppr305~ => 1 // hold animal
-~sppr416~ => 1 // cloak of fear
+//~sppr416~ => 1 // cloak of fear
 ~sppr512~ => 1 // greater command
 ~sppr517~ => 1 // insect plague
-~sppr609~ => 1 // false dawn
+//~sppr609~ => 1 // false dawn
 ~sppr704~ => 1 // nature's beauty
 ~sppr706~ => 1 // symbol of pain
 ~sppr707~ => 1 // sunray
-~sppr709~ => 1 // chaos
+//~sppr709~ => 1 // chaos
 ~sppr710~ => 1 // holy word
 ~sppr715~ => 1 // unholy word
 ~sppr717~ => 1 // creeping doom
 ~sppr718~ => 1 // symbol of stun
 ~sppr719~ => 1 // symbol of death
-~sppr722~ => 1 // storm of vengeance
+//~sppr722~ => 1 // storm of vengeance
 
-~spdr201~ => 1 // web
+//~spdr201~ => 1 // web
 ~spdr501~ => 1 // cone of cold
-~dvdr601~ => 1 // chain lighting
+//~spdr601~ => 1 // chain lighting
 
-~spwi101~ => 1 // grease
+//~spwi101~ => 1 // grease
 ~spwi105~ => 1 // color spray
-~spwi106~ => 1 // obscuring mist
+//~spwi106~ => 1 // obscuring mist
 ~spwi116~ => 1 // sleep
 ~spwi205~ => 1 // horror
 ~spwi223~ => 1 // deafness
@@ -64,21 +64,21 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~spwi401~ => 1 // confusion
 ~spwi411~ => 1 // emotion despair
 ~spwi412~ => 1 // greater malison
-~spwi421~ => 1 // teleport field
+//~spwi421~ => 1 // teleport field
 ~spwi427~ => 1 // vitriolic sphere
 ~spwi507~ => 1 // hold monster
-~spwi508~ => 1 // chaos
-~dvwi615~ => 1 // chain lightning
-~spwi711~ => 1 // chaos
+~spwi508~ => 1 // waves of fatigue
+//~spwi615~ => 1 // chain lightning
+//~spwi711~ => 1 // chaos
 ~spwi720~ => 1 // control undead
-~spwi811~ => 1 // symbol of fear
+~spwi811~ => 1 // symbol of 
 ~spwi812~ => 1 // abi-dalzim's horrid wilting
 ~spwi816~ => 1 // symbol of stun
 ~spwi817~ => 1 // symbol of death
 ~spwi897~ => 1 // innate symbol of death
 ~spwi898~ => 1 // innate symbol of stun
 ~spwi899~ => 1 // innate symbol of pain
-~dvwi913~ => 1 // wail of the banshee
+~spwi913~ => 1 // wail of the banshee
 ~insanity~ => 1
 ~dgwhirl~ => 1
 ~beguile~ => 1
@@ -89,18 +89,31 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~sppr114~ => 1 // fearie fire
 ~sppr211~ => 1 // silence
 ~sppr216~ => 1 // fire trap
-~dvpr218~ => 1 // gust of wind
-~sppr418~ => 1 // ice storm
+//~sppr218~ => 1 // gust of wind
+//~sppr418~ => 1 // ice storm
 ~sppr620~ => 1 // banishment
-~dvpr720~ => 1 // earthquake
+~sppr720~ => 1 // earthquake
 ~spwi103~ => 1 // burning hands
 ~spwi605~ => 1 // banishment
 
 END
 
 ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
-  OUTER_SET $spell("sppr515")=0 // Repulsion
-  OUTER_SET $spell("sppr609")=0 // False Dawn
+  OUTER_SET $spell("sppr218")=0 // gust of wind
+  OUTER_SET $spell("sppr515")=0 // repulsion
+  OUTER_SET $spell("sppr609")=0 // false dawn
+  OUTER_SET $spell("sppr720")=0 // earthquake
+  OUTER_SET $spell("spwi523")=0 // fireburst
+  OUTER_SET $spell("spwi615")=0 // chain lightning
+  OUTER_SET $spell("spwi913")=0 // wail of the banshee
+  OUTER_SET $spell("spwi922")=0 // dragon's breath
+  OUTER_SET $spell("dvdr601")=1 // chain lightning
+  OUTER_SET $spell("dvpr218")=1 // gust of wind
+  OUTER_SET $spell("dvpr720")=1 // earthquake
+  OUTER_SET $spell("dvwi523")=1 // fireburst
+  OUTER_SET $spell("dvwi615")=1 // chain lightning
+  OUTER_SET $spell("dvwi913")=1 // wail of the banshee
+  OUTER_SET $spell("dvwi922")=1 // dragon's breath
 END
 
 /*ACTION_IF FILE_EXISTS_IN_GAME ~tg#come.spl~ BEGIN
