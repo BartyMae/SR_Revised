@@ -1025,7 +1025,7 @@ Casting Time: 3
 Area of Effect: Special
 Saving Throw: None
 
-This spell enables the wizard to summon one small globe of fire for each experience level of the caster, which, when thrown, burst upon impact and deal 1D4 piercing damage and 2D4 fire damage to the creature struck. The wizard gains a +5 bonus to THAC0 with the missiles, and each meteor is considered to be of +2 enchantment to determine what it can hit. The wizard may discharge up to five missiles per round.~
+This spell enables the wizard to summon one small globe of fire for each experience level of the caster, which, when thrown, burst upon impact and deal 1D4 + 2 piercing damage and 2D4 fire damage to the creature struck. The wizard gains a +5 bonus to THAC0 with the missiles, and each meteor is considered to be of +2 enchantment to determine what it can hit. The wizard may discharge up to five missiles per round.~
 
 @547=~Dispel Magic~
 @548=~Dispel Magic
