@@ -710,7 +710,7 @@ Casting Time: 3
 Area of Effect: Sight
 Saving Throw: None
 
-When a priest casts this spell, they become able to see clearly any objects or beings that are invisible, as well as any creatures that are astral, ethereal, or out of phase. Instantly and at the end of each round for 1 turn after the spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies. Invisible objects carried into the warded area will also become visible. This spell does not reveal illusions or enable the caster to see through physical objects. Magic resistance does not affect this spell.~
+When a priest casts this spell, they become able to see clearly any objects or beings that are invisible, as well as any creatures that are astral, ethereal, or out of phase. Instantly and at the end of each round for 1 turn after the spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Invisible objects carried into the warded area will also become visible. This spell does not reveal illusions or enable the caster to see through physical objects. Magic resistance does not affect this spell.~
 
 @89=~Miscast Magic~
 @90=~Miscast Magic
@@ -1368,7 +1368,7 @@ Casting Time: 5
 Area of Effect: Sight
 Saving Throw: None
 
-When this spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn rounds after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and illusionary spells such as Blur and Mirror Image cast by opponents will be effectively neutralized. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell.
+When this spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
 
 NOTE: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.~
 
