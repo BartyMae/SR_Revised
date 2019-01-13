@@ -988,13 +988,6 @@ COPY ~spell_rev\sppr5##\sppr525.eff~     ~override~
 
 COPY ~spell_rev\sppr5##\spja01.spl~     ~override~  // Harper's Call
   SAY NAME1 @2157    SAY UNIDENTIFIED_DESC @2158
-COPY ~spell_rev\sppr5##\spja01d.spl~     ~override~
-COPY ~spell_rev\sppr5##\spja01a.eff~     ~override~
-COPY ~spell_rev\sppr5##\spja01b.eff~     ~override~
-COPY ~spell_rev\sppr5##\spja01c.eff~     ~override~
-COPY ~spell_rev\sppr5##\spja01d.eff~     ~override~
-COPY ~spell_rev\sppr5##\spja01e.eff~     ~override~
-COPY ~spell_rev\sppr5##\spja01f.eff~     ~override~
 
 /*-----------------------Level 6-----------------------*/
 
