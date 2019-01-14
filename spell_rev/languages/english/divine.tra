@@ -1355,7 +1355,7 @@ Casting Time: 1 round
 Area of Effect: 1 person
 Saving Throw: None
 
-This spell is only available to Harpers. The Harper's Call restores a comrade to life, to further serve the cause of the Harpers. This spell functions similarly to Raise Dead, except that the Harper must transfer a small portion of their health (10 hit points) to successfully raise the deceased person. The target has but 1 hit point when raised and must regain the rest by natural healing or curative magic.~
+This spell is only available to Harpers. The Harper's Call restores a comrade to life, to further serve the cause of the Harpers. This spell functions similarly to Raise Dead, with the following exceptions: the Harper must transfer a small portion of their health (10 hit points) to successfully raise the deceased person, and the Harper suffers a -3 penalty to all ability scores for eight hours, making this spell ineffective in combat. The target has but 1 hit point when raised and must regain the rest by natural healing or curative magic.~
 
 @159=~True Seeing~
 @160=~True Seeing
