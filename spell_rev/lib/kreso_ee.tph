@@ -68,7 +68,7 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi225 END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~sppr214.spl~ THEN BEGIN  // Draw Upon Holy Might
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr214.spl~ THEN BEGIN  // Draw Upon Divine Might
 COPY_EXISTING ~sppr214.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spin103 END
@@ -457,10 +457,10 @@ COPY_EXISTING ~spwi808.spl~ ~override~
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi808 END
 END 
 
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi914.spl~ THEN BEGIN  // Larloch's Energy Drain
-COPY_EXISTING ~spwi914.spl~ ~override~
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi914d.spl~ THEN BEGIN  // Larloch's Energy Drain
+COPY_EXISTING ~spwi914d.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi914 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi914d END
 END
 
 
@@ -488,7 +488,7 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi113 END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~spin103.spl~ THEN BEGIN  // Draw Upon Holy Might (Bhaalspawn)
+ACTION_IF FILE_EXISTS_IN_GAME ~spin103.spl~ THEN BEGIN  // Draw Upon Divine Might (Bhaalspawn)
 COPY_EXISTING ~spin103.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spin103 END
