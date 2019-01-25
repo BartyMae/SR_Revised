@@ -1127,7 +1127,6 @@ Saving Throw: None
 
 This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic spell, as well as other forms of magical attacks such as Secret Word and Pierce Magic.~
 
-@571000=~Minor Globe of Invulnerability~
 @572000=~Minor Globe of Invulnerability
 Level: 4
 School: Abjuration
@@ -1333,7 +1332,6 @@ Saving Throw: None
 
 This spell conjures forth a +3 enchanted weapon that can be given to anyone. The weapon may be of any type, or the caster may alternatively decide to conjure 40 magical arrows, bolts, or bullets. The weapon stays in existence for no longer than a day.~
 
-@593000=~Enchanted Weapon~
 @594000=~Enchanted Weapon
 Level: 4
 School: Enchantment
@@ -1923,7 +1921,6 @@ Saving Throw: None
 
 This spell creates an immobile, faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, 3rd or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fifth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic spell, as well as other forms of magical attack such as Ruby Ray of Reversal and Spellstrike.~
 
-@663000=~Globe of Invulnerability~
 @664000=~Globe of Invulnerability
 Level: 6
 School: Abjuration
@@ -3125,8 +3122,7 @@ Saving Throw: None
 
 When this spell is cast, the target creature becomes entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.~
 
-@823=~Imprisonment~
-@824=~Imprisonment
+@824000=~Imprisonment
 Level: 9
 School: Abjuration
 Range: Short
