@@ -2965,8 +2965,9 @@ COPY ~spell_rev\spwi9##\scrl9s.itm~     ~override~
   SAY NAME2 @823    SAY IDENTIFIED_DESC   @824
 END
 COPY ~spell_rev\spwi9##\spwi910d.spl~     ~override~
+COPY ~spell_rev\spwi9##\spwi910e.spl~     ~override~
 COPY ~spell_rev\spwi9##\spwi910.eff~     ~override~
-COPY ~spell_rev\spwi9##\spwi910a.eff~     ~override~
+COPY ~spell_rev\spwi9##\spwi910d.eff~     ~override~
 
 ADD_PROJECTILE ~spell_rev\projectles\dvmswarm.pro~
 COPY ~spell_rev\spwi9##\spwi911.spl~     ~override~  // Meteor Swarm
@@ -3027,11 +3028,19 @@ COPY ~spell_rev\spwi9##\spwi975.spl~     ~override~
 COPY ~spell_rev\spwi9##\spwi975.itm~     ~override~
   SAY NAME1 @9211   SAY NAME2 @9211
 
+ADD_PROJECTILE ~spell_rev\projectles\dvfreedo.pro~
 COPY ~spell_rev\spwi9##\spwi917.spl~     ~override~  // Freedom
   SAY NAME1 @837    SAY UNIDENTIFIED_DESC @838
 COPY ~spell_rev\spwi9##\scrl9z.itm~     ~override~
   SAY NAME2 @837    SAY IDENTIFIED_DESC   @838
+COPY ~spell_rev\spwi9##\spwi917d.spl~     ~override~  // Freedom
+  WRITE_SHORT 0x98 %dvfreedo%
 
+  
+COPY ~spell_rev\spwi9##\spwi911.spl~     ~override~  // Meteor Swarm
+  SAY NAME1 @825    SAY UNIDENTIFIED_DESC @826
+  
+  
 COPY ~spell_rev\spwi9##\spwi918.spl~     ~override~  // Bigby's Crushing Hand
   SAY NAME1 @839    SAY UNIDENTIFIED_DESC @840
 COPY ~spell_rev\spwi9##\scrlb2.itm~     ~override~
