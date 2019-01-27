@@ -3122,7 +3122,7 @@ Saving Throw: None
 
 When this spell is cast, the target creature becomes entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
 
-NOTE: Due to game engine limitations, party members affected by this spell will instead be Mazed for 5 turns before being slain.~
+NOTE: Due to game engine limitations, party members affected by this spell will instead be Mazed for 5 turns before being slain. This will allow you to leave the current area if necessary, and will not remove them from your party.~
 
 @824000=~Imprisonment
 Level: 9
@@ -3133,7 +3133,9 @@ Casting Time: 1 round
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the target creature must save vs. spell at a -6 penalty or become entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.~
+When this spell is cast, the target creature must save vs. spell at a -6 penalty or become entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
+
+NOTE: Due to game engine limitations, party members affected by this spell will instead be Mazed for 5 turns before being slain. This will allow you to leave the current area if necessary, and will not remove them from your party.~
 
 @825=~Meteor Swarm~
 @826=~Meteor Swarm
