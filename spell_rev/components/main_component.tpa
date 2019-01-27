@@ -3032,7 +3032,8 @@ COPY ~spell_rev\spwi9##\spwi917.spl~     ~override~  // Freedom
   SAY NAME1 @837    SAY UNIDENTIFIED_DESC @838
 COPY ~spell_rev\spwi9##\scrl9z.itm~     ~override~
   SAY NAME2 @837    SAY IDENTIFIED_DESC   @838
-COPY ~spell_rev\spwi9##\spwi917.eff~     ~override~
+COPY ~spell_rev\spwi9##\spwi917d.spl~     ~override~
+COPY ~spell_rev\spwi9##\spwi917d.eff~     ~override~
 
   
 COPY ~spell_rev\spwi9##\spwi911.spl~     ~override~  // Meteor Swarm
