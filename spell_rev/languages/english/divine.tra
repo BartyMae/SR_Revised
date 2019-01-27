@@ -156,30 +156,18 @@ Saving Throw: Spell negates
 
 This spell causes a feeling of doom to overwhelm the target. For the duration of the spell, the target suffers a -2 penalty to THAC0, damage, and saving throws. The creature may make a save vs. spell at a penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level. Multiple castings of this spell or similar effects are not cumulative.~
 
-@25=~Faerie Fire~
-@26=~Faerie Fire
+@25=~Sunscorch~
+@26=~Sunscorch
 Level: 1
 School: Evocation
-Sphere: Weather
+Sphere: Sun
 Range: Long
-Duration: 1 turn
-Casting Time: 1
-Area of Effect: 5' radius
-Saving Throw: Spell negates
+Duration: Instant
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Breath partial
 
-When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who make a save vs. spell are totally unaffected by the spell. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
-
-@26000=~Faerie Fire
-Level: 1
-School: Evocation
-Sphere: Weather
-Range: Long
-Duration: 5 rounds
-Casting Time: 1
-Area of Effect: 5' radius
-Saving Throw: None
-
-When this spell is cast, a pale glow surrounds and outlines all creatures within the area of effect, making their position and movements easily visible. Outlined creatures suffer a -2 penalty to AC for the duration of the spell. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
+When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes a creature chosen by the caster. The target struck by the ray is blinded for 1 round and suffers 2D6 fire damage as well an additional 1D6 for every two extra experience levels of the caster, up to a maximum of 6D6 at 9th level. The target may make a save vs. breath to avoid being blinded and receive only half damage. Undead creatures and other monsters vulnerable to bright light suffer double damage. Magic resistance does not affect this spell.~
 
 @27=~Strength of Stone~
 @28=~Strength of Stone
@@ -194,18 +182,18 @@ Saving Throw: None
 
 Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and gives an additional +50 exceptional strength, and the character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then their strength will just be set to 18/00, while if a character has a strength between 18/01 and 18/50, then their strength will become 18/50 + the original percentage. If their strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
 
-@29=~Sunscorch~
-@30=~Sunscorch
+@29=~Faerie Fire~
+@30=~Faerie Fire
 Level: 1
 School: Evocation
-Sphere: Sun
+Sphere: Weather
 Range: Long
-Duration: Instant
-Casting Time: 5
-Area of Effect: 1 creature
-Saving Throw: Breath partial
+Duration: 1 turn
+Casting Time: 1
+Area of Effect: 5' radius
+Saving Throw: Spell negates
 
-When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes a creature chosen by the caster. The target struck by the ray is blinded for 1 round and suffers 2D6 fire damage as well an additional 1D6 for every two extra experience levels of the caster, up to a maximum of 6D6 at 9th level. The target may make a save vs. breath to avoid being blinded and receive only half damage. Undead creatures and other monsters vulnerable to bright light suffer double damage. Magic resistance does not affect this spell.~
+When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who make a save vs. spell are totally unaffected by the spell. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
 
 @301=~Regenerate Light Wounds~
 @302=~Regenerate Light Wounds
@@ -273,7 +261,7 @@ Bat (1 HD):
 Special Characteristics:
  Blind Sense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
  Diseasing: target suffers a -1 penalty to dexterity and constitution for 8 hours (save vs. death neg.)
- Swarm: each bat within 5' receives a +2 bonus to THAC0~
+ Swarm: each bat within 10' receives a +2 bonus to THAC0~
 
 @321=~Obscuring Mist~
 @322=~Obscuring Mist
@@ -432,7 +420,7 @@ Sphere: Guardian
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 15' radius
+Area of Effect: 20' radius
 Saving Throw: Spell negates
 
 Upon casting this spell, complete silence prevails in the affected area. All sound is stopped: conversation is impossible and spells cannot be cast unless an affected creature then casts Vocalize. All enemies in the area must make a save vs. spell at a -4 penalty or be silenced for the duration of the spell. At the instant the spell is completed, it affects all creatures in a 15 foot radius centered on the point selected by the caster.~
@@ -1670,10 +1658,10 @@ Sphere: Guardian, Creation
 Range: Personal
 Duration: 1 turn
 Casting Time: 6
-Area of Effect: 5' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
-The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 5' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell are not cumulative.
+The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 10' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell are not cumulative.
 
 Note that invisibility or invisibility-like spells and effects such as Sanctuary, Improved Invisibility, and Mislead will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
@@ -2035,7 +2023,7 @@ Death Knight (13 HD):
 Special Characteristics:
  Magic Resistance: 75%
  Protected Againt: Charm, Confusion, Death, Hold, Normal Weapons, Poison, Sleep, and Stun
- Aura of Fear: every round, creatures in a 5' radius flee in terror for 1 round (save vs. spell neg.)
+ Aura of Fear: every round, creatures in a 10' radius flee in terror for 1 round (save vs. spell neg.)
  Detect Invisibility (permanent)
  Unholy Fireball (1x per day)
 
@@ -2433,10 +2421,10 @@ Sphere: Guardian, Creation
 Range: Personal
 Duration: 1 turn
 Casting Time: 1 round
-Area of Effect: 5' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
-The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 5' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell.
+The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 10' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell.
 
 Note that invisibility or invisibility-like spells and effects such as Sanctuary, Improved Invisibility, and Mislead will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
@@ -2548,7 +2536,7 @@ Sphere: Protection, Elemental (Fire)
 Range: Personal
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 5' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
 This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 5 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Tiny insects cannot pass through the aura. Magic resistance does not affect this spell.~

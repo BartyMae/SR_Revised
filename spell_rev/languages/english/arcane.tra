@@ -980,7 +980,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 15' radius
+Area of Effect: 20' radius
 Saving Throw: None
 
 When this spell is cast, it will dispel one spell protection of 5th level or lower on all enemies within the area of effect. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
@@ -1089,7 +1089,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 5' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Tiny insects cannot pass through the acid sheath. Magic resistance does not affect this spell.~
+This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 10' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Tiny insects cannot pass through the acid sheath. Magic resistance does not affect this spell.~
 
 @567=~Ice Storm~
 @568=~Ice Storm
@@ -1353,7 +1353,7 @@ Casting Time: 4
 Area of Effect: Special
 Saving Throw: None
 
-This spell protects the wizard by surrounding them with a circular wall of flames. This shield not only grants a +50% bonus to fire and cold resistance, but opponents that hit the caster with a weapon or spell from within a 5' radius will suffer 1D6 + 1/two levels fire damage, up to a maximum of 1D6 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Tiny insects cannot pass through the fire shield. Magic resistance does not affect this spell.~
+This spell protects the wizard by surrounding them with a circular wall of flames. This shield not only grants a +50% bonus to fire and cold resistance, but opponents that hit the caster with a weapon or spell from within a 10' radius will suffer 1D6 + 1/two levels fire damage, up to a maximum of 1D6 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Tiny insects cannot pass through the fire shield. Magic resistance does not affect this spell.~
 
 @597=~Secret Word~
 @598=~Secret Word
@@ -1865,7 +1865,7 @@ School: Evocation
 Range: Personal
 Duration: Instant
 Casting Time: 1
-Area of Effect: 15' radius
+Area of Effect: 20' radius
 Saving Throw: Breath half
 
 This spell creates an explosive burst of flame that detonates with a low roar and delivers damage proportional to the level of the wizard who cast it, similar to a fireball. The wizard gestures with their hand and the entire area around them erupts in flames, striking all except the caster and causing 1D6 fire damage for each experience level of the spellcaster, up to a maximum of 15D6 at 15th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
@@ -1880,7 +1880,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 5' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Tiny insects cannot pass through the acid sheath. Magic resistance does not affect this spell.~
+This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 10' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Tiny insects cannot pass through the acid sheath. Magic resistance does not affect this spell.~
 
 /*------------------Level 6------------------*/
 
@@ -2430,7 +2430,7 @@ Special Characteristics:
  Magic Resistance: 75%
  Protected Againt: Death, Normal Weapons, and Poison
  Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
- Aura of Fear: every round, creatures in a 5' radius flee in terror for 1 round (save vs. spell neg.)
+ Aura of Fear: every round, creatures in a 10' radius flee in terror for 1 round (save vs. spell neg.)
  Detect Invisibility (permanent)
  Unholy Fireball (1x per day)
 
@@ -2447,7 +2447,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 5' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -4 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
+When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -4 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
 
 Red - 10D6 fire damage (save vs. breath half)
 Orange - Stun for 1 turn (save vs. polymorph neg.)
@@ -3234,7 +3234,7 @@ Special Characteristics:
  Magic Resistance: 90%
  Spellcasting: spells can be cast in this form
  Devour Brain: target suffers a -2 penalty to intelligence for 5 rounds
- Psionic Blast (1x per day): target and enemies within 15' are stunned for 1 turn (save vs. spell neg.)
+ Psionic Blast (1x per day): target and enemies within 20' are stunned for 1 turn (save vs. spell neg.)
 
 Nycaloth (12 HD):
  STR 20, DEX 18, CON 18
