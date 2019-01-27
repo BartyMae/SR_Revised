@@ -1,0 +1,28 @@
+ADD_SECTYPE ~k1#Impris~ @21006  // "Freed from Imprisonment"
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi910d.spl~) THEN BEGIN // Wizard Imprisonment
+ COPY_EXISTING ~spwi910d.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Impris%"
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spin788.spl~) THEN BEGIN // Demilich Soul Trap
+ COPY_EXISTING ~spin788.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Impris%"
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi917d.spl~) THEN BEGIN // Wizard Freedom
+ COPY_EXISTING ~spwi917d.spl~ ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
+  LPF ADD_SPELL_EFFECT
+	INT_VAR
+	opcode			= 221
+	target			= 3
+	power			= 9
+	savingthrow     = 0
+	parameter1		= 9
+	parameter2		= EVALUATE_BUFFER %k1#Impris%
+	timing			= 1
+	insert_point    = 1
+    END
+  BUT_ONLY
+END
