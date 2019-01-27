@@ -1,4 +1,4 @@
-ADD_SECTYPE ~k1#Impris~ @21009  // "Freed from Imprisonment"
+ADD_SECTYPE ~k1#Impris~ @21008  // "Freed from Imprisonment"
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~spwi910d.spl~) THEN BEGIN // Wizard Imprisonment
  COPY_EXISTING ~spwi910d.spl~ ~override~
