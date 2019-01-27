@@ -4379,13 +4379,12 @@ Launcher: Sling~
 
 /*------------------Miscellaneous------------------*/
 
-@863=~Spell Shield Dispelled~
-@5410=~Illusionary Protections Removed~
-@6670=~Petrification Effect Reverted~
 @21000=~Dispelling Screen Dissipated~
 @21001=~Dispelling Screen Activated~
 @21002=~Insects Dispersed~
 @21003=~Haste Effect Countered~
 @21004=~Slow Effect Countered~
 @21005=~Petrification Effect Reverted~
-@21006=~Freed from Imprisonment~
+@21006=~Spell Shield Dispelled~
+@21007=~Illusionary Protections Removed~
+@21008=~Freed from Imprisonment~
