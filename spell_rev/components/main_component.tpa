@@ -131,6 +131,11 @@ COPY_EXISTING ~inareasm.pro~ ~override~
   WRITE_SHORT 0x206 85  // 10' AoE
   BUT_ONLY_IF_IT_CHANGES
 
+COPY_EXISTING ~inmed.pro~ ~override~
+  WRITE_SHORT 0x204 170
+  WRITE_SHORT 0x206 170  // 10' AoE
+  BUT_ONLY_IF_IT_CHANGES
+
 COPY_EXISTING ~newbolt1.pro~ ~override~  // Lightning Bolt's "new" projectile
   WRITE_SHORT 0x0a 30  // Increase speed to 30
   BUT_ONLY_IF_IT_CHANGES
@@ -376,26 +381,20 @@ COPY ~spell_rev\sppr1##\sppr111.spl~     ~override~  // Armor of Faith
 COPY ~spell_rev\sppr1##\sppr113.spl~     ~override~  // Doom
   SAY NAME1 @23    SAY UNIDENTIFIED_DESC @24
 
-ADD_PROJECTILE ~spell_rev\projectles\dvffire.pro~
-COPY ~spell_rev\sppr1##\sppr114.spl~     ~override~  // Faerie Fire (new druid spell)
+COPY ~spell_rev\sppr1##\sppr114.spl~     ~override~  // Sunscorch (new druid spell)
   SAY NAME1 @25    SAY UNIDENTIFIED_DESC @26
-  WRITE_SHORT 0x98 %dvffire%
-COPY ~spell_rev\sppr1##\sppr114f.spl~     ~override~
-
-// uncomment the lines below to allow those affected by Faerie Fire to turn invisible
-/*COPY ~spell_rev\sppr1##\nerfed_sppr114.spl~     ~override\sppr114.spl~  // Nerfed Faerie Fire
-  SAY NAME1 @25    SAY UNIDENTIFIED_DESC @26000
-  WRITE_SHORT 0x98 %dvffire%
-*/
+COPY ~spell_rev\sppr1##\dvsuns1.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns2.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns3.eff~     ~override~
 
 COPY ~spell_rev\sppr1##\sppr115.spl~     ~override~  // Strength of Stone (new druid spell)
   SAY NAME1 @27    SAY UNIDENTIFIED_DESC @28
 
-COPY ~spell_rev\sppr1##\sppr116.spl~     ~override~  // Sunscorch (new druid spell)
+ADD_PROJECTILE ~spell_rev\projectles\dvffire.pro~
+COPY ~spell_rev\sppr1##\sppr116.spl~     ~override~  // Faerie Fire (new druid spell)
   SAY NAME1 @29    SAY UNIDENTIFIED_DESC @30
-COPY ~spell_rev\sppr1##\dvsuns1.eff~     ~override~
-COPY ~spell_rev\sppr1##\dvsuns2.eff~     ~override~
-COPY ~spell_rev\sppr1##\dvsuns3.eff~     ~override~
+  WRITE_SHORT 0x98 %dvffire%
+COPY ~spell_rev\sppr1##\sppr116f.spl~     ~override~
 
 COPY ~spell_rev\sppr1##\sppr117.spl~     ~override~  // Regenerate Light Wounds (new druid spell)
   SAY NAME1 @301    SAY UNIDENTIFIED_DESC @302
@@ -3033,13 +3032,7 @@ COPY ~spell_rev\spwi9##\spwi917.spl~     ~override~  // Freedom
 COPY ~spell_rev\spwi9##\scrl9z.itm~     ~override~
   SAY NAME2 @837    SAY IDENTIFIED_DESC   @838
 COPY ~spell_rev\spwi9##\spwi917d.spl~     ~override~
-COPY ~spell_rev\spwi9##\spwi917d.eff~     ~override~
 
-  
-COPY ~spell_rev\spwi9##\spwi911.spl~     ~override~  // Meteor Swarm
-  SAY NAME1 @825    SAY UNIDENTIFIED_DESC @826
-  
-  
 COPY ~spell_rev\spwi9##\spwi918.spl~     ~override~  // Bigby's Crushing Hand
   SAY NAME1 @839    SAY UNIDENTIFIED_DESC @840
 COPY ~spell_rev\spwi9##\scrlb2.itm~     ~override~
