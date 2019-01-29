@@ -2850,7 +2850,7 @@ Casting Time: 8
 Area of Effect: 30' radius
 Saving Throw: Special
 
-This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4D6 fire damage each round to everything remaining within the area of effect (save vs. breath at -4 penalty half). Fire dwellers like fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
+This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4D6 fire damage each round to everything remaining within the area of effect. A save vs. breath at a -4 penalty reduces the damage by half. Fire dwellers like fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
 
 @785=~Symbol of Pain~
 @786=~Symbol of Pain
