@@ -3043,7 +3043,10 @@ COPY ~spell_rev\spwi9##\spwi919.spl~     ~override~  // Wish
   SAY NAME1 @841    SAY UNIDENTIFIED_DESC @842
 COPY ~spell_rev\spwi9##\scrlb4.itm~     ~override~
   SAY NAME2 @841    SAY IDENTIFIED_DESC   @842
-COPY ~spell_rev\spwi9##\spwish38.spl~     ~override~  // Mass Breach
+COPY ~spell_rev\spwi9##\spwish26.spl~     ~override~
+COPY ~spell_rev\spwi9##\dvwis26.spl~     ~override~
+COPY ~spell_rev\spwi9##\spwish38.spl~     ~override~
+COPY ~spell_rev\spwi9##\dvwis38.spl~     ~override~
 
 COPY ~spell_rev\spwi9##\p3-12m4.itm~     ~override~
 
