@@ -29,42 +29,6 @@ target = 2
 STR_VAR
 resource = spwi513b // TO DO: kill the damn "Display String" and "remove portait icon" opcodes from all removal spells
  END                // they're automatically displayed once they remove something, so now they display twice.
- 
- /* LPF ADD_SPELL_EFFECT   // This is commented out. I made all these resources use 146 to cast Breach. *Much* better overall...
-INT_VAR
-opcode = 206
-duration = 300
-power = 5
-timing = 0
-resist_dispel = 2
-target = 2
-STR_VAR
-resource = spwish26 
- END 
- 
-LPF ADD_SPELL_EFFECT 
-INT_VAR
-opcode = 206
-duration = 300
-power = 5
-timing = 0
-resist_dispel = 2
-target = 2
-STR_VAR
-resource = spwish38 
- END
- 
-LPF ADD_SPELL_EFFECT 
-INT_VAR
-opcode = 206
-duration = 300
-power = 5
-timing = 0
-resist_dispel = 2
-target = 2
-STR_VAR
-resource = wand18a
- END */ 
 
  LPF ADD_SPELL_EFFECT  // Immunity to dispels
 INT_VAR
@@ -120,10 +84,12 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = "-1" header = 1 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 146 target = 1 parameter2 = 1 power = 5 header =1 STR_VAR resource = k1#scre END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 215 target = 2 parameter2 = 1 power = 5 header =1 STR_VAR resource = sprotect duration = 4 END
 
+ACTION_IF ai_spell_immunity=0 BEGIN
 COPY_EXISTING ~spwi590.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = "-1" header = 1 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 146 target = 1 parameter2 = 1 power = 5 header =1 STR_VAR resource = k1#scre END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 215 target = 2 parameter2 = 1 power = 5 header =1 STR_VAR resource = sprotect duration = 4 END
+END
 
 COPY_EXISTING ~k1#scre.spl~ ~override~  //sectype marker
 WRITE_BYTE 0x27 "%k1#Dispel%"
@@ -149,19 +115,29 @@ INT_VAR
  LPF CLONE_EFFECT INT_VAR match_opcode = 58 opcode = 221 parameter1 = 9 parameter2 = %sectype_k1#Dispel% savingthrow = 0 timing = 3 insert_point = 10 silent = 1 END
  END
  BUT_ONLY_IF_IT_CHANGES
- 
- 
+
 
 ///END OF GLOBAL CHANGES///
   
-  // PATCH BREACH TYPE STUFF; with code on the fly //
+//PATCH BREACH TYPE STUFF; with code on the fly
 
 ACTION_IF  FILE_EXISTS_IN_GAME ~spwi513c.spl~ BEGIN   
 COPY_EXISTING ~spwi513c.spl~ ~override~  // 
 LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 230 new_opcode = 221 parameter1 = 9 parameter2  = EVALUATE_BUFFER %sectype_k1#Dispel% STR_VAR END
+END
 
-ACTION_IF  FILE_EXISTS_IN_GAME ~dvwi805b.spl~ BEGIN       
-COPY_EXISTING ~spwi805b.spl~ ~override~  // patch for Pierce Shield  so it breaks DS; SPell shield stops it however
+ACTION_IF  FILE_EXISTS_IN_GAME ~dvwis26c.spl~ BEGIN   
+COPY_EXISTING ~dvwis26c.spl~ ~override~  // 
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 230 new_opcode = 221 parameter1 = 9 parameter2  = EVALUATE_BUFFER %sectype_k1#Dispel% STR_VAR END
+END
+
+ACTION_IF  FILE_EXISTS_IN_GAME ~dvwis38c.spl~ BEGIN   
+COPY_EXISTING ~dvwis38c.spl~ ~override~  // 
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 230 new_opcode = 221 parameter1 = 9 parameter2  = EVALUATE_BUFFER %sectype_k1#Dispel% STR_VAR END
+END
+
+/*ACTION_IF  FILE_EXISTS_IN_GAME ~spwi805b.spl~ BEGIN       
+COPY_EXISTING ~spwi805b.spl~ ~override~  // Patch Pierce Shield so it breaks DS; Spell Shield stops it, however
 LPF ADD_SPELL_EFFECT
 	INT_VAR
 	opcode			= 221 // remove type protection
@@ -172,8 +148,9 @@ LPF ADD_SPELL_EFFECT
 	timing			= 3
 END
   BUT_ONLY
+END
  
-ACTION_IF  FILE_EXISTS_IN_GAME ~dvwi903b.spl~ BEGIN   
+ACTION_IF  FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN   
 COPY_EXISTING ~spwi903b.spl~ ~override~  // patch for Spellstrike
 LPF ADD_SPELL_EFFECT
 	INT_VAR
@@ -185,29 +162,6 @@ LPF ADD_SPELL_EFFECT
 	timing			= 3
 END
   BUT_ONLY
-  
-
-END
-END
-END
-
-
-
-/* ACTION_IF  FILE_EXISTS_IN_GAME ~wand18a.spl~ BEGIN  // IR Wand. I'll recreate it when I get the will to do so, so it doesnt
-   COPY_EXISTING ~wand18a.spl~ ~override~     // summon Cowled wizards
-  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = "-1" header = 1 END
-  LPF ADD_SPELL_EFFECT
-	INT_VAR
-	opcode			= 146
-	target			= 2
-	power			= 5
-	parameter1		= 9
-	timing			= 1
-	insert_point    = 1
-	STR_VAR         
-	resource        = spwi513
-    END
-BUT_ONLY
-END */
+END*/
 
 // END OF CODE for now //
