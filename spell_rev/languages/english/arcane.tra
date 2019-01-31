@@ -556,7 +556,7 @@ Casting Time: 2
 Area of Effect: Special
 Saving Throw: Death partial
 
-When the caster completes this spell, a red glow encompasses their hand. On a successful touch from the caster, the spell deals 1D8 magic damage and paralyzes the target for 5 rounds (save vs. death at -2 neg. paralysis). The wizard gains a +4 bonus to THAC0 and their touch is considered to be of +1 enchantment to determine what it can hit.~
+When the caster completes this spell, a red glow encompasses their hand. On successful touches from the caster, the spell deals 1D8 magic damage and paralyzes the target for 5 rounds (save vs. death at -2 neg. paralysis). The wizard gains a +4 bonus to THAC0 and their touch is considered to be of +1 enchantment to determine what it can hit. The touch effect lasts for the duration of the spell or until dispelled.~
 
 @483=~Vocalize~
 @484=~Vocalize
