@@ -1837,7 +1837,7 @@ COPY ~spell_rev\spwi3##\spwi314d.spl~     ~override~
 COPY ~spell_rev\spwi3##\spwi314e.spl~     ~override~
 COPY ~spell_rev\spwi3##\scrl1q.itm~     ~override~
   SAY NAME2 @527    SAY IDENTIFIED_DESC   @528
-COPY ~spell_rev\spwi3##\spwi314.eff~     ~override~
+COPY ~spell_rev\spwi3##\spwi314i.eff~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi315.spl~     ~override~  // Wraithform (restored alteration spell)
   SAY NAME1 @1025    SAY UNIDENTIFIED_DESC @1026
