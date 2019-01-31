@@ -1297,7 +1297,7 @@ COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
 
 COPY_EXISTING ~grease.pro~ ~override~  // Grease projectile
   WRITE_SHORT 0x206 85 // 10' AoE
-COPY ~spell_rev\spwi1##\spwi101.spl~     ~override~
+COPY ~spell_rev\spwi1##\spwi101.spl~     ~override~  // Grease
   SAY NAME1 @401    SAY UNIDENTIFIED_DESC @402
 COPY ~spell_rev\spwi1##\scrl66.itm~     ~override~
   SAY NAME2 @401    SAY IDENTIFIED_DESC   @402
@@ -1446,7 +1446,7 @@ COPY ~spell_rev\spwi1##\spwi119.spl~     ~override~  // Larloch's Minor Drain
 COPY ~spell_rev\spwi1##\spwi119d.spl~     ~override~  // Healing effect
 COPY ~spell_rev\spwi1##\scrl84.itm~     ~override~
   SAY NAME2 @435    SAY IDENTIFIED_DESC   @436
-COPY ~spell_rev\spwi1##\spwi119.eff~     ~override~
+COPY ~spell_rev\spwi1##\spwi119i.eff~     ~override~
 
 COPY ~spell_rev\spwi1##\spwi120.spl~     ~override~  // Reflected Image
   SAY NAME1 @437    SAY UNIDENTIFIED_DESC @438
