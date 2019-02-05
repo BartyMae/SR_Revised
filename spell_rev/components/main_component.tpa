@@ -202,13 +202,14 @@ COPY ~spell_rev\shared\spin103.spl~     ~override~  // Draw Upon Divine Might
   SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
 COPY ~spell_rev\shared\spin104.spl~     ~override~  // Larloch's Minor Drain
   SAY NAME1 @435    SAY UNIDENTIFIED_DESC @436
-COPY ~spell_rev\shared\spin104.eff~     ~override~
+COPY ~spell_rev\shared\spin104i.eff~     ~override~
 COPY ~spell_rev\shared\spin105.spl~     ~override~  // Horror
   SAY NAME1 @457    SAY UNIDENTIFIED_DESC @458
-COPY ~spell_rev\shared\spin105.eff~     ~override~
+COPY ~spell_rev\shared\spin105d.eff~     ~override~
+COPY ~spell_rev\shared\spin105i.eff~     ~override~
 COPY ~spell_rev\shared\spin106.spl~     ~override~  // Vampiric Touch
   SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
-COPY ~spell_rev\shared\spin106.eff~     ~override~
+COPY ~spell_rev\shared\spin106i.eff~     ~override~
 
 /* ----Beast Master Abilities---- */
 
@@ -1591,6 +1592,7 @@ COPY ~spell_rev\spwi2##\spwi205.spl~     ~override~  // Horror
   SAY NAME1 @457    SAY UNIDENTIFIED_DESC @458
 COPY ~spell_rev\spwi2##\scrl89.itm~     ~override~
   SAY NAME2 @457    SAY IDENTIFIED_DESC   @458
+COPY ~spell_rev\spwi2##\spwi205d.eff~     ~override~
 COPY ~spell_rev\spwi2##\spwi205i.eff~     ~override~
 
 COPY ~spell_rev\spwi2##\spwi206.spl~     ~override~  // Invisibility
@@ -1829,6 +1831,7 @@ COPY ~spell_rev\spwi3##\spwi313.spl~     ~override~  // Skull Trap
   SAY NAME1 @525    SAY UNIDENTIFIED_DESC @526
 COPY ~spell_rev\spwi3##\scrl1p.itm~     ~override~
   SAY NAME2 @525    SAY IDENTIFIED_DESC   @526
+COPY ~spell_rev\spwi3##\spwi313d.eff~     ~override~
 COPY ~spell_rev\spwi3##\spwi313i.eff~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi314.spl~     ~override~  // Vampiric Touch
@@ -2850,7 +2853,8 @@ COPY ~spell_rev\spwi8##\spwi812.spl~     ~override~  // Abi-Dalzim's Horrid Wilt
   SAY NAME1 @787    SAY UNIDENTIFIED_DESC @788
 COPY ~spell_rev\spwi8##\scrl9g.itm~     ~override~
   SAY NAME2 @787    SAY IDENTIFIED_DESC   @788
-COPY ~spell_rev\spwi8##\dvhorrid.eff~     ~override~
+COPY ~spell_rev\spwi8##\spwi812d.eff~     ~override~
+COPY ~spell_rev\spwi8##\spwi812i.eff~     ~override~
 
 COPY ~spell_rev\spwi8##\spwi813.spl~     ~override~  // Maze
   SAY NAME1 @789    SAY UNIDENTIFIED_DESC @790
