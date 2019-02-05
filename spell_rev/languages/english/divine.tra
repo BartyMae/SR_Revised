@@ -276,6 +276,7 @@ Saving Throw: None
 
 When this spell is cast, a misty bank of fog billows out from the designated point, obscuring all sight. Everyone within the cloud suffers a -2 penalty to THAC0 while their visibility range is reduced by half, and anyone inside or outside the cloud trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to THAC0. Creatures that do not rely on sight can fight within the cloud without penalties.~
 
+
 /*------------------Level 2------------------*/
 
 @31=~Aid~
@@ -558,6 +559,7 @@ War Dog (2 HD):
 
 Special Characteristics:
  Scent: detects invisible creatures within 10'~
+
 
 /*------------------Level 3------------------*/
 
@@ -1599,6 +1601,7 @@ Saving Throw: None
 
 When this spell is cast, the caster causes all friendly animals within range to become tougher and more tenacious, granting them a +2 bonus to THAC0, damage, AC, and saving throws. The spell also increases their hit points by 50%, and these bonus hit points are lost first when they take damage. Multiple castings of this spell are not cumulative.~
 
+
 /*------------------Level 6------------------*/
 
 @191=~Aerial Servant~
@@ -1970,7 +1973,7 @@ Saving Throw: None
 
 This powerful abjuration spell causes spells cast against the priest to be absorbed and consumed. This affects a total of 99 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 9th level spell. This spell will not protect the caster from a dispel magic, but it will not be affected by a dispel magic, either.
 
-This spell also grants protection from spells cast from scrolls and innate spell-like abilities, but will not protect against area of effect spells that are not centered directly upon the priest (such as Fireball), or stationary area of effect spells (such as Cloudkill and Stinking Cloud).~
+Spells cast from scrolls and innate spell-like abilities are also absorbed, but stationary area of effect spells such as Ice Storm or Cloudkill are not.~
 
 @233=~Summon Shambling Mound~
 @234=~Summon Shambling Mound
