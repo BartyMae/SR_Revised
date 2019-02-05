@@ -1183,7 +1183,8 @@ COPY ~spell_rev\sppr7##\sppr720.spl~     ~override~  // Earthquake
 COPY ~spell_rev\sppr7##\sppr720d.spl~     ~override~
 COPY ~spell_rev\sppr7##\sppr720e.spl~     ~override~
 COPY ~spell_rev\sppr7##\dvpr720.spl~     ~override~
-COPY ~spell_rev\sppr7##\dvquake.eff~     ~override~
+COPY ~spell_rev\sppr7##\dvpr720d.eff~     ~override~
+COPY ~spell_rev\sppr7##\dvpr720i.eff~     ~override~
 
 
 /*-----------------------Level 8-----------------------*/
