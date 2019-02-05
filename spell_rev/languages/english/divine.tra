@@ -1769,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the target, causing them to suffer a permanent -1 penalty to strength, dexterity, and constitution instantly as well as every other round after for one turn, during which time they will be slowed. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~
+Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the target, causing them to suffer a permanent -1 penalty to strength, dexterity, and constitution instantly as well as every other round after for one turn, during which time they will be slowed. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall
