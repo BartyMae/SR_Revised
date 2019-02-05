@@ -1,10 +1,10 @@
 ACTION_IF  FILE_EXISTS_IN_GAME ~spcl907.spl~ BEGIN                     // hardiness
 COPY_EXISTING ~spcl907.spl~ ~override~
 SAY NAME1 @9000    SAY UNIDENTIFIED_DESC @9001
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 86 parameter1 = 20 END
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 87 parameter1 = 20 END
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 88 parameter1 = 20 END
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 89 parameter1 = 20 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 86 parameter1 = 25 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 87 parameter1 = 25 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 88 parameter1 = 25 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 89 parameter1 = 25 END
 LPF CLONE_EFFECT INT_VAR match_opcode = 86 opcode = 27 parameter2 = 0 END
 LPF CLONE_EFFECT INT_VAR match_opcode = 86 opcode = 28 parameter2 = 0 END
 LPF CLONE_EFFECT INT_VAR match_opcode = 86 opcode = 29 parameter2 = 0 END
@@ -16,10 +16,10 @@ END
 
 ACTION_IF  FILE_EXISTS_IN_GAME ~spwish12.spl~ BEGIN                     // hardiness wish
 COPY_EXISTING ~spwish12.spl~ ~override~
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 86 parameter1 = 20 END
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 87 parameter1 = 20 END
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 88 parameter1 = 20 END
-LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 89 parameter1 = 20 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 86 parameter1 = 25 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 87 parameter1 = 25 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 88 parameter1 = 25 END
+LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 89 parameter1 = 25 END
 LPF CLONE_EFFECT INT_VAR match_opcode = 86 opcode = 27 parameter2 = 0 END
 LPF CLONE_EFFECT INT_VAR match_opcode = 86 opcode = 28 parameter2 = 0 END
 LPF CLONE_EFFECT INT_VAR match_opcode = 86 opcode = 29 parameter2 = 0 END
