@@ -309,11 +309,11 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr210 END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi301.spl~ THEN BEGIN  // Clairvoyance
+/*ACTION_IF FILE_EXISTS_IN_GAME ~spwi301.spl~ THEN BEGIN  // Clairvoyance, disabled for the time being as it immediately dispels itself for unknown reasons
 COPY_EXISTING ~spwi301.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi301 END
-END
+END*/
 
 /*ACTION_IF FILE_EXISTS_IN_GAME ~spwi305.spl~ THEN BEGIN  // Haste (disabled because of other immunities)
 COPY_EXISTING ~spwi305.spl~ ~override~
