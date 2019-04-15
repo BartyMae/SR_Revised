@@ -218,7 +218,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Casting a Goodberry spell creates 5 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 1 hit point and an additional hit point for every four extra experience levels of the caster, up to a maximum of 5 at 17th level. The berries last for 24 hours or until eaten.~
+Casting a Goodberry spell creates 5 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 1 hit point and an additional hit point for every three extra experience levels of the caster, up to a maximum of 5 at 13th level. The berries last for 24 hours or until eaten.~
 
 @315=~Cause Light Wounds~
 @316=~Cause Light Wounds
@@ -231,7 +231,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Light Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 1D10 + 1/level levels magic damage, up to a maximum of 1D10 + 10 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Light Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 1D10 + 1/level magic damage, up to a maximum of 1D10 + 10 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @319=~Animal Summoning I~
 @320=~Animal Summoning I
@@ -359,7 +359,7 @@ Saving Throw: None
 
 With this spell, the caster causes a blazing ray of red-hot fire to spring forth from their hand, dealing 2D6 + 1 fire damage upon a successful hit. The caster wields this blade-like ray as if proficient with the weapon and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every three extra experience levels of the caster, up to a maximum of +3 at 9th level. Since the blade is immaterial, strength modifiers do not apply to THAC0 or damage, and attacks with the flame blade are considered melee touch attacks (+4 bonus to THAC0). The flame blade can be used only by the caster, and remains in their hand for the duration of the spell.~
 
-@43=~Goodberry~
+@43=~Goodberry~ // Disabled
 @44=~Goodberry
 Level: 2
 School: Alteration
@@ -450,7 +450,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-By calling upon their deity, the caster of a Spiritual Hammer spell brings into existence a field of force shaped vaguely like a hammer. For as long as the caster concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, dealing 1D8 + 1 magic damage upon a successful hit. The caster wields the spiritual hammer as if proficient and at their normal base THAC0, and it functions as a magical weapon with an enchantment bonus of +1 (with appropriate THAC0 and damage bonuses). Starting at level 5, this enchantment level increases by one for every five experience levels of the caster, up to a maximum of +5 at 25th level. Due to its ethereal nature, strength modifiers do not apply to THAC0 or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 bonus to THAC0). The spiritual hammer can be used only by the caster, and remains in their hand for the duration of the spell.~
+By calling upon their deity, the caster of a Spiritual Hammer spell brings into existence a field of force shaped vaguely like a hammer. For as long as the caster concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, dealing 1D8 + 1 magic damage upon a successful hit. The caster wields the spiritual hammer as if proficient and at their normal base THAC0, and it functions as a magical weapon with an enchantment bonus of +1 (with appropriate THAC0 and damage bonuses). Starting at level 5, this enchantment level increases by one for every five extra experience levels of the caster, up to a maximum of +5 at 25th level. Due to its ethereal nature, strength modifiers do not apply to THAC0 or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 bonus to THAC0). The spiritual hammer can be used only by the caster, and remains in their hand for the duration of the spell.~
 
 @57=~Draw Upon Divine Might~
 @58=~Draw Upon Divine Might
