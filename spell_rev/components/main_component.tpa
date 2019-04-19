@@ -1372,6 +1372,8 @@ COPY ~spell_rev\spwi1##\scrl1v.itm~     ~override~  // vanilla's Dimension Door 
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
 COPY ~spell_rev\spwi1##\scrl1v.itm~     ~override\bgscrl1v.itm~  // BGT's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
+COPY ~spell_rev\spwi1##\scrl1v.itm~     ~override\scrl1v_.itm~  // EET's Dimension Door scroll
+  SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
 
 COPY ~spell_rev\spwi1##\spwi110.spl~     ~override~  // Identify
   SAY NAME1 @417    SAY UNIDENTIFIED_DESC @418
@@ -1683,6 +1685,8 @@ COPY ~spell_rev\spwi2##\spwi221.spl~     ~override~  // Ray of Enfeeblement
   SAY NAME1 @487    SAY UNIDENTIFIED_DESC @488
 COPY ~spell_rev\spwi2##\scrl6f.itm~     ~override~
   SAY NAME2 @487    SAY IDENTIFIED_DESC   @488
+COPY ~spell_rev\spwi2##\scrl6f.itm~     ~override\scrlai.itm~ // BG1 scroll
+  SAY NAME2 @487    SAY IDENTIFIED_DESC   @488
 
 COPY ~spell_rev\spwi2##\spwi222.spl~     ~override~  // Chaos Shield
   SAY NAME1 @489    SAY UNIDENTIFIED_DESC @490
@@ -1845,15 +1849,10 @@ COPY ~spell_rev\spwi3##\spwi314i.eff~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi315.spl~     ~override~  // Wraithform (restored alteration spell)
   SAY NAME1 @1025    SAY UNIDENTIFIED_DESC @1026
-COPY ~spell_rev\spwi3##\u!scrl03.itm~     ~override~  // Unfinished Business scroll
+COPY ~spell_rev\spwi3##\scrl1r.itm~     ~override~
   SAY NAME2 @1025    SAY IDENTIFIED_DESC   @1026
-ACTION_IF (FILE_EXISTS_IN_GAME ~sakul.cre~) BEGIN
-COPY_EXISTING sakul.cre override PATCH_IF SOURCE_SIZE>0x9b BEGIN
-    REMOVE_CRE_ITEM ~scrl1r~
-	ADD_CRE_ITEM ~u!scrl03~ #1 #0 #0 NONE INV
-  END
-  BUT_ONLY
-END
+COPY ~spell_rev\spwi3##\scrl1r.itm~     ~override\u!scrl03.itm~  // Unfinished Business scroll
+  SAY NAME2 @1025    SAY IDENTIFIED_DESC   @1026
 
 COPY ~spell_rev\spwi3##\spwi316.spl~     ~override~  // Dire Charm
   SAY NAME1 @529    SAY UNIDENTIFIED_DESC @530
