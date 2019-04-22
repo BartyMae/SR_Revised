@@ -2751,7 +2751,14 @@ COPY ~spell_rev\spwi7##\spwi722.spl~     ~override~  // Limited Wish
   SAY NAME1 @759    SAY UNIDENTIFIED_DESC @760
 COPY ~spell_rev\spwi7##\scrla4.itm~     ~override~
   SAY NAME2 @759    SAY IDENTIFIED_DESC   @760
-COPY ~spell_rev\spwi7##\spin734.spl~     ~override~  // Mass Heal (Limited Wish)
+COPY ~spell_rev\spwi7##\spin731.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin732.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin733.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin734.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin735.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin736.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin737.spl~     ~override~
+COPY ~spell_rev\spwi7##\spin738.spl~     ~override~
 
 COPY ~spell_rev\spwi7##\spwi723.spl~     ~override~  // Improved Chaos Shield
   SAY NAME1 @761    SAY UNIDENTIFIED_DESC @762
