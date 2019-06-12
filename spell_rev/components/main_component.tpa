@@ -2807,6 +2807,7 @@ COPY ~spell_rev\spwi8##\spwi807.spl~     ~override~  // Summon Fiend
   SAY NAME1 @777    SAY UNIDENTIFIED_DESC @778
 COPY ~spell_rev\spwi8##\scrl9b.itm~     ~override~
   SAY NAME2 @777    SAY IDENTIFIED_DESC   @778
+COPY ~spell_rev\spwi8##\spfiend.eff~     ~override~
 COPY ~spell_rev\spwi8##\demglasu.cre~     ~override~
   SAY NAME1 @9191   SAY NAME2 @9191
 COPY ~spell_rev\spwi8##\demglasu.itm~     ~override~
@@ -2929,6 +2930,7 @@ COPY ~spell_rev\spwi9##\spwi905.spl~     ~override~  // Gate
   SAY NAME1 @815    SAY UNIDENTIFIED_DESC @816
 COPY ~spell_rev\spwi9##\scrl9n.itm~     ~override~
   SAY NAME2 @815    SAY IDENTIFIED_DESC   @816
+COPY ~spell_rev\spwi9##\spgate.eff~     ~override~
 COPY ~spell_rev\spwi9##\dempitsu.cre~     ~override~
   SAY NAME1 @9196   SAY NAME2 @9196
 COPY ~spell_rev\spwi9##\dempitsu.itm~     ~override~
