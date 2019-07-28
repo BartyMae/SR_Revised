@@ -2146,9 +2146,9 @@ Wyvern (7 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Entangle, Grease, Hold, Sleep, Slow, Stun, and Web
- Wyvern Bite: target suffers 1 poison damage every second for 2 rounds (save vs. poison at -2 neg.)
- Wyvern Stinger: target suffers 2 poison damage every second for 5 rounds (save vs. poison at -4 neg.)
+ Protected Against: Entangle, Grease, Hold, Poison, Sleep, Slow, Stun, and Web
+ Wyvern Bite: target suffers 2 poison damage every second for 2 rounds (save vs. poison at -2 neg.)
+ Wyvern Stinger: target suffers 3 poison damage every second for 5 rounds (save vs. poison at -4 neg.)
 
 Greater Wyvern (9 HD):
  ST16, DE12, CO15, IN6, WI12, CH9
@@ -2160,9 +2160,9 @@ Greater Wyvern (9 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Entangle, Grease, Hold, Sleep, Slow, Stun, and Web
- Wyvern Bite: target suffers 1 poison damage every second for 2 rounds (save vs. poison at -2 neg.)
- Wyvern Stinger: target suffers 2 poison damage every second for 5 rounds (save vs. poison at -4 neg.)~
+ Protected Against: Entangle, Grease, Hold, Poison, Sleep, Slow, Stun, and Web
+ Wyvern Bite: target suffers 2 poison damage every second for 2 rounds (save vs. poison at -2 neg.)
+ Wyvern Stinger: target suffers 3 poison damage every second for 5 rounds (save vs. poison at -4 neg.)~
 
 @697=~Conjure Fire Elemental~
 @698=~Conjure Fire Elemental
