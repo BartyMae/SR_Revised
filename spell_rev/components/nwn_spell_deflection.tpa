@@ -56,7 +56,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 //~spwi106~ => 1 // obscuring mist
 ~spwi116~ => 1 // sleep
 ~spwi205~ => 1 // horror
-~spwi223~ => 1 // deafness
+~spwi223~ => 1 // sound burst
 ~spwi224~ => 1 // glitterdust
 ~spwi306~ => 1 // hold person
 ~spwi312~ => 1 // slow
@@ -71,7 +71,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 //~spwi615~ => 1 // chain lightning
 //~spwi711~ => 1 // chaos
 ~spwi720~ => 1 // control undead
-~spwi811~ => 1 // symbol of 
+~spwi811~ => 1 // symbol of pain
 ~spwi812~ => 1 // abi-dalzim's horrid wilting
 ~spwi816~ => 1 // symbol of stun
 ~spwi817~ => 1 // symbol of death
