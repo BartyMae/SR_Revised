@@ -102,7 +102,7 @@ COPY ~spell_rev\shared\dvtsight.spl~     ~override~
 COPY ~spell_rev\shared\dvdinvis.spl~     ~override~  // Item Detect Invisibility
 COPY ~spell_rev\shared\dvdinvis.eff~     ~override~
 
-COPY ~spell_rev\shared\new_bams~         ~override~  // Bams for new spells
+COPY ~spell_rev\shared\bams~             ~override~  // Bams for new spells
 
 
 /* ----Projectiles---- */
