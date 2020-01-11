@@ -1,3 +1,12 @@
+INCLUDE ~spell_rev\lib\manage_add_spell_references.tpa~
+
+LAF GET_NEW_SPELL_RESREFS RET_ARRAY new_spell_resrefs END
+
+OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~sppr116~)
+OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~sppr216~)
+OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~sppr620~)
+OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~spwi427~)
+//OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~spwi524~)
 
 ACTION_CLEAR_ARRAY spell
 
@@ -65,7 +74,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~spwi411~ => 1 // emotion despair
 ~spwi412~ => 1 // greater malison
 //~spwi421~ => 1 // teleport field
-~spwi427~ => 1 // vitriolic sphere
+~%spwi427%~ => 1 // vitriolic sphere
 ~spwi507~ => 1 // hold monster
 ~spwi508~ => 1 // waves of fatigue
 //~spwi615~ => 1 // chain lightning
@@ -86,14 +95,16 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 //SRR additions
 ~spcl742~ => 1 // priest of lathander's halt undead
 ~spin105~ => 1 // bhaalspawn's horror
-~sppr114~ => 1 // fearie fire
+~%sppr116%~ => 1 // fearie fire
+//~sppr121~ => 1 // gust of wind // stationary
 ~sppr211~ => 1 // silence
-~sppr216~ => 1 // fire trap
-//~sppr218~ => 1 // gust of wind
-//~sppr418~ => 1 // ice storm
-~sppr620~ => 1 // banishment
+~%sppr216%~ => 1 // fire trap
+//~sppr325~ => 1 // spike growth // stationary
+//~sppr418~ => 1 // ice storm // stationary
+~%sppr620%~ => 1 // banishment
 ~sppr720~ => 1 // earthquake
 ~spwi103~ => 1 // burning hands
+//~spwi106~ => 1 // obscuring mist // stationary
 ~spwi605~ => 1 // banishment
 
 END

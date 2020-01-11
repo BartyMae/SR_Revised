@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 //MODDER
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 Beta 16 (Revised V1.1.0)~
+VERSION ~v4 Beta 18 (Revised V1.2.0)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -77,6 +77,17 @@ LAF detectable_spells
     fix_old_ds = 0
   STR_VAR
     table = ~spell_rev/lib/ds_sr_extra.2da~
+END
+
+// Remove Disabled Spells from Spell Selection Screens (Chargen, Sorcerer Level-Up)
+ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
+  COPY ~spell_rev/shared/hidespl_tobex.2da~ ~override/hidespl.2da~
+END
+ELSE ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN
+  COPY ~spell_rev/shared/hidespl_bgee.2da~ ~override/hidespl.2da~
+END
+ELSE ACTION_IF GAME_IS ~iwdee~ BEGIN
+  COPY ~spell_rev/shared/hidespl_iwdee.2da~ ~override/hidespl.2da~
 END
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
@@ -154,18 +165,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 BEGIN @10005
 DESIGNATED 50
-REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
-REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
-
-ACTION_IF FILE_EXISTS ~tobex_ini/tobexcore.ini~ BEGIN
-  COPY ~spell_rev/shared/hidespl_tobex.2da~ ~override/hidespl.2da~
-END
-ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN
-  COPY ~spell_rev/shared/hidespl_bgee.2da~ ~override/hidespl.2da~
-END
-ACTION_IF GAME_IS ~iwdee~ BEGIN
-  COPY ~spell_rev/shared/hidespl_iwdee.2da~ ~override/hidespl.2da~
-END
+DEPRECATED ~This feature is now included in the main component of the mod.~
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
@@ -191,23 +191,25 @@ BEGIN @10006
 DESIGNATED 60
 REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
 REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
-//FORBID_COMPONENT ~Setup-Divine_Remix.tp2~ 0 @10103 // ~This component will not work properly with Divine Remix installed.~
-// let's still handle arcane spellbooks... see below
 
 PRINT @10104 // ~Patching spellbooks of joinable NPCs, this may take a moment...~
 
-//INCLUDE ~spell_rev/lib/joinable_npcs.tpa~
+// generate list of joinable NPCs
+INCLUDE ~spell_rev/lib/joinable_npcs.tpa~
+LAM ~JOINABLE_NPC_ARRAYS~
 
 // remove old spells, add new ones
 
-INCLUDE ~spell_rev/components/fix_spellbooks.tpa~
-INCLUDE ~spell_rev/components/fix_spellbooks_arcane.tpa~
-
-/*ACTION_IF NOT MOD_IS_INSTALLED ~Divine_Remix~ ~0~ BEGIN
-  LAF fix_divine_spellbooks END
+ACTION_IF NOT MOD_IS_INSTALLED ~Divine_Remix~ ~0~ BEGIN
+  INCLUDE ~spell_rev/components/fix_divine_spellbooks.tpa~
 END
 
-LAF fix_arcane_spellbooks END*/
+INCLUDE ~spell_rev/components/fix_arcane_spellbooks.tpa~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 
 /*--------Revised HLAs----------------*/

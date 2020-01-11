@@ -91,42 +91,29 @@ Saving Throw: Spell negates
 
 When this spell is cast, the target is temporarily blinded for the duration of the spell. A blinded victim suffers a -10 penalty to THAC0 and decreased visibility range, but avoids all harmful effects if they successfully make a save vs. spell.~
 
-@413=~Monster Summoning I~
-@414=~Monster Summoning I
+@413000=~Friends~
+@414000=~Friends
 Level: 1
-School: Conjuration
-Range: Long
-Duration: 5 turns
-Casting Time: 1 round
-Area of Effect: Special
-Saving Throw: None
-
-By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
-
-1st: 2 gibberlings
-3rd: 3 gibberlings
-5th: 4 gibberlings
-7th: 5 gibberlings
-
-Gibberling (1 HD):
- ST10, DE10, CO10, IN6, WI7, CH4
- HP 8, AC 10, THAC0 19, APR 1
- 1D6 Piercing (Short Sword)
- Saving Throws 13/17/15/13/17, AL CN
- SR 0%, CR 0%, PR 0%, MR 0%
- FR 0%, CR 0%, ER 0%, AR 0%~
-
-@415=~Expeditious Retreat~
-@416=~Expeditious Retreat
-Level: 1
-School: Alteration
+School: Enchantment
 Range: Personal
-Duration: 5 rounds
+Duration: 5 turns
 Casting Time: 1
-Area of Effect: Special
+Area of Effect: Caster
+Saving Throw: Special
+
+This spell causes the wizard to temporarily gain a +5 bonus to charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
+
+@415000=~Protection from Petrification~
+@416000=~Protection from Petrification
+Level: 1
+School: Abjuration
+Range: Touch
+Duration: 1 hour
+Casting Time: 1
+Area of Effect: 1 creature
 Saving Throw: None
 
-When cast, this spell provides all party members in the area with amazing fleetness of foot. Their movement rate is tripled for the duration of the spell, but the excessively unnatural speed prevents them from effectively taking most other actions except for running, causing affected party members to suffer a -20 penalty to THAC0 and 100% spell failure. Multiple castings of this spell are not cumulative.~
+This spell grants the recipient immunity to all petrification attacks. This includes basilisk and medusa gaze, cursed scrolls of petrification, etc.~
 
 @563=~Dimension Jump~
 @564=~Dimension Jump
@@ -351,17 +338,42 @@ Saving Throw: None
 
 This spell allows the wizard to search out the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if they're evil, green if they're good, and white if they're neutral. Magic resistance does not affect this spell.~
 
-@413000=~Friends~
-@414000=~Friends
+@413=~Monster Summoning I~
+@414=~Monster Summoning I
 Level: 1
-School: Enchantment
-Range: Personal
+School: Conjuration
+Range: Long
 Duration: 5 turns
-Casting Time: 1
-Area of Effect: Caster
-Saving Throw: Special
+Casting Time: 1 round
+Area of Effect: Special
+Saving Throw: None
 
-This spell causes the wizard to temporarily gain a +5 bonus to charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
+By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
+
+1st: 2 gibberlings
+3rd: 3 gibberlings
+5th: 4 gibberlings
+7th: 5 gibberlings
+
+Gibberling (1 HD):
+ ST10, DE10, CO10, IN6, WI7, CH4
+ HP 8, AC 10, THAC0 19, APR 1
+ 1D6 Piercing (Short Sword)
+ Saving Throws 13/17/15/13/17, AL CN
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%~
+
+@415=~Expeditious Retreat~
+@416=~Expeditious Retreat
+Level: 1
+School: Alteration
+Range: Personal
+Duration: 5 rounds
+Casting Time: 1
+Area of Effect: Special
+Saving Throw: None
+
+When cast, this spell provides all party members in the area with amazing fleetness of foot. Their movement rate is tripled for the duration of the spell, but the excessively unnatural speed prevents them from effectively taking most other actions except for running, causing affected party members to suffer a -20 penalty to THAC0 and 100% spell failure. Multiple castings of this spell are not cumulative.~
 
 
 /*------------------Level 2------------------*/
@@ -4384,6 +4396,9 @@ Launcher: Sling~
 
 /*------------------Miscellaneous------------------*/
 
+@1025=~Familiar~
+@3527=~A vampiric touch spell is already active~
+@3583=~Saving Throws Lowered~
 @21000=~Dispelling Screen Dissipated~
 @21001=~Dispelling Screen Activated~
 @21002=~Insects Dispersed~

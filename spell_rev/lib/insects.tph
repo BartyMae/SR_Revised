@@ -25,7 +25,9 @@ insert_point = 1
    END
  BUT_ONLY
   
-COPY_EXISTING ~sppr218.spl~ ~override~ LPF ADD_SPELL_EFFECT  
+LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_GUST_OF_WIND_DRUID_VERSION~ RET spell_res END
+COPY_EXISTING ~%spell_res%.spl~ ~override~ 
+LPF ADD_SPELL_EFFECT  
       INT_VAR
    opcode = 146
    target = 1 // self
