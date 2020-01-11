@@ -108,7 +108,7 @@ This spell causes the wizard to temporarily gain a +5 bonus to charisma. Those w
 Level: 1
 School: Abjuration
 Range: Touch
-Duration: 1 hour
+Duration: 5 turns
 Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
@@ -4396,7 +4396,6 @@ Launcher: Sling~
 
 /*------------------Miscellaneous------------------*/
 
-@1025=~Familiar~
 @3527=~A vampiric touch spell is already active~
 @3583=~Saving Throws Lowered~
 @21000=~Dispelling Screen Dissipated~
