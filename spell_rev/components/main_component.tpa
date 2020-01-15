@@ -1380,7 +1380,7 @@ COPY ~spell_rev\spwi1##\dvscrl01.itm~    ~override~  // New scroll
 
 COPY ~spell_rev\spwi1##\spwi108.spl~     ~override~  // Protection from Petrification
   SAY NAME1 @415000    SAY UNIDENTIFIED_DESC @416000
-COPY ~spell_rev\spwi1##\dvscrl06.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi1##\dvscrl02.itm~    ~override~  // New scroll
   SAY NAME2 @415000    SAY IDENTIFIED_DESC @416000
 
 // SPWI109 was unused in vanilla but the bams were there
@@ -1584,7 +1584,7 @@ COPY ~spell_rev\spwi1##\spwi125i.eff~    ~override~
 
 ADD_SPELL ~spell_rev\spwi1##\spwi126.spl~ 2 1 ~WIZARD_KNOW_ALIGNMENT~  // Detect Alignment ("replaces" Detect Evil, disabled at level two)
   SAY NAME1 @453    SAY UNIDENTIFIED_DESC @454000
-COPY ~spell_rev\spwi1##\dvscrl02.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi1##\dvscrl03.itm~    ~override~  // New scroll
   SAY NAME2 @453    SAY IDENTIFIED_DESC   @454000
 
 ADD_SPELL ~spell_rev\spwi1##\spwi127.spl~ 2 1 ~WIZARD_MONSTER_SUMMONING_LEVEL_1~  // Monster Summoning I
@@ -2866,7 +2866,7 @@ APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_5% WIZARD_MONSTER_SUMMONING_LEVEL_
 
 COPY ~spell_rev\spwi8##\spwi801.spl~     ~override~  // Ghostform (new alteration spell)
   SAY NAME1 @767    SAY UNIDENTIFIED_DESC @768
-COPY ~spell_rev\spwi8##\dvscrl03.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi8##\dvscrl04.itm~    ~override~  // New scroll
   SAY NAME2 @767    SAY IDENTIFIED_DESC   @768
 APPEND ~spell.ids~ ~2801 WIZARD_GHOSTFORM~
 
@@ -2996,7 +2996,7 @@ APPEND ~spell.ids~ ~2818 WIZARD_BIGBYS_ICY_GRASP~
 
 ADD_SPELL ~spell_rev\spwi8##\spwi819.spl~ 2 8 ~WIZARD_MONSTER_SUMMONING_6~  // Monster Summoning VIII (new mage spell)
   SAY NAME1 @868    SAY UNIDENTIFIED_DESC @869
-COPY ~spell_rev\spwi8##\dvscrl04.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi8##\dvscrl05.itm~    ~override~  // New scroll
   SAY NAME2 @868   SAY IDENTIFIED_DESC   @869
 COPY ~spell_rev\spwi8##\umbhulsu.eff~    ~override~
 COPY ~spell_rev\spwi8##\umbhulsu.cre~    ~override~
@@ -3039,7 +3039,7 @@ END
 
 ADD_SPELL ~spell_rev\spwi9##\spwi906.spl~ 2 9 ~WIZARD_MONSTER_SUMMONING_7~  // Monster Summoning IX (new mage spell)
   SAY NAME1 @870    SAY UNIDENTIFIED_DESC @871
-COPY ~spell_rev\spwi9##\dvscrl05.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi9##\dvscrl06.itm~    ~override~  // New scroll
   SAY NAME2 @870    SAY IDENTIFIED_DESC   @871
 COPY ~spell_rev\spwi9##\wolfgrsu.eff~    ~override~
 COPY ~spell_rev\spwi9##\wolfgrsu.cre~    ~override~
@@ -3350,15 +3350,21 @@ END
 
 /*----------------Add New Spell Scrolls-----------------*/
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~ribald3.sto~) BEGIN
-COPY_EXISTING ~ribald3.sto~              ~override~  // Ribald's Secret Stash
+ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
+COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
+ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #1 #1 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
+ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #1 #1 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #1 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~25spell.sto~) BEGIN
-COPY_EXISTING ~25spell.sto~              ~override~  // Arcana Archives
+ACTION_IF (FILE_EXISTS_IN_GAME ~STO0703.sto~) BEGIN
+COPY_EXISTING ~STO0703.sto~              ~override~  // Sorcerous Sundries
+ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #2 #2 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
+ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #2 #2 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #2 #2 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
