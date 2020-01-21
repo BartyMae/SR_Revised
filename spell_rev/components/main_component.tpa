@@ -1384,7 +1384,7 @@ COPY ~spell_rev\spwi1##\dvscrl02.itm~    ~override~  // New scroll
   SAY NAME2 @415000    SAY IDENTIFIED_DESC @416000
 
 // SPWI109 was unused in vanilla but the bams were there
-COPY ~spell_rev\spwi1##\spwi109.spl~     ~override~  // Dimension Jump ("replaces" Dimension Door, disabled at level four)
+ADD_SPELL ~spell_rev\spwi1##\spwi109.spl~ 1 1 ~WIZARD_DIMENSION_JUMP~  // Dimension Jump ("replaces" Dimension Door, disabled at level four)
   SAY NAME1 @563    SAY UNIDENTIFIED_DESC @564
 COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override~  // vanilla's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
@@ -1392,7 +1392,6 @@ COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override\bgscrl1v.itm~  // BGT's Dimen
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
 COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override\scrl1v_.itm~  // EET's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
-APPEND ~spell.ids~ ~2109 WIZARD_DIMENSION_JUMP~
 
 COPY ~spell_rev\spwi1##\spwi110.spl~     ~override~  // Identify
   SAY NAME1 @417    SAY UNIDENTIFIED_DESC @418
