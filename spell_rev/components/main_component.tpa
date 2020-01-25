@@ -318,6 +318,8 @@ COPY ~spell_rev\shared\spin121.spl~      ~override~  // Protection from Evil
 
 COPY ~spell_rev\shared\spin113.spl~      ~override~  // Branwen Spiritual Hammer
   SAY NAME1 @55    SAY UNIDENTIFIED_DESC @56
+COPY ~spell_rev\shared\spin114.spl~      ~override~  // Faldorn Summon Dread Wolf
+//  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spin676.spl~      ~override~  // Mazzy Invoke Courage
 //  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spin826.spl~      ~override~  // Mazzy Strength
