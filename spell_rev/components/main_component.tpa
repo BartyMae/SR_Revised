@@ -311,15 +311,28 @@ COPY ~spell_rev\shared\spra303.spl~      ~override~  // Protection from Missiles
 COPY ~spell_rev\shared\spcl233.spl~      ~override~  // Magic Circle Against Evil
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
 
-COPY ~spell_rev\shared\spin120.spl~      ~override~  // Detect Evil
-//  SAY NAME1 @0     SAY UNIDENTIFIED_DESC @0
-COPY ~spell_rev\shared\spin121.spl~      ~override~  // Protection from Evil
-  SAY NAME1 @13    SAY UNIDENTIFIED_DESC @14
-
+ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN
+COPY ~spell_rev\shared\spin108.spl~      ~override~  // Safana Charm Person
+  SAY NAME1 @407    SAY UNIDENTIFIED_DESC @408
+END
+COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
 COPY ~spell_rev\shared\spin113.spl~      ~override~  // Branwen Spiritual Hammer
   SAY NAME1 @55    SAY UNIDENTIFIED_DESC @56
 COPY ~spell_rev\shared\spin114.spl~      ~override~  // Faldorn Summon Dread Wolf
 //  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
+COPY ~spell_rev\shared\spin115.spl~      ~override~  // Tiax Summon Ghast
+//  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
+COPY ~spell_rev\shared\spin118.spl~      ~override~  // Quayle Invisibility
+  SAY NAME1 @459    SAY UNIDENTIFIED_DESC @460
+/*
+COPY ~spell_rev\shared\spin109.spl~      ~override~  // Ajantis Lay on Hands
+  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
+*/
+COPY ~spell_rev\shared\spin120.spl~      ~override~  // Ajantis Detect Evil
+//  SAY NAME1 @0     SAY UNIDENTIFIED_DESC @0
+COPY ~spell_rev\shared\spin121.spl~      ~override~  // Ajantis Protection from Evil
+  SAY NAME1 @13    SAY UNIDENTIFIED_DESC @14
 COPY ~spell_rev\shared\spin676.spl~      ~override~  // Mazzy Invoke Courage
 //  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spin826.spl~      ~override~  // Mazzy Strength
