@@ -517,7 +517,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Special
 
-This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as tiny insects in the caster's current area.~
+This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
 
 @317=~Cause Moderate Wounds~
 @318=~Cause Moderate Wounds
@@ -873,7 +873,7 @@ Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-This spell surrounds the caster with invisible curtains of stormy winds that move with them. Non-magical missile weapons are deflected away while gases cannot penetrate the barrier, and the wind wall also grants the caster a +3 bonus to saving throws vs. breath and a +4 bonus to AC vs. missile. Tiny insects cannot pass through the storm shield. Multiple castings of this spell are not cumulative.~
+This spell surrounds the caster with invisible curtains of stormy winds that move with them. Non-magical missile weapons are deflected away while gases cannot penetrate the barrier, and the wind wall also grants the caster a +3 bonus to saving throws vs. breath and a +4 bonus to AC vs. missile. Insect swarms cannot pass through the storm shield. Multiple castings of this spell are not cumulative.~
 
 @305=~Regenerate Serious Wounds~
 @306=~Regenerate Serious Wounds
@@ -2542,7 +2542,7 @@ Casting Time: 5
 Area of Effect: 10' radius
 Saving Throw: None
 
-This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 5 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Tiny insects cannot pass through the aura. Magic resistance does not affect this spell.~
+This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 5 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell.~
 
 @291=~Fire Elemental Transformation~
 @292=~Fire Elemental Transformation
