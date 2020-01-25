@@ -311,7 +311,7 @@ COPY ~spell_rev\shared\spra303.spl~      ~override~  // Protection from Missiles
 COPY ~spell_rev\shared\spcl233.spl~      ~override~  // Magic Circle Against Evil
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
 
-ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt tutu tutu_totsc~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
 COPY ~spell_rev\shared\spin108.spl~      ~override~  // Safana Charm Person
   SAY NAME1 @407    SAY UNIDENTIFIED_DESC @408
 END
@@ -337,6 +337,10 @@ COPY ~spell_rev\shared\spin676.spl~      ~override~  // Mazzy Invoke Courage
 //  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spin826.spl~      ~override~  // Mazzy Strength
 //  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
+/*
+COPY ~spell_rev\shared\spin827.spl~      ~override~  // Mazzy Lay on Hands
+  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
+*/
 COPY ~spell_rev\shared\spin828.spl~      ~override~  // Mazzy Haste
   SAY NAME1 @509    SAY UNIDENTIFIED_DESC @510
 
