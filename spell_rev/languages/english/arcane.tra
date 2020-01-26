@@ -3632,6 +3632,7 @@ Imp (3 HD):
 Special Characteristics:
  Magic Resistance: 25%
  Regeneration: 1 hp/round
+ Dire Charm (1x per day)
  Web (1x per day)
 
 Weight: 5
@@ -3651,6 +3652,7 @@ Special Characteristics:
  Magic Resistance: 50%
  Regeneration: 1 hp/round
  Protected Against: Normal Weapons
+ Dire Charm (1x per day)
  Web (3x per day)
  Polymorph Self (1x per day)
 
@@ -3735,7 +3737,7 @@ Special Characteristics:
  Protected Against: Normal Weapons
  Toxins: target suffers 1 poison damage every second for 1 round (save vs. poison neg.)
  Blur (1x per day)
- Horror (1x per day)
+ Horror (3x per day)
  Chaos (1x per day)
 
 Weight: 5
