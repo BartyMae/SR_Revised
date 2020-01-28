@@ -209,7 +209,7 @@ Casting Time: 1
 Area of Effect: 30' radius
 Saving Throw: Spell negates
 
-When a wizard casts this spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically-induced sleep.~
+When a wizard casts this spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.~
 
 @431=~Chill Touch~
 @432=~Chill Touch
@@ -253,7 +253,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-With this spell, the wizard drains the life force from a creature and adds it to their own. The target suffers 2 magic damage, which  increases by 2 for every two extra experience levels of the caster, up to a maximum of 10 at 9th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn.~
+With this spell, the wizard drains the life force from a creature and adds it to their own. The target suffers 2 magic damage, which  increases by 2 for every two extra experience levels of the caster, up to a maximum of 10 at 9th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.~
 
 @437=~Reflected Image~
 @438=~Reflected Image
@@ -592,7 +592,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-When this power word is uttered, the target enters a comatose slumber for 5 rounds. The target can save vs. spell at a -2 penalty to avoid the effect, though creatures with 1 to 19 hit points are powerless to resist. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect. Elves and half-elves are particularly resistant to sleep effects, while the undead and other certain creatures such as dragons and elementals are completely immune to magically-induced sleep.~
+When this power word is uttered, the target enters a comatose slumber for 5 rounds. The target can save vs. spell at a -2 penalty to avoid the effect, though creatures with 1 to 19 hit points are powerless to resist. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.~
 
 @487=~Ray of Enfeeblement~
 @488=~Ray of Enfeeblement
@@ -904,7 +904,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the target suffers 3 hit points for every two experience levels of the caster, up to a maximum of 30 at 20th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn.
+When this spell is cast, the target suffers 3 hit points for every two experience levels of the caster, up to a maximum of 30 at 20th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.~
 
 NOTE: This may spell may not be cast multiple times to radically increase the caster's maximum hit points. However, the caster may still use the spell to heal themselves even while another instance of the spell is in effect.~
 
@@ -3198,7 +3198,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process drains the target of 4 levels of experience, causing them to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. The target's magic resistance, if any, does not affect this spell.
+The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process drains the target of 4 levels of experience, causing them to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. The target's magic resistance, if any, does not affect this spell. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.
 
 NOTE: This may spell may not be cast multiple times to radically increase the caster's abilities. However, the caster may still use the spell to heal themselves even while another instance of the spell is in effect.~
 

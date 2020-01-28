@@ -376,6 +376,7 @@ COPY ~spell_rev\sppr1##\sppr101.spl~     ~override~  // Bless
 
 COPY ~spell_rev\sppr1##\sppr102.spl~     ~override~  // Command
   SAY NAME1 @3     SAY UNIDENTIFIED_DESC @4
+COPY ~spell_rev\sppr1##\sppr102i.eff~     ~override~
 
 COPY ~spell_rev\sppr1##\sppr103.spl~     ~override~  // Cure Light Wounds
   SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
@@ -834,6 +835,7 @@ COPY ~spell_rev\sppr4##\dvnymph.bcs~     ~override~
 
 COPY ~spell_rev\sppr4##\sppr411.spl~     ~override~  // Poison
   SAY NAME1 @131    SAY UNIDENTIFIED_DESC @132
+COPY ~spell_rev\sppr4##\sppr411i.eff~     ~override~
 
 COPY ~spell_rev\sppr4##\sppr412.spl~     ~override~  // Divine Power (renamed from Holy Power)
   SAY NAME1 @133    SAY UNIDENTIFIED_DESC @134
@@ -957,6 +959,7 @@ COPY ~spell_rev\sppr5##\sppr512f.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr512g.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr512h.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr512i.spl~    ~override~
+COPY ~spell_rev\sppr5##\sppr512i.eff~     ~override~
 
 COPY ~spell_rev\sppr5##\sppr513.spl~     ~override~  // Righteous Fury (previously named Righteous Magic)
   SAY NAME1 @175    SAY UNIDENTIFIED_DESC @176
@@ -3124,7 +3127,7 @@ COPY ~spell_rev\spwi9##\spwi914.spl~     ~override~  // Larloch's Energy Drain
 COPY ~spell_rev\spwi9##\spwi914d.spl~    ~override~
 COPY ~spell_rev\spwi9##\scrl9w.itm~      ~override~
   SAY NAME2 @831    SAY IDENTIFIED_DESC   @832
-COPY ~spell_rev\spwi9##\dvenerdr.eff~    ~override~
+COPY ~spell_rev\spwi9##\spwi914i.eff~    ~override~
 
 COPY ~spell_rev\spwi9##\spwi915.spl~     ~override~  // Black Blade of Disaster
   SAY NAME1 @833    SAY UNIDENTIFIED_DESC @834

@@ -24,7 +24,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-This spell enables the priest to command another creature to lie down and take no action (sleep) for a single round. The target has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level.~
+This spell enables the priest to command another creature to lie down and take no action (sleep) for a single round. The target has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.
 
 @5=~Cure Light Wounds~
 @6=~Cure Light Wounds
@@ -938,7 +938,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following turn, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. Upon each failed saving throw, the target will also be stricken with a terrible sluggishness for the following 2 rounds. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
+This spell causes a major disease and weakness in a creature. For the following turn, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. Upon each failed saving throw, the target will also be stricken with a terrible sluggishness for the following 2 rounds. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as slimes, elementals, and golems are completely immune to disease.~
 
 @75000=~Dispel Magic~
 @76000=~Dispel Magic
@@ -1454,7 +1454,7 @@ Casting Time: 1
 Area of Effect: Target, and enemies within 20'
 Saving Throw: Special
 
-As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After one turn, any creatures still sleeping will awaken.~
+As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After one turn, any creatures still sleeping will awaken.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.
 
 @175=~Righteous Fury~
 @176=~Righteous Fury
