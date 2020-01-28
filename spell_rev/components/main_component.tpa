@@ -759,11 +759,9 @@ COPY ~spell_rev\sppr3##\dvicespr.wav~    ~override~
 ADD_SPELL ~spell_rev\sppr3##\sppr327.spl~ 1 3 ~CLERIC_TRUE_DISPEL_MAGIC~  // Dispel Magic (added to spellbook)
   SAY NAME1 @75000    SAY UNIDENTIFIED_DESC @76000
 
-/*
 ADD_SPELL ~spell_rev\sppr3##\sppr328.spl~ 1 3 ~CLERIC_CONTAGION~  // Contagion (added to spellbook)
   SAY NAME1 @91    SAY UNIDENTIFIED_DESC @92
 COPY ~spell_rev\sppr3##\dvcontag.spl~    ~override~
-*/
 
 
 /*-----------------------Level 4-----------------------*/

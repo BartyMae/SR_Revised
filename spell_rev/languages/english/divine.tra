@@ -933,12 +933,12 @@ Level: 3
 School: Necromancy
 Sphere: Necromantic
 Range: Short
-Duration: 8 hours
+Duration: Special
 Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. Every round, the targeted victim must make a save vs. poison at a -2 penalty or suffer a -1 penalty to strength, dexterity, constitution, and charisma, up to a maximum of -5. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~
+This spell causes a major disease and weakness in a creature. For the following turn, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. Upon each failed saving throw, the target will also be stricken with a terrible sluggishness for the following 2 rounds. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
 
 @75000=~Dispel Magic~
 @76000=~Dispel Magic
@@ -1769,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the target, causing them to suffer a permanent -1 penalty to strength, dexterity, and constitution instantly as well as every other round after for one turn, during which time they will be slowed. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
+Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to strength, dexterity, constitution, and charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall

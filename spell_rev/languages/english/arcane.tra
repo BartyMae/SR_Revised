@@ -1170,12 +1170,12 @@ It is important to note that this will not protect the wizard from any area of e
 Level: 4
 School: Necromancy
 Range: Short
-Duration: 8 hours
+Duration: Special
 Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. Every round, the targeted victim must make a save vs. poison at a -2 penalty or suffer a -1 penalty to strength, dexterity, constitution, and charisma, up to a maximum of -5. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~
+This spell causes a major disease and weakness in a creature. For the following turn, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. Upon each failed saving throw, the target will also be stricken with a terrible sluggishness for the following 2 rounds. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
 
 @579=~Break Enchantment~
 @580=~Break Enchantment
