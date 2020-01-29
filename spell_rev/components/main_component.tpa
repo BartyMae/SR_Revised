@@ -3372,6 +3372,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
   END
 END
 
+
 /*----------------Add New Spell Scrolls-----------------*/
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
@@ -3393,6 +3394,7 @@ ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 De
   END
   BUT_ONLY_IF_IT_CHANGES
 END
+
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
@@ -3425,6 +3427,7 @@ END
 INCLUDE ~spell_rev/lib/d5_spell_school_list.tpa~
 INCLUDE ~spell_rev/lib/d5_set_spell_schools.tpa~
 LAF set_spell_schools END
+
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
