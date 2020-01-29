@@ -3376,9 +3376,9 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
 COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
-ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #1 #1 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
-ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #1 #1 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #1 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
+ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
+ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
@@ -3386,9 +3386,9 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~STO0703.sto~) BEGIN
 COPY_EXISTING ~STO0703.sto~              ~override~  // Sorcerous Sundries
-ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #2 #2 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
-ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #2 #2 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #2 #2 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
+ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scroll
+ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Evil scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
