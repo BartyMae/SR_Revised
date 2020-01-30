@@ -916,7 +916,7 @@ COPY ~spell_rev\sppr5##\sppr505.spl~     ~override~  // True Seeing
 COPY ~spell_rev\sppr5##\sppr505d.spl~    ~override~
   SAY NAME1 @159
 
-COPY ~spell_rev\sppr5##\sppr506.spl~     ~override~  // Iron Skins
+COPY ~spell_rev\sppr5##\sppr506.spl~     ~override~  // Stoneskin
   SAY NAME1 @161    SAY UNIDENTIFIED_DESC @162
 
 COPY ~spell_rev\sppr5##\sppr507.spl~     ~override~  // Champion's Strength
