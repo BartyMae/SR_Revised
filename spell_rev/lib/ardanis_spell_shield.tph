@@ -64,7 +64,7 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
       spwi513 // breach
       spwi608 // pierce magic
       spwi704 // ruby ray of reversal
-      spwi705d // khelben warding whip
+      dvwardw // khelben warding whip
       spwi805 // pierce shield
       spwi903 // spellstrike
 	  dvwis26 // Wish Breach
