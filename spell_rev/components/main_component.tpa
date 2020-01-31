@@ -762,7 +762,8 @@ ADD_SPELL ~spell_rev\sppr3##\sppr327.spl~ 1 3 ~CLERIC_TRUE_DISPEL_MAGIC~  // Dis
 
 ADD_SPELL ~spell_rev\sppr3##\sppr328.spl~ 1 3 ~CLERIC_CONTAGION~  // Contagion (added to spellbook)
   SAY NAME1 @91    SAY UNIDENTIFIED_DESC @92
-COPY ~spell_rev\sppr3##\dvcontag.spl~    ~override~
+COPY ~spell_rev\sppr3##\dvconta1.spl~    ~override~
+COPY ~spell_rev\sppr3##\dvconta2.spl~    ~override~
 
 
 /*-----------------------Level 4-----------------------*/
@@ -2046,6 +2047,7 @@ COPY ~spell_rev\spwi4##\scrl2b.itm~      ~override~
 COPY ~spell_rev\spwi4##\spwi409.spl~     ~override~  // Contagion
   SAY NAME1 @577    SAY UNIDENTIFIED_DESC @578
 COPY ~spell_rev\spwi4##\spwi409d.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi409e.spl~    ~override~
 COPY ~spell_rev\spwi4##\scrla8.itm~      ~override~
   SAY NAME2 @577    SAY IDENTIFIED_DESC   @578
 
