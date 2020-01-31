@@ -640,7 +640,7 @@ Casting Time: 2
 Area of Effect: 10' radius
 Saving Throw: Special
 
-This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents in the area (-2 penalty to THAC0) for 5 rounds and reveals any opponents who are invisible. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 5 rounds. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades.~
+This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents in the area (-2 penalty to THAC0) for 5 rounds and reveals any opponents who are invisible. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 5 rounds. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades. Magic resistance does not affect this spell.~
 
 @494000=~Glitterdust
 Level: 2
@@ -651,7 +651,7 @@ Casting Time: 2
 Area of Effect: 10' radius
 Saving Throw: Special
 
-This spell creates a cloud of glittering golden particles within the area of effect. All enemies in the area must make a save vs. breath at a -2 penalty or be blinded (-4 penalty to THAC0) for 5 rounds. All within the area become covered by the dust, which cannot be removed and continues to sparkle until it fades. This dust reveals all invisible opponents in the area.~
+This spell creates a cloud of glittering golden particles within the area of effect. All enemies in the area must make a save vs. breath at a -2 penalty or be blinded (-4 penalty to THAC0) for 5 rounds. All within the area become covered by the dust, which cannot be removed and continues to sparkle until it fades. This dust reveals all invisible opponents in the area. Magic resistance does not affect this spell.~
 
 @864=~Resist Elements~
 @865=~Resist Elements
