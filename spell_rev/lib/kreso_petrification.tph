@@ -19,10 +19,10 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
         PATCH_IF opcode=134 BEGIN
 		WRITE_BYTE 0x8B "%k1#Petrify%" 
 LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 126 timing = 0 parameter1 = 50 parameter2 = 2  timing = 0 duration = 12 savingthrow = 0 silent = 1 END 
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 141 timing = 0 duration = 0 savingthrow = 0  silent = 1 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 142 timing = 0 duration = 0 parameter1 = 41 savingthrow = 0 silent = 1  END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 139 timing = 0 duration = 0 savingthrow = 0 parameter1 = 14668  silent = 1 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 146 parameter2 = 1 timing = 4 duration = 6 savingthrow = 0 STR_VAR resource = spwi604d  silent = 1 END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 141 timing = 0 duration = 12 savingthrow = 0  silent = 1 END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 142 timing = 0 duration = 12 parameter2 = 41 savingthrow = 0 silent = 1  END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 139 timing = 1 duration = 0 savingthrow = 0 parameter1 = 14668  silent = 1 END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 146 parameter2 = 1 timing = 4 duration = 12 savingthrow = 0 STR_VAR resource = spwi604d  silent = 1 END
 END
 
 END
@@ -47,10 +47,10 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
           PATCH_IF found_petrify=1 BEGIN
 		  WRITE_BYTE 0x27 "%k1#Petrify%" 
 LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 126 timing = 0 parameter1 = 50 parameter2 = 2 duration = 12 savingthrow = 0 silent = 1 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 141 timing = 0 duration = 0 savingthrow = 0  silent = 1 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 142 timing = 0 duration = 0 parameter2 = 41 savingthrow = 0 silent = 1  END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 139 timing = 0 duration = 0 savingthrow = 0 parameter1 = 14668  silent = 1 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 146 timing = 4 duration = 6 savingthrow = 0 parameter2 = 1 STR_VAR resource = spwi604d  silent = 1 END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 141 timing = 0 duration = 12 savingthrow = 0  silent = 1 END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 142 timing = 0 duration = 12 parameter2 = 41 savingthrow = 0 silent = 1  END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 139 timing = 1 duration = 0 savingthrow = 0 parameter1 = 14668  silent = 1 END
+LPF CLONE_EFFECT INT_VAR match_opcode = 134 opcode = 146 timing = 4 duration = 12 savingthrow = 0 parameter2 = 1 STR_VAR resource = spwi604d  silent = 1 END
 END
 END
 END
@@ -88,7 +88,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.itm$~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
 LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604d silent = 1 END 
 LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604  silent = 1 END 
-//LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 134 END
+LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 134 END
  END
 BUT_ONLY
 
@@ -96,7 +96,7 @@ COPY_EXISTING_REGEXP GLOB ~.*\.spl$~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
 LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604d silent = 1 END 
 LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604  silent = 1 END
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 134 END
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 134 END
  END
 BUT_ONLY
 
@@ -113,3 +113,15 @@ LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_pa
 LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
  END
 BUT_ONLY
+
+ACTION_FOR_EACH resource IN // fix BG1 creature bows
+  ~basilg1~
+  ~basil1~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 109 END
+    END
+  END
+END
