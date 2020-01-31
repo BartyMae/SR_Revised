@@ -938,7 +938,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as slimes, elementals, and golems are completely immune to disease.~
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
 
 @75000=~Dispel Magic~
 @76000=~Dispel Magic
@@ -1140,7 +1140,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Through this spell, the caster can poison a single victim. The target suffers an initial 1D4 poison damage for every two experience levels of the caster, up to a maximum of 10D4 at 20th level. Furthermore, they will also be poisoned and suffer 1 poison damage every second for the duration of the spell. The victim cannot avoid the initial damage, but they may make a save vs. poison at a -2 penalty to negate the poison itself.~
+Through this spell, the caster can poison a single victim. The target suffers an initial 1D4 poison damage for every two experience levels of the caster, up to a maximum of 10D4 at 20th level. Furthermore, they will also be poisoned and suffer 1 poison damage every second for the duration of the spell. The victim cannot avoid the initial damage, but they may make a save vs. poison at a -2 penalty to negate the poison itself. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to poison.~
 
 @133=~Divine Power~
 @134=~Divine Power
@@ -1769,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to strength, dexterity, constitution, and charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell.~
+Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to strength, dexterity, constitution, and charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall
