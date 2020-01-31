@@ -2318,7 +2318,7 @@ COPY ~spell_rev\spwi5##\spwi509.spl~     ~override~  // Feeblemind
   SAY NAME1 @627    SAY UNIDENTIFIED_DESC @628
 COPY ~spell_rev\spwi5##\scrl5q.itm~      ~override~
   SAY NAME2 @627    SAY IDENTIFIED_DESC   @628
-COPY ~spell_rev\spwi5##\spwi509.eff~     ~override~
+COPY ~spell_rev\spwi5##\spwi509i.eff~     ~override~
 
 COPY ~spell_rev\spwi5##\spwi510.spl~     ~override~  // Dispelling Screen (replaces Spell Immunity)
   SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
