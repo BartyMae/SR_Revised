@@ -1668,7 +1668,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-Feeblemind causes the subject's intellect to degenerate into that of a simple beast of burden. The subject remains in this fugue-like state until a successful dispel magic is cast upon them. The victim must make a save vs. spell at a -2 penalty in order to resist being stupefied.~
+Feeblemind causes the subject's intellect to degenerate into that of a simple beast of burden. The subject remains in this fugue-like state until a successful dispel magic is cast upon them. The victim must make a save vs. spell at a -2 penalty in order to resist being stupefied. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to feeblemindedness.~
 
 @629=~Dispelling Screen~
 @630=~Dispelling Screen
