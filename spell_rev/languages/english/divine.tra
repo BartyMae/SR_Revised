@@ -11,7 +11,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-Upon this this spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
+Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
 
 @3=~Command~
 @4=~Command
@@ -141,7 +141,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-The caster of this spell receives significant protection against physical and magic damage. This magical armor is a force of energy that absorbs a portion of the damage intended for the caster, effectively reducing damage sustained by 10%. Multiple castings of this spell are not cumulative.~
+The caster of the Armor of Faith spell receives significant protection against physical and magic damage. This magical armor is a force of energy that absorbs a portion of the damage intended for the caster, effectively reducing damage sustained by 10%. Multiple castings of this spell are not cumulative.~
 
 @23=~Doom~
 @24=~Doom
@@ -344,7 +344,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-When a priest casts this spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to them. Once per round, all traps within a 30 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can create a sudden or unexpected result, the caster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, "traps" include glyphs and similar spells and devices.~
+When a priest casts a Find Traps spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to them. Once per round, all traps within a 30 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can create a sudden or unexpected result, the caster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, "traps" include glyphs and similar spells and devices.~
 
 @41=~Flame Blade~
 @42=~Flame Blade
@@ -398,7 +398,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the priest's eyes glow with magical energy, enabling them to read the aura of the target and determine their strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against them are made with a +2 bonus to THAC0. Certain magical devices negate the power of the Know Opponent spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
+When a Know Opponent spell is cast, the priest's eyes glow with magical energy, enabling them to read the aura of the target and determine their strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against them are made with a +2 bonus to THAC0. Certain magical devices negate the power of the Know Opponent spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
 
 @49=~Resist Elements~
 @50=~Resist Elements
@@ -1261,7 +1261,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Polymorph negates
 
-Polymorph Other is a powerful spell that permanently alters the form of the creature affected. The target's mental characteristics are not affected and they do not receive any special abilities for their new form, but physical characteristics are changed to adhere to their new form and they lose any special abilities they had in their original form. This particular version of the spell will transform the target into a squirrel unless they make a save vs. polymorph. The effectiveness of this spell is dependent upon the target's level, with weak creatures being relatively easy to transmute and more powerful creatures being very difficult. Creatures with 1-5 HD/levels make their saving throw at a -4 penalty, those with 6-10 HD/levels make their saving throw at a -2 penalty, those with 11-15 HD/levels or more make their saving throw with no penalty, and those who with more than 15 HD/levels make their saving throw at a +2 bonus. The transformation is instant and permanent, or until dispelled.
+The Polymorph Other spell is a powerful magic that permanently alters the form of the creature affected. The target's mental characteristics are not affected and they do not receive any special abilities for their new form, but physical characteristics are changed to adhere to their new form and they lose any special abilities they had in their original form. This particular version of the spell will transform the target into a squirrel unless they make a save vs. polymorph. The effectiveness of this spell is dependent upon the target's level, with weak creatures being relatively easy to transmute and more powerful creatures being very difficult. Creatures with 1-5 HD/levels make their saving throw at a -4 penalty, those with 6-10 HD/levels make their saving throw at a -2 penalty, those with 11-15 HD/levels or more make their saving throw with no penalty, and those who with more than 15 HD/levels make their saving throw at a +2 bonus. The transformation is instant and permanent, or until dispelled.
 
 Note that all clothes and equipment that the target was wearing will mold into the new form. However, they will return to their previous state once they die or the effects are dispelled.~
 
@@ -1320,7 +1320,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Breath half
 
-Upon casting this spell, a vertical column of fire roars downward, striking the target selected by the caster along with every creature within 5 feet. The affected creatures suffer 1D6 fire damage per experience level of the caster, up to a maximum of 15D6 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage. This spell will not harm party members.~
+Upon casting a Flame Strike spell, a vertical column of fire roars downward, striking the target selected by the caster along with every creature within 5 feet. The affected creatures suffer 1D6 fire damage per experience level of the caster, up to a maximum of 15D6 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage. This spell will not harm party members.~
 
 @157=~Raise Dead~
 @158=~Raise Dead
@@ -1359,7 +1359,7 @@ Casting Time: 5
 Area of Effect: Sight
 Saving Throw: None
 
-When this spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
+When a True Seeing spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
 
 NOTE: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.~
 
@@ -1402,7 +1402,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-While under the effects of this spell, the recipient becomes immune to magical commands. Charm, Command, Confusion, Domination, Hold Person, and Sleep are all spells that fit into this category. This spell also protects from psionic mind attacks such as a mind flayer's Psionic Blast, but it will not confer complete immunity to psionics.~
+While under the effects of a Chaotic Commands spell, the recipient becomes immune to magical commands. Charm, Command, Confusion, Domination, Hold Person, and Sleep are all spells that fit into this category. This spell also protects from psionic mind attacks such as a mind flayer's Psionic Blast, but it will not confer complete immunity to psionics.~
 
 @167=~Magic Resistance~
 @168=~Magic Resistance
@@ -1519,7 +1519,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 30'
 Saving Throw: Special
 
-When this spell is cast, a massive swarm of creeping, hopping, and flying insects gather, first attacking the target and then spreading to all other enemies within 30 feet of the target.
+When an Insect Plague spell is cast, a massive swarm of creeping, hopping, and flying insects gather, first attacking the target and then spreading to all other enemies within 30 feet of the target.
 
 For the duration of the spell, the affected creatures fight with a -2 penalty to THAC0 and AC. Every round, they must also make a save vs. breath at a -2 penalty or suffer 100% chance of spell failure and 4D2 piercing damage from insect bites. A successful saving throw allows those affected to avoid most of the swarm and receive only half damage while completely negating the spell failure. Magic resistance does not affect this spell.~
 
@@ -1730,7 +1730,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-This very potent spell enables the priest to wipe away the wounds and injuries of the target. It completely cures the recipient of all diseases, poisons, and negative conditions such as blindness, deafness, and feeblemindedness. Naturally, the effects can be negated by subsequent injuries, diseases, and magic.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
+The very potent Heal spell enables the priest to wipe away the wounds and injuries of the target. It completely cures the recipient of all diseases, poisons, and negative conditions such as blindness, deafness, and feeblemindedness. Naturally, the effects can be negated by subsequent injuries, diseases, and magic.~ //This healing cannot affect creatures of incorporeal or extraplanar origin.~
 
 @205=~Harm~
 @206=~Harm
@@ -1756,7 +1756,7 @@ Casting Time: 1 round
 Area of Effect: 20' radius
 Saving Throw: Special
 
-By drawing on the power of the sun, this spell causes the caster's body to emanate a blazing light that extends 30 feet in all directions. Each round, opponents within the area suffer 1D6 fire damage and must make a save vs. breath at a -2 penalty or be blinded for 1 round. Undead creatures and other monsters vulnerable to bright light suffer double damage for each round they are exposed to the false dawn. Magic resistance does not affect this spell.~
+By drawing on the power of the sun, a False Dawn spell causes the caster's body to emanate a blazing light that extends 30 feet in all directions. Each round, opponents within the area suffer 1D6 fire damage and must make a save vs. breath at a -2 penalty or be blinded for 1 round. Undead creatures and other monsters vulnerable to bright light suffer double damage for each round they are exposed to the false dawn. Magic resistance does not affect this spell.~
 
 @209=~Dolorous Decay~
 @210=~Dolorous Decay
@@ -1929,7 +1929,7 @@ Casting Time: 6
 Area of Effect: 30' radius
 Saving Throw: None
 
-This spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
+The Banishment spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
 
 @225=~Animate Warrior~
 @226=~Animate Warrior
@@ -2111,7 +2111,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Death partial
 
-This spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1D6 magic damage for every two experience levels of the caster, up to a maximum of 10D6 at 20th level.~
+The Finger of Death spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1D6 magic damage for every two experience levels of the caster, up to a maximum of 10D6 at 20th level.~
 
 @297=~Chaos~
 @298=~Chaos
@@ -2182,7 +2182,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-A Greater Restoration spell removes most temporary and permanent negative effects from the target creature. It reverses any previous life energy level drain of the creature caused by any force, spell, or monster. It can restore a polymorphed or petrified creature to its natural form, break the effects of a curse, reverse unnatural mental states such as confusion, feeblemindedness, and berserk rages, and free the recipient from magical effects like fear, paralysis, sleep, and stun. This potent spell will also restore any lost hit points and cure the target of any diseases or poisons.
+This spell removes most temporary and permanent negative effects from the target creature. It reverses any previous life energy level drain of the creature caused by any force, spell, or monster. It can restore a polymorphed or petrified creature to its natural form, break the effects of a curse, reverse unnatural mental states such as confusion, feeblemindedness, and berserk rages, and free the recipient from magical effects like fear, paralysis, sleep, and stun. This potent spell will also restore any lost hit points and cure the target of any diseases or poisons.
 
 The casting of this spell is very draining on the priest, leaving them physically and mentally exhausted. For 5 rounds after the spell is cast, the priest will suffer a -2 penalty to THAC0, damage, AC, and casting speed.~
 

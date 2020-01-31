@@ -10,7 +10,7 @@ Casting Time: 1
 Area of Effect: 10' radius
 Saving Throw: Breath partial
 
-This spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease but will have their movements slowed considerably. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
+A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease but will have their movements slowed considerably. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
 
 @403=~Mage Armor~
 @404=~Mage Armor
@@ -34,7 +34,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: None
 
-When the wizard casts this spell, a cone of searing flames shoots from their fingertips towards the designated point. Their hands must be held so as to send forth a fan-like sheet of flames: the wizard's thumbs must touch each other and their fingers must be spread. The burning hands send out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the caster. All creatures caught in the flames suffer 1D6 fire damage as well an additional 1D6 fire damage for every two extra experience levels of the caster, up to a maximum of 5D6 at 9th level.~
+When the wizard casts a Burning Hands spell, a cone of searing flames shoots from their fingertips towards the designated point. Their hands must be held so as to send forth a fan-like sheet of flames: the wizard's thumbs must touch each other and their fingers must be spread. The burning hands send out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the caster. All creatures caught in the flames suffer 1D6 fire damage as well an additional 1D6 fire damage for every two extra experience levels of the caster, up to a maximum of 5D6 at 9th level.~
 
 @407=~Charm Person~
 @408=~Charm Person
@@ -101,7 +101,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: Special
 
-This spell causes the wizard to temporarily gain a +5 bonus to charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
+A Friends spell causes the wizard to temporarily gain a +5 bonus to charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
 
 @415000=~Protection from Petrification~
 @416000=~Protection from Petrification
@@ -209,7 +209,7 @@ Casting Time: 1
 Area of Effect: 30' radius
 Saving Throw: Spell negates
 
-When a wizard casts this spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.~
+When a wizard casts a Sleep spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.~
 
 @431=~Chill Touch~
 @432=~Chill Touch
@@ -388,7 +388,7 @@ Casting Time: 2
 Area of Effect: Caster
 Saving Throw: None
 
-This spell causes the wizard's form and spirit to become blurred, shifting and wavering. This distortion causes all attacks against the caster to be made with a -3 penalty, while all saving throws vs. spell are made by the caster with a +3 bonus. Multiple castings of this spell are not cumulative.~
+A Blur spell causes the wizard's form and spirit to become blurred, shifting and wavering. This distortion causes all attacks against the caster to be made with a -3 penalty, while all saving throws vs. spell are made by the caster with a +3 bonus. Multiple castings of this spell are not cumulative.~
 
 @453=~Detect Alignment~
 @454=~Detect Alignment
@@ -412,7 +412,7 @@ Casting Time: 2
 Area of Effect: Sight
 Saving Throw: None
 
-When a wizard casts this spell, they become able to see clearly any objects or beings that are invisible, as well as any creatures that are astral, ethereal, or out of phase. Instantly and at the end of each round for 5 rounds after the spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies. Invisible objects carried into the warded area will also become visible. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. This spell does not reveal illusions or enable the caster to see through physical objects. Magic resistance does not affect this spell.~
+When a wizard casts a Detect Invisibility spell, they become able to see clearly any objects or beings that are invisible, as well as any creatures that are astral, ethereal, or out of phase. Instantly and at the end of each round for 5 rounds after the spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies. Invisible objects carried into the warded area will also become visible. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. This spell does not reveal illusions or enable the caster to see through physical objects. Magic resistance does not affect this spell.~
 
 @457=~Horror~
 @458=~Horror
@@ -460,7 +460,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the wizard's eyes glow with magical energy, enabling them to read the aura of the target and determine their strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against them are made with a +2 bonus to THAC0. Certain magical devices negate the power of the Know Opponent spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
+When a Know Opponent spell is cast, the wizard's eyes glow with magical energy, enabling them to read the aura of the target and determine their strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against them are made with a +2 bonus to THAC0. Certain magical devices negate the power of the Know Opponent spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
 
 @465=~Luck~
 @466=~Luck
@@ -508,7 +508,7 @@ Casting Time: 2
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is invoked, the wizard causes a number of illusory duplicates of themselves to come into being around them. The spell creates two images plus one for every three experience levels of the caster, up to a maximum of eight images at 18th level. These images do exactly what the wizard does, and since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which are the illusions and which is the actual wizard. When an image is directly struck by a melee or missile attack, magical or otherwise, it disappears, while other existing images remain intact. It is important to note that this will not protect the caster against all attacks, as it is possible for an enemy to choose the real caster amongst all the images. Multiple castings of this spell or similar effects will not create additional images.~
+When a Mirror Image spell is invoked, the wizard causes a number of illusory duplicates of themselves to come into being around them. The spell creates two images plus one for every three experience levels of the caster, up to a maximum of eight images at 18th level. These images do exactly what the wizard does, and since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which are the illusions and which is the actual wizard. When an image is directly struck by a melee or missile attack, magical or otherwise, it disappears, while other existing images remain intact. It is important to note that this will not protect the caster against all attacks, as it is possible for an enemy to choose the real caster amongst all the images. Multiple castings of this spell or similar effects will not create additional images.~
 
 @473=~Stinking Cloud~
 @474=~Stinking Cloud
@@ -520,7 +520,7 @@ Casting Time: 2
 Area of Effect: 30' radius
 Saving Throw: Poison negates
 
-When this spell is cast, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud must make a save vs. poison or be nauseated for 1 round. Nauseated characters are unable to attack or cast spells, but can still move. Those who make successful saving throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects so long as they remain within the cloud. Certain creatures are immune to the effects of the cloud, including all undead, and creatures who don't need to breathe, such as elementals.~
+When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud must make a save vs. poison or be nauseated for 1 round. Nauseated characters are unable to attack or cast spells, but can still move. Those who make successful saving throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects so long as they remain within the cloud. Certain creatures are immune to the effects of the cloud, including all undead, and creatures who don't need to breathe, such as elementals.~
 
 @475=~Strength~
 @476=~Strength
@@ -580,7 +580,7 @@ Casting Time: 2
 Area of Effect: Caster
 Saving Throw: None
 
-The recipient of this spell gains the ability to cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the silenced effect and makes the recipient immune to it for the spell's duration. This spell has no effect on other noises or speech - it simply removes a spell's verbal component.~
+The caster of this spell gains the ability to cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the silenced effect and makes the recipient immune to it for the spell's duration. This spell has no effect on other noises or speech - it simply removes a spell's verbal component.~
 
 @485=~Power Word: Sleep~
 @486=~Power Word: Sleep
@@ -604,7 +604,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-By means of this spell, a wizard weakens an opponent, sapping their strength and the attacks that rely upon it. The victim suffers a -4 penalty to THAC0 and damage, and their movement speed is reduced by half. A successful save vs. spell at a -2 penalty negates all effects.~
+By means of a Ray of Enfeeblement spell, a wizard weakens an opponent, sapping their strength and the attacks that rely upon it. The victim suffers a -4 penalty to THAC0 and damage, and their movement speed is reduced by half. A successful save vs. spell at a -2 penalty negates all effects.~
 
 @489=~Chaos Shield~
 @490=~Chaos Shield
@@ -628,7 +628,7 @@ Casting Time: 2
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Breath partial
 
-This spell blasts an area with a tremendous cacophony. Enemies within the area suffer 5D4 crushing damage, and must save vs. breath at a -2 penalty or be deafened for one turn. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Dispel Magic, Cure Disease, Heal, or Greater Restoration spell.~
+The Sound Brust spell blasts an area with a tremendous cacophony. Enemies within the area suffer 5D4 crushing damage, and must save vs. breath at a -2 penalty or be deafened for one turn. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Dispel Magic, Cure Disease, Heal, or Greater Restoration spell.~
 
 @493=~Glitterdust~
 @494=~Glitterdust
@@ -714,7 +714,7 @@ Casting Time: 3
 Area of Effect: Caster
 Saving Throw: None
 
-This spell grants an unnatural perception of things to come. Once cast, the wizard receives instantaneous warnings of impending danger or harm, giving them a general idea of what action might be taken to best protect oneself. The caster becomes impossible to surprise and cannot be backstabbed, and receives a +2 bonus to AC and a +3 bonus to saving throws vs. breath.~
+The Clairvoyance spell grants an unnatural perception of things to come. Once cast, the wizard receives instantaneous warnings of impending danger or harm, giving them a general idea of what action might be taken to best protect oneself. The caster becomes impossible to surprise and cannot be backstabbed, and receives a +2 bonus to AC and a +3 bonus to saving throws vs. breath.~
 
 @503=~Remove Magic~
 @504=~Remove Magic
@@ -880,7 +880,7 @@ Casting Time: 3
 Area of Effect: 30' radius
 Saving Throw: Polymorph negates
 
-This spell causes creatures to move, attack, and cast spells at half of their normal rates unless a save vs. polymorph at a -2 penalty is made. Slowed creatures also suffer a -2 penalty to THAC0 and AC and a -3 penalty to saving throws vs. breath. Additionally, the rate at which slowed creatures regenerate or suffer damage from poison is halved, and the effects of a Haste spell are negated. Multiple castings of this spell or similar effects are not cumulative.~
+A Slow spell causes creatures to move, attack, and cast spells at half of their normal rates unless a save vs. polymorph at a -2 penalty is made. Slowed creatures also suffer a -2 penalty to THAC0 and AC and a -3 penalty to saving throws vs. breath. Additionally, the rate at which slowed creatures regenerate or suffer damage from poison is halved, and the effects of a Haste spell are negated. Multiple castings of this spell or similar effects are not cumulative.~
 
 @525=~Skull Trap~
 @526=~Skull Trap
@@ -1249,7 +1249,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Polymorph negates
 
-This spell is a powerful incantation that permanently alters the form of the creature affected. The target's mental characteristics are not affected and they do not receive any special abilities for their new form, but physical characteristics are changed to adhere to their new form and they lose any special abilities they had in their original form. This particular version of the spell will transform the target into a squirrel unless they make a save vs. polymorph. The effectiveness of this spell is dependent upon the target's level, with weak creatures being relatively easy to transmute and more powerful creatures being very difficult. Creatures with 1-5 HD/levels make their saving throw at a -4 penalty, those with 6-10 HD/levels make their saving throw at a -2 penalty, those with 11-15 HD/levels or more make their saving throw with no penalty, and those who with more than 15 HD/levels make their saving throw at a +2 bonus. The transformation is instant and permanent, or until dispelled.
+The Polymorph Other spell is a powerful magic that permanently alters the form of the creature affected. The target's mental characteristics are not affected and they do not receive any special abilities for their new form, but physical characteristics are changed to adhere to their new form and they lose any special abilities they had in their original form. This particular version of the spell will transform the target into a squirrel unless they make a save vs. polymorph. The effectiveness of this spell is dependent upon the target's level, with weak creatures being relatively easy to transmute and more powerful creatures being very difficult. Creatures with 1-5 HD/levels make their saving throw at a -4 penalty, those with 6-10 HD/levels make their saving throw at a -2 penalty, those with 11-15 HD/levels or more make their saving throw with no penalty, and those who with more than 15 HD/levels make their saving throw at a +2 bonus. The transformation is instant and permanent, or until dispelled.
 
 Note that all clothes and equipment that the target was wearing will mold into the new form. However, they will return to their previous state once they die or the effects are dispelled.~
 
@@ -1628,7 +1628,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-When cast, the target must successfully save vs. spell at a -2 penalty to avoid being dominated. While dominated, a telepathetic link between the caster and the target is formed, allowing the caster to control their actions for the duration of the spell.
+The Domination spell enables the caster to form a telepathetic link between the caster and the target, allowing the caster to control their actions for the duration of the spell. The target must successfully save vs. spell at a -2 penalty to avoid being dominated.
 
 If the caster attempts to harm the dominated creature, or if a dispel magic is successfully cast upon them, the spell is broken. If two or more domination effects simultaneously affect a creature, the most recent domination takes precedence.~
 
@@ -1881,7 +1881,7 @@ Casting Time: 1
 Area of Effect: 20' radius
 Saving Throw: Breath half
 
-This spell creates an explosive burst of flame that detonates with a low roar and delivers damage proportional to the level of the wizard who cast it, similar to a fireball. The wizard gestures with their hand and the entire area around them erupts in flames, striking all except the caster and causing 1D6 fire damage for each experience level of the spellcaster, up to a maximum of 15D6 at 15th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
+The Fireburst spell creates an explosive burst of flame that detonates with a low roar and delivers damage proportional to the level of the wizard who cast it, similar to a fireball. The wizard gestures with their hand and the entire area around them erupts in flames, striking all except the caster and causing 1D6 fire damage for each experience level of the spellcaster, up to a maximum of 15D6 at 15th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
 
 @565=~Mestil's Acid Sheath~
 @566=~Mestil's Acid Sheath
@@ -1981,7 +1981,7 @@ Casting Time: 6
 Area of Effect: 30' radius
 Saving Throw: None
 
-This spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
+The Banishment spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
 
 @671=~Protection from Magic Energy~
 @672=~Protection from Magic Energy
@@ -2031,7 +2031,7 @@ Casting Time: 6
 Area of Effect: Sight
 Saving Throw: None
 
-When this spell is cast, the wizard gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
+When a True Seeing spell is cast, the wizard gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
 
 NOTE: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.~
 
@@ -2081,7 +2081,7 @@ Casting Time: 6
 Area of Effect: 30' radius
 Saving Throw: None
 
-This spell creates a thick, clinging, greenish cloud. All creatures who aren't immune to acid suffer 10 damage for each round they are exposed to the vapors of the Acid Fog. In addition, due to reduced visibility, creatures inside the cloud move at 50% of their normal rate.~
+The Acid Fog spell creates a thick, clinging, greenish cloud. All creatures who aren't immune to acid suffer 10 damage for each round they are exposed to the vapors of the Acid Fog. In addition, due to reduced visibility, creatures inside the cloud move at 50% of their normal rate.~
 
 @687=~Chain Lightning~
 @688=~Chain Lightning
@@ -2093,7 +2093,7 @@ Casting Time: 6
 Area of Effect: Target, and enemies within 30'
 Saving Throw: Breath half
 
-This spell creates an electrical discharge that begins as a single stroke commencing from the caster's fingertips. Unlike Lightning Bolt, Chain Lightning strikes one object or creature initially, then arcs to other targets. These brilliant arcs of lightning leap at all enemies within range, burning them with electrical damage. The lightning causes 1D6 damage for every experience level of the caster to the primary target (up to a maximum of 20D6) and 1D6 for every two levels to subsequent targets (up to a maximum of 10D6). Those who make a save vs. breath at a -4 penalty manage to partially avoid direct impact from the lightning and hence receive only half damage.~
+The Chain Lightning spell creates an electrical discharge that begins as a single stroke commencing from the caster's fingertips. Unlike Lightning Bolt, Chain Lightning strikes one object or creature initially, then arcs to other targets. These brilliant arcs of lightning leap at all enemies within range, burning them with electrical damage. The lightning causes 1D6 damage for every experience level of the caster to the primary target (up to a maximum of 20D6) and 1D6 for every two levels to subsequent targets (up to a maximum of 10D6). Those who make a save vs. breath at a -4 penalty manage to partially avoid direct impact from the lightning and hence receive only half damage.~
 
 @689=~Disintegrate~
 @690=~Disintegrate
@@ -2323,7 +2323,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-By casting this spell, the wizard calls into existence a magical being of considerable power, a nishruu. At first glance, this creature appears to be some sort of mist, but upon closer examination, the churning red mass of vapors and shapes moves with a life of its own. Drawn towards magic like a moth to a flame, the nishruu feeds on the energies surrounding and used by wizards. Luckily, there is no question as to the loyalty of the creature and it will not attack its summoner even though it would like nothing better. Nishruus do not use physical attacks: instead, each time a nishruu touches and wraps its tendrils around a target, it will drain magical energies from them. Except for a dispel magic or Banishment, the nishruu is completely immune to magic, and magic will actually heal the nishruu. The creature will remain under the caster's control for the duration of the spell or until slain.
+By casting the Summon Nishruu spell, the wizard calls into existence a magical being of considerable power, a nishruu. At first glance, this creature appears to be some sort of mist, but upon closer examination, the churning red mass of vapors and shapes moves with a life of its own. Drawn towards magic like a moth to a flame, the nishruu feeds on the energies surrounding and used by wizards. Luckily, there is no question as to the loyalty of the creature and it will not attack its summoner even though it would like nothing better. Nishruus do not use physical attacks: instead, each time a nishruu touches and wraps its tendrils around a target, it will drain magical energies from them. Except for a dispel magic or Banishment, the nishruu is completely immune to magic, and magic will actually heal the nishruu. The creature will remain under the caster's control for the duration of the spell or until slain.
 
 Nishruu (9 HD):
  ST-, DE10, CO16, IN13, WI15, CH13
@@ -2516,7 +2516,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Death partial
 
-This spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1D6 magic damage for every two experience levels of the caster, up to a maximum of 10D6 at 20th level.~
+The Finger of Death spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1D6 magic damage for every two experience levels of the caster, up to a maximum of 10D6 at 20th level.~
 
 @743=~Prismatic Spray~
 @744=~Prismatic Spray
@@ -2640,7 +2640,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-By casting this spell, the wizard calls into existence a magical being of considerable power, a hakeashar. The hakeashar is a more powerful version of the nishruu. At first glance, this creature appears to be some sort of mist, but upon closer examination, the churning grey mass of vapors and shapes moves with a life of its own. Drawn towards magic like a moth to a flame, the nishruu feeds on the energies surrounding and used by wizards. Luckily, there is no question as to the loyalty of the creature and it will not attack its summoner even though it would like nothing better. Nishruus do not use physical attacks: instead, each time a nishruu touches and wraps its tendrils around a target, it will drain magical energies from them. Except for a dispel magic or Banishment, the nishruu is completely immune to magic, and magic will actually heal the nishruu. The creature will remain under the caster's control for the duration of the spell or until slain.
+By casting the Summon Hakeashar spell, the wizard calls into existence a magical being of considerable power, a hakeashar. The hakeashar is a more powerful version of the nishruu. At first glance, this creature appears to be some sort of mist, but upon closer examination, the churning grey mass of vapors and shapes moves with a life of its own. Drawn towards magic like a moth to a flame, the nishruu feeds on the energies surrounding and used by wizards. Luckily, there is no question as to the loyalty of the creature and it will not attack its summoner even though it would like nothing better. Nishruus do not use physical attacks: instead, each time a nishruu touches and wraps its tendrils around a target, it will drain magical energies from them. Except for a dispel magic or Banishment, the nishruu is completely immune to magic, and magic will actually heal the nishruu. The creature will remain under the caster's control for the duration of the spell or until slain.
 
 Hakeashar (12 HD):
  ST-, DE10, CO16, IN13, WI15, CH13
@@ -2666,7 +2666,7 @@ Casting Time: 7
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Special
 
-This spell allows the caster to take control of undead creatures within the area of effect. This creates a telepathic link between the caster and the undead, allowing complete control. There is no saving throw if the undead creature has 5 or more hit dice less than the caster, otherwise a save vs. spell at a -4 penalty is allowed to negate the effect. The undead remain under control of the caster for the duration of the spell or until they are affected by a dispel magic. Magic resistance does not affect this spell.~
+The Control Undead spell allows the caster to take control of undead creatures within the area of effect. This creates a telepathic link between the caster and the undead, allowing complete control. There is no saving throw if the undead creature has 5 or more hit dice less than the caster, otherwise a save vs. spell at a -4 penalty is allowed to negate the effect. The undead remain under control of the caster for the duration of the spell or until they are affected by a dispel magic. Magic resistance does not affect this spell.~
 
 @757=~Mass Invisibility~
 @758=~Mass Invisibility
@@ -2839,7 +2839,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-This spell grants an almost omniscient perception of things to come. For the duration of the spell, the wizard gains a +20 bonus to AC and saving throws as well as immunity to backstabbing. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.~
+This spell grants an almost omniscient perception of things to come. For the duration of the spell, the wizard gains a +20 bonus to AC and saving throws as well as immunity to backstabbing. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat. The effects cannot be dispelled.~
 
 @781=~Simbul's Spell Trigger~
 @782=~Simbul's Spell Trigger
@@ -3040,7 +3040,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-By means of this spell, the caster calls an outer planar creature to attack their foes and themselves if not careful. The creature summoned in is a Pit Fiend, the most powerful specimen of the Baatezu. The creature cannot be directly controlled, but the summoner can attempt to compel the demon to perform a service for them for the duration of the spell. Charismatic and powerful casters may bind the creature's will, intelligent and wise ones may negotiate with it, but dealing with these demonic creatures is always dangerous, and sometimes it may lead to disaster. Wizards are warned to be careful of this spell, for a mistreated Pit Fiend will turn on their summoner at the first available opportunity, tear them and their allies apart piece by piece and then feast on the remains.
+By means of this spell, the caster calls an outer planar creature to attack their foes and potentially themselves if not careful. The creature summoned in is a Pit Fiend, the most powerful specimen of the Baatezu. The creature cannot be directly controlled, but the summoner can attempt to compel the demon to perform a service for them for the duration of the spell. Charismatic and powerful casters may bind the creature's will, intelligent and wise ones may negotiate with it, but dealing with these demonic creatures is always dangerous, and sometimes it may lead to disaster. Wizards are warned to be careful of this spell, for a mistreated Pit Fiend will turn on their summoner at the first available opportunity, tear them and their allies apart piece by piece and then feast on the remains.
 
 Pit Fiend (20 HD):
  ST24, DE16, CO19, IN20, WI16, CH25
@@ -3123,7 +3123,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, the wizard causes the flow of time to stop in the entire area that the caster is currently in. Outside this area, the sphere simply seems to shimmer for an instant, but inside the sphere, the caster is free to act for three rounds of apparent time. The wizard can move and act freely within the area where time is stopped, but all other creatures are frozen in their actions, for they are literally between the ticks of a clock. Nothing can enter the area of effect without also being stopped in time. When 3 rounds have passed, everyone begins operating in normal time once more, and all spells that were cast during the Time Stop will take effect immediately after time returns to normal.~
+Upon casting a Time Stop spell, the wizard causes the flow of time to stop in the entire area that the caster is currently in. Outside this area, the sphere simply seems to shimmer for an instant, but inside the sphere, the caster is free to act for three rounds of apparent time. The wizard can move and act freely within the area where time is stopped, but all other creatures are frozen in their actions, for they are literally between the ticks of a clock. Nothing can enter the area of effect without also being stopped in time. When 3 rounds have passed, everyone begins operating in normal time once more, and all spells that were cast during the Time Stop will take effect immediately after time returns to normal.~
 
 @823=~Imprisonment~
 @824=~Imprisonment
@@ -3135,7 +3135,7 @@ Casting Time: 1 round
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the target creature becomes entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
+When the Imprisonment spell is cast, the target becomes entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
 
 NOTE: Due to game engine limitations, party members affected by this spell will instead be Mazed for 5 turns before being slain. This will allow you to leave the current area if necessary, and will not remove them from your party.~
 
@@ -3148,7 +3148,7 @@ Casting Time: 1 round
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the target creature must save vs. spell at a -6 penalty or become entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
+When the Imprisonment spell is cast, the target must save vs. spell at a -6 penalty or become entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
 
 NOTE: Due to game engine limitations, party members affected by this spell will instead be Mazed for 5 turns before being slain. This will allow you to leave the current area if necessary, and will not remove them from your party.~
 
