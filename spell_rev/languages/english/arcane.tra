@@ -2899,7 +2899,7 @@ Casting Time: 8
 Area of Effect: 30' radius
 Saving Throw: Death half
 
-This spell evaporates moisture in the bodies of all living opponents within the area of effect, dealing 1D6 magic damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. Those who make a save vs. death at a -2 penalty will receive only half damage. Undead creatures are not affected by this spell.~
+This spell evaporates moisture in the bodies of all living opponents within the area of effect, dealing 1D6 magic damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. Those who make a save vs. death at a -2 penalty will receive only half damage. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to wilting.~
 
 @789=~Maze~
 @790=~Maze
@@ -3198,7 +3198,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process drains the target of 4 levels of experience, causing them to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. The target's magic resistance, if any, does not affect this spell. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.
+The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process drains the target of 4 levels of experience, causing them to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.
 
 NOTE: This may spell may not be cast multiple times to radically increase the caster's abilities. However, the caster may still use the spell to heal themselves even while another instance of the spell is in effect.~
 
