@@ -2738,6 +2738,7 @@ COPY ~spell_rev\spwi7##\scrl8g.itm~      ~override~
 
 COPY ~spell_rev\spwi7##\spwi705.spl~     ~override~  // Khelben's Warding Whip
   SAY NAME1 @729    SAY UNIDENTIFIED_DESC @730
+COPY ~spell_rev\spwi7##\spwi705d.spl~    ~override~
 COPY ~spell_rev\spwi7##\scrl8h.itm~      ~override~
   SAY NAME2 @729    SAY IDENTIFIED_DESC   @730
 
