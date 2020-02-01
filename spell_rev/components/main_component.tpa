@@ -3020,6 +3020,7 @@ COPY ~spell_rev\spwi8##\spwi818.spl~     ~override~  // Bigby's Icy Grasp ("repl
 COPY ~spell_rev\spwi8##\scrlb1.itm~      ~override~
   SAY NAME2 @797    SAY IDENTIFIED_DESC   @798
 COPY ~spell_rev\spwi8##\spwi818d.spl~    ~override~
+COPY ~spell_rev\spwi8##\spwi818e.spl~    ~override~
 COPY ~spell_rev\spwi8##\spwi818i.eff~    ~override~
 APPEND ~spell.ids~ ~2818 WIZARD_BIGBYS_ICY_GRASP~
 
