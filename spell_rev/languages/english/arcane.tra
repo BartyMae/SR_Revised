@@ -253,7 +253,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-With this spell, the wizard drains the life force from a creature and adds it to their own. The target suffers 2 magic damage, which  increases by 2 for every two extra experience levels of the caster, up to a maximum of 10 at 9th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.~
+With this spell, the wizard drains the life force from a creature and adds it to their own. The target suffers 2 magic damage, which increases by 2 for every two extra experience levels of the caster, up to a maximum of 10 at 9th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.~
 
 @437=~Reflected Image~
 @438=~Reflected Image
@@ -1680,7 +1680,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-By casting this spell, caster creates a transparent, permeable barrier that shields the caster and their allies from Dispel Magic and Breach spells. The barrier dissipates after one instance of Dispel Magic or Breach.~ //Spells higher in power that remove specific protections like Pierce Shield and Spellstrike remove Dispelling Screen from target without getting absorbed by it.~
+By casting this spell, caster creates a transparent, permeable barrier that shields the caster and their allies from Dispel Magic and Breach spells. The barrier dissipates after one instance of Dispel Magic or Breach.~ //Spells higher in power that remove specific protections like Pierce Shield and Spellstrike remove Dispelling Screen from the target without getting absorbed by it.~
 
 @631=~Protection from Normal Weapons~
 @632=~Protection from Normal Weapons
