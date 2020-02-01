@@ -209,7 +209,7 @@ Casting Time: 1
 Area of Effect: 30' radius
 Saving Throw: Spell negates
 
-When a wizard casts a Sleep spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.~
+When a wizard casts a Sleep spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are immune to magically-induced sleep.~
 
 @431=~Chill Touch~
 @432=~Chill Touch
@@ -253,7 +253,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-With this spell, the wizard drains the life force from a creature and adds it to their own. The target suffers 2 magic damage, which increases by 2 for every two extra experience levels of the caster, up to a maximum of 10 at 9th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.~
+With this spell, the wizard drains the life force from a creature and adds it to their own. The target suffers 2 magic damage, which increases by 2 for every two extra experience levels of the caster, up to a maximum of 10 at 9th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as constructs, elementals, and illusions are immune to draining.~
 
 @437=~Reflected Image~
 @438=~Reflected Image
@@ -592,7 +592,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-When this power word is uttered, the target enters a comatose slumber for 5 rounds. The target can save vs. spell at a -2 penalty to avoid the effect, though creatures with 1 to 19 hit points are powerless to resist. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.~
+When this power word is uttered, the target enters a comatose slumber for 5 rounds. The target can save vs. spell at a -2 penalty to avoid the effect, though creatures with 1 to 19 hit points are powerless to resist. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are immune to magically-induced sleep.~
 
 @487=~Ray of Enfeeblement~
 @488=~Ray of Enfeeblement
@@ -904,7 +904,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the target suffers 3 hit points for every two experience levels of the caster, up to a maximum of 30 at 20th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.
+When this spell is cast, the target suffers 3 hit points for every two experience levels of the caster, up to a maximum of 30 at 20th level. These hit points are then added to the caster's current hit points, and any hit points over the caster's normal maximum are treated as additional maximum hit points that last for 1 turn. The undead and certain other creatures such as constructs, elementals, and illusions are immune to draining.
 
 NOTE: This may spell may not be cast multiple times to radically increase the caster's maximum hit points. However, the caster may still use the spell to heal themselves even while another instance of the spell is in effect.~
 
@@ -1175,7 +1175,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are immune to disease.~
 
 @579=~Break Enchantment~
 @580=~Break Enchantment
@@ -1668,7 +1668,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-Feeblemind causes the subject's intellect to degenerate into that of a simple beast of burden. The subject remains in this fugue-like state until a successful dispel magic is cast upon them. The victim must make a save vs. spell at a -2 penalty in order to resist being stupefied. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to feeblemindedness.~
+Feeblemind causes the subject's intellect to degenerate into that of a simple beast of burden. The subject remains in this fugue-like state until a successful dispel magic is cast upon them. The victim must make a save vs. spell at a -2 penalty in order to resist being stupefied. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to feeblemindedness.~
 
 @629=~Dispelling Screen~
 @630=~Dispelling Screen
@@ -2863,7 +2863,7 @@ Casting Time: 8
 Area of Effect: 30' radius
 Saving Throw: Special
 
-This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4D6 fire damage each round to everything remaining within the area of effect. A save vs. breath at a -4 penalty reduces the damage by half. Fire dwellers like fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
+This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4D6 fire damage each round to everything remaining within the area of effect. A save vs. breath at a -4 penalty reduces the damage by half. Fire dwellers like efreet, fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
 
 @785=~Symbol of Pain~
 @786=~Symbol of Pain
@@ -2899,7 +2899,7 @@ Casting Time: 8
 Area of Effect: 30' radius
 Saving Throw: Death half
 
-This spell evaporates moisture in the bodies of all living opponents within the area of effect, dealing 1D6 magic damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. Those who make a save vs. death at a -2 penalty will receive only half damage. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to wilting.~
+This spell evaporates moisture in the bodies of all living opponents within the area of effect, dealing 1D6 magic damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. Those who make a save vs. death at a -2 penalty will receive only half damage. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to wilting.~
 
 @789=~Maze~
 @790=~Maze
@@ -2970,7 +2970,7 @@ Casting Time: 8
 Area of Effect: 1 creature
 Saving Throw: Special
 
-This spell creates a huge disembodied hand that grabs a victim and pins them to the ground. Each round, the massive hand squeezes the target for 2D8 cold damage and holds them for 1 round. A successful save vs. breath at a -2 penalty reduces the damage by half and negates the hold for the given round. Certain creatures such as elementals, illusions, and incorpreals are completely immune to being pinned.~
+This spell creates a huge disembodied hand that grabs a victim and pins them to the ground. Each round, the massive hand squeezes the target for 2D8 cold damage and holds them for 1 round. A successful save vs. breath at a -2 penalty reduces the damage by half and negates the hold for the given round. Certain creatures such as elementals, illusions, and incorporeals are immune to being pinned.~
 
 @868=~Monster Summoning VIII~
 @869=~Monster Summoning VIII
@@ -3198,7 +3198,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process drains the target of 4 levels of experience, causing them to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to draining.
+The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process drains the target of 4 levels of experience, causing them to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to draining.
 
 NOTE: This may spell may not be cast multiple times to radically increase the caster's abilities. However, the caster may still use the spell to heal themselves even while another instance of the spell is in effect.~
 

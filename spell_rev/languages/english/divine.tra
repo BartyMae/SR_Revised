@@ -24,7 +24,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-This spell enables the priest to command another creature to lie down and take no action (sleep) for a single round. The target has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.
+This spell enables the priest to command another creature to lie down and take no action (sleep) for a single round. The target has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are completely immune to magically-induced sleep.
 
 @5=~Cure Light Wounds~
 @6=~Cure Light Wounds
@@ -938,7 +938,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
 
 @75000=~Dispel Magic~
 @76000=~Dispel Magic
@@ -1140,7 +1140,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Through this spell, the caster can poison a single victim. The target suffers an initial 1D4 poison damage for every two experience levels of the caster, up to a maximum of 10D4 at 20th level. Furthermore, they will also be poisoned and suffer 1 poison damage every second for the duration of the spell. The victim cannot avoid the initial damage, but they may make a save vs. poison at a -2 penalty to negate the poison itself. The undead and certain other creatures such as elementals, constructs, and illusions are completely immune to poison.~
+Through this spell, the caster can poison a single victim. The target suffers an initial 1D4 poison damage for every two experience levels of the caster, up to a maximum of 10D4 at 20th level. Furthermore, they will also be poisoned and suffer 1 poison damage every second for the duration of the spell. The victim cannot avoid the initial damage, but they may make a save vs. poison at a -2 penalty to negate the poison itself. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to poison.~
 
 @133=~Divine Power~
 @134=~Divine Power
@@ -1454,7 +1454,7 @@ Casting Time: 1
 Area of Effect: Target, and enemies within 20'
 Saving Throw: Special
 
-As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After one turn, any creatures still sleeping will awaken.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as elementals, constructs, illusions, and dragons are completely immune to magically-induced sleep.
+As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After one turn, any creatures still sleeping will awaken.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
 
 @175=~Righteous Fury~
 @176=~Righteous Fury
@@ -1769,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to strength, dexterity, constitution, and charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
+Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to strength, dexterity, constitution, and charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall
