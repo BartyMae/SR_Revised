@@ -776,7 +776,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
 
-This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for one turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for one turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -1642,7 +1642,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
 
-This spell holds creatures of any type rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at making a save vs. spell at a -2 penalty are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+This spell holds creatures of any type rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at making a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -2970,7 +2970,7 @@ Casting Time: 8
 Area of Effect: 1 creature
 Saving Throw: Special
 
-This spell creates a huge disembodied hand that grabs a victim and pins them to the ground. Each round, the massive hand squeezes the target for 2D8 cold damage and holds them for 1 round. A successful save vs. breath at a -2 penalty reduces the damage by half and negates the hold for the given round.~
+This spell creates a huge disembodied hand that grabs a victim and pins them to the ground. Each round, the massive hand squeezes the target for 2D8 cold damage and holds them for 1 round. A successful save vs. breath at a -2 penalty reduces the damage by half and negates the hold for the given round. Certain creatures such as elementals, illusions, and incorpreals are completely immune to being pinned.~
 
 @868=~Monster Summoning VIII~
 @869=~Monster Summoning VIII
