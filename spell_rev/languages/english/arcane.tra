@@ -1175,7 +1175,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as elementals, constructs, and illusions are completely immune to disease.~
 
 @579=~Break Enchantment~
 @580=~Break Enchantment
