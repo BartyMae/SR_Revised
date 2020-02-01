@@ -3400,6 +3400,13 @@ ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 De
   BUT_ONLY_IF_IT_CHANGES
 END
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
+  COPY_EXISTING tranzi.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM dvscrl01 #1 #0 #0 NONE INV1
+    END
+	BUT_ONLY
+END
+
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
