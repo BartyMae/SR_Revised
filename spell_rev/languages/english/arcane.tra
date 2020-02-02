@@ -863,7 +863,7 @@ By casting this spell, the wizard makes the recipient undetectable by spells suc
 Level: 3
 School: Abjuration
 Range: Personal
-Duration: 1 turn
+Duration: 1 turn + 1 round/level
 Casting Time: 3
 Area of Effect: Caster
 Saving Throw: None
