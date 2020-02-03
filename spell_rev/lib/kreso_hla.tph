@@ -40,7 +40,7 @@ LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 317 duration = 12 END
 LPF ALTER_SPELL_EFFECT INT_VAR match_opcode = 174 match_timing = 3 duration = 12 END
 END
 
-ACTION_IF  FILE_EXISTS_IN_GAME ~spcl900.spl~ BEGIN                     // g whirlwind
+ACTION_IF  FILE_EXISTS_IN_GAME ~spcl901.spl~ BEGIN                     // g whirlwind
 COPY_EXISTING ~spcl901.spl~ ~override~
 SAY NAME1 @9004    SAY UNIDENTIFIED_DESC @9005
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 1 END
