@@ -112,7 +112,7 @@ BUT_ONLY
 
 ACTION_FOR_EACH resource IN // remove basilisks extra hold effect
   ~basilg1~
-  ~basil1~
+  ~basill1~
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
