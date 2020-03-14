@@ -290,7 +290,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-The recipient of this spell gains a +1 bonus to THAC0, damage, and saving throws. They also gain 5 + 1/level temporary hit points, up to a maximum of 15 at 10th level. This spell allows the recipient to temporarily have more hit points than their full normal total, and these bonus hit points are lost first when the recipient takes damage. Multiple castings of this spell are not cumulative.~
+The recipient of this spell gains a +1 bonus to THAC0, damage, and saving throws. They also gain 1D8 + 1/level temporary hit points, up to a maximum of 1D8 + 10 at 10th level. This spell allows the recipient to temporarily have more hit points than their full normal total, and these bonus hit points are lost first when the recipient takes damage. Multiple castings of this spell are not cumulative.~
 
 @33=~Barkskin~
 @34=~Barkskin
