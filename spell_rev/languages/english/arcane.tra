@@ -880,7 +880,7 @@ Casting Time: 3
 Area of Effect: 30' radius
 Saving Throw: Polymorph negates
 
-A Slow spell causes creatures to move, attack, and cast spells at half of their normal rates unless a save vs. polymorph at a -2 penalty is made. Slowed creatures also suffer a -2 penalty to THAC0 and AC and a -3 penalty to saving throws vs. breath. Additionally, the rate at which slowed creatures regenerate or suffer damage from poison is halved, and the effects of a Haste spell are negated. Multiple castings of this spell or similar effects are not cumulative.~
+A Slow spell causes enemies to move, attack, and cast spells at half of their normal rates unless a save vs. polymorph at a -2 penalty is made. Those who are slowed also suffer a -2 penalty to THAC0 and AC and a -3 penalty to saving throws vs. breath. Additionally, the rate at which slowed creatures regenerate or suffer damage from poison is halved, and the effects of a Haste spell are negated. Multiple castings of this spell or similar effects are not cumulative.~
 
 @525=~Skull Trap~
 @526=~Skull Trap
