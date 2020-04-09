@@ -761,7 +761,7 @@ School: Alteration
 Range: Medium
 Duration: 1 turn + 1 round/level
 Casting Time: 3
-Area of Effect: 1 creature
+Area of Effect: 30' radius
 Saving Throw: None
 
 When this spell is cast, all affected creatures gain a +4 bonus to their normal movement rate and receive an extra half attack per round. Spellcasting and spell effects are not affected, though Haste negates and counters the effects of a Slow spell. Note that affected creatures expend as much energy during this spell as they would normally in a whole day, causing them to become exhausted for 2 rounds after the duration of the spell. While exhausted, the affected creatures suffer a -2 penalty to THAC0, damage, and AC. Spellcasting and spell effects are not affected, though Haste negates and counters the effects of a Slow spell. This spell is not cumulative with itself or other similar magic.~
