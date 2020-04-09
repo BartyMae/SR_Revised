@@ -715,8 +715,8 @@ Saving Throw: Spell negates
 
 Miscast Magic causes spells cast by the affected creature to take on an effect different from what they intend, similar to what happens during a wild surge. There is a chance that the result will be beneficial to the caster, but generally, the effects are undesirable. The target must make a save vs. spell at a -2 penalty to avoid their spells being miscast for the duration of the spell.~
 
-@8000=~Rigid Thinking~
-@8001=~Rigid Thinking
+@91=~Rigid Thinking~
+@92=~Rigid Thinking
 Level: 3
 School: Enchantment
 Sphere: Thought
@@ -927,19 +927,6 @@ Saving Throw: Special
 
 When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for one round.~
 
-@91=~Contagion~
-@92=~Contagion
-Level: 3
-School: Necromancy
-Sphere: Necromantic
-Range: Short
-Duration: Special
-Casting Time: 4
-Area of Effect: 1 creature
-Saving Throw: Poison negates
-
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
-
 @75000=~Dispel Magic~
 @76000=~Dispel Magic
 Level: 3
@@ -954,6 +941,19 @@ Saving Throw: None
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
 
 The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Dispel Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Dispel Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
+
+@91000=~Contagion~
+@92000=~Contagion
+Level: 3
+School: Necromancy
+Sphere: Necromantic
+Range: Short
+Duration: Special
+Casting Time: 4
+Area of Effect: 1 creature
+Saving Throw: Poison negates
+
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
 
 
 /*------------------Level 4------------------*/

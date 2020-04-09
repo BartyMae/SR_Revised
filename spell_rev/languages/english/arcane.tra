@@ -3456,8 +3456,8 @@ When this spell is cast, a huge meteor or comet strikes the earth, damaging all 
 
 /*------------------Creatures and Items------------------*/
 
-@9000=~Cat~
-@9001=~This is your cat familiar, currently curled up and safe within your backpack. The cat familiar is a master scout, able to move in the shadows with the ability of a master thief. It is also difficult to hit in combat, and the magic of your bond has made this cat resistant to both physical and magical attacks.
+@8000=~Cat~
+@8001=~This is your cat familiar, currently curled up and safe within your backpack. The cat familiar is a master scout, able to move in the shadows with the ability of a master thief. It is also difficult to hit in combat, and the magic of your bond has made this cat resistant to both physical and magical attacks.
 
 Cat (3 HD):
  HP 24, AC -4, THAC0 17, APR 3
@@ -3477,8 +3477,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9002=~Paws~
-@9003=~This is your cat familiar, currently curled up and safe within your backpack. The cat familiar is a master scout, able to move in the shadows with the ability of a master thief. It is also difficult to hit in combat, and the magic of your bond has made this cat resistant to both physical and magical attacks.
+@8002=~Paws~
+@8003=~This is your cat familiar, currently curled up and safe within your backpack. The cat familiar is a master scout, able to move in the shadows with the ability of a master thief. It is also difficult to hit in combat, and the magic of your bond has made this cat resistant to both physical and magical attacks.
 
 Cat (8 HD):
  HP 48, AC -8, THAC0 12, APR 3
@@ -3498,9 +3498,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9004=~Paws~
-@9005=~Dust Mephit~
-@9006=~This is your familiar, a dust mephit currently safe within your backpack. The dust mephit is not strong in combat, but it is somewhat resistant to physical damage and has the ability to cast the spell Glitterdust twice per day to assist its master.
+@8004=~Paws~
+@8005=~Dust Mephit~
+@8006=~This is your familiar, a dust mephit currently safe within your backpack. The dust mephit is not strong in combat, but it is somewhat resistant to physical damage and has the ability to cast the spell Glitterdust twice per day to assist its master.
 
 Dust Mephit (3 HD):
  HP 24, AC 2, THAC0 17, APR 2
@@ -3517,8 +3517,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9007=~Claws~
-@9008=~This is your familiar, a dust mephit currently safe within your backpack. The dust mephit is not strong in combat, but it is somewhat resistant to physical damage and has the ability to cast spells to assist its master.
+@8007=~Claws~
+@8008=~This is your familiar, a dust mephit currently safe within your backpack. The dust mephit is not strong in combat, but it is somewhat resistant to physical damage and has the ability to cast spells to assist its master.
 
 Dust Mephit (8 HD):
  HP 48, AC -2, THAC0 12, APR 2
@@ -3537,9 +3537,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9009=~Claws~
-@9010=~Fairy Dragon~
-@9011=~This is your familiar, a fairy dragon, currently curled up and safe within your backpack. The mischievous fairy dragon is fairly resistant to magic and has the ability to both protect and obscure itself with illusionary magic of its own.
+@8009=~Claws~
+@8010=~Fairy Dragon~
+@8011=~This is your familiar, a fairy dragon, currently curled up and safe within your backpack. The mischievous fairy dragon is fairly resistant to magic and has the ability to both protect and obscure itself with illusionary magic of its own.
 
 Fairy Dragon (3 HD):
  HP 24, AC 0, THAC0 17, APR 2
@@ -3556,8 +3556,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9012=~Paws~
-@9013=~This is your familiar, a fairy dragon, currently curled up and safe within your backpack. The mischievous fairy dragon is fairly resistant to magic and has the ability to both protect and obscure itself with illusionary magic of its own.
+@8012=~Paws~
+@8013=~This is your familiar, a fairy dragon, currently curled up and safe within your backpack. The mischievous fairy dragon is fairly resistant to magic and has the ability to both protect and obscure itself with illusionary magic of its own.
 
 Fairy Dragon (8 HD):
  HP 48, AC -4, THAC0 12, APR 2
@@ -3575,9 +3575,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9014=~Paws~
-@9015=~Ferret~
-@9016=~This is your familiar, a ferret, currently curled up and safe in your backpack. The ferret is an incredibly quick and agile animal, hard to hit and magically made resistant to both damage and spells. The ferret's uncanny ability to get into almost anything unseen makes it a handy pickpocket.
+@8014=~Paws~
+@8015=~Ferret~
+@8016=~This is your familiar, a ferret, currently curled up and safe in your backpack. The ferret is an incredibly quick and agile animal, hard to hit and magically made resistant to both damage and spells. The ferret's uncanny ability to get into almost anything unseen makes it a handy pickpocket.
 
 Ferret (3 HD):
  HP 24, AC -4, THAC0 17, APR 2
@@ -3597,8 +3597,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9017=~Paws~
-@9018=~This is your familiar, a ferret, currently curled up and safe in your backpack. The ferret is an incredibly quick and agile animal, hard to hit and magically made resistant to both damage and spells. The ferret's uncanny ability to get into almost anything unseen makes it a handy pickpocket.
+@8017=~Paws~
+@8018=~This is your familiar, a ferret, currently curled up and safe in your backpack. The ferret is an incredibly quick and agile animal, hard to hit and magically made resistant to both damage and spells. The ferret's uncanny ability to get into almost anything unseen makes it a handy pickpocket.
 
 Ferret (8 HD):
  HP 48, AC -8, THAC0 12, APR 2
@@ -3618,9 +3618,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9019=~Paws~
-@9020=~Imp~
-@9021=~This is your familiar, an imp, currently grumpy yet safe within your backpack. The imp is an unusual creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
+@8019=~Paws~
+@8020=~Imp~
+@8021=~This is your familiar, an imp, currently grumpy yet safe within your backpack. The imp is an unusual creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
 
 Imp (3 HD):
  HP 24, AC 2, THAC0 17, APR 2
@@ -3638,8 +3638,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9022=~Claws~
-@9023=~This is your familiar, an imp, currently grumpy yet safe within your backpack. The imp is an unusual creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
+@8022=~Claws~
+@8023=~This is your familiar, an imp, currently grumpy yet safe within your backpack. The imp is an unusual creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
 
 Imp (8 HD):
  HP 48, AC -4, THAC0 12, APR 2
@@ -3659,9 +3659,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9024=~Claws~
-@9025=~Pseudodragon~
-@9026=~This is your familiar, a pseudodragon, currently curled up and safe within your backpack. The lizard-like creature is quite intelligent and fairly well-armored and quick. It does not do much damage in combat, but its magical claws are able to render some enemies unconscious. It is also quite resistant to magical spells.
+@8024=~Claws~
+@8025=~Pseudodragon~
+@8026=~This is your familiar, a pseudodragon, currently curled up and safe within your backpack. The lizard-like creature is quite intelligent and fairly well-armored and quick. It does not do much damage in combat, but its magical claws are able to render some enemies unconscious. It is also quite resistant to magical spells.
 
 Pseudodragon (3 HD):
  HP 24, AC 0, THAC0 13, APR 2
@@ -3680,8 +3680,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9027=~Claws~
-@9028=~This is your familiar, a pseudodragon, currently curled up and safe within your backpack. The lizard-like creature is quite intelligent and fairly well-armored and quick. It does not do much damage in combat, but its magical claws are able to render some enemies unconscious. It is also quite resistant to magical spells.
+@8027=~Claws~
+@8028=~This is your familiar, a pseudodragon, currently curled up and safe within your backpack. The lizard-like creature is quite intelligent and fairly well-armored and quick. It does not do much damage in combat, but its magical claws are able to render some enemies unconscious. It is also quite resistant to magical spells.
 
 Pseudodragon (8 HD):
  HP 48, AC -4, THAC0 8, APR 2
@@ -3700,9 +3700,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9029=~Claws~
-@9030=~Quasit~
-@9031=~This is your familiar, a quasit, currently grumpy yet safe within your backpack. The quasit is a small, infernal creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
+@8029=~Claws~
+@8030=~Quasit~
+@8031=~This is your familiar, a quasit, currently grumpy yet safe within your backpack. The quasit is a small, infernal creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
 
 Quasit (3 HD):
  HP 24, AC 2, THAC0 17, APR 2
@@ -3721,8 +3721,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9032=~Claws~
-@9033=~This is your familiar, a quasit, currently grumpy yet safe within your backpack. The quasit is a small, infernal creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
+@8032=~Claws~
+@8033=~This is your familiar, a quasit, currently grumpy yet safe within your backpack. The quasit is a small, infernal creature that is fairly quick and quite resistant to magical spells, and has the ability to cast its own spells on behalf of its master.
 
 Quasit (8 HD):
  HP 48, AC -2, THAC0 12, APR 2
@@ -3743,9 +3743,9 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9034=~Claws~
-@9035=~Rabbit~
-@9036=~This is your familiar, a rabbit, currently curled up and safe within your backpack. This creature is incredibly quick and difficult to hit in combat, and has been augmented by magic to become quite resistant to physical harm as well as spells. The rabbit also has a keen nose for sniffing out traps on behalf of its master.
+@8034=~Claws~
+@8035=~Rabbit~
+@8036=~This is your familiar, a rabbit, currently curled up and safe within your backpack. This creature is incredibly quick and difficult to hit in combat, and has been augmented by magic to become quite resistant to physical harm as well as spells. The rabbit also has a keen nose for sniffing out traps on behalf of its master.
 
 Rabbit (3 HD):
  HP 24, AC -4, THAC0 17, APR 2
@@ -3764,8 +3764,8 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9037=~Paws~
-@9038=~This is your familiar, a rabbit, currently curled up and safe within your backpack. This creature is incredibly quick and difficult to hit in combat, and has been augmented by magic to become quite resistant to physical harm as well as spells. The rabbit also has a keen nose for sniffing out traps on behalf of its master.
+@8037=~Paws~
+@8038=~This is your familiar, a rabbit, currently curled up and safe within your backpack. This creature is incredibly quick and difficult to hit in combat, and has been augmented by magic to become quite resistant to physical harm as well as spells. The rabbit also has a keen nose for sniffing out traps on behalf of its master.
 
 Rabbit (8 HD):
  HP 48, AC -8, THAC0 12, APR 2
@@ -3784,48 +3784,48 @@ Special Characteristics:
 Weight: 5
 Usable By:
  Mage~
-@9039=~Paws~
-@9040=~Reserved~
-@9041=~Reserved~
-@9042=~Reserved~
-@9043=~Reserved~
-@9044=~Reserved~
-@9045=~Gibberling~
-@9046=~Short Sword~
-@9047=~White Orb~
-@9048=~Aquamarine Orb~
-@9049=~Red Orb~
-@9050=~Green Orb~
-@9051=~Yellow Orb~
-@9052=~Violet Orb~
-@9053=~Blue Orb~
-@9054=~Hobgoblin Archer~
-@9055=~Short Bow~
-@9056=~Hobgoblin Shaman~
-@9057=~Mace +1~
-@9058=~Gray Ooze~
-@9059=~Pseudopod~
-@9060=~Ochre Jelly~
-@9061=~Pseudopod +1~
-@9062=~Minute Meteors +2~
-@9063=~Reserved~
-@9064=~Paws~
-@9065=~Shapeshifts Mustard Jelly~
-@9066=~Corrosive Spore +2~
-@9067=~Shapeshifts Ogre Mage~
-@9068=~Katana +1~
-@9069=~Shapeshifts Salamander~
-@9070=~Spear +2~
-@9071=~Shapeshifts Sword Spider~
-@9072=~Legs & Bite +1~
-@9073=~Shapeshifts Troll~
-@9074=~Claws +2~
-@9075=~Shapeshifts Winter Wolf~
-@9076=~Breath +2~
-@9077=~Reserved~
-@9078=~Reserved~
-@9079=~Bastard Sword +3~
-@9080=~This bastard sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8039=~Paws~
+@8040=~Reserved~
+@8041=~Reserved~
+@8042=~Reserved~
+@8043=~Reserved~
+@8044=~Reserved~
+@8045=~Gibberling~
+@8046=~Short Sword~
+@8047=~White Orb~
+@8048=~Aquamarine Orb~
+@8049=~Red Orb~
+@8050=~Green Orb~
+@8051=~Yellow Orb~
+@8052=~Violet Orb~
+@8053=~Blue Orb~
+@8054=~Hobgoblin Archer~
+@8055=~Short Bow~
+@8056=~Hobgoblin Shaman~
+@8057=~Mace +1~
+@8058=~Gray Ooze~
+@8059=~Pseudopod~
+@8060=~Ochre Jelly~
+@8061=~Pseudopod +1~
+@8062=~Minute Meteors +2~
+@8063=~Reserved~
+@8064=~Paws~
+@8065=~Shapeshifts Mustard Jelly~
+@8066=~Corrosive Spore +2~
+@8067=~Shapeshifts Ogre Mage~
+@8068=~Katana +1~
+@8069=~Shapeshifts Salamander~
+@8070=~Spear +2~
+@8071=~Shapeshifts Sword Spider~
+@8072=~Legs & Bite +1~
+@8073=~Shapeshifts Troll~
+@8074=~Claws +2~
+@8075=~Shapeshifts Winter Wolf~
+@8076=~Breath +2~
+@8077=~Reserved~
+@8078=~Reserved~
+@8079=~Bastard Sword +3~
+@8080=~This bastard sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3844,8 +3844,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9081=~Long Sword +3~
-@9082=~This long sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8081=~Long Sword +3~
+@8082=~This long sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3862,8 +3862,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@9083=~Short Sword +3~
-@9084=~This short sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8083=~Short Sword +3~
+@8084=~This short sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3880,8 +3880,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@9085=~Scimitar +3~
-@9086=~This scimitar has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8085=~Scimitar +3~
+@8086=~This scimitar has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3897,8 +3897,8 @@ Not Usable By:
  Cleric
  Mage
  Beast Master~
-@9087=~Katana +3~
-@9088=~This katana has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8087=~Katana +3~
+@8088=~This katana has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3915,8 +3915,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@9089=~Wakizashi +3~
-@9090=~This wakizashi has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8089=~Wakizashi +3~
+@8090=~This wakizashi has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3933,8 +3933,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@9091=~Ninja-To +3~
-@9092=~This ninja-to has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8091=~Ninja-To +3~
+@8092=~This ninja-to has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3951,8 +3951,8 @@ Not Usable By:
  Druid
  Mage
  Beast Master~
-@9093=~Dagger +3~
-@9094=~This dagger has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8093=~Dagger +3~
+@8094=~This dagger has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3967,8 +3967,8 @@ Require: 3 Strength
 Not Usable By:
  Cleric
  Beast Master~
-@9095=~Battle Axe +3~
-@9096=~This battle axe has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8095=~Battle Axe +3~
+@8096=~This battle axe has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -3987,8 +3987,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9097=~Flail +3~
-@9098=~This flail has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8097=~Flail +3~
+@8098=~This flail has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4006,8 +4006,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9099=~Mace +3~
-@9101=~This mace has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8099=~Mace +3~
+@8101=~This mace has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4025,8 +4025,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9102=~Morning Star +3~
-@9103=~This morning star has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8102=~Morning Star +3~
+@8103=~This morning star has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4044,8 +4044,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9104=~War Hammer +3~
-@9105=~This war hammer has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8104=~War Hammer +3~
+@8105=~This war hammer has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4063,8 +4063,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9106=~Club +3~
-@9107=~This club has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8106=~Club +3~
+@8107=~This club has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4078,8 +4078,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@9108=~Two-Handed Sword +3~
-@9109=~This two-handed sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8108=~Two-Handed Sword +3~
+@8109=~This two-handed sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4098,8 +4098,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9110=~Halberd +3~
-@9111=~This halberd has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8110=~Halberd +3~
+@8111=~This halberd has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 Consisting of a cleaver-like axe blade mounted on a staff averaging six feet in length, the halberd is the oldest and most often used polearm. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd is best described as a cross between a spear and an axe. This particular halberd is enchanted, gifted with an enhanced ability to slaughter foes.
 
@@ -4120,8 +4120,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9112=~Spear +3~
-@9113=~This spear has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8112=~Spear +3~
+@8113=~This spear has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4139,8 +4139,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@9114=~Quarterstaff +3~
-@9115=~This quarterstaff has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8114=~Quarterstaff +3~
+@8115=~This quarterstaff has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4154,8 +4154,8 @@ Type: 2-handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@9116=~Composite Long Bow +3~
-@9117=~This composite long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8116=~Composite Long Bow +3~
+@8117=~This composite long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4175,8 +4175,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@9118=~Long Bow +3~
-@9119=~This long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8118=~Long Bow +3~
+@8119=~This long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4194,8 +4194,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@9120=~Short Bow +3~
-@9121=~This short bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8120=~Short Bow +3~
+@8121=~This short bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4212,8 +4212,8 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@9122=~Heavy Crossbow +3~
-@9123=~This heavy crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8122=~Heavy Crossbow +3~
+@8123=~This heavy crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4232,8 +4232,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@9124=~Light Crossbow +3~
-@9125=~This light crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8124=~Light Crossbow +3~
+@8125=~This light crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4251,8 +4251,8 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@9126=~Sling +3~
-@9127=~This sling has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8126=~Sling +3~
+@8127=~This sling has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4266,8 +4266,8 @@ Requires: 3 Strength
 Not Usable By:
  Cavalier
  Kensai~
-@9128=~Dart +3~
-@9129=~These darts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8128=~Dart +3~
+@8129=~These darts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4282,8 +4282,8 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@9130=~Arrow +3~
-@9131=~These arrows have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8130=~Arrow +3~
+@8131=~These arrows have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4292,8 +4292,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@9132=~Bolt +3~
-@9133=~These bolts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8132=~Bolt +3~
+@8133=~These bolts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4302,8 +4302,8 @@ Damage: 1D8
 Damage type: missile
 Weight: 0
 Launcher: Crossbow~
-@9134=~Bullet +3~
-@9135=~These bullets have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8134=~Bullet +3~
+@8135=~These bullets have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4312,91 +4312,92 @@ Damage: 1D4 + 4
 Damage type: missile
 Weight: 0
 Launcher: Sling~
-@9136=~Giant Spider~
-@9137=~Bite~
-@9138=~Sword Spider~
-@9139=~Legs & Bite +1~
-@9140=~Shadow~
-@9141=~Touch~
-@9142=~Wraith~
-@9143=~Touch +1~
-@9144=~Ogre Berserker~
-@9145=~Great Morning Star +1~
-@9146=~Ogre Mage~
-@9147=~Katana +1~
-@9148=~Lesser Fire Elemental~
-@9149=~Fist +2~
-@9150=~Fire Elemental~
-@9151=~Fist +3~
-@9152=~Greater Fire Elemental~
-@9153=~Fist +3~
-@9154=~Phantom Blade +4~
-@9155=~Reserved~
-@9156=~Lesser Air Elemental~
-@9157=~Fist +2~
-@9158=~Air Elemental~
-@9159=~Fist +3~
-@9160=~Greater Air Elemental~
-@9161=~Fist +3~
-@9162=~Lesser Earth Elemental~
-@9163=~Fist +2~
-@9164=~Earth Elemental~
-@9165=~Fist +3~
-@9166=~Greater Earth Elemental~
-@9167=~Fist +3~
-@9168=~Invisible Stalker~
-@9169=~Fist +2~
-@9170=~Wyvern~
-@9171=~Claws & Bite +2~
-@9172=~Greater Wyvern~
-@9173=~Claws & Bite +2~
-@9174=~Skeleton Warrior~
-@9175=~Two-Handed Sword +1~
-@9176=~Nishruu~
-@9177=~Contact +2~
-@9178=~Death Knight~
-@9179=~Two-Handed Sword +3~
-@9180=~Unholy Fireball~
-@9181=~Magical Sword~
-@9182=~Magical Sword +3~
-@9183=~Efreeti~
-@9184=~Scimitar +2~
-@9185=~Djinni~
-@9186=~Scimitar +2~
-@9187=~Hakeashar~
-@9188=~Contact +3~
-@9189=~Otyugh~
-@9190=~Bite & Tentacles +3~
-@9191=~Glabrezu~
-@9192=~Pincers & Claws +3~
-@9193=~Umber Hulk~
-@9194=~Claws & Bite +3~
-@9195=~Confusing Gaze~
-@9196=~Pit Fiend~
-@9197=~Claws, Bite & Tail +4~
-@9198=~Greater Wolfwere~
-@9199=~Claws & Bite +3~
-@9200=~Black Blade of Disaster +5~
-@9201=~Reserved~
-@9202=~Shapeshifts Iron Golem~
-@9203=~Fist +4~
-@9204=~Shapeshifts Mind Flayer~
-@9205=~Claws & Tentacles +3~
-@9206=~Shapeshifts Nycaloth~
-@9207=~Claws +3~
-@9208=~Shapeshifts Elder Spirit Troll~
-@9209=~Claws +3~
-@9210=~Shapeshifts Alpha Wolfwere~
-@9211=~Claws & Bite +3~
-@9212=~Energy Blades +5~
-@9213=~This disc was created by the Energy Blades spell. When thrown at opponents, it deals 1D4 + 5 missile damage as well as 1D10 electrical damage.~
-@9214=~Planetar~
-@9215=~Two-Handed Sword +3~
-@9216=~Fallen Planetar~
-@9217=~Two-Handed Sword +3~
-
+@8136=~Giant Spider~
+@8137=~Bite~
+@8138=~Sword Spider~
+@8139=~Legs & Bite +1~
+@8140=~Shadow~
+@8141=~Touch~
+@8142=~Wraith~
+@8143=~Touch +1~
+@8144=~Ogre Berserker~
+@8145=~Great Morning Star +1~
+@8146=~Ogre Mage~
+@8147=~Katana +1~
+@8148=~Lesser Fire Elemental~
+@8149=~Fist +2~
+@8150=~Fire Elemental~
+@8151=~Fist +3~
+@8152=~Greater Fire Elemental~
+@8153=~Fist +3~
+@8154=~Phantom Blade +4~
+@8155=~Reserved~
+@8156=~Lesser Air Elemental~
+@8157=~Fist +2~
+@8158=~Air Elemental~
+@8159=~Fist +3~
+@8160=~Greater Air Elemental~
+@8161=~Fist +3~
+@8162=~Lesser Earth Elemental~
+@8163=~Fist +2~
+@8164=~Earth Elemental~
+@8165=~Fist +3~
+@8166=~Greater Earth Elemental~
+@8167=~Fist +3~
+@8168=~Invisible Stalker~
+@8169=~Fist +2~
+@8170=~Wyvern~
+@8171=~Claws & Bite +2~
+@8172=~Greater Wyvern~
+@8173=~Claws & Bite +2~
+@8174=~Skeleton Warrior~
+@8175=~Two-Handed Sword +1~
+@8176=~Nishruu~
+@8177=~Contact +2~
+@8178=~Death Knight~
+@8179=~Two-Handed Sword +3~
+@8180=~Unholy Fireball~
+@8181=~Magical Sword~
+@8182=~Magical Sword +3~
+@8183=~Efreeti~
+@8184=~Scimitar +2~
+@8185=~Djinni~
+@8186=~Scimitar +2~
+@8187=~Hakeashar~
+@8188=~Contact +3~
+@8189=~Otyugh~
+@8190=~Bite & Tentacles +3~
+@8191=~Glabrezu~
+@8192=~Pincers & Claws +3~
+@8193=~Umber Hulk~
+@8194=~Claws & Bite +3~
+@8195=~Confusing Gaze~
+@8196=~Pit Fiend~
+@8197=~Claws, Bite & Tail +4~
+@8198=~Greater Wolfwere~
+@8199=~Claws & Bite +3~
+@8200=~Black Blade of Disaster +5~
+@8201=~Reserved~
+@8202=~Shapeshifts Iron Golem~
+@8203=~Fist +4~
+@8204=~Shapeshifts Mind Flayer~
+@8205=~Claws & Tentacles +3~
+@8206=~Shapeshifts Nycaloth~
+@8207=~Claws +3~
+@8208=~Shapeshifts Elder Spirit Troll~
+@8209=~Claws +3~
+@8210=~Shapeshifts Alpha Wolfwere~
+@8211=~Claws & Bite +3~
+@8212=~Energy Blades +5~
+@8213=~This disc was created by the Energy Blades spell. When thrown at opponents, it deals 1D4 + 5 missile damage as well as 1D10 electrical damage.~
+@8214=~Planetar~
+@8215=~Two-Handed Sword +3~
+@8216=~Fallen Planetar~
+@8217=~Two-Handed Sword +3~
 
 /*------------------Miscellaneous------------------*/
+
+@8218=~Familiar~
 
 @3527=~A vampiric touch spell is already active~
 @3583=~Saving Throws Lowered~
