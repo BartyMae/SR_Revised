@@ -1331,12 +1331,12 @@ COPY ~spell_rev\sppr7##\dvflmhit.eff~    ~override~
 COPY ~spell_rev\sppr7##\sppr731.spl~     ~override~  // Fire Elemental Transformation
   SAY NAME1 @291    SAY UNIDENTIFIED_DESC @292
 COPY ~spell_rev\sppr7##\sppr731.itm~     ~override~
-  SAY NAME1 @9153    SAY NAME2 @9153
+  SAY NAME1 @8153    SAY NAME2 @8153
 
 COPY ~spell_rev\sppr7##\sppr732.spl~     ~override~  // Earth Elemental Transformation
   SAY NAME1 @293    SAY UNIDENTIFIED_DESC @294
 COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
-  SAY NAME1 @9167    SAY NAME2 @9167
+  SAY NAME1 @8167    SAY NAME2 @8167
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
