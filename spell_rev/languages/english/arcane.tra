@@ -2543,7 +2543,7 @@ Pink - Maze (save vs. spell neg.)~
 Level: 7
 School: Enchantment
 Range: Long
-Duration: 5 rounds
+Duration: Special
 Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
@@ -2941,7 +2941,7 @@ When this power word is uttered, any creature of the wizard's choice within visu
 Level: 8
 School: Conjuration
 Range: Long
-Duration: Special
+Duration: 5 rounds
 Casting Time: 1 round
 Area of Effect: 20' radius
 Saving Throw: Spell negates
