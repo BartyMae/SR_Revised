@@ -91,6 +91,17 @@ Saving Throw: Spell negates
 
 When this spell is cast, the target is temporarily blinded for the duration of the spell. A blinded victim suffers a -10 penalty to THAC0 and decreased visibility range, but avoids all harmful effects if they successfully make a save vs. spell.~
 
+@412000000=~Blindness
+Level: 1
+School: Illusion
+Range: Long
+Duration: 1 turn
+Casting Time: 2
+Area of Effect: 1 person
+Saving Throw: Spell negates
+
+When this spell is cast, the target is temporarily blinded for the duration of the spell. A blinded victim suffers a -4 penalty to THAC0 and decreased visibility range, but avoids all harmful effects if they successfully make a save vs. spell.~
+
 @413000=~Friends~
 @414000=~Friends
 Level: 1
@@ -2935,6 +2946,17 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 When this power word is uttered, any creature of the wizard's choice within visual range becomes sightless. Creatures with less than 6 hit dice are blinded permanently, while other creatures are blinded for 1 turn or until dispelled. All of the effects of blindness apply to the victim, including a -10 penalty to THAC0 and decreased visibility range.~
+
+@792000=~Power Word: Blind
+Level: 8
+School: Enchantment
+Range: Long
+Duration: Special
+Casting Time: 1
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this power word is uttered, any creature of the wizard's choice within visual range becomes sightless. Creatures with less than 6 hit dice are blinded permanently, while other creatures are blinded for 1 turn or until dispelled. All of the effects of blindness apply to the victim, including a -4 penalty to THAC0 and decreased visibility range.~
 
 @793=~Symbol of Stunning~
 @794=~Symbol of Stunning

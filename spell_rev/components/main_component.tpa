@@ -1398,10 +1398,17 @@ COPY ~spell_rev\spwi1##\spwi106i.eff~    ~override~
 APPEND ~spell.ids~ ~2106 WIZARD_OBSCURING_MIST~
 
 ACTION_IF blindness=1 BEGIN
+ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN // -10 THAC0 vs. -4 THAC0 for blindness
 COPY ~spell_rev\shared\alternatives\spwi106.spl~     ~override~  // (original Blindness)
   SAY NAME1 @411000    SAY UNIDENTIFIED_DESC @412000
 COPY ~spell_rev\shared\alternatives\scrl71.itm~      ~override~
   SAY NAME2 @411000    SAY IDENTIFIED_DESC   @412000
+END ELSE BEGIN
+COPY ~spell_rev\shared\alternatives\spwi106.spl~     ~override~  // (original Blindness)
+  SAY NAME1 @411000    SAY UNIDENTIFIED_DESC @412000000
+COPY ~spell_rev\shared\alternatives\scrl71.itm~      ~override~
+  SAY NAME2 @411000    SAY IDENTIFIED_DESC   @412000000
+END
 END
 
 COPY ~spell_rev\spwi1##\spwi107.spl~     ~override~  // Friends
@@ -2998,10 +3005,17 @@ COPY ~spell_rev\spwi8##\spwi813.spl~     ~override~  // Maze
 COPY ~spell_rev\spwi8##\scrl9h.itm~      ~override~
   SAY NAME2 @789    SAY IDENTIFIED_DESC   @790
 
+ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN // -10 THAC0 vs. -4 THAC0 for blindness
 COPY ~spell_rev\spwi8##\spwi815.spl~     ~override~  // Power Word: Blind
   SAY NAME1 @791    SAY UNIDENTIFIED_DESC @792
 COPY ~spell_rev\spwi8##\scrl9j.itm~      ~override~
   SAY NAME2 @791    SAY IDENTIFIED_DESC   @792
+END ELSE BEGIN
+COPY ~spell_rev\spwi8##\spwi815.spl~     ~override~  // Power Word: Blind
+  SAY NAME1 @791    SAY UNIDENTIFIED_DESC @792000
+COPY ~spell_rev\spwi8##\scrl9j.itm~      ~override~
+  SAY NAME2 @791    SAY IDENTIFIED_DESC   @792000
+END
 COPY_EXISTING ~holdsumm.pro~             ~override~
   WRITE_SHORT 0x204 85
   WRITE_SHORT 0x206 85 // 10' AoE
