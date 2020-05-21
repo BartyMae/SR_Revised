@@ -544,11 +544,12 @@ ACTION_PHP_EACH d5_spell_scroll_school AS spell => school BEGIN
   END	
 //__________________________________________________________________________________
 //
-  ACTION_IF (~%school%~ STRING_EQUAL_CASE ~disabled~) BEGIN // no school
+  ACTION_IF (~%school%~ STRING_EQUAL_CASE ~disabled~) BEGIN // disabled
 	ACTION_IF (FILE_EXISTS_IN_GAME ~%spell%.spl~) BEGIN 
 		COPY_EXISTING ~%spell%.spl~ ~override~
 			READ_SHORT 0x1c spell_type
 			PATCH_IF spell_type = 1 BEGIN
+				WRITE_SHORT 0x20 0xe07f
 				READ_BYTE 0x21 div_excl
 				WRITE_BYTE 0x21 (div_excl BOR 0b11000000)
 			END
