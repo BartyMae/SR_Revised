@@ -1220,7 +1220,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the life energy level of the recipient is raised. This reverses any previous life energy level drain of the creature by a force or monster.
+When this spell is cast, the life energy level of the recipient is raised. This reverses any previous life energy level drain of the target by a force or monster, and also attempts to restore any drained statistics. Not all types of drained statistics are able to be restored by a Lesser Restoration spell, and those caused by disease should instead be treated with a Cure Disease, Heal, or Greater Restoration spell.
 
 The casting of this spell is very draining on the priest, leaving them physically and mentally exhausted. For 5 rounds after the spell is cast, the priest will suffer a -2 penalty to THAC0, damage, AC, and casting speed.~
 
@@ -2182,7 +2182,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell removes most temporary and permanent negative effects from the target creature. It reverses any previous life energy level drain of the creature caused by any force, spell, or monster. It can restore a polymorphed or petrified creature to its natural form, break the effects of a curse, reverse unnatural mental states such as confusion, feeblemindedness, and berserk rages, and free the recipient from magical effects like fear, paralysis, sleep, and stun. This potent spell will also restore any lost hit points and cure the target of any diseases or poisons.
+This spell removes most temporary and permanent negative effects from the target creature. It reverses any previous life energy level drain of the creature caused by any force, spell, or monster. It can restore a polymorphed or petrified creature to its natural form, break the effects of a curse, reverse unnatural mental states such as confusion, feeblemindedness, and berserk rages, and free the recipient from magical effects like fear, paralysis, sleep, and stun. This potent spell will also restore any lost hit points, cure the target of any diseases or poisons, and attempt to restore any drained statistics.
 
 The casting of this spell is very draining on the priest, leaving them physically and mentally exhausted. For 5 rounds after the spell is cast, the priest will suffer a -2 penalty to THAC0, damage, AC, and casting speed.~
 

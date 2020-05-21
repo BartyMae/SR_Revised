@@ -1,14 +1,12 @@
-/////HASTE & SLOW///
-//// 2 sectypes needed; one for each////
+/// Haste and slow
+/// Two sectypes needed, one for each
+ADD_SECTYPE ~k1#Haste~ @21003  // String to counter Haste
+ADD_SECTYPE ~k1#Slow~ @21004  // String to counter Slow
 
 
-ADD_SECTYPE ~k1#Haste~ @21003  // string to counter Haste - "Haste effect removed", "Haste Dispelled"....
-ADD_SECTYPE ~k1#Slow~ @21004  // string to counter Slow - "Slow Dispelled" or similar
+/// GLOBAL PATCH
 
-
-  //// GLOBAL PATCH ///
-
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~  // slowing items are countered by Haste
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~  // Slowing items are countered by Haste
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     READ_LONG 0x64 ab_off
     READ_SHORT 0x68 ab_num
@@ -26,7 +24,7 @@ END
 END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~  // Hasting spells are countered by Slow
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     READ_LONG 0x64 ab_off
     READ_SHORT 0x68 ab_num
@@ -44,7 +42,7 @@ END
 END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
+COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~  // Slowing spells are countered by Haste
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     SET found_haste=0
     READ_LONG 0x64 ab_off
@@ -66,7 +64,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
 	END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~
+COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~  // Hasting spells are countered by Slow
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     SET found_slow=0
     READ_LONG 0x64 ab_off
@@ -112,7 +110,7 @@ LPF CLONE_EFFECT INT_VAR match_opcode = 40 opcode = 221 parameter1 = 9 parameter
 END
 BUT_ONLY
 
-// SR spells don't use Haste opcode so are handled seperately //
+// SR spells don't use Haste opcode and so are handled seperately
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~spwi305.spl~) THEN BEGIN // Wizard's Haste
  COPY_EXISTING ~spwi305.spl~ ~override~
