@@ -2332,12 +2332,13 @@ COPY ~spell_rev\spwi5##\scrl5q.itm~      ~override~
   SAY NAME2 @627    SAY IDENTIFIED_DESC   @628
 COPY ~spell_rev\spwi5##\spwi509i.eff~     ~override~
 
-COPY ~spell_rev\spwi5##\spwi510.spl~     ~override~  // Dispelling Screen (replaces Spell Immunity)
+
+ADD_SPELL ~spell_rev\spwi5##\spwi510.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)
   SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
 LAF ds_altered_spell INT_VAR old_clone=142 new_clone=~-1~ STR_VAR file=~spwi590.spl~ END
 COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
   SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
-COPY ~spell_rev\spwi5##\spwi510d.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
 APPEND ~spell.ids~ ~2510 WIZARD_DISPELLING_SCREEN~
 
 ACTION_IF ai_spell_immunity=1 BEGIN
