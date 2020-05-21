@@ -21,7 +21,7 @@ END
 
 ACTION_IF petrification >= 1 BEGIN
 
-ADD_SECTYPE ~k1#Petrify~ @21005  // string to counter Petrify - "Petrification effect removed"
+ADD_SECTYPE ~k1#Petrify~ @22005  // string to counter Petrify - "Petrification effect removed"
 
 //// GLOBAL PATCH ///
 

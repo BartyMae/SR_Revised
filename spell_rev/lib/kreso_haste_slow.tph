@@ -1,7 +1,7 @@
 /// Haste and slow
 /// Two sectypes needed, one for each
-ADD_SECTYPE ~k1#Haste~ @21003  // String to counter Haste
-ADD_SECTYPE ~k1#Slow~ @21004  // String to counter Slow
+ADD_SECTYPE ~k1#Haste~ @22002  // String to counter Haste
+ADD_SECTYPE ~k1#Slow~ @22003  // String to counter Slow
 
 
 /// GLOBAL PATCH

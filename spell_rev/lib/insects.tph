@@ -1,7 +1,6 @@
-//INSECTS //
+/// INSECTS
 
-
-ADD_SECTYPE ~k1insect~ @21002 // change this to "Insects Dispersed" or whatever
+ADD_SECTYPE ~k1insect~ @22001
  
 COPY_EXISTING ~msectype.2da~ ~override~
   COUNT_2DA_ROWS "2" "sectype_k1insect"

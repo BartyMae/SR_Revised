@@ -24,7 +24,7 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
     BUT_ONLY
 
     // adding new sectype
-    ADD_SECTYPE SpellShield @21006 // ~Spell Shield Dispelled~
+    ADD_SECTYPE SpellShield @22004 // ~Spell Shield Dispelled~
 
     COPY_EXISTING spwi519.spl override
       WRITE_BYTE 0x27 SpellShield

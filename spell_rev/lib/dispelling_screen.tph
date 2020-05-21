@@ -1,8 +1,8 @@
-INCLUDE ~spell_rev\lib\macros.tpa~ // needed since I dug a hole for myself
+INCLUDE ~spell_rev\lib\macros.tpa~
 
 /// Secondary type stuff
 
-ADD_SECTYPE ~k1#Dispel~ @21000
+ADD_SECTYPE ~k1#Dispel~ @22000
 
 COPY_EXISTING ~msectype.2da~ ~override~
   COUNT_2DA_ROWS "2" "sectype_k1#Dispel"
@@ -11,7 +11,7 @@ COPY_EXISTING ~msectype.2da~ ~override~
 
 LAF CREATE_SPELL STR_VAR spell=~k1#scre~ END
 COPY_EXISTING ~k1#scre.spl~ override
-LPF ADD_SPELL_HEADER INT_VAR type = 1 level = 5 power = 5 projectile = 158 range = 30 END // 
+LPF ADD_SPELL_HEADER INT_VAR type = 1 level = 5 power = 5 projectile = 158 range = 30 END
  LPF ADD_SPELL_EFFECT 
 INT_VAR
 opcode = 206
