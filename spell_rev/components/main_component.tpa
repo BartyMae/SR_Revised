@@ -32,8 +32,7 @@ COPY ~spell_rev\shared\dvsrv4here.mrk~   ~override~  // Used to detect if SR V4 
 COPY ~spell_rev\shared\dvsrr.mrk~        ~override~  // Used to detect if SRR is installed
 
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  //STRING_SET ~34560~ @21005 // replaces 'Battleground Effects Removed' with 'Petrification effects reverted'
-  STRING_SET ~27982~ @21007 // replaces 'Protection from Illusions removed' with 'Illusionary protections removed'
+  STRING_SET ~27982~ @21007 // replaces 'Protection from Illusions removed' with 'Illusionary Protections Removed'
   STRING_SET ~8275~  @105 // replaces 'Repulsing Undead' with 'Repulsion'
   STRING_SET ~12122~ @49 // replaces 'Resist Fire and Cold' with 'Resist Elements'
   STRING_SET ~17417~ @49 // replaces 'Resist Fire/Cold' with 'Resist Elements'

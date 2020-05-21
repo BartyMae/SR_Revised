@@ -1,22 +1,16 @@
 INCLUDE ~spell_rev\lib\macros.tpa~ // needed since I dug a hole for myself
 
-//// SECONDARY TYPE STUFF///
+/// Secondary type stuff
 
-///DISPELLING SCREEN AOE VERSION aka WHY CAN't MY BUFFS STAY AND WHY DO I MISS AN END SOMEWHERE//
-
-ADD_SECTYPE ~k1#Dispel~ @21000 // add a string reference for removal, like ~Dispelling Screen Dissipates~ or something
+ADD_SECTYPE ~k1#Dispel~ @21000
 
 COPY_EXISTING ~msectype.2da~ ~override~
   COUNT_2DA_ROWS "2" "sectype_k1#Dispel"
   SET "sectype_k1#Dispel" -= "2"
   PRETTY_PRINT_2DA
- 
- // 16.1.2016... if I go build this spell via code, SRv4 will see the light of day year 2056...//
- // 17.1.2016....I did it... :)//
- 
-LAF CREATE_SPELL STR_VAR spell=~k1#scre~ END  // Could be simpler....
+
+LAF CREATE_SPELL STR_VAR spell=~k1#scre~ END
 COPY_EXISTING ~k1#scre.spl~ override
-SAY NAME1 @21001   SAY UNIDENTIFIED_DESC @21001
 LPF ADD_SPELL_HEADER INT_VAR type = 1 level = 5 power = 5 projectile = 158 range = 30 END // 
  LPF ADD_SPELL_EFFECT 
 INT_VAR

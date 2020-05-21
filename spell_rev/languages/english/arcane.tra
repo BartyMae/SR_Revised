@@ -4420,16 +4420,14 @@ Launcher: Sling~
 /*------------------Miscellaneous------------------*/
 
 @8218=~Familiar~
-
-@3527=~A vampiric touch spell is already active~
+@3527=~A Vampiric Touch spell is already active~
 @3583=~Saving Throws Lowered~
-@21000=~Dispelling Screen Dissipated~
-@21001=~Dispelling Screen Activated~
+@21000=~Dispelling Screen Dispelled~
+@21001=~Statistics Restored~
 @21002=~Insects Dispersed~
 @21003=~Haste Effect Countered~
 @21004=~Slow Effect Countered~
-@21005=~Petrification Effect Reverted~
+@21005=~Freed from Petrification~
 @21006=~Spell Shield Dispelled~
 @21007=~Illusionary Protections Removed~
 @21008=~Freed from Imprisonment~
-@21009=~Statistics Restored~
