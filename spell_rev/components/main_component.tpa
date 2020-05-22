@@ -35,6 +35,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   STRING_SET ~27982~ @21000 // replaces 'Protection from Illusions removed' with 'Illusionary Protections Removed'
   STRING_SET ~12122~ @49 // replaces 'Resist Fire and Cold' with 'Resist Elements'
   STRING_SET ~17417~ @49 // replaces 'Resist Fire/Cold' with 'Resist Elements'
+  STRING_SET ~54307~ @629 // replaces 'Spell Immunity' with 'Dispelling Screen'
   STRING_SET ~8275~  @105 // replaces 'Repulsing Undead' with 'Repulsion'
 END
 
@@ -3254,6 +3255,90 @@ END
 
 COPY ~spell_rev\spwi9##\spwi925.spl~     ~override~  // Comet
   SAY NAME1 @861    SAY UNIDENTIFIED_DESC @862
+
+
+/*---------------------Projectile Protection Patching---------------------*/
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) THEN BEGIN
+COPY_EXISTING ~spra303.spl~      ~override~  // Protection from Missiles
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  SET "loop" = 1
+  WHILE (%loop% < 37) BEGIN
+  SET opcode = 83
+  SET target = 1
+  SET timing = 0
+  SET power = 6
+  SET resist_dispel = 3
+  SET duration = (84 + (%loop% * 6))
+  SET probability1 = 100
+  SET probability2 = 0
+  SPRINT "resource" ""
+  SET dicenumber = 0
+  SET dicesize = 0
+  SET savingthrow = 0
+  SET savebonus = 0
+  SET parameter1 = 0
+  SET parameter2 = (%dvfarrow% - 1)
+  SET header = %loop%
+  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  SET "loop" = %loop% + 1
+  END
+END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) THEN BEGIN
+COPY_EXISTING ~sppr613.spl~     ~override~  // Physical Mirror
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  SET "loop" = 1
+  WHILE (%loop% < 31) BEGIN
+  SET opcode = 83
+  SET target = 1
+  SET timing = 0
+  SET power = 6
+  SET resist_dispel = 3
+  SET duration = (120 + (%loop% * 6))
+  SET probability1 = 100
+  SET probability2 = 0
+  SPRINT "resource" ""
+  SET dicenumber = 0
+  SET dicesize = 0
+  SET savingthrow = 0
+  SET savebonus = 0
+  SET parameter1 = 0
+  SET parameter2 = (%dvfarrow% - 1)
+  SET header = %loop%
+  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  SET "loop" = %loop% + 1
+  END
+END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) THEN BEGIN
+COPY_EXISTING ~spwi311.spl~     ~override~  // Protection from Missiles
+PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  SET "loop" = 1
+  WHILE (%loop% < 37) BEGIN
+  SET opcode = 83
+  SET target = 1
+  SET timing = 0
+  SET power = 6
+  SET resist_dispel = 3
+  SET duration = (84 + (%loop% * 6))
+  SET probability1 = 100
+  SET probability2 = 0
+  SPRINT "resource" ""
+  SET dicenumber = 0
+  SET dicesize = 0
+  SET savingthrow = 0
+  SET savebonus = 0
+  SET parameter1 = 0
+  SET parameter2 = (%dvfarrow% - 1)
+  SET header = %loop%
+  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  SET "loop" = %loop% + 1
+  END
+END
+END
 
 
 /*------------Manage ADD_SPELL References, Part 2-----------*/
