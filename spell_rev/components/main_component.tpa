@@ -3513,6 +3513,27 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
 END
 
 
+/*----------------Remove Disabled Spell Scrolls-----------------*/
+
+// BG2 broken areas fix
+ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) THEN BEGIN
+  COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
+  COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
+END
+
+COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5t END
+  END
+BUT_ONLY
+
+COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+    REMOVE_STORE_ITEM SCRL5T
+  END
+BUT_ONLY
+
+
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
