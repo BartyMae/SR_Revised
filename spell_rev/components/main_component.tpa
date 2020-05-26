@@ -2076,12 +2076,10 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~scrolls.sto~) THEN BEGIN
   COPY_EXISTING ~scrolls.sto~      ~override~  // Lady Yuth's Pen and Parchment
     REPLACE_TEXTUALLY ~SCRLAK~ ~SCRL5G~
   END
-END
 ACTION_IF (FILE_EXISTS_IN_GAME ~25spell2.sto~) THEN BEGIN
   COPY_EXISTING ~25spell.sto~      ~override~  // Lazarus Librarus' Pen and Parchment
     REPLACE_TEXTUALLY ~SCRLAK~ ~SCRL5G~
   END
-END
 
 
 COPY ~spell_rev\spwi4##\spwi411.spl~     ~override~  // Emotion: Despair
