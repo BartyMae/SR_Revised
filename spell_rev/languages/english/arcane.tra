@@ -842,7 +842,7 @@ Gray Ooze (3 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Petrification, Poison, and Stun
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Ochre Jelly (5 HD):
  ST14, DE10, CO-, IN3, WI3, CH3
@@ -855,7 +855,7 @@ Ochre Jelly (5 HD):
 Special Characteristics:
  Magic Resistance: 10%
  Protected Against: Backstabs, Disease, Level Drain, Petrification, Poison, and Stun
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects~
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 @519=~Non-Detection~
 @520=~Non-Detection
@@ -1286,7 +1286,7 @@ Mustard Jelly (7 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, Poison, and Stun
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
 
@@ -1332,7 +1332,7 @@ Troll (7 HD):
 
 Special Characteristics:
  Regeneration: 1 hp/second
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Winter Wolf (6 HD):
  STR 15, DEX 17, CON 15
@@ -1533,7 +1533,7 @@ Shadow (5 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Normal Weapons, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Chill Touch: target suffers a -2 penalty to strength for 1 turn
 
 Wraith (7 HD):
@@ -1546,7 +1546,7 @@ Wraith (7 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Normal Weapons, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Life Drain: target is drained 1 level, restoring 5 hit points to the wraith (save vs. death at -4 neg.)~
 
 @613=~Cloudkill~
@@ -1757,7 +1757,7 @@ Casting Time: 5
 Area of Effect: Sight
 Saving Throw: None
 
-When this spell is cast, all hostile illusionary/phantasm spells in sight of the caster will be dispelled. This spell only affects enemies.
+When this spell is cast, all illusionary/phantasm spells within sight of the caster will be dispelled. This spell only affects enemies.
 
 The spells that are affected by this are: Reflected Image, Invisibility, Blur, Mirror Image, Ghost Armor, Invisibility Sphere, Improved Invisibility, Shadow Door, Pixie Dust, Mislead, Project Image, and Mass Invisibility.~
 
@@ -1929,7 +1929,7 @@ Invisible Stalker (8 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Natural Invisibility: permanent improved invisibility
  Sneak Attack: 2x backstab multiplier~
 
@@ -2322,7 +2322,7 @@ Skeleton Warrior (9 HD):
 Special Characteristics:
  Magic Resistance: 90%
  Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects~
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 @705=~Summon Nishruu~
 @706=~Summon Nishruu
@@ -2453,7 +2453,7 @@ Death Knight (13 HD):
 Special Characteristics:
  Magic Resistance: 75%
  Protected Againt: Death, Normal Weapons, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Aura of Fear: every round, creatures in a 10' radius flee in terror for 1 round (save vs. spell neg.)
  Detect Invisibility (permanent)
  Unholy Fireball (1x per day)
@@ -2582,7 +2582,7 @@ Magical Sword (10 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects~
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 @749=~Summon Efreeti~
 @750=~Summon Efreeti
@@ -2769,7 +2769,7 @@ Casting Time: 8
 Area of Effect: 1 creature
 Saving Throw: None
 
-The subject is protected from all devices and spells that detect, influence, or read emotions and/or thoughts. This spell protects against all mind-affecting spells and effects as well as information-gathering attempts by divination spells or abilities.~
+A Mind Blank spell protects the recipient against all spells, abilities, and devices that detect, influence, or read emotions and/or thoughts. Mind-affecting spells and abilities (including charm, command, confusion, domination, emotion, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects) as well as information-gathering attempts made by divination (including Detect Alignment, Know Opponent, and Oracle) will have no effect.~
 
 @771=~Protection from Energy~
 @772=~Protection from Energy
@@ -2834,7 +2834,7 @@ Glabrezu (15 HD):
 Special Characteristics:
  Magic Resistance: 50%
  Protected Against: Normal/+1 Weapons and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Detect Invisibility (permanent)
  
 Known Spells:
@@ -3076,7 +3076,7 @@ Special Characteristics:
  Magic Resistance: 65%
  Regeneration: 2 hp/round
  Protected Against: Normal/+1/+2 Weapons and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Venomous: 25% chance target suffers 5 poison every second for 2 rounds (save vs. poison at -4 neg.)
  Constricting: 25% chance target is stunned for 1 round (save vs. death at -4 penalty neg.)
  Detect Invisibility (permanent)
@@ -3258,7 +3258,7 @@ Iron Golem (18 HD):
 Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Normal/+1/+2 Weapons, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Mind Flayer (12 HD):
  STR 10, DEX 10, CON 12
@@ -3283,7 +3283,7 @@ Nycaloth (12 HD):
 Special Characteristics:
  Magic Resistance: 70%
  Protected Against: Normal/+1 Weapons and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Detect Invisibility (permanent)
 
 Elder Spirit Troll (15 HD):
@@ -3297,7 +3297,7 @@ Special Characteristics:
  Magic Resistance: 25%
  Regeneration: 1 hp/sec
  Protected Against: Normal/+1 Weapons
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Natural Invisibility: permanent improved invisibility
  Draining: target suffers a -1 penalty to strength for 1 turn (save vs. death at -2 neg.)
  Slowing: target is slowed for 2 rounds (save vs. breath at -2 neg.)

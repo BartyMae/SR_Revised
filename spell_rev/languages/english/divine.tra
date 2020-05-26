@@ -591,7 +591,7 @@ Skeleton (2 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Greater Skeleton (5 HD):
  ST16, DE14, CO-, IN-, WI10, CH3
@@ -603,7 +603,7 @@ Greater Skeleton (5 HD):
 
 Special Characteristics:
  Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects~
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 @73=~Call Lightning~
 @74=~Call Lightning
@@ -1402,7 +1402,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-While under the effects of a Chaotic Commands spell, the recipient becomes immune to magical commands. Charm, Command, Confusion, Domination, Hold Person, and Sleep are all spells that fit into this category. This spell also protects from psionic mind attacks such as a mind flayer's Psionic Blast, but it will not confer complete immunity to psionics.~
+While under the effects of a Chaotic Commands spell, the recipient becomes immune to magical commands. Sleep, Command, Charm, Hold Person, Confusion, and Domination are all spells that fit into this category. This spell also protects from psionic mind attacks such as a mind flayer's Psionic Blast, but it will not confer complete immunity to psionics.~
 
 @167=~Magic Resistance~
 @168=~Magic Resistance
@@ -1955,7 +1955,7 @@ Skeleton Warrior (9 HD):
 Special Characteristics:
  Magic Resistance: 90%
  Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: confers protection against many forms of mind-affecting magic, such as charm, confusion, domination, fear, feeblemind, hold, sleep, psionics, and other similar effects~
+ Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 
 /*------------------Level 7------------------*/
