@@ -2151,7 +2151,7 @@ COPY ~spell_rev\spwi4##\spwi467.itm~     ~override~
   SAY NAME1 @8078   SAY NAME2 @8078
 */
 
-ACTION_IF enchanted_weapon=1 BEGIN
+ACTION_IF ee_enchanted_weapon=0 BEGIN
 COPY ~spell_rev\spwi4##\spwi417.spl~     ~override~  // Enchanted Weapon
   SAY NAME1 @593    SAY UNIDENTIFIED_DESC @594
 COPY ~spell_rev\spwi4##\scrl6m.itm~      ~override~
@@ -2351,7 +2351,7 @@ COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
   SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
 COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
 
-ACTION_IF ai_spell_immunity=1 BEGIN
+ACTION_IF spell_immunity=1 BEGIN
 COPY ~spell_rev\spwi5##\spwi590.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi591.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi592.spl~     ~override~
@@ -3123,7 +3123,7 @@ COPY ~spell_rev\spwi9##\spwi909.spl~     ~override~  // Time Stop
 COPY ~spell_rev\spwi9##\scrl9r.itm~      ~override~
   SAY NAME2 @821    SAY IDENTIFIED_DESC   @822
 
-ACTION_IF saving_throw_imprisonment=1 BEGIN
+ACTION_IF resist_imprisonment=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi910.spl~     ~override~  // Imprisonment
   SAY NAME1 @823    SAY UNIDENTIFIED_DESC @824000
 COPY ~spell_rev\spwi9##\scrl9s.itm~      ~override~
@@ -3547,6 +3547,7 @@ BUT_ONLY
 
 /*----------------Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs Only)-----------------*/
 
+ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 ACTION_FOR_EACH resource IN
   ~sppr731~
@@ -3576,6 +3577,7 @@ BEGIN
   END
 END
 END  
+END
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
