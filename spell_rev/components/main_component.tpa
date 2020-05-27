@@ -1426,10 +1426,14 @@ ADD_SPELL ~spell_rev\spwi1##\spwi109.spl~ 2 1 ~WIZARD_DIMENSION_JUMP~  // Dimens
   SAY NAME1 @563    SAY UNIDENTIFIED_DESC @564
 COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override~  // vanilla's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
+ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
 COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override\bgscrl1v.itm~  // BGT's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
+END
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override\scrl1v_.itm~  // EET's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
+END
 APPEND ~spell.ids~ ~2109 WIZARD_DIMENSION_JUMP~
 
 COPY ~spell_rev\spwi1##\spwi110.spl~     ~override~  // Identify
@@ -2151,17 +2155,19 @@ COPY ~spell_rev\spwi4##\spwi467.itm~     ~override~
   SAY NAME1 @8078   SAY NAME2 @8078
 */
 
-ACTION_IF ee_enchanted_weapon=0 BEGIN
 COPY ~spell_rev\spwi4##\spwi417.spl~     ~override~  // Enchanted Weapon
   SAY NAME1 @593    SAY UNIDENTIFIED_DESC @594
 COPY ~spell_rev\spwi4##\scrl6m.itm~      ~override~
   SAY NAME2 @593    SAY IDENTIFIED_DESC   @594
 COPY ~spell_rev\spwi4##\enchwp~          ~override~
-END ELSE BEGIN
+
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+ACTION_IF ee_enchanted_weapon=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi417.spl~     ~override~  // Enchanted Weapon
   SAY NAME1 @593    SAY UNIDENTIFIED_DESC @594000
 COPY ~spell_rev\shared\alternatives\scrl6m.itm~      ~override~
   SAY NAME2 @593    SAY IDENTIFIED_DESC   @594000
+END
 END
 
 COPY ~spell_rev\spwi4##\spwi418.spl~     ~override~  // Fire Shield (previously named Fire Shield Red)
@@ -3547,8 +3553,8 @@ BUT_ONLY
 
 /*----------------Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs Only)-----------------*/
 
-ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
 ACTION_FOR_EACH resource IN
   ~sppr731~
   ~sppr732~
