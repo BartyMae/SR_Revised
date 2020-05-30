@@ -3376,7 +3376,7 @@ LAF ardanis_spell_shield END
 INCLUDE ~spell_rev\lib\kreso_haste_slow.tph~
 INCLUDE ~spell_rev\lib\kreso_petrification.tph~
 INCLUDE ~spell_rev\lib\dispelling_screen.tph~
-//INCLUDE ~spell_rev\lib\insects.tph~
+INCLUDE ~spell_rev\lib\insects.tph~
 INCLUDE ~spell_rev\lib\imprisonment.tph~
 INCLUDE ~spell_rev\lib\stat_drain.tph~
 
