@@ -1809,7 +1809,7 @@ Level: 6
 School: Alteration
 Sphere: Numbers
 Range: Personal
-Duration: 2 turns
+Duration: 1 turn + 1 round/level
 Casting Time: 6
 Area of Effect: Special
 Saving Throw: None
