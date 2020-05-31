@@ -6216,8 +6216,8 @@ BUT_ONLY_IF_IT_CHANGES
 END
 
 
-//Spell Deflection fixes
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi618b.spl~ THEN BEGIN
+// Spell Deflection fixes
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr701.spl~ THEN BEGIN
 COPY_EXISTING ~sppr701.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET opcode = 201			// Set opcode
@@ -6238,7 +6238,9 @@ SET parameter2 = 1 // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
+END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi318.spl~ THEN BEGIN
 COPY_EXISTING ~spwi318.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET opcode = 201			// Set opcode
@@ -6259,7 +6261,9 @@ SET parameter2 = 1 // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
+END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi522.spl~ THEN BEGIN
 COPY_EXISTING ~spwi522.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET opcode = 201			// Set opcode
@@ -6270,7 +6274,7 @@ SET resist_dispel = 2	// dispel/resitance
 SET duration = 300		// duration
 SET probability1 = 100	// probability 1
 SET probability2 = 0	// probability 2
-SPRINT "resource" "spwi618b" 		// resource
+SPRINT "resource" "spwi522b" 		// resource
 SET dicenumber = 0		// dice number 
 SET dicesize = 0		// dice size
 SET savingthrow = 0   // saving throw
@@ -6280,7 +6284,9 @@ SET parameter2 = 1 // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
+END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi618.spl~ THEN BEGIN
 COPY_EXISTING ~spwi618.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET opcode = 201			// Set opcode
@@ -6301,7 +6307,9 @@ SET parameter2 = 1 // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
+END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi618b.spl~ THEN BEGIN
 COPY_EXISTING ~spwi618b.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET opcode = 321			// Set opcode
@@ -6322,7 +6330,9 @@ SET parameter2 = 0 // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
+END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi701.spl~ THEN BEGIN
 COPY_EXISTING ~spwi701.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET opcode = 201			// Set opcode
@@ -6333,7 +6343,7 @@ SET resist_dispel = 2	// dispel/resitance
 SET duration = 300		// duration
 SET probability1 = 100	// probability 1
 SET probability2 = 0	// probability 2
-SPRINT "resource" "spwi712b" 		// resource
+SPRINT "resource" "spwi701b" 		// resource
 SET dicenumber = 0		// dice number 
 SET dicesize = 0		// dice size
 SET savingthrow = 0   // saving throw
@@ -6343,7 +6353,9 @@ SET parameter2 = 1 // param2
 SET header = 1
 LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 END
+END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi902.spl~ THEN BEGIN
 COPY_EXISTING ~spwi902.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   SET "loop" = 1
@@ -6368,4 +6380,84 @@ LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 SET "loop" = %loop% + 1
 END
 END
+END
+
+
+// 1pp graphical effects
+ACTION_IF (FILE_EXISTS_IN_GAME ~SPWI317.SPL~) THEN BEGIN
+  COPY_EXISTING ~SPWI317.SPL~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x6a "fx_off"
+    READ_SHORT 0x6e "fx_idx"
+    READ_SHORT 0x70 "fx_num"
+    PATCH_IF (fx_off > 0x71) BEGIN
+      FOR (index = fx_idx ; index < fx_num ; index = index + 1) BEGIN
+        READ_SHORT ("%fx_off%" +        ("%index%" * 0x30)) "opcode"
+        READ_ASCII ("%fx_off%" + 0x14 + ("%index%" * 0x30)) "resref"
+        PATCH_IF (("%opcode%" = 215) AND ("%resref%" STRING_EQUAL_CASE "ICARMOR"))  BEGIN
+          WRITE_ASCII ("%fx_off%" + 0x14 + ("%index%" * 0x30)) ~1WDGARMR~ #8
+        END
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~SPWI414.SPL~) THEN BEGIN
+  COPY_EXISTING ~SPWI414.SPL~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x6a "fx_off"
+    READ_SHORT 0x6e "fx_idx"
+    READ_SHORT 0x70 "fx_num"
+    PATCH_IF (fx_off > 0x71) BEGIN
+      FOR (index = fx_idx ; index < fx_num ; index = index + 1) BEGIN
+        READ_SHORT ("%fx_off%" +        ("%index%" * 0x30)) "opcode"
+        READ_ASCII ("%fx_off%" + 0x14 + ("%index%" * 0x30)) "resref"
+        PATCH_IF (("%opcode%" = 215) AND ("%resref%" STRING_EQUAL_CASE "SPSARMOR"))  BEGIN
+          WRITE_ASCII ("%fx_off%" + 0x14 + ("%index%" * 0x30)) ~1WDSARMR~ #8
+        END
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR119D.spl~) BEGIN
+  COPY_EXISTING ~DVPR119D.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR219D.spl~) BEGIN
+  COPY_EXISTING ~DVPR219D.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR321D.spl~) BEGIN
+  COPY_EXISTING ~DVPR321D.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR414D.spl~) BEGIN
+  COPY_EXISTING ~DVPR414D.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
+  END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR510D.spl~) BEGIN
+  COPY_EXISTING ~DVPR510D.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~ICMAGICH~ ~1WDCMDAM~
+  END
+  BUT_ONLY_IF_IT_CHANGES
 END
