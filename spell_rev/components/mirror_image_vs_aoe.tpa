@@ -1,0 +1,186 @@
+//////////////////////////////////////////////
+// Functions
+
+DEFINE_PATCH_FUNCTION bypass_mirror_image INT_VAR
+  skip_check = 0 // check for projectile by default
+BEGIN
+  PATCH_IF ~%SOURCE_EXT%~ STRING_EQUAL_CASE ~spl~ BEGIN
+    length = 0x28
+  END ELSE BEGIN
+    length = 0x38
+  END
+
+  GET_OFFSET_ARRAY headers 0x64 4 0x68 2 0 0 length
+  PHP_EACH headers AS i => r BEGIN // List abilities
+    READ_SHORT r+0x26 pronum // Read projectile
+    PATCH_IF skip_check || (VARIABLE_IS_SET $mirror_ignore(~%pronum%~)) BEGIN // Check if projectile is valid
+      GET_OFFSET_ARRAY2 effects r ITM_V10_HEAD_EFFECTS
+      PHP_EACH effects AS i2 => r2 BEGIN // List ability effects
+        PATCH_IF (SHORT_AT r2) = 12 BEGIN // Check if the opcode is damage
+          WRITE_BYTE r2+0x27 THIS | 1 // Set "ignore MI" flag
+        END
+      END
+    END
+  END
+END
+
+//////////////////////////////////////////////
+// Patching
+
+// List AoE projectiles
+ACTION_FOR_EACH ~pronumber~ IN // Vanilla projectiles
+  ~3~ // ARROWEX
+  ~18~ // BULLETEX
+  ~38~ // FIREBALL
+  ~40~ // Lightning Bolt
+  ~81~ // Call Lightning
+  ~92~ // FIRESTOR
+  ~95~ // CLOUD
+  ~96~ // TRAPSKUL
+  ~98~ // ICESTORM
+  ~100~ // TRAPGLYP
+  ~187~ // CLOUDKIL
+  ~211~ // FIREBLNS
+  ~213~ // LIGHTCHA
+  ~223~ // CLOUDPC
+  ~224~ // GOLCLOUD
+  ~229~ // METSWARM
+  ~230~ // INSEC3
+  ~232~ // INSEC4
+  ~234~ // PFIRE2
+  ~235~ // PSKULLT
+  ~236~ // PCOMETT
+  ~237~ // PWILT
+  ~244~ // DFIREBL
+  ~246~ // DRAGRED
+  ~247~ // DRAGBLCK
+  ~248~ // DRAGSILV
+  ~250~ // CONECOLD
+  ~251~ // PHOLYST
+  ~252~ // PUNHLST
+  ~253~ // PSPRAY
+  ~256~ // REDHIT
+  //~258~ // PFIRE3 (melf's minute meteors/sol's searing orb??)
+  ~261~ // HOLYAREA
+  ~262~ // UNLYAREA
+  ~265~ // STRMVENG
+  ~266~ // Comet
+  ~270~ // SPDRBRTH
+  ~272~ // DRAGGREE
+  ~273~ // GREEHIT
+BEGIN
+   OUTER_SPRINT $mirror_ignore(~%pronumber%~) ~~
+END
+
+ACTION_FOR_EACH ~pro~ IN // mod-added projectiles
+  ~burnhand~ // Fixpack's OBC Burning Hands
+  //~dvobmist~ // SR's Obscuring Mist
+  //~dvsilenc~ // SR's Silence
+  ~dvspgrow~ // SR's Spike Growth
+  ~dvflame~  // SR's Flame Strike
+  //~dvgcommd~ // SR's Greater Command
+  //~dvrepuls~ // SR's Repulsion
+  ~dvbladeb~ // SR's Blade Barrier
+  //~dvfdawn~  // SR's False Dawn
+  //~dvnatbty~ // SR's Nature's Beauty
+  //~dvschaos~ // SR's Chaos
+  ~dvstormv~ // SR's Storm of Vengeance
+  ~dvburnhd~ // SR's Burning Hands
+  //~dvfogc~   // SR's Obscuring Mist
+  //~dvstink~  // SR's Stinking Cloud
+  ~dvsndbr~  // SR's Sound Burst
+  //~dvgldust~ // SR's Glitterdust
+  //~dvsplthr~ // SR's Spell Thrust
+  ~dvvtrsph~ // SR's Vitriolic Sphere
+  ~dvckill~  // SR's Cloudkill
+  //~dvsdoor~  // SR's Shadow Door
+  ~dvsunfir~ // SR's Sunfire
+  ~dvafog~   // SR's Acid Fog
+  ~dvicloud~ // SR's Incendiary Cloud
+  ~dvmswarm~ // SR's Meteor Swarm
+  ~arowex2~  // IR's Explosion
+  //~belt10~   // IR's Inertial Barrier
+  //~clck07~   // IR's Blinding Beauty
+  ~halb09~   // IR's Smashing Wave
+  //~helm30~   // IR's Shadow Door
+  //~misc31~   // IR's Silence
+  //~misc3m~   // IR's Confusion
+  //~plat12~   // IR's Aura of Despair
+  //~staf09~   // IR's Aura of Command
+  //~sw1h36~   // IR's Silence
+  ~wand11~   // IR's Flame Strike
+  
+BEGIN
+  OUTER_SET pronumber = IDS_OF_SYMBOL (projectl ~%pro%~) + 1
+  ACTION_IF (pronumber > 0) BEGIN
+    OUTER_SPRINT $mirror_ignore(~%pronumber%~) ~~
+  END
+END
+
+// Patch all item abilities and spells using AoE projectiles
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+                          ~^.+\.spl$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    LPF bypass_mirror_image END
+  END
+BUT_ONLY
+
+// Now patch special cases where the spell/item ability isn't using an AoE-specific projectile that exists, SR and vanilla
+ACTION_FOR_EACH spell IN
+              ~abzaway~  ~override~ // Custom Abazigal spell
+              ~spcl237d~  ~override~ // Greater Sun
+              ~sppr707~  ~override~ // Sunray's base damage
+              ~sppr720~  ~override~ // Earthquake
+              ~sppr730d~ ~override~ // Aura of Flaming Death
+BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%spell%.spl~ BEGIN
+    COPY_EXISTING ~%spell%.spl~ ~override~ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      LPF bypass_mirror_image INT_VAR skip_check=1 END
+    END BUT_ONLY
+  END
+END
+
+ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN // Only in SR
+  ACTION_FOR_EACH spell IN
+    ~sppr313d~ // Holy Smite (can't bypass MI in vanilla)
+    ~sppr314d~ // Unholy Blight (can't bypass MI in vanilla)
+    ~spwi403a~ // Fire Shield Blue
+    ~spwi403b~
+    ~spwi403c~
+    ~spwi403d~
+    ~spwi403e~
+    ~spwi403f~
+    ~spwi403g~
+    ~spwi403h~
+    ~spwi418a~ // Fire Shield Red
+    ~spwi418b~
+    ~spwi418c~
+    ~spwi418d~
+    ~spwi418e~
+    ~spwi418f~
+    ~spwi418g~
+    ~spwi418h~
+    ~spwi616~  // Disintegrate
+    ~sppr319b~ // Summon Insects (can't bypass MI in vanilla)
+    ~sppr517b~ // Insect Plague (can't bypass MI in vanilla)
+    ~sppr606d~ // Fire Seeds (with this as a spell, Protection from Fire can protect against the animation)
+    ~sppr609f~ // False Dawn (can't bypass MI in vanilla)
+    ~sppr707f~ // Sunray's undead damage (can't bypass MI in vanilla)
+    ~sppr717b~ // Creeping Doom (can't bypass MI in vanilla)
+  BEGIN
+    ACTION_IF FILE_EXISTS_IN_GAME ~%spell%.spl~ BEGIN
+      COPY_EXISTING ~%spell%.spl~ ~override~ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        LPF bypass_mirror_image INT_VAR skip_check=1 END
+      END BUT_ONLY
+    END
+  END
+END ELSE BEGIN // Only in vanilla  
+  COPY_EXISTING ~fireseed.itm~ ~override~ // Fire Seeds
+                ~sppr951d.itm~ ~override~ // Fire Shield Blue
+                ~sppr952d.itm~ ~override~ // Fire Shield Red
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    LPF bypass_mirror_image INT_VAR skip_check=1 END
+  END BUT_ONLY
+END
+
+COPY ~spell_rev\shared\dvmirror.mrk~        ~override~  // Used to detect if SR's Mirror Image Fix is installed

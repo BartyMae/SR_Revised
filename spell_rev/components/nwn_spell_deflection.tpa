@@ -58,7 +58,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 
 //~spdr201~ => 1 // web
 ~spdr501~ => 1 // cone of cold
-//~spdr601~ => 1 // chain lighting
+~spdr601~ => 1 // chain lighting
 
 //~spwi101~ => 1 // grease
 ~spwi105~ => 1 // color spray
@@ -96,20 +96,21 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~spcl742~ => 1 // priest of lathander's halt undead
 ~spin105~ => 1 // bhaalspawn's horror
 ~%sppr116%~ => 1 // fearie fire
-//~sppr121~ => 1 // gust of wind // stationary
+//~sppr121~ => 1 // obscuring mist (stationary)
 ~sppr211~ => 1 // silence
 ~%sppr216%~ => 1 // fire trap
-//~sppr325~ => 1 // spike growth // stationary
-//~sppr418~ => 1 // ice storm // stationary
+//~sppr325~ => 1 // spike growth (stationary)
+//~sppr418~ => 1 // ice storm (stationary)
 ~%sppr620%~ => 1 // banishment
 ~sppr720~ => 1 // earthquake
 ~spwi103~ => 1 // burning hands
-//~spwi106~ => 1 // obscuring mist // stationary
+//~spwi106~ => 1 // obscuring mist (stationary)
 ~spwi605~ => 1 // banishment
 
 END
 
 ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
+  OUTER_SET $spell("spdr601")=0 // chain lighting
   OUTER_SET $spell("sppr218")=0 // gust of wind
   OUTER_SET $spell("sppr515")=0 // repulsion
   OUTER_SET $spell("sppr609")=0 // false dawn
@@ -595,3 +596,4 @@ ACTION_PHP_EACH spell AS i2 => r2 BEGIN
 
 END // ACTION_PHP_EACH
 
+COPY ~spell_rev\shared\dvsdbaoe.mrk~        ~override~  // Used to detect if SR's Spell Deflection Blocks AoE Spells is installed
