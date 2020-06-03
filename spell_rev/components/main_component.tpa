@@ -965,7 +965,7 @@ COPY ~spell_rev\sppr5##\sppr512f.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr512g.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr512h.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr512i.spl~    ~override~
-COPY ~spell_rev\sppr5##\sppr512i.eff~     ~override~
+COPY ~spell_rev\sppr5##\sppr512i.eff~    ~override~
 
 COPY ~spell_rev\sppr5##\sppr513.spl~     ~override~  // Righteous Fury (previously named Righteous Magic)
   SAY NAME1 @175    SAY UNIDENTIFIED_DESC @176
