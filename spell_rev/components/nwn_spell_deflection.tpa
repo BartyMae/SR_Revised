@@ -18,51 +18,51 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~sppr313~ => 1 // holy smite
 ~sppr314~ => 1 // unholy blight
 ~sppr503~ => 1 // flame strike
-//~sppr705~ => 1 // fire storm
+//~sppr705~ => 1 // fire storm (stationary)
 
-//~spwi213~ => 1 // stinking cloud
-//~spwi215~ => 1 // web
+//~spwi213~ => 1 // stinking cloud (stationary)
+//~spwi215~ => 1 // web (stationary)
 ~spwi304~ => 1 // fireball
 ~spwi313~ => 1 // skull trap
-//~spwi404~ => 1 // ice storm
-//~spwi502~ => 1 // cloud kill
+//~spwi404~ => 1 // ice storm (stationary)
+//~spwi502~ => 1 // cloudkill (stationary)
 ~spwi503~ => 1 // cone of cold
 //~spwi523~ => 1 // fireburst
-//~spwi614~ => 1 // acid fog
+//~spwi614~ => 1 // acid fog (stationary)
 ~spwi712~ => 1 // delayed blast fireball
 ~spwi714~ => 1 // prismatic spray
-//~spwi810~ => 1 // incendiary cloud
+//~spwi810~ => 1 // incendiary cloud (stationary)
 ~spwi911~ => 1 // meteor swarm
 ~spwi922~ => 1 // dragon's breath
 ~spwi925~ => 1 // comet
 
 // AoE spells without MR issues
 
-//~sppr105~ => 1 // entangle
+//~sppr105~ => 1 // entangle (stationary)
 ~sppr208~ => 1 // hold person
 ~sppr305~ => 1 // hold animal
-//~sppr416~ => 1 // cloak of fear
+//~sppr416~ => 1 // cloak of fear (stationary)
 ~sppr512~ => 1 // greater command
 ~sppr517~ => 1 // insect plague
-//~sppr609~ => 1 // false dawn
+//~sppr609~ => 1 // false dawn (stationary)
 ~sppr704~ => 1 // nature's beauty
 ~sppr706~ => 1 // symbol of pain
 ~sppr707~ => 1 // sunray
-//~sppr709~ => 1 // chaos
+//~sppr709~ => 1 // chaos (stationary)
 ~sppr710~ => 1 // holy word
 ~sppr715~ => 1 // unholy word
 ~sppr717~ => 1 // creeping doom
 ~sppr718~ => 1 // symbol of stun
 ~sppr719~ => 1 // symbol of death
-//~sppr722~ => 1 // storm of vengeance
+//~sppr722~ => 1 // storm of vengeance (stationary)
 
-//~spdr201~ => 1 // web
+//~spdr201~ => 1 // web (stationary)
 ~spdr501~ => 1 // cone of cold
 ~spdr601~ => 1 // chain lighting
 
-//~spwi101~ => 1 // grease
+//~spwi101~ => 1 // grease (stationary)
 ~spwi105~ => 1 // color spray
-//~spwi106~ => 1 // obscuring mist
+//~spwi106~ => 1 // obscuring mist (stationary)
 ~spwi116~ => 1 // sleep
 ~spwi205~ => 1 // horror
 ~spwi223~ => 1 // sound burst
@@ -73,12 +73,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~spwi401~ => 1 // confusion
 ~spwi411~ => 1 // emotion despair
 ~spwi412~ => 1 // greater malison
-//~spwi421~ => 1 // teleport field
+//~spwi421~ => 1 // teleport field (stationary)
 ~%spwi427%~ => 1 // vitriolic sphere
 ~spwi507~ => 1 // hold monster
 ~spwi508~ => 1 // waves of fatigue
-//~spwi615~ => 1 // chain lightning
-//~spwi711~ => 1 // chaos
+~spwi615~ => 1 // chain lightning
+//~spwi711~ => 1 // chaos (stationary)
 ~spwi720~ => 1 // control undead
 ~spwi811~ => 1 // symbol of pain
 ~spwi812~ => 1 // abi-dalzim's horrid wilting

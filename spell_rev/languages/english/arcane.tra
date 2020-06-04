@@ -1149,7 +1149,7 @@ Casting Time: 4
 Area of Effect: Caster
 Saving Throw: None
 
-This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic spell, as well as other forms of magical attacks such as Secret Word and Pierce Magic.~
+This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by magical attacks such as Spell Thrust, Secret Word, and Pierce Magic.~
 
 @572000=~Minor Globe of Invulnerability
 Level: 4
@@ -1160,7 +1160,7 @@ Casting Time: 4
 Area of Effect: Caster
 Saving Throw: None
 
-This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by magical attacks such as Secret Word and Pierce Magic.~
+This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic spell, as well as other magical attacks such as Spell Thrust, Secret Word, and Pierce Magic.~
 
 @575=~Stoneskin~
 @576=~Stoneskin
@@ -1943,7 +1943,7 @@ Casting Time: 6
 Area of Effect: Caster
 Saving Throw: None
 
-This spell creates an immobile, faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, 3rd or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fifth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic spell, as well as other forms of magical attack such as Ruby Ray of Reversal and Spellstrike.~
+This spell creates an immobile, faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, 3rd or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fifth and higher level spells are not affected by the globe. The globe can be brought down by magical attacks such as Khelben's Warding Whip, Ruby Ray of Reversal, Pierce Shield, and Spellstrike.~
 
 @664000=~Globe of Invulnerability
 Level: 6
@@ -1954,7 +1954,7 @@ Casting Time: 6
 Area of Effect: Caster
 Saving Throw: None
 
-This spell creates an immobile, faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, 3rd or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fifth and higher level spells are not affected by the globe. The globe can be brought down by magical attacks such as Ruby Ray of Reversal and Spellstrike.~
+This spell creates an immobile, faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, 3rd or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fifth and higher level spells are not affected by the globe. The globe can be brought down by a successful dispel magic spell, as well as other magical attacks such as Khelben's Warding Whip, Ruby Ray of Reversal, Pierce Shield, and Spellstrike~
 
 @665=~Tenser's Transformation~
 @666=~Tenser's Transformation

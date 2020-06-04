@@ -2044,8 +2044,13 @@ COPY ~spell_rev\spwi4##\spwi406.spl~     ~override~  // Minor Globe of Invulnera
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572
 COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
   SAY NAME2 @571    SAY IDENTIFIED_DESC   @572
-END ELSE BEGIN
-COPY ~spell_rev\shared\alternatives\spwi406.spl~     ~override~  // Minor Globe of Invulnerability
+END ELSE ACTION_IF dispel_globes=0 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi406n.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
+  SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572
+COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
+  SAY NAME2 @571    SAY IDENTIFIED_DESC   @572
+END ELSE ACTION_IF dispel_globes=2 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi406d.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572000
 COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
   SAY NAME2 @571    SAY IDENTIFIED_DESC   @572000
@@ -2565,8 +2570,13 @@ COPY ~spell_rev\spwi6##\spwi602.spl~     ~override~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664
 COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
   SAY NAME2 @663    SAY IDENTIFIED_DESC   @664
-END ELSE BEGIN
-COPY ~spell_rev\shared\alternatives\spwi602.spl~     ~override~  // Globe of Invulnerability
+END ELSE ACTION_IF dispel_globes=0 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi602n.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
+  SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664
+COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
+  SAY NAME2 @663    SAY IDENTIFIED_DESC   @664
+END ELSE ACTION_IF dispel_globes=2 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi602d.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664000
 COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
   SAY NAME2 @663    SAY IDENTIFIED_DESC   @664000
