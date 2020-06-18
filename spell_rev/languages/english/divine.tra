@@ -180,7 +180,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and gives an additional +50 exceptional strength, and the character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then their strength will just be set to 18/00, while if a character has a strength between 18/01 and 18/50, then their strength will become 18/50 + the original percentage. If their strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
+Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone. This spell sets the Strength of the character to 18 and gives an additional +50 Exceptional Strength, and the character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
 
 @29=~Faerie Fire~
 @30=~Faerie Fire
@@ -260,7 +260,7 @@ Bat (1 HD):
 
 Special Characteristics:
  Blind Sense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
- Diseasing: target suffers a -1 penalty to dexterity and constitution for 8 hours (save vs. death neg.)
+ Diseasing: target suffers a -1 penalty to Dexterity and Constitution for 8 hours (save vs. death neg.)
  Swarm: each bat within 10' receives a +2 bonus to THAC0~
 
 @321=~Obscuring Mist~
@@ -357,7 +357,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-With this spell, the caster causes a blazing ray of red-hot fire to spring forth from their hand, dealing 2D6 + 1 fire damage upon a successful hit. The caster wields this blade-like ray as if proficient with the weapon and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every three extra experience levels of the caster, up to a maximum of +3 at 9th level. Since the blade is immaterial, strength modifiers do not apply to THAC0 or damage, and attacks with the flame blade are considered melee touch attacks (+4 bonus to THAC0). The flame blade can be used only by the caster, and remains in their hand for the duration of the spell.~
+With this spell, the caster causes a blazing ray of red-hot fire to spring forth from their hand, dealing 2D6 + 1 fire damage upon a successful hit. The caster wields this blade-like ray as if proficient with the weapon and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every three extra experience levels of the caster, up to a maximum of +3 at 9th level. Since the blade is immaterial, Strength modifiers do not apply to THAC0 or damage, and attacks with the flame blade are considered melee touch attacks (+4 bonus to THAC0). The flame blade can be used only by the caster, and remains in their hand for the duration of the spell.~
 
 @43=~Goodberry~ //Disabled
 @44=~Goodberry
@@ -450,7 +450,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-By calling upon their deity, the caster of a Spiritual Hammer spell brings into existence a field of force shaped vaguely like a hammer. For as long as the caster concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, dealing 1D8 + 1 magic damage upon a successful hit. The caster wields the spiritual hammer as if proficient and at their normal base THAC0, and it functions as a magical weapon with an enchantment bonus of +1 (with appropriate THAC0 and damage bonuses). Starting at level 5, this enchantment level increases by one for every five extra experience levels of the caster, up to a maximum of +5 at 25th level. Due to its ethereal nature, strength modifiers do not apply to THAC0 or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 bonus to THAC0). The spiritual hammer can be used only by the caster, and remains in their hand for the duration of the spell.~
+By calling upon their deity, the caster of a Spiritual Hammer spell brings into existence a field of force shaped vaguely like a hammer. For as long as the caster concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, dealing 1D8 + 1 magic damage upon a successful hit. The caster wields the spiritual hammer as if proficient and at their normal base THAC0, and it functions as a magical weapon with an enchantment bonus of +1 (with appropriate THAC0 and damage bonuses). Starting at level 5, this enchantment level increases by one for every five extra experience levels of the caster, up to a maximum of +5 at 25th level. Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 bonus to THAC0). The spiritual hammer can be used only by the caster, and remains in their hand for the duration of the spell.~
 
 @57=~Draw Upon Divine Might~
 @58=~Draw Upon Divine Might
@@ -463,7 +463,7 @@ Casting Time: 2
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, the priest's body shudders and glows with a shimmering aura as it becomes a vessel for the power of their god. When they do this, they gain a +1 bonus to strength, dexterity, and constitution scores for every three levels of the caster, up to a maximum of +3 at 9th level. Multiple castings of this spell or similar effects are not cumulative.~
+When this spell is cast, the priest's body shudders and glows with a shimmering aura as it becomes a vessel for the power of their god. When they do this, they gain a +1 bonus to Strength, Dexterity, and Constitution scores for every three levels of the caster, up to a maximum of +3 at 9th level. Multiple castings of this spell or similar effects are not cumulative.~
 
 @59=~Cure Moderate Wounds~
 @60=~Cure Moderate Wounds
@@ -739,7 +739,7 @@ Casting Time: 3
 Area of Effect: 30' radius
 Saving Throw: None
 
-When this spell is cast, all party members within 30 feet of the caster gain a +2 bonus to strength. If a party member ends up with a strength value of 18, then their strength will be set to 18/75. Multiple castings of this spell are not cumulative.~
+When this spell is cast, all party members within 30 feet of the caster gain a +2 bonus to Strength. If a party member ends up with a Strength value of 18, then their Strength will be set to 18/75. Multiple castings of this spell are not cumulative.~
 
 @95=~Holy Smite~
 @96=~Holy Smite
@@ -953,7 +953,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to Strength, Dexterity, Constitution, and Charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
 
 
 /*------------------Level 4------------------*/
@@ -1153,7 +1153,7 @@ Casting Time: 4
 Area of Effect: Caster
 Saving Throw: None
 
-Through this spell, the caster imbues themselves with the strength and skill of a fighter of the same level. The priest's strength is set to 18/00 (even if it is normally higher) and their THAC0 becomes that of a fighter of the same level. They also gain 1 temporary hit point for every experience level, up to a maximum of 20 at 20th level. Finally, the caster's attack per rounds is set to that of a fighter of the same level, up to a maximum of two attacks per round at 13th level. Multiple castings of this spell are not cumulative.
+Through this spell, the caster imbues themselves with the strength and skill of a fighter of the same level. The priest's Strength is set to 18/00 (even if it is normally higher) and their THAC0 becomes that of a fighter of the same level. They also gain 1 temporary hit point for every experience level, up to a maximum of 20 at 20th level. Finally, the caster's attack per rounds is set to that of a fighter of the same level, up to a maximum of two attacks per round at 13th level. Multiple castings of this spell are not cumulative.
 
 NOTE: This spell does not give any extra attacks to multiclassed or dual-classed fighter/clerics and ranger/clerics if they have already received them as a part of their class, as they normally gain additional attacks per round due to their fighter or ranger experience levels.~
 
@@ -1389,7 +1389,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the priest draws on the power of their god and lends it to the target creature, in effect creating a champion. The target gains a +10% bonus to damage resistance as well as a +1 bonus to strength, dexterity, and constitution for every three experience levels of the caster, up to a maximum of 5 at 15th level. Multiple castings of this spell or similar effects are not cumulative.~
+When this spell is cast, the priest draws on the power of their god and lends it to the target creature, in effect creating a champion. The target gains a +10% bonus to damage resistance as well as a +1 bonus to Strength, Dexterity, and Constitution for every three experience levels of the caster, up to a maximum of 5 at 15th level. Multiple castings of this spell or similar effects are not cumulative.~
 
 @165=~Chaotic Commands~
 @166=~Chaotic Commands
@@ -1467,7 +1467,7 @@ Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-This is a powerful combat spell that enhances the priest's physical prowess, charging them with positive energy and transforming them into a juggernaut of destruction. The caster receives a +4 bonus to strength and a +2 bonus to AC. They also gain 1 temporary hit point for every experience level, up to a maximum of 20 at 20th level. Finally, the caster deals an additional 1D6 magic damage whenever they strike an opponent with a melee weapon. Multiple castings of this spell are not cumulative.~
+This is a powerful combat spell that enhances the priest's physical prowess, charging them with positive energy and transforming them into a juggernaut of destruction. The caster receives a +4 bonus to Strength and a +2 bonus to AC. They also gain 1 temporary hit point for every experience level, up to a maximum of 20 at 20th level. Finally, the caster deals an additional 1D6 magic damage whenever they strike an opponent with a melee weapon. Multiple castings of this spell are not cumulative.~
 
 @177=~Mass Cure~
 @178=~Mass Cure
@@ -1769,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to strength, dexterity, constitution, and charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
+Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to Strength, Dexterity, Constitution, and Charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall
@@ -2085,7 +2085,7 @@ Casting Time: 1 round
 Area of Effect: 20' radius
 Saving Throw: Spell negates
 
-Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to strength, dexterity, and constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
+Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
 
 @243=~Sunray~
 @244=~Sunray

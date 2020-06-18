@@ -22,7 +22,7 @@ Casting Time: 1 round
 Area of Effect: Caster
 Saving Throw: None
 
-By means of this spell, the wizard creates a magical force field that sets their base AC to 6 and improves by 1 for every four extra experience levels of the caster, up to a minimum base AC of 4 at 9th level. This spell will not function with any other form of magical body armor, but it is cumulative with dexterity and other AC bonuses. The mage armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully dispelled.~
+By means of this spell, the wizard creates a magical force field that sets their base AC to 6 and improves by 1 for every four extra experience levels of the caster, up to a minimum base AC of 4 at 9th level. This spell will not function with any other form of magical body armor, but it is cumulative with Dexterity and other AC bonuses. The mage armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully dispelled.~
 
 @405=~Burning Hands~
 @406=~Burning Hands
@@ -112,7 +112,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: Special
 
-A Friends spell causes the wizard to temporarily gain a +5 bonus to charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
+A Friends spell causes the wizard to temporarily gain a +5 bonus to Charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
 
 @415000=~Protection from Petrification~
 @416000=~Protection from Petrification
@@ -290,9 +290,9 @@ Saving Throw: None
 
 This spell enables the caster to summon a familiar to act as their aide and companion. Familiars are typically small creatures. A creature acting as a familiar can benefit a wizard, conveying its sensory powers to its master, conversing with them, and serving as a guard, scout, and spy as well. A wizard can have only one familiar at a time, and they have no control over what sort of creature answers the summoning, if any come at all. Note that this spell may only be cast by the protagonist.
 
-The creature is always more intelligent than others of its type (typically by 2 or 3 intelligence points), and its bond with the wizard confers upon it an exceptionally long life. The wizard has an empathic link with the familiar and can issue it mental commands. The caster receives half the familiar's total hit points as bonus hit points. However, the caster must take care to treat their familiar well, for if the familiar should die, the caster will lose the bonus hit points and half the familiar's hit points again as damage. Also, when a familiar dies, the caster loses 1 point of constitution permanently.
+The creature is always more intelligent than others of its type (typically by 2 or 3 Intelligence points), and its bond with the wizard confers upon it an exceptionally long life. The wizard has an empathic link with the familiar and can issue it mental commands. The caster receives half the familiar's total hit points as bonus hit points. However, the caster must take care to treat their familiar well, for if the familiar should die, the caster will lose the bonus hit points and half the familiar's hit points again as damage. Also, when a familiar dies, the caster loses 1 point of Constitution permanently.
 
-For example, a wizard has 15 hit points and casts Find Familiar. The imp summoned has 24 hit points, so the caster gets a bonus of 12 hit points and now has 27 hit points. If the familiar dies, the caster will lose those additional 12 hit points (putting them back at 15), permanently lose 1 point of constitution (which may cause additional hit point loss), and take an additional 12 damage.
+For example, a wizard has 15 hit points and casts Find Familiar. The imp summoned has 24 hit points, so the caster gets a bonus of 12 hit points and now has 27 hit points. If the familiar dies, the caster will lose those additional 12 hit points (putting them back at 15), permanently lose 1 point of Constitution (which may cause additional hit point loss), and take an additional 12 damage.
 
 Here is a list of the familiars that the player receives according to alignment:
 
@@ -336,7 +336,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-A Spook spell enables the wizard to play upon natural fears to cause the target creature to perceive the caster as someone or something inimical which then appears to advance upon it in a threatening manner. If the creature does not successfully make a save vs. spell, it turns and flees at maximum speed as far from the caster as possible. The creature has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effects of a True Seeing spell.~
+A Spook spell enables the wizard to play upon natural fears to cause the target creature to perceive the caster as someone or something inimical which then appears to advance upon it in a threatening manner. If the creature does not successfully make a save vs. spell, it turns and flees at maximum speed as far from the caster as possible. The creature has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion such as dragons, and those with no Intelligence score are unaffected by this spell, as are creatures under the effects of a True Seeing spell.~
 
 @454000=~Detect Alignment
 Level: 1
@@ -543,7 +543,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-Application of this spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then their strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then their strength will become 18/50 + the original percentage. If their strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more.~
+Application of this spell sets the Strength of the character to 18 and then adds 50 Exceptional Strength on top of this. The character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00. If a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.~
 
 @477=~Web~
 @478=~Web
@@ -957,7 +957,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, the wizard creates an insubstantial but quasi-real suit of armor. This semi-illusory material covers the recipient and actually gives some real protection so long as opponents do not actively disbelieve in it by detecting the illusion. When cast, the ghostly nimbus of light surrounds the recipient, setting their base AC to 2 and granting a +20% bonus to Hide in Shadows. This spell will not function with any other form of magical body armor, but it is cumulative with dexterity and other AC bonuses. The ghost armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully detected or dispelled.~
+When this spell is cast, the wizard creates an insubstantial but quasi-real suit of armor. This semi-illusory material covers the recipient and actually gives some real protection so long as opponents do not actively disbelieve in it by detecting the illusion. When cast, the ghostly nimbus of light surrounds the recipient, setting their base AC to 2 and granting a +20% bonus to Hide in Shadows. This spell will not function with any other form of magical body armor, but it is cumulative with Dexterity and other AC bonuses. The ghost armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully detected or dispelled.~
 
 @533=~Minor Spell Deflection~
 @534=~Minor Spell Deflection
@@ -1186,7 +1186,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Poison negates
 
-This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to strength, dexterity, constitution, and charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are immune to disease.~
+This spell causes a major disease and weakness in a creature. For the following 5 rounds, the victim must save vs. poison at a -2 penalty every other round or permanently suffer a cumulative -1 penalty to Strength, Dexterity, Constitution, and Charisma. The target must also save vs. poison at a -2 penalty each round or be stricken with a terrible sluggishness for that round. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are immune to disease.~
 
 @579=~Break Enchantment~
 @580=~Break Enchantment
@@ -1248,7 +1248,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell taps the recipient's life force to create a corporeal barrier around their body. When cast, the recipient's AC is set to 0, and saving throws vs. death will be made with a +3 bonus. There is a danger in using this spell, however, as the external portion of the target's spirit is temporarily lost when the spell duration expires, dealing 1D6 damage to the recipient. This spell will not function with any other form of magical body armor, but it is cumulative with dexterity and other AC bonuses. The spirit armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully dispelled.~
+This spell taps the recipient's life force to create a corporeal barrier around their body. When cast, the recipient's AC is set to 0, and saving throws vs. death will be made with a +3 bonus. There is a danger in using this spell, however, as the external portion of the target's spirit is temporarily lost when the spell duration expires, dealing 1D6 damage to the recipient. This spell will not function with any other form of magical body armor, but it is cumulative with Dexterity and other AC bonuses. The spirit armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully dispelled.~
 
 @589=~Polymorph Other~
 @590=~Polymorph Other
@@ -1534,7 +1534,7 @@ Shadow (5 HD):
 Special Characteristics:
  Protected Against: Backstabs, Death, Normal Weapons, Petrification, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Chill Touch: target suffers a -2 penalty to strength for 1 turn
+ Chill Touch: target suffers a -2 penalty to Strength for 1 turn
 
 Wraith (7 HD):
  ST14, DE12, CO-, IN10, WI12, CH10
@@ -1806,7 +1806,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ //Furthermore, the blade cannot harm inorganic things because it has no solid existence.
+This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ //Furthermore, the blade cannot harm inorganic things because it has no solid existence.
 
 @647=~Spell Shield~
 @648=~Spell Shield
@@ -2701,7 +2701,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Limited Wish is a very potent but difficult spell. It will fulfill literally, but only partially or for a limited duration, the utterance of the spellcaster. Thus, the actuality of the past, present, or future might be altered (but possibly only for the wizard unless the wording of the spell is most carefully stated) in some limited manner. The use of a Limited Wish will not substantially change major realities. The spell can, for example, restore some hit points lost in battle. Greedy desires usually end in disaster for the wisher. Lastly, the wiser the caster, the better chance that they will choose the right wording. Wizards with low wisdom will more often than not meet with disaster when asking for a wish.~
+Limited Wish is a very potent but difficult spell. It will fulfill literally, but only partially or for a limited duration, the utterance of the spellcaster. Thus, the actuality of the past, present, or future might be altered (but possibly only for the wizard unless the wording of the spell is most carefully stated) in some limited manner. The use of a Limited Wish will not substantially change major realities. The spell can, for example, restore some hit points lost in battle. Greedy desires usually end in disaster for the wisher. Lastly, the wiser the caster, the better chance that they will choose the right wording. Wizards with low Wisdom will more often than not meet with disaster when asking for a wish.~
 
 @761=~Improved Chaos Shield~
 @762=~Improved Chaos Shield
@@ -2898,7 +2898,7 @@ Casting Time: 1 round
 Area of Effect: 20' radius
 Saving Throw: Spell negates
 
-Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to strength, dexterity, and constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
+Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
 
 @787=~Abi-Dalzim's Horrid Wilting~
 @788=~Abi-Dalzim's Horrid Wilting
@@ -3270,7 +3270,7 @@ Mind Flayer (12 HD):
 Special Characteristics:
  Magic Resistance: 90%
  Spellcasting: spells can be cast in this form
- Devour Brain: target suffers a -2 penalty to intelligence for 5 rounds
+ Devour Brain: target suffers a -2 penalty to Intelligence for 5 rounds
  Psionic Blast (1x per day): target and enemies within 20' are stunned for 1 turn (save vs. spell neg.)
 
 Nycaloth (12 HD):
@@ -3299,7 +3299,7 @@ Special Characteristics:
  Protected Against: Normal/+1 Weapons
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Natural Invisibility: permanent improved invisibility
- Draining: target suffers a -1 penalty to strength for 1 turn (save vs. death at -2 neg.)
+ Draining: target suffers a -1 penalty to Strength for 1 turn (save vs. death at -2 neg.)
  Slowing: target is slowed for 2 rounds (save vs. breath at -2 neg.)
 
 Alpha Wolfwere (14 HD):
@@ -3348,7 +3348,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-Wish is a more potent version of the Limited Wish spell. It will fulfill literally the utterance of the spellcaster. Thus, the actuality of the past, present, or future might be altered (but possibly only for the wizard unless the wording of the spell is most carefully stated) in some limited manner. Greedy desires usually end in disaster for the wisher. The wiser the caster, the better chance that the right wording will be chosen. Wizards with low wisdom will more often than not meet with disaster when asking for a wish.~
+Wish is a more potent version of the Limited Wish spell. It will fulfill literally the utterance of the spellcaster. Thus, the actuality of the past, present, or future might be altered (but possibly only for the wizard unless the wording of the spell is most carefully stated) in some limited manner. Greedy desires usually end in disaster for the wisher. The wiser the caster, the better chance that the right wording will be chosen. Wizards with low Wisdom will more often than not meet with disaster when asking for a wish.~
 
 
 /*------------------Level 10------------------*/
@@ -3387,7 +3387,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: Breath partial
 
-This spell causes the disembodied head of a red dragon to appear and breathe fire with the strength of an adult red dragon. In addition to the enormous 25D6 fireball, the force of the dragon's breath knocks opponents away from the caster and leaves them unconscious for 1 round. Those affected can save vs. breath at a -2 penalty to take only half damage and not be blown backwards. This spell will not harm party members. Magic resistance does not affect this spell.~
+This spell causes the disembodied head of a red dragon to appear and breathe fire with the Strength of an adult red dragon. In addition to the enormous 25D6 fireball, the force of the dragon's breath knocks opponents away from the caster and leaves them unconscious for 1 round. Those affected can save vs. breath at a -2 penalty to take only half damage and not be blown backwards. This spell will not harm party members. Magic resistance does not affect this spell.~
 
 @857=~Summon Planetar~
 @858=~Summon Planetar
