@@ -912,7 +912,7 @@ Casting Time: 5
 Area of Effect: 20' radius
 Saving Throw: Breath partial
 
-By means of this spell, the caster causes the ground to sprout vicious spikes and thorns that catch and prick all creatures in the area of effect. Those caught in the spike growth suffer 2D4 piercing damage every round that they remain within the affected area. The spikes can also embed themselves in victims' legs, causing them to suffer 50% reduced movement speed and 1 bleeding damage every round for two rounds. Those who save vs. breath will receive only half damage and avoid the reduced movement rate and bleeding. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.~
+By means of this spell, the caster causes the ground to sprout vicious spikes and thorns that catch and prick all creatures in the area of effect. Those caught in the spike growth suffer 2D4 piercing damage every round that they remain within the affected area. The spikes can also embed themselves in victims' legs, causing them to move at half of their normal movement rate and suffer 1 bleeding damage every round for two rounds. Those who save vs. breath will receive only half damage and avoid the reduced movement rate and bleeding. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.~
 
 @335=~Icelance~
 @336=~Icelance
@@ -1048,7 +1048,7 @@ Sphere: Law
 Range: Personal
 Duration: 1 turn
 Casting Time: 1
-Area of Effect: 10' radius
+Area of Effect: 20' radius
 Saving Throw: None
 
 Defensive Harmony grants the affected creatures a defensive bonus by enhancing the coordination of their attacks and defenses. This allows a group of creatures to act as a cohesive unit for a single battle or encounter. The effect is always centered on the caster, but affects all those within a 10 foot radius. The affected creatures can move outside of this radius after the spell is cast and still enjoy the benefits of Defensive Harmony. While the spell is in effect, each affected creature gains a +4 bonus to AC. Multiple castings of this spell are not cumulative.~
