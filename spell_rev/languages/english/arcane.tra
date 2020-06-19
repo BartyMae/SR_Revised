@@ -10,7 +10,7 @@ Casting Time: 1
 Area of Effect: 10' radius
 Saving Throw: Breath partial
 
-A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease, but at 25% of their normal movement speed. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
+A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease, but at 25% of their normal movement rate. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
 
 @403=~Mage Armor~
 @404=~Mage Armor
@@ -531,7 +531,7 @@ Casting Time: 2
 Area of Effect: 30' radius
 Saving Throw: Poison partial
 
-When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud suffers a -2 penalty to THAC0 and AC, and must make a save vs. poison or be nauseated for 1 round. Nauseated creatures are unable to attack or cast spells, but can still move at half of their normal speed. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects each round so long as they remain within the cloud. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
+When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud suffers a -2 penalty to THAC0 and AC, and must make a save vs. poison or be nauseated for 1 round. Nauseated creatures are unable to attack or cast spells, but can still move at half of their normal movement rate. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects each round so long as they remain within the cloud. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
 
 @475=~Strength~
 @476=~Strength
@@ -555,7 +555,18 @@ Casting Time: 5
 Area of Effect: 20' radius
 Saving Throw: Breath negates
 
-A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that make a save vs. breath can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
+A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
+
+@478000=~Web
+Level: 2
+School: Conjuration
+Range: Long
+Duration: 1 turn
+Casting Time: 5
+Area of Effect: 20' radius
+Saving Throw: Breath negates
+
+A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means that the creature is caught in the webs, suffering a -4 penalty to AC, further reducing their movement rate to 25%, and becoming unable to attack or cast spells for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
 
 @479=~Agannazar's Scorcher~
 @480=~Agannazar's Scorcher
@@ -615,7 +626,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-By means of a Ray of Enfeeblement spell, a wizard weakens an opponent, sapping their strength and the attacks that rely upon it. The victim suffers a -4 penalty to THAC0 and damage, and their movement speed is reduced by half. A successful save vs. spell at a -2 penalty negates all effects.~
+By means of a Ray of Enfeeblement spell, a wizard weakens an opponent, sapping their strength and the attacks that rely upon it. The victim suffers a -4 penalty to THAC0 and damage, and their movement rate is reduced to half. A successful save vs. spell at a -2 penalty negates all effects.~
 
 @489=~Chaos Shield~
 @490=~Chaos Shield
@@ -1125,7 +1136,7 @@ Casting Time: 4
 Area of Effect: 30' radius
 Saving Throw: None
 
-When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement speed reduced to 80%, and receive 2D8 cold damage for each round they remain inside the storm.~
+When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 75%, and receive 2D8 cold damage for each round they remain inside the storm.~
 
 @569=~Improved Invisibility~
 @570=~Improved Invisibility
