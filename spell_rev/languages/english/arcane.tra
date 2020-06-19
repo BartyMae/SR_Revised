@@ -10,7 +10,7 @@ Casting Time: 1
 Area of Effect: 10' radius
 Saving Throw: Breath partial
 
-A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease but will have their movements slowed considerably. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
+A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease, but at 25% of their normal movement speed. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
 
 @403=~Mage Armor~
 @404=~Mage Armor
@@ -110,7 +110,7 @@ Range: Personal
 Duration: 5 turns
 Casting Time: 1
 Area of Effect: Caster
-Saving Throw: Special
+Saving Throw: None
 
 A Friends spell causes the wizard to temporarily gain a +5 bonus to Charisma. Those who view the caster tend to be very impressed with them and make an effort to be their friends and help them, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax information; and attacking orcs might spare the caster's life, taking them captive instead.~
 
@@ -529,9 +529,9 @@ Range: Long
 Duration: 1 turn
 Casting Time: 2
 Area of Effect: 30' radius
-Saving Throw: Poison negates
+Saving Throw: Poison partial
 
-When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud must make a save vs. poison or be nauseated for 1 round. Nauseated characters are unable to attack or cast spells, but can still move. Those who make successful saving throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects so long as they remain within the cloud. Certain creatures are immune to the effects of the cloud, including all undead, and creatures who don't need to breathe, such as elementals.~
+When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud suffers a -2 penalty to THAC0 and AC, and must make a save vs. poison or be nauseated for 1 round. Nauseated creatures are unable to attack or cast spells, but can still move at half of their normal speed. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects each round so long as they remain within the cloud. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
 
 @475=~Strength~
 @476=~Strength
@@ -1559,7 +1559,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-This spell generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with fewer than 4 hit dice, while creatures with 4 to 6 hit dice must save vs. poison at a -4 penalty to avoid being slain. Those with more than 6 hit dice must leave the cloud immediately or suffer 1D10 poison damage each round while in the area of effect. Holding one's breath has no effect on the lethality of the spell, and undead creatures are not affected by the poisonous cloud.~
+This spell generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with fewer than 4 hit dice, while creatures with 4 to 6 hit dice must save vs. poison at a -4 penalty to avoid being slain. Those with more than 6 hit dice must leave the cloud immediately or suffer 1D10 poison damage each round while in the area of effect. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
 
 @615=~Cone of Cold~
 @616=~Cone of Cold
