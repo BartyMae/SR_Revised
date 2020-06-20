@@ -7,10 +7,10 @@ School: Conjuration
 Range: Medium
 Duration: 1 turn
 Casting Time: 1
-Area of Effect: 10' radius
+Area of Effect: 20' radius
 Saving Throw: Breath partial
 
-A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease, but at 25% of their normal movement rate. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
+A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for 1 round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease, but at 25% of their normal movement rate. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
 
 @403=~Mage Armor~
 @404=~Mage Armor
@@ -543,7 +543,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-Application of this spell sets the Strength of the character to 18 and then adds 50 Exceptional Strength on top of this. The character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00. If a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.~
+Application of this spell sets the Strength of the target to 18 and adds an additional +50 exceptional Strength on top of this. The character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.~
 
 @477=~Web~
 @478=~Web
@@ -553,7 +553,7 @@ Range: Long
 Duration: 1 turn
 Casting Time: 5
 Area of Effect: 20' radius
-Saving Throw: Breath negates
+Saving Throw: Breath partial
 
 A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
 
@@ -564,7 +564,7 @@ Range: Long
 Duration: 1 turn
 Casting Time: 5
 Area of Effect: 20' radius
-Saving Throw: Breath negates
+Saving Throw: Breath partial
 
 A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means that the creature is caught in the webs, suffering a -4 penalty to AC, further reducing their movement rate to 25%, and becoming unable to attack or cast spells for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
 
@@ -590,7 +590,7 @@ Casting Time: 2
 Area of Effect: Special
 Saving Throw: Death partial
 
-When the caster completes this spell, a red glow encompasses their hand. On successful touches from the caster, the spell deals 1D8 magic damage and paralyzes the target for 5 rounds (save vs. death at -2 neg. paralysis). The wizard gains a +4 bonus to THAC0 and their touch is considered to be of +1 enchantment to determine what it can hit. The touch effect lasts for the duration of the spell or until dispelled.~
+When the caster completes this spell, a red glow encompasses their hand. On successful touches from the caster, the spell deals 1D8 magic damage and paralyzes the target for 5 rounds (save vs. death at -2 neg. paralysis). The ghoul hand is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. Attacks with the ghoul hand are considered to be melee touch attacks (+4 bonus to THAC0), and Strength modifiers do not apply to THAC0 or damage. The ghoul hand lasts for the duration of the spell or until dispelled.~
 
 @483=~Vocalize~
 @484=~Vocalize
@@ -612,7 +612,7 @@ Range: Long
 Duration: 5 rounds
 Casting Time: 1
 Area of Effect: 1 creature
-Saving Throw: Spell negates
+Saving Throw: Special
 
 When this power word is uttered, the target enters a comatose slumber for 5 rounds. The target can save vs. spell at a -2 penalty to avoid the effect, though creatures with 1 to 19 hit points are powerless to resist. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are immune to magically-induced sleep.~
 
@@ -650,30 +650,19 @@ Casting Time: 2
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Breath partial
 
-The Sound Brust spell blasts an area with a tremendous cacophony. Enemies within the area suffer 5D4 crushing damage, and must save vs. breath at a -2 penalty or be deafened for one turn. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Dispel Magic, Cure Disease, Heal, or Greater Restoration spell.~
+The Sound Brust spell blasts an area with a tremendous cacophony. Enemies within the area suffer 5D4 crushing damage, and must save vs. breath at a -2 penalty or be deafened for 1 turn. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Dispel Magic, Cure Disease, Heal, or Greater Restoration spell.~
 
 @493=~Glitterdust~
 @494=~Glitterdust
 Level: 2
 School: Conjuration
 Range: Medium
-Duration: 5 rounds
+Duration: 1 turn
 Casting Time: 2
-Area of Effect: 10' radius
+Area of Effect: 30' radius
 Saving Throw: Special
 
-This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents in the area (-2 penalty to THAC0) for 5 rounds and reveals any opponents who are invisible. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 5 rounds. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades. Magic resistance does not affect this spell.~
-
-@494000=~Glitterdust
-Level: 2
-School: Conjuration
-Range: Medium
-Duration: 5 rounds
-Casting Time: 2
-Area of Effect: 10' radius
-Saving Throw: Special
-
-This spell creates a cloud of glittering golden particles within the area of effect. All enemies in the area must make a save vs. breath at a -2 penalty or be blinded (-4 penalty to THAC0) for 5 rounds. All within the area become covered by the dust, which cannot be removed and continues to sparkle until it fades. This dust reveals all invisible opponents in the area. Magic resistance does not affect this spell.~
+This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents within the area, revealing who are invisible and causing them to suffer a -2 penalty to THAC0 for 1 turn. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 1 turn. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades. Multiple castings of this spell are not cumulative. Magic resistance does not affect this spell.~
 
 @864=~Resist Elements~
 @865=~Resist Elements
@@ -798,7 +787,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
 
-This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for one turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
+This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for 1 turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -1086,7 +1075,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: Special
 
-When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for one round.~
+When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for 1 round.~
 
 /*------------------Level 4------------------*/
 
@@ -1243,7 +1232,7 @@ Range: Long
 Duration: 1 turn
 Casting Time: 4
 Area of Effect: 1 creature
-Saving Throw: Spell negates
+Saving Throw: Special
 
 When this spell is cast, the result is a globe of shimmering force that encloses the subject creature if they fail to make a save vs. breath at a -4 penalty. The resilient sphere will contain its subject for the duration of the spell. The sphere is completely immune to all damage. Actually, the only method of removing the sphere is a successful dispel magic. Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time is completely unable to affect the outside world.
 
@@ -1568,7 +1557,7 @@ Range: Long
 Duration: 1 turn
 Casting Time: 5
 Area of Effect: 30' radius
-Saving Throw: None
+Saving Throw: Special
 
 This spell generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with fewer than 4 hit dice, while creatures with 4 to 6 hit dice must save vs. poison at a -4 penalty to avoid being slain. Those with more than 6 hit dice must leave the cloud immediately or suffer 1D10 poison damage each round while in the area of effect. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
 
@@ -1664,7 +1653,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
 
-This spell holds creatures of any type rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at making a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
+This spell holds creatures of any type rigidly immobile and in place for 1 turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at making a save vs. spell at a -2 penalty are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -1817,7 +1806,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ //Furthermore, the blade cannot harm inorganic things because it has no solid existence.
+This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered to be melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ //Furthermore, the blade cannot harm inorganic things because it has no solid existence.
 
 @647=~Spell Shield~
 @648=~Spell Shield
@@ -2001,7 +1990,7 @@ Range: Long
 Duration: Instant
 Casting Time: 6
 Area of Effect: 30' radius
-Saving Throw: None
+Saving Throw: Special
 
 The Banishment spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
 
@@ -2103,7 +2092,7 @@ Casting Time: 6
 Area of Effect: 30' radius
 Saving Throw: None
 
-The Acid Fog spell creates a thick, clinging, greenish cloud. All creatures who aren't immune to acid suffer 10 damage for each round they are exposed to the vapors of the Acid Fog. In addition, due to reduced visibility, creatures inside the cloud move at 50% of their normal rate.~
+The Acid Fog spell creates a thick, clinging, greenish cloud. All creatures who aren't immune to acid suffer 10 damage for each round they are exposed to the vapors of the Acid Fog. In addition, due to reduced visibility, creatures inside the cloud move at half of their normal movement rate.~
 
 @687=~Chain Lightning~
 @688=~Chain Lightning
@@ -2883,7 +2872,7 @@ Range: Long
 Duration: 1 turn
 Casting Time: 8
 Area of Effect: 30' radius
-Saving Throw: Special
+Saving Throw: Breath partial
 
 This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4D6 fire damage each round to everything remaining within the area of effect. A save vs. breath at a -4 penalty reduces the damage by half. Fire dwellers like efreet, fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
 
@@ -2989,7 +2978,7 @@ Range: Long
 Duration: Special
 Casting Time: 1 round
 Area of Effect: 20' radius
-Saving Throw: Death negates
+Saving Throw: Special
 
 Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 
@@ -3059,7 +3048,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, it will dispel all spell protections on the target. Additionally, the affected creature will suffer 100% spell failure rate for one round, followed by 50% spell failure for the round after. Magic resistance does not affect this spell.
+When this spell is cast, it will dispel all spell protections on the target. Additionally, the affected creature will suffer 100% spell failure rate for 1 round, followed by 50% spell failure for the round after. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Spellstrike are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
 
@@ -3156,7 +3145,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting a Time Stop spell, the wizard causes the flow of time to stop in the entire area that the caster is currently in. Outside this area, the sphere simply seems to shimmer for an instant, but inside the sphere, the caster is free to act for three rounds of apparent time. The wizard can move and act freely within the area where time is stopped, but all other creatures are frozen in their actions, for they are literally between the ticks of a clock. Nothing can enter the area of effect without also being stopped in time. When 3 rounds have passed, everyone begins operating in normal time once more, and all spells that were cast during the Time Stop will take effect immediately after time returns to normal.~
+Upon casting a Time Stop spell, the wizard causes the flow of time to stop in the entire area that the caster is currently in. Outside this area, the sphere simply seems to shimmer for an instant, but inside the sphere, the caster is free to act for 3 rounds of apparent time. The wizard can move and act freely within the area where time is stopped, but all other creatures are frozen in their actions, for they are literally between the ticks of a clock. Nothing can enter the area of effect without also being stopped in time. When 3 rounds have passed, everyone begins operating in normal time once more, and all spells that were cast during the Time Stop will take effect immediately after time returns to normal.~
 
 @823=~Imprisonment~
 @824=~Imprisonment
@@ -3179,7 +3168,7 @@ Range: Short
 Duration: Permanent
 Casting Time: 1 round
 Area of Effect: 1 creature
-Saving Throw: None
+Saving Throw: Spell negates
 
 When the Imprisonment spell is cast, the target must save vs. spell at a -6 penalty or become entombed in a small sphere far beneath the surface of the earth in a state of suspended animation, conscious of their fate. The victim remains there unless the reverse of the spell, Freedom, is cast. Otherwise, the victim will remain there as long as the earth exists: rather a horrible fate, actually. If a Freedom spell is cast in the area where the creature was imprisoned, then they will reappear exactly where they were last standing. Dispel Magic will not free creatures trapped in this manner. The target's magic resistance, if any, does not affect this spell.
 
@@ -3217,7 +3206,7 @@ Range: Personal
 Duration: Instant
 Casting Time: 1 round
 Area of Effect: Sight
-Saving Throw: Death negates
+Saving Throw: Death partial
 
 At the culmination of this dreadful spell, the wizard screams like a banshee (groaning spirit). Everyone within sight hears the awful cry, and opponents who fail a save vs. death at a -2 penalty die instantly while those surviving the wail are deafened for 2 rounds. The caster and their allies are immune to the effects of the wail.~
 
@@ -3229,9 +3218,9 @@ Range: Short
 Duration: Special
 Casting Time: 5
 Area of Effect: Special
-Saving Throw: None
+Saving Throw: Death partial
 
-The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process completely drains the life from the target unless they successfully make a save vs. death at a -4 penalty, instead draining them of 4 levels of experience, causing the target to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for five turns. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to draining.
+The casting of this spell opens a channel between the caster's plane and the Negative Energy Plane. The caster of the spell acts as a conduit between the two planes, sucking life from a living creature and transferring it to the Negative Energy Plane. This process completely drains the life from the target unless they successfully make a save vs. death at a -4 penalty, instead draining them of 4 levels of experience, causing the target to lose THAC0, maximum hit points, memorized spells, and special abilities permanently. These levels can only be restored by a priest's Restoration spell. As the life force passes through the caster, they are temporarily invigorated, restoring 30 hit points and gaining an additional +20 bonus to maximum hit points, a +4 bonus to THAC0, a +3 bonus to saving throws, and a +20% bonus to thieving skills for 5 turns. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to draining.
 
 NOTE: This may spell may not be cast multiple times to radically increase the caster's abilities. However, the caster may still use the spell to heal themselves even while another instance of the spell is in effect.~
 

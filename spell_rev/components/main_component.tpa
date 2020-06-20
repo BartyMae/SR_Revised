@@ -284,8 +284,14 @@ COPY ~spell_rev\shared\spcl742.spl~      ~override~  // Halt Undead (previously 
 
 COPY ~spell_rev\shared\spdr101.spl~      ~override~  // Chromatic Orb
   SAY NAME1 @433000    SAY UNIDENTIFIED_DESC @434000
+ACTION_IF nerf_web=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spdr201.spl~      ~override~  // Web
+  SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478000
+END ELSE BEGIN
 COPY ~spell_rev\shared\spdr201.spl~      ~override~  // Web
   SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478
+END
+COPY ~spell_rev\shared\spdr201i.eff~     ~override~
 COPY ~spell_rev\shared\spdr301.spl~      ~override~  // Lightning Bolt
   SAY NAME1 @515    SAY UNIDENTIFIED_DESC @516
 COPY ~spell_rev\shared\spdr401.spl~      ~override~  // Improved Invisibility
@@ -425,9 +431,18 @@ COPY ~spell_rev\sppr1##\sppr113.spl~     ~override~  // Doom
 
 ADD_SPELL ~spell_rev\sppr1##\sppr114.spl~ 1 1 ~CLERIC_SUNSCORCH~ // Sunscorch (new druid spell)
   SAY NAME1 @25    SAY UNIDENTIFIED_DESC @26
+COPY ~spell_rev\sppr1##\dvsun.spl~       ~override~
 COPY ~spell_rev\sppr1##\dvsuns1.eff~     ~override~
 COPY ~spell_rev\sppr1##\dvsuns2.eff~     ~override~
 COPY ~spell_rev\sppr1##\dvsuns3.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns4.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns5.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns6.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns7.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns8.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns9.eff~     ~override~
+COPY ~spell_rev\sppr1##\dvsuns10.eff~    ~override~
+COPY ~spell_rev\sppr1##\sppr114i.eff~    ~override~
 
 ADD_SPELL ~spell_rev\sppr1##\sppr115.spl~ 1 1 ~CLERIC_STRENGTH_OF_STONE~ // Strength of Stone (new druid spell)
   SAY NAME1 @27    SAY UNIDENTIFIED_DESC @28
@@ -436,7 +451,7 @@ ADD_PROJECTILE ~spell_rev\projectles\dvffire.pro~
 ADD_SPELL ~spell_rev\sppr1##\sppr116.spl~ 1 1 ~CLERIC_FAERIE_FIRE~ // Faerie Fire  (new druid spell)
   SAY NAME1 @29    SAY UNIDENTIFIED_DESC @30
   WRITE_SHORT 0x98 %dvffire%
-COPY ~spell_rev\sppr1##\dvfaerfi.spl~    ~override~
+COPY ~spell_rev\sppr1##\dvffire.spl~    ~override~
 
 ADD_SPELL ~spell_rev\sppr1##\sppr117.spl~ 1 1 ~CLERIC_REGENERATE_LIGHT_WOUNDS~ // Regenerate Light Wounds (new druid spell)
   SAY NAME1 @301    SAY UNIDENTIFIED_DESC @302
@@ -633,8 +648,13 @@ COPY ~spell_rev\sppr3##\skelgrsu.itm~    ~override~
 COPY ~spell_rev\sppr3##\sppr302.spl~     ~override~  // Call Lightning
   SAY NAME1 @73    SAY UNIDENTIFIED_DESC @74
 
+ACTION_IF cleric_remove_magic=1 BEGIN
 COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Remove Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
+END ELSE BEGIN
+COPY ~spell_rev\shared\alternatives\sppr303.spl~     ~override~  // Remove Magic
+  SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
+END
 
 COPY ~spell_rev\sppr3##\sppr304.spl~     ~override~  // Glyph of Warding
   SAY NAME1 @77    SAY UNIDENTIFIED_DESC @78
@@ -1351,7 +1371,7 @@ COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
 /*---------------------Level 1-----------------------*/
 
 COPY_EXISTING ~grease.pro~               ~override~  // Grease projectile
-  WRITE_SHORT 0x206 85 // 10' AoE
+  WRITE_SHORT 0x206 170 // 20' AoE
 COPY ~spell_rev\spwi1##\spwi101.spl~     ~override~  // Grease
   SAY NAME1 @401    SAY UNIDENTIFIED_DESC @402
 COPY ~spell_rev\spwi1##\scrl66.itm~      ~override~
@@ -1728,11 +1748,18 @@ COPY ~spell_rev\spwi2##\scrl98.itm~      ~override~
 
 COPY_EXISTING ~web.pro~                  ~override~  // Web projectile
   WRITE_SHORT 0x206 170 // 20' AoE
+ACTION_IF nerf_web=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi215.spl~     ~override~  // Web
+  SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478000
+COPY ~spell_rev\spwi2##\scrl99.itm~      ~override~
+  SAY NAME2 @477    SAY IDENTIFIED_DESC   @478000
+END ELSE BEGIN
 COPY ~spell_rev\spwi2##\spwi215.spl~     ~override~  // Web
   SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478
 COPY ~spell_rev\spwi2##\scrl99.itm~      ~override~
   SAY NAME2 @477    SAY IDENTIFIED_DESC   @478
 COPY ~spell_rev\spwi2##\spwi215i.eff~    ~override~
+END
 
 COPY ~spell_rev\spwi2##\spwi217.spl~     ~override~  // Agannazar's Scorcher
   SAY NAME1 @479    SAY UNIDENTIFIED_DESC @480
@@ -1787,15 +1814,6 @@ COPY ~spell_rev\spwi2##\spwi224.spl~     ~override~  // Glitterdust
 COPY ~spell_rev\spwi2##\scrla3.itm~      ~override~
   SAY NAME2 @493    SAY IDENTIFIED_DESC   @494
 COPY ~spell_rev\spwi2##\spwi224d.spl~    ~override~
-
-// uncomment to allow those affected by Glitterdust to turn invisible
-/*
-COPY ~spell_rev\shared\alternatives\nerfed_spwi224.spl~     ~override\spwi224.spl~  // Glitterdust
-  SAY NAME1 @493    SAY UNIDENTIFIED_DESC @494000
-  WRITE_SHORT 0x98 %dvgldust%
-COPY ~spell_rev\spwi2##\scrla3.itm~      ~override~
-  SAY NAME2 @493    SAY IDENTIFIED_DESC   @494000
-*/
 
 ADD_SPELL ~spell_rev\spwi2##\spwi225.spl~ 2 2 ~WIZARD_RESIST_ELEMENTS~  // Resist Elements (added to mage spellbook)
   SAY NAME1 @864    SAY UNIDENTIFIED_DESC @865

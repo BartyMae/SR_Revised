@@ -63,7 +63,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: Breath partial
 
-By means of this spell, the caster causes plants to spring up from the ground and entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about creatures in the area, holding them fast for the duration of the spell. Those held receive a -2 penalty to THAC0 and AC. Creatures that make a save vs. breath temporarily avoid entanglement and can move at half speed through the area, but must make an additional saving throw every round they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.~
+By means of this spell, the caster causes plants to spring up from the ground and entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about creatures in the area, holding them fast for the duration of the spell. Those held receive a -2 penalty to THAC0 and AC. Creatures that make a save vs. breath temporarily avoid entanglement and can move at half their normal movement rate through the area, but must make an additional saving throw each round that they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.~
 
 @11=~Magical Stone~
 @12=~Magical Stone
@@ -128,7 +128,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell enables the caster to create a magical cudgel. Dealing 2D4 + 1 crushing damage upon a successful hit, this shillelagh also causes tendrils to wrap around and hold the victim in place for one round unless they successfully make a save vs. breath. The caster wields the shillelagh as if proficient and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every four extra experience levels of the caster, up to a maximum of +3 at 9th level. The shillelagh can be used only by the caster, and remains in their hand for the duration of the spell.~
+This spell enables the caster to create a magical cudgel. Dealing 2D4 + 1 crushing damage upon a successful hit, this shillelagh also causes tendrils to wrap around and hold the victim in place for 1 round unless they successfully make a save vs. breath. The caster wields the shillelagh as if proficient and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every four extra experience levels of the caster, up to a maximum of +3 at 9th level. The shillelagh can be used only by the caster, and remains in their hand for the duration of the spell.~
 
 @21=~Armor of Faith~
 @22=~Armor of Faith
@@ -167,7 +167,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Breath partial
 
-When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes a creature chosen by the caster. The target struck by the ray is blinded for 1 round and suffers 2D6 fire damage as well an additional 1D6 for every two extra experience levels of the caster, up to a maximum of 6D6 at 9th level. The target may make a save vs. breath to avoid being blinded and receive only half damage. Undead creatures and other monsters vulnerable to bright light suffer double damage. Magic resistance does not affect this spell.~
+When this spell is cast, a brilliant ray of scorching heat slants down from the sky and strikes a creature chosen by the caster. The target struck by the ray is blinded for 1 round and suffers 1D6 + 1/level fire damage, up to a maximum of 1D6 + 10 at 10th level. The target may make a save vs. breath to avoid being blinded and receive only half damage. Undead creatures and other monsters vulnerable to bright light suffer double damage and double length blindness. Magic resistance does not affect this spell.~
 
 @27=~Strength of Stone~
 @28=~Strength of Stone
@@ -180,7 +180,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone. This spell sets the Strength of the character to 18 and gives an additional +50 Exceptional Strength, and the character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
+Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone, setting their strength to 18 and adding an additional +50 exceptional strength on top of this. The character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
 
 @29=~Faerie Fire~
 @30=~Faerie Fire
@@ -188,12 +188,12 @@ Level: 1
 School: Evocation
 Sphere: Weather
 Range: Long
-Duration: 1 turn
+Duration: 5 rounds
 Casting Time: 1
-Area of Effect: 5' radius
-Saving Throw: Spell negates
+Area of Effect: 20' radius
+Saving Throw: Special
 
-When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who make a save vs. spell are totally unaffected by the spell. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
+When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Invisible creatures are revealed, and those who do not successfully make a saving throw vs. spell are distinctly outlined for the next 5 rounds. Outlined creatures do not benefit from the concealment normally provided by stealth, invisibility, or similar effects, and suffer a -2 penalty to AC. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
 
 @301=~Regenerate Light Wounds~
 @302=~Regenerate Light Wounds
@@ -357,9 +357,9 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-With this spell, the caster causes a blazing ray of red-hot fire to spring forth from their hand, dealing 2D6 + 1 fire damage upon a successful hit. The caster wields this blade-like ray as if proficient with the weapon and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every three extra experience levels of the caster, up to a maximum of +3 at 9th level. Since the blade is immaterial, Strength modifiers do not apply to THAC0 or damage, and attacks with the flame blade are considered melee touch attacks (+4 bonus to THAC0). The flame blade can be used only by the caster, and remains in their hand for the duration of the spell.~
+With this spell, the caster causes a blazing ray of red-hot fire to spring forth from their hand, dealing 2D6 + 1 fire damage upon a successful hit. The caster wields this blade-like ray as if proficient with the weapon and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every three extra experience levels of the caster, up to a maximum of +3 at 9th level. Since the blade is immaterial, Strength modifiers do not apply to THAC0 or damage, and attacks with the flame blade are considered to be melee touch attacks (+4 bonus to THAC0). The flame blade can be used only by the caster, and remains in their hand for the duration of the spell.~
 
-@43=~Goodberry~ //Disabled
+@43=~Goodberry~
 @44=~Goodberry
 Level: 2
 School: Alteration
@@ -383,7 +383,7 @@ Casting Time: 5
 Area of Effect: Target, and enemies within 5'
 Saving Throw: Spell negates
 
-This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for one turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell are totally unaffected by the spell. The undead cannot be held with this spell.
+This spell holds one or more humans, demihumans, or humanoid creatures rigidly immobile and in place for 1 turn. The effect is centered on the target selected by the caster, and every enemy within 5 feet of the target is also affected. Creatures who make a save vs. spell are totally unaffected by the spell. The undead cannot be held with this spell.
 
 Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.~
 
@@ -450,7 +450,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-By calling upon their deity, the caster of a Spiritual Hammer spell brings into existence a field of force shaped vaguely like a hammer. For as long as the caster concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, dealing 1D8 + 1 magic damage upon a successful hit. The caster wields the spiritual hammer as if proficient and at their normal base THAC0, and it functions as a magical weapon with an enchantment bonus of +1 (with appropriate THAC0 and damage bonuses). Starting at level 5, this enchantment level increases by one for every five extra experience levels of the caster, up to a maximum of +5 at 25th level. Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 bonus to THAC0). The spiritual hammer can be used only by the caster, and remains in their hand for the duration of the spell.~
+By calling upon their deity, the caster of a Spiritual Hammer spell brings into existence a field of force shaped vaguely like a hammer. For as long as the caster concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, dealing 1D8 + 1 magic damage upon a successful hit. The caster wields the spiritual hammer as if proficient and at their normal base THAC0, and it functions as a magical weapon with an enchantment bonus of +1 (with appropriate THAC0 and damage bonuses). Starting at level 5, this enchantment level increases by one for every five extra experience levels of the caster, up to a maximum of +5 at 25th level. Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the spiritual weapon are considered to be melee touch attacks (+4 bonus to THAC0). The spiritual hammer can be used only by the caster, and remains in their hand for the duration of the spell.~
 
 @57=~Draw Upon Divine Might~
 @58=~Draw Upon Divine Might
@@ -912,7 +912,7 @@ Casting Time: 5
 Area of Effect: 20' radius
 Saving Throw: Breath partial
 
-By means of this spell, the caster causes the ground to sprout vicious spikes and thorns that catch and prick all creatures in the area of effect. Those caught in the spike growth suffer 2D4 piercing damage every round that they remain within the affected area. The spikes can also embed themselves in victims' legs, causing them to move at half of their normal movement rate and suffer 1 bleeding damage every round for two rounds. Those who save vs. breath will receive only half damage and avoid the reduced movement rate and bleeding. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.~
+By means of this spell, the caster causes the ground to sprout vicious spikes and thorns that catch and prick all creatures in the area of effect. Those caught in the spike growth suffer 2D4 piercing damage every round that they remain within the affected area. The spikes can also embed themselves in victims' legs, causing them to move at half of their normal movement rate and suffer 1 bleeding damage every round for 2 rounds. Those who save vs. breath will receive only half damage and avoid the reduced movement rate and bleeding. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.~
 
 @335=~Icelance~
 @336=~Icelance
@@ -925,7 +925,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: Special
 
-When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for one round.~
+When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for 1 round.~
 
 @75000=~Dispel Magic~
 @76000=~Dispel Magic
@@ -936,7 +936,7 @@ Range: Long
 Duration: Instant
 Casting Time: 3
 Area of Effect: 30' radius
-Saving Throw: None
+Saving Throw: Special
 
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
 
@@ -1346,7 +1346,7 @@ Casting Time: 1 round
 Area of Effect: 1 person
 Saving Throw: None
 
-This spell is only available to Harpers. The Harper's Call restores a comrade to life, to further serve the cause of the Harpers. This spell functions similarly to Raise Dead, with the following exceptions: the Harper must transfer a small portion of their health (10 hit points) to successfully raise the deceased person, and the Harper suffers a -3 penalty to all ability scores for eight hours, making this spell ineffective in combat. The target has but 1 hit point when raised and must regain the rest by natural healing or curative magic.~
+This spell is only available to Harpers. The Harper's Call restores a comrade to life, to further serve the cause of the Harpers. This spell functions similarly to Raise Dead, with the following exceptions: the Harper must transfer a small portion of their health (10 hit points) to successfully raise the deceased person, and the Harper suffers a -3 penalty to all ability scores for 8 hours, making this spell ineffective in combat. The target has but 1 hit point when raised and must regain the rest by natural healing or curative magic.~
 
 @159=~True Seeing~
 @160=~True Seeing
@@ -1454,7 +1454,7 @@ Casting Time: 1
 Area of Effect: Target, and enemies within 20'
 Saving Throw: Special
 
-As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After one turn, any creatures still sleeping will awaken.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
+As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After 1 turn, any creatures still sleeping will awaken.~ //Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
 
 @175=~Righteous Fury~
 @176=~Righteous Fury
@@ -1769,7 +1769,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Poison partial
 
-Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to Strength, Dexterity, Constitution, and Charisma instantly as well as every other round after for one turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
+Dolorous Decay is a rotting and withering of the body that affects a single living creature. This disease quickly spreads throughout the body and cripples the victim, causing them to suffer a permanent and cumulative -1 penalty to Strength, Dexterity, Constitution, and Charisma instantly as well as every other round after for 1 turn, during which they will be stricken with a terrible sluggishness. The target must also make a save vs. poison at a -4 penalty or suffer 1 poison damage every second for the duration of the spell. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell. Magic resistance does not affect this spell, though the undead and certain other creatures such as constructs, elementals, and illusions are completely immune to disease.~
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall
@@ -1927,7 +1927,7 @@ Range: Long
 Duration: Instant
 Casting Time: 6
 Area of Effect: 30' radius
-Saving Throw: None
+Saving Throw: Special
 
 The Banishment spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
 
@@ -2042,7 +2042,7 @@ Range: Personal
 Duration: 1 turn
 Casting Time: 7
 Area of Effect: 30' radius
-Saving Throw: Spell
+Saving Throw: Spell negates
 
 When this spell is cast, the caster appears to undergo a remarkable transformation. The caster becomes the very ideal of beauty - for a male, this is usually a nymph or a dryad, while for a female, the image varies. The transformation is instantaneous, but lasts only seconds, and any person (excluding party members) viewing the illusion must save vs. spell at a -4 penalty or be charmed for 1 turn. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. If the affected creatures fail their saving throws, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creatures will carry them out as quickly as possible.
 
@@ -2059,7 +2059,7 @@ Casting Time: 1 round
 Area of Effect: 30' radius
 Saving Throw: Breath half
 
-When a Fire Storm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Those caught in the inferno suffer 2D8 + 10, but may save vs. breath at a -4 penalty to receive only half damage. This assault will last for five rounds, continuing to damage all creatures who remain within the area of effect. An area 10 feet around the caster will be protected from the storm.~
+When a Fire Storm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Those caught in the inferno suffer 2D8 + 10, but may save vs. breath at a -4 penalty to receive only half damage. This assault will last for 5 rounds, continuing to damage all creatures who remain within the area of effect. An area 10 feet around the caster will be protected from the storm.~
 
 @241=~Symbol of Pain~
 @242=~Symbol of Pain
@@ -2272,7 +2272,7 @@ Saving Throw: Special
 
 When this spell is cast by a druid, a local earthquake rips through the ground. There are a total of three tremors that are caused by the earthquake, which are staggered and occur once per round starting immediately upon the completion of the spell. The eartquake affects everyone (except earth elementals and flying creatures) in the area of affect, so care must be taken in its use. Magic resistance does not affect this spell.
 
-The first tremor causes all creatures to fall to the ground for two rounds and suffer 6D6 crushing damage, but those who successfully save vs. death at a -6 penalty will receive only half damage and avoid falling down. The second tremor is less severe than the first, but is accompanied by fissures opening in the earth. Creatures in the area of effect suffer 4D6 crushing damage (a successful save vs. death at a -4 penalty reduces it by half), and they also have a 25% chance of stepping and falling into a fissure, and must successfully make a save vs. breath at a -4 penalty or die. The final tremor is the least severe of the three, and creatures suffer 2D6 crushing damage (a successful save vs. death at a -2 penalty reduces it by half). During this final tremor, there is also a 10% chance of falling and becoming trapped within a fissure, and creatures must save vs. breath at a -2 penalty or die. Creatures knocked unconscious by the first tremor automatically fail any saves to avoid falling into or becoming trapped in the fissures.~
+The first tremor causes all creatures to fall to the ground for 2 rounds and suffer 6D6 crushing damage, but those who successfully save vs. death at a -6 penalty will receive only half damage and avoid falling down. The second tremor is less severe than the first, but is accompanied by fissures opening in the earth. Creatures in the area of effect suffer 4D6 crushing damage (a successful save vs. death at a -4 penalty reduces it by half), and they also have a 25% chance of stepping and falling into a fissure, and must successfully make a save vs. breath at a -4 penalty or die. The final tremor is the least severe of the three, and creatures suffer 2D6 crushing damage (a successful save vs. death at a -2 penalty reduces it by half). During this final tremor, there is also a 10% chance of falling and becoming trapped within a fissure, and creatures must save vs. breath at a -2 penalty or die. Creatures knocked unconscious by the first tremor automatically fail any saves to avoid falling into or becoming trapped in the fissures.~
 
 @295=~Symbol of Death~
 @296=~Symbol of Death
@@ -2283,7 +2283,7 @@ Range: Long
 Duration: Special
 Casting Time: 1 round
 Area of Effect: 20' radius
-Saving Throw: Death negates
+Saving Throw: Special
 
 Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 
