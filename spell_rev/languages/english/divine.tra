@@ -76,7 +76,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: None
 
-Using this spell, the priest can temporarily enchant ten small stones, no larger than sling bullets. When thrown, each stone deals 1D4 + 2 missile damage (1D4 + 5 against undead) upon a successful hit, and the character can hurl up to three stones per round. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The stones can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
+Using this spell, the priest can temporarily enchant ten small stones, no larger than sling bullets. When thrown, each stone deals 1D4 + 2 missile damage (1D4 + 5 against undead) upon a successful hit, and the caster can hurl up to three stones per round. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The stones can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
 
 @13=~Protection from Evil~
 @14=~Protection from Evil
@@ -163,7 +163,7 @@ School: Evocation
 Sphere: Sun
 Range: Long
 Duration: Instant
-Casting Time: 5
+Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Breath partial
 
@@ -180,7 +180,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone, setting their strength to 18 and adding an additional +50 exceptional strength on top of this. The character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
+Calling upon the strength of the earth, the caster gains some of the solidity and strength of stone, setting their strength to 18 and adding an additional +50 exceptional strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes them away, such as wing buffets, telekinesis, Gust of Wind, and Battering Ram.~
 
 @29=~Faerie Fire~
 @30=~Faerie Fire
@@ -1717,7 +1717,7 @@ Casting Time: 6
 Area of Effect: Special
 Saving Throw: Breath half
 
-This spell enables the druid to create one fire seed for every 2 experience levels of the caster, up to a maximum of 10 at 20th level. When thrown, each fire seed will explode into a small fireball and deal 6D6 fire damage to the target and everyone within a 10 foot radius, and the character can hurl up to five fire seeds per round. Those who save vs. breath at a -2 penalty will receive only half damage. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The seeds can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
+This spell enables the druid to create one fire seed for every 2 experience levels of the caster, up to a maximum of 10 at 20th level. When thrown, each fire seed will explode into a small fireball and deal 6D6 fire damage to the target and everyone within a 10 foot radius, and the caster can hurl up to five fire seeds per round. Those who save vs. breath at a -2 penalty will receive only half damage. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The seeds can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
 
 @203=~Heal~
 @204=~Heal

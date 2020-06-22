@@ -483,7 +483,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-The recipient of this spell is lucky in everything that they do for the next hour. The affected character receives a +1 or +5% bonus to all of their actions, including THAC0, damage, saving throws, and thieving skills. Multiple castings of this spell are not cumulative.~
+The recipient of this spell is lucky in everything that they do for the next hour. The affected creature receives a +1 or +5% bonus to all of their actions, including THAC0, damage, saving throws, and thieving skills. Multiple castings of this spell are not cumulative.~
 
 @467=~Resist Fear~
 @468=~Resist Fear
@@ -531,7 +531,7 @@ Casting Time: 2
 Area of Effect: 30' radius
 Saving Throw: Poison partial
 
-When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud suffers a -2 penalty to THAC0 and AC, and must make a save vs. poison or be nauseated for 1 round. Nauseated creatures are unable to attack or cast spells, but can still move at half of their normal movement rate. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell's effects each round so long as they remain within the cloud. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
+When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud suffers a -2 penalty to THAC0 and AC, and must make a save vs. poison or be nauseated for 1 round. Nauseated creatures are unable to attack or cast spells, but can still move at half of their normal movement rate. A dispel magic will temporarily remove the nausea from a particular creature, but they will continue to be subjected to the spell's effects each round so long as they remain within the cloud. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
 
 @475=~Strength~
 @476=~Strength
@@ -543,7 +543,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-Application of this spell sets the Strength of the target to 18 and adds an additional +50 exceptional Strength on top of this. The character receives any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.~
+Application of this spell sets the Strength of the target to 18 and adds an additional +50 exceptional Strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.~
 
 @477=~Web~
 @478=~Web
@@ -1137,7 +1137,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is similar to the Invisibility spell, but the recipient is able to attack, either by missile discharge, melee combat, or spellcasting, and remain unseen. Note, however, that there are sometimes telltale traces, a shimmering, that enable observant opponents to approximate the invisible character's whereabouts. These traces are only noticeable when specifically looked for, after the creature has made their presence known. Once the character has revealed themselves, opponents can attempt to attack them with conventional weapons, though they do so with a -4 penalty to the attack roll, or they may cast area of effect spells near their position. Opponents remain unable to directly target the invisible creature with spells, scrolls, or abilities until the spell duration expires or the invisibility is dispelled.~
+This spell is similar to the Invisibility spell, but the recipient is able to attack, either by missile discharge, melee combat, or spellcasting, and remain unseen. Note, however, that there are sometimes telltale traces, a shimmering, that enable observant opponents to approximate the invisible creature's whereabouts. These traces are only noticeable when specifically looked for, after the creature has made their presence known. Once the invisible creature has revealed themselves, opponents can attempt to attack them with conventional weapons, though they do so with a -4 penalty to the attack roll, or they may cast area of effect spells near their position. Opponents remain unable to directly target the invisible creature with spells, scrolls, or abilities until the spell duration expires or the invisibility is dispelled.~
 
 @571=~Minor Globe of Invulnerability~
 @572=~Minor Globe of Invulnerability
@@ -3324,7 +3324,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-When this spell is cast, all friendly creatures in the area are freed from spells and other effects that restrict their movement or bind their minds. These effects include charm, confusion, domination, entangle, feeblemindedness, hold, paralysis, petrification, sleep, slow, stun, and web. This spell will also cancel the effects of the spell Maze and return any characters trapped in the labyrinth of planes. If it is cast in an area where a creature was sealed with an Imprisonment spell, it will instantly free them and they will reappear exactly where they were standing when they were imprisoned.~
+When this spell is cast, all friendly creatures in the area are freed from spells and other effects that restrict their movement or bind their minds. These effects include charm, confusion, domination, entangle, feeblemindedness, hold, paralysis, petrification, sleep, slow, stun, and web. This spell will also cancel the effects of the spell Maze and return any creatures trapped in the labyrinth of planes. If it is cast in an area where a creature was sealed with an Imprisonment spell, it will instantly free them and they will reappear exactly where they were standing when they were imprisoned.~
 
 @839=~Bigby's Crushing Hand~
 @840=~Bigby's Crushing Hand
