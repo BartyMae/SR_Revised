@@ -1691,7 +1691,7 @@ Casting Time: 5
 Area of Effect: 30' radius
 Saving Throw: None
 
-By casting this spell, caster creates a transparent, permeable barrier that shields the caster and their allies from Dispel Magic and Breach spells. The barrier dissipates after one instance of Dispel Magic or Breach.~
+By casting this spell, the caster creates transparent, permeable barriers that shield the caster and their allies from Dispel Magic, Remove Magic, and Breach spells. An individual barrier dissipates after one instance of any of these spells affecting the shielded character.~
 
 @631=~Protection from Normal Weapons~
 @632=~Protection from Normal Weapons
