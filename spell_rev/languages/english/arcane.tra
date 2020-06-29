@@ -297,7 +297,7 @@ For example, a wizard has 15 hit points and casts Find Familiar. The imp summone
 Here is a list of the familiars that the player receives according to alignment:
 
 LAWFUL GOOD: Pseudodragon
-NEUTRAL GOOD: Psuedodragon
+NEUTRAL GOOD: Pseudodragon
 CHAOTIC GOOD: Fairy Dragon
 
 LAWFUL NEUTRAL: Ferret
@@ -2978,7 +2978,7 @@ Range: Long
 Duration: Special
 Casting Time: 1 round
 Area of Effect: 20' radius
-Saving Throw: Special
+Saving Throw: Death negates
 
 Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 

@@ -2384,22 +2384,21 @@ END ELSE BEGIN
 COPY ~spell_rev\shared\alternatives\spwi590.spl~     ~override~  // SI: Abjuration replaced by Dispelling Screen
   SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
 LAF ds_altered_spell INT_VAR old_clone=142 new_clone=~-1~ STR_VAR file=~spwi590.spl~ END
-COPY ~spell_rev\shared\alternatives\spwi591.spl~     ~override~  // SI: Conjuration replaced by Animate Warrior
+COPY ~spell_rev\shared\alternatives\spwi591.spl~     ~override~  // SI: Conjuration replaced by 2x Animate Warrior
   SAY NAME1 @703    SAY UNIDENTIFIED_DESC @704
 COPY ~spell_rev\shared\alternatives\spwi592.spl~     ~override~  // SI: Divination replaced by Non-Detection + Improved Invisibility
   SAY NAME1 @519    SAY UNIDENTIFIED_DESC @520
 COPY ~spell_rev\shared\alternatives\spwi593.spl~     ~override~  // SI: Enchantment replaced by Mind Blank
   SAY NAME1 @769    SAY UNIDENTIFIED_DESC @770
-COPY ~spell_rev\shared\alternatives\spwi594.spl~     ~override~  // SI: Illusion replaced by True Seeing
+COPY ~spell_rev\shared\alternatives\spwi594.spl~     ~override~  // SI: Illusion replaced by Oracle + True Seeing
   SAY NAME1 @677    SAY UNIDENTIFIED_DESC @678
 COPY ~spell_rev\shared\alternatives\spwi595.spl~     ~override~  // SI: Evocation replaced by Protection from Energy
   SAY NAME1 @771    SAY UNIDENTIFIED_DESC @772
-COPY ~spell_rev\shared\alternatives\spwi596.spl~     ~override~  // SI: Necromancy replaced by Summon Nishruu
+COPY ~spell_rev\shared\alternatives\spwi596.spl~     ~override~  // SI: Necromancy replaced by Invisible Stalker + Summon Nishruu
   SAY NAME1 @705    SAY UNIDENTIFIED_DESC @706
 COPY ~spell_rev\shared\alternatives\spwi597.spl~     ~override~  // SI: Alteration replaced by Ghostform
   SAY NAME1 @767    SAY UNIDENTIFIED_DESC @768
 END
-
 
 COPY ~spell_rev\spwi5##\spwi511.spl~     ~override~  // Protection from Normal Weapons
   SAY NAME1 @631    SAY UNIDENTIFIED_DESC @632
