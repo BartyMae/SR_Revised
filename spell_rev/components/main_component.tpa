@@ -1562,7 +1562,7 @@ COPY ~spell_rev\shared\alternatives\spwi123g.spl~     ~override~
   SAY NAME1 @8005
 COPY ~spell_rev\shared\alternatives\spwi123h.spl~     ~override~
   SAY NAME1 @8030
-COPY ~spell_rev\shared\alternatives\dvfindfa.spl~     ~override~
+COPY ~spell_rev\shared\alternatives\dvfindfa.2da~     ~override~
 END ELSE BEGIN  
 COPY ~spell_rev\spwi1##\spwi123.spl~     ~override~  // Find Familiar
   SAY NAME1 @439    SAY UNIDENTIFIED_DESC @440
