@@ -1302,14 +1302,13 @@ Special Characteristics:
  Spellcasting: spells can be cast in this form
 
 Salamander (7 HD):
- STR 16, DEX 12, CON 14
- AC 3, THACO 13, APR 2
+ STR 18/76, DEX 19, CON 15
+ AC 2, THACO 13, APR 2
  1D6 Piercing (Spear +2)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR -50%, ER 50%, AR 0%
 
 Special Characteristics:
- Protected Against: Normal Weapons
  Fiery: target suffers 1D6 fire damage
 
 Sword Spider (5 HD):
@@ -1435,7 +1434,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 
 Giant Spider (4 HD):
  ST14, DE16, CO12, IN5, WI10, CH3
- HP 35, AC 6, THAC0 16, APR 1
+ HP 35, AC 4, THAC0 15, APR 1
  1D8 Piercing (Bite)
  Saving Throws 10/13/10/13/13, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
@@ -1454,7 +1453,7 @@ Sword Spider (5 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Web~
+ Protected Against: Poison and Web~
 
 @605=~Farsight~
 @606=~Farsight
@@ -2161,7 +2160,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 16th: 2 wyverns, 1 greater wyvern
 
 Wyvern (7 HD):
- ST16, DE12, CO15, IN6, WI12, CH9
+ ST16, DE14, CO15, IN6, WI12, CH9
  HP 63, AC 1, THAC0 13, APR 2
  2D8 Slashing (Claws & Bite +2)
  1D6 Piercing (Stinger +2)
@@ -2175,7 +2174,7 @@ Special Characteristics:
  Wyvern Stinger: target suffers 3 poison damage every second for 5 rounds (save vs. poison at -4 neg.)
 
 Greater Wyvern (9 HD):
- ST16, DE12, CO15, IN6, WI12, CH9
+ ST18, DE16, CO16, IN6, WI12, CH9
  HP 81, AC -2, THAC0 11, APR 3
  2D8 Slashing (Claws & Bite +2)
  1D6 Piercing (Stinger +2)
@@ -3305,7 +3304,7 @@ Special Characteristics:
 Alpha Wolfwere (14 HD):
  STR 20, DEX 20, CON 18
  AC 0, THAC0 7, APR 3
- 1D12 Slashing/Piercing (Claws & Bite +3)
+ 2D8 Slashing (Claws & Bite +3)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 50%, CR 50%, ER 50%, AR 50%
 
@@ -4371,7 +4370,7 @@ Launcher: Sling~
 @8170=~Wyvern~
 @8171=~Claws & Bite +2~
 @8172=~Greater Wyvern~
-@8173=~Claws & Bite +2~
+@8173=~Stinger +2~
 @8174=~Skeleton Warrior~
 @8175=~Two-Handed Sword +1~
 @8176=~Nishruu~
