@@ -1454,7 +1454,6 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
 COPY ~spell_rev\spwi1##\scrl1v.itm~      ~override\scrl1v_.itm~  // EET's Dimension Door scroll
   SAY NAME2 @563    SAY IDENTIFIED_DESC   @564
 END
-APPEND ~spell.ids~ ~2109 WIZARD_DIMENSION_JUMP~
 
 COPY ~spell_rev\spwi1##\spwi110.spl~     ~override~  // Identify
   SAY NAME1 @417    SAY UNIDENTIFIED_DESC @418
