@@ -2230,13 +2230,21 @@ COPY ~spell_rev\spwi4##\spwi418g.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418h.spl~    ~override~
 COPY ~spell_rev\spwi4##\spwi418h.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418i.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418i.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418j.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418j.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418k.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418k.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418l.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418l.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418m.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418m.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418n.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418n.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418o.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418o.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418p.spl~    ~override~
+COPY ~spell_rev\spwi4##\spwi418p.eff~    ~override~
 
 COPY ~spell_rev\spwi4##\spwi419.spl~     ~override~  // Secret Word
   SAY NAME1 @597    SAY UNIDENTIFIED_DESC @598
@@ -2581,12 +2589,19 @@ COPY ~spell_rev\spwi5##\dvmestif.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestig.spl~    ~override~
 COPY ~spell_rev\spwi5##\dvmestig.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestih.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestih.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestii.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestii.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestij.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestij.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestik.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestik.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestil.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestil.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestim.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestim.eff~    ~override~
 COPY ~spell_rev\spwi5##\dvmestin.spl~    ~override~
+COPY ~spell_rev\spwi5##\dvmestin.eff~    ~override~
 COPY ~spell_rev\spwi5##\mestsh.vvc~      ~override~
 COPY ~spell_rev\spwi5##\mestsh.bam~      ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
