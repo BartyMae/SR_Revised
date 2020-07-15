@@ -6461,3 +6461,91 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~DVPR510D.spl~) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
 END
+
+ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow15.PRO~
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvenarow.ITM~) THEN BEGIN
+COPY_EXISTING ~dvenarow.ITM~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    PATCH_IF (abil_off > 0x71) BEGIN
+      FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+        READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+        LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+        PATCH_IF ("%projectile%" STRING_EQUAL_CASE "ARROW") BEGIN
+          WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1arow15%~
+        END
+      END
+    END
+	  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bolt09.PRO~
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvenbolt.ITM~) THEN BEGIN
+COPY_EXISTING ~dvenbolt.ITM~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    PATCH_IF (abil_off > 0x71) BEGIN
+      FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+        READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+        LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+        PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BOLT") BEGIN
+          WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bolt09%~
+        END
+      END
+    END
+	LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 186	// colour index
+	SET location = wpink		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1bull05.PRO~
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvenbull.ITM~) THEN BEGIN
+COPY_EXISTING ~dvenbull.ITM~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    PATCH_IF (abil_off > 0x71) BEGIN
+      FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+        READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+        LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+        PATCH_IF ("%projectile%" STRING_EQUAL_CASE "BULLET") BEGIN
+          WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1bull05%~
+        END
+      END
+    END
+	LAUNCH_PATCH_MACRO ~clear~
+	SET gradient = 148	// colour index
+	SET location = wgrey		// location
+	LAUNCH_PATCH_MACRO ~colour~
+	  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
+
+ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1dart01.PRO~
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvendart.ITM~) THEN BEGIN
+COPY_EXISTING ~dvendart.ITM~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x64 "abil_off" ELSE 0
+    READ_SHORT 0x68 "abil_num" ELSE 0
+    PATCH_IF (abil_off > 0x71) BEGIN
+      FOR (index = 0; index < abil_num; index = index + 1) BEGIN
+        READ_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) "proj"
+        LOOKUP_IDS_SYMBOL_OF_INT projectile projectl %proj% - 1
+        PATCH_IF ("%projectile%" STRING_EQUAL_CASE "DART") BEGIN
+          WRITE_SHORT ("%abil_off%" + 0x2a + (0x38 * "%index%")) ~%1dart01%~
+        END
+      END
+    END
+	  END
+  BUT_ONLY_IF_IT_CHANGES
+  END
