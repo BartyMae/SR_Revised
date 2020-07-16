@@ -4144,6 +4144,41 @@ COPY_EXISTING_REGEXP GLOB ~.*\.spl~ ~override~
 
 // 1pp fixes
 
+DEFINE_ACTION_MACRO ~Locations~ BEGIN
+// for weapons
+OUTER_SET wgrey = 16
+OUTER_SET wteal = 17
+OUTER_SET wpink = 18
+OUTER_SET wyellow = 19
+OUTER_SET wred = 20
+OUTER_SET wblue = 21
+OUTER_SET wgreen = 22
+// for helmets
+OUTER_SET hgrey = 48
+OUTER_SET hteal = 49
+OUTER_SET hpink = 50
+OUTER_SET hyellow = 51
+OUTER_SET hred = 52
+OUTER_SET hblue = 53
+OUTER_SET hgreen = 54
+// for shields
+OUTER_SET sgrey = 32
+OUTER_SET steal = 33
+OUTER_SET spink = 34
+OUTER_SET syellow = 35
+OUTER_SET sred = 36
+OUTER_SET sblue = 37
+OUTER_SET sgreen = 38
+// for armour
+OUTER_SET agrey = 0
+OUTER_SET ateal = 1
+OUTER_SET apink = 2
+OUTER_SET ayellow = 3
+OUTER_SET ared = 4
+OUTER_SET ablue = 5
+OUTER_SET agreen = 6
+END
+
 DEFINE_PATCH_MACRO ~clear~ BEGIN
 SET opcode_to_delete = 7
 LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
