@@ -4142,6 +4142,76 @@ COPY_EXISTING_REGEXP GLOB ~.*\.spl~ ~override~
  END     END
  BUT_ONLY_IF_IT_CHANGES 
 
+// 1pp fixes
+
+DEFINE_PATCH_MACRO ~clear~ BEGIN
+SET opcode_to_delete = 7
+LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
+SET opcode_to_delete = 8
+LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
+SET opcode_to_delete = 9
+LAUNCH_PATCH_MACRO DELETE_ITEM_EQEFFECT
+END
+
+DEFINE_PATCH_MACRO ~colour~ BEGIN
+SET opcode = 7      // Set opcode
+SET target = 1      // target type
+SET timing = 2      // timing type
+SET power = 0      // power
+SET resist_dispel = 0  // dispel/resitance
+SET duration = 0    // duration
+SET probability1 = 100  // probability 1
+SET probability2 = 0  // probability 2
+SPRINT "resource" ""     // resource
+SET dicenumber = 0    // dice number 
+SET dicesize = 0    // dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0    // saving throw bonus 
+SET parameter1 = gradient // set colour gradient
+SET parameter2 = location // set location
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+END
+
+DEFINE_PATCH_MACRO ~pulse~ BEGIN
+SET opcode = 9    // Set opcode
+SET target = 1      // target type
+SET timing = 2      // timing type
+SET power = 0      // power
+SET resist_dispel = 0  // dispel/resitance
+SET duration = 0    // duration
+SET probability1 = 100  // probability 1
+SET probability2 = 0  // probability 2
+SPRINT "resource" ""     // resource
+SET dicenumber = 0    // dice number 
+SET dicesize = 0    // dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0    // saving throw bonus 
+SET setrgb = (setb << 24)+(setg << 16)+(setr << 8) // Set RGB
+SET parameter1 = setrgb
+SET settwo = (speed << 16)+(location) // Set location and speed
+SET parameter2 = settwo
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+END
+
+DEFINE_PATCH_MACRO ~glow~ BEGIN
+SET opcode = 8    // Set opcode
+SET target = 1      // target type
+SET timing = 2      // timing type
+SET power = 0      // power
+SET resist_dispel = 0  // dispel/resitance
+SET duration = 0    // duration
+SET probability1 = 100  // probability 1
+SET probability2 = 0  // probability 2
+SPRINT "resource" ""     // resource
+SET dicenumber = 0    // dice number 
+SET dicesize = 0    // dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0    // saving throw bonus 
+SET setrgb = (setb << 24)+(setg << 16)+(setr << 8) // Set RGB
+SET parameter1 = setrgb
+SET parameter2 = location // set location
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+END
 
 // Protection from Missiles and Physical Mirror projectile fixes
 ADD_PROJECTILE      ~1pp/additions/projectiles_1pp/1arow01.PRO~
