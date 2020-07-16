@@ -67,6 +67,8 @@ COPY ~spell_rev\shared\dvwinded.spl~     ~override~  // Fatigue Effect
 
 COPY ~spell_rev\shared\dvbanish.eff~     ~override~  // Banish EFFs
 COPY ~spell_rev\shared\dvbanish.spl~     ~override~
+COPY ~spell_rev\shared\dvgateba.eff~     ~override~
+COPY ~spell_rev\shared\dvgateba.spl~     ~override~
 
 COPY ~spell_rev\shared\dvpowerw.eff~     ~override~  // Power Words vvc
 
