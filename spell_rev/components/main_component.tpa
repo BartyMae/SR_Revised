@@ -281,6 +281,8 @@ COPY ~spell_rev\shared\spcl741.spl~      ~override~  // Boon of Lathander
 */
 COPY ~spell_rev\shared\spcl742.spl~      ~override~  // Halt Undead (previously named Hold Undead)
   SAY NAME1 @543    SAY UNIDENTIFIED_DESC @544
+COPY ~spell_rev\spwi3##\spcl742d.spl~
+COPY ~spell_rev\spwi3##\spcl742d.eff~
 
 /* ----Avenger Abilities---- */
 
@@ -545,6 +547,8 @@ APPEND ~spell.ids~ ~1207 CLERIC_GOOD_BERRIES_DEPRECATED~
 
 COPY ~spell_rev\sppr2##\sppr208.spl~     ~override~  // Hold Person
   SAY NAME1 @45    SAY UNIDENTIFIED_DESC @46
+COPY ~spell_rev\sppr2##\sppr208d.spl~     ~override~
+COPY ~spell_rev\sppr2##\sppr208d.eff~     ~override~
 
 COPY ~spell_rev\sppr2##\sppr209.spl~     ~override~  // Know Opponent (replaces Know Alignment)
   SAY NAME1 @47    SAY UNIDENTIFIED_DESC @48
@@ -661,9 +665,10 @@ END
 COPY ~spell_rev\sppr3##\sppr304.spl~     ~override~  // Glyph of Warding
   SAY NAME1 @77    SAY UNIDENTIFIED_DESC @78
 
-COPY ~spell_rev\sppr3##\sppr305.spl~     ~override~  // Hold Animal
+COPY ~spell_rev\sppr3##\sppr305.spl~     ~override~  // Hold Person or Animal
   SAY NAME1 @79    SAY UNIDENTIFIED_DESC @80
-COPY ~spell_rev\sppr3##\holdpran.eff~    ~override~
+COPY ~spell_rev\sppr3##\sppr305d.spl~     ~override~
+COPY ~spell_rev\sppr3##\sppr305d.eff~     ~override~
 
 COPY ~spell_rev\sppr3##\sppr306.spl~     ~override~  // Protection from Fire (disabled at level 3)
   SAY NAME1 @81    SAY UNIDENTIFIED_DESC @82
@@ -1912,6 +1917,8 @@ COPY ~spell_rev\spwi3##\spwi306.spl~     ~override~  // Hold Person
   SAY NAME1 @511    SAY UNIDENTIFIED_DESC @512
 COPY ~spell_rev\spwi3##\scrl1i.itm~      ~override~
   SAY NAME2 @511    SAY IDENTIFIED_DESC   @512
+COPY ~spell_rev\spwi3##\spwi306d.spl~     ~override~
+COPY ~spell_rev\spwi3##\spwi306d.eff~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi307.spl~     ~override~  // Invisibility Sphere ("replaces" Invisibility 10' Radius)
   SAY NAME1 @513    SAY UNIDENTIFIED_DESC @514
@@ -2025,6 +2032,8 @@ COPY ~spell_rev\spwi3##\spwi324.spl~     ~override~  // Halt Undead (previously 
   SAY NAME1 @543    SAY UNIDENTIFIED_DESC @544
 COPY ~spell_rev\spwi3##\scrl6l.itm~      ~override~
   SAY NAME2 @543    SAY IDENTIFIED_DESC   @544
+COPY ~spell_rev\spwi3##\spwi324d.spl~
+COPY ~spell_rev\spwi3##\spwi324d.eff~
 COPY_EXISTING ~holdnecr.pro~             ~override~
   WRITE_SHORT 0x204 42
   WRITE_SHORT 0x206 42 // 5' AoE
@@ -2383,6 +2392,8 @@ COPY ~spell_rev\spwi5##\spwi507.spl~     ~override~  // Hold Monster
   SAY NAME1 @623    SAY UNIDENTIFIED_DESC @624
 COPY ~spell_rev\spwi5##\scrl5o.itm~      ~override~
   SAY NAME2 @623    SAY IDENTIFIED_DESC   @624
+COPY ~spell_rev\spwi5##\spwi507d.spl~     ~override~
+COPY ~spell_rev\spwi5##\spwi507d.eff~     ~override~
 
 COPY ~spell_rev\spwi5##\spwi508.spl~     ~override~  // Waves of Fatigue (replaces Chaos)
   SAY NAME1 @625    SAY UNIDENTIFIED_DESC @626
