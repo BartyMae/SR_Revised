@@ -1181,8 +1181,8 @@ APPEND ~spell.ids~ ~1702 CLERIC_STALKER~ // SPPR702 is "Stalker" in IWDEE, a spe
 ACTION_IF fiends=1 BEGIN
 COPY ~spell_rev\sppr7##\sppr703.spl~     ~override~  // Summon Death Knight (replaces Gate)
   SAY NAME1 @235    SAY UNIDENTIFIED_DESC @236
-APPEND ~spell.ids~ ~1703 CLERIC_SUMMON_DEATH_KNIGHT~
 END
+APPEND ~spell.ids~ ~1703 CLERIC_SUMMON_DEATH_KNIGHT~
 
 ADD_PROJECTILE ~spell_rev\projectles\dvnatbty.pro~
 COPY ~spell_rev\sppr7##\sppr704.spl~     ~override~  // Nature's Beauty
@@ -2852,10 +2852,10 @@ COPY ~spell_rev\spwi7##\dvdeathk.cre~    ~override~
 COPY ~spell_rev\spwi7##\dvdeathk.itm~    ~override~
   SAY NAME1 @8179    SAY NAME2 @8179
 COPY ~spell_rev\spwi7##\dvdeathk.bcs~    ~override~
-APPEND ~spell.ids~ ~2707 WIZARD_SUMMON_DEATH_KNIGHT~
 END ELSE BEGIN
 COPY ~spell_rev\spwi7##\scrl8i.itm~      ~override~  // For price
 END
+APPEND ~spell.ids~ ~2707 WIZARD_SUMMON_DEATH_KNIGHT~
 COPY ~spell_rev\shared\spin701.spl~      ~override~  // Unholy Fireball
   SAY NAME1 @8180
 
