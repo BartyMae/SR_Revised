@@ -281,8 +281,8 @@ COPY ~spell_rev\shared\spcl741.spl~      ~override~  // Boon of Lathander
 */
 COPY ~spell_rev\shared\spcl742.spl~      ~override~  // Halt Undead (previously named Hold Undead)
   SAY NAME1 @543    SAY UNIDENTIFIED_DESC @544
-COPY ~spell_rev\shared\spcl742d.spl~
-COPY ~spell_rev\shared\spcl742d.eff~
+COPY ~spell_rev\shared\spcl742d.spl~      ~override~
+COPY ~spell_rev\shared\spcl742d.eff~      ~override~
 
 /* ----Avenger Abilities---- */
 
@@ -2032,8 +2032,8 @@ COPY ~spell_rev\spwi3##\spwi324.spl~     ~override~  // Halt Undead (previously 
   SAY NAME1 @543    SAY UNIDENTIFIED_DESC @544
 COPY ~spell_rev\spwi3##\scrl6l.itm~      ~override~
   SAY NAME2 @543    SAY IDENTIFIED_DESC   @544
-COPY ~spell_rev\spwi3##\spwi324d.spl~
-COPY ~spell_rev\spwi3##\spwi324d.eff~
+COPY ~spell_rev\spwi3##\spwi324d.spl~      ~override~
+COPY ~spell_rev\spwi3##\spwi324d.eff~      ~override~
 COPY_EXISTING ~holdnecr.pro~             ~override~
   WRITE_SHORT 0x204 42
   WRITE_SHORT 0x206 42 // 5' AoE
