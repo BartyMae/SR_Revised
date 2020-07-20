@@ -3608,6 +3608,17 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~25spell2.sto~) THEN BEGIN
     REPLACE_TEXTUALLY ~SCRLAK~ ~SCRL5G~
 END
 
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_TRUE_DISPEL_MAGIC[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_TRUE_DISPEL_MAGIC~ RET spell_res END
+  OUTER_SPRINT ~true_dispel_magic~ ~%spell_res%~
+  COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+      REPLACE_TEXTUALLY ~sppr303~ ~%true_dispel_magic%~
+	END
+  BUT_ONLY
+  APPEND speldesc.2da ~%true_dispel_magic% 19298~
+END
+
 
 /*----------------Remove Disabled Spell Scrolls-----------------*/
 
