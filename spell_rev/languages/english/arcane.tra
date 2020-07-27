@@ -1291,7 +1291,7 @@ Special Characteristics:
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
 
 Ogre Mage (7 HD):
- STR 18, DEX 10, CON 16
+ STR 18/100, DEX 10, CON 16
  AC 2, THAC0 12, APR 2
  1D10 + 3 Slashing (Katana +1)
  SR 0%, CR 0%, PR 0%, MR 0%
@@ -1323,7 +1323,7 @@ Special Characteristics:
  Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
 
 Troll (7 HD):
- STR 18, DEX 16, CON 20
+ STR 18/00, DEX 16, CON 20
  AC 4, THAC0 12, APR 3
  1D6 Piercing (Claws +2)
  SR 0%, CR 0%, PR 0%, MR 0%
@@ -1338,7 +1338,7 @@ Winter Wolf (6 HD):
  AC 5, THAC0 14, APR 1
  Frostbite (Breath +2)
  SR 0%, CR 0%, PR 0%, MR 0%
- FR 0%, CR 100%, ER 0%, AR 0%
+ FR -25%, CR 100%, ER 0%, AR 0%
 
 Special Characteristics:
  Frostbite: target is blasted with icy breath, suffering 6D4 cold damage (save vs. breath neg. half)~
