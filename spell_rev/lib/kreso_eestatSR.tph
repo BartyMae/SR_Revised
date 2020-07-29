@@ -6520,7 +6520,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~SPWI414.SPL~) THEN BEGIN
       FOR (index = fx_idx ; index < fx_num ; index = index + 1) BEGIN
         READ_SHORT ("%fx_off%" +        ("%index%" * 0x30)) "opcode"
         READ_ASCII ("%fx_off%" + 0x14 + ("%index%" * 0x30)) "resref"
-        PATCH_IF (("%opcode%" = 215) AND ("%resref%" STRING_EQUAL_CASE "SPSARMOR"))  BEGIN
+        PATCH_IF (("%opcode%" = 215) AND ("%resref%" STRING_EQUAL_CASE "SPARMOR"))  BEGIN
           WRITE_ASCII ("%fx_off%" + 0x14 + ("%index%" * 0x30)) ~1WDSARMR~ #8
         END
       END
