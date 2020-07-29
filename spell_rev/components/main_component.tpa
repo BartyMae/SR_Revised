@@ -204,6 +204,7 @@ COPY ~spell_rev\shared\dvbrsker.bcs~     ~override~  // Summons' melee + berserk
 COPY ~spell_rev\shared\elemtype.itm~     ~override~  // Elemental type characteristics
 COPY ~spell_rev\shared\undtype.itm~      ~override~  // Undead type characteristics
 COPY ~spell_rev\shared\vermtype.itm~     ~override~  // Vermin type characteristics
+COPY ~spell_rev\shared\neckcrit.itm~      ~override~  // Critical hit protection necklace
 
 /* ----Bhaalspawn Abilities---- */
 
