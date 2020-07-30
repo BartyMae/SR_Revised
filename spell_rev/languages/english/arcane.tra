@@ -2451,7 +2451,7 @@ Death Knight (13 HD):
 
 Special Characteristics:
  Magic Resistance: 75%
- Protected Againt: Death, Normal Weapons, and Poison
+ Protected Againt: Backstabs, Death, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Aura of Fear: every round, creatures in a 10' radius flee in terror for 1 round (save vs. spell neg.)
  Detect Invisibility (permanent)
@@ -3411,7 +3411,7 @@ Planetar (18 HD):
 Special Characteristics:
  Magic Resistance: 75%
  Regeneration: 2 hp/round
- Protected Against: Backstabs, Charm, Confusion, Death, Feeblemindedness, Imprisonment, Level Drain, Maze, Normal/+1/+2 Weapons, Petrification, and Poison
+ Protected Against: Backstabs, Charm, Confusion, Death, Domination, Feeblemindedness, Imprisonment, Level Drain, Maze, Normal/+1/+2 Weapons, Petrification, and Poison
  Detect Invisibility (permanent)
  Vorpal: 15% chance target dies (save vs. death at -2 neg.)
 
@@ -3448,7 +3448,7 @@ Special Characteristics:
  Magic Resistance: 75%
  Regeneration: 2 hp/round
  Detect Invisibility (permanent)
- Protected Against: Backstabs, Charm, Confusion, Death, Feeblemindedness, Imprisonment, Level Drain, Maze, Normal/+1/+2 Weapons, Petrification, and Poison
+ Protected Against: Backstabs, Charm, Confusion, Death, Domination, Feeblemindedness, Imprisonment, Level Drain, Maze, Normal/+1/+2 Weapons, Petrification, and Poison
 
 Combat Abilities:
  Vorpal: 15% chance target dies (save vs. death at -2 neg.)
