@@ -735,7 +735,6 @@ COPY ~spell_rev\sppr3##\sppr319.spl~     ~override~  // Summon Insects
   SAY NAME1 @103    SAY UNIDENTIFIED_DESC @104
 COPY ~spell_rev\sppr3##\sppr319d.spl~    ~override~
 COPY ~spell_rev\sppr3##\sppr319e.spl~    ~override~
-LAF ds_altered_spell INT_VAR old_clone=60 new_clone=~-1~ STR_VAR file=~sppr319.spl~ END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~sppr319d.spl    233     1     120   146    6     A~
 
 ADD_SPELL ~spell_rev\sppr3##\sppr320.spl~ 1 3 ~CLERIC_ANIMAL_SUMMONING_LEVEL_3~ // Animal Summoning III (new druid spell)
@@ -1025,7 +1024,6 @@ COPY ~spell_rev\sppr5##\sppr517.spl~     ~override~  // Insect Plague
   SAY NAME1 @181    SAY UNIDENTIFIED_DESC @182
 COPY ~spell_rev\sppr5##\sppr517d.spl~    ~override~
 COPY ~spell_rev\sppr5##\sppr517e.spl~    ~override~
-LAF ds_altered_spell INT_VAR old_clone=60 new_clone=~-1~ STR_VAR file=~sppr517.spl~ END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~sppr517d.spl    233     2     120   146    6     A~
 
 ADD_SPELL ~spell_rev\sppr5##\sppr520.spl~ 1 5 ~CLERIC_PROTECTION_FROM_ACID~  // Protection from Acid (added to priest spellbook)
@@ -1138,7 +1136,6 @@ COPY ~spell_rev\sppr6##\boltund.eff~     ~override~
 
 COPY ~spell_rev\sppr6##\sppr613.spl~     ~override~  // Physical Mirror
   SAY NAME1 @215    SAY UNIDENTIFIED_DESC @216
-LAF ds_altered_spell INT_VAR old_clone=197 new_clone=~142~ STR_VAR file=~sppr613.spl~ END
 COPY ~spell_rev\sppr6##\sppr613d.spl~    ~override~
 
 COPY ~spell_rev\sppr6##\sppr614.spl~     ~override~  // Sol's Searing Orb
@@ -1248,7 +1245,6 @@ COPY ~spell_rev\sppr7##\sppr717.spl~     ~override~  // Creeping Doom
   SAY NAME1 @257    SAY UNIDENTIFIED_DESC @258
 COPY ~spell_rev\sppr7##\sppr717d.spl~    ~override~
 COPY ~spell_rev\sppr7##\sppr717e.spl~    ~override~
-LAF ds_altered_spell INT_VAR old_clone=60 new_clone=~-1~ STR_VAR file=~sppr717.spl~ END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~sppr717d.spl    233     3     120   146    6     A~
 
 COPY ~spell_rev\sppr7##\sppr718.spl~     ~override~  // Symbol of Stunning
@@ -2412,7 +2408,6 @@ COPY ~spell_rev\spwi5##\spwi509i.eff~     ~override~
 
 ADD_SPELL ~spell_rev\spwi5##\spwi510.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)
   SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
-LAF ds_altered_spell INT_VAR old_clone=142 new_clone=~-1~ STR_VAR file=~spwi590.spl~ END
 COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
   SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
 COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
@@ -2429,7 +2424,6 @@ COPY ~spell_rev\spwi5##\spwi597.spl~     ~override~
 END ELSE BEGIN
 COPY ~spell_rev\shared\alternatives\spwi590.spl~     ~override~  // SI: Abjuration replaced by Dispelling Screen
   SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
-LAF ds_altered_spell INT_VAR old_clone=142 new_clone=~-1~ STR_VAR file=~spwi590.spl~ END
 COPY ~spell_rev\shared\alternatives\spwi591.spl~     ~override~  // SI: Conjuration replaced by 2x Animate Warrior
   SAY NAME1 @703    SAY UNIDENTIFIED_DESC @704
 COPY ~spell_rev\shared\alternatives\spwi592.spl~     ~override~  // SI: Divination replaced by Non-Detection + Improved Invisibility
@@ -2555,7 +2549,6 @@ COPY ~spell_rev\spwi5##\elearsu3.itm~    ~override~
 
 COPY ~spell_rev\spwi5##\spwi522.spl~     ~override~  // Spell Deflection (replaces Minor Spell Turning, disabled at level six)
   SAY NAME1 @653    SAY UNIDENTIFIED_DESC @654
-LAF ds_altered_spell INT_VAR old_clone=200 new_clone=~-1~ STR_VAR file=~spwi522.spl~ END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~spwi522.spl    233     1     116   201    n     A~
 COPY ~spell_rev\spwi5##\scrl7d.itm~      ~override~
   SAY NAME2 @653    SAY IDENTIFIED_DESC   @654
@@ -2813,7 +2806,6 @@ COPY ~spell_rev\spwi6##\scrl8c.itm~      ~override~  // Scroll used for Summon N
 
 COPY ~spell_rev\spwi7##\spwi701.spl~     ~override~  // Greater Spell Deflection (replaces Spell Turning)
   SAY NAME1 @721    SAY UNIDENTIFIED_DESC @722
-LAF ds_altered_spell INT_VAR old_clone=200 new_clone=~-1~ STR_VAR file=~spwi701.spl~ END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~spwi701.spl    233     2     116   201    n     A~
 COPY ~spell_rev\spwi7##\scrl7v.itm~      ~override~  // vanilla's Spell Deflection
   SAY NAME2 @721    SAY IDENTIFIED_DESC   @722
@@ -3575,19 +3567,19 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
 COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
-ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
-ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
+ADD_STORE_ITEM ~dvscrl01~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
+ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl03~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~STO0703.sto~) BEGIN
-COPY_EXISTING ~STO0703.sto~              ~override~  // Sorcerous Sundries
-ADD_STORE_ITEM ~dvscrl01~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scroll
-ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Evil scroll
+ACTION_IF (FILE_EXISTS_IN_GAME ~sto0703.sto~) BEGIN
+COPY_EXISTING ~sto0703.sto~              ~override~  // Sorcerous Sundries
+ADD_STORE_ITEM ~dvscrl01~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scroll
+ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl03~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Evil scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
