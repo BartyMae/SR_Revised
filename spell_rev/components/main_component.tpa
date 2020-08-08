@@ -3463,8 +3463,8 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
   COPY_EXISTING ~sw1h65.spl~             ~override~ // Draw Upon Holy Might
     SAY NAME2 @4073
 END
-ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a.spl~) THEN BEGIN
-  COPY_EXISTING ~misc3l.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.spl~) THEN BEGIN
+  COPY_EXISTING ~misc3l.spl~             ~override~ // Silence
     SAY NAME1 @4104
 END
 
