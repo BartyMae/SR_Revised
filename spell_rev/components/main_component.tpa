@@ -3431,26 +3431,46 @@ ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_POLYMORPH_OTHER[
   END
 END
 
-COPY_EXISTING ~brac23.itm~             ~override~
-  SAY IDENTIFIED_DESC @1308
-COPY_EXISTING ~hamm03.itm~             ~override~
-  SAY IDENTIFIED_DESC @1550
-COPY_EXISTING ~hamm11.itm~             ~override~
-  SAY IDENTIFIED_DESC @1566
-COPY_EXISTING ~misc3a8.itm~             ~override~
-  SAY IDENTIFIED_DESC @1699
-COPY_EXISTING ~misc3h.itm~             ~override~
-  SAY IDENTIFIED_DESC @1714
-COPY_EXISTING ~misc3l.itm~             ~override~
-  SAY IDENTIFIED_DESC @1723
-COPY_EXISTING ~npshld.itm~             ~override~
-  SAY IDENTIFIED_DESC @1805
-COPY_EXISTING ~slng06.itm~             ~override~
-  SAY IDENTIFIED_DESC @1932
-COPY_EXISTING ~staf22.itm~             ~override~
-  SAY IDENTIFIED_DESC @2049
-COPY_EXISTING ~sw1h65.itm~             ~override~
-  SAY IDENTIFIED_DESC @2162
+ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.itm~) THEN BEGIN
+  COPY_EXISTING ~brac23.itm~             ~override~
+    SAY IDENTIFIED_DESC @1308
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~hamm03.itm~) THEN BEGIN
+  COPY_EXISTING ~hamm03.itm~             ~override~
+    SAY IDENTIFIED_DESC @1550
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~hamm11.itm~) THEN BEGIN
+  COPY_EXISTING ~hamm11.itm~             ~override~
+    SAY IDENTIFIED_DESC @1566
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a8.itm~) THEN BEGIN
+  COPY_EXISTING ~misc3a8.itm~             ~override~
+    SAY IDENTIFIED_DESC @1699
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3h.itm~) THEN BEGIN
+  COPY_EXISTING ~misc3h.itm~             ~override~
+    SAY IDENTIFIED_DESC @1714
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.itm~) THEN BEGIN
+  COPY_EXISTING ~misc3l.itm~             ~override~
+    SAY IDENTIFIED_DESC @1723
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.itm~) THEN BEGIN
+  COPY_EXISTING ~npshld.itm~             ~override~
+    SAY IDENTIFIED_DESC @1805
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~slng06.itm~) THEN BEGIN
+  COPY_EXISTING ~slng06.itm~             ~override~
+    SAY IDENTIFIED_DESC @1932
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~staf22.itm~) THEN BEGIN
+  COPY_EXISTING ~staf22.itm~             ~override~
+    SAY IDENTIFIED_DESC @2049
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.itm~) THEN BEGIN
+  COPY_EXISTING ~sw1h65.itm~             ~override~
+    SAY IDENTIFIED_DESC @2162
+END
 ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.spl~) THEN BEGIN
   COPY_EXISTING ~brac23.spl~             ~override~ // Righteous Fury
     SAY NAME1 @4012
