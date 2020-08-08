@@ -162,7 +162,7 @@ Level: 1
 School: Evocation
 Sphere: Sun
 Range: Long
-Duration: Instant
+Duration: Special
 Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: Breath partial
@@ -618,20 +618,20 @@ Saving Throw: Breath half
 
 Immediately upon completion of the spell and once per round thereafter, the caster causes a 30-foot-long vertical bolt of lightning to come crashing down upon an enemy. The spell calls forth one lightning bolt for every three experience levels of the caster, up to a maximum of 5 lightning bolts at 15th level. The lightning will strike first at the target of the spell, dealing 6D6 electrical damage. Those who make a save vs. breath at a -2 penalty will receive only half damage. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the caster.~
 
-@75=~Remove Magic~
-@76=~Remove Magic
+@75=~Dispel Magic~
+@76=~Dispel Magic
 Level: 3
 School: Abjuration
 Sphere: All
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 30' radius
 Saving Throw: Special
 
-Remove Magic dispels the magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
+Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
 
-The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Remove Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Remove Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
+The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Dispel Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Dispel Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
 
 @77=~Glyph of Warding~
 @78=~Glyph of Warding
@@ -926,21 +926,6 @@ Area of Effect: 1 creature
 Saving Throw: Special
 
 When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for 1 round.~
-
-@75000=~Dispel Magic~
-@76000=~Dispel Magic
-Level: 3
-School: Abjuration
-Sphere: All
-Range: Long
-Duration: Instant
-Casting Time: 3
-Area of Effect: 30' radius
-Saving Throw: Special
-
-Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
-
-The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Dispel Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Dispel Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
 
 @91000=~Contagion~
 @92000=~Contagion
