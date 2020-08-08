@@ -72,13 +72,13 @@ target = 2
 parameter1 = 14056  
 STR_VAR
 END
- 
+
+ACTION_IF spell_immunity=0 BEGIN 
 COPY_EXISTING ~spwi510.spl~ ~override~  
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = "-1" header = 1 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 146 target = 1 parameter2 = 1 power = 5 header =1 STR_VAR resource = k1#scre END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 215 target = 2 parameter2 = 1 power = 5 header =1 STR_VAR resource = sprotect duration = 4 END
 
-ACTION_IF spell_immunity=0 BEGIN
 COPY_EXISTING ~spwi590.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = "-1" header = 1 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 146 target = 1 parameter2 = 1 power = 5 header =1 STR_VAR resource = k1#scre END

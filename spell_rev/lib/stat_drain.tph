@@ -1,4 +1,4 @@
-ADD_SECTYPE ~k1#StatD~ @22007
+ADD_SECTYPE ~DV#StatD~ @22007
 
   //// GLOBAL PATCH ///
 
@@ -58,7 +58,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~  // Draining items
           FOR (k=0;k<ef_num;k+=1) BEGIN
             READ_SHORT (ef_off+(ef_ind+k)*0x30) opcode
             PATCH_IF (opcode=6) OR (opcode=10) OR (opcode=15) OR (opcode=19) OR (opcode=44) OR (opcode=49) BEGIN
-		      WRITE_BYTE 0x8B "%k1#StatD%"
+		      WRITE_BYTE 0x8B "%DV#StatD%"
             END
           END
         END
@@ -106,7 +106,7 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ ~override~  // Draining spells
           FOR (k=0;k<ef_num;k+=1) BEGIN
             READ_SHORT (ef_off+(k+ef_ind)*0x30) opcode
             PATCH_IF (opcode=6) OR (opcode=10) OR (opcode=15) OR (opcode=19) OR (opcode=44) OR (opcode=49) BEGIN
-		      WRITE_BYTE 0x27 "%k1#StatD%"
+		      WRITE_BYTE 0x27 "%DV#StatD%"
             END
           END
         END
@@ -127,7 +127,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sppr417.spl~) THEN BEGIN // Priest Lesser Restor
 	power			= 4
 	savingthrow     = 0
 	parameter1		= 9
-	parameter2		= EVALUATE_BUFFER %k1#StatD%
+	parameter2		= EVALUATE_BUFFER %DV#StatD%
 	timing			= 1
 	insert_point    = 1
     END
@@ -143,7 +143,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sppr713.spl~) THEN BEGIN // Priest Greater Resto
 	power			= 7
 	savingthrow     = 0
 	parameter1		= 9
-	parameter2		= EVALUATE_BUFFER %k1#StatD%
+	parameter2		= EVALUATE_BUFFER %DV#StatD%
 	timing			= 1
 	insert_point    = 1
     END

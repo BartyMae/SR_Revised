@@ -1,5 +1,5 @@
 /// Haste and slow
-/// Two sectypes needed, one for each
+/// 2 sectypes needed, one for each
 ADD_SECTYPE ~k1#Haste~ @22002  // String to counter Haste
 ADD_SECTYPE ~k1#Slow~ @22003  // String to counter Slow
 
@@ -110,9 +110,10 @@ LPF CLONE_EFFECT INT_VAR match_opcode = 40 opcode = 221 parameter1 = 9 parameter
 END
 BUT_ONLY
 
+
 // SR spells don't use Haste opcode and so are handled seperately
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi305.spl~) THEN BEGIN // Wizard's Haste
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi305.spl~) THEN BEGIN // Arcane Haste
  COPY_EXISTING ~spwi305.spl~ ~override~
   WRITE_BYTE 0x27 "%k1#Haste%"
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
@@ -166,43 +167,69 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~spin828.spl~) THEN BEGIN // Mazzy's Haste
   BUT_ONLY
 END
 
-/*ACTION_IF (FILE_EXISTS_IN_GAME ~sppr403.spl~) THEN BEGIN // Priest's Free Action
-COPY_EXISTING ~sppr403.spl~ ~override~
-  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 35) BEGIN
-SET opcode = 205			// Set opcode
-SET target = 2			// target type
-SET timing = 0			// timing type
-SET power = 0			// power
-SET resist_dispel = 3	// dispel/resitance
-SET duration = (420 + (%loop% * 60))		// duration
-SET probability1 = 100	// probability 1
-SET probability2 = 0	// probability 2
-SPRINT "resource" "" 		// resource
-SET dicenumber = 0		// dice number
-SET dicesize = 0		// dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0		// saving throw bonus
-SET parameter1 = 9 // param1
-SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
-SET header = 1
-SET insert_point = 1
-LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-
-SET "loop" = %loop% + 1
+ACTION_IF (FILE_EXISTS_IN_GAME ~potn14.spl~) THEN BEGIN // Potion of Speed
+ COPY_EXISTING ~potn14.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Haste%"
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
+  LPF ADD_SPELL_EFFECT
+	INT_VAR
+	opcode			= 221
+	target			= 2
+	power			= 3
+	savingthrow     = 0
+	parameter1		= 9
+	parameter2		= EVALUATE_BUFFER %k1#Slow%
+	timing			= 1
+	insert_point    = 1
+    END
+  BUT_ONLY
 END
-END
-BUT_ONLY
-END*/
 
-  ACTION_IF (FILE_EXISTS_IN_GAME ~spwi613.spl~) THEN BEGIN // Wizard's Improved Haste - no sectype change since it's slow-immune
-COPY_EXISTING ~spwi613.spl~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.spl~) THEN BEGIN // Potion of Speed
+ COPY_EXISTING ~sw1h27.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Haste%"
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
+  LPF ADD_SPELL_EFFECT
+	INT_VAR
+	opcode			= 221
+	target			= 2
+	power			= 3
+	savingthrow     = 0
+	parameter1		= 9
+	parameter2		= EVALUATE_BUFFER %k1#Slow%
+	timing			= 1
+	insert_point    = 1
+    END
+  BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvhaste.spl~) THEN BEGIN // Haste
+ COPY_EXISTING ~dvhaste.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Haste%"
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
+  LPF ADD_SPELL_EFFECT
+	INT_VAR
+	opcode			= 221
+	target			= 2
+	power			= 3
+	savingthrow     = 0
+	parameter1		= 9
+	parameter2		= EVALUATE_BUFFER %k1#Slow%
+	timing			= 1
+	insert_point    = 1
+    END
+  BUT_ONLY
+END
+
+// Improved Haste - no sectype change since it's slow-immune
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi613.spl~) THEN BEGIN // Arcane Improved Haste
+ COPY_EXISTING ~spwi613.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
   SET opcode = 221			// Set opcode
 SET target = 2			// target type
 SET timing = 1			// timing type
+SET insert_point = 1	// timing type
 SET power = 6			// power
 SET resist_dispel = 0	// dispel/resitance
 SET duration = 0		// duration
@@ -221,6 +248,53 @@ LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
 /*SET opcode = 205			// Set opcode
 SET target = 2			// target type
 SET timing = 0			// timing type
+SET insert_point = 1	// timing type
+SET power = 0			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 9 // param1
+SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
+SET header = 1
+SET insert_point = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT*/
+END
+BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~amul26.spl~) THEN BEGIN // Amulet of Cheetah Speed's Improved Haste
+ COPY_EXISTING ~amul26.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
+  SET opcode = 221			// Set opcode
+SET target = 2			// target type
+SET timing = 1			// timing type
+SET insert_point = 1	// timing type
+SET power = 6			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 9 // param1
+SET parameter2 = EVALUATE_BUFFER %k1#Slow% // param2
+SET header = 1
+SET insert_point = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+/*SET opcode = 205			// Set opcode
+SET target = 2			// target type
+SET timing = 0			// timing type
+SET insert_point = 1	// timing type
 SET power = 0			// power
 SET resist_dispel = 3	// dispel/resitance
 SET duration = 60		// duration

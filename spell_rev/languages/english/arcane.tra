@@ -1692,6 +1692,18 @@ Saving Throw: None
 
 By casting this spell, the caster creates transparent, permeable barriers that shield the caster and their allies from Dispel Magic, Remove Magic, and Breach spells. An individual barrier dissipates after one instance of any of these spells affecting the shielded character.~
 
+@629000=~Spell Immunity~
+@630000=~Spell Immunity
+Level: 5
+School: Abjuration
+Range: Personal
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: Caster
+Saving Throw: None
+
+Casting this spell grants the wizard protection from one spell school of their choice. After the spell is cast, the wizard must choose the school they wish to be protected from. All spells of this school will not be able to harm or aid the caster for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the caster.~
+
 @631=~Protection from Normal Weapons~
 @632=~Protection from Normal Weapons
 Level: 5

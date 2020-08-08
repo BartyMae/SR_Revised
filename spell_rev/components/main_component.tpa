@@ -655,13 +655,8 @@ COPY ~spell_rev\sppr3##\skelgrsu.itm~    ~override~
 COPY ~spell_rev\sppr3##\sppr302.spl~     ~override~  // Call Lightning
   SAY NAME1 @73    SAY UNIDENTIFIED_DESC @74
 
-ACTION_IF cleric_remove_magic=1 BEGIN
 COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Remove Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
-END ELSE BEGIN
-COPY ~spell_rev\shared\alternatives\sppr303.spl~     ~override~  // Remove Magic
-  SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
-END
 
 COPY ~spell_rev\sppr3##\sppr304.spl~     ~override~  // Glyph of Warding
   SAY NAME1 @77    SAY UNIDENTIFIED_DESC @78
@@ -1434,12 +1429,12 @@ END
 
 COPY ~spell_rev\spwi1##\spwi107.spl~     ~override~  // Friends
   SAY NAME1 @413000    SAY UNIDENTIFIED_DESC @414000
-COPY ~spell_rev\spwi1##\dvscrl01.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi1##\dvscrlfr.itm~    ~override~  // New scroll
   SAY NAME2 @413000    SAY IDENTIFIED_DESC @414000
 
 COPY ~spell_rev\spwi1##\spwi108.spl~     ~override~  // Protection from Petrification
   SAY NAME1 @415000    SAY UNIDENTIFIED_DESC @416000
-COPY ~spell_rev\spwi1##\dvscrl02.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi1##\dvscrlpp.itm~    ~override~  // New scroll
   SAY NAME2 @415000    SAY IDENTIFIED_DESC @416000
 
 // SPWI109 was unused in vanilla but the bams were there
@@ -1670,7 +1665,7 @@ COPY ~spell_rev\spwi1##\spwi125i.eff~    ~override~
 
 ADD_SPELL ~spell_rev\spwi1##\spwi126.spl~ 2 1 ~WIZARD_KNOW_ALIGNMENT~  // Detect Alignment ("replaces" Detect Evil, disabled at level two)
   SAY NAME1 @453    SAY UNIDENTIFIED_DESC @454000
-COPY ~spell_rev\spwi1##\dvscrl03.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi1##\dvscrlda.itm~    ~override~  // New scroll
   SAY NAME2 @453    SAY IDENTIFIED_DESC   @454000
 
 ADD_SPELL ~spell_rev\spwi1##\spwi127.spl~ 2 1 ~WIZARD_MONSTER_SUMMONING_LEVEL_1~  // Monster Summoning I
@@ -2402,14 +2397,11 @@ COPY ~spell_rev\spwi5##\scrl5q.itm~      ~override~
   SAY NAME2 @627    SAY IDENTIFIED_DESC   @628
 COPY ~spell_rev\spwi5##\spwi509i.eff~     ~override~
 
-
-ADD_SPELL ~spell_rev\spwi5##\spwi510.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)
-  SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
-COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
-  SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
-COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
-
 ACTION_IF spell_immunity=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi510.spl~     ~override~
+  SAY NAME1 @629000    SAY UNIDENTIFIED_DESC @630000
+COPY ~spell_rev\shared\alternatives\dvscrlsi.itm~      ~override~
+  SAY NAME2 @629000    SAY IDENTIFIED_DESC   @630000
 COPY ~spell_rev\spwi5##\spwi590.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi591.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi592.spl~     ~override~
@@ -2611,6 +2603,12 @@ COPY ~spell_rev\spwi5##\mestsh.bam~      ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
   STRING_SET ~13070~ @565 // change portrait icon from Fire Shield (Blue) to Acid Sheath
 END
+
+ADD_SPELL ~spell_rev\spwi5##\spwi527.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)
+  SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
+COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
+  SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
+COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
 
 /*-----------------------Level 6-----------------------*/
 
@@ -2984,7 +2982,7 @@ APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_5% WIZARD_MONSTER_SUMMONING_LEVEL_
 
 COPY ~spell_rev\spwi8##\spwi801.spl~     ~override~  // Ghostform (new alteration spell)
   SAY NAME1 @767    SAY UNIDENTIFIED_DESC @768
-COPY ~spell_rev\spwi8##\dvscrl04.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi8##\dvscrlgf.itm~    ~override~  // New scroll
   SAY NAME2 @767    SAY IDENTIFIED_DESC   @768
 APPEND ~spell.ids~ ~2801 WIZARD_GHOSTFORM~
 
@@ -3122,7 +3120,7 @@ APPEND ~spell.ids~ ~2818 WIZARD_BIGBYS_ICY_GRASP~
 
 ADD_SPELL ~spell_rev\spwi8##\spwi819.spl~ 2 8 ~WIZARD_MONSTER_SUMMONING_6~  // Monster Summoning VIII (new mage spell)
   SAY NAME1 @868    SAY UNIDENTIFIED_DESC @869
-COPY ~spell_rev\spwi8##\dvscrl05.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi8##\dvscrlm8.itm~    ~override~  // New scroll
   SAY NAME2 @868   SAY IDENTIFIED_DESC   @869
 COPY ~spell_rev\spwi8##\umbhulsu.eff~    ~override~
 COPY ~spell_rev\spwi8##\umbhulsu.cre~    ~override~
@@ -3165,7 +3163,7 @@ END
 
 ADD_SPELL ~spell_rev\spwi9##\spwi906.spl~ 2 9 ~WIZARD_MONSTER_SUMMONING_7~  // Monster Summoning IX (new mage spell)
   SAY NAME1 @870    SAY UNIDENTIFIED_DESC @871
-COPY ~spell_rev\spwi9##\dvscrl06.itm~    ~override~  // New scroll
+COPY ~spell_rev\spwi9##\dvscrlm9.itm~    ~override~  // New scroll
   SAY NAME2 @870    SAY IDENTIFIED_DESC   @871
 COPY ~spell_rev\spwi9##\wolfgrsu.eff~    ~override~
 COPY ~spell_rev\spwi9##\wolfgrsu.cre~    ~override~
@@ -3418,6 +3416,71 @@ END
 END
 
 
+/*----------------IR Fixes-----------------*/
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) THEN BEGIN
+
+LOAD_TRA ~spell_rev/languages/english/item_revisions.tra~
+
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_POLYMORPH_OTHER[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Periapt of Form Stability Druid Polymorph Other
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_POLYMORPH_OTHER~ RET spell_res END
+  OUTER_SPRINT ~polymorph_other~ ~%spell_res%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~amul24.itm~) THEN BEGIN
+    COPY_EXISTING ~amul24.itm~ ~override~
+      REPLACE_TEXTUALLY ~sppr420~ ~%polymorph_other%~
+  END
+END
+
+COPY_EXISTING ~brac23.itm~             ~override~
+  SAY IDENTIFIED_DESC @1308
+COPY_EXISTING ~hamm03.itm~             ~override~
+  SAY IDENTIFIED_DESC @1550
+COPY_EXISTING ~hamm11.itm~             ~override~
+  SAY IDENTIFIED_DESC @1566
+COPY_EXISTING ~misc3a8.itm~             ~override~
+  SAY IDENTIFIED_DESC @1699
+COPY_EXISTING ~misc3h.itm~             ~override~
+  SAY IDENTIFIED_DESC @1714
+COPY_EXISTING ~misc3l.itm~             ~override~
+  SAY IDENTIFIED_DESC @1723
+COPY_EXISTING ~npshld.itm~             ~override~
+  SAY IDENTIFIED_DESC @1805
+COPY_EXISTING ~slng06.itm~             ~override~
+  SAY IDENTIFIED_DESC @1932
+COPY_EXISTING ~staf22.itm~             ~override~
+  SAY IDENTIFIED_DESC @2049
+COPY_EXISTING ~sw1h65.itm~             ~override~
+  SAY IDENTIFIED_DESC @2162
+ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.spl~) THEN BEGIN
+  COPY_EXISTING ~brac23.spl~             ~override~ // Righteous Fury
+    SAY NAME1 @4012
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) THEN BEGIN
+  COPY_EXISTING ~npshld.spl~             ~override~ // Protection from Missiles
+    SAY NAME1 @4033
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
+  COPY_EXISTING ~sw1h65.spl~             ~override~ // Draw Upon Holy Might
+    SAY NAME2 @4073
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a.spl~) THEN BEGIN
+  COPY_EXISTING ~misc3l.spl~ ~override~
+    SAY NAME1 @4104
+END
+
+COPY ~spell_rev\item_rev\dvbram.spl~   ~override~
+COPY ~spell_rev\item_rev\dvmcure.spl~   ~override~
+  SAY NAME1 @177
+COPY ~spell_rev\item_rev\dvpexpl.spl~   ~override~
+  SAY NAME1 @4014
+COPY ~spell_rev\item_rev\dvreson.spl~   ~override~
+COPY ~spell_rev\item_rev\dvsburst.spl~   ~override~
+COPY ~spell_rev\item_rev\hamm11.spl~   ~override~
+  SAY NAME1 @163
+
+END
+
+
 /*------------Manage ADD_SPELL References, Part 2-----------*/
 
 // This function goes through the SPL/ITM/EFF files in the game and replaces references
@@ -3442,7 +3505,7 @@ INCLUDE ~spell_rev\lib\stat_drain.tph~
 
 INCLUDE ~spell_rev\lib\refinements.tph~  // refinements spells reverted back to SR, won't parse unless Refinements is already there 16.6.2017. - Ref should probably now go after, write some code for subtle
 
-//kill double strings on spell removals
+// Kill double strings on spell removals
 ACTION_IF  FILE_EXISTS_IN_GAME ~spwi513b.spl~ BEGIN
 COPY_EXISTING ~spwi513b.spl~             ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END END
@@ -3455,10 +3518,10 @@ ACTION_IF  FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN
 COPY_EXISTING ~spwi903b.spl~             ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END END
 
-//sectype fixes for vanilla mess and some more
+// Sectype fixes for vanilla mess and some more
 INCLUDE ~spell_rev\lib\kreso_extra.tph~
 
-//EE component
+// EE component
 ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
 INCLUDE ~spell_rev\lib\kreso_ee.tph~
 INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
@@ -3564,9 +3627,9 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
 COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
-ADD_STORE_ITEM ~dvscrl01~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
-ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl03~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Evil scroll
+ADD_STORE_ITEM ~dvscrlfr~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
+ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlda~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Alignment scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
@@ -3574,9 +3637,9 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~sto0703.sto~) BEGIN
 COPY_EXISTING ~sto0703.sto~              ~override~  // Sorcerous Sundries
-ADD_STORE_ITEM ~dvscrl01~ AFTER ~dvscrl01~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scroll
-ADD_STORE_ITEM ~dvscrl02~ AFTER ~dvscrl02~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrl03~ AFTER ~dvscrl03~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Evil scroll
+ADD_STORE_ITEM ~dvscrlfr~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scroll
+ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scroll
+ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlda~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scroll
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
   END
   BUT_ONLY_IF_IT_CHANGES
@@ -3584,7 +3647,7 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
   COPY_EXISTING tranzi.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM dvscrl01 #1 #0 #0 NONE INV1
+	  ADD_CRE_ITEM dvscrlfr #1 #0 #0 NONE INV1
     END
 	BUT_ONLY
 END

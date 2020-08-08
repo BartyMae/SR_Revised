@@ -1,0 +1,208 @@
+@1308 = ~Durin d'Artham, one of the most devoted paladins of Lathander, lay on his deathbed after decades of service to his god, and decided that he had not done enough to serve his god. Summoning the most accomplished spellcasters available, he begged them to bind his soul into a mighty pair of bracers for centuries to come, granting his strength and skill to those devoted to their deity. The spell worked, and Durin still serves warriors of the purest heart.
+
+The willing sacrifice of a vast fortune in gold, combined with the holy venerations of the sanctifying ceremony, have convinced the blessed powers to transform these already formidable gauntlets into gloves of awesome righteous power.
+
+STATISTICS:
+
+Special Abilities:
+ Righteous Fury (1x per day): 1 turn
+ Resurrection (1x per day)
+
+Equipped Abilities:
+ Saving Throws: +2 bonus
+ THAC0: +2 bonus
+ Maximum Hit Points: +10 bonus
+
+Weight: 1
+Usable By:
+ Cleric
+ Paladin~
+@1550 = ~During the Time of Troubles the walls between dimensions seemed particularly thin, and many creatures normally confined to other planes walked the face of Toril. Unfamiliar items appeared as well, including several of these weapons found after portals or rifts were sighted. The true origins of the Rift Hammers have never been explained, and superstitious folk refuse even to hold them for fear they retain the taint of the lower planes.
+
+STATISTICS:
+
+Combat Abilities:
+ Resonating: 15% chance target and opponents within 10' are blasted with a powerful sonic wave dealing 5D4 crushing and deafening them for 2 rounds (save vs. breath neg. deafness)
+
+THAC0: +2 bonus
+Damage: 1D4 + 3
+Damage type: crushing
+Weight: 5
+Speed Factor: 2
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@1566 = ~Glittering with magical runes this unique specimen of runehammer has been seen a number of times throughout the Realms, always appearing where a powerful evil threat is growing. It seems to patiently wait for someone to take it up, inevitably disappearing once the threat has been eliminated. No one knows for certain where this weapon originate, though the starmetal it's made of is clearly of extraplanar origin. Perhaps it comes from the outer planes to help the righteous of Faerûn defend their home, or perhaps its arrival here is simply an accident. Regardless of its origin, it's unusually effective against creatures from other planes of existence.
+
+The Rune of Clangeddin, the dwarven god of battle and bravery, is now inscribed on the head of this hammer, granting even greater powers to any who wield the weapon.
+
+STATISTICS:
+
+Special Abilities:
+ Mass Cure (1x per day)
+ Champion's Strength (1x per day): +5 bonus for 1 turn
+
+Equipped Abilities:
+ Magic Resistance: +10% bonus
+ Protects Against: Fear
+
+Combat Abilities:
+ Starmetal: +5 bonus to damage against extraplanar creatures
+ Banishing: summoned creatures are dismissed (save vs. spell neg.)
+
+THAC0: +5 bonus
+Damage: 1D4 + 6
+Damage type: crushing
+Weight: 5
+Speed Factor: 0
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 10 Strength
+Not Usable By:
+ Druid
+ Mage
+ Monk
+ Thief
+ Beast Master~
+@1699 = ~This ancient tome creaks as you open it. Each page of the Book of Infinite Spells contains a spell described in layman's terms, easy enough for a thief, a cleric or even a fighter to understand and cast it. Each spell on a page can be cast once per day.
+
+A second function of the book is to turn to a different page of the book. Once per day, this allows for the possibility of getting a better spell. However, once the page has been turned the previous spell is lost forever, unless it happens to appear again.
+
+The spell on this page is Summon Shadow.
+
+STATISTICS:
+
+Special Abilities:
+ Summon Shadow (1x per day)
+
+Not Usable By:
+ Wizard Slayer~
+@1714 = ~While many army engineers spent their time perfecting siege equipment, Julius Baggar delved into magical tomes for his engineering insights. Therein he found ancient scriptures that detailed how to make, control, and wield sound waves. The Horn of Blasting was his first and only attempt at applying the theoretical magical knowledge to the creation of a practical new technology. An apprentice blew through the horn while it was aimed in the direction of Julius, who had insisted on a 'useful experiment.' The resulting shockwave that emanated from the horn first stunned poor Julius, and then tore him apart.
+
+STATISTICS:
+
+Special Abilities:
+ Sonic Blast (3x per day): an area of 10' around the user is blasted with a powerful sonic wave, dealing 5D4 crushing and stunning opponents for 1 round (save vs. breath neg. stun)
+
+Not Usable By:
+ Wizard Slayer~
+@1723 = ~When this odd horn is blown no sound issues forth, making most people discard it as useless. However, if the proper command word is known, the horn is capable of silencing all within its area of effect, providing that they fail a saving throw versus breath weapons. This horn may be used three times a day. The most common use of the Horn of Silence is as a weapon against mages. Fighters often employ the horn, silencing enemy mages and drastically improving their own chances of success against the frail magic users.
+
+STATISTICS:
+
+Special Abilities:
+ Silence (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
+
+Not Usable By:
+ Wizard Slayer~
+@1805 = ~This is Anomen's family shield, given to him by his father. In addition to the magical protection, the shield radiates an aura that grants the wielder fire and cold resistance. To protect against ranged attacks, Anomen can use the shield to erect a field of energy.
+
+STATISTICS:
+
+Special Abilities:
+ Protection from Missiles (1x per day): 1 turn
+
+Equipped Abilities:
+ Fire Resistance: +25% bonus
+ Cold Resistance: +25% bonus
+
+Armor Class Bonus: 3
+Weight: 15
+Requires: 12 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief
+ Monk
+ Kensai~
+@1932 = ~This sling is blessed by the halfling god Arvoreen. The weapon was gifted to the heroic Tuckerby Lettleworp after the Battle of Moor Road, in which an invading army of Yuan-ti were slain by Lettleworp's forces, saving his halfling village. Thought at first to be a unique item, there have actually been a number of these items found. In fact, much like the tales of Littleman, it would seem that nearly every halfling village has a similar story about the acquisition of such an item. What this means regarding their true origins is unknown.
+
+The sling has the ability to rend the senses of the wielder's enemies with a wall of sound said to be the voice of the god himself.
+
+STATISTICS:
+
+Combat Abilities:
+ Sonic Blast: 15% chance target and opponents within 10' are blasted with a powerful sonic wave, dealing 5D4 crushing and stunning them for 1 round (save vs. breath neg. stun)
+
+THAC0: +2 bonus
+Damage: +2 bonus
+Weight: 0
+Speed Factor: 4
+Proficiency Type: Sling
+Type: 1-handed
+Requires: 3 Strength
+Not Usable By:
+ Cavalier
+ Kensai~
+@2049 = ~Likely created by the same unknown archmage responsible for the Ring of the Ram, this cudgel resembles a Staff of Striking, but its attacks are even more devastating and don't consume the staff's magical energy.
+
+Combining this staff with the Ring of the Ram's magic augmented its already noteworthy abilities, creating a weapon few opponents are able to stand against.
+
+STATISTICS:
+
+Combat Abilities:
+ Striking: target suffers 6 crushing damage
+ Battering Ram: 33% chance target suffers 2D8 crushing damage and is knocked back unconscious for 1 round (save vs. death neg. unconsciousness)
+
+THAC0: +5 bonus
+Damage: 1D6 + 5
+Damage type: crushing
+Weight: 4
+Speed Factor: 0
+Proficiency Type: Quarterstaff
+Type: 2-handed
+Requires: 5 Strength
+Not Usable By:
+ Monk~
+@2162 = ~This single-handed weapon is infused with the very essence of virtue, and is rumored to be the sanctified blade of the famous paladin Sir Wediyer. The weapon was lost when Sir Wediyer pursued a fleeing pit fiend through a planar rift. Neither the fiend nor Sir Wediyer ever returned.
+
+With the Eye of Tyr set into its pommel, Purifier is perhaps the greatest single instrument of holy justice on the face of Faerûn.
+
+STATISTICS:
+
+Special Abilities:
+ Draw Upon Divine Might (1x per day)
+ Greater Restoration (1x per day)
+
+Equipped Abilities:
+ Magic Resistance: +15% bonus
+
+Combat Abilities:
+ Holy: +5 bonus to damage against evil creatures
+ Cleansing: 15% chance evil creatures struck suffer various effects depending upon their level (save vs. spell at -4 neg.)
+
+Target's Hit Dice - Effects of Cleansing
+ More than 20 - Deafened
+ 20 or less - Blinded and Deafened
+ 15 or less - Paralyzed, Blinded, and Deafened
+ 10 or less - Killed
+
+THAC0: +5 bonus
+Damage: 2D4 + 5
+Damage type: slashing
+Weight: 6
+Speed Factor: 3
+Proficiency Type: Bastard Sword
+Type: 1-handed
+Requires: 11 Strength
+Not Usable By:
+ Evil-aligned characters
+ Neutral-aligned characters
+ Cleric
+ Druid
+ Mage
+ Thief
+ Monk
+ Beast Master~
+@4012 = ~Righteous Fury~
+@4033 = ~Protection from Missiles~
+@4073 = ~Draw Upon Divine Might~
+@4104 = ~Silence~
+@4119 = ~Summon Shadow~

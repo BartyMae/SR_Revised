@@ -1,16 +1,16 @@
-ADD_SECTYPE ~k1#Impris~ @22006
+ADD_SECTYPE ~DV#Impris~ @22006
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi910d.spl~) THEN BEGIN // Wizard Imprisonment
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi910d.spl~) THEN BEGIN // Arcane Imprisonment
  COPY_EXISTING ~spwi910d.spl~ ~override~
-  WRITE_BYTE 0x27 "%k1#Impris%"
+  WRITE_BYTE 0x27 "%DV#Impris%"
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~spin788.spl~) THEN BEGIN // Demilich Soul Trap
  COPY_EXISTING ~spin788.spl~ ~override~
-  WRITE_BYTE 0x27 "%k1#Impris%"
+  WRITE_BYTE 0x27 "%DV#Impris%"
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi917d.spl~) THEN BEGIN // Wizard Freedom
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi917d.spl~) THEN BEGIN // Arcane Freedom
  COPY_EXISTING ~spwi917d.spl~ ~override~
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
   LPF ADD_SPELL_EFFECT
@@ -20,7 +20,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~spwi917d.spl~) THEN BEGIN // Wizard Freedom
 	power			= 9
 	savingthrow     = 0
 	parameter1		= 9
-	parameter2		= EVALUATE_BUFFER %k1#Impris%
+	parameter2		= EVALUATE_BUFFER %DV#Impris%
 	timing			= 1
 	insert_point    = 1
     END
