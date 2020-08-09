@@ -1,0 +1,110 @@
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_POLYMORPH_OTHER[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Periapt of Form Stability Druid Polymorph Other
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_POLYMORPH_OTHER~ RET spell_res END
+  OUTER_SPRINT ~polymorph_other~ ~%spell_res%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~amul24.itm~) THEN BEGIN
+    COPY_EXISTING ~amul24.itm~ ~override~
+      REPLACE_TEXTUALLY ~sppr420~ ~%polymorph_other%~
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.itm~) THEN BEGIN
+COPY_EXISTING ~brac23.itm~ ~override~
+  SPRINT old_spell_name @1308000 // Righteous Magic
+  SPRINT new_spell_name @130800 // Righteous Fury
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~hamm03.itm~) THEN BEGIN
+COPY_EXISTING ~hamm03.itm~ ~override~
+  SPRINT old_spell_name @1550000 // 4D4
+  SPRINT new_spell_name @155000 // 5D4
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~hamm11.itm~) THEN BEGIN
+COPY_EXISTING ~hamm11.itm~ ~override~
+  SPRINT old_spell_name @1566000 // Champion's Strength (1x per day): +5 bonus for 1 turn
+  SPRINT new_spell_name @156600 // Champion's Strength (1x per day): +6 bonus for 1 turn
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a8.itm~) THEN BEGIN
+COPY_EXISTING ~misc3a8.itm~ ~override~
+  SPRINT old_spell_name @1699000 // Animate Dead
+  SPRINT new_spell_name @169900 // Summon Shadow
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3h.itm~) THEN BEGIN
+COPY_EXISTING ~misc3h.itm~ ~override~
+  SPRINT old_spell_name @1550000 // 4D4
+  SPRINT new_spell_name @155000 // 5D4
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc31.itm~) THEN BEGIN
+COPY_EXISTING ~misc31.itm~ ~override~
+  SPRINT old_spell_name @1723000 // Silence 15' Radius (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
+  SPRINT new_spell_name @172300 // Silence (3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.itm~) THEN BEGIN
+COPY_EXISTING ~npshld.itm~ ~override~
+  SPRINT old_spell_name @1805000 // Protection from Normal Missiles
+  SPRINT new_spell_name @180500 // Protection from Missiles
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~slng06.itm~) THEN BEGIN
+COPY_EXISTING ~slng06.itm~ ~override~
+  SPRINT old_spell_name @1550000 // 4D4
+  SPRINT new_spell_name @155000 // 5D4
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~staf22.itm~) THEN BEGIN
+COPY_EXISTING ~staf22.itm~ ~override~
+  SPRINT old_spell_name @2049000 // 2D6
+  SPRINT new_spell_name @204900 // 2D8
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.itm~) THEN BEGIN
+COPY_EXISTING ~sw1h65.itm~ ~override~
+  SPRINT old_spell_name @2162000 // Draw Upon Holy Might
+  SPRINT new_spell_name @216200 // Draw Upon Divine Might
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.spl~) THEN BEGIN
+  COPY_EXISTING ~brac23.spl~             ~override~ // Righteous Fury
+    SAY NAME1 @130800
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) THEN BEGIN
+  COPY_EXISTING ~npshld.spl~             ~override~ // Protection from Missiles
+    SAY NAME1 @180500
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
+  COPY_EXISTING ~sw1h65.spl~             ~override~ // Draw Upon Holy Might
+    SAY NAME2 @216200
+END
+
+COPY ~spell_rev\shared\item_rev\dvbram.spl~   ~override~
+COPY ~spell_rev\shared\item_rev\dvmcure.spl~   ~override~
+  WRITE_SHORT 0x98 %dvmscure%
+  SAY NAME1 @177
+ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~ // Prismatic Explosion
+COPY ~spell_rev\shared\item_rev\dvpexpl.spl~   ~override~
+  WRITE_SHORT 0x98 %dvpexpl%
+  SAY NAME1 @401400
+COPY ~spell_rev\shared\item_rev\dvreson.spl~   ~override~
+  WRITE_SHORT 0x98 %dvsndbr%
+COPY ~spell_rev\shared\item_rev\dvsburst.spl~   ~override~
+  WRITE_SHORT 0x98 %dvsndbr%
+COPY ~spell_rev\shared\item_rev\hamm11.spl~   ~override~
+  SAY NAME1 @163
+COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~
+  WRITE_SHORT 0x98 %dvsilenc%
+  SAY NAME1 @51

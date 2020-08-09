@@ -1,5 +1,3 @@
-INCLUDE ~spell_rev\lib\macros.tpa~
-
 /// Secondary type stuff
 
 ADD_SECTYPE ~k1#Dispel~ @22000

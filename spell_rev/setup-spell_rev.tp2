@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 //MODDER
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 Beta 18 (Revised V1.3.127)~
+VERSION ~v4 Beta 18 (Revised V1.3.128)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -33,6 +33,7 @@ LANGUAGE ~English~
          ~spell_rev\languages\english\divine.tra~
 		 ~spell_rev\languages\english\hla.tra~
          ~spell_rev\languages\english\setup.tra~
+		 ~spell_rev\languages\english\item_revisions.tra~
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
