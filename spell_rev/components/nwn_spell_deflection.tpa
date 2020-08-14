@@ -526,22 +526,27 @@ END
   OUTER_SET $spell("tg#volc")=1
 END */
 
-// IR
-~dvfball~ => 1 // Fireball
-~dvpexpl~ => 1 // Prismatic Explosion
-~dvterri~ => 1 // Terrify
-~dvhorro~ => 1 // Horror
-~dvconec~ => 1 // Cone of Cold
-//~dvckill~ => 1 // Cloudkill (stationary)
-~clck07~  => 1 // Nymph Cloak's Blinding Beauty
-~misc3l~  => 1 // Horn of Silence' Silence
-~misc3m~  => 1 // Harp of Discord' Confusion
-~staf20~  => 1 // Staff of Rhynn's Greater Malison
-~wand05~  => 1 // Wand of Fire's Fireball
-~wand06~  => 1 // Wand of Cold's Cone of Cold
-~wand08~  => 1 // Wand of Sleep's Sleep
-~wand11~  => 1 // Wand of the Heavens' Flame Strike
-~wa2harp~ => 1 // Harp of Pandemonium's Pandemonium
+ACTION_FOR_EACH resource IN
+  ~dvfball~
+  ~dvpexpl~
+  ~dvterri~
+  ~dvhorro~
+  ~dvconec~
+  //~dvckill~
+  ~clck07~ 
+  ~misc3l~ 
+  ~misc3m~ 
+  ~staf20~ 
+  ~wand05~ 
+  ~wand06~ 
+  ~wand08~ 
+  ~wand11~ 
+  ~wa2harp~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    OUTER_SET $spell("%resource%")=1
+  END
+END
 
 ACTION_PHP_EACH spell AS i2 => r2 BEGIN
 
