@@ -24,7 +24,7 @@ END
 END
 BUT_ONLY
 
-COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~  // Hasting spells are countered by Slow
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~  // Hasting items are countered by Slow
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
     READ_LONG 0x64 ab_off
     READ_SHORT 0x68 ab_num
@@ -185,7 +185,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~potn14.spl~) THEN BEGIN // Potion of Speed
   BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.spl~) THEN BEGIN // Potion of Speed
+ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.spl~) THEN BEGIN // Arbane's Sword's Hastening
  COPY_EXISTING ~sw1h27.spl~ ~override~
   WRITE_BYTE 0x27 "%k1#Haste%"
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END
@@ -203,7 +203,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h27.spl~) THEN BEGIN // Potion of Speed
   BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvhaste.spl~) THEN BEGIN // Haste
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvhaste.spl~) THEN BEGIN // IR Haste
  COPY_EXISTING ~dvhaste.spl~ ~override~
   WRITE_BYTE 0x27 "%k1#Haste%"
   LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 221 END

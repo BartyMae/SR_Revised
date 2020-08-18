@@ -42,8 +42,8 @@ COPY_EXISTING ~misc3h.itm~ ~override~
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
-ACTION_IF (FILE_EXISTS_IN_GAME ~misc31.itm~) THEN BEGIN
-COPY_EXISTING ~misc31.itm~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.itm~) THEN BEGIN
+COPY_EXISTING ~misc3l.itm~ ~override~
   SPRINT old_spell_name @1723000 // Silence 15' Radius (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
   SPRINT new_spell_name @172300 // Silence (3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)
   TEXT_SPRINT text_update ~replace_spell_name~
@@ -82,29 +82,28 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.spl~) THEN BEGIN
   COPY_EXISTING ~brac23.spl~             ~override~ // Righteous Fury
     SAY NAME1 @130800
 END
-ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) THEN BEGIN
-  COPY_EXISTING ~npshld.spl~             ~override~ // Protection from Missiles
-    SAY NAME1 @180500
-END
 ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
   COPY_EXISTING ~sw1h65.spl~             ~override~ // Draw Upon Holy Might
     SAY NAME2 @216200
 END
 
-COPY ~spell_rev\shared\item_rev\dvbram.spl~   ~override~
-COPY ~spell_rev\shared\item_rev\dvmcure.spl~   ~override~
+COPY ~spell_rev\shared\item_rev\dvbram.spl~   ~override~ // Battering Ram
+COPY ~spell_rev\shared\item_rev\dvmcure.spl~   ~override~ // Mass Cure
   WRITE_SHORT 0x98 %dvmscure%
   SAY NAME1 @177
-ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~ // Prismatic Explosion
-COPY ~spell_rev\shared\item_rev\dvpexpl.spl~   ~override~
+ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~
+COPY ~spell_rev\shared\item_rev\dvpexpl.spl~   ~override~ // Prismatic Explosion
   WRITE_SHORT 0x98 %dvpexpl%
   SAY NAME1 @401400
-COPY ~spell_rev\shared\item_rev\dvreson.spl~   ~override~
+COPY ~spell_rev\shared\item_rev\dvreson.spl~   ~override~ // Resonating
   WRITE_SHORT 0x98 %dvsndbr%
-COPY ~spell_rev\shared\item_rev\dvsburst.spl~   ~override~
+COPY ~spell_rev\shared\item_rev\dvsburst.spl~   ~override~ // Sonic Blast
   WRITE_SHORT 0x98 %dvsndbr%
-COPY ~spell_rev\shared\item_rev\hamm11.spl~   ~override~
+COPY ~spell_rev\shared\item_rev\hamm11.spl~   ~override~ // Champion's Strength
   SAY NAME1 @163
-COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~
+COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~ // Silence
   WRITE_SHORT 0x98 %dvsilenc%
   SAY NAME1 @51
+COPY ~spell_rev\shared\item_rev\npshld.spl~ ~override~ // Protection from Missiles
+  SAY NAME1 @180500
+END
