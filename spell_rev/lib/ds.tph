@@ -65,6 +65,7 @@ CLERIC_ARMOR_OF_FAITH                   ARMOR_OF_FAITH
 CLERIC_CHAOTIC_COMMANDS                 CHAOTIC_COMMANDS
 CLERIC_CHAOTIC_COMMANDS                 CLERIC_CHAOTIC_COMMANDS
 BARBARIAN_RAGE                          BARBARIAN_RAGE
+CHAN11                                  BARBARIAN_RAGE
 BERSERKER_RAGE                          BERSERKER_RAGE
 MINSC_BERSERK                           MINSC_BERSERK
 ASSASSIN_POISON                         POISON_WEAPON
@@ -84,15 +85,20 @@ POTN38                                  PROTECTION_FROM_PETRIFICATION
 CAVALIER_REMOVE_FEAR                    RESIST_FEAR
 CLERIC_REMOVE_FEAR                      RESIST_FEAR
 WIZARD_RESIST_FEAR                      RESIST_FEAR
+MISC3N                                  RESIST_FEAR
 SPRA303                                 PROTECTION_FROM_NORMAL_MISSILES
 WIZARD_PROTECTION_FROM_NORMAL_MISSILES  PROTECTION_FROM_NORMAL_MISSILES
+NPSHLD                                  PROTECTION_FROM_NORMAL_MISSILES
 WIZARD_PROTECTION_FROM_NORMAL_WEAPONS   PROTECTION_FROM_NORMAL_WEAPONS
 WIZARD_TENSERS_TRANSFORMATION           TENSERS_TRANSFORMATION
 SUN_SOUL_GREATER_SUN                    RED_FIRESHIELD
 TALOS_STORMSHIELD                       STORM_SHELL
 CLERIC_DOOM                             DOOM
+DVDOOM                                  DOOM
 CLERIC_FAERIE_FIRE                      FAERIE_FIRE
+DVFFIRE                                 FAERIE_FIRE
 CLERIC_BARKSKIN                         BARKSKIN
+STAF14A                                 BARKSKIN
 CLERIC_MISCAST_MAGIC                    MISCAST_MAGIC
 CLERIC_DEATH_WARD                       DEATH_WARD
 CLERIC_DEATH_WARD                       SPLSTATE:DEATH_WARD
@@ -124,11 +130,13 @@ PALADIN_PROTECTION_FROM_EVIL            PROTECTION_FROM_EVIL
 SPCL233                                 PROTECTION_FROM_EVIL
 CLERIC_REGENERATE                       CLERIC_REGENERATION
 BHAAL1B                                 CLERIC_REGENERATION
+BELT09                                  CLERIC_REGENERATION
 CLERIC_TRUE_SIGHT                       TRUE_SIGHT
 WIZARD_TRUE_SIGHT                       TRUE_SIGHT
 KOA_TRUE_SIGHT_NO_VIS                   TRUE_SIGHT
 INQUIS_TRUE_SIGHT                       TRUE_SIGHT
 HELM_TRUE_SIGHT                         TRUE_SIGHT
+DVTSIGHT                                TRUE_SIGHT
 LATHANDER_BOON                          LEVEL_DRAIN_IMMUNITY
 WIZARD_PROTECTION_FROM_ENERGY           WIZARD_PROTECTION_FROM_ENERGY
 WIZARD_IMPROVED_ALUCRITY                WIZARD_IMPROVED_ALACRITY
@@ -159,6 +167,8 @@ WIZARD_FIRE_SHIELD_RED                  WIZARD_FIRE_SHIELD                   1
 WIZARD_FIRE_SHIELD_BLUE                 WIZARD_FIRE_SHIELD                   2
 CLERIC_AURA_OF_FLAMING_DEATH            WIZARD_FIRE_SHIELD                   1
 SUN_SOUL_GREATER_SUN                    WIZARD_FIRE_SHIELD                   1
+RING27                                  WIZARD_FIRE_SHIELD                   1
+DVDARKF1                                WIZARD_FIRE_SHIELD                   1
 WIZARD_SPELL_IMMUNITY_ABJURATION        WIZARD_SPELL_IMMUNITY                1
 WIZARD_SPELL_IMMUNITY_CONJURATION       WIZARD_SPELL_IMMUNITY                2
 WIZARD_SPELL_IMMUNITY_DIVINATION        WIZARD_SPELL_IMMUNITY                3
@@ -169,9 +179,11 @@ WIZARD_SPELL_IMMUNITY_NECROMANCY        WIZARD_SPELL_IMMUNITY                7
 WIZARD_SPELL_IMMUNITY_ALTERATION        WIZARD_SPELL_IMMUNITY                8
 WIZARD_TENSERS_TRANSFORMATION           OFFENSIVE_MODIFIER                   1
 CLERIC_CHAMPIONS_STRENGTH               OFFENSIVE_MODIFIER                   1
+HAMM11                                  OFFENSIVE_MODIFIER                   1
 BARBARIAN_RAGE                          OFFENSIVE_MODIFIER                   1
 BERSERKER_RAGE                          OFFENSIVE_MODIFIER                   1
 MINSC_BERSERK                           OFFENSIVE_MODIFIER                   1
+CHAN11                                  OFFENSIVE_MODIFIER                   1
 LATHANDER_BOON                          OFFENSIVE_MODIFIER                   1
 MONK_STUNNING_BLOW                      OFFENSIVE_MODIFIER                   2
 WARRIOR_DEATHBLOW                       OFFENSIVE_MODIFIER                   2
@@ -193,12 +205,16 @@ WIZARD_STRENGTH                         STRENGTH_MODIFIER                    2
 CLERIC_STRENGTH_OF_ONE                  STRENGTH_MODIFIER                    2
 CLERIC_HOLY_POWER                       STRENGTH_MODIFIER                    3
 CLERIC_CHAMPIONS_STRENGTH               STRENGTH_MODIFIER                    3
+HAMM11                                  STRENGTH_MODIFIER                    3
 CLERIC_DRAW_UPON_HOLY_MIGHT             STRENGTH_MODIFIER                    4
 INNATE_DRAW_UPON_HOLY_MIGHT             STRENGTH_MODIFIER                    4
+SW1H65                                  STRENGTH_MODIFIER                    4
 CLERIC_RIGHTEOUS_MAGIC                  STRENGTH_MODIFIER                    6
+BRAC23                                  STRENGTH_MODIFIER                    6
 BHAAL2A                                 STRENGTH_MODIFIER                    4
 DGRIGHT                                 STRENGTH_MODIFIER                    6
 CLERIC_BARKSKIN                         DEFENSIVE_MODIFIER                   1
+STAF14A                                 DEFENSIVE_MODIFIER                   1
 WIZARD_ARMOR                            DEFENSIVE_MODIFIER                   3
 WIZARD_SHIELD                           DEFENSIVE_MODIFIER                   2
 WIZARD_GHOST_ARMOR                      DEFENSIVE_MODIFIER                   4
@@ -224,23 +240,33 @@ resource                           stat                           stat_value    
 BALSHLD                            RED_FIRESHIELD                 1                    232
 BALSHLD                            WIZARD_FIRE_SHIELD             1                    232
 CLERIC_SUMMON_INSECTS              CLERIC_INSECT_PLAGUE           1                    215
+SPPR319B                           CLERIC_INSECT_PLAGUE           1                    215
 CLERIC_INSECT_PLAGUE               CLERIC_INSECT_PLAGUE           2                    215
+SPPR517B                           CLERIC_INSECT_PLAGUE           2                    215
 CLERIC_CREEPING_DOOM               CLERIC_INSECT_PLAGUE           3                    215
+SPPR717B                           CLERIC_INSECT_PLAGUE           3                    215
 WIZARD_MINOR_SPELL_DEFLECTION      WIZARD_SPELL_DEFLECTION        1                    201
 SPRA302                            WIZARD_SPELL_DEFLECTION        1                    201
 SPELL_DEFLECTION_NO_VISUAL         WIZARD_SPELL_DEFLECTION        2                    201
 WIZARD_SPELL_DEFLECTION            WIZARD_SPELL_DEFLECTION        2                    201
+WIZARD_GREATER_SPELL_DEFLECTION    WIZARD_SPELL_DEFLECTION        2                    201
+AMUL25                             WIZARD_SPELL_DEFLECTION        2                    201
 CLERIC_SHIELD_OF_THE_ARCHONS       CLERIC_SHIELD_OF_THE_ARCHONS   1                    201
 DGARCHON                           CLERIC_SHIELD_OF_THE_ARCHONS   1                    201
 WIZARD_SPELL_TURNING               WIZARD_SPELL_TURNING           2                    200
+RING34                             WIZARD_SPELL_TURNING           2                    200
 BEHOLDER_SPELL_TURNING             WIZARD_SPELL_TURNING           1                    200
 WIZARD_MINOR_SPELL_TURNING         WIZARD_SPELL_TURNING           1                    200
 WIZARD_SPELL_TRAP                  WIZARD_SPELL_TRAP              1                    259
+RODS01                             WIZARD_SPELL_TRAP              1                    259
 WIZARD_SPELL_SHIELD                SPELL_SHIELD                   1                    226
+WIZARD_SPELL_SHIELD                SPELL_SHIELD                   1                    215
 CLERIC_PHYSICAL_MIRROR             CLERIC_PHYSICAL_MIRROR         1                    197
+CLERIC_PHYSICAL_MIRROR             CLERIC_PHYSICAL_MIRROR         1                    83
 WIZARD_MISLEAD                     WIZARD_MISLEAD                 1                    236
 WIZARD_PROJECT_IMAGE               WIZARD_MISLEAD                 2                    236
 WIZARD_SIMULACRUM                  WIZARD_MISLEAD                 3                    236
+WA2HELM                            WIZARD_MISLEAD                 3                    236
 >>>>>>>>
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -271,12 +297,18 @@ POTN18
 POTN22
 POTN31
 POTN35
+SCRL03
+SCRL04
+SCRL05
+SCRL06
+SCRL07
 >>>>>>>>
 
 <<<<<<<< .../ds-inline/BUFF_PRO_WEAPONS.2da
 resource
 SPRA303
 WIZARD_PROTECTION_FROM_NORMAL_MISSILES
+NPSHLD
 WIZARD_PROTECTION_FROM_NORMAL_WEAPONS
 WIZARD_PROTECTION_FROM_MAGIC_WEAPONS
 WIZARD_MANTLE
@@ -296,6 +328,8 @@ WIZARD_SPELL_IMMUNITY_NECROMANCY
 WIZARD_SPELL_IMMUNITY_ALTERATION
 WIZARD_GLOBE_OF_INVULNERABILITY
 WIZARD_MINOR_GLOBE_OF_INVULNERABILITY
+MISC73
+DVGINVUL
 >>>>>>>>
 
 <<<<<<<< .../ds-inline/BUFF_PRO_EFFECTS.2da
@@ -305,6 +339,7 @@ CLERIC_FREE_ACTION
 CLERIC_DEATH_WARD
 CLERIC_CHAOTIC_COMMANDS
 WIZARD_RESIST_FEAR
+MISC3N
 POTN21
 POTN45
 >>>>>>>>
@@ -313,11 +348,13 @@ POTN45
 resource
 BHAAL2A
 CLERIC_DRAW_UPON_HOLY_MIGHT
+SW1H65
 CLERIC_STRENGTH_OF_ONE
 CLERIC_HOLY_POWER
 CLERIC_CHAMPIONS_STRENGTH
 CLERIC_CHAOTIC_COMMANDS
 CLERIC_RIGHTEOUS_MAGIC
+BRAC23
 CLERIC_BLADE_BARRIER
 NPC_BLADE_BARRIER
 CLERIC_AURA_OF_FLAMING_DEATH
@@ -341,24 +378,32 @@ BARBARIAN_RAGE
 BERSERKER_RAGE
 MINSC_BERSERK
 OHRRAGE
+CHAN11
 >>>>>>>>
 
 <<<<<<<< .../ds-inline/buff_misc.2da
-resource                      stat                          match_opcode
-CLERIC_SHIELD_OF_THE_ARCHONS  BUFF_PRO_SPELLS               201
-SPRA302                       BUFF_PRO_SPELLS               201
-WIZARD_MINOR_SPELL_DEFLECTION BUFF_PRO_SPELLS               201
-WIZARD_SPELL_DEFLECTION       BUFF_PRO_SPELLS               201
-WIZARD_SPELL_SHIELD           BUFF_PRO_SPELLS               226
-WIZARD_MINOR_SPELL_TURNING    BUFF_PRO_SPELLS               200
-WIZARD_SPELL_TURNING          BUFF_PRO_SPELLS               200
-WIZARD_SPELL_TRAP             BUFF_PRO_SPELLS               259
-WIZARD_MINOR_SPELL_TURNING    BUFF_PRO_SPELLS               201 // these are for SR
-WIZARD_SPELL_TURNING          BUFF_PRO_SPELLS               201 //
-WIZARD_SPELL_TRAP             BUFF_PRO_SPELLS               201 //
-POTN33                        BUFF_PRO_SPELLS               102
-CLERIC_PHYSICAL_MIRROR        BUFF_PRO_WEAPONS              197
-WIZARD_DETECT_INVISIBILITY    DETECT_INVISIBILITY           193 // SR only
+resource                        stat                          match_opcode
+CLERIC_SHIELD_OF_THE_ARCHONS    BUFF_PRO_SPELLS               201
+SPRA302                         BUFF_PRO_SPELLS               201
+WIZARD_MINOR_SPELL_DEFLECTION   BUFF_PRO_SPELLS               201
+WIZARD_SPELL_DEFLECTION         BUFF_PRO_SPELLS               201
+WIZARD_GREATER_SPELL_DEFLECTION BUFF_PRO_SPELLS               201
+AMUL25                          BUFF_PRO_SPELLS               201
+WIZARD_SPELL_SHIELD             BUFF_PRO_SPELLS               226
+WIZARD_MINOR_SPELL_TURNING      BUFF_PRO_SPELLS               200
+WIZARD_SPELL_TURNING            BUFF_PRO_SPELLS               200
+RING34                          BUFF_PRO_SPELLS               200
+WIZARD_SPELL_TRAP               BUFF_PRO_SPELLS               259
+RODS01                          BUFF_PRO_SPELLS               259
+STAF11                          BUFF_PRO_SPELLS               259
+WIZARD_MINOR_SPELL_TURNING      BUFF_PRO_SPELLS               201 // these are for SR
+WIZARD_SPELL_TURNING            BUFF_PRO_SPELLS               201 //
+WIZARD_SPELL_TRAP               BUFF_PRO_SPELLS               201 //
+RODS01                          BUFF_PRO_SPELLS               201 //
+STAF11                          BUFF_PRO_SPELLS               201 //
+POTN33                          BUFF_PRO_SPELLS               102
+CLERIC_PHYSICAL_MIRROR          BUFF_PRO_WEAPONS              197
+WIZARD_DETECT_INVISIBILITY      DETECT_INVISIBILITY           193 // SR only
 >>>>>>>>
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -375,6 +420,7 @@ SPPR505D                     CANNOT_TURN_INVISIBLE          221                 
 SPPR950                      CANNOT_TURN_INVISIBLE          221                       7
 WIZARD_TRUE_SIGHT            CANNOT_TURN_INVISIBLE          221                       7
 SPWI609D                     CANNOT_TURN_INVISIBLE          221                       7
+DVTSIGHT                     CANNOT_TURN_INVISIBLE          221                       7
 >>>>>>>>
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////

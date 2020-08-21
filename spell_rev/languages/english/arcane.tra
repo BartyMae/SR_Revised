@@ -741,6 +741,32 @@ Remove Magic dispels the magical effects upon any enemies within the area of eff
 
 The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Remove Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Remove Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
 
+@504000=~Remove Magic
+Level: 3
+School: Abjuration
+Range: Long
+Duration: Instant
+Casting Time: 3
+Area of Effect: 20' radius
+Saving Throw: Spell negates
+
+Remove Magic dispels the magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -6 at 30th level. Magic resistance does not affect this spell.~
+
+@504000000=~Remove Magic
+Level: 3
+School: Abjuration
+Range: Long
+Duration: Instant
+Casting Time: 3
+Area of Effect: 20' radius
+Saving Throw: None
+
+Remove Magic dispels one specific and one combat protection on any enemies within the area of effect. Additional protections are dispelled at 12th level and again at 18th level, up to a maximum of 3 each. Magic resistance, if any, does not affect this spell.
+
+The specific protection spells dispelled by Remove Magic are: Resist Fear, Resist Elements, Death Ward, Free Action, Protection from Acid, Protection from Cold, Protection from Electricity, Protection from Fire, Chaotic Commands, Protection from Magic Energy, Protection from the Elements, and Protection from Energy.
+
+The combat protection spells dispelled by Remove Magic are: Mage Armor, Shield, Armor of Faith, Barkskin, Protection from Missiles, Spirit Armor, Stoneskin, Protection from Normal Weapons, Protection from Magical Weapons, Physical Mirror, Prismatic Mantle, and Absolute Immunity.~
+
 @505=~Flame Arrow~
 @506=~Flame Arrow
 Level: 3
@@ -1754,9 +1780,22 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When cast upon a creature, this spell will lower their magic resistance by 2% for every experience level of the caster, up to a maximum of 50% at 25th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
+When cast upon a creature, this spell will lower their magic resistance by 2.5% for every experience level of the caster, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
 
-For example, if a creature has 50% magic resistance and this spell is cast on it by a 15th level wizard, then its magic resistance would be lowered to 20%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 30% (initial casting) - 30% (current casting), which would leave the creature with 0% magic resistance after both spells have been cast.~
+For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 25%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 25% (initial casting) - 25% (current casting), which would leave the creature with 0% magic resistance after both spells have been cast.~
+
+@638000=~Lower Resistance
+Level: 5
+School: Alteration
+Range: Long
+Duration: 1 round/level
+Casting Time: 5
+Area of Effect: Target, and enemies within 20' radius
+Saving Throw: None
+
+This spell will lower the magic resistance of enemies within the area of effect by 2% for every experience level of the caster, up to a maximum of 40% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
+
+For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 20%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 20% (initial casting) - 20% (current casting), which would leave the creature with 10% magic resistance after both spells have been cast.~
 
 @639=~Oracle~
 @640=~Oracle

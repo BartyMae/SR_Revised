@@ -600,7 +600,7 @@ COPY ~spell_rev\sppr2##\sppr214.spl~     ~override~  // Draw Upon Divine Might (
   SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
 COPY ~spell_rev\sppr2##\sppr214w.spl~    ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~12108~ @57 // change portrait icon name into Draw Upon Divine Might
+  STRING_SET ~12108~ @57 // Change portrait icon name into Draw Upon Divine Might
 END
 
 ADD_SPELL ~spell_rev\sppr2##\sppr215.spl~ 1 2 ~CLERIC_CURE_MODERATE_WOUNDS~ // Cure Moderate Wounds (disabled at level 3)
@@ -656,7 +656,7 @@ COPY ~spell_rev\sppr3##\skelgrsu.itm~    ~override~
 COPY ~spell_rev\sppr3##\sppr302.spl~     ~override~  // Call Lightning
   SAY NAME1 @73    SAY UNIDENTIFIED_DESC @74
 
-COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Remove Magic
+COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Dispel Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
 
 COPY ~spell_rev\sppr3##\sppr304.spl~     ~override~  // Glyph of Warding
@@ -1869,6 +1869,23 @@ COPY ~spell_rev\spwi3##\spwi302.spl~     ~override~  // Remove Magic
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME2 @503    SAY IDENTIFIED_DESC   @504
 
+ACTION_IF alternative_remove_magic=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi302.save.spl~     ~override\spwi302.spl~  // Remove Magic
+  SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000
+COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
+  SAY NAME2 @503    SAY IDENTIFIED_DESC   @504000
+END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi302.breach.spl~     ~override\spwi302.spl~  // Remove Magic
+  SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
+COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
+  SAY NAME2 @503    SAY IDENTIFIED_DESC   @504000000
+END ELSE BEGIN
+COPY ~spell_rev\spwi3##\spwi302.spl~     ~override~  // Remove Magic
+  SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504
+COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
+  SAY NAME2 @503    SAY IDENTIFIED_DESC   @504
+END
+
 ADD_PROJECTILE ~spell_rev\projectles\dvfarrow.pro~
 COPY ~spell_rev\spwi3##\spwi303.spl~     ~override~  // Flame Arrow
   SAY NAME1 @505    SAY UNIDENTIFIED_DESC @506
@@ -2446,10 +2463,18 @@ COPY ~spell_rev\spwi5##\spwi513.spl~     ~override~  // Breach
 COPY ~spell_rev\spwi5##\scrl6u.itm~      ~override~
   SAY NAME2 @635    SAY IDENTIFIED_DESC   @636
 
+ACTION_IF aoe_lower_resistance BEGIN
+ADD_PROJECTILE ~spell_rev\projectles\dvlowres.pro~
+COPY ~spell_rev\shared\alternatives\spwi514.spl~     ~override~  // Lower Resistance
+  SAY NAME1 @637    SAY UNIDENTIFIED_DESC @638000
+COPY ~spell_rev\spwi5##\scrl6v.itm~      ~override~
+  SAY NAME2 @637    SAY IDENTIFIED_DESC   @638000
+END ELSE BEGIN
 COPY ~spell_rev\spwi5##\spwi514.spl~     ~override~  // Lower Resistance
   SAY NAME1 @637    SAY UNIDENTIFIED_DESC @638
 COPY ~spell_rev\spwi5##\scrl6v.itm~      ~override~
   SAY NAME2 @637    SAY IDENTIFIED_DESC   @638
+END
 
 COPY ~spell_rev\spwi5##\spwi515.spl~     ~override~  // Oracle
   SAY NAME1 @639    SAY UNIDENTIFIED_DESC @640
@@ -3335,9 +3360,9 @@ COPY ~spell_rev\spwi9##\spwi925.spl~     ~override~  // Comet
 
 /*---------------------Projectile Protection Patching---------------------*/
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN
 COPY_EXISTING ~spra303.spl~      ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   SET "loop" = 1
   WHILE (%loop% < 37) BEGIN
   SET opcode = 83
@@ -3362,9 +3387,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN
 COPY_EXISTING ~sppr613.spl~     ~override~  // Physical Mirror
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   SET "loop" = 1
   WHILE (%loop% < 31) BEGIN
   SET opcode = 83
@@ -3389,9 +3414,9 @@ PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
 END
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN
 COPY_EXISTING ~spwi311.spl~     ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   SET "loop" = 1
   WHILE (%loop% < 37) BEGIN
   SET opcode = 83
@@ -3419,7 +3444,7 @@ END
 
 /*----------------IR Fixes-----------------*/
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) BEGIN
   INCLUDE ~spell_rev\lib\item_revisions.tph~
 END
 
@@ -3588,27 +3613,112 @@ ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlda~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 De
   BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
-  COPY_EXISTING tranzi.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM dvscrlfr #1 #0 #0 NONE INV1
+ACTION_IF (FILE_EXISTS_IN_GAME ~carsa.cre~) BEGIN
+  COPY_EXISTING carsa.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM dvscrlpp #1 #0 #0 NONE QITEM1
     END
 	BUT_ONLY
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~scrolls.sto~) THEN BEGIN
-  COPY_EXISTING ~scrolls.sto~      ~override~  // Lady Yuth's Pen and Parchment
-    REPLACE_TEXTUALLY ~SCRLAK~ ~SCRL5G~
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~25spell2.sto~) THEN BEGIN
-  COPY_EXISTING ~25spell.sto~      ~override~  // Lazarus Librarus' Pen and Parchment
-    REPLACE_TEXTUALLY ~SCRLAK~ ~SCRL5G~
+ACTION_IF (FILE_EXISTS_IN_GAME ~denak.cre~) BEGIN
+  COPY_EXISTING denak.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM scrl6y #1 #0 #0 NONE QITEM3
+    END
+	BUT_ONLY
 END
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~kahrk.cre~) BEGIN
+  COPY_EXISTING kahrk.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM scrl1r #1 #0 #0 NONE INV2
+	  ADD_CRE_ITEM scrl6s #1 #0 #0 NONE INV3
+    END
+	BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
+  COPY_EXISTING tranzi.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM dvscrlfr #1 #0 #0 NONE QITEM3
+    END
+	BUT_ONLY
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~zordra.cre~) BEGIN
+  COPY_EXISTING zordra.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
+	  ADD_CRE_ITEM dvscrlda #1 #0 #0 NONE QITEM3
+    END
+	BUT_ONLY
+END
+
+ACTION_FOR_EACH resource IN // Remove duplicate Remove Curse/Break Enchantment scroll
+  ~scrolls~
+  ~25spell2~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.sto~) BEGIN
+    COPY_EXISTING ~%resource%.sto~ ~override\%resource%.sto~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      REPLACE_TEXTUALLY ~SCRLAK~ ~SCRL5G~
+    END
+  END
+END
+
+ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
+ACTION_IF (FILE_EXISTS_IN_GAME ~ar7101.are~) BEGIN // High Hedge Cabin
+  COPY_EXISTING ar7101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+  END BUT_ONLY
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~ar9702.are~) BEGIN // Trade Way North Cave
+  COPY_EXISTING ar9702.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
+  END BUT_ONLY
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~ar3704.are~) BEGIN // Nashkel Noble House
+  COPY_EXISTING ar3704.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+  END BUT_ONLY
+END
+END
+
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BGEE
+ACTION_IF (FILE_EXISTS_IN_GAME ~ar3201.are~) BEGIN // High Hedge Cabin
+  COPY_EXISTING ar3201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+  END BUT_ONLY
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~ar3802.are~) BEGIN // Trade Way North Cave
+  COPY_EXISTING ar3802.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
+  END BUT_ONLY
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~ar4804.are~) BEGIN // Nashkel Noble House
+  COPY_EXISTING ar4804.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+  END BUT_ONLY
+END
+END
+
+ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg3201.are~) BEGIN // High Hedge Cabin
+  COPY_EXISTING bg3201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+  END BUT_ONLY
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg3802.are~) BEGIN // Trade Way North Cave
+  COPY_EXISTING bg3802.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
+  END BUT_ONLY
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~bg4804.are~) BEGIN // Nashkel Noble House
+  COPY_EXISTING bg4804.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+  END BUT_ONLY
+END
+END
 
 /*----------------Remove Disabled Spell Scrolls-----------------*/
 
 // BG2 broken areas fix
-ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
   COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
   COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
 END
@@ -3651,7 +3761,7 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN 
+	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN 
       READ_BYTE 0x18 flags
       WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
 	END
