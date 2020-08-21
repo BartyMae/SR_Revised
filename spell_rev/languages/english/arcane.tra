@@ -1069,7 +1069,7 @@ The chance of the dispel succeeding is determined by the experience level of the
 @876=~Icelance
 Level: 3
 School: Evocation
-Range: Short
+Range: Long
 Duration: Special
 Casting Time: 3
 Area of Effect: 1 creature
@@ -1495,7 +1495,7 @@ When this spell is cast, the recipient receives complete protection from one dam
 @878=~Vitriolic Sphere
 Level: 4
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: Special
 Casting Time: 4
 Area of Effect: Target, and anyone within 10'
