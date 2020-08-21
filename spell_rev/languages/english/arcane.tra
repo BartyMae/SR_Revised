@@ -54,7 +54,7 @@ If the caster attempts to harm the charmed creature, or if a dispel magic is suc
 @410=~Color Spray
 Level: 1
 School: Alteration
-Range: Special
+Range: Short
 Duration: Special
 Casting Time: 1
 Area of Effect: Special
@@ -897,7 +897,7 @@ A Slow spell causes enemies to move, attack, and cast spells at half of their no
 @526=~Skull Trap
 Level: 3
 School: Necromancy
-Range: Medium
+Range: Long
 Duration: Special
 Casting Time: 3
 Area of Effect: 20' radius
@@ -1564,13 +1564,13 @@ This spell generates a billowing cloud of ghastly, yellowish green vapors that i
 @616=~Cone of Cold
 Level: 5
 School: Evocation
-Range: Special
+Range: Short
 Duration: Instant
 Casting Time: 1
 Area of Effect: Special
 Saving Throw: Breath half
 
-When this spell is cast, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of 60 degrees in front of the caster, draining heat and causing 1D4 + 1 cold damage for every experience level of the caster, up to a maximum of 15D4 + 15 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage.~
+When this spell is cast, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster, draining heat and causing 1D4 + 1 cold damage for every experience level of the caster, up to a maximum of 15D4 + 15 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage.~
 
 @617=~Monster Summoning V~
 @618=~Monster Summoning V
@@ -1776,7 +1776,7 @@ The spells that are affected by this are: Reflected Image, Invisibility, Blur, M
 @642=~Conjure Lesser Fire Elemental
 Level: 5
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -1837,7 +1837,7 @@ The spells that Spell Shield protects the caster from are: Spell Thrust, Secret 
 @650=~Conjure Lesser Air Elemental
 Level: 5
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -1860,7 +1860,7 @@ Special Characteristics:
 @652=~Conjure Lesser Earth Elemental
 Level: 5
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -2203,7 +2203,7 @@ Special Characteristics:
 @698=~Conjure Fire Elemental
 Level: 6
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -2240,7 +2240,7 @@ Special Characteristics:
 @700=~Conjure Air Elemental
 Level: 6
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -2277,7 +2277,7 @@ Special Characteristics:
 @702=~Conjure Earth Elemental
 Level: 6
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -2544,13 +2544,13 @@ The Finger of Death spell snuffs out the chosen target's life force. The caster 
 @744=~Prismatic Spray
 Level: 7
 School: Alteration
-Range: Special
+Range: Short
 Duration: Special
 Casting Time: 1
 Area of Effect: Cone
 Saving Throw: Special
 
-When this spell is cast, the wizard causes seven shimmering, multicolored rays of light to flash from their hand. These include all colors of the visible spectrum, and each ray has a different power and purpose. Any creature that is caught within the area of effect will be touched by one or more rays: there is a 50% chance that they will be affected by two or more rays, and a 25% chance that they will be affected by three rays. Additionally, creatures with 8 hit dice or fewer struck by any type of ray are also blinded for 5 rounds. The effects of the rays are listed below and all saves are made at a -4 penalty.
+When this spell is cast, the wizard causes seven shimmering, multicolored rays of light to flash from their hand. These include all colors of the visible spectrum, and each ray has a different power and purpose. The spray is 20 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster. Any creature that is caught within the area of effect will be touched by one or more rays: there is a 50% chance that they will be affected by two or more rays, and a 25% chance that they will be affected by three rays. Additionally, creatures with 8 hit dice or fewer struck by any type of ray are also blinded for 5 rounds. The effects of the rays are listed below and all saves are made at a -4 penalty.
 
 Red - 10D6 fire damage (save vs. breath half)
 Orange - Stun for 1 turn (save vs. polymorph neg.)

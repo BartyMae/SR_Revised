@@ -1069,7 +1069,7 @@ While under the effects of this spell, the recipient is immune to all forms of i
 Level: 4
 School: Conjuration
 Sphere: Animal
-Range: Medium
+Range: Long
 Duration: 5 turns
 Casting Time: 1 round
 Area of Effect: Special
@@ -1658,7 +1658,7 @@ Note that invisibility or invisibility-like spells and effects such as Sanctuary
 Level: 6
 School: Conjuration
 Sphere: Elemental (Fire)
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -1819,7 +1819,7 @@ When the spell is completed, it creates a glowing gem that must be thrown at an 
 Level: 6
 School: Conjuration
 Sphere: Elemental (Air)
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -1857,7 +1857,7 @@ Special Characteristics:
 Level: 6
 School: Conjuration
 Sphere: Elemental (Earth)
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
