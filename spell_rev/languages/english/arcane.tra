@@ -1509,7 +1509,7 @@ When this spell is cast, a glowing orb of emerald acid streaks towards the targe
 @612=~Summon Shadow
 Level: 5
 School: Necromancy
-Range: Medium
+Range: Long
 Duration: 8 hours
 Casting Time: 1 round
 Area of Effect: Special
@@ -1923,7 +1923,7 @@ This spell conjures a boiling acid barrier around the wizard. The shield grants 
 @662=~Invisible Stalker
 Level: 6
 School: Conjuration
-Range: Medium
+Range: Long
 Duration: 1 turn/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -2314,7 +2314,7 @@ Special Characteristics:
 @704=~Animate Warrior
 Level: 6
 School: Necromancy
-Range: Medium
+Range: Long
 Duration: 8 hours
 Casting Time: 1 round
 Area of Effect: Special

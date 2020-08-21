@@ -568,7 +568,7 @@ Special Characteristics:
 Level: 3
 School: Necromancy
 Sphere: Necromantic
-Range: Medium
+Range: Long
 Duration: 8 hours
 Casting Time: 1 round
 Area of Effect: Special
@@ -1594,7 +1594,7 @@ When this spell is cast, the caster causes all friendly animals within range to 
 Level: 6
 School: Conjuration
 Sphere: Summoning
-Range: Medium
+Range: Long
 Duration: 1 turn/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -1921,7 +1921,7 @@ The Banishment spell forces hostile summoned creatures in the area back to their
 Level: 6
 School: Necromancy
 Sphere: Necromantic
-Range: Medium
+Range: Long
 Duration: 8 hours
 Casting Time: 1 round
 Area of Effect: Special
@@ -1965,7 +1965,7 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, but 
 Level: 7
 School: Conjuration
 Sphere: Plant
-Range: Medium
+Range: Long
 Duration: 8 hours
 Casting Time: 1 round
 Area of Effect: Special
@@ -2307,7 +2307,7 @@ Casting this spell causes the earth to shake and the heavens to boil with blood 
 Level: Quest
 School: Conjuration
 Sphere: Elemental, Summoning
-Range: Medium
+Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
 Area of Effect: Special
@@ -2353,7 +2353,7 @@ Special Characteristics:
 Level: Quest
 School: Conjuration
 Sphere: Elemental, Summoning
-Range: Medium
+Range: Long
 Duration: 1 turn
 Casting Time: 1 round
 Area of Effect: Special
