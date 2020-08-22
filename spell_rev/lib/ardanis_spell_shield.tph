@@ -59,14 +59,14 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
 
     // patching antimagic
     ACTION_DEFINE_ARRAY spell_shield BEGIN
-      spwi321 // spell thrust
-      spwi419 // secret word
-      spwi513 // breach
-      spwi608 // pierce magic
-      spwi704 // ruby ray of reversal
-      dvwi705 // khelben warding whip
-      spwi805 // pierce shield
-      spwi903 // spellstrike
+      spwi321 // Spell Thrust
+      spwi419 // Secret Word
+      spwi513 // Breach
+      spwi608 // Pierce Magic
+      spwi704 // Ruby Ray of Reversal
+      spwi705 // Khelben Warding Whip
+      spwi805 // Pierce Shield
+      spwi903 // Spellstrike
 	  dvwis26 // Wish Breach
 	  dvwis38 // Wish Breach
     END
@@ -81,7 +81,7 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
     END
 
     ACTION_PHP_EACH spell_shield AS _ => spell  BEGIN
-      COPY_EXISTING spwi519.spl override // spell shield  
+      COPY_EXISTING spwi519.spl override // spell shield
       PHP_EACH spellshieldheader AS ind => res BEGIN
         LAUNCH_PATCH_FUNCTION ADD_SPELL_EFFECT INT_VAR
           header=ind+1
@@ -147,7 +147,7 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
         WRITE_ASCIIE (offset+0x14) ~%spell%b~ (8)
 
         READ_ASCII offset clone (0x30)
-        WRITE_ASCIIE (offset+0x30) ~%clone%~ 
+        WRITE_ASCIIE (offset+0x30) ~%clone%~
         WRITE_ASCIIE (offset+0x44) ~%spell%c~
 
 

@@ -2,7 +2,7 @@ INCLUDE ~spell_rev\lib\cre_spell_immunity.tph~
 INCLUDE ~spell_rev\lib\manage_add_spell_references.tpa~
 INCLUDE ~spell_rev\lib\macros.tpa~
 
-/*------------Manage ADD_SPELL References, Part 1-----------*/
+/*------------Manage ADD_SPELL References (Part 1)-----------*/
 
 // Spells that will be installed with ADD_SPELL have an unknown final filename.
 // If any SPL/ITM/EFF files need to reference those new spells, they can do so using their current filenames in the mod folder.
@@ -3455,7 +3455,11 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) BEGIN
 END
 
 
-/*------------Manage ADD_SPELL References, Part 2-----------*/
+/*----------------1pp & EE graphical fixes-----------------*/
+INCLUDE ~spell_rev\lib\1pp.tph~
+
+
+/*------------Manage ADD_SPELL References (Part 2)-----------*/
 
 // This function goes through the SPL/ITM/EFF files in the game and replaces references
 // to our temp filenames with references to the final filenames assigned by ADD_SPELL.
