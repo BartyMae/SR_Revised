@@ -136,7 +136,7 @@ STR_VAR
 END
 
 LAF tooltips INT_VAR
-  $tip(1) = RESOLVE_STR_REF (@216200)
+  $tip(2) = RESOLVE_STR_REF (@216200)
 STR_VAR
   item = sw1h65
 END
