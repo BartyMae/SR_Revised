@@ -44,8 +44,12 @@ COPY_EXISTING ~misc3h.itm~ ~override~
 END
 ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.itm~) THEN BEGIN
 COPY_EXISTING ~misc3l.itm~ ~override~
-  SPRINT old_spell_name @1723000 // Silence 15' Radius (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
-  SPRINT new_spell_name @172300 // Silence (3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)
+  SPRINT old_spell_name @1723000 // Silence 15' Radius
+  SPRINT new_spell_name @172300 // Silence
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+  SPRINT old_spell_name @1723010 // (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
+  SPRINT new_spell_name @172301 // (3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
@@ -106,4 +110,33 @@ COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~ // Silence
   SAY NAME1 @51
 COPY ~spell_rev\shared\item_rev\npshld.spl~ ~override~ // Protection from Missiles
   SAY NAME1 @180500
+
+LAF tooltips INT_VAR
+  $tip(1) = RESOLVE_STR_REF (@130800)
+STR_VAR
+  item = brac23
+END
+
+LAF tooltips INT_VAR
+  $tip(1) = RESOLVE_STR_REF (@169900)
+STR_VAR
+  item = misc3a8
+END
+
+LAF tooltips INT_VAR
+  $tip(1) = RESOLVE_STR_REF (@172300)
+STR_VAR
+  item = misc3l
+END
+
+LAF tooltips INT_VAR
+  $tip(1) = RESOLVE_STR_REF (@180500)
+STR_VAR
+  item = npshld
+END
+
+LAF tooltips INT_VAR
+  $tip(1) = RESOLVE_STR_REF (@216200)
+STR_VAR
+  item = sw1h65
 END
