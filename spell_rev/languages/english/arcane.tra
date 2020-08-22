@@ -1780,9 +1780,9 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When cast upon a creature, this spell will lower their magic resistance by 2.5% for every experience level of the caster, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
+When cast upon a creature, this spell will lower their magic resistance by 10% + 2%/level, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
 
-For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 25%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 25% (initial casting) - 25% (current casting), which would leave the creature with 0% magic resistance after both spells have been cast.~
+For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 20. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 30% (initial casting) - 30% (current casting), which would leave the creature with 0% magic resistance after both spells have been cast.~
 
 @638000=~Lower Resistance
 Level: 5
