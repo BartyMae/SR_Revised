@@ -359,7 +359,7 @@ DEFINE_PATCH_MACRO ~update_item_descriptions~ BEGIN
 END
 
 DEFINE_PATCH_MACRO ~replace_spell_name~ BEGIN
-  REPLACE_TEXTUALLY CASE_SENSITIVE ~%old_spell_name%~ ~%new_spell_name%~
+  REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH ~%old_spell_name%~ ~%new_spell_name%~
 END
 
 
