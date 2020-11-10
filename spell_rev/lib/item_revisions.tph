@@ -60,6 +60,13 @@ COPY_EXISTING ~npshld.itm~ ~override~
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
+ACTION_IF (FILE_EXISTS_IN_GAME ~ring39.itm~) THEN BEGIN
+COPY_EXISTING ~ring39.itm~ ~override~
+  SPRINT old_spell_name @1903000 // Energy Drain
+  SPRINT new_spell_name @190300 // Larloch's Energy Drain
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
 ACTION_IF (FILE_EXISTS_IN_GAME ~slng06.itm~) THEN BEGIN
 COPY_EXISTING ~slng06.itm~ ~override~
   SPRINT old_spell_name @1550000 // 4D4
@@ -92,23 +99,23 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
 END
 
 COPY ~spell_rev\shared\item_rev\dvbram.spl~   ~override~ // Battering Ram
-COPY ~spell_rev\shared\item_rev\dvmcure.spl~   ~override~ // Mass Cure
+COPY ~spell_rev\shared\item_rev\dvmcure.spl~  ~override~ // Mass Cure
   WRITE_SHORT 0x98 %dvmscure%
   SAY NAME1 @177
 ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~
-COPY ~spell_rev\shared\item_rev\dvpexpl.spl~   ~override~ // Prismatic Explosion
+COPY ~spell_rev\shared\item_rev\dvpexpl.spl~  ~override~ // Prismatic Explosion
   WRITE_SHORT 0x98 %dvpexpl%
   SAY NAME1 @401400
-COPY ~spell_rev\shared\item_rev\dvreson.spl~   ~override~ // Resonating
+COPY ~spell_rev\shared\item_rev\dvreson.spl~  ~override~ // Resonating
   WRITE_SHORT 0x98 %dvsndbr%
-COPY ~spell_rev\shared\item_rev\dvsburst.spl~   ~override~ // Sonic Blast
+COPY ~spell_rev\shared\item_rev\dvsburst.spl~ ~override~ // Sonic Blast
   WRITE_SHORT 0x98 %dvsndbr%
 COPY ~spell_rev\shared\item_rev\hamm11.spl~   ~override~ // Champion's Strength
   SAY NAME1 @163
-COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~ // Silence
+COPY ~spell_rev\shared\item_rev\misc3l.spl~   ~override~ // Silence
   WRITE_SHORT 0x98 %dvsilenc%
   SAY NAME1 @51
-COPY ~spell_rev\shared\item_rev\npshld.spl~ ~override~ // Protection from Missiles
+COPY ~spell_rev\shared\item_rev\npshld.spl~   ~override~ // Protection from Missiles
   SAY NAME1 @180500
 
 LAF tooltips INT_VAR
@@ -133,6 +140,12 @@ LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@180500)
 STR_VAR
   item = npshld
+END
+
+LAF tooltips INT_VAR
+  $tip(1) = RESOLVE_STR_REF (@1903000)
+STR_VAR
+  item = ring39
 END
 
 LAF tooltips INT_VAR
