@@ -1313,8 +1313,8 @@ Special Characteristics:
  Magic Resistance: 100%
  Protected Against: Backstabs, Disease, Level Drain, Normal Weapons, Petrification, Poison, and Stun
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
  Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
+ Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
 
 Ogre Mage (7 HD):
  STR 18/100, DEX 10, CON 16
@@ -2504,7 +2504,7 @@ Special Characteristics:
  Magic Resistance: 75%
  Protected Againt: Backstabs, Death, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Aura of Fear: every round, creatures in a 10' radius flee in terror for 1 round (save vs. spell neg.)
+ Aura of Fear: opponents in a 10' radius flee in terror (save vs. spell neg.)
  Detect Invisibility (permanent)
  Unholy Fireball (1x per day)
 
@@ -3127,9 +3127,9 @@ Special Characteristics:
  Regeneration: 2 hp/round
  Protected Against: Normal/+1/+2 Weapons and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Venomous: 25% chance target suffers 5 poison every second for 2 rounds (save vs. poison at -4 neg.)
- Constricting: 25% chance target is stunned for 1 round (save vs. death at -4 penalty neg.)
  Detect Invisibility (permanent)
+ Constricting: 25% chance target is stunned for 1 round (save vs. death at -4 penalty neg.)
+ Venomous: 25% chance target suffers 5 poison every second for 2 rounds (save vs. poison at -4 neg.)
 
 Known Spells:
  Fireball (1x per 5 rounds), Dispel Magic (1x per 5 rounds), Improved Invisibility (at will), Symbol of Pain, Unholy Word, Meteor Swarm~
@@ -3498,10 +3498,8 @@ Fallen Planetar (18 HD):
 Special Characteristics:
  Magic Resistance: 75%
  Regeneration: 2 hp/round
- Detect Invisibility (permanent)
  Protected Against: Backstabs, Charm, Confusion, Death, Domination, Feeblemindedness, Imprisonment, Level Drain, Maze, Normal/+1/+2 Weapons, Petrification, and Poison
-
-Combat Abilities:
+ Detect Invisibility (permanent)
  Vorpal: 15% chance target dies (save vs. death at -2 neg.)
 
 Known Spells:

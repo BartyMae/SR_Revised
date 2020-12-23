@@ -1984,8 +1984,8 @@ Shambling Mound (16 HD):
 Special Characteristics:
  Regeneration: 1 hp/round
  Protected Againt: Charm, Domination, Hold, Poison, Polymorph, Sleep, and Stun
- Entangling: 50% chance target is entangled for 1 round (save vs. breath neg.)
- Constricting: creatures entangled by the shambler are entangled again and suffer 2D6 + 10 damage each round (save vs. breath neg.)~
+ Constricting: creatures entangled by the shambler are entangled again and suffer 2D6 + 10 damage each round (save vs. breath neg.)
+ Entangling: 50% chance target is entangled for 1 round (save vs. breath neg.)~
 
 @235=~Summon Death Knight~
 @236=~Summon Death Knight
@@ -2012,8 +2012,8 @@ Special Characteristics:
  Magic Resistance: 75%
  Protected Againt: Backstabs, Death, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Aura of Fear: every round, creatures in a 10' radius flee in terror for 1 round (save vs. spell neg.)
  Detect Invisibility (permanent)
+ Aura of Fear: opponents in a 10' radius flee in terror (save vs. spell neg.)
  Unholy Fireball (1x per day)
 
 Known Spells:
