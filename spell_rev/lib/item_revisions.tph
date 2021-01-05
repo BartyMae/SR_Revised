@@ -28,7 +28,7 @@ COPY_EXISTING ~hamm11.itm~ ~override~
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
-ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a8.itm~) THEN BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a12.itm~) THEN BEGIN
 COPY_EXISTING ~misc3a8.itm~ ~override~
   SPRINT old_spell_name @1699000 // Animate Dead
   SPRINT new_spell_name @169900 // Summon Shadow
@@ -127,7 +127,7 @@ END
 LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@169900)
 STR_VAR
-  item = misc3a8
+  item = misc3a12
 END
 
 LAF tooltips INT_VAR
