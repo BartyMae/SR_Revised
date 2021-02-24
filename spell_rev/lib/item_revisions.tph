@@ -1,3 +1,4 @@
+// Wrong resources fix
 ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_POLYMORPH_OTHER[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Periapt of Form Stability Druid Polymorph Other
   LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_POLYMORPH_OTHER~ RET spell_res END
   OUTER_SPRINT ~polymorph_other~ ~%spell_res%~
@@ -6,7 +7,44 @@ ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_POLYMORPH_OTHER[
       REPLACE_TEXTUALLY ~sppr420~ ~%polymorph_other%~
   END
 END
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]WIZARD_VITRIOLIC_SPHERE [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Acid scroll
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~WIZARD_VITRIOLIC_SPHERE~ RET spell_res END
+  OUTER_SPRINT ~vitriolic_sphere~ ~%spell_res%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~scrl03.spl~) THEN BEGIN
+    COPY_EXISTING ~scrl03.spl~ ~override~
+      //LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%vitriolic_sphere%~ END
+  END
+END
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_ICE_STORM [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Cold scroll
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_ICE_STORM~ RET spell_res END
+  OUTER_SPRINT ~ice_storm~ ~%spell_res%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~scrl04.spl~) THEN BEGIN
+    COPY_EXISTING ~scrl04.spl~ ~override~
+      //LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ice_storm%~ END
+      LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr501 END
+  END
+END
+/*ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]WIZARD_BALL_LIGHTNING [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Lightning scroll
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~WIZARD_BALL_LIGHTNING~ RET spell_res END
+  OUTER_SPRINT ~ball_lightning~ ~%spell_res%~*/
+  ACTION_IF (FILE_EXISTS_IN_GAME ~scrl05.spl~) THEN BEGIN
+    COPY_EXISTING ~scrl05.spl~ ~override~
+      //LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ball_lightning%~ END
+      LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spwi615d END
+      LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr601 END
+      LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr601d END
+  END
+//END
+ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_FIRE_TRAP [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Fire scroll
+  LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_FIRE_TRAP~ RET spell_res END
+  OUTER_SPRINT ~fire_trap~ ~%spell_res%~
+  ACTION_IF (FILE_EXISTS_IN_GAME ~scrl06.spl~) THEN BEGIN
+    COPY_EXISTING ~scrl06.spl~ ~override~
+      //LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%fire_trap%~ END
+  END
+END
 
+// Item description updates
 ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.itm~) THEN BEGIN
 COPY_EXISTING ~brac23.itm~ ~override~
   SPRINT old_spell_name @1308000 // Righteous Magic
@@ -89,6 +127,7 @@ COPY_EXISTING ~sw1h65.itm~ ~override~
   LPM ~update_item_descriptions~
 END
 
+// Spell name updates
 ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.spl~) THEN BEGIN
   COPY_EXISTING ~brac23.spl~             ~override~ // Righteous Fury
     SAY NAME1 @130800
@@ -98,6 +137,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
     SAY NAME2 @216200
 END
 
+// SRR spell updates
 COPY ~spell_rev\shared\item_rev\dvbram.spl~   ~override~ // Battering Ram
 COPY ~spell_rev\shared\item_rev\dvmcure.spl~  ~override~ // Mass Cure
   WRITE_SHORT 0x98 %dvmscure%
@@ -118,36 +158,32 @@ COPY ~spell_rev\shared\item_rev\misc3l.spl~   ~override~ // Silence
 COPY ~spell_rev\shared\item_rev\npshld.spl~   ~override~ // Protection from Missiles
   SAY NAME1 @180500
 
+// Fix tooltips
 LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@130800)
 STR_VAR
   item = brac23
 END
-
 LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@169900)
 STR_VAR
   item = misc3a12
 END
-
 LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@172300)
 STR_VAR
   item = misc3l
 END
-
 LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@180500)
 STR_VAR
   item = npshld
 END
-
 LAF tooltips INT_VAR
   $tip(1) = RESOLVE_STR_REF (@1903000)
 STR_VAR
   item = ring39
 END
-
 LAF tooltips INT_VAR
   $tip(2) = RESOLVE_STR_REF (@216200)
 STR_VAR

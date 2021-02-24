@@ -67,8 +67,8 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
       spwi705 // Khelben Warding Whip
       spwi805 // Pierce Shield
       spwi903 // Spellstrike
-	  dvwis26 // Wish Breach
-	  dvwis38 // Wish Breach
+      dvwis26 // Wish Breach
+      dvwis38 // Wish Breach
     END
 
     ACTION_FOR_EACH spl IN // beholder innates
@@ -100,7 +100,7 @@ OUTER_SET spell_shield_icon_num = (MOD_IS_INSTALLED setup-bg2fixpack.tp2 0 || EN
 
       COPY_EXISTING ~%spellcore%.spl~ ~override/%spell%b.spl~
         SAY 0x8 #-1 // clearing out the name
-	/* CrevsDaak: remove .spl name by using .tlk referece #-1 */
+    /* CrevsDaak: remove .spl name by using .tlk referece #-1 */
         READ_LONG 0x64  ab_off
         READ_SHORT 0x68 ab_num
         FOR (i=0;i<ab_num;i+=1) BEGIN

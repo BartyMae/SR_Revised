@@ -136,13 +136,13 @@ END
 /*ACTION_IF FILE_EXISTS_IN_GAME ~spwi805b.spl~ BEGIN
 COPY_EXISTING ~spwi805b.spl~ ~override~
 LPF ADD_SPELL_EFFECT
-	INT_VAR
-	opcode			= 221 // remove type protection
-	target			= 2    //preset
-	power			= 8
-    parameter1		= 9
-	parameter2		= EVALUATE_BUFFER %sectype_k1#Dispel%
-	timing			= 3
+    INT_VAR
+    opcode          = 221 // remove type protection
+    target          = 2    //preset
+    power           = 8
+    parameter1      = 9
+    parameter2      = EVALUATE_BUFFER %sectype_k1#Dispel%
+    timing          = 3
 END
   BUT_ONLY
 END
@@ -150,13 +150,13 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN
 COPY_EXISTING ~spwi903b.spl~ ~override~
 LPF ADD_SPELL_EFFECT
-	INT_VAR
-	opcode			= 221 // remove type protection
-	target			= 2    //preset
-	power			= 9
+    INT_VAR
+    opcode          = 221 // remove type protection
+    target          = 2    //preset
+    power           = 9
     parameter1      = 9
-	parameter2		= EVALUATE_BUFFER %sectype_k1#Dispel%
-	timing			= 3
+    parameter2      = EVALUATE_BUFFER %sectype_k1#Dispel%
+    timing          = 3
 END
   BUT_ONLY
 END*/
