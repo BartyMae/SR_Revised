@@ -71,12 +71,12 @@ Level: 1
 School: Enchantment
 Sphere: Combat
 Range: Personal
-Duration: 5 turns
+Duration: Special
 Casting Time: 1
 Area of Effect: Special
 Saving Throw: None
 
-Using this spell, the priest can temporarily enchant ten small stones, no larger than sling bullets. When thrown, each stone deals 1D4 + 2 missile damage (1D4 + 5 against undead) upon a successful hit, and the caster can hurl up to three stones per round. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The stones can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
+Using this spell, the priest can temporarily enchant ten small stones, no larger than sling bullets. When thrown, each stone deals 1D4 + 2 missile damage (1D4 + 5 against undead) upon a successful hit, and the caster can hurl up to three stones per round. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The stones can be used only by the caster, and remain in their hand for 5 turns or until used.~
 
 @13=~Protection from Evil~
 @14=~Protection from Evil
@@ -128,7 +128,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell enables the caster to create a magical cudgel. Dealing 2D4 + 1 crushing damage upon a successful hit, this shillelagh also causes tendrils to wrap around and hold the victim in place for 1 round unless they successfully make a save vs. breath. The caster wields the shillelagh as if proficient and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every four extra experience levels of the caster, up to a maximum of +3 at 9th level. The shillelagh can be used only by the caster, and remains in their hand for the duration of the spell.~
+This spell enables the caster to create a magical cudgel. Dealing 2D4 + 1 crushing damage upon a successful hit, this shillelagh also causes tendrils to wrap around and hold the victim in place for 1 round unless they successfully make a save vs. breath. The caster wields the shillelagh as if proficient and at their normal base THAC0, and it is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. This enchantment level increases by one for every four extra experience levels of the caster, up to a maximum of +3 at 9th level. Strength modifiers do not apply to THAC0 or damage, and attacks with the shillelagh are considered to be melee touch attacks (+4 bonus to THAC0). The shillelagh can be used only by the caster, and remains in their hand for the duration of the spell.~
 
 @21=~Armor of Faith~
 @22=~Armor of Faith
@@ -1812,7 +1812,7 @@ Casting Time: 6
 Area of Effect: Special
 Saving Throw: Breath partial
 
-When the spell is completed, it creates a glowing gem that must be thrown at an opponent within 5 rounds, or it will become too hot to hold. When it hits, the gem bursts with a brilliant, searing flash that deals 10D6 fire damage to anyone within 30 feet. Furhermore, creatures in the area of effect continue to burn after the initial blast, suffering an additional 1D6 fire damage every round for 1 turn. Those who make a save vs. breath at a -4 penalty receive only half damage. The gem can be used only by the caster, and remains in their hand for the duration of the spell or until used. Magic resistance does not affect this spell.~
+When the spell is completed, it creates a glowing gem that must be thrown at an opponent within 5 rounds, or it will become too hot to hold. When it hits, the gem bursts with a brilliant, searing flash that deals 10D6 fire damage to anyone within 30 feet. Furhermore, creatures in the area of effect continue to burn after the initial blast, suffering an additional 1D6 fire damage every round for 1 turn. Those who make a save vs. breath at a -4 penalty receive only half damage and avoid the afterburn. The gem can be used only by the caster, and remains in their hand for the duration of the spell or until used. Magic resistance does not affect this spell.~
 
 @219=~Conjure Air Elemental~
 @220=~Conjure Air Elemental
