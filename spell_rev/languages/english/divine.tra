@@ -616,7 +616,7 @@ Casting Time: 1 round
 Area of Effect: 360' radius
 Saving Throw: Breath half
 
-Immediately upon completion of the spell and once per round thereafter, the caster causes a 30-foot-long vertical bolt of lightning to come crashing down upon an enemy. The spell calls forth one lightning bolt for every three experience levels of the caster, up to a maximum of 5 lightning bolts at 15th level. The lightning will strike first at the target of the spell, dealing 6D6 electrical damage. Those who make a save vs. breath at a -2 penalty will receive only half damage. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the caster.~
+Immediately upon completion of the spell and once per round thereafter, the caster causes a 30 foot-long vertical bolt of lightning to come crashing down upon an enemy. The spell calls forth one lightning bolt for every three experience levels of the caster, up to a maximum of 5 lightning bolts at 15th level. The lightning will strike first at the target of the spell, dealing 6D6 electrical damage. Those who make a save vs. breath at a -2 penalty will receive only half damage. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the caster.~
 
 @75=~Dispel Magic~
 @76=~Dispel Magic
@@ -1400,7 +1400,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-Upon the casting of this spell, the recipient receives a +2% bonus to magic resistance for every experience level of the caster, up to a maximum of 50% at 25th level. Multiple castings of this spell are not cumulative.~
+Upon the casting of this spell, the recipient receives a +2% bonus to magic resistance for every experience level of the caster, up to a maximum of 40% at 20th level. Multiple castings of this spell are not cumulative.~
 
 @169=~Cause Mortal Wounds~
 @170=~Cause Mortal Wounds
@@ -2528,7 +2528,7 @@ Casting Time: 5
 Area of Effect: 10' radius
 Saving Throw: None
 
-This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 5 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell.~
+This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 10 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell.~
 
 @291=~Fire Elemental Transformation~
 @292=~Fire Elemental Transformation
@@ -2662,7 +2662,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Spell partial
 
-This spell causes a 2-foot-diameter sphere to appear in the caster's hand. When thrown, the sphere heads unerringly towards its target, dealing magic damage and causing different effects depending upon its color. As the level of the caster improves, both the damage dealt and number of colors known increases. The color of any given orb is chosen randomly from the colors known at the mage's level, and the orb is occasionally even multicolored, causing multiple effects. The target cannot avoid the initial damage, but can save vs. spell to negate the secondary effects.
+This spell causes a 2 foot-diameter sphere to appear in the caster's hand. When thrown, the sphere heads unerringly towards its target, dealing magic damage and causing different effects depending upon its color. As the level of the caster improves, both the damage dealt and number of colors known increases. The color of any given orb is chosen randomly from the colors known at the mage's level, and the orb is occasionally even multicolored, causing multiple effects. The target cannot avoid the initial damage, but can save vs. spell to negate the secondary effects.
 
 1st: White, 1D4 damage - Light, -4 penalty to saving throws
 3rd: Aquamarine, 1D6 damage - Magnetism, -4 penalty to AC
