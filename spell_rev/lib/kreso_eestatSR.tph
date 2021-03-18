@@ -402,7 +402,7 @@ END
 		END
 	BUT_ONLY IF_EXISTS
 
-	COPY_EXISTING	~%sppr114%.spl~	override		//  sunscorch
+	COPY_EXISTING	~%sppr116%.spl~	override		//  Sunscorch
 		LPF	ADD_SPELL_EFFECT
 			INT_VAR
 				insert_point = 0

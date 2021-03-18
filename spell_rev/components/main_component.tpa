@@ -435,8 +435,17 @@ COPY ~spell_rev\sppr1##\sppr111.spl~     ~override~  // Armor of Faith
 COPY ~spell_rev\sppr1##\sppr113.spl~     ~override~  // Doom
   SAY NAME1 @23    SAY UNIDENTIFIED_DESC @24
 
-ADD_SPELL ~spell_rev\sppr1##\sppr114.spl~ 1 1 ~CLERIC_SUNSCORCH~ // Sunscorch (new druid spell)
+ADD_PROJECTILE ~spell_rev\projectles\dvffire.pro~
+ADD_SPELL ~spell_rev\sppr1##\sppr114.spl~ 1 1 ~CLERIC_FAERIE_FIRE~ // Faerie Fire  (new druid spell)
   SAY NAME1 @25    SAY UNIDENTIFIED_DESC @26
+  WRITE_SHORT 0x98 %dvffire%
+COPY ~spell_rev\sppr1##\dvffire.spl~    ~override~
+
+ADD_SPELL ~spell_rev\sppr1##\sppr115.spl~ 1 1 ~CLERIC_STRENGTH_OF_STONE~ // Strength of Stone (new druid spell)
+  SAY NAME1 @27    SAY UNIDENTIFIED_DESC @28
+
+ADD_SPELL ~spell_rev\sppr1##\sppr116.spl~ 1 1 ~CLERIC_SUNSCORCH~ // Sunscorch (new druid spell)
+  SAY NAME1 @29    SAY UNIDENTIFIED_DESC @30
 COPY ~spell_rev\sppr1##\dvsun.spl~       ~override~
 COPY ~spell_rev\sppr1##\dvsuns1.eff~     ~override~
 COPY ~spell_rev\sppr1##\dvsuns2.eff~     ~override~
@@ -448,16 +457,7 @@ COPY ~spell_rev\sppr1##\dvsuns7.eff~     ~override~
 COPY ~spell_rev\sppr1##\dvsuns8.eff~     ~override~
 COPY ~spell_rev\sppr1##\dvsuns9.eff~     ~override~
 COPY ~spell_rev\sppr1##\dvsuns10.eff~    ~override~
-COPY ~spell_rev\sppr1##\sppr114i.eff~    ~override~
-
-ADD_SPELL ~spell_rev\sppr1##\sppr115.spl~ 1 1 ~CLERIC_STRENGTH_OF_STONE~ // Strength of Stone (new druid spell)
-  SAY NAME1 @27    SAY UNIDENTIFIED_DESC @28
-
-ADD_PROJECTILE ~spell_rev\projectles\dvffire.pro~
-ADD_SPELL ~spell_rev\sppr1##\sppr116.spl~ 1 1 ~CLERIC_FAERIE_FIRE~ // Faerie Fire  (new druid spell)
-  SAY NAME1 @29    SAY UNIDENTIFIED_DESC @30
-  WRITE_SHORT 0x98 %dvffire%
-COPY ~spell_rev\sppr1##\dvffire.spl~    ~override~
+COPY ~spell_rev\sppr1##\sppr116i.eff~    ~override~
 
 ADD_SPELL ~spell_rev\sppr1##\sppr117.spl~ 1 1 ~CLERIC_REGENERATE_LIGHT_WOUNDS~ // Regenerate Light Wounds (new druid spell)
   SAY NAME1 @301    SAY UNIDENTIFIED_DESC @302
