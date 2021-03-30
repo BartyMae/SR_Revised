@@ -481,6 +481,7 @@ COPY ~spell_rev\sppr1##\batsu.cre~       ~override~
   SAY NAME1 @4008    SAY NAME2 @4008
 COPY ~spell_rev\sppr1##\batsu.itm~       ~override~
   SAY NAME1 @4009    SAY NAME2 @4009
+COPY ~spell_rev\sppr1##\dvbatsu.eff~    ~override~
 ADD_PROJECTILE ~spell_rev\projectles\dvrswarm.pro~
 COPY ~spell_rev\sppr1##\dvrswarm.spl~    ~override~
   WRITE_SHORT 0x98 %dvrswarm%
