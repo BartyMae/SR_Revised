@@ -465,8 +465,8 @@ Saving Throw: None
 
 When this spell is cast, the priest's body shudders and glows with a shimmering aura as it becomes a vessel for the power of their god. When they do this, they gain a +1 bonus to Strength, Dexterity, and Constitution scores for every three levels of the caster, up to a maximum of +3 at 9th level. Multiple castings of this spell or similar effects are not cumulative.~
 
-@59=~Cure Moderate Wounds~
-@60=~Cure Moderate Wounds
+@59=~Cure Medium Wounds~
+@60=~Cure Medium Wounds
 Level: 2
 School: Necromancy
 Sphere: Healing
@@ -519,8 +519,8 @@ Saving Throw: Special
 
 This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
 
-@317=~Cause Moderate Wounds~
-@318=~Cause Moderate Wounds
+@317=~Cause Medium Wounds~
+@318=~Cause Medium Wounds
 Level: 2
 School: Necromancy
 Sphere: Necromantic
@@ -530,7 +530,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Moderate Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 2D10 + 2/level magic damage, up to a maximum of 2D10 + 20 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Medium Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 2D10 + 2/level magic damage, up to a maximum of 2D10 + 20 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @323=~Animal Summoning II~
 @324=~Animal Summoning II
@@ -836,8 +836,8 @@ Wolf (3 HD):
 Special Characteristics:
  Pack Attack: each wolf within 10' receives a +1 bonus to THAC0~
 
-@107=~Cause Serious Wounds~
-@108=~Cause Serious Wounds
+@107=~Cause Moderate Wounds~
+@108=~Cause Moderate Wounds
 Level: 3
 School: Necromancy
 Sphere: Necromantic
@@ -847,10 +847,10 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Serious Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 3D10 + 3/level magic damage, up to a maximum of 3D10 + 30 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Moderate Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 3D10 + 3/level magic damage, up to a maximum of 3D10 + 30 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
-@109=~Cure Serious Wounds~
-@110=~Cure Serious Wounds
+@109=~Cure Moderate Wounds~
+@110=~Cure Moderate Wounds
 Level: 3
 School: Necromancy
 Sphere: Healing
@@ -943,8 +943,8 @@ This spell causes a major disease and weakness in a creature. For the following 
 
 /*------------------Level 4------------------*/
 
-@111=~Cure Critical Wounds~
-@112=~Cure Critical Wounds
+@111=~Cure Serious Wounds~
+@112=~Cure Serious Wounds
 Level: 4
 School: Necromancy
 Sphere: Healing
@@ -1155,8 +1155,8 @@ Saving Throw: None
 
 When a Negative Plane Protection spell is cast, the recipient receives complete protection from negative energy attacks. This spell also affords the recipient partial protection from monsters with Negative Energy plane connections (such as vampires) and certain weapons and spells that drain levels. A protected creature is immune to any form of level drain for the duration of the spell, though they will still suffer normal hit point damage from the physical attack, if applicable.~
 
-@137=~Cause Critical Wounds~
-@138=~Cause Critical Wounds
+@137=~Cause Serious Wounds~
+@138=~Cause Serious Wounds
 Level: 4
 School: Necromancy
 Sphere: Necromantic
@@ -1166,7 +1166,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Critical Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 4D10 + 4/level magic damage, up to a maximum of 4D10 + 40 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Serious Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 4D10 + 4/level magic damage, up to a maximum of 4D10 + 40 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @139=~Farsight~
 @140=~Farsight
@@ -1281,8 +1281,8 @@ Special Characteristics:
  Protected Against: Entangle, Grease, Web, and Poison
  Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)~
 
-@153=~Cure Mortal Wounds~
-@154=~Cure Mortal Wounds
+@153=~Cure Critical Wounds~
+@154=~Cure Critical Wounds
 Level: 5
 School: Necromancy
 Sphere: Healing
@@ -1402,8 +1402,8 @@ Saving Throw: None
 
 Upon the casting of this spell, the recipient receives a +2% bonus to magic resistance for every experience level of the caster, up to a maximum of 40% at 20th level. Multiple castings of this spell are not cumulative.~
 
-@169=~Cause Mortal Wounds~
-@170=~Cause Mortal Wounds
+@169=~Cause Critical Wounds~
+@170=~Cause Critical Wounds
 Level: 5
 School: Necromancy
 Sphere: Healing
@@ -1413,7 +1413,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell is the reverse of Cure Mortal Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 5D10 + 5/level magic damage, up to a maximum of 5D10 + 50 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
+This spell is the reverse of Cure Critical Wounds. Instead of healing the creature touched, it causes injuries. On a successful touch from the priest, the target suffers 5D10 + 5/level magic damage, up to a maximum of 5D10 + 50 at 10th level. The spell expires once the priest makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed. Magic resistance does not affect this spell.~
 
 @171=~Slay Living~
 @172=~Slay Living
@@ -2449,7 +2449,7 @@ Known Spells:
  1° Bless (x3), Resist Fear (x3)
  2° Aid (x3), Find Trap, Know Opponent, Draw Upon Divine Might
  3° Cure Disease (x2), Holy Smite (x2), Break Enchantment (x2)
- 4° Cure Critical Wounds (x2), Neutralize Poison (x2), Magic Circle Against Evil
+ 4° Cure Serious Wounds (x2), Neutralize Poison (x2), Magic Circle Against Evil
  5° Mass Cure, Raise Dead, True Seeing
  6° Blade Barrier, Heal
  7° Holy Word~
