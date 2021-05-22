@@ -1047,7 +1047,7 @@ ADD_SPELL ~spell_rev\sppr5##\sppr525.spl~ 1 5 ~CLERIC_ANIMAL_GROWTH~  // Animal 
 COPY ~spell_rev\sppr5##\dvanigro.spl~    ~override~
 COPY ~spell_rev\sppr5##\dvanigro.eff~    ~override~
 
-ADD_SPELL ~spell_rev\sppr5##\sppr526.spl~ 1 4 ~CLERIC_REGENERATE_CRITICAL_WOUNDS~  // Regenerate Critical Wounds (new druid spell)
+ADD_SPELL ~spell_rev\sppr5##\sppr526.spl~ 1 5 ~CLERIC_REGENERATE_CRITICAL_WOUNDS~  // Regenerate Critical Wounds (new druid spell)
   SAY NAME1 @30700  SAY UNIDENTIFIED_DESC @30800
 
 COPY ~spell_rev\sppr5##\spja01.spl~      ~override~  // Harper's Call
