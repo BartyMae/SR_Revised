@@ -875,8 +875,8 @@ Saving Throw: None
 
 This spell surrounds the caster with invisible curtains of stormy winds that move with them. Non-magical missile weapons are deflected away while gases cannot penetrate the barrier, and the wind wall also grants the caster a +3 bonus to saving throws vs. breath and a +4 bonus to AC vs. missile. Insect swarms cannot pass through the storm shield. Multiple castings of this spell are not cumulative.~
 
-@305=~Regenerate Serious Wounds~
-@306=~Regenerate Serious Wounds
+@305=~Regenerate Medium Wounds~
+@306=~Regenerate Medium Wounds
 Level: 3
 School: Alteration
 Sphere: Healing
@@ -1222,8 +1222,8 @@ Saving Throw: None
 
 When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 80% and receive 2D8 cold damage for each round they remain inside the storm.~
 
-@307=~Regenerate Critical Wounds~
-@308=~Regenerate Critical Wounds
+@307=~Regenerate Serious Wounds~
+@308=~Regenerate Serious Wounds
 Level: 4
 School: Alteration
 Sphere: Healing
@@ -1585,6 +1585,19 @@ Area of Effect: 30' radius
 Saving Throw: None
 
 When this spell is cast, the caster causes all friendly animals within range to become tougher and more tenacious, granting them a +2 bonus to THAC0, damage, AC, and saving throws. The spell also increases their hit points by 50%, and these bonus hit points are lost first when they take damage. Multiple castings of this spell are not cumulative.~
+
+@30700=~Regenerate Critical Wounds~
+@30800=~Regenerate Critical Wounds
+Level: 5
+School: Alteration
+Sphere: Healing
+Range: Touch
+Duration: 5 rounds
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+This spell enables the caster to mend the wounds and injuries of the target by granting them temporary regeneration. The affected creature will regenerate 75 + 7.5/two levels hit points over the duration of the spell, up to a maximum of 150 at 20th level.~
 
 
 /*------------------Level 6------------------*/
