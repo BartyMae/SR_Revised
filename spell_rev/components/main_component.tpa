@@ -836,7 +836,6 @@ COPY_EXISTING ~spell.ids~ ~override~
 
 COPY ~spell_rev\sppr4##\sppr408.spl~     ~override~  // Magic Circle against Evil (previously named Protection from Evil 10' Radius)
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
-
 COPY ~spell_rev\sppr4##\scrl5d.itm~      ~override~
   SAY NAME2 @125    SAY IDENTIFIED_DESC   @126
 
@@ -1561,7 +1560,7 @@ COPY ~spell_rev\shared\alternatives\spwi123g.spl~     ~override~
 COPY ~spell_rev\shared\alternatives\spwi123h.spl~     ~override~
   SAY NAME1 @8030
 COPY ~spell_rev\shared\alternatives\dvfindfa.2da~     ~override~
-END ELSE BEGIN  
+END ELSE BEGIN
 COPY ~spell_rev\spwi1##\spwi123.spl~     ~override~  // Find Familiar
   SAY NAME1 @439    SAY UNIDENTIFIED_DESC @440
 COPY ~spell_rev\spwi1##\scrl6d.itm~      ~override~
@@ -3773,13 +3772,231 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN 
+	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       READ_BYTE 0x18 flags
       WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
 	END
   END
 END
-END  
+END
+END
+
+
+/*----------------Friendly spells go through Spell Deflection-----------------*/
+
+ACTION_IF piercing_friendly_spells=1 BEGIN
+  ACTION_FOR_EACH resource IN
+    ~spin101~
+    ~spin102~
+    ~spin103~
+    ~spcl211~
+    ~spcl211~
+    ~spcl222~
+    ~spcl721~
+    ~spcl731~
+    ~spcl741~
+    ~spdr401~
+    ~spra301~
+    ~spra302~
+    ~spra303~
+    ~spcl233~
+    ~spin113~
+    ~spin118~
+    ~spin109~
+    ~spin121~
+    ~spin676~
+    ~spin826~
+    ~spin827~
+    ~spin828~
+    ~sppr101~
+    ~sppr103~
+    ~sppr106~
+    ~sppr107~
+    ~sppr108~
+    ~sppr109~
+    ~sppr110~
+    ~sppr111~
+    ~sppr201~
+    ~sppr202~
+    ~sppr205~
+    ~sppr206~
+    ~sppr207~
+    ~sppr210~
+    ~sppr212~
+    ~sppr213~
+    ~sppr214~
+    ~sppr306~
+    ~sppr307~
+    ~sppr308~
+    ~sppr312~
+    ~sppr315~
+    ~sppr317~
+    ~sppr318~
+    ~sppr401~
+    ~sppr403~
+    ~sppr404~
+    ~sppr406~
+    ~sppr407~
+    ~sppr408~
+    ~sppr409~
+    ~sppr412~
+    ~sppr413~
+    ~sppr414~
+    ~sppr415~
+    ~sppr417~
+    ~sppr502~
+    ~sppr504~
+    ~sppr506~
+    ~sppr507~
+    ~sppr508~
+    ~sppr509~
+    ~sppr510~
+    ~sppr513~
+    ~sppr514~
+    ~sppr516~
+    ~spja01~
+    ~sppr603~
+    ~sppr606~
+    ~sppr607~
+    ~sppr608~
+    ~sppr611~
+    ~sppr613~
+    ~sppr701~
+    ~sppr711~
+    ~sppr712~
+    ~sppr713~
+    ~sppr721~
+    ~sppr725~
+    ~sppr729~
+    ~sppr730~
+    ~sppr731~
+    ~sppr732~
+    ~spwi102~
+    ~spwi107~
+    ~spwi108~
+    ~spwi110~
+    ~spwi111~
+    ~spwi113~
+    ~spwi114~
+    ~spwi115~
+    ~spwi117~
+    ~spwi120~
+    ~spwi123~
+    ~spwi124~
+    ~spwi201~
+    ~spwi206~
+    ~spwi209~
+    ~spwi210~
+    ~spwi212~
+    ~spwi214~
+    ~spwi218~
+    ~spwi219~
+    ~spwi222~
+    ~spwi301~
+    ~spwi305~
+    ~spwi307~
+    ~spwi310~
+    ~spwi311~
+    ~spwi315~
+    ~spwi317~
+    ~spwi318~
+    ~spwi319~
+    ~spwi320~
+    ~spwi325~
+    ~spwi402~
+    ~spwi403~
+    ~spwi405~
+    ~spwi406~
+    ~spwi408~
+    ~spwi410~
+    ~spwi414~
+    ~spwi416~
+    ~spwi417~
+    ~spwi418~
+    ~spwi420~
+    ~spwi424~
+    ~spwi511~
+    ~spwi512~
+    ~spwi517~
+    ~spwi518~
+    ~spwi519~
+    ~spwi522~
+    ~spwi602~
+    ~spwi603~
+    ~spwi606~
+    ~spwi607~
+    ~spwi611~
+    ~spwi613~
+    ~spwi617~
+    ~spwi618~
+    ~spwi701~
+    ~spwi702~
+    ~spwi703~
+    ~spwi708~
+    ~spwi710~
+    ~spwi721~
+    ~spwi722~
+    ~spwi801~
+    ~spwi802~
+    ~spwi803~
+    ~spwi804~
+    ~spwi808~
+    ~spwi809~
+    ~spwi902~
+    ~spwi907~
+    ~spwi908~
+    ~spwi915~
+    ~spwi916~
+    ~spwi917~
+    ~spwi920~
+    ~spwi921~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+  	  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        LPF ALTER_EFFECT INT_VAR silent = 1 power = 0 END
+  	  END
+	BUT_ONLY
+    END
+  END
+  ACTION_FOR_EACH add_spl IN
+    CLERIC_STRENGTH_OF_STONE
+    CLERIC_REGENERATE_LIGHT_WOUNDS
+    CLERIC_GOOD_BERRIES
+    CLERIC_CAUSE_LIGHT_WOUNDS
+    CLERIC_CURE_MODERATE_WOUNDS
+    CLERIC_REGENERATE_MODERATE_WOUNDS
+    CLERIC_CAUSE_MODERATE_WOUNDS
+    CLERIC_CAUSE_MEDIUM_WOUNDS
+    CLERIC_STORM_SHIELD
+    CLERIC_REGENERATE_MEDIUM_WOUNDS
+    CLERIC_MAGIC_FANG
+    CLERIC_REGENERATE_SERIOUS_WOUNDS
+    CLERIC_PROTECTION_FROM_ACID
+    CLERIC_PROTECTION_FROM_COLD
+    CLERIC_PROTECTION_FROM_LIGHTNING
+    CLERIC_PROTECTION_FROM_FIRE
+    CLERIC_MASS_REGENERATE
+    CLERIC_ANIMAL_GROWTH
+    CLERIC_REGENERATE_CRITICAL_WOUNDS
+    CLERIC_REGENERATION_DRUID_VERSION
+    WIZARD_DIMENSION_JUMP
+    WIZARD_EXPEDITIOUS_RETREAT
+    WIZARD_RESIST_ELEMENTS
+    WIZARD_PROTECTION_FROM_ELEMENTAL_ENERGY
+    WIZARD_MESTILS_ACID_SHEATH
+    WIZARD_DISPELLING_SCREEN
+  BEGIN
+    ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]%add_spl%[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+      LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = EVAL ~%add_spl%~ RET spell_res END
+      OUTER_SPRINT $add_spl_spells(~%spell_res%~) ~%add_spl%~
+    END
+  END
+  ACTION_PHP_EACH add_spl_spells AS %spell_res% => %add_spl% BEGIN
+    COPY_EXISTING ~%spell_res%.spl~ ~override~ 	
+      LPF ALTER_EFFECT INT_VAR silent = 1 power = 0 END
+    BUT_ONLY
+  END
 END
 
 
@@ -3805,11 +4022,11 @@ END
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-// added by SubtleDoctor:
+// added by SubtleDoctor
 
 /*------ SET ARCANE SPELL SCHOOLS ------*/
 
-// and mark arcane spells for spellbook removal 
+// and mark arcane spells for spellbook removal
 
 INCLUDE ~spell_rev/lib/d5_spell_school_list.tpa~
 INCLUDE ~spell_rev/lib/d5_set_spell_schools.tpa~
