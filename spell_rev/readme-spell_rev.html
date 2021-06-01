@@ -123,6 +123,30 @@ COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
   </p>
 </div>
 
+<h2>Optional settings.ini tweaks</h2>
+<div class="section">
+  <p>
+    In [game directory]/spell_rev/, there is a "settings.ini" file that you can open and modify with a plaintext editor (e.g. Notepad) to change certain characteristics of Spell Revisions <strong>before</strong> installing the main component of Spell Revisions.<br />
+    <br />
+    <strong>install_tobex</strong> (default 1)<br />When set to 1, ToBEx will be installed on non-EE games (if not already installed - ToBEx is required for non-EE games for SR to fully function).<br /><br />
+    <strong>revised_saves</strong> (default 1)<br />When set to 1, revised saving throws for all characters will be installed. These revised tables are an attempt to be more sensible and better balanced between the classes, but they do somewhat deviate from the official 2E AD&D saving throws tables.<br /><br />
+    <strong>celestials</strong> (default 1)<br />When set to 1, SR will install its revised celestials (Devas and Planetars).<br /><br />
+    <strong>fiends</strong> (default 1)<br />When set to 1, SR will install its revised fiends (Death Knight, Glabrezu, Pit Fiend).<br /><br />
+    <strong>dispel_globes</strong> (default 1)<br />When set to 1, globes of invulnerability cannot be taken down by dispelling effects (e.g. Dispel/Remove Magic, Carsomyr, etc.), but the globe will not protect the rest of their spells from being protected (vanilla BG2 behavior). When set to 0, the globe can be taken down as well (vanilla BG1 behavior). When set to 2, the globe cannot be dispelled and <strong>will</strong> protect all other effects on the protected creature from being dispelled as well. With any setting, globes will still be taken down with normal anti-magic (e.g. Secret Word, Ruby Ray of Reversal, etc.).<br /><br />
+    <strong>petrification</strong> (default 1)<br />When set to 1, all creatures will be in a permanent "held" status when petrified instead of the old stone status (avoids potentially game-breaking bugs). When set to 0, the vanilla style of petrification will be used instead. When set to 2, only enemies will be petrified in the stone style; party members will instead be permanently held.<br /><br />
+    <strong>alternative_remove_magic </strong>(default 0)<br />When set to 1, Remove Magic no longer uses the caster level vs. target level mechanics of Dispel Magic, but instead a simple saving throw that scales with level (-1 for every 5 levels of the caster, up to a maximum of -4 at 20th level). When set to 0, the vanilla dispelling mechanics are used. When set to 2, Remove Magic becomes a sort of lesser Breach AoE effect - one combat and one specific protection are removed from each creature, growing to two of each at 10th level, then three of each at 15th level.<br /><br />
+    <strong>piercing_friendly_spells </strong> (default 0)<br />When set to 1, all friendly spells may pierce through spell protection spells (e.g. Globe of Invulnerability, Spell Deflection, Spell Trap, etc.). This allows you to use e.g. healing spells without worrying about your Spell Deflection wasting charges to absorb it (opposite of vanilla behavior).<br /><br />
+    <strong>aoe_lower_resistance </strong>(default 0)<br />When set to 1, Lower Resistance becomes a 20' radius AoE effect (makes it more feasible for use against e.g. groups of drow).<br /><br />
+    <strong>blindness </strong>(default 0)<br />When set to 1, the arcane spell Blindness is restored to the slot that Obscuring Mist currently occupies (but remains in druids' spellbooks).<br /><br />
+    <strong>pick_familiar </strong>(default 0)<br />When set to 1, the Find Familiar spell allows you to choose the type of familiar you wish to have.<br /><br />
+    <strong>resist_imprisonment </strong>(default 0)<br />When set to 1, Imprisonment allows for a vs. spell saving throw at a -6 penalty (note that it is still not subject to magic resistance even when this is enabled).<br /><br />
+    <strong>slowing_web </strong>(default 0)<br />When set to 1, Web no longer holds characters but instead makes it so characters cannot attack or cast spells, are slowed down to 1/8th movement speed, and suffer a -4 penalty to AC.<br /><br />
+    <strong>spell_immunity </strong>(default 0)<br />Non-fuctional at this time, do not change.<br /><br />
+    <strong>ee_two_handed_shapeshifts </strong>(default 1, EE-only)<br />When set to 1, off-hand attacks/shields are disabled for shapeshifted/polymorphed characters (bug/exploit fix).<br /><br />
+    <strong>ee_enchanted_weapon </strong>(default 0, EE-only)<br />When set to 1, the 4th level arcane spell Enchanted Weapon simply sets your current weapon to have an enchantment bonus of +3 instead of allowing you to create an entirely new weapon.<br /><br />
+  </p>
+ </div>
+
 <h2>Spell Revisions</h2>
 <div class="section">
   <p>
