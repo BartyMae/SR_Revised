@@ -18,7 +18,7 @@
 	<br/>SR Revised by: <a href="https://www.gibberlings3.net/profile/4011-bartimaeus/">Bartimaeus</a>
     <br />On the web: <a href="https://www.gibberlings3.net/mods/spells/spell_rev/">Home page</a></strong>, <strong><a href="https://www.gibberlings3.net/forums/forum/153-spell-revisions/">discussion forum</a></strong>, and <strong><a href="https://www.gibberlings3.net/forums/topic/29618-sr-revised">SR Revised thread</a></strong>
   </p>
-  <p><strong>Spell Revisions V4 B18</strong>
+  <p><strong>Spell Revisions V4 b18</strong>
   <br /><strong>SR Revised V1.3.500</strong>
     <br /><strong>Languages:</strong> English
     <br /><strong>Platforms:</strong> Windows, Mac OS X, and Linux
@@ -27,11 +27,17 @@
 
 <h2>Overview</h2>
 <div class="section">
-  <p>Spell Revisions aims to fix, tweak, and enhance arcane and divine spells in Baldur's Gate II, Tutu, and Baldur's Gate Trilogy. This originally started as a project to make the spell system more balanced by improving weaker spells and nerfing overpowered ones, but has evolved to also include changes to spells designed to make them more fun and interesting and fixes for spell-related bugs found in the original game.</p>
-  <p>The mod places a high priority on making all of the existing spells viable choices, while keeping an eye on balance issues. Now, Magic Missile won't be the only first-level arcane spell you'll want to memorize! To help achieve this goal, portions of the old spell system that were consistently underpowered, like healing spells and summons, have been vastly improved so that they are competitive options once more.  In addition, <acronym title="Spell Revisions">SR</acronym> takes the stance that low-level spells should not become completely inffective once characters reach higher levels, and adds scaling features to many spells.</p>
-  <p>Among other things, the mod makes druid and cleric spell selections more distinct, with druids focusing on animal and elemental spheres for a repertoire of spells oriented toward the offensive. Arcane spell schools have also been fleshed out, with the belief that each spell level should contain at least one spell from each school. To help fulfill these goals, <acronym title="Spell Revisions">SR</acronym> adds a small number of spells to the game and modifies the schools and restrictions of some existing spells where appropriate.</p>
-  <p><acronym title="Spell Revisions">SR</acronym> also improves the descriptions of many spells to be more accurate, more consistent, and, occasionally, less boring.</p>
-  <p>Complete spell descriptions can be found <a href="#spell_changes">here</a>. I know that not everyone will like all of the changes I've made - and some of them are controversial - but this can be discussed and I'm open to any suggestions. Anyway, if you think that your favorite spell has become complete rubbish, don't worry! You can choose spells that should be left unmodified before starting the installation process. See the Installation section below to learn how.</p>
+  <p>Spell Revisions aims to fix, tweak, and enhance arcane and divine spells in Baldur's Gate II, Tutu, and Baldur's Gate Trilogy. This originally started as a project to make the spell system more balanced by improving weaker spells and nerfing overpowered ones, but has evolved to also include changes to spells designed to make them more fun and interesting as well as fixes for spell-related bugs found in the original game.</p>
+  <p>The mod places a high priority on making all of the existing spells viable choices, while keeping an eye on balance issues. Now Magic Missile won't be the only first-level arcane spell you'll want to memorize! To help achieve this goal, portions of the old spell system that were consistently underpowered, like healing spells and summons, have been vastly improved so that they are competitive options once more. In addition, <acronym title="Spell Revisions">SR</acronym> takes the stance that low-level spells should not become completely inffective once characters reach higher levels, and adds scaling features to many spells.</p>
+  <p>Among other things, the mod makes druid and cleric spell selections more distinct, with druids focusing on animal and elemental spheres for a repertoire of spells offensively-oriented. Arcane spell schools have also been fleshed out, with the belief that each spell level should contain at least one spell from each school. To help fulfill these goals, <acronym title="Spell Revisions">SR</acronym> adds a small number of spells to the game and modifies the schools and restrictions of some existing spells where appropriate.</p>
+  <p><acronym title="Spell Revisions">SR</acronym> also improves the descriptions of many spells to be more accurate, more consistent, and (occasionally) less boring.</p>
+  <p>Complete spell descriptions can be found <a href="#spell_changes">here</a>. I know that not everyone will like all of the changes made - and some of them are controversial - but this can be discussed and suggestions are welcome. Anyway, if you think that your favorite spell has become complete rubbish, don't worry! You can choose spells that should be left unmodified before starting the installation process. See the Installation section below to learn how.</p>
+</div>
+
+<h2>Important Notes</h2>
+<div class="section">
+  <p>If bugs are discovered in the current version of the mod, they are usually corrected in the latest github repository. Before installing SRR, check <a href="https://github.com/BartyMae/SR_Revised">here</a> and download the latest version via the green "Code" button and then "Download ZIP".</p>
+  <p>To install this, you must extract the latest official version of SR (V4 b10, or have an automated tool do it for you) to your game directory as normal, and then additionally extract this mod on top of it before installing SR. Specifically, SR's spell_rev folder should overwrite the normal spell_rev folder - confirm to overwrite folders as well as all files it asks you to. Make sure to look at your settings.ini in your spell_rev directory! There are a number of different customization options in there that you will likely be interested in and possibly want to change in order to get the most out of this mod - see the optional settings.ini tweaks section below for explanations of each one. The default settings.ini is set as per the normal mod, but the different options are worth looking at (and a few additional ones specific to SRR have been added).
 </div>
 
 <h2>Compatibility</h2>
@@ -39,8 +45,8 @@
   <p>This mod has been designed to work with original <acronym title="Baldur's Gate II: Throne of Bhaal">BG2:ToB</acronym> installations. It has not been extensively tested solely with <acronym title="Baldur's Gate II: Shadows of Amn">BG2:SoA</acronym>, but there are no problems anticipated if the expansion is not installed. The mod has also been tested and should be completely compatible with <acronym title="Baldur's Gate Trilogy">BGT</acronym>, Tutu, and Enhanced Edition games. A proper install order, such as listed below, should be followed to attain maximum compatibility.</p>
   <p>Spell Revisions should also work fine with most other <acronym title="Weimer Dialogue Utility">WeiDU</acronym> and non-<acronym title="Weimer Dialogue Utility">WeiDU</acronym> mods (it has been tested with most of them). Small problems may arise if you've installed other spell-modifying mods before <acronym title="Spell Revisions">SR</acronym>. Spell Revisions will overwrite changes made by these mods (although new spells introduced by them probably won't be affected). To prevent this, you may wish to disable specific changes made by this mod. Read the section below for details on how to do this. You shouldn't need to start a new game to take advantage of this mod, but doing so will ensure that divine spellbooks of party members are properly updated.</p>
   <p><strong>1pp and Install Order</strong><br />
-  <p>Spell Revisions has been designed with specifically 1pp in mind. 1pp is a mod by Erephine that was fully integrated into the Enhanced Editions (and thus EE users do not need to install it) that fix numerous visual inconsistencies, improve bad graphics, tweak and add new graphics, etc. for BG2:ToB games - if you are not playing an Enhanced Edition game, it is highly recommended that you install 1pp to take full advantage of its changes. The general install order is to first install everything you want of 1pp except for the avatar-switching component (which should not be installed until much later in the install after all item-adding mods, including IR, have already been installed - after SCS/atweaks/Infinity Animations is my suggestion), then the main component of IR/R, and then the main component of SR/R. Once again, Enhanced Edition players do not need to worry about 1pp - it's already integrated into your game and doesn't need installation.</p>
-  <p>Your general install order (excluding ToBEx/BG2 Fixpack/BGT/1pp if you're playing an Enhanced Edition game) should look something like this:</p>
+  Spell Revisions has been designed with specifically 1pp in mind. 1pp is a mod by Erephine that was fully integrated into the Enhanced Editions (and thus EE users do not need to install it) that fix numerous visual inconsistencies, improve bad graphics, tweak and add new graphics, etc. for BG2:ToB games - if you are not playing an Enhanced Edition game, it is highly recommended that you install 1pp to take full advantage of its changes. The general install order is to first install everything you want of 1pp except for the avatar-switching component (which should not be installed until much later in the install after all item-adding mods, including IR, have already been installed - after SCS/atweaks/Infinity Animations is my suggestion), then the main component of IR/R, and then the main component of SR/R. Once again, Enhanced Edition players do not need to worry about 1pp - it's already integrated into your game and doesn't need installation.<br /><br />
+  Your general install order (excluding ToBEx/BG2 Fixpack/BGT/1pp if you're playing an Enhanced Edition game) should look something like this:<br />
   <ul>1. ToBEx<br />
   2. BG2 Fixpack<br />
   3. Baldur's Gate Trilogy<br />
@@ -61,10 +67,9 @@
   18. Item Revisions (secondary components)<br />
   19. Infinity Animations (secondary components)<br />
   20. 1pp/Anthology Tweaks ("Smart Avatar & Armour Switching" component / "Avatar Morphing Script")</ul>
-  <p>You may not be using all of these, and will undoubtedly be using more besides that, but this should give you the general idea of what your install order should look like. Don't install the secondary components of IR/R and SR/R until much later in your install, after all item/spell/NPC-adding mods have been installed. For IR/R, post-SCS/atweaks is what is suggested - in contrast, the secondary components of SR/R should usually be installed right before SCS to make sure that SCS spellcasters are using the correct versions of spells. If you're using an automated tool to install your mods, the very least you should see is the general install order be 1pp-IR-SR.</p>
+  You may not be using all of these, and will undoubtedly be using more besides that, but this should give you the general idea of what your install order should look like. Don't install the secondary components of IR/R and SR/R until much later in your install, after all item/spell/NPC-adding mods have been installed. For IR/R, post-SCS/atweaks is what is suggested - in contrast, the secondary components of SR/R should usually be installed right before SCS to make sure that SCS spellcasters are using the correct versions of spells. If you're using an automated tool to install your mods, the very least you should see is the general install order be 1pp-IR-SR.</p>
   <p><strong>Divine Remix</strong><br />
-  <p>Spell Revisions may have some compatibility issues with Divine Remix, so it is not recommended to use them together at this time. Currently, installing <acronym title="Spell Revisions">SR</acronym> after Divine Remix will result in divine spells no longer following the sphere system while installing Divine Remix after <acronym title="Spell Revisions">SR</acronym> will result in the replacement of some of <acronym title="Spell Revisions">SR</acronym>'s spell descriptions and the disappearance of some of <acronym title="Spell Revisions">SR</acronym>'s new and moved spells.</p>
-  
+  Spell Revisions may have some compatibility issues with Divine Remix, so it is not recommended to use them together at this time. Currently, installing <acronym title="Spell Revisions">SR</acronym> after Divine Remix will result in divine spells no longer following the sphere system while installing Divine Remix after <acronym title="Spell Revisions">SR</acronym> will result in the replacement of some of <acronym title="Spell Revisions">SR</acronym>'s spell descriptions and the disappearance of some of <acronym title="Spell Revisions">SR</acronym>'s new and moved spells.</p>
 </div>
 
 <h2>Installation</h2>
@@ -75,12 +80,10 @@
   </p>
   <p>Alternatively the files can be extracted from the archive using <a href="http://www.rarlab.com/">WinRAR</a>. If properly extracted, you should have a <strong>"spell_rev"</strong> folder and <strong>setup-spell_rev.exe</strong> in your <acronym title="Baldur's Gate II">BG2</acronym>/Tutu folder. To install, double-click <strong>setup-spell_rev.exe</strong> and follow the instructions on screen.</p>
   <p>Please run <strong>setup-spell_rev.exe</strong> in your <acronym title="Baldur's Gate II">BG2</acronym>/Tutu folder to reinstall, uninstall, or otherwise change components.</p>
-  
   <p>
     <strong>Mac OS X</strong>
     <br /><em>If the mod was previously installed, uninstall it before extracting the new version.</em> Spell Revisions is packaged and installed with <acronym title="Weimer Dialogue Utility">WeiDU</acronym>. To install, simply extract the contents of the mod into your <acronym title="Baldur's Gate II">BG2</acronym>/Tutu folder. If properly extracted, you should have a <strong>"spell_rev"</strong> folder, <strong>setup-spell_rev</strong>, and <strong>setup-spell_rev.command</strong> in your <acronym title="Baldur's Gate II">BG2</acronym>/Tutu folder. To install, double-click <strong>setup-spell_rev.command</strong> and follow the instructions on screen.
   </p>
-  
   <p>
     <strong>Linux</strong>
     <br />Extract the contents of the mod to the folder of the game you wish to modify. Download the latest version of WeiDU for Linux from <a href="http://www.weidu.org/%7Ethebigg"><acronym title="Weimer Dialogue Utility">WeiDU</acronym>.org</a> and copy WeiDU and WeInstall to /usr/bin. Following that, open a terminal, cd to your installation directory, run 'tolower' and answer Y to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lower cased file names. If you're unsure, running tolower and choosing both options is the safe bet.
@@ -88,25 +91,6 @@
   <p>
     Run <strong>WeInstall spell_rev</strong> in your game folder to install the mod. Then run <strong>wine BGMain.exe</strong> and start playing.
   </p>
-  
-  <br />
-  
-  <p><strong>How to Prevent Certain Spells from Being Installed</strong>
-    <br />Note: this must be done before installing the mod. To disable a certain spell, open the file <strong>spell_rev/setup-spell_rev.tp2</strong> with a text editor, search for the spell in question, and comment out it and its related files /* like so */. Anything inside the commented area will get skipped when installing. Here is an example for Oracle.
-  </p>
-  <p>
-    setup-spell_rev.tp2 - searching for 'Oracle' yields:
-  </p>
-  <pre>COPY ~spell_rev\spwi5##\spwi515.spl~     ~override~  // Oracle
-  SAY NAME1 @639    SAY UNIDENTIFIED_DESC @640
-COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
-  SAY NAME2 @639    SAY IDENTIFIED_DESC   @640</pre>
-  <p>Adding the following will prevent the spell from being installed:</p>
-  <pre><span class="red">/* </span>COPY ~spell_rev\spwi5##\spwi515.spl~     ~override~  // Oracle
-  SAY NAME1 @639    SAY UNIDENTIFIED_DESC @640
-COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
-  SAY NAME2 @639    SAY IDENTIFIED_DESC   @640<span class="red"> */</span></pre>
-  <p>Hooray, Oracle will no longer be changed when you install the mod! If you have any questions or require assistance with any of the above, feel free to drop me a line in the <a href="http://gibberlings3.net/forums/index.php?showforum=153">forum</a>.</p>
 </div>
 
 <h2>Components</h2>
@@ -149,8 +133,7 @@ COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
 <h2>Optional settings.ini tweaks</h2>
 <div class="section">
   <p>
-    In [game directory]/spell_rev/, there is a "settings.ini" file that you can open and modify with a plaintext editor (e.g. Notepad) to change certain characteristics of Spell Revisions <strong>before</strong> installing the main component of Spell Revisions.<br />
-    <br />
+  In [game directory]/spell_rev/, there is a "settings.ini" file that you can open and modify with a plaintext editor (e.g. Notepad) to change certain characteristics of Spell Revisions <strong>before</strong> installing the main component of Spell Revisions.<br /><br />
     <strong>install_tobex</strong> (default 1)<br />When set to 1, ToBEx will be installed on non-EE games (if not already installed - ToBEx is required for non-EE games for SR to fully function).<br /><br />
     <strong>revised_saves</strong> (default 1)<br />When set to 1, revised saving throws for all characters will be installed. These revised tables are an attempt to be more sensible and better balanced between the classes, but they do somewhat deviate from the official 2E AD&D saving throws tables.<br /><br />
     <strong>celestials</strong> (default 1)<br />When set to 1, SR will install its revised celestials (Devas and Planetars).<br /><br />
@@ -168,7 +151,7 @@ COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
     <strong>ee_two_handed_shapeshifts </strong>(default 1, EE-only)<br />When set to 1, off-hand attacks/shields are disabled for shapeshifted/polymorphed characters (bug/exploit fix).<br /><br />
     <strong>ee_enchanted_weapon </strong>(default 0, EE-only)<br />When set to 1, the 4th level arcane spell Enchanted Weapon simply sets your current weapon to have an enchantment bonus of +3 instead of allowing you to create an entirely new weapon.<br /><br />
   </p>
- </div>
+</div>
 
 <h2>Spell Revisions</h2>
 <div class="section">
@@ -208,25 +191,43 @@ COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
   Special   - the spell has multiple saving throws, different targets roll different saving throws, etc.
 &lt;Description&gt;</pre>
   <p>
-    <strong>Universal School of Magic</strong>
-    <br />Spells that belong to the universal school can be learned and cast by every specialist mage. Universal spells include Find Familiar, all contingency spells, all sequencer and trigger spells, and Wish spells.
+  <strong>Universal School of Magic</strong>
+  <br />Spells that belong to the universal school can be learned and cast by every specialist mage. Universal spells include Find Familiar, all contingency spells, all sequencer and trigger spells, and Wish spells.
   </p>
   <p>
-  <p>
-    <strong>Revised Saving Throw Tables</strong>
-    <br />Revised saving throw tables for all player characters will be installed with the main component by default, but this (and a few other things) can be changed in the spell_rev\settings.ini file by setting "revised_saves = 1" to 0.
+  <strong>Revised Saving Throw Tables</strong>
+  <br />Revised saving throw tables for all player characters will be installed with the main component by default, but this (and a few other things) can be changed in the spell_rev\settings.ini file by setting "revised_saves = 1" to 0.
   </p>
   <p>
-    <a id="spell_changes"></a><strong>Overview of Spell Changes</strong>
-    <br />Complete spell descriptions of modified and new spells are available: <a href="readme-arcane_spells.html">arcane</a> and <a href="readme-divine_spells.html">divine</a>. Note that if you're looking for a spell that's not listed here, then it has probably been renamed or possibly replaced by another.
+  <a id="spell_changes"></a><strong>Overview of Spell Changes</strong>
+  <br />Complete spell descriptions of modified and new spells are available: <a href="readme-arcane_spells.html">arcane</a> and <a href="readme-divine_spells.html">divine</a>. Note that if you're looking for a spell that's not listed here, then it has probably been renamed or possibly replaced by another.
   </p>
-  <br />
+</div>
+
+<h2>Power Users</h2>
+<div class="section">
+  <p>
+  <strong>How to Prevent Certain Spells from Being Installed</strong>
+  <br />  Note: this must be done before installing the mod. To disable a certain spell, open the file <strong>spell_rev/setup-spell_rev.tp2</strong> with a text editor, search for the spell in question, and comment out it and its related files /* like so */. Anything inside the commented area will get skipped when installing. Here is an example for Oracle.
+  </p>
+  <p>setup-spell_rev.tp2 - searching for 'Oracle' yields:</p>
+  <pre>COPY ~spell_rev\spwi5##\spwi515.spl~     ~override~  // Oracle
+  SAY NAME1 @639    SAY UNIDENTIFIED_DESC @640
+COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
+  SAY NAME2 @639    SAY IDENTIFIED_DESC   @640</pre>
+  <p>Adding the following will prevent the spell from being installed:</p>
+  <pre><span class="red">/* </span>COPY ~spell_rev\spwi5##\spwi515.spl~     ~override~  // Oracle
+  SAY NAME1 @639    SAY UNIDENTIFIED_DESC @640
+COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
+  SAY NAME2 @639    SAY IDENTIFIED_DESC   @640<span class="red"> */</span></pre>
+  <p>Hooray, Oracle will no longer be changed when you install the mod! If you have any questions or require assistance with any of the above, feel free to drop me a line in the <a href="http://gibberlings3.net/forums/index.php?showforum=153">forum</a>.</p>
+  </p>
 </div>
 
 <h2>Contact Information</h2>
 <div class="section">
-  <p> <a href="http://gibberlings3.net/forums/?showuser=1419">Demivrgvs</a> created this mod. Visit the <a href="http://gibberlings3.net/forums/">Gibberlings Three forums</a> for information on this and any other Gibberlings Three mods on which I may be working.</p>
-  <p> <a href="http://gibberlings3.net/forums/?showuser=1419">Bartimaeus</a> created the Revised version of this mod. Visit the <a href="https://www.gibberlings3.net/profile/4011-bartimaeus/">SR Revised thread</a> on the Gibberlings Three forums if you run into any issues while using this version of the mod.</p>
+  <p><a href="http://gibberlings3.net/forums/?showuser=1419">Demivrgvs</a> created this mod. Visit the <a href="http://gibberlings3.net/forums/">Gibberlings Three forums</a> for information on this and any other Gibberlings Three mods on which I may be working.</p>
+  <p><a href="http://gibberlings3.net/forums/?showuser=1419">Bartimaeus</a> created the Revised version of this mod. Visit the <a href="https://www.gibberlings3.net/profile/4011-bartimaeus/">SR Revised thread</a> on the Gibberlings Three forums if you run into any issues while using this version of the mod.</p>
 </div>
 
 <h2>Thanks and Acknowledgements</h2>
@@ -266,5 +267,5 @@ COPY ~spell_rev\spwi5##\scrl6w.itm~     ~override~
 
 <h2>Credits and Copyright Information</h2>
 <div class="section">
-  <p>This mod may not be sold, published, compiled or redistributed in any form without the consent of its author. Spell Revisions is ©2008-2019 Marco Montagnoli.</p>
+  <p>This mod may not be sold, published, compiled or redistributed in any form without the consent of its author. Spell Revisions is ©2008-2021 Marco Montagnoli.</p>
 </div>
