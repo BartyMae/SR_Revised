@@ -545,75 +545,10 @@ END
 		END
 	BUT_ONLY IF_EXISTS
 
-	COPY_EXISTING	~spwi303.spl~	override		// flame arrow
+	COPY_EXISTING	~spwi303e.spl~	override		// Flame Arrow
 		LPF	ADD_SPELL_EFFECT
 			INT_VAR
-				insert_point = 0
-				opcode = 324
-				target = 2
-				parameter2 = FIRE
-				duration = 1
-			STR_VAR
-				resource = EVAL ~%SOURCE_RES%~
-		END
-	BUT_ONLY IF_EXISTS
-
-	COPY_EXISTING	~spwi303a.spl~	override		// flame arrow
-		LPF	ADD_SPELL_EFFECT
-			INT_VAR
-				insert_point = 0
-				opcode = 324
-				target = 2
-				parameter2 = FIRE
-				duration = 1
-			STR_VAR
-				resource = EVAL ~%SOURCE_RES%~
-		END
-	BUT_ONLY IF_EXISTS
-
-	COPY_EXISTING	~spwi303b.spl~	override		// flame arrow
-		LPF	ADD_SPELL_EFFECT
-			INT_VAR
-				insert_point = 0
-				opcode = 324
-				target = 2
-				parameter2 = FIRE
-				duration = 1
-			STR_VAR
-				resource = EVAL ~%SOURCE_RES%~
-		END
-	BUT_ONLY IF_EXISTS
-
-	COPY_EXISTING	~spwi303c.spl~	override		// flame arrow
-		LPF	ADD_SPELL_EFFECT
-			INT_VAR
-				insert_point = 0
-				opcode = 324
-				target = 2
-				parameter2 = FIRE
-				duration = 1
-			STR_VAR
-				resource = EVAL ~%SOURCE_RES%~
-		END
-	BUT_ONLY IF_EXISTS
-
-	COPY_EXISTING	~spwi303d.spl~	override		// flame arrow
-		LPF	ADD_SPELL_EFFECT
-			INT_VAR
-				insert_point = 0
-				opcode = 324
-				target = 2
-				parameter2 = FIRE
-				duration = 1
-			STR_VAR
-				resource = EVAL ~%SOURCE_RES%~
-		END
-	BUT_ONLY
-
-	COPY_EXISTING	~spwi303e.spl~	override		// flame arrow
-		LPF	ADD_SPELL_EFFECT
-			INT_VAR
-				insert_point = 0
+				insert_point = 1
 				opcode = 324
 				target = 2
 				parameter2 = FIRE
