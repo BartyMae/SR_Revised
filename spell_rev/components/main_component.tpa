@@ -11,6 +11,12 @@ LAF ASSIGN_TEMP_NAMES_FOR_NEW_SPELL_REFERENCES END
 
 /* ----Miscellaneous---- */
 
+// Scroll of Restoration
+// adscroll.itm still copied over in case someone wants to CLUAConsole it for use on an old save game
+COPY ~spell_rev\shared\adscroll.itm~     ~override~
+  SAY NAME2 @22000    SAY IDENTIFIED_DESC   @22001
+COPY ~spell_rev\shared\adscroll.bam~     ~override~
+
 // SD: eliminate #bonecir.spl from IWDEE
 ACTION_IF GAME_IS ~iwdee~ BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~#bonecir.spl~ BEGIN
