@@ -219,7 +219,7 @@ COPY ~spell_rev\shared\spin101.spl~      ~override~  // Cure Light Wounds
   SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
 COPY ~spell_rev\shared\spin102.spl~      ~override~  // Slow Poison
   SAY NAME1 @53    SAY UNIDENTIFIED_DESC @54
-COPY ~spell_rev\shared\spin103.spl~      ~override~  // Draw Upon Divine Might
+COPY ~spell_rev\shared\spin103.spl~      ~override~  // Draw Upon Divine Might (previously named Draw Upon Holy Might)
   SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
 COPY ~spell_rev\shared\spin104.spl~      ~override~  // Larloch's Minor Drain
   SAY NAME1 @435    SAY UNIDENTIFIED_DESC @436
