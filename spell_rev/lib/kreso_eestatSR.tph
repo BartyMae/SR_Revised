@@ -2669,7 +2669,7 @@ END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr325%.spl~ THEN BEGIN
-COPY_EXISTING ~%sppr325%.spl~ ~override~   //  Spike Growth - maybe yes, maybe no
+COPY_EXISTING ~%sppr325%.spl~ ~override~   //  Spike Growth
   LPF ADD_SPELL_EFFECT
 	INT_VAR
 	opcode			= 324
@@ -2688,7 +2688,7 @@ END
 
 //// FEAR IMMUNITY //
 
-ACTION_IF FILE_EXISTS_IN_GAME ~bdtgaze.spl~ THEN BEGIN  // terrifying gaze
+ACTION_IF FILE_EXISTS_IN_GAME ~bdtgaze.spl~ THEN BEGIN  // Terrifying Gaze
 COPY_EXISTING ~bdtgaze.spl~ ~override~
 LPF ADD_SPELL_EFFECT
 	INT_VAR
