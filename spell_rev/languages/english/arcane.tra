@@ -1664,7 +1664,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-The Domination spell enables the caster to form a telepathetic link between the caster and the target, allowing the caster to control their actions for the duration of the spell. The target must successfully save vs. spell at a -2 penalty to avoid being dominated.
+The Domination spell enables the caster to form a telepathetic link between the caster and the target, allowing the caster to control their actions for the duration of the spell. The target must successfully save vs. spell at a -4 penalty to avoid being dominated.
 
 If the caster attempts to harm the dominated creature, or if a dispel magic is successfully cast upon them, the spell is broken. If two or more domination effects simultaneously affect a creature, the most recent domination takes precedence.~
 
@@ -1704,7 +1704,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Spell negates
 
-Feeblemind causes the subject's intellect to degenerate into that of a simple beast of burden. The subject remains in this fugue-like state until a successful dispel magic is cast upon them. The victim must make a save vs. spell at a -2 penalty in order to resist being stupefied. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to feeblemindedness.~
+Feeblemind causes the subject's intellect to degenerate into that of a simple beast of burden. The subject remains in this fugue-like state until a successful dispel magic is cast upon them. The victim must make a save vs. spell at a -4 penalty in order to resist being stupefied. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to feeblemindedness.~
 
 @629=~Dispelling Screen~
 @630=~Dispelling Screen
