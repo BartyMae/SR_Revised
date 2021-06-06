@@ -2983,7 +2983,7 @@ Intelligence - Time trapped in maze
  15 to 17 - 2D4 rounds
  18 and up - 1D4 rounds
 
-If the 9th level spell Freedom is cast in the area where a creature is mazed, it will immediately bring them back to this plane, ending the spell prematurely. Otherwise, the effect lasts for the duration of the spell. A mazed creature cannot be freed through a dispel magic.~
+If the 9th level spell Freedom is cast in the area where a creature is mazed, it will immediately bring them back to this plane, ending the spell prematurely. Otherwise, the effect lasts for the duration of the spell. A mazed creature cannot be freed through a dispel magic. The target's magic resistance, if any, does not affect this spell.~
 
 @791=~Power Word: Blind~
 @792=~Power Word: Blind
