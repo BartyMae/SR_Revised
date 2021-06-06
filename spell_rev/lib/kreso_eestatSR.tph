@@ -2101,24 +2101,6 @@ COPY_EXISTING ~bdspidga.spl~ ~override~   // web tangle
 END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi101.spl~ THEN BEGIN
-COPY_EXISTING ~spwi101.spl~ ~override~   // grease
-  LPF ADD_SPELL_EFFECT
-	INT_VAR
-	opcode			= 324
-	target			= 2
-	power			= 0
-	savingthrow     = 0
-	parameter1      = 29   // Free action
-	parameter2		= 110
-	duration        = 1
-	timing			= 0
-	insert_point    = 0
-	STR_VAR
-	resource        = spwi101
-END
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~spdr201.spl~ THEN BEGIN
 COPY_EXISTING ~spdr201.spl~ ~override~   //
   LPF ADD_SPELL_EFFECT
@@ -2462,7 +2444,7 @@ END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi101.spl~ THEN BEGIN
-COPY_EXISTING ~spwi101.spl~ ~override~   //
+COPY_EXISTING ~spwi101.spl~ ~override~   // Grease
   LPF ADD_SPELL_EFFECT
 	INT_VAR
 	opcode			= 324
@@ -4045,7 +4027,6 @@ END
 sppr704 - nature's beauty ?? Tue seeing
 sppr710 - holy word deaf; probably irrelevant
 sppr715 - unholy word deaf ditto aboe
-spwi101 is grease - add neg fire res to humanoids  so you can play a DD with fire bonus
 spwi106 - fog??
 spwi118 - chrom orb // probably skip
 spwi125 spook - True Seeing
