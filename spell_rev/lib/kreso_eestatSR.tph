@@ -1479,7 +1479,7 @@ END
 	COPY_EXISTING	~spwi211.spl~	override		// Acid arrow
 		LPF	ADD_SPELL_EFFECT
 			INT_VAR
-				insert_point = 0
+				insert_point = 1
 				opcode = 324
 				target = 2
 				parameter2 = ACID
