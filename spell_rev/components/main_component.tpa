@@ -482,16 +482,54 @@ END
 
 ADD_SPELL ~spell_rev\sppr1##\sppr120.spl~ 1 1 ~CLERIC_ANIMAL_SUMMONING_LEVEL_1~ // Animal Summoning I (new druid spell)
   SAY NAME1 @319    SAY UNIDENTIFIED_DESC @320
-COPY ~spell_rev\sppr1##\batsu.eff~       ~override~
-COPY ~spell_rev\sppr1##\batsu.cre~       ~override~
+COPY ~spell_rev\sppr1##\batsu1.eff~      ~override~
+COPY ~spell_rev\sppr1##\batsu2.eff~      ~override~
+COPY ~spell_rev\sppr1##\batsu3.eff~      ~override~
+COPY ~spell_rev\sppr1##\batsu4.eff~      ~override~
+COPY ~spell_rev\sppr1##\batsu5.eff~      ~override~
+COPY ~spell_rev\sppr1##\dvbatsu1.cre~    ~override~
   SAY NAME1 @4008    SAY NAME2 @4008
-COPY ~spell_rev\sppr1##\batsu.itm~       ~override~
+COPY ~spell_rev\sppr1##\dvbatsu2.cre~    ~override~
+  SAY NAME1 @4008    SAY NAME2 @4008
+COPY ~spell_rev\sppr1##\dvbatsu3.cre~    ~override~
+  SAY NAME1 @4008    SAY NAME2 @4008
+COPY ~spell_rev\sppr1##\dvbatsu4.cre~    ~override~
+  SAY NAME1 @4008    SAY NAME2 @4008
+COPY ~spell_rev\sppr1##\dvbatsu5.cre~    ~override~
+  SAY NAME1 @4008    SAY NAME2 @4008
+COPY ~spell_rev\sppr1##\batsu.itm~    ~override~
   SAY NAME1 @4009    SAY NAME2 @4009
-COPY ~spell_rev\sppr1##\dvbatsu.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu1.itm~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu2.itm~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu3.itm~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu4.itm~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu5.itm~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu1.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu2.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu3.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu4.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu5.eff~    ~override~
 ADD_PROJECTILE ~spell_rev\projectles\dvrswarm.pro~
-COPY ~spell_rev\sppr1##\dvrswarm.spl~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu1.spl~    ~override~
   WRITE_SHORT 0x98 %dvrswarm%
-COPY ~spell_rev\sppr1##\dvrswarm.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvbatsu2.spl~    ~override~
+  WRITE_SHORT 0x98 %dvrswarm%
+COPY ~spell_rev\sppr1##\dvbatsu3.spl~    ~override~
+  WRITE_SHORT 0x98 %dvrswarm%
+COPY ~spell_rev\sppr1##\dvbatsu4.spl~    ~override~
+  WRITE_SHORT 0x98 %dvrswarm%
+COPY ~spell_rev\sppr1##\dvbatsu5.spl~    ~override~
+  WRITE_SHORT 0x98 %dvrswarm%
+COPY ~spell_rev\sppr1##\dvswarm1.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm2.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm3.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm4.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm5.eff~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm1.spl~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm2.spl~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm3.spl~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm4.spl~    ~override~
+COPY ~spell_rev\sppr1##\dvswarm5.spl~    ~override~
 
 ADD_PROJECTILE ~spell_rev\projectles\dvobmist.pro~
 ADD_SPELL ~spell_rev\sppr1##\sppr121.spl~ 1 1 ~CLERIC_OBSCURING_MIST~ // Obscuring Mist (new druid spell)
