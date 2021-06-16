@@ -157,6 +157,7 @@ COPY ~spell_rev\shared\item_rev\misc3l.spl~   ~override~ // Silence
   SAY NAME1 @51
 COPY ~spell_rev\shared\item_rev\npshld.spl~   ~override~ // Protection from Missiles
   SAY NAME1 @180500
+COPY ~spell_rev\shared\item_rev\misc3c.eff~   ~override~ // Summon Efreeti
 
 // Fix tooltips
 LAF tooltips INT_VAR
