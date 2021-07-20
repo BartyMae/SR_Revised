@@ -218,7 +218,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Casting a Goodberry spell creates 5 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 1 hit point and an additional hit point for every three extra experience levels of the caster, up to a maximum of 5 at 13th level. The berries last for 24 hours or until eaten.~
+Casting a Goodberry spell creates 3 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 5 hit points and one additional hit point for every three experience levels of the caster, up to a maximum of 10 at 15th level. The berries last for 24 hours or until eaten.~
 
 @315=~Cause Light Wounds~
 @316=~Cause Light Wounds
@@ -370,7 +370,7 @@ Casting Time: 1 round
 Area of Effect: Special
 Saving Throw: None
 
-Casting a Goodberry spell creates 5 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 1 hit point for every three experience levels of the caster, up to a maximum of 10 at 30th level. The berries last for 24 hours or until eaten.~
+Casting a Goodberry spell creates 3 magical berries that the caster can carry with them or give to others. When consumed, these berries restore 5 hit points and one additional hit point for every three experience levels of the caster, up to a maximum of 10 at 15th level. The berries last for 24 hours or until eaten.~
 
 @45=~Hold Person~
 @46=~Hold Person

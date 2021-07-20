@@ -572,23 +572,23 @@ COPY ~spell_rev\sppr2##\sppr207.spl~     ~override~  // Goodberry (moved to leve
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @44
 COPY ~spell_rev\sppr2##\gberry.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4016
-COPY ~spell_rev\sppr2##\gberry1.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4017
 COPY ~spell_rev\sppr2##\gberry2.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4018
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4017
 COPY ~spell_rev\sppr2##\gberry3.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4019
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4018
 COPY ~spell_rev\sppr2##\gberry4.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4020
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4019
 COPY ~spell_rev\sppr2##\gberry5.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4021
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4020
 COPY ~spell_rev\sppr2##\gberry6.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4022
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4021
 COPY ~spell_rev\sppr2##\gberry7.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4023
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4022
 COPY ~spell_rev\sppr2##\gberry8.itm~      ~override~
-  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4024
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4023
 COPY ~spell_rev\sppr2##\gberry9.itm~      ~override~
+  SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4024
+COPY ~spell_rev\sppr2##\gberry0.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4025
 APPEND ~spell.ids~ ~1207 CLERIC_GOOD_BERRIES_DEPRECATED~
 
