@@ -68,6 +68,12 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr203d END
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr205.spl~ THEN BEGIN  // Find Traps
+COPY_EXISTING ~sppr203.spl~ ~override~
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr205 END
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr209.spl~ THEN BEGIN  // Know Opponent
 COPY_EXISTING ~sppr209.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
