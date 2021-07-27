@@ -31,8 +31,6 @@ END
 // Until this is resolved, the spells won't be installed on IWDEE
 OUTER_SET install_cause_wounds = NOT GAME_IS ~iwdee~
 
-COPY ~spell_rev\shared\d5dvsl30.spl~     ~override~  // 30-sec Slow subspell
-
 COPY ~spell_rev\shared\dvimhere.mrk~     ~override~  // Used to detect if SR is installed
 COPY ~spell_rev\shared\dvsrv3.mrk~       ~override~  // Used to detect if SR V3 is installed
 COPY ~spell_rev\shared\dvsrv4here.mrk~   ~override~  // Used to detect if SR V4 is installed
@@ -67,6 +65,8 @@ COPY_EXISTING ~intmod.2da~ ~override~  // Int Modifier for Maze & Imprisonment
   SET_2DA_ENTRY 8 5 6 ~4~
   PRETTY_PRINT_2DA
   BUT_ONLY_IF_IT_CHANGES
+
+COPY ~spell_rev\shared\d5dvsl30.spl~     ~override~  // 30-sec Slow subspell
 
 COPY ~spell_rev\shared\contingx.2da~     ~override~  // Spells used for contingencies
 
@@ -110,6 +110,9 @@ COPY ~spell_rev\shared\dvtsight.spl~     ~override~
 
 COPY ~spell_rev\shared\dvdinvis.spl~     ~override~  // Item Detect Invisibility
 COPY ~spell_rev\shared\dvdinvis.eff~     ~override~
+
+COPY ~spell_rev\shared\dvknback.spl~     ~override~  // Knockback effect
+COPY ~spell_rev\shared\dvknback.eff~     ~override~
 
 COPY ~spell_rev\shared\bams~             ~override~  // Bams for new spells
 
@@ -659,7 +662,6 @@ ADD_SPELL ~spell_rev\sppr2##\sppr217.spl~ 1 2 ~CLERIC_REGENERATE_MODERATE_WOUNDS
 
 ADD_SPELL ~spell_rev\sppr2##\sppr218.spl~ 1 2 ~CLERIC_GUST_OF_WIND_DRUID_VERSION~ // Gust of Wind (new druid spell)
   SAY NAME1 @313    SAY UNIDENTIFIED_DESC @314
-COPY ~spell_rev\sppr2##\dvgustwi.spl~    ~override~
 
 ACTION_IF install_cause_wounds BEGIN
 ADD_SPELL ~spell_rev\sppr2##\sppr219.spl~ 1 2 ~CLERIC_CAUSE_MODERATE_WOUNDS~ // Cause Moderate Wounds (new cleric spell)
