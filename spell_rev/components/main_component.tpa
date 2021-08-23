@@ -2012,7 +2012,7 @@ COPY ~spell_rev\spwi3##\scrl1n.itm~      ~override~
 COPY ~spell_rev\spwi3##\spwi312.spl~     ~override~  // Slow
   SAY NAME1 @523    SAY UNIDENTIFIED_DESC @524
 COPY ~spell_rev\spwi3##\scrl1o.itm~      ~override~
-  SAY NAME2 @523    SAY IDENTIFIED_DESC   @524	
+  SAY NAME2 @523    SAY IDENTIFIED_DESC   @524
 
 COPY ~spell_rev\spwi3##\spwi313.spl~     ~override~  // Skull Trap
   SAY NAME1 @525    SAY UNIDENTIFIED_DESC @526
@@ -3670,38 +3670,38 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~carsa.cre~) BEGIN
   COPY_EXISTING carsa.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM dvscrlpp #1 #0 #0 NONE QITEM1
+      ADD_CRE_ITEM dvscrlpp #1 #0 #0 NONE QITEM1
     END
-	BUT_ONLY
+    BUT_ONLY
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~denak.cre~) BEGIN
   COPY_EXISTING denak.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM scrl6y #1 #0 #0 NONE QITEM3
+      ADD_CRE_ITEM scrl6y #1 #0 #0 NONE QITEM3
     END
-	BUT_ONLY
+    BUT_ONLY
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~kahrk.cre~) BEGIN
   COPY_EXISTING kahrk.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM scrl1r #1 #0 #0 NONE INV2
-	  ADD_CRE_ITEM scrl6s #1 #0 #0 NONE INV3
+      ADD_CRE_ITEM scrl1r #1 #0 #0 NONE INV2
+      ADD_CRE_ITEM scrl6s #1 #0 #0 NONE INV3
     END
-	BUT_ONLY
+    BUT_ONLY
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~tranzi.cre~) BEGIN
   COPY_EXISTING tranzi.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM dvscrlfr #1 #0 #0 NONE QITEM3
+      ADD_CRE_ITEM dvscrlfr #1 #0 #0 NONE QITEM3
     END
-	BUT_ONLY
+    BUT_ONLY
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~zordra.cre~) BEGIN
   COPY_EXISTING zordra.cre override LPF FJ_CRE_VALIDITY RET valid=valid END PATCH_IF valid BEGIN
-	  ADD_CRE_ITEM dvscrlda #1 #0 #0 NONE QITEM3
+      ADD_CRE_ITEM dvscrlda #1 #0 #0 NONE QITEM3
     END
-	BUT_ONLY
+    BUT_ONLY
 END
 
 ACTION_FOR_EACH resource IN // Remove duplicate Remove Curse/Break Enchantment scroll
@@ -3816,13 +3816,136 @@ ACTION_FOR_EACH resource IN
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-	PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
       READ_BYTE 0x18 flags
       WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
-	END
+    END
   END
 END
 END
+END
+
+
+/*----------------Innate HLAs-----------------*/
+
+ACTION_IF innate_hlas=0 BEGIN
+
+ACTION_FOR_EACH resource IN // Spell type (arcane)
+ ~spwi920~
+ ~spwi921~
+ ~spwi922~
+ ~spwi923~
+ ~spwi924~
+ ~spwi925~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      WRITE_BYTE 0x1c 0x01 // Spell type
+      WRITE_BYTE 0x34 0x09 // Level
+    END
+  END
+END
+
+ACTION_FOR_EACH resource IN // Spell type (divine)
+ ~sppr721~
+ ~sppr722~
+ ~sppr723~
+ ~sppr724~
+ ~sppr725~
+ ~sppr726~
+ ~sppr727~
+ ~sppr728~
+ ~sppr729~
+ ~sppr730~
+ ~sppr731~
+ ~sppr732~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      WRITE_BYTE 0x1c 0x02 // Spell type
+      WRITE_BYTE 0x34 0x07 // Level
+    END
+  END
+END
+
+ACTION_FOR_EACH resource IN // Location (1)
+ ~spwi920~
+ ~spwi921~
+ ~spwi922~
+ ~spwi925~
+ ~sppr721~
+ ~sppr722~
+ ~sppr724~
+ ~sppr725~
+ ~sppr728~
+ ~sppr729~
+ ~sppr730~
+ ~sppr731~
+ ~sppr732~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      WRITE_BYTE 0x74 0x02 // Location
+    END
+  END
+END
+
+ACTION_FOR_EACH resource IN // Location (26)
+ ~sppr723~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      SET "location" = 0x74
+      SET "loop" = 1
+      WHILE (%loop% < 27) BEGIN
+        WRITE_BYTE %location% 0x02 // Location
+        SET "location" = %location% + 0x28
+        SET "loop" = %loop% + 1
+      END
+    END
+  END
+END
+
+ACTION_FOR_EACH resource IN // Location (33)
+ ~spwi923~ // Variable 33
+ ~spwi924~ // Variable 33
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      SET "location" = 0x74
+      SET "loop" = 1
+      WHILE (%loop% < 34) BEGIN
+        WRITE_BYTE %location% 0x02 // Location
+        SET "location" = %location% + 0x28
+        SET "loop" = %loop% + 1
+      END
+    END
+  END
+END
+
+ACTION_FOR_EACH resource IN // Location (36)
+ ~sppr726~
+ ~sppr727~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      SET "location" = 0x74
+      SET "loop" = 1
+      WHILE (%loop% < 37) BEGIN
+        WRITE_BYTE %location% 0x02 // Location
+        SET "location" = %location% + 0x28
+        SET "loop" = %loop% + 1
+      END
+    END
+  END
+END
+
 END
 
 
@@ -3997,10 +4120,10 @@ ACTION_IF piercing_friendly_spells=1 BEGIN
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
       COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-  	  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
         LPF ALTER_EFFECT INT_VAR silent = 1 power = 0 END
-  	  END
-	BUT_ONLY
+      END
+    BUT_ONLY
     END
   END
   ACTION_FOR_EACH add_spl IN
@@ -4037,7 +4160,7 @@ ACTION_IF piercing_friendly_spells=1 BEGIN
     END
   END
   ACTION_PHP_EACH add_spl_spells AS %spell_res% => %add_spl% BEGIN
-    COPY_EXISTING ~%spell_res%.spl~ ~override~ 	
+    COPY_EXISTING ~%spell_res%.spl~ ~override~
       LPF ALTER_EFFECT INT_VAR silent = 1 power = 0 END
     BUT_ONLY
   END
@@ -4099,7 +4222,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
   COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override
     LPF DELETE_SPELL_EFFECT
       INT_VAR opcode_to_delete = 321
-	END
+    END
     LPF DELETE_SPELL_EFFECT
       INT_VAR opcode_to_delete = 328
     END
