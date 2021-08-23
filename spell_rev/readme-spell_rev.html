@@ -217,6 +217,11 @@
   When set to 1, all creatures will be in a permanent "held" status when petrified instead of the old stone status (avoids potentially game-breaking bugs). When set to 0, the vanilla style of petrification will be used instead. When set to 2, only enemies will be petrified in the stone style; party members will instead be permanently held.
   <p>
   </p>
+  <strong>innate_hlas</strong> (default 1)
+  <br />
+  When set to 1, all arcane and divine HLAs will become innate abilities that can be used independently of the spellbook (however, they may only be taken and memorized once).
+  <p>
+  </p>
   <strong>alternative_remove_magic </strong>(default 0)
   <br />
   When set to 1, Remove Magic no longer uses the caster level vs. target level mechanics of Dispel Magic, but instead a simple saving throw that scales with level (-1 for every 5 levels of the caster, up to a maximum of -4 at 20th level). When set to 0, the vanilla dispelling mechanics are used. When set to 2, Remove Magic becomes a sort of lesser Breach AoE effect - one combat and one specific protection are removed from each creature, growing to two of each at 10th level, then three of each at 15th level.
@@ -239,7 +244,7 @@
   </p>
   <strong>pick_familiar </strong>(default 0)
   <br />
-  When set to 1, the Find Familiar spell allows you to choose the type of familiar you wish to have.
+  When set to 1, the Find Familiar spell allows you to choose the type of familiar you wish to have. NOTE: EET games cannot benefit from this, as EET changes how this spell works too much in order to have the spell work properly across its different campaigns.
   <p>
   </p>
   <strong>resist_imprisonment </strong>(default 0)
