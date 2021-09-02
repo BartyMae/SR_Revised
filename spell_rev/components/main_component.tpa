@@ -4172,7 +4172,7 @@ END
 
 /*------ REVISED SAVES ------*/
 
-ACTION_IF revised_saves && (ENGINE_IS ~tob~) BEGIN
+ACTION_IF revised_saves BEGIN
 
 COPY ~spell_rev\revised_saves\savewar.2da~   ~override~  // Warrior saves
 COPY ~spell_rev\revised_saves\savemonk.2da~  ~override~  // Monk saves
