@@ -3529,27 +3529,89 @@ INCLUDE ~spell_rev\lib\stat_drain.tph~
 INCLUDE ~spell_rev\lib\refinements.tph~  // refinements spells reverted back to SR, won't parse unless Refinements is already there 16.6.2017. - Ref should probably now go after, write some code for subtle
 
 // Kill double strings on spell removals
-ACTION_IF  FILE_EXISTS_IN_GAME ~spwi513b.spl~ BEGIN
-COPY_EXISTING ~spwi513b.spl~             ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END END
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi513b.spl~ BEGIN
+  COPY_EXISTING ~spwi513b.spl~             ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
+END
 
-ACTION_IF  FILE_EXISTS_IN_GAME ~spwi805b.spl~ BEGIN
-COPY_EXISTING ~spwi805b.spl~             ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END END
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi805b.spl~ BEGIN
+  COPY_EXISTING ~spwi805b.spl~             ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
+END
 
-ACTION_IF  FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN
-COPY_EXISTING ~spwi903b.spl~             ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END END
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN
+  COPY_EXISTING ~spwi903b.spl~             ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
+END
 
 // Sectype fixes for vanilla mess and some more
 INCLUDE ~spell_rev\lib\kreso_extra.tph~
 
 // EE component
 ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
-INCLUDE ~spell_rev\lib\kreso_ee.tph~
-INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
+  INCLUDE ~spell_rev\lib\kreso_ee.tph~
+  INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
 END
 
+// BG1EE invalid string fixes
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~DVWIS38B~
+    ~DVWIS26B~
+    ~SPIN788~
+    ~SPPR204~
+    ~SPPR306~
+    ~SPPR317~
+    ~SPPR405~
+    ~SPPR520~ // ADD_SPELL
+    ~SPPR521~ // ADD_SPELL
+    ~SPPR522~ // ADD_SPELL
+    ~SPPR523~ // ADD_SPELL
+    ~SPPR610~
+    ~SPPR701~
+    ~SPPR704~
+    ~SPPR706~
+    ~SPPR718~
+    ~SPPR721~
+    ~SPWI104~
+    ~SPWI116~
+    ~SPWI221~
+    ~SPWI316~
+    ~SPWI318~
+    ~SPWI319~
+    ~SPWI320~
+    ~SPWI506~
+    ~SPWI508~
+    ~SPWI511~
+    ~SPWI512~
+    ~SPWI517~
+    ~SPWI522~
+    ~SPWI524~
+    ~SPWI525~
+    ~SPWI606~
+    ~SPWI611~
+    ~SPWI618~
+    ~SPWI701~
+    ~SPWI702~
+    ~SPWI715~
+    ~SPWI803~
+    ~SPWI811~
+    ~SPWI816~
+    ~SPWI914~
+    ~SPWI916~
+    ~SPWI918D~
+    ~SPWI920~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        LPF DELETE_SPELL_EFFECT
+          INT_VAR opcode_to_delete = 139
+        END
+      END
+    END
+  END
+END
 
 /*---------------------Tutu Scrolls---------------------*/
 
