@@ -3732,21 +3732,24 @@ END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
 COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
-ADD_STORE_ITEM ~dvscrlfr~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Friends scroll
-ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlda~ #1 #0 #0 ~IDENTIFIED~ #1 // Adds 1 Detect Alignment scroll
+  ADD_STORE_ITEM ~dvscrlfr~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scrolls
+  ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scrolls
+  ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scrolls
   PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
-  END
+    END
   BUT_ONLY_IF_IT_CHANGES
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~sto0703.sto~) BEGIN
 COPY_EXISTING ~sto0703.sto~              ~override~  // Sorcerous Sundries
-ADD_STORE_ITEM ~dvscrlfr~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scroll
-ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scroll
-ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlda~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scroll
-  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+  ADD_STORE_ITEM ~dvscrlfr~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scrolls
+  ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scrolls
+  ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scrolls
+  PATCH_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+    ADD_STORE_ITEM ~scrl1v~ AFTER ~scrl1u~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Dimension Jump scrolls to EE games
   END
+  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+    END
   BUT_ONLY_IF_IT_CHANGES
 END
 
