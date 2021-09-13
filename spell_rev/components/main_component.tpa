@@ -335,6 +335,11 @@ COPY ~spell_rev\shared\spcl233.spl~      ~override~  // Magic Circle Against Evi
 ACTION_IF (GAME_IS ~bg2 tob bgt tutu tutu_totsc~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
 COPY ~spell_rev\shared\spin108.spl~      ~override~  // Safana Charm Person
   SAY NAME1 @407    SAY UNIDENTIFIED_DESC @408
+COPY ~spell_rev\shared\spin108i.eff~    ~override~  
+COPY ~spell_rev\shared\dvin108i.eff~    ~override~
+COPY ~spell_rev\shared\dvin108i.spl~    ~override~
+COPY ~spell_rev\shared\dvin108.eff~     ~override~
+COPY ~spell_rev\shared\dvin108.spl~     ~override~
 END
 COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
@@ -557,6 +562,11 @@ COPY ~spell_rev\sppr2##\sppr203d.spl~    ~override~
 
 COPY ~spell_rev\sppr2##\sppr204.spl~     ~override~  // Charm Person or Mammal
   SAY NAME1 @37    SAY UNIDENTIFIED_DESC @38
+COPY ~spell_rev\sppr2##\sppr204i.eff~    ~override~  
+COPY ~spell_rev\sppr2##\dvpr204i.eff~    ~override~
+COPY ~spell_rev\sppr2##\dvpr204i.spl~    ~override~
+COPY ~spell_rev\sppr2##\dvpr204.eff~     ~override~
+COPY ~spell_rev\sppr2##\dvpr204.spl~     ~override~
 
 COPY ~spell_rev\sppr2##\sppr205.spl~     ~override~  // Find Traps
   SAY NAME1 @39    SAY UNIDENTIFIED_DESC @40
@@ -1440,6 +1450,11 @@ COPY ~spell_rev\spwi1##\spwi104.spl~     ~override~  // Charm Person
   SAY NAME1 @407    SAY UNIDENTIFIED_DESC @408
 COPY ~spell_rev\spwi1##\scrl69.itm~      ~override~
   SAY NAME2 @407    SAY IDENTIFIED_DESC   @408
+COPY ~spell_rev\spwi1##\spwi104i.eff~    ~override~  
+COPY ~spell_rev\spwi1##\dvwi104i.eff~    ~override~
+COPY ~spell_rev\spwi1##\dvwi104i.spl~    ~override~
+COPY ~spell_rev\spwi1##\dvwi104.eff~     ~override~
+COPY ~spell_rev\spwi1##\dvwi104.spl~     ~override~
 
 COPY ~spell_rev\spwi1##\spwi105.spl~     ~override~  // Color Spray
   SAY NAME1 @409    SAY UNIDENTIFIED_DESC @410
@@ -2041,6 +2056,11 @@ COPY ~spell_rev\spwi3##\spwi316.spl~     ~override~  // Dire Charm
   SAY NAME1 @529    SAY UNIDENTIFIED_DESC @530
 COPY ~spell_rev\spwi3##\scrl1s.itm~      ~override~
   SAY NAME2 @529    SAY IDENTIFIED_DESC   @530
+COPY ~spell_rev\spwi3##\spwi316i.eff~    ~override~  
+COPY ~spell_rev\spwi3##\dvwi316i.eff~    ~override~
+COPY ~spell_rev\spwi3##\dvwi316i.spl~    ~override~
+COPY ~spell_rev\spwi3##\dvwi316.eff~     ~override~
+COPY ~spell_rev\spwi3##\dvwi316.spl~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi317.spl~     ~override~  // Ghost Armor
   SAY NAME1 @531    SAY UNIDENTIFIED_DESC @532

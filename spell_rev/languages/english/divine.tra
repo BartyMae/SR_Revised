@@ -324,14 +324,14 @@ Level: 2
 School: Enchantment
 Sphere: Animal
 Range: Long
-Duration: 5 rounds
+Duration: 1 turn
 Casting Time: 2
 Area of Effect: 1 person or animal
 Saving Throw: Spell negates
 
-This spell affects any single person or animal that it is cast upon. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. Only normal and giant sized animals are affected by this spell. Monsters such as wyverns, ankhegs, and carrion crawlers do not count as animals. If the target fails their save vs. spell, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creature will carry them out as quickly as possible.
+This spell affects any single person or animal that it is cast upon. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. If the target fails their save vs. spell, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creature will carry them out as quickly as possible.
 
-If the caster attempts to harm the charmed creature, or if a dispel magic is successfully cast upon them, the spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. After the duration of the spell, the affected creature resumes their previous behavior prior to being charmed.~
+Creatures that are currently neutral to the caster are more amenable to helping them and make their saving throw with no bonus, while those that are hostile are significantly more difficult to influence and instead gain a +4 bonus to making their saving throw. If the caster attempts to harm the charmed creature, the spell is broken and the affected creature will immediately become hostile to the caster. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. After the duration of the spell or if a dispel magic is successfully cast upon them, the affected creature resumes their previous behavior prior to being charmed.~
 
 @39=~Find Traps~
 @40=~Find Traps
