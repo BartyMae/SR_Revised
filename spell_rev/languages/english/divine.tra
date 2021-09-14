@@ -1023,7 +1023,7 @@ Saving Throw: Spell negates
 
 When cast, the target must successfully save vs. spell at a -2 penalty to avoid being mentally dominated. While mentally dominated, the priest is simply able to command the target to perform certain tasks or functions for the duration of the spell, though the priest must be within visual range to be able to give them commands. The effects of this spell are similar to the 5th level arcane spell Domination, but this spell does not give the priest access to the subject's thoughts, memory, or sensory apparatus.
 
-If the caster attempts to harm the dominated creature, or if a dispel magic is successfully cast upon them, the spell is broken. If two or more domination effects simultaneously affect a creature, the most recent domination takes precedence.~
+If the caster attempts to harm the dominated creature, or if a dispel magic is successfully cast upon them, the spell is broken. Dominated creatures are unaffected by charm, and if two or more domination effects simultaneously affect a creature, the most recent domination takes precedence.~
 
 @121=~Defensive Harmony~
 @122=~Defensive Harmony
