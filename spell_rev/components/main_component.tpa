@@ -1234,6 +1234,11 @@ ADD_PROJECTILE ~spell_rev\projectles\dvnatbty.pro~
 COPY ~spell_rev\sppr7##\sppr704.spl~     ~override~  // Nature's Beauty
   SAY NAME1 @237    SAY UNIDENTIFIED_DESC @238
   WRITE_SHORT 0x98 %dvnatbty%
+COPY ~spell_rev\sppr7##\sppr704i.eff~    ~override~  
+COPY ~spell_rev\sppr7##\dvpr704i.eff~    ~override~
+COPY ~spell_rev\sppr7##\dvpr704i.spl~    ~override~
+COPY ~spell_rev\sppr7##\dvpr704.eff~     ~override~
+COPY ~spell_rev\sppr7##\dvpr704.spl~     ~override~
 
 COPY ~spell_rev\sppr7##\sppr705.spl~     ~override~  // Fire Storm
   SAY NAME1 @239    SAY UNIDENTIFIED_DESC @240

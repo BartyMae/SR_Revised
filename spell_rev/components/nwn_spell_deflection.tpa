@@ -45,7 +45,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~sppr512~ => 1 // greater command
 ~sppr517~ => 1 // insect plague
 //~sppr609~ => 1 // false dawn (stationary)
-~sppr704~ => 1 // nature's beauty
+~dvpr704~ => 1 // nature's beauty
 ~sppr706~ => 1 // symbol of pain
 ~sppr707~ => 1 // sunray
 //~sppr709~ => 1 // chaos (stationary)
