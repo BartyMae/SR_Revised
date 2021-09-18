@@ -1344,9 +1344,9 @@ Casting Time: 5
 Area of Effect: Sight
 Saving Throw: None
 
-When a True Seeing spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
+When a True Seeing spell is cast, the priest gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell.
 
-NOTE: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.~
+Creatures affected by improved invisibility will be revealed to the party, but can only be directly targeted with spellcasting by the caster of this spell. True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions. Magic resistance does not affect this spell.~
 
 @161=~Stoneskin~
 @162=~Stoneskin
