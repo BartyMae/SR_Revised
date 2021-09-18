@@ -423,7 +423,7 @@ Casting Time: 2
 Area of Effect: Sight
 Saving Throw: None
 
-When a wizard casts a Detect Invisibility spell, they become able to see clearly any objects or beings that are invisible, as well as any creatures that are astral, ethereal, or out of phase. Instantly and at the end of each round for 5 rounds after the spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies. Invisible objects carried into the warded area will also become visible. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. This spell does not reveal illusions or enable the caster to see through physical objects. Magic resistance does not affect this spell.~
+When a wizard casts a Detect Invisibility spell, they become able to see clearly any objects or beings that are invisible, as well as any creatures that are astral, ethereal, or out of phase. Instantly and at the end of each round for 5 rounds after the spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies. Invisible objects carried into the warded area will also become visible. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targeted with spellcasting by the caster of this spell. This spell does not reveal illusions or enable the caster to see through physical objects. Magic resistance does not affect this spell.~
 
 @457=~Horror~
 @458=~Horror
@@ -495,7 +495,7 @@ Casting Time: 1
 Area of Effect: 30' radius
 Saving Throw: None
 
-The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster.~
+The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 30 foot radius centered on the point selected by the caster.~
 
 @469=~Melf's Acid Arrow~
 @470=~Melf's Acid Arrow
@@ -893,7 +893,9 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: None
 
-By casting this spell, the wizard makes the recipient undetectable by spells such as Detect Invisibility, Invisibility Purge, and True Seeing, though they may still be audible when moving and certain types of creatures may still sense their presence through other means. Furthermore, anti-illusory spells and abilities such as Detect Illusion and Oracle will also have no effect upon the recipient. This spell does not protect the recipient from detection as a result of engaging in overtly hostile actions, though it will continue to protect other types of illusions they have active from being directly dispelled. Note, however, that specific opponents affected with anti-invisibility spells or abilities such as True Seeing will be able to target the recipient with spellcasting through their improved invisibility for as long as such anti-invisibility spells are active. This spell wards the recipient's equipment as well as the creature itself.~
+By casting this spell, the wizard makes the recipient undetectable by spells such as Detect Invisibility, Invisibility Purge, and True Seeing, though they may still be audible when moving and certain types of creatures may still sense their presence through other means. Furthermore, anti-illusory spells and abilities such as Detect Illusion and Oracle will also have no effect upon the recipient. However, this spell does not protect the recipient from detection as a result of engaging in overtly hostile actions, though it will continue to protect illusionary protections they have active from being directly dispelled even after a creature has revealed themselves.
+
+Specific creatures affected with Detect Invisibility or True Seeing will still be able to target the recipient with spellcasting through their improved invisibility for as long as those spells are active, assuming the recipient has already revealed themselves. This spell wards the recipient's equipment as well as the creature itself.~
 
 @521=~Protection from Missiles~
 @522=~Protection from Missiles
@@ -2092,7 +2094,7 @@ Casting Time: 6
 Area of Effect: Sight
 Saving Throw: None
 
-When a True Seeing spell is cast, the wizard gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targetable with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
+When a True Seeing spell is cast, the wizard gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, as well as see through illusions. Instantly and at the end of each round for 1 turn after this spell is cast, all concealed enemies within sight of the caster will become visible to the caster and their allies, and minor illusionary spells (including Reflected Image, Blur, and Mirror Image) cast by opponents will be neutralized outright. Creatures affected by improved invisibility will be revealed to the party, but can only be directly targeted with spellcasting by the caster of this spell. Finally, the caster is also cured of and granted immunity to blindness as well as hostile illusion spells such as Spook and Shadow Door for the duration of the spell. Magic resistance does not affect this spell.
 
 NOTE: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.~
 
