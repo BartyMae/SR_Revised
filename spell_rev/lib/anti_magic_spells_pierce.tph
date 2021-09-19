@@ -1,0 +1,28 @@
+ACTION_IF anti_magic_spells_pierce>0 BEGIN
+  ACTION_FOR_EACH resource IN
+    ~spwi321~
+    ~spwi419~
+    ~spwi608~
+    ~spwi704~
+    ~spwi705~
+    ~spwi903~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_BYTE 0x1b (BYTE_AT 0x1b BOR 1)
+      END
+    BUT_ONLY
+    END
+  END
+END
+
+ACTION_IF anti_magic_spells_pierce=2 BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~spwi513.spl~) BEGIN
+    COPY_EXISTING ~spwi513.spl~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        WRITE_BYTE 0x1b (BYTE_AT 0x1b BOR 1)
+    END
+  BUT_ONLY
+  END
+END

@@ -4057,9 +4057,14 @@ END
 END
 
 
-/*----------------Friendly spells go through Spell Deflection-----------------*/
+/*----------------Friendly spells go through Spell Protections-----------------*/
 
-INCLUDE ~spell_rev\lib\friendly_spells_pierce.tpa~
+INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
+
+
+/*----------------Anti-magic Spells Pierce Improved Invisibility-----------------*/
+
+INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
