@@ -784,7 +784,7 @@ COPY ~spell_rev\sppr3##\sppr318.spl~     ~override~  // Zone of Sweet Air
   SAY NAME1 @101    SAY UNIDENTIFIED_DESC @102
 APPEND ~spell.ids~ ~1318 CLERIC_GUST_OF_WIND~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~45247~ @3101 // Change load screen string reference
+  // STRING_SET ~45247~ @3101 // Change load screen string reference
 END
 
 COPY ~spell_rev\sppr3##\sppr319.spl~     ~override~  // Summon Insects
@@ -1374,7 +1374,7 @@ COPY ~spell_rev\sppr7##\dvdevagw.itm~    ~override~
   SAY NAME1 @4068    SAY NAME2 @4068
 COPY ~spell_rev\sppr7##\dvdevag.bcs~     ~override~
 
-COPY ~spell_rev\sppr7##\dw#devag.spl~    ~override~  // SCSII Summon Deva
+COPY ~spell_rev\sppr7##\dw#devag.spl~    ~override~  // SCS Summon Deva
 END
 
 ACTION_IF celestials=1 BEGIN
@@ -1388,7 +1388,7 @@ COPY ~spell_rev\sppr7##\dvdevaew.itm~    ~override~
   SAY NAME1 @4070    SAY NAME2 @4070
 COPY ~spell_rev\sppr7##\dvdevae.bcs~     ~override~
 
-COPY ~spell_rev\sppr7##\dw#devae.spl~    ~override~  // SCSII Summon Fallen Deva
+COPY ~spell_rev\sppr7##\dw#devae.spl~    ~override~  // SCS Summon Fallen Deva
 END
 
 COPY ~spell_rev\sppr7##\sppr728.spl~     ~override~  // Implosion
@@ -3417,7 +3417,7 @@ COPY ~spell_rev\spwi9##\dvplangr.itm~    ~override~
 COPY ~spell_rev\spwi9##\dvplangw.itm~    ~override~
   SAY NAME1 @8215   SAY NAME2 @8215
 
-COPY ~spell_rev\spwi9##\dw#plang.spl~    ~override~  // SCSII Planetar
+COPY ~spell_rev\spwi9##\dw#plang.spl~    ~override~  // SCS Summon Planetar
 END
 
 ACTION_IF celestials=1 BEGIN
@@ -3431,7 +3431,7 @@ COPY ~spell_rev\spwi9##\dvplaner.itm~    ~override~
 COPY ~spell_rev\spwi9##\dvplanew.itm~    ~override~
   SAY NAME1 @8216   SAY NAME2 @8216
 
-COPY ~spell_rev\spwi9##\dw#plane.spl~    ~override~  // SCSII Fallen Planetar
+COPY ~spell_rev\spwi9##\dw#plane.spl~    ~override~  // SCSII Summon Fallen Planetar
 END
 
 COPY ~spell_rev\spwi9##\spwi925.spl~     ~override~  // Comet
@@ -3908,35 +3908,337 @@ BUT_ONLY
 /*----------------Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs Only)-----------------*/
 
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
-ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
-ACTION_FOR_EACH resource IN
-  ~sppr731~
-  ~sppr732~
-  ~spwi461~
-  ~spwi462~
-  ~spwi463~
-  ~spwi464~
-  ~spwi465~
-  ~spwi466~
-  ~spwi467~
-  ~spwi971~
-  ~spwi972~
-  ~spwi973~
-  ~spwi974~
-  ~spwi975~
-  ~squirp~ // Polymorph Other
-  ~dvsquir~ // Polymorph Other
-  ~dvgasfrm~ // Gaseous Form
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
-    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      READ_BYTE 0x18 flags
-      WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
+  ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
+    ACTION_FOR_EACH resource IN
+      ~sppr731~
+      ~sppr732~
+      ~spwi461~
+      ~spwi462~
+      ~spwi463~
+      ~spwi464~
+      ~spwi465~
+      ~spwi466~
+      ~spwi467~
+      ~spwi971~
+      ~spwi972~
+      ~spwi973~
+      ~spwi974~
+      ~spwi975~
+      ~squirp~ // Polymorph Other
+      ~dvsquir~ // Polymorph Other
+      ~dvgasfrm~ // Gaseous Form
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+        COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+        PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+          READ_BYTE 0x18 flags
+          WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
+        END
+      END
     END
   END
 END
-END
+
+
+/*----------------Add Invisibility/Sanctuary-Breaking Flag (EEs Only)-----------------*/
+
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~SPIN104~
+    ~SPIN105~
+    ~SPIN106~
+    ~SPRA304~
+    ~SPRA305~
+    ~SPRA306~
+    // ~SPCL212~ // Detect Evil
+    ~SPCL232~
+    ~SPCL722~
+    ~SPCL732~
+    ~SPCL742~
+    ~SPDR101~
+    ~SPDR201~
+    ~SPDR301~
+    ~SPDR501~
+    ~SPDR601~
+    ~SPIN108~
+    ~SPIN112~
+    ~SPIN114~
+    ~SPIN115~
+    ~SPIN120~
+    ~FEARAURA~ // Aura of Fear
+    // ~DVTELPOR~ // Teleport Without Error
+    ~SPIN683~ // Web Tangle
+    ~SPIN788~ // Demilich Soul Trap
+    // ~SPIN789~ // Demilich Howl (what is this?)
+    ~SPPR102~
+    ~SPPR104~
+    ~SPPR105~
+    ~SPPR113~
+    ~SPPR120~
+    ~SPPR203~
+    ~SPPR204~
+    // ~SPPR205~ // Find Traps
+    // ~SPPR205D~ // Find Traps pulse
+    ~SPPR208~
+    ~SPPR209~
+    ~SPPR211~
+    ~SPPR301~
+    ~SPPR302~
+    ~SPPR303~
+    ~SPPR304~
+    ~SPPR305~
+    ~SPPR309~
+    // ~SPPR309D~ // Invisibility Purge pulse
+    ~SPPR310~
+    ~SPPR311~
+    ~SPPR313~
+    ~SPPR314~
+    // ~SPPR318~ // Zone of Sweet Air
+    ~SPPR319~
+    ~SPPR402~
+    ~SPPR405~
+    ~SPPR410~
+    ~SPPR411~
+    // ~SPPR415~ // Farsight
+    ~SPPR416~
+    // ~SPPR415D~ // Cloak of Fear pulse
+    ~SPPR501~
+    ~SPPR503~
+    // ~SPPR504~ // Raise Dead
+    ~SPPR505~
+    // ~SPPR505~ // True Seeing pulse
+    ~SPPR512~
+    ~SPPR515~
+    // ~SPPR515D~ // Repulsion pulse
+    ~SPPR517~
+    ~SPPR601~
+    ~SPPR602~
+    ~SPPR603~
+    // ~SPPR603D~ // Blade Barrier pulse
+    ~SPPR698~ // AI Blade Barrier
+    ~SPPR604~
+    ~SPPR605~
+    ~SPPR609~
+    ~SPPR609E~ // False Dawn pulse~
+    ~SPPR610~
+    ~SPPR612~
+    ~SPPR702~
+    ~SPPR703~
+    ~SPPR704~
+    ~SPPR705~
+    ~SPPR706~
+    ~SPPR707~
+    ~SPPR708~
+    ~SPPR709~
+    ~SPPR710~
+    // ~SPPR712~ // Resurrection
+    ~SPPR715~
+    ~SPPR717~
+    ~SPPR718~
+    ~SPPR719~
+    ~SPPR720~
+    ~SPPR722~
+    ~SPPR723~
+    ~SPPR724~
+    ~SPPR725~
+    // ~SPPR725D~ // Globe of Blades pulse
+    ~SPPR726~
+    ~DW#DEVAG~ // SCS Summon Deva
+    ~SPPR727~
+    ~DW#DEVAE~ // SCS Summon Fallen Deva
+    ~SPPR728~
+    // ~SPPR729~ // Mass Raise Dead
+    // ~SPPR730~ // Aura of Flaming Death
+    ~SPWI101~
+    ~SPWI103~
+    ~SPWI104~
+    ~SPWI105~
+    ~SPWI106~
+    ~SPWI112~
+    ~SPWI116~
+    ~SPWI118~
+    ~SPWI119~
+    ~SPWI125~
+    ~SPWI202~
+    ~SPWI203~
+    // ~SPWI203D~ // Detect Invisibility pulse
+    ~SPWI205~
+    ~SPWI207~
+    ~SPWI208~
+    ~SPWI211~
+    ~SPWI213~
+    ~SPWI215~
+    ~SPWI217~
+    ~SPWI220~
+    ~SPWI221~
+    ~SPWI223~
+    ~SPWI224~
+    ~SPWI302~
+    ~SPWI303~
+    ~SPWI304~
+    ~SPWI306~
+    ~SPWI308~
+    ~SPWI309~
+    ~SPWI312~
+    ~SPWI313~
+    ~SPWI314~
+    ~SPWI316~
+    ~SPWI321~
+    ~SPWI322~
+    ~SPWI324~
+    ~SPWI326~
+    ~SPWI401~
+    // ~SPWI402~ // Dimension Jump
+    // ~SPWI403~ // Mestil's Acid Sheath
+    ~SPWI404~
+    ~SPWI407~
+    ~SPWI409~
+    ~SPWI411~
+    ~SPWI412~
+    ~SPWI413~
+    ~SPWI415~
+    // ~SPWI418~ // Fire Shield
+    ~SPWI419~
+    // ~SPWI420D~ // Simbul's Spell Matrix activation
+    ~SPWI421~
+    ~SPWI423~
+    // ~SPWI424~ // Farsight
+    ~SPWI425~
+    ~SPWI501~
+    ~SPWI502~
+    ~SPWI503~
+    ~SPWI504~
+    ~SPWI505~
+    ~SPWI506~
+    ~SPWI507~
+    ~SPWI508~
+    ~SPWI509~
+    ~SPWI513~
+    ~SPWI514~
+    ~SPWI515~
+    ~SPWI516~
+    ~SPWI520~
+    ~SPWI521~
+    ~SPWI523~
+    ~SPWI601~
+    ~SPWI604~
+    ~SPWI605~
+    ~SPWI607~ // Mislead
+    ~SPWI608~
+    ~SPWI609~
+    // ~SPWI609D~ // True Seeing pulse
+    ~SPWI612~
+    ~SPWI614~
+    ~SPWI615~
+    ~SPWI616~
+    ~SPWI619~
+    ~SPWI620~
+    ~SPWI621~
+    ~SPWI622~
+    ~SPWI623~
+    ~SPWI624~
+    ~SPWI703~ // Project Image
+    ~SPWI704~
+    ~SPWI705~
+    ~SPWI707~
+    ~SPIN701~ // Unholy Fireball
+    // ~SPWI708~ // Prismatic Mantle
+    // ~SPWI710D~ // Simbul's Spell Sequencer activation
+    ~SPWI711~
+    ~SPWI712~
+    ~SPWI713~
+    ~SPWI714~
+    ~SPWI715~
+    ~SPWI716~
+    ~SPWI717~
+    ~SPWI718~
+    ~SPWI719~
+    ~SPWI720~
+    ~SPWI722~ // Limited Wish
+    ~SPWI804~ // Simulacrum
+    ~SPWI805~
+    ~SPWI807~
+    // ~SPWI809D~ // Simbul's Spell Trigger activation
+    ~SPWI810~
+    ~SPWI811~
+    ~SPWI899~ // Innate Symbol of Pain
+    ~SPWI812~
+    ~SPWI813~
+    ~SPWI815~
+    ~SPWI816~
+    ~SPWI898~ // Innate Symbol of Stunning
+    ~SPWI817~
+    ~SPWI897~ // Innate Symbol of Death
+    ~SPIN839~ // Confusing Gaze
+    ~SPWI903~
+    ~SPWI905~
+    ~SPWI909~ // Time Stop
+    ~SPWI910~
+    ~SPWI911~
+    ~SPWI912~
+    ~SPWI913~
+    ~SPWI914~
+    // ~SPWI917~ // Freedom
+    ~SPWI918~
+    ~SPWI919~ // Wish
+    ~SPWI922~
+    ~SPWI923~
+    ~DW#PLANG~ // SCS Summon Planetar
+    ~SPWI924~
+    ~DW#PLANE~ // SCS Summon Fallen Planetar
+    ~SPWI925~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_BYTE 0x19 flags
+        WRITE_BYTE 0x19 (%flags% BOR 0b00000010) // Add invisibility/sanctuary-breaking flag
+      END
+    END
+  END
+  ACTION_FOR_EACH add_spl IN
+    ~CLERIC_FAERIE_FIRE~
+    ~CLERIC_SUNSCORCH~
+    ~CLERIC_ANIMAL_SUMMONING_LEVEL_1~
+    ~CLERIC_OBSCURING_MIST~
+    ~CLERIC_FIRE_TRAP~
+    ~CLERIC_GUST_OF_WIND_DRUID_VERSION~
+    ~CLERIC_ANIMAL_SUMMONING_LEVEL_2~
+    ~CLERIC_ANIMAL_SUMMONING_LEVEL_3~
+    ~CLERIC_SPIKE_GROWTH~
+    ~CLERIC_ICELANCE~
+    ~CLERIC_CONTAGION~
+    ~CLERIC_ICE_STORM~
+    ~CLERIC_POLYMORPH_OTHER~
+    ~CLERIC_BANISHMENT~
+    ~CLERIC_CONJURE_AIR_ELEMENTAL~
+    ~CLERIC_CONJURE_EARTH_ELEMENTAL~
+    ~CLERIC_ANIMATE_SKELETON_WARRIOR~
+    // ~WIZARD_DIMENSION_JUMP~
+    // ~WIZARD_KNOW_ALIGNMENT~
+    ~WIZARD_MONSTER_SUMMONING_LEVEL_1~
+    ~WIZARD_MONSTER_SUMMONING_LEVEL_2~
+    ~WIZARD_ICELANCE~
+    ~WIZARD_VITRIOLIC_SPHERE~
+    ~WIZARD_BALL_LIGHTNING~
+    // ~WIZARD_MESTILS_ACID_SHEATH~
+    ~WIZARD_MONSTER_SUMMONING_5~
+    ~WIZARD_MONSTER_SUMMONING_6~
+    ~WIZARD_MONSTER_SUMMONING_7~
+  BEGIN
+    ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]%add_spl%[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+      LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = EVAL ~%add_spl%~ RET spell_res END
+      OUTER_SPRINT $add_spl_spells(~%spell_res%~) ~%add_spl%~
+    END
+  END
+  ACTION_PHP_EACH add_spl_spells AS %spell_res% => %add_spl% BEGIN
+    COPY_EXISTING ~%spell_res%.spl~ ~override~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_BYTE 0x19 flags
+        WRITE_BYTE 0x19 (%flags% BOR 0b00000010) // Add invisibility/sanctuary-breaking flag
+      END
+    BUT_ONLY
+  END
 END
 
 
