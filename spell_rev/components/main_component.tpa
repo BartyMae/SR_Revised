@@ -4128,14 +4128,10 @@ ACTION_IF piercing_friendly_spells=1 BEGIN
 	~dvanigro~
     ~spja01~
     ~sppr603~
-	~sppr603d~
-	~sppr603e~
     ~sppr606~
     ~sppr607~
     ~sppr608~
 	~sppr609~
-	~sppr609e~
-	~sppr609f~
     ~sppr611~
     ~sppr613~
 	~sppr613d~
@@ -4146,8 +4142,6 @@ ACTION_IF piercing_friendly_spells=1 BEGIN
     ~sppr713~
     ~sppr721~
     ~sppr725~
-	~sppr725d~
-	~sppr725e~
     ~sppr729~
     ~sppr730~
     ~sppr731~
