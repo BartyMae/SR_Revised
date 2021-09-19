@@ -318,6 +318,19 @@ Saving Throw: None
 
 By means of the Chant spell, the priest brings special favor upon themselves and their party while causing harm to their enemies. When the chant is completed, the THAC0, damage, and saving throws of those in the area of effect who are friendly to the priest gain a +1 bonus, while those hostile to the priest suffer a -1 penalty. Multiple castings of this spell are not cumulative.~
 
+@35000=~Chant~
+@36000=~Chant
+Level: 2
+School: Conjuration
+Sphere: Combat
+Range: Long
+Duration: 1 turn
+Casting Time: 1 round
+Area of Effect: 30' radius
+Saving Throw: None
+
+By means of the Chant spell, the priest brings special favor upon themselves and their party while causing harm to their enemies. When the chant is completed, the THAC0, damage, and saving throws of those in the area of effect who are friendly to the priest gain a +1 bonus, while those hostile to the priest suffer a -1 penalty. Multiple castings of this spell are not cumulative.~
+
 @37=~Charm Person or Animal~
 @38=~Charm Person or Animal
 Level: 2
