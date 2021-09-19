@@ -4090,7 +4090,7 @@ END ELSE BEGIN
       PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
         SET "location" = 0x74
         SET "loop" = 1
-        WHILE (%loop% < 39) BEGIN
+        WHILE (%loop% < 9) BEGIN
           WRITE_BYTE %location% 0x02 // Location
           SET "location" = %location% + 0x28
           SET "loop" = %loop% + 1

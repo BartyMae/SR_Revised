@@ -38,7 +38,7 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     ~sppr212~
     ~sppr213~
     ~sppr214~
-	~sppr214w~
+    ~sppr214w~
     ~sppr306~
     ~sppr307~
     ~sppr308~
@@ -68,17 +68,17 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     ~sppr513~
     ~sppr514~
     ~sppr516~
-	~dvanigro~
+    ~dvanigro~
     ~spja01~
     ~sppr603~
     ~sppr606~
     ~sppr607~
     ~sppr608~
-	~sppr609~
+    ~sppr609~
     ~sppr611~
     ~sppr613~
-	~sppr613d~
-	~sppr698~
+    ~sppr613d~
+    ~sppr698~
     ~sppr701~
     ~sppr711~
     ~sppr712~
@@ -237,7 +237,7 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     CLERIC_REGENERATE_LIGHT_WOUNDS
     CLERIC_GOOD_BERRIES
     CLERIC_CAUSE_LIGHT_WOUNDS
-	CLERIC_RESIST_ELEMENTS
+    CLERIC_RESIST_ELEMENTS
     CLERIC_CURE_MODERATE_WOUNDS
     CLERIC_REGENERATE_MODERATE_WOUNDS
     CLERIC_CAUSE_MODERATE_WOUNDS

@@ -21,7 +21,7 @@ ACTION_IF anti_magic_spells_pierce=2 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~spwi513.spl~) BEGIN
     COPY_EXISTING ~spwi513.spl~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-        WRITE_BYTE 0x1b (BYTE_AT 0x1b BOR 1)
+      WRITE_BYTE 0x1b (BYTE_AT 0x1b BOR 1)
     END
   BUT_ONLY
   END
