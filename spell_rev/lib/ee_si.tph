@@ -297,4 +297,143 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
       END
     BUT_ONLY
   END
+  ACTION_FOR_EACH resource IN // Extended header #1
+    ~scrl5a~ // Mental Domination
+    ~scrl62~ // Flame Strike
+    // ~scrl63~ // Raise Dead
+    ~scrl66~ // Grease
+    ~scrl68~ // Burning Hands
+    ~scrl69~ // Charm Person
+    ~scrl71~ // Obscuring Mist / Blindness
+    // ~scrl1v~ // Dimension Door / Dimension Jump
+    ~scrl77~ // Magic Missile
+    ~scrl81~ // Sleep
+    ~scrl83~ // Chromatic Orb
+    ~scrl84~ // Larloch's Minor Drain
+    ~scrla6~ // Spook
+    // ~dvscrlda~ // Detect Alignment
+    ~scrl72~ // Monster Summoning I
+    ~scrl89~ // Horror
+    ~scrl91~ // Battering Ram
+    ~scrl92~ // Know Opponent
+    ~scrl95~ // Melf's Acid Arrow
+    ~scrl97~ // Stinking Cloud
+    ~scrl99~ // Web
+    ~scrl1b~ // Agannazar's Scorch
+    ~scrl6e~ // Power Word: Sleep
+    ~scrl6f~ // Ray of Enfeeblement
+    ~scrla2~ // Sound Burst
+    ~scrla3~ // Glitterdust
+    // ~scrl86~ // Detect Evil
+    ~scrl1l~ // Monster Summoning II
+    ~scrla7~ // Remove Magic
+    ~scrl1f~ // Flame Arrow
+    ~scrl1g~ // Fireball
+    ~scrl1i~ // Hold Person
+    ~scrl1k~ // Lightning Bolt
+    ~scrl2a~ // Monster Summoning III
+    ~scrl1o~ // Slow
+    ~scrl1p~ // Skull Trap
+    ~scrl1q~ // Vampiric Touch
+    ~scrl1s~ // Dire Charm
+    ~scrl6j~ // Spell Thrust
+    ~scrl6k~ // Detect Illusion
+    ~scrl6l~ // Halt Undead
+    ~scrl1e~ // Dispel Magic
+    ~scrl6i~ // Icelance
+    ~scrl1u~ // Confusion
+    ~scrl1x~ // Ice Storm
+    ~scrl2b~ // Monster Summoning IV
+    ~scrla8~ // Contagion
+    ~scrl5h~ // Emotion: Despair
+    ~scrl5i~ // Greater Malison
+    ~scrl5l~ // Polymorph Other
+    // ~scrl6n~ // Fire Shield
+    ~scrl6o~ // Secret Word
+    ~scrl6q~ // Teleport Field
+    ~scrl6r~ // Monster Summoning IV
+    // ~scrlaq~ // Farsight
+    ~scrla1~ // Wizard Eye
+    ~scrl6y~ // Vitriolic Sphere
+    ~scrl2d~ // Summon Shadow
+    ~scrl2e~ // Cloudkill
+    ~scrl2f~ // Cone of Cold
+    ~scrl2g~ // Monster Summoning V
+    ~scrl2h~ // Shadow Door
+    ~scrl5n~ // Domination
+    ~scrl5o~ // Hold Monster
+    ~scrl5p~ // Waves of Fatigue
+    ~scrl5q~ // Feeblemind
+    ~scrl6u~ // Breach
+    ~scrl6v~ // Lower Resistance
+    ~scrl6w~ // Oracle
+    ~scrl6x~ // Conjure Lesser Fire Elemental
+    ~scrl7b~ // Conjure Lesser Air Elemental
+    ~scrl7c~ // Conjure Lesser Earth Elemental
+    ~scrlscrlar~ // Fireburst
+    // ~scrl1w~ // Mestil's Acid Sheath
+    ~scrl7e~ // Invisible Stalker
+    ~scrl7h~ // Flesh to Stone
+    ~scrl7i~ // Banishment
+    ~scrl7k~ // Mislead
+    ~scrl7l~ // Pierce Magic
+    ~scrl7m~ // True Seeing
+    ~scrl7p~ // Power Word: Silence
+    ~scrl7r~ // Acid Fog
+    ~scrl7s~ // Chain Lightning
+    ~scrl7t~ // Disintegrate
+    ~scrl7w~ // Monster Summoning VI
+    ~scrl7x~ // Conjure Fire Elemental
+    ~scrl7y~ // Conjure Air Elemental
+    ~scrl7z~ // Conjure Earth Elemental
+    ~scrl8a~ // Animate Warrior
+    ~scrl8c~ // Summon Nishruu
+    ~scrl8f~ // Project Image
+    ~scrl8g~ // Ruby Ray of Reversal
+    ~scrl8h~ // Khleben's Warding Whip
+    ~scrl8i~ // Summon Death Knight
+    ~scrl8m~ // Chaos
+    ~scrl8n~ // Delayed Blast Fireball
+    ~scrl8o~ // Finger of Death
+    ~scrl8p~ // Prismatic Spray
+    ~scrl8q~ // Power Word: Stun
+    ~scrl8r~ // Mordenkainen's Sword
+    ~scrl8s~ // Summon Efreeti
+    ~scrl8t~ // Summon Djinni
+    ~scrl8u~ // Summon Hakeashar
+    ~scrl8v~ // Control Undead
+    ~scrla4~ // Limited Wish
+    ~scrl8b~ // Monster Summoning VII
+    ~scrl8z~ // Simulacrum
+    ~scrl9a~ // Pierce Shield
+    ~scrl9b~ // Summon Fiend
+    ~scrl9e~ // Incendiary Cloud
+    ~scrl9f~ // Symbol of Pain
+    ~scrl9g~ // Abi-Dalzim's Horrid Wilting
+    ~scrl9h~ // Maze
+    ~scrl9j~ // Power Word: Blind
+    ~scrlap~ // Symbol of Stunning
+    ~scrlao~ // Symbol of Death
+    ~scrlb1~ // Bigby's Icy Grasp
+    ~dvscrlm8~ // Monster Summoning VIII
+    ~scrl9m~ // Spellstrike
+    ~scrl9n~ // Gate
+    ~dvscrlm9~ // Monster Summoning IX
+    ~scrl9r~ // Time Stop
+    ~scrl9s~ // Imprisonment
+    ~scrl9t~ // Meteor Swarm
+    ~scrl9u~ // Power Word: Kill
+    ~scrl9v~ // Wail of the Banshee
+    ~scrl9w~ // Larloch's Energy Drain
+    ~scrlb2~ // Bigby's Crushing Hand
+    ~scrlb4~ // Wish
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_BYTE 0x99 flags
+        WRITE_BYTE 0x99 (%flags% BOR 0b00000010) // Add invisibility/sanctuary-breaking flag
+      END
+    END
+  END
 END
