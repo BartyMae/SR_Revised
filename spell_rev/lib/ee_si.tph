@@ -370,7 +370,7 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
     ~scrl6x~ // Conjure Lesser Fire Elemental
     ~scrl7b~ // Conjure Lesser Air Elemental
     ~scrl7c~ // Conjure Lesser Earth Elemental
-    ~scrlscrlar~ // Fireburst
+    ~scrlar~ // Fireburst
     // ~scrl1w~ // Mestil's Acid Sheath
     ~scrl7e~ // Invisible Stalker
     ~scrl7h~ // Flesh to Stone
@@ -392,6 +392,7 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
     ~scrl8g~ // Ruby Ray of Reversal
     ~scrl8h~ // Khleben's Warding Whip
     ~scrl8i~ // Summon Death Knight
+    ~scrl8j~ // Prismatic Mantle
     ~scrl8m~ // Chaos
     ~scrl8n~ // Delayed Blast Fireball
     ~scrl8o~ // Finger of Death
