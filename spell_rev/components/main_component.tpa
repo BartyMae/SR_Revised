@@ -351,13 +351,13 @@ COPY ~spell_rev\shared\dvin108.spl~     ~override~
 END
 
 ACTION_IF alternative_dispel_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spin112.save.spl~     ~override\spin112.spl~  // Dispel Magic
+COPY ~spell_rev\shared\alternatives\spin112.save.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spin112.breach.spl~     ~override\spin112.spl~  // Dispel Magic
+COPY ~spell_rev\shared\alternatives\spin112.breach.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
   SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
 END ELSE BEGIN
-COPY ~spell_rev\shared\spin112.spl~      ~override~  // Dispel Magic
+COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
 END
 
@@ -2149,13 +2149,13 @@ COPY ~spell_rev\spwi3##\scrla5.itm~      ~override~
 COPY ~spell_rev\spwi3##\melfmet.itm~     ~override~
   SAY NAME1 @8062   SAY NAME2 @8046
 
-ACTION_IF alternative_remove_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi326.save.spl~     ~override\spwi326.spl~  // Remove Magic
+ACTION_IF alternative_dispel_magic=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi326.save.spl~     ~override\spwi326.spl~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi326.breach.spl~     ~override\spwi326.spl~  // Remove Magic
+COPY ~spell_rev\shared\alternatives\spwi326.breach.spl~     ~override\spwi326.spl~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000000
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000000
