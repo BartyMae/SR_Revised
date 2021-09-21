@@ -261,8 +261,17 @@ COPY ~spell_rev\shared\spcl222.spl~      ~override~  // Remove Fear (Resist Fear
 
 /* ----Inquisitor Abilities---- */
 
+ACTION_IF alternative_dispel_magic=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spcl231.save.spl~     ~override\spcl231.spl~  // Dispel Magic
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
+END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
+COPY ~spell_rev\shared\alternatives\spcl231.breach.spl~     ~override\spcl231.spl~  // Dispel Magic
+  SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
+END ELSE BEGIN
 COPY ~spell_rev\shared\spcl231.spl~      ~override~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
+END
+
 COPY ~spell_rev\shared\spcl232.spl~      ~override~  // True Seeing
   SAY NAME1 @159    SAY UNIDENTIFIED_DESC @160
 COPY ~spell_rev\shared\spcl232d.spl~     ~override~
@@ -340,8 +349,18 @@ COPY ~spell_rev\shared\dvin108i.spl~    ~override~
 COPY ~spell_rev\shared\dvin108.eff~     ~override~
 COPY ~spell_rev\shared\dvin108.spl~     ~override~
 END
-COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
+
+ACTION_IF alternative_dispel_magic=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spin112.save.spl~     ~override\spin112.spl~  // Dispel Magic
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
+END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
+COPY ~spell_rev\shared\alternatives\spin112.breach.spl~     ~override\spin112.spl~  // Dispel Magic
+  SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
+END ELSE BEGIN
+COPY ~spell_rev\shared\spin112.spl~      ~override~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
+END
+
 COPY ~spell_rev\shared\spin113.spl~      ~override~  // Branwen Spiritual Hammer
   SAY NAME1 @55    SAY UNIDENTIFIED_DESC @56
 COPY ~spell_rev\shared\spin114.spl~      ~override~  // Faldorn Summon Dread Wolf
@@ -720,8 +739,17 @@ COPY ~spell_rev\sppr3##\skelgrsu.itm~    ~override~
 COPY ~spell_rev\sppr3##\sppr302.spl~     ~override~  // Call Lightning
   SAY NAME1 @73    SAY UNIDENTIFIED_DESC @74
 
+ACTION_IF alternative_dispel_magic=1 BEGIN
+COPY ~spell_rev\shared\alternatives\sppr303.save.spl~     ~override\sppr303.spl~  // Dispel Magic
+  SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76000
+END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
+COPY ~spell_rev\shared\alternatives\sppr303.breach.spl~     ~override\sppr303.spl~  // Dispel Magic
+  SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76000000
+END ELSE BEGIN
 COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Dispel Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
+END
+
 
 COPY ~spell_rev\sppr3##\sppr304.spl~     ~override~  // Glyph of Warding
   SAY NAME1 @77    SAY UNIDENTIFIED_DESC @78
@@ -1933,11 +1961,6 @@ COPY ~spell_rev\spwi3##\spwi301.spl~     ~override~  // Clairvoyance
 COPY ~spell_rev\spwi3##\scrl1d.itm~      ~override~
   SAY NAME2 @501    SAY IDENTIFIED_DESC   @502
 
-COPY ~spell_rev\spwi3##\spwi302.spl~     ~override~  // Remove Magic
-  SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504
-COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
-  SAY NAME2 @503    SAY IDENTIFIED_DESC   @504
-
 ACTION_IF alternative_remove_magic=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi302.save.spl~     ~override\spwi302.spl~  // Remove Magic
   SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000
@@ -2126,10 +2149,22 @@ COPY ~spell_rev\spwi3##\scrla5.itm~      ~override~
 COPY ~spell_rev\spwi3##\melfmet.itm~     ~override~
   SAY NAME1 @8062   SAY NAME2 @8046
 
+ACTION_IF alternative_remove_magic=1 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi326.save.spl~     ~override\spwi326.spl~  // Remove Magic
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
+COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
+END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
+COPY ~spell_rev\shared\alternatives\spwi326.breach.spl~     ~override\spwi326.spl~  // Remove Magic
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000000
+COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
+  SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000000
+END ELSE BEGIN
 COPY ~spell_rev\spwi3##\spwi326.spl~     ~override~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
 COPY ~spell_rev\spwi3##\scrl1e.itm~      ~override~
   SAY NAME2 @547    SAY IDENTIFIED_DESC   @548
+END
 
 ADD_SPELL ~spell_rev\spwi3##\spwi327.spl~ 2 3 ~WIZARD_ICELANCE~  // Icelance (added to mage spellbook)
   SAY NAME1 @875    SAY UNIDENTIFIED_DESC @876
