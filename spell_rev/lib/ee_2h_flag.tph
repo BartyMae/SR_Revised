@@ -1,0 +1,33 @@
+// Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs)
+
+ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+  ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
+    ACTION_FOR_EACH resource IN
+      ~sppr731~
+      ~sppr732~
+      ~spwi461~
+      ~spwi462~
+      ~spwi463~
+      ~spwi464~
+      ~spwi465~
+      ~spwi466~
+      ~spwi467~
+      ~spwi971~
+      ~spwi972~
+      ~spwi973~
+      ~spwi974~
+      ~spwi975~
+      ~squirp~ // Polymorph Other
+      ~dvsquir~ // Polymorph Other
+      ~dvgasfrm~ // Gaseous Form
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+        COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+        PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+          READ_BYTE 0x18 flags
+          WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
+        END
+      END
+    END
+  END
+END

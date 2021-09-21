@@ -3940,207 +3940,9 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
 BUT_ONLY
 
 
-/*----------------Add Invisibility/Sanctuary-Breaking Flag (EEs)-----------------*/
+/*----------------Spellcasting HLAs-----------------*/
 
-INCLUDE ~spell_rev\lib\ee_si.tph~
-
-
-/*----------------Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs)-----------------*/
-
-ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
-  ACTION_IF ee_two_handed_shapeshifts=1 BEGIN
-    ACTION_FOR_EACH resource IN
-      ~sppr731~
-      ~sppr732~
-      ~spwi461~
-      ~spwi462~
-      ~spwi463~
-      ~spwi464~
-      ~spwi465~
-      ~spwi466~
-      ~spwi467~
-      ~spwi971~
-      ~spwi972~
-      ~spwi973~
-      ~spwi974~
-      ~spwi975~
-      ~squirp~ // Polymorph Other
-      ~dvsquir~ // Polymorph Other
-      ~dvgasfrm~ // Gaseous Form
-    BEGIN
-      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
-        COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-        PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-          READ_BYTE 0x18 flags
-          WRITE_BYTE 0x18 (%flags% BOR 0b00000010) // Add two-handed flag
-        END
-      END
-    END
-  END
-END
-
-
-/*----------------Innate HLAs-----------------*/
-
-ACTION_IF innate_hlas=0 BEGIN
-
-ACTION_FOR_EACH resource IN // Spell type (arcane)
- ~spwi920~
- ~spwi921~
- ~spwi922~
- ~spwi923~
- ~spwi924~
- ~spwi925~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      WRITE_BYTE 0x1c 0x01 // Spell type
-      WRITE_BYTE 0x34 0x09 // Level
-    END
-  END
-END
-
-ACTION_FOR_EACH resource IN // Spell type (divine)
- ~sppr721~
- ~sppr722~
- ~sppr723~
- ~sppr724~
- ~sppr725~
- ~sppr726~
- ~sppr727~
- ~sppr728~
- ~sppr729~
- ~sppr730~
- ~sppr731~
- ~sppr732~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      WRITE_BYTE 0x1c 0x02 // Spell type
-      WRITE_BYTE 0x34 0x07 // Level
-    END
-  END
-END
-
-ACTION_FOR_EACH resource IN // Location (1)
- ~spwi920~
- ~spwi921~
- ~spwi922~
- ~spwi925~
- ~sppr721~
- ~sppr722~
- ~sppr724~
- ~sppr725~
- ~sppr728~
- ~sppr729~
- ~sppr730~
- ~sppr731~
- ~sppr732~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      WRITE_BYTE 0x74 0x02 // Location
-    END
-  END
-END
-
-ACTION_FOR_EACH resource IN // Location (26)
- ~sppr723~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-    COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      SET "location" = 0x74
-      SET "loop" = 1
-      WHILE (%loop% < 27) BEGIN
-        WRITE_BYTE %location% 0x02 // Location
-        SET "location" = %location% + 0x28
-        SET "loop" = %loop% + 1
-      END
-    END
-  END
-END
-
-ACTION_IF celestials=1 BEGIN
-  ACTION_FOR_EACH resource IN // Location (36)
-    ~spwi923~ // Variable 33
-    ~spwi924~ // Variable 33
-  BEGIN
-    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-        SET "location" = 0x74
-        SET "loop" = 1
-        WHILE (%loop% < 37) BEGIN
-          WRITE_BYTE %location% 0x02 // Location
-          SET "location" = %location% + 0x28
-          SET "loop" = %loop% + 1
-        END
-      END
-    END
-  END
-END ELSE BEGIN
-  ACTION_FOR_EACH resource IN // Location (4)
-    ~spwi923~
-    ~spwi924~
-  BEGIN
-    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-        SET "location" = 0x74
-        SET "loop" = 1
-        WHILE (%loop% < 5) BEGIN
-          WRITE_BYTE %location% 0x02 // Location
-          SET "location" = %location% + 0x28
-          SET "loop" = %loop% + 1
-        END
-      END
-    END
-  END
-END
-
-ACTION_IF celestials=1 BEGIN
-  ACTION_FOR_EACH resource IN // Location (36)
-    ~sppr726~
-    ~sppr727~
-  BEGIN
-    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-        SET "location" = 0x74
-        SET "loop" = 1
-        WHILE (%loop% < 37) BEGIN
-          WRITE_BYTE %location% 0x02 // Location
-          SET "location" = %location% + 0x28
-          SET "loop" = %loop% + 1
-        END
-      END
-    END
-  END
-END ELSE BEGIN
-  ACTION_FOR_EACH resource IN // Location (8)
-    ~sppr726~
-    ~sppr727~
-  BEGIN
-    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-        SET "location" = 0x74
-        SET "loop" = 1
-        WHILE (%loop% < 9) BEGIN
-          WRITE_BYTE %location% 0x02 // Location
-          SET "location" = %location% + 0x28
-          SET "loop" = %loop% + 1
-        END
-      END
-    END
-  END
-END
-
-END // Innate HLAs
+INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
 
 
 /*----------------Friendly Spells Pierce Spell Protections-----------------*/
@@ -4151,6 +3953,16 @@ INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
 /*----------------Anti-magic Spells Pierce Improved Invisibility-----------------*/
 
 INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
+
+
+/*----------------Add Invisibility/Sanctuary-Breaking Flag (EEs)-----------------*/
+
+INCLUDE ~spell_rev\lib\ee_si.tph~
+
+
+/*----------------Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs)-----------------*/
+
+INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
@@ -4175,7 +3987,7 @@ END
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-// non-EE fixes
+// Non-EE fixes
 
 ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
   COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override // remove spellstates
