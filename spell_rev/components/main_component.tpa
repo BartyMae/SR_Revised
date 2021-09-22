@@ -574,14 +574,14 @@ COPY ~spell_rev\sppr2##\sppr201.spl~     ~override~  // Aid
 COPY ~spell_rev\sppr2##\sppr202.spl~     ~override~  // Barkskin
   SAY NAME1 @33    SAY UNIDENTIFIED_DESC @34
 
-COPY ~spell_rev\sppr2##\sppr203.spl~     ~override~  // Chant
-  SAY NAME1 @35    SAY UNIDENTIFIED_DESC @36
-COPY ~spell_rev\sppr2##\sppr203d.spl~    ~override~
-
 ACTION_IF targetable_chant=1 BEGIN
 COPY ~spell_rev\shared\alternatives\sppr203.spl~     ~override~  // Chant
   SAY NAME1 @35000    SAY UNIDENTIFIED_DESC @36000
 COPY ~spell_rev\shared\alternatives\sppr203d.spl~    ~override~
+END ELSE
+COPY ~spell_rev\sppr2##\sppr203.spl~     ~override~  // Chant
+  SAY NAME1 @35    SAY UNIDENTIFIED_DESC @36
+COPY ~spell_rev\sppr2##\sppr203d.spl~    ~override~
 END
 
 COPY ~spell_rev\sppr2##\sppr204.spl~     ~override~  // Charm Person or Mammal
