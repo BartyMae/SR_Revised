@@ -578,7 +578,7 @@ ACTION_IF targetable_chant=1 BEGIN
 COPY ~spell_rev\shared\alternatives\sppr203.spl~     ~override~  // Chant
   SAY NAME1 @35000    SAY UNIDENTIFIED_DESC @36000
 COPY ~spell_rev\shared\alternatives\sppr203d.spl~    ~override~
-END ELSE
+END ELSE BEGIN
 COPY ~spell_rev\sppr2##\sppr203.spl~     ~override~  // Chant
   SAY NAME1 @35    SAY UNIDENTIFIED_DESC @36
 COPY ~spell_rev\sppr2##\sppr203d.spl~    ~override~
