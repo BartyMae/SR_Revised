@@ -192,6 +192,18 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     // ~spwi973~
     // ~spwi974~
     // ~spwi975~
+    ~dvmcure~
+	~amul26~
+	~misc3n~
+	~misc3o~
+	~scrl03~
+	~scrl04~
+	~scrl05~
+	~scrl06~
+	~scrl07~
+	~scrl08~
+	~scrl09~
+	~scrl15~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
       COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
