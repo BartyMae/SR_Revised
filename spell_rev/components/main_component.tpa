@@ -361,6 +361,10 @@ COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
 END
 
+/*
+COPY ~spell_rev\shared\spin109.spl~      ~override~  // Ajantis Lay on Hands
+  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
+*/
 COPY ~spell_rev\shared\spin113.spl~      ~override~  // Branwen Spiritual Hammer
   SAY NAME1 @55    SAY UNIDENTIFIED_DESC @56
 COPY ~spell_rev\shared\spin114.spl~      ~override~  // Faldorn Summon Dread Wolf
@@ -369,10 +373,6 @@ COPY ~spell_rev\shared\spin115.spl~      ~override~  // Tiax Summon Ghast
 //  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spin118.spl~      ~override~  // Quayle Invisibility
   SAY NAME1 @459    SAY UNIDENTIFIED_DESC @460
-/*
-COPY ~spell_rev\shared\spin109.spl~      ~override~  // Ajantis Lay on Hands
-  SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
-*/
 COPY ~spell_rev\shared\spin120.spl~      ~override~  // Ajantis Detect Evil
 //  SAY NAME1 @0     SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spin121.spl~      ~override~  // Ajantis Protection from Evil

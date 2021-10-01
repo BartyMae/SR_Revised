@@ -2,50 +2,54 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
   ACTION_FOR_EACH resource IN
     ~spin101~
     ~spin102~
-    ~spin103~
+    // ~spin103~
     ~spcl211~
-    ~spcl211~
+    // ~spcl212~
+    ~spcl213~
     ~spcl222~
-    ~spcl721~
-    ~spcl731~
-    ~spcl741~
+    // ~spcl721~
+    // ~spcl731~
+    // ~spcl741~
     ~spdr401~
     ~spra301~
     ~spra302~
-    ~spra303~
+    // ~spra303~
     ~spcl233~
-    ~spin113~
-    ~spin118~
+    // ~spin113~
+    // ~spin118~
     ~spin109~
+    // ~spin120~
     ~spin121~
     ~spin676~
-    ~spin826~
+    // ~spin826~
     ~spin827~
-    ~spin828~
+    // ~spin828~
     ~sppr101~
     ~sppr103~
-    ~sppr106~
+    // ~sppr104~
+    // ~sppr106~
     ~sppr107~
     ~sppr108~
-    ~sppr109~
-    ~sppr110~
-    ~sppr111~
+    // ~sppr109~
+    // ~sppr110~
+    // ~sppr111~
     ~sppr201~
     ~sppr202~
-    ~sppr205~
-    ~sppr206~
-    ~sppr207~
+    ~sppr203~
+    // ~sppr205~
+    // ~sppr206~
+    // ~sppr207~
     ~sppr212~
-    ~sppr213~
-    ~sppr214~
-    ~sppr214w~
+    // ~sppr213~
+    // ~sppr214~
+    // ~sppr214w~
     ~sppr306~
     ~sppr307~
     ~sppr308~
     ~sppr312~
     ~sppr315~
     ~sppr317~
-    ~sppr318~
+    // ~sppr318~
     ~sppr401~
     ~sppr403~
     ~sppr404~
@@ -53,176 +57,141 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     ~sppr407~
     ~sppr408~
     ~sppr409~
-    ~sppr412~
+    // ~sppr412~
     ~sppr413~
-    ~sppr414~
-    ~sppr415~
+    // ~sppr414~
+    // ~sppr415~
     ~sppr417~
     ~sppr502~
     ~sppr504~
-    ~sppr506~
+    // ~sppr506~
     ~sppr507~
     ~sppr508~
     ~sppr509~
     ~sppr510~
-    ~sppr513~
+    // ~sppr511~
+    // ~sppr513~
     ~sppr514~
     ~sppr516~
     ~dvanigro~
     ~spja01~
-    ~sppr603~
-    ~sppr606~
+    // ~sppr606~
     ~sppr607~
     ~sppr608~
-    ~sppr609~
-    ~sppr611~
-    ~sppr613~
-    ~sppr613d~
-    ~sppr698~
-    ~sppr701~
+    // ~sppr611~
+    // ~sppr613~
+    // ~sppr613d~
+    // ~sppr701~
     ~sppr711~
     ~sppr712~
     ~sppr713~
-    ~sppr721~
-    ~sppr725~
+    // ~sppr721~
     ~sppr729~
-    ~sppr730~
-    ~sppr731~
-    ~sppr732~
-    ~spwi102~
-    ~spwi107~
+    // ~sppr730~
+    // ~sppr731~
+    // ~sppr732~
+    // ~spwi102~
+    // ~spwi107~
     ~spwi108~
-    ~spwi110~
-    ~spwi111~
+    // ~spwi110~
+    // ~spwi111~
     ~spwi113~
     ~spwi114~
-    ~spwi115~
-    ~spwi117~
-    ~spwi120~
-    ~spwi123~
-    ~spwi124~
-    ~spwi201~
+    // ~spwi115~
+    // ~spwi117~
+    // ~spwi120~
+    // ~spwi123~
+    // ~spwi124~
+    // ~spwi201~
     ~spwi206~
     ~spwi209~
     ~spwi210~
-    ~spwi212~
+    // ~spwi212~
     ~spwi214~
-    ~spwi218~
-    ~spwi219~
-    ~spwi222~
-    ~spwi301~
+    // ~spwi218~
+    // ~spwi219~
+    // ~spwi222~
+    // ~spwi301~
     ~spwi305~
     ~spwi307~
     ~spwi310~
-    ~spwi311~
-    ~spwi315~
-    ~spwi317~
-    ~spwi318~
+    // ~spwi311~
+    // ~spwi315~
+    // ~spwi317~
+    // ~spwi318~
     ~spwi319~
     ~spwi320~
-    ~spwi325~
-    ~spwi402~
-    ~spwi403~
+    // ~spwi325~
+    // ~spwi402~
+    // ~spwi403~
     ~spwi405~
-    ~spwi406~
-    ~spwi408~
+    // ~spwi406~
+    // ~spwi408~
     ~spwi410~
     ~spwi413~
     ~spwi413e~
-    ~spwi414~
-    ~spwi416~
-    ~spwi417~
-    ~spwi418~
-    ~spwi418a~
-    ~spwi418b~
-    ~spwi418c~
-    ~spwi418d~
-    ~spwi418e~
-    ~spwi418f~
-    ~spwi418g~
-    ~spwi418h~
-    ~spwi418i~
-    ~spwi418j~
-    ~spwi418k~
-    ~spwi418l~
-    ~spwi418m~
-    ~spwi418n~
-    ~spwi418o~
-    ~spwi418p~
-    ~spwi420~
+    // ~spwi414~
+    // ~spwi416~
+    // ~spwi417~
+    // ~spwi418~
+    // ~spwi420~
     ~spwi420d~
-    ~spwi424~
-    ~spwi505~
-    ~spwi511~
+    // ~spwi424~
+    // ~spwi505~
+    // ~spwi590~
+    // ~spwi591~
+    // ~spwi592~
+    // ~spwi593~
+    // ~spwi594~
+    // ~spwi595~
+    // ~spwi596~
+    // ~spwi597~
+    // ~spwi511~
     ~spwi512~
     ~spwi517~
-    ~spwi518~
-    ~spwi519~
-    ~spwi590~
-    ~spwi591~
-    ~spwi592~
-    ~spwi593~
-    ~spwi594~
-    ~spwi595~
-    ~spwi596~
-    ~spwi597~
-    ~spwi522~
-    ~dvmesti~
-    ~dvmestia~
-    ~dvmestib~
-    ~dvmestic~
-    ~dvmestid~
-    ~dvmestie~
-    ~dvmestif~
-    ~dvmestig~
-    ~dvmestih~
-    ~dvmestii~
-    ~dvmestij~
-    ~dvmestik~
-    ~dvmestil~
-    ~dvmestim~
-    ~dvmestin~
+    // ~spwi518~
+    // ~spwi519~
+    // ~spwi522~
     ~dvscreen~
-    ~spwi602~
-    ~spwi603~
+    // ~spwi602~
+    // ~spwi603~
     ~spwi606~
-    ~spwi607~
-    ~mislead~
-    ~dvnosong~
-    ~spwi611~
+    // ~spwi607~
+    // ~mislead~
+    // ~dvnosong~
+    // ~spwi611~
     ~spwi613~
-    ~spwi617~
-    ~spwi618~
-    ~spwi701~
-    ~spwi702~
-    ~spwi703~
-    ~projimag~
-    ~spwi708~
-    ~spwi708d~
-    ~spwi708e~
-    ~spwi710~
+    // ~spwi617~
+    // ~spwi618~
+    // ~spwi701~
+    // ~spwi702~
+    // ~spwi703~
+    // ~projimag~
+    // ~spwi708~
+    // ~spwi710~
     ~spwi710d~
     ~spwi721~
-    ~spwi722~
-    ~spwi801~
+    // ~spwi722~
+    // ~spwi801~
     ~spwi802~
     ~spwi803~
-    ~spwi804~
-    ~spwi808~
-    ~spwi809~
-    ~spwi902~
-    ~spwi907~
-    ~spwi908~
-    ~spwi915~
-    ~spwi916~
+    // ~spwi804~
+    // ~spwi808~
+    // ~spwi809~
+    ~spwi809d~
+    // ~spwi902~
+    // ~spwi907~
+    // ~spwi908~
+    // ~spwi915~
+    // ~spwi916~
     ~spwi917~
-    ~spwi920~
-    ~spwi921~
-    ~spwi971~
-    ~spwi972~
-    ~spwi973~
-    ~spwi974~
-    ~spwi975~
+    // ~spwi920~
+    // ~spwi921~
+    // ~spwi971~
+    // ~spwi972~
+    // ~spwi973~
+    // ~spwi974~
+    // ~spwi975~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
       COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
@@ -233,16 +202,16 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     END
   END
   ACTION_FOR_EACH add_spl IN
-    CLERIC_STRENGTH_OF_STONE
+    // CLERIC_STRENGTH_OF_STONE
     CLERIC_REGENERATE_LIGHT_WOUNDS
-    CLERIC_GOOD_BERRIES
-    CLERIC_CAUSE_LIGHT_WOUNDS
+    // CLERIC_GOOD_BERRIES
+    // CLERIC_CAUSE_LIGHT_WOUNDS
     CLERIC_RESIST_ELEMENTS
     CLERIC_CURE_MODERATE_WOUNDS
     CLERIC_REGENERATE_MODERATE_WOUNDS
-    CLERIC_CAUSE_MODERATE_WOUNDS
-    CLERIC_CAUSE_MEDIUM_WOUNDS
-    CLERIC_STORM_SHIELD
+    // CLERIC_CAUSE_MODERATE_WOUNDS
+    // CLERIC_CAUSE_MEDIUM_WOUNDS
+    // CLERIC_STORM_SHIELD
     CLERIC_REGENERATE_MEDIUM_WOUNDS
     CLERIC_MAGIC_FANG
     CLERIC_REGENERATE_SERIOUS_WOUNDS
@@ -254,11 +223,11 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     CLERIC_ANIMAL_GROWTH
     CLERIC_REGENERATE_CRITICAL_WOUNDS
     CLERIC_REGENERATION_DRUID_VERSION
-    WIZARD_DIMENSION_JUMP
+    // WIZARD_DIMENSION_JUMP
     WIZARD_EXPEDITIOUS_RETREAT
     WIZARD_RESIST_ELEMENTS
-    WIZARD_PROTECTION_FROM_ELEMENTAL_ENERGY
-    WIZARD_MESTILS_ACID_SHEATH
+    // WIZARD_PROTECTION_FROM_ELEMENTAL_ENERGY
+    // WIZARD_MESTILS_ACID_SHEATH
     WIZARD_DISPELLING_SCREEN
   BEGIN
     ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]%add_spl%[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
