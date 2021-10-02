@@ -1,10 +1,10 @@
-BACKUP ~weidu_external/backup/spell_rev~
+BACKUP ~spell_rev/backup~
 AUTHOR ~Bartimaeus in the SR Revised thread at forums.gibberlings3.net~
 README ~spell_rev\readme-spell_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 Beta 18 (Revised V1.3.553)~
+VERSION ~v4 Beta 18 (Revised V1.3.554)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
