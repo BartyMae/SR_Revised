@@ -1294,7 +1294,7 @@ COPY ~spell_rev\sppr7##\sppr708.spl~     ~override~  // Finger of Death
 COPY ~spell_rev\sppr7##\dvfingpi.eff~    ~override~
 
 ADD_PROJECTILE ~spell_rev\projectles\dvschaos.pro~
-COPY ~spell_rev\sppr7##\sppr709.spl~     ~override~  // Chaos (replaces Confusion)
+COPY ~spell_rev\sppr7##\sppr709.spl~     ~override~  // Sphere of Chaos (replaces Confusion)
   SAY NAME1 @297    SAY UNIDENTIFIED_DESC @298
   WRITE_SHORT 0x98 %dvschaos%
 APPEND ~spell.ids~ ~1709 CLERIC_CHAOS~
@@ -2511,10 +2511,17 @@ COPY ~spell_rev\spwi5##\scrl5o.itm~      ~override~
 COPY ~spell_rev\spwi5##\spwi507d.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi507d.eff~     ~override~
 
+ACTION_IF chaos=1 BEGIN
 COPY ~spell_rev\spwi5##\spwi508.spl~     ~override~  // Waves of Fatigue (replaces Chaos)
   SAY NAME1 @625    SAY UNIDENTIFIED_DESC @626
 COPY ~spell_rev\spwi5##\scrl5p.itm~      ~override~
   SAY NAME2 @625    SAY IDENTIFIED_DESC   @626
+END ELSE BEGIN
+COPY ~spell_rev\shared\alternatives\spwi508.spl~     ~override~  // Chaos
+  SAY NAME1 @625000    SAY UNIDENTIFIED_DESC @626000
+COPY ~spell_rev\shared\alternatives\scrl5p.itm~      ~override~
+  SAY NAME2 @625000    SAY IDENTIFIED_DESC   @626000
+END
 COPY_EXISTING ~spell.ids~ ~override~
   REPLACE_TEXTUALLY ~^2508[ %TAB%]+WIZARD_CHAOS~ ~2508 WIZARD_WAVES_OF_FATIGUE~
 
@@ -3007,7 +3014,7 @@ COPY ~spell_rev\spwi7##\scrl8l.itm~      ~override~
 COPY ~spell_rev\spwi7##\spwi710d.spl~    ~override~
   SAY NAME1 @735
 
-COPY ~spell_rev\spwi7##\spwi711.spl~     ~override~  // Chaos ("replaces" Sphere of Chaos)
+COPY ~spell_rev\spwi7##\spwi711.spl~     ~override~  // Sphere of Chaos
   SAY NAME1 @737    SAY UNIDENTIFIED_DESC @738
   WRITE_SHORT 0x98 %dvschaos%
 COPY ~spell_rev\spwi7##\scrl8m.itm~      ~override~

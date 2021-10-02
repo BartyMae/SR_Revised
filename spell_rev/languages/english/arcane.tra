@@ -975,7 +975,7 @@ Saving Throw: Spell negates
 
 This spell works in the exact same manner as Charm Person, with two differences: the saving throw is more difficult to make, and the enchantment has a longer duration. This spell affects any single person that it is cast upon. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. If the target fails their save vs. spell, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creature will carry them out as quickly as possible.
 
-Creatures that are currently neutral to the caster are more amenable to helping them and make their saving throw with a -2 penalty, while those that are hostile are significantly more difficult to influence and instead gain a +2 bonus to making their saving throw. If the caster attempts to harm the charmed creature, the spell is broken and the affected creature will immediately become hostile to the caster. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. After the duration of the spell or if a dispel magic is successfully cast upon them, the affected creature resumes their previous behavior prior to being charmed.~
+Creatures that are currently neutral to the caster are more amenable to helping them and make their saving throw with a -2 penalty, while those that are hostile are significantly more difficult to influence and instead make their saving throw with no penalty. If the caster attempts to harm the charmed creature, the spell is broken and the affected creature will immediately become hostile to the caster. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. After the duration of the spell or if a dispel magic is successfully cast upon them, the affected creature resumes their previous behavior prior to being charmed.~
 
 @531=~Ghost Armor~
 @532=~Ghost Armor
@@ -1723,6 +1723,18 @@ Area of Effect: 30' radius
 Saving Throw: None
 
 Surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested for a day. While fatigued, they suffer a -2 penalty to luck, movement rate, casting speed, and speed factor. Multiple castings of this spell are not cumulative.~
+
+@625000=~Chaos~
+@626000=~Chaos
+Level: 5
+School: Enchantment
+Range: Long
+Duration: 5 rounds
+Casting Time: 5
+Area of Effect: 30' radius
+Saving Throw: Spell negates
+
+The effects of this spell are identical to the spell Confusion in all but one respect: the saving throw is more difficult to make. This spell causes confusion to one or more creatures within the area, creating indecision and the inability to take effective action. All hostile creatures within the area of effect must save vs. spell at a -4 penalty or either go berserk, stand confused, or wander about for the duration of the spell. Wandering creatures tend to move as far from the caster as possible, but any confused creature that is attacked perceives the attacker as an enemy and acts according to their basic nature.~
 
 @627=~Feeblemind~
 @628=~Feeblemind
@@ -2573,8 +2585,8 @@ Saving Throw: None
 
 This spell allows a wizard to prepare a magical sequencer that can store spells to be used later in a single swift action. The sequencer can store three spells to be released simultaneously, all of which must be of 4th level or lower. A wizard can only possess one spell sequencer at a time, and the sequencer will remain active until the spells contained within it are released.~
 
-@737=~Chaos~
-@738=~Chaos
+@737=~Sphere of Chaos~
+@738=~Sphere of Chaos
 Level: 7
 School: Enchantment
 Range: Long
