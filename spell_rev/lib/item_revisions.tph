@@ -65,6 +65,10 @@ COPY_EXISTING ~hamm11.itm~ ~override~
   SPRINT new_spell_name @156600 // Champion's Strength (1x per day): +6 bonus for 1 turn
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
+  SPRINT old_spell_name @156600000 // Champion's Strength (1x per day): +5 bonus for 1 turn
+  SPRINT new_spell_name @15660000
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
 END
 ACTION_IF (FILE_EXISTS_IN_GAME ~misc3a12.itm~) THEN BEGIN
 COPY_EXISTING ~misc3a8.itm~ ~override~
@@ -88,6 +92,10 @@ COPY_EXISTING ~misc3l.itm~ ~override~
   LPM ~update_item_descriptions~
   SPRINT old_spell_name @1723010 // (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
   SPRINT new_spell_name @172301 // (3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+  SPRINT old_spell_name @172301000
+  SPRINT new_spell_name @17230100
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
@@ -123,6 +131,13 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.itm~) THEN BEGIN
 COPY_EXISTING ~sw1h65.itm~ ~override~
   SPRINT old_spell_name @2162000 // Draw Upon Holy Might
   SPRINT new_spell_name @216200 // Draw Upon Divine Might
+  TEXT_SPRINT text_update ~replace_spell_name~
+  LPM ~update_item_descriptions~
+END
+ACTION_IF (FILE_EXISTS_IN_GAME ~wand10.itm~) THEN BEGIN
+COPY_EXISTING ~wand10.itm~ ~override~
+  SPRINT old_spell_name @2258000 // Monster Summoning
+  SPRINT new_spell_name @225800 // Monster Summoning IV
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
