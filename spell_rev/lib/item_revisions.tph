@@ -143,13 +143,9 @@ COPY_EXISTING ~wand10.itm~ ~override~
 END
 
 // Spell name updates
-ACTION_IF (FILE_EXISTS_IN_GAME ~brac23.spl~) THEN BEGIN
-  COPY_EXISTING ~brac23.spl~             ~override~ // Righteous Fury
-    SAY NAME1 @130800
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~sw1h65.spl~) THEN BEGIN
-  COPY_EXISTING ~sw1h65.spl~             ~override~ // Draw Upon Holy Might
-    SAY NAME2 @216200
+ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.spl~) THEN BEGIN
+  COPY_EXISTING ~misc3l.spl~ ~override~ // Silence
+    SAY NAME2 @172300
 END
 
 // SRR spell updates
