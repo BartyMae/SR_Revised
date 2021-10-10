@@ -2563,14 +2563,14 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -4 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
+When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
 
-Red - 10D6 fire damage (save vs. breath half)
-Orange - Stun for 1 turn (save vs. polymorph neg.)
-Yellow - 10D6 electrical damage (save vs. breath half)
-Green - Death (save vs. poison for 5D4 poison damage)
-Blue - 10D6 cold damage (save vs. breath half)
-Violet - Confusion for 1 turn (save vs. wand neg.)
+Red - 6D6 fire damage (save vs. breath half)
+Orange - Stun for 5 rounds (save vs. polymorph neg.)
+Yellow - 6D6 electrical damage (save vs. breath half)
+Green - Paralysis for 5 rounds (save vs. poison for 3D4 poison damage)
+Blue - 6D6 cold damage (save vs. breath half)
+Violet - Confusion for 5 rounds (save vs. wand neg.)
 Pink - Maze (save vs. spell neg.)~
 
 @735=~Simbul's Spell Sequencer~
