@@ -1703,9 +1703,9 @@ Casting Time: 6
 Area of Effect: 10' radius
 Saving Throw: None
 
-The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 10' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell are not cumulative.
+The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 10' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell and Globe of Blades are not cumulative.
 
-Note that invisibility or invisibility-like spells and effects such as Sanctuary, Improved Invisibility, and Mislead will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
+Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
 @199=~Conjure Fire Elemental~
 @200=~Conjure Fire Elemental
@@ -2467,9 +2467,9 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: None
 
-The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 10' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell.
+The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 10' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell and Blade Barrier are not cumulative.
 
-Note that invisibility or invisibility-like spells and effects such as Sanctuary, Improved Invisibility, and Mislead will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
+Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
 @281=~Summon Deva~
 @282=~Summon Deva

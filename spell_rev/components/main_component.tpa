@@ -2,14 +2,14 @@ INCLUDE ~spell_rev\lib\cre_spell_immunity.tph~
 INCLUDE ~spell_rev\lib\manage_add_spell_references.tpa~
 INCLUDE ~spell_rev\lib\macros.tpa~
 
-/*------------Manage ADD_SPELL References (Part 1)-----------*/
+/* ---------------- Manage ADD_SPELL References (Part 1) ---------------- */
 
 // Spells that will be installed with ADD_SPELL have an unknown final filename.
 // If any SPL/ITM/EFF files need to reference those new spells, they can do so using their current filenames in the mod folder.
 // This function will go through those files and replace the references to current filenames with temp filenames.
 LAF ASSIGN_TEMP_NAMES_FOR_NEW_SPELL_REFERENCES END
 
-/* ----Miscellaneous---- */
+/* ---------------- Miscellaneous ---------------- */
 
 // Scroll of Restoration
 // adscroll.itm still copied over in case someone wants to CLUAConsole it for use on an old save game
@@ -116,7 +116,7 @@ COPY ~spell_rev\shared\dvknback.eff~     ~override~
 COPY ~spell_rev\shared\bams~             ~override~  // Bams for new spells
 
 
-/* ----Projectiles---- */
+/* ---------------- Projectiles ---------------- */
 
 ADD_PROJECTILE ~spell_rev\projectles\dvmainpr.pro~  // 1 target, no animation, 200 speed
 
@@ -201,21 +201,21 @@ COPY_EXISTING ~dfirebl.pro~  ~override~  // Trap-like projectiles trigger more q
   WRITE_SHORT 0x210 10
   BUT_ONLY_IF_IT_CHANGES
 
-/* ----Improved AI---- */
+/* ---------------- Improved AI ---------------- */
 
 COPY ~spell_rev\shared\dvmelee.bcs~      ~override~  // Summons' melee AI
 COPY ~spell_rev\shared\dvmelews.bcs~     ~override~  // Summons' melee + random weapon switching AI
 COPY ~spell_rev\shared\dvranged.bcs~     ~override~  // Summons' ranged AI
 COPY ~spell_rev\shared\dvbrsker.bcs~     ~override~  // Summons' melee + berserking AI
 
-/* ----Creature Type Characteristics---- */
+/* ---------------- Creature Type Characteristics ---------------- */
 
 COPY ~spell_rev\shared\elemtype.itm~     ~override~  // Elemental type characteristics
 COPY ~spell_rev\shared\undtype.itm~      ~override~  // Undead type characteristics
 COPY ~spell_rev\shared\vermtype.itm~     ~override~  // Vermin type characteristics
 COPY ~spell_rev\shared\neckcrit.itm~     ~override~  // Critical hit protection necklace
 
-/* ----Bhaalspawn Abilities---- */
+/* ---------------- Bhaalspawn Abilities ---------------- */
 
 COPY ~spell_rev\shared\spin101.spl~      ~override~  // Cure Light Wounds
   SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
@@ -234,7 +234,7 @@ COPY ~spell_rev\shared\spin106.spl~      ~override~  // Vampiric Touch
   SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
 COPY ~spell_rev\shared\spin106i.eff~     ~override~
 
-/* ----Beast Master Abilities---- */
+/* ---------------- Beast Master Abilities ---------------- */
 
 COPY ~spell_rev\shared\spra304.spl~      ~override~  // Animal Summoning IV
   SAY NAME1 @394    SAY UNIDENTIFIED_DESC @395
@@ -243,7 +243,7 @@ COPY ~spell_rev\shared\spra305.spl~      ~override~  // Animal Summoning V
 COPY ~spell_rev\shared\spra306.spl~      ~override~  // Animal Summoning VI
   SAY NAME1 @398    SAY UNIDENTIFIED_DESC @399
 
-/* ----Paladin Abilities---- */
+/* ---------------- Paladin Abilities ---------------- */
 
 /*
 COPY ~spell_rev\shared\spcl211.spl~      ~override~  // Lay on Hands
@@ -254,12 +254,12 @@ COPY ~spell_rev\shared\spcl212.spl~      ~override~  // Detect Evil
 COPY ~spell_rev\shared\spcl213.spl~      ~override~  // Protection from Evil
   SAY NAME1 @13    SAY UNIDENTIFIED_DESC @14
 
-/* ----Cavalier Abilities---- */
+/* ---------------- Cavalier Abilities ---------------- */
 
 COPY ~spell_rev\shared\spcl222.spl~      ~override~  // Remove Fear (Resist Fear except in name and icon)
 //  SAY NAME1 @0     SAY UNIDENTIFIED_DESC @0
 
-/* ----Inquisitor Abilities---- */
+/* ---------------- Inquisitor Abilities ---------------- */
 
 ACTION_IF alternative_dispel_magic=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spcl231.save.spl~     ~override\spcl231.spl~  // Dispel Magic
@@ -276,14 +276,14 @@ COPY ~spell_rev\shared\spcl232.spl~      ~override~  // True Seeing
   SAY NAME1 @159    SAY UNIDENTIFIED_DESC @160
 COPY ~spell_rev\shared\spcl232d.spl~     ~override~
 
-/* ----Priest of Talos Abilities---- */
+/* ---------------- Priest of Talos Abilities ---------------- */
 
 COPY ~spell_rev\shared\spcl721.spl~      ~override~  // Storm Shield
   SAY NAME1 @1109    SAY UNIDENTIFIED_DESC @1110
 COPY ~spell_rev\shared\spcl722.spl~      ~override~  // Lightning Bolt
   SAY NAME1 @515    SAY UNIDENTIFIED_DESC @516
 
-/* ----Priest of Helm Abilities---- */
+/* ---------------- Priest of Helm Abilities ---------------- */
 
 /*
 COPY ~spell_rev\shared\spcl731.spl~      ~override~  // Seeking Sword
@@ -292,7 +292,7 @@ COPY ~spell_rev\shared\spcl731.spl~      ~override~  // Seeking Sword
 COPY ~spell_rev\shared\spcl732.spl~      ~override~  // True Seeing
   SAY NAME1 @159    SAY UNIDENTIFIED_DESC @160
 
-/* ----Priest of Lathander Abilities---- */
+/* ---------------- Priest of Lathander Abilities ---------------- */
 
 /*
 COPY ~spell_rev\shared\spcl741.spl~      ~override~  // Boon of Lathander
@@ -303,7 +303,7 @@ COPY ~spell_rev\shared\spcl742.spl~      ~override~  // Halt Undead (previously 
 COPY ~spell_rev\shared\spcl742d.spl~      ~override~
 COPY ~spell_rev\shared\spcl742d.eff~      ~override~
 
-/* ----Avenger Abilities---- */
+/* ---------------- Avenger Abilities ---------------- */
 
 COPY ~spell_rev\shared\spdr101.spl~      ~override~  // Chromatic Orb
   SAY NAME1 @433000    SAY UNIDENTIFIED_DESC @434000
@@ -326,7 +326,7 @@ COPY ~spell_rev\shared\spdr601.spl~      ~override~  // Chain Lightning
 COPY ~spell_rev\shared\spdr601d.spl~     ~override~
 COPY ~spell_rev\shared\dvdr601.spl~      ~override~
 
-/* ----Stalker Abilities---- */
+/* ---------------- Stalker Abilities ---------------- */
 
 COPY ~spell_rev\shared\spra301.spl~      ~override~  // Haste
   SAY NAME1 @509    SAY UNIDENTIFIED_DESC @510
@@ -335,7 +335,7 @@ COPY ~spell_rev\shared\spra302.spl~      ~override~  // Non-Detection
 COPY ~spell_rev\shared\spra303.spl~      ~override~  // Protection from Missiles
   SAY NAME1 @521    SAY UNIDENTIFIED_DESC @522
 
-/* ----Innate Abilities---- */
+/* ---------------- Innate Abilities ---------------- */
 
 COPY ~spell_rev\shared\spcl233.spl~      ~override~  // Magic Circle Against Evil
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
@@ -407,13 +407,13 @@ COPY ~spell_rev\shared\spin789.spl~      ~override~  // Demilich Howl
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/* -------------------- DIVINE SPELLS -------------------------*/
+/* ---------------- Divine Spells ---------------- */
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 
-/*---------------------Level 1-----------------------*/
+/* ---------------- Level 1 ---------------- */
 
 COPY ~spell_rev\sppr1##\sppr101.spl~     ~override~  // Bless
   SAY NAME1 @1     SAY UNIDENTIFIED_DESC @2
@@ -566,7 +566,7 @@ APPEND ~clearair.2da~ ~Obscuring_Mist             %dvobmist%~
 COPY ~spell_rev\sppr1##\dvomisti.eff~    ~override~
 
 
-/*--------------------Level 2----------------------*/
+/* ---------------- Level 2 ---------------- */
 
 COPY ~spell_rev\sppr2##\sppr201.spl~     ~override~  // Aid
   SAY NAME1 @31    SAY UNIDENTIFIED_DESC @32
@@ -721,7 +721,7 @@ COPY ~spell_rev\sppr2##\dvdscent.spl~    ~override~
 COPY ~spell_rev\sppr2##\dvdscent.eff~    ~override~
 
 
-/*-----------------------Level 3-----------------------*/
+/* ---------------- Level 3 ---------------- */
 
 COPY ~spell_rev\sppr3##\sppr301.spl~     ~override~  // Animate Dead
   SAY NAME1 @71    SAY UNIDENTIFIED_DESC @72
@@ -877,7 +877,7 @@ COPY ~spell_rev\sppr3##\dvconta2.spl~    ~override~
 COPY ~spell_rev\sppr3##\dvcontai.eff~    ~override~
 
 
-/*-----------------------Level 4-----------------------*/
+/* ---------------- Level 4 ---------------- */
 
 COPY ~spell_rev\sppr4##\sppr401.spl~     ~override~  // Cure Serious Wounds
   SAY NAME1 @111    SAY UNIDENTIFIED_DESC @112
@@ -915,7 +915,7 @@ COPY ~spell_rev\sppr4##\sppr406.spl~     ~override~  // Defensive Harmony
 COPY ~spell_rev\sppr4##\scrl5b.itm~      ~override~
   SAY NAME2 @121    SAY IDENTIFIED_DESC   @122
 
-COPY ~spell_rev\sppr4##\sppr407.spl~     ~override~  // Protection from Lightning (disabled at level 4)
+COPY ~spell_rev\sppr4##\sppr407.spl~     ~override~  // Protection from Electricity (disabled at level 4)
   SAY NAME1 @123    SAY UNIDENTIFIED_DESC @124
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7567 parameter1 = RESOLVE_STR_REF(@123) END
 COPY_EXISTING ~spell.ids~ ~override~
@@ -992,7 +992,7 @@ ADD_SPELL ~spell_rev\sppr4##\sppr420.spl~ 1 4 ~CLERIC_POLYMORPH_OTHER~ // Polymo
 COPY ~spell_rev\sppr4##\dvsquir.itm~     ~override~
   SAY NAME1 @4050   SAY NAME2 @4050
 
-/*-----------------------Level 5-----------------------*/
+/* ---------------- Level 5 ---------------- */
 
 COPY ~spell_rev\sppr5##\sppr501.spl~     ~override~  // Animal Summoning V
   SAY NAME1 @151    SAY UNIDENTIFIED_DESC @152
@@ -1138,7 +1138,7 @@ ADD_SPELL ~spell_rev\sppr5##\sppr526.spl~ 1 5 ~CLERIC_REGENERATE_CRITICAL_WOUNDS
 COPY ~spell_rev\sppr5##\spja01.spl~      ~override~  // Harper's Call
   SAY NAME1 @2157   SAY UNIDENTIFIED_DESC @2158
 
-/*-----------------------Level 6-----------------------*/
+/* ---------------- Level 6 ---------------- */
 
 COPY ~spell_rev\sppr6##\sppr601.spl~     ~override~  // Aerial Servant
   SAY NAME1 @191    SAY UNIDENTIFIED_DESC @192
@@ -1239,7 +1239,7 @@ ADD_SPELL ~spell_rev\sppr6##\sppr623.spl~ 1 6 ~CLERIC_ANIMATE_SKELETON_WARRIOR~ 
   SAY NAME1 @225    SAY UNIDENTIFIED_DESC @226
 
 
-/*-----------------------Level 7-----------------------*/
+/* ---------------- Level 7 ---------------- */
 
 COPY ~spell_rev\sppr7##\sppr701.spl~     ~override~  // Shield of the Archons
   SAY NAME1 @231    SAY UNIDENTIFIED_DESC @232
@@ -1349,7 +1349,7 @@ COPY ~spell_rev\sppr7##\dvpr720d.eff~    ~override~
 COPY ~spell_rev\sppr7##\dvpr720i.eff~    ~override~
 
 
-/*-----------------------Level 8-----------------------*/
+/* ---------------- Level 8 ---------------- */
 
 COPY ~spell_rev\sppr7##\sppr721.spl~     ~override~  // Energy Blades
   SAY NAME1 @271    SAY UNIDENTIFIED_DESC @272
@@ -1451,13 +1451,13 @@ COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/* -------------------- ARCANE SPELLS -------------------------*/
+/* ---------------- Arcane Spells ---------------- */
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 
-/*---------------------Level 1-----------------------*/
+/* ---------------- Level 1 ---------------- */
 
 COPY_EXISTING ~grease.pro~               ~override~  // Grease projectile
   WRITE_SHORT 0x206 170 // 20' AoE
@@ -1781,7 +1781,7 @@ ADD_SPELL ~spell_rev\spwi1##\spwi128.spl~ 2 1 ~WIZARD_EXPEDITIOUS_RETREAT~  // E
 COPY ~spell_rev\spwi1##\scrl73.itm~      ~override~  // vanilla's Protection from Petrification scroll
   SAY NAME2 @415    SAY IDENTIFIED_DESC   @416
 
-/*--------------------Level 2----------------------*/
+/* ---------------- Level 2 ---------------- */
 
 COPY ~spell_rev\spwi2##\spwi201.spl~     ~override~  // Blur
   SAY NAME1 @451    SAY UNIDENTIFIED_DESC @452
@@ -1954,7 +1954,7 @@ COPY ~spell_rev\spwi2##\hobshasu.itm~    ~override~
 COPY ~spell_rev\spwi2##\dvhobsha.bcs~    ~override~
 
 
-/*-----------------------Level 3-----------------------*/
+/* ---------------- Level 3 ---------------- */
 
 COPY ~spell_rev\spwi3##\spwi301.spl~     ~override~  // Clairvoyance
   SAY NAME1 @501    SAY UNIDENTIFIED_DESC @502
@@ -2176,7 +2176,7 @@ ADD_SPELL ~spell_rev\spwi3##\spwi327.spl~ 2 3 ~WIZARD_ICELANCE~  // Icelance (ad
 COPY ~spell_rev\spwi3##\scrl6i.itm~      ~override~  // vanilla's Protection from Cold scroll
   SAY NAME2 @875    SAY IDENTIFIED_DESC   @876
 
-/*-----------------------Level 4-----------------------*/
+/* ---------------- Level 4 ---------------- */
 
 COPY ~spell_rev\spwi4##\spwi401.spl~     ~override~  // Confusion
   SAY NAME1 @561    SAY UNIDENTIFIED_DESC @562
@@ -2437,7 +2437,7 @@ COPY ~spell_rev\spwi4##\dvvtrsph.vvc~    ~override~
 COPY ~spell_rev\spwi4##\dvvtrsph.bam~    ~override~
 COPY ~spell_rev\spwi4##\dvvtrtra.bam~    ~override~
 
-/*-----------------------Level 5-----------------------*/
+/* ---------------- Level 5 ---------------- */
 
 COPY ~spell_rev\spwi5##\spwi501.spl~     ~override~  // Summon Shadow (replaces Animate Dead)
   SAY NAME1 @611    SAY UNIDENTIFIED_DESC @612
@@ -2758,7 +2758,7 @@ COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
   SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
 COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
 
-/*-----------------------Level 6-----------------------*/
+/* ---------------- Level 6 ---------------- */
 
 COPY ~spell_rev\spwi6##\spwi601.spl~     ~override~  // Invisible Stalker
   SAY NAME1 @661    SAY UNIDENTIFIED_DESC @662
@@ -2945,7 +2945,7 @@ COPY ~spell_rev\spwi6##\scrl8c.itm~      ~override~  // Scroll used for Summon N
 */
 
 
-/*-----------------------Level 7-----------------------*/
+/* ---------------- Level 7 ---------------- */
 
 COPY ~spell_rev\spwi7##\spwi701.spl~     ~override~  // Greater Spell Deflection (replaces Spell Turning)
   SAY NAME1 @721    SAY UNIDENTIFIED_DESC @722
@@ -3126,7 +3126,7 @@ COPY ~spell_rev\spwi7##\otyughsu.itm~    ~override~
 APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_5% WIZARD_MONSTER_SUMMONING_LEVEL_7~
 
 
-/*-----------------------Level 8-----------------------*/
+/* ---------------- Level 8 ---------------- */
 
 COPY ~spell_rev\spwi8##\spwi801.spl~     ~override~  // Ghostform (new alteration spell)
   SAY NAME1 @767    SAY UNIDENTIFIED_DESC @768
@@ -3281,7 +3281,7 @@ COPY ~spell_rev\shared\spin839.spl~      ~override~  // Umber Hulk Confusing Gaz
 APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_6% WIZARD_MONSTER_SUMMONING_LEVEL_8~
 
 
-/*-----------------------Level 9-----------------------*/
+/* ---------------- Level 9 ---------------- */
 
 COPY ~spell_rev\spwi9##\spwi902.spl~     ~override~  // Spell Trap
   SAY NAME1 @811    SAY UNIDENTIFIED_DESC @812
@@ -3434,7 +3434,7 @@ COPY ~spell_rev\spwi9##\dvwis38.spl~     ~override~
 COPY ~spell_rev\spwi9##\p3-12m4.itm~     ~override~
 
 
-/*-----------------------Level 10-----------------------*/
+/* ---------------- Level 10 ---------------- */
 
 COPY ~spell_rev\spwi9##\spwi920.spl~     ~override~  // Energy Blades
   SAY NAME1 @851    SAY UNIDENTIFIED_DESC @852
@@ -3480,7 +3480,7 @@ COPY ~spell_rev\spwi9##\spwi925.spl~     ~override~  // Comet
   SAY NAME1 @861    SAY UNIDENTIFIED_DESC @862
 
 
-/*---------------------Projectile Protection Patching---------------------*/
+/* ---------------- Projectile Protection Patching ---------------- */
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN
 COPY_EXISTING ~spra303.spl~      ~override~  // Protection from Missiles
@@ -3564,31 +3564,31 @@ END
 END
 
 
-/*----------------IR Fixes-----------------*/
+/* ---------------- IR Fixes ---------------- */
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) BEGIN
   INCLUDE ~spell_rev\lib\item_revisions.tph~
 END
 
 
-/*----------------1pp & EE graphical fixes-----------------*/
+/* ---------------- 1pp & EE graphical fixes ---------------- */
 INCLUDE ~spell_rev\lib\1pp.tph~
 
 
-/*------------Manage ADD_SPELL References (Part 2)-----------*/
+/* ---------------- Manage ADD_SPELL References (Part 2) ---------------- */
 
 // This function goes through the SPL/ITM/EFF files in the game and replaces references
 // to our temp filenames with references to the final filenames assigned by ADD_SPELL.
 LAF ASSIGN_FINAL_NAMES_FOR_NEW_SPELL_REFERENCES END
 
 
-/*---------------------Spell Shield Fix---------------------*/
+/* ---------------- Spell Shield Fix ---------------- */
 
 INCLUDE ~spell_rev\lib\ardanis_spell_shield.tph~
 LAF ardanis_spell_shield END
 
 
-/*---------------------Custom Sec Types---------------------*/
+/* ---------------- Custom Sec Types ---------------- */
 
 INCLUDE ~spell_rev\lib\kreso_haste_slow.tph~
 INCLUDE ~spell_rev\lib\kreso_petrification.tph~
@@ -3625,7 +3625,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
 END
 
 
-/*---------------------Tutu Scrolls---------------------*/
+/* ---------------- Tutu Scrolls ---------------- */
 
 ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
   ACTION_FOR_EACH scroll IN
@@ -3694,7 +3694,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
     ~scrl05~  // protection from electricity
     ~scrl5d~  // protection from evil 10' radius
     ~scrl06~  // protection from fire
-    ~scrl5c~  // protection from lightning
+    ~scrl5c~  // protection from electricity
     ~scrl07~  // protection from magic
     ~scrl15~  // protection from petrification
     ~scrl08~  // protection from poison
@@ -3720,7 +3720,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
 END
 
 
-/*----------------"Fix" Invalid BG1EE Strings-----------------*/
+/* ---------------- "Fix" Invalid BG1EE Strings ---------------- */
 
 // BG1EE invalid string fixes
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
@@ -3799,7 +3799,7 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet
 END
 
 
-/*----------------Add New Spell Scrolls-----------------*/
+/* ---------------- Add New Spell Scrolls ---------------- */
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
 COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
@@ -3926,7 +3926,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bg4804.are~) BEGIN // Nashkel Noble House
 END
 END
 
-/*----------------Remove Disabled Spell Scrolls-----------------*/
+/* ---------------- Remove Disabled Spell Scrolls ---------------- */
 
 // BG2 broken areas fix
 ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
@@ -3947,27 +3947,27 @@ COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
 BUT_ONLY
 
 
-/*----------------Spellcasting HLAs-----------------*/
+/* ---------------- Spellcasting HLAs ---------------- */
 
 INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
 
 
-/*----------------Friendly Spells Pierce Spell Protections-----------------*/
+/* ---------------- Friendly Spells Pierce Spell Protections ---------------- */
 
 INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
 
 
-/*----------------Anti-magic Spells Pierce Improved Invisibility-----------------*/
+/* ---------------- Anti-magic Spells Pierce Improved Invisibility ---------------- */
 
 INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
 
 
-/*----------------Add Invisibility/Sanctuary-Breaking Flag (EEs)-----------------*/
+/* ---------------- Add Invisibility/Sanctuary-Breaking Flag (EEs) ---------------- */
 
 INCLUDE ~spell_rev\lib\ee_si.tph~
 
 
-/*----------------Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs)-----------------*/
+/* ---------------- Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs) ---------------- */
 
 INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
 
@@ -3975,7 +3975,7 @@ INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/*----------------Revised Saves-----------------*/
+/* ---------------- Revised Saves ---------------- */
 
 ACTION_IF revised_saves BEGIN
 

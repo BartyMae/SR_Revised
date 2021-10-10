@@ -2,6 +2,8 @@ INCLUDE ~spell_rev\lib\manage_add_spell_references.tpa~
 
 LAF GET_NEW_SPELL_RESREFS RET_ARRAY new_spell_resrefs END
 
+OUTER_TEXT_SPRINT sppr114 $new_spell_resrefs(~sppr114~)
+OUTER_TEXT_SPRINT sppr115 $new_spell_resrefs(~sppr115~)
 OUTER_TEXT_SPRINT sppr322 $new_spell_resrefs(~sppr322~)
 OUTER_TEXT_SPRINT sppr520 $new_spell_resrefs(~sppr520~)
 OUTER_TEXT_SPRINT sppr521 $new_spell_resrefs(~sppr521~)
@@ -12,7 +14,16 @@ OUTER_TEXT_SPRINT spwi128 $new_spell_resrefs(~spwi128~)
 OUTER_TEXT_SPRINT spwi225 $new_spell_resrefs(~spwi225~)
 OUTER_TEXT_SPRINT spwi526 $new_spell_resrefs(~spwi526~)
 
-///////////// Divine Spells /////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Divine Spells ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+/* ---------------- Level 1 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr101.spl~ THEN BEGIN  // Bless
 COPY_EXISTING ~sppr101.spl~ ~override~
@@ -43,6 +54,19 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr113 END
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~%sppr114%.spl~ THEN BEGIN  // Faerie Fire
+COPY_EXISTING ~%sppr114%.spl~ ~override~
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr114%~ END
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~%sppr115%.spl~ THEN BEGIN  // Strength of Stone
+COPY_EXISTING ~%sppr115%.spl~ ~override~
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr115%~ END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr115%~ END
+END
+
+/* ---------------- Level 2 ---------------- */
+
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr201.spl~ THEN BEGIN  // Aid
 COPY_EXISTING ~sppr201.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
@@ -53,7 +77,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~sppr202.spl~ THEN BEGIN  // Barkskin
 COPY_EXISTING ~sppr202.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr202 END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = staf14a END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr203.spl~ THEN BEGIN  // Chant
@@ -98,9 +121,13 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sw1h65 END
 END
 
+/* ---------------- Level 3 ---------------- */
+
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr306.spl~ THEN BEGIN  // Protection from Fire (disabled)
 COPY_EXISTING ~sppr306.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr306 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr523%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi319 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr306 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr523%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi319 END
@@ -112,11 +139,13 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr312 END
 END
 
-/*ACTION_IF FILE_EXISTS_IN_GAME ~%sppr322%.spl~ THEN BEGIN  // Storm Shield (disabled because of other immunities)
+ACTION_IF FILE_EXISTS_IN_GAME ~%sppr322%.spl~ THEN BEGIN  // Storm Shield
 COPY_EXISTING ~%sppr322%.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr322%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = EVAL ~%sppr322%~ END
-END*/
+END
+
+/* ---------------- Level 4 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr406.spl~ THEN BEGIN  // Defensive Harmony
 COPY_EXISTING ~sppr406.spl~ ~override~
@@ -126,7 +155,9 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr407.spl~ THEN BEGIN  // Protection from Electricity (disabled)
 COPY_EXISTING ~sppr407.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr407 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr522%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi512 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr407 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr522%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi512 END
@@ -155,6 +186,8 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr416 END
 END
 
+/* ---------------- Level 5 ---------------- */
+
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr507.spl~ THEN BEGIN  // Champion's Strength
 COPY_EXISTING ~sppr507.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
@@ -178,23 +211,33 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr513 END
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~sppr515.spl~ THEN BEGIN  // Repulsion
+COPY_EXISTING ~sppr515.spl~ ~override~
+LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr515 END
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr520%.spl~ THEN BEGIN  // Protection from Acid
 COPY_EXISTING ~%sppr520%.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr520%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi517 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr520%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi517 END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr521%.spl~ THEN BEGIN  // Protection from Cold
 COPY_EXISTING ~%sppr521%.spl~ ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr521%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi320 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr521%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi320 END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr522%.spl~ THEN BEGIN  // Protection from Electricity
 COPY_EXISTING ~%sppr522%.spl~ ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr407 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr522%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi512 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr407 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr522%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi512 END
@@ -202,7 +245,10 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr523%.spl~ THEN BEGIN  // Protection from Fire
 COPY_EXISTING ~%sppr523%.spl~ ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr306 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr523%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi319 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr306 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr523%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi319 END
 END
@@ -210,13 +256,16 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~dvanigro.spl~ THEN BEGIN  // Animal Growth
 COPY_EXISTING ~dvanigro.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = dvanigro END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = dvanigro END
 END
+
+/* ---------------- Level 6 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr603.spl~ THEN BEGIN  // Blade Barrier
 COPY_EXISTING ~sppr603.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr603 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr725 END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr619%.spl~ THEN BEGIN  // Regeneration (Druid)
@@ -227,6 +276,8 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = bhaal1b END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = belt09 END
 END
+
+/* ---------------- Level 7 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr711.spl~ THEN BEGIN  // Regeneration (Cleric)
 COPY_EXISTING ~sppr711.spl~ ~override~
@@ -240,16 +291,27 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr725.spl~ THEN BEGIN  // Globe of Blades
 COPY_EXISTING ~sppr725.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr603 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr725 END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr730.spl~ THEN BEGIN  // Aura of Flaming Death
 COPY_EXISTING ~sppr730.spl~ ~override~
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr730 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sppr730 END
 END
 
 
-///////////// Arcane Spells /////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Arcane Spells ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+/* ---------------- Level 1 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi102.spl~ THEN BEGIN  // Mage Armor
 COPY_EXISTING ~spwi102.spl~ ~override~
@@ -284,10 +346,8 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi114.spl~ THEN BEGIN  // Shield
 COPY_EXISTING ~spwi114.spl~ ~override~
-LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi114 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi114 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 142 opcode = 206 STR_VAR resource = spwi112 END
-LPF CLONE_EFFECT INT_VAR match_opcode = 142 opcode = 206 STR_VAR resource = wand03 END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi120.spl~ THEN BEGIN  // Reflected Image
@@ -301,6 +361,8 @@ COPY_EXISTING ~%spwi128%.spl~ ~override~
 LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = EVAL ~%spwi128%~ END
 END
+
+/* ---------------- Level 2 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi201.spl~ THEN BEGIN  // Blur
 COPY_EXISTING ~spwi201.spl~ ~override~
@@ -333,6 +395,8 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%spwi225%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr210 END
 END
+
+/* ---------------- Level 3 ---------------- */
 
 /*ACTION_IF FILE_EXISTS_IN_GAME ~spwi301.spl~ THEN BEGIN  // Clairvoyance, disabled for the time being as it immediately dispels itself for unknown reasons
 COPY_EXISTING ~spwi301.spl~ ~override~
@@ -367,18 +431,23 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi319.spl~ THEN BEGIN  // Protection from Fire
 COPY_EXISTING ~spwi319.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL %sppr523% END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr306 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr523%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi319 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr306 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr523%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi319 END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi320.spl~ THEN BEGIN  // Protection from Cold
 COPY_EXISTING ~spwi320.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr306 END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL %sppr521% END
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL %spwi320% END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr521%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi320 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr521%~ END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi320 END
 END
+
+/* ---------------- Level 4 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi403.spl~ THEN BEGIN  // Mesthil's Acid Sheath (disabled)
 COPY_EXISTING ~spwi403.spl~ ~override~
@@ -417,9 +486,13 @@ COPY_EXISTING ~spwi418.spl~ ~override~
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi418 END
 END
 
+/* ---------------- Level 5 ---------------- */
+
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi512.spl~ THEN BEGIN  // Protection from Electricity
 COPY_EXISTING ~spwi512.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = sppr407 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr522%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi512 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = sppr407 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr522%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi512 END
@@ -427,7 +500,8 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi517.spl~ THEN BEGIN  // Protection from Acid
 COPY_EXISTING ~spwi517.spl~ ~override~
-//LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = EVAL ~%sppr520%~ END
+LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi517 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr520%~ END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi517 END
 END
@@ -437,6 +511,8 @@ COPY_EXISTING ~%spwi526%.spl~ ~override~
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi403 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = EVAL ~%spwi526%~ END
 END
+
+/* ---------------- Level 6 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi602.spl~ THEN BEGIN  // Globe of Invulnerability
 COPY_EXISTING ~spwi602.spl~ ~override~
@@ -455,6 +531,8 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = spwi613 END
 END*/
 
+/* ---------------- Level 7 ---------------- */
+
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi702.spl~ THEN BEGIN  // Protection from Elemental Energy
 COPY_EXISTING ~spwi702.spl~ ~override~
 //LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
@@ -465,6 +543,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~spwi708.spl~ THEN BEGIN  // Prismatic Mantle
 COPY_EXISTING ~spwi708.spl~ ~override~
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi708 END
 END
+
+/* ---------------- Level 8 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi801.spl~ THEN BEGIN  // Ghostform
 COPY_EXISTING ~spwi801.spl~ ~override~
@@ -480,7 +560,9 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi808.spl~ THEN BEGIN  // Moment of Prescience
 COPY_EXISTING ~spwi808.spl~ ~override~
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi808 END
-END 
+END
+
+/* ---------------- Level 9 ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi914d.spl~ THEN BEGIN  // Larloch's Energy Drain
 COPY_EXISTING ~spwi914d.spl~ ~override~
@@ -489,7 +571,10 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 END
 
 
-///////////// Innate Abilities /////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Innate Abilities ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spcl213.spl~ THEN BEGIN  // Protection from Evil
 COPY_EXISTING ~spcl213.spl~ ~override~
@@ -544,7 +629,20 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 END
 
 
-///////////// EE 2.5 Spell Deflection Patches by Subtledoctor /////////////
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Item Abilities ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- EE 2.5 Spell Deflection Patches by Subtledoctor ---------------- */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~enginest.2da~ BEGIN
 
