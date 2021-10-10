@@ -545,7 +545,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-Application of this spell sets the Strength of the target to 18 and adds an additional +50 exceptional Strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.~
+Application of this spell sets the Strength of the target to 18 and adds an additional +50 exceptional Strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. Multiple castings of this spell are not cumulative.~
 
 @477=~Web~
 @478=~Web
@@ -664,7 +664,7 @@ Casting Time: 2
 Area of Effect: 30' radius
 Saving Throw: Special
 
-This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents within the area, revealing who are invisible and causing them to suffer a -2 penalty to THAC0 for 1 turn. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 1 turn. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades. Multiple castings of this spell are not cumulative. Magic resistance does not affect this spell.~
+This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents within the area, revealing who are invisible and causing them to suffer a -2 penalty to THAC0 for 1 turn. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 1 turn. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
 
 @864=~Resist Elements~
 @865=~Resist Elements
@@ -961,7 +961,7 @@ Saving Throw: None
 
 When this spell is cast, the wizard and all of their gear become insubstantial. As an incorpreal creature, the caster moves silently and cannot be heard or backstabbed, and is vulnerable only to magical attacks of +1 enchantment or better (or by creatures otherwise able to affect those vulnerable only to magical weapons). Non-damaging spell effects affect the caster normally unless they require corporeal targets to function (e.g. Polymorph Other, Flesh to Stone, Disintegrate, and Implosion) or create a corporeal effect that incorporeal creatures would normally be unaffected by (e.g. Entangle, Grease, and Web).
 
-While in wraith form, the caster also has a base AC of 4 and is immune to the effects of disease and poison, but is unable to cast spells. Any melee attack made while in wraith form is considered a melee touch attack (+4 bonus to THAC0), while projectiles become corporeal as soon as they are fired. The transformation lasts for the duration of the spell or until successfully dispelled, but cannot be used in conjunction with other shapeshifting spells such as Polymorph Self and Shapechange.~
+While in wraith form, the caster also has a base AC of 4 and is immune to the effects of disease and poison, but is unable to cast spells. Any melee attack made while in wraith form is considered a melee touch attack (+4 bonus to THAC0), while projectiles become corporeal as soon as they are fired. The transformation lasts for the duration of the spell or until successfully dispelled, but cannot be used in conjunction with other shapeshifting spells such as Polymorph Self and Shapechange. Multiple castings of this spell and Ghostform are not cumulative.~
 
 @529=~Dire Charm~
 @530=~Dire Charm
@@ -2849,7 +2849,7 @@ Saving Throw: None
 
 When this spell is cast, the wizard and all of their gear assume a visible, incorporeal form like that of a manifesting ghost. As an incorpreal creature, the caster moves silently and cannot be heard or backstabbed, and is vulnerable only to magical attacks of +1 enchantment or better (or by creatures otherwise able to affect those vulnerable only to magical weapons). Even when hit by magical attacks, any physical damage sustained while in ghost form is reduced by 50%. Non-damaging spell effects affect the caster normally unless they require corporeal targets to function (e.g. Polymorph Other, Flesh to Stone, Disintegrate, and Implosion) or create a corporeal effect that incorporeal creatures would normally be unaffected by (e.g. Entangle, Grease, and Web).
 
-While in ghost form, the caster also has a base AC of 0 and is immune to the effects of disease and poison. Any melee attack made while in ghost form is considered a melee touch attack (+4 bonus to THAC0), while projectiles become corporeal as soon as they are fired. The transformation lasts for the duration of the spell or until successfully dispelled, but cannot be used in conjunction with other shapeshifting spells such as Polymorph Self and Shapechange.~
+While in ghost form, the caster also has a base AC of 0 and is immune to the effects of disease and poison. Any melee attack made while in ghost form is considered a melee touch attack (+4 bonus to THAC0), while projectiles become corporeal as soon as they are fired. The transformation lasts for the duration of the spell or until successfully dispelled, but cannot be used in conjunction with other shapeshifting spells such as Polymorph Self and Shapechange. Multiple castings of this spell and Wraithform are not cumulative.~
 
 @769=~Mind Blank~
 @770=~Mind Blank
