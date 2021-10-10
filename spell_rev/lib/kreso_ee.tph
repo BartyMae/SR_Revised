@@ -57,6 +57,7 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr114%.spl~ THEN BEGIN  // Faerie Fire
 COPY_EXISTING ~%sppr114%.spl~ ~override~
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL ~%sppr114%~ END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = EVAL spwi224d END
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~%sppr115%.spl~ THEN BEGIN  // Strength of Stone
