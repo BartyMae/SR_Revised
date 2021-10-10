@@ -2512,15 +2512,15 @@ COPY ~spell_rev\spwi5##\spwi507d.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi507d.eff~     ~override~
 
 ACTION_IF chaos=1 BEGIN
-COPY ~spell_rev\spwi5##\spwi508.spl~     ~override~  // Waves of Fatigue (replaces Chaos)
-  SAY NAME1 @625    SAY UNIDENTIFIED_DESC @626
-COPY ~spell_rev\spwi5##\scrl5p.itm~      ~override~
-  SAY NAME2 @625    SAY IDENTIFIED_DESC   @626
-END ELSE BEGIN
 COPY ~spell_rev\shared\alternatives\spwi508.spl~     ~override~  // Chaos
   SAY NAME1 @625000    SAY UNIDENTIFIED_DESC @626000
 COPY ~spell_rev\shared\alternatives\scrl5p.itm~      ~override~
   SAY NAME2 @625000    SAY IDENTIFIED_DESC   @626000
+END ELSE BEGIN
+COPY ~spell_rev\spwi5##\spwi508.spl~     ~override~  // Waves of Fatigue (replaces Chaos)
+  SAY NAME1 @625    SAY UNIDENTIFIED_DESC @626
+COPY ~spell_rev\spwi5##\scrl5p.itm~      ~override~
+  SAY NAME2 @625    SAY IDENTIFIED_DESC   @626
 END
 COPY_EXISTING ~spell.ids~ ~override~
   REPLACE_TEXTUALLY ~^2508[ %TAB%]+WIZARD_CHAOS~ ~2508 WIZARD_WAVES_OF_FATIGUE~

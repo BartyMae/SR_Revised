@@ -2096,7 +2096,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-When a Protection from Magic Energy spell is cast, the recipient receives complete protection from all magic damage-based attacks. 100% of the damage from attacks like Cause Wound will be absorbed, and the target creature will become completely immune to the effects of spells such as Magic Missile, Skull Trap, Disintegrate, and Horrid Wilting.~ //Certain creatures are immune to the effects of this spell, including all undead.
+When a Protection from Magic Energy spell is cast, the recipient receives complete protection from all magic damage-based attacks. 100% of the damage from attacks like Cause Wound will be absorbed, and the target creature will become completely immune to the effects of spells such as Magic Missile, Skull Trap, Disintegrate, and Horrid Wilting. Multiple castings of this spell are not cumulative.~ //Certain creatures are immune to the effects of this spell, including all undead.
 
 @673=~Mislead~
 @674=~Mislead
@@ -2480,7 +2480,7 @@ Casting Time: 7
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, it confers complete protection from all elemental attacks composed of acid, cold, electricity, or fire, whether magical or non-magical in origin. 100% of the elemental damage from attacks with weapons, wands, breath weapons, etc. will be absorbed, and the target creature will become completely immune to the effects of elemental spells.~
+When this spell is cast, it confers complete protection from all elemental attacks composed of acid, cold, electricity, or fire, whether magical or non-magical in origin. 100% of the elemental damage from attacks with weapons, wands, breath weapons, etc. will be absorbed, and the target creature will become completely immune to the effects of elemental spells. Multiple castings of this spell are not cumulative.~
 
 @725=~Project Image~
 @726=~Project Image
@@ -2873,7 +2873,7 @@ Casting Time: 8
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast, it confers complete protection from all energy attacks composed of acid, cold, electricity, fire, or magic damage, whether magical or non-magical in origin. 100% of the energy damage from attacks with weapons, wands, breath weapons, etc. will be absorbed, and the target creature will become completely immune to the effects of energy-based spells.~
+When this spell is cast, it confers complete protection from all energy attacks composed of acid, cold, electricity, fire, or magic damage, whether magical or non-magical in origin. 100% of the energy damage from attacks with weapons, wands, breath weapons, etc. will be absorbed, and the target creature will become completely immune to the effects of energy-based spells. Multiple castings of this spell are not cumulative.~
 
 @773=~Simulacrum~
 @774=~Simulacrum
