@@ -521,11 +521,11 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi414 END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi416.spl~ THEN BEGIN  // Polymorph Self
+/*ACTION_IF FILE_EXISTS_IN_GAME ~spwi416.spl~ THEN BEGIN  // Polymorph Self
 COPY_EXISTING ~spwi416.spl~ ~override~
 LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi416 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi416 END
-END
+END*/
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi418.spl~ THEN BEGIN  // Fire Shield
 COPY_EXISTING ~spwi418.spl~ ~override~
@@ -646,11 +646,11 @@ LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 206 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi914d END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi916.spl~ THEN BEGIN  // Shapechange
+/*ACTION_IF FILE_EXISTS_IN_GAME ~spwi916.spl~ THEN BEGIN  // Shapechange
 COPY_EXISTING ~spwi916.spl~ ~override~
 LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = spwi916 END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = spwi916 END
-END
+END*/
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
