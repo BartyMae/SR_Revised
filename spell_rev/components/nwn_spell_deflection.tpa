@@ -110,6 +110,19 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 END
 
 ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~dvdr601~ // chain lightning
+    ~dvpr218~ // gust of wind
+    ~dvpr720~ // earthquake
+    ~dvwi523~ // fireburst
+    ~dvwi615~ // chain lightning
+    ~dvwi913~ // wail of the banshee
+    ~dvwi922~ // dragon's breath
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      OUTER_SET $spell("%resource%")=1
+    END
+  END
   OUTER_SET $spell("spdr601")=0 // chain lighting
   OUTER_SET $spell("sppr218")=0 // gust of wind
   OUTER_SET $spell("sppr515")=0 // repulsion
@@ -119,281 +132,69 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
   OUTER_SET $spell("spwi615")=0 // chain lightning
   OUTER_SET $spell("spwi913")=0 // wail of the banshee
   OUTER_SET $spell("spwi922")=0 // dragon's breath
-  OUTER_SET $spell("dvdr601")=1 // chain lightning
-  OUTER_SET $spell("dvpr218")=1 // gust of wind
-  OUTER_SET $spell("dvpr720")=1 // earthquake
-  OUTER_SET $spell("dvwi523")=1 // fireburst
-  OUTER_SET $spell("dvwi615")=1 // chain lightning
-  OUTER_SET $spell("dvwi913")=1 // wail of the banshee
-  OUTER_SET $spell("dvwi922")=1 // dragon's breath
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~abaz01.spl~ BEGIN
-  OUTER_SET $spell("abaz01")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~amul01.spl~ BEGIN
-  OUTER_SET $spell("amul01")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~balth12.spl~ BEGIN
-  OUTER_SET $spell("balth12")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~mels545.spl~ BEGIN
-  OUTER_SET $spell("mels545")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~myst10.spl~ BEGIN
-  OUTER_SET $spell("myst10")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~nabpara.spl~ BEGIN
-  OUTER_SET $spell("nabpara")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~ohbicew.spl~ BEGIN
-  OUTER_SET $spell("ohbicew")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~ohrdark.spl~ BEGIN
-  OUTER_SET $spell("ohrdark")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~ohrfear.spl~ BEGIN
-  OUTER_SET $spell("ohrfear")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spctmd01.spl~ BEGIN
-  OUTER_SET $spell("spctmd01")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin560.spl~ BEGIN
-  OUTER_SET $spell("spin560")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin562.spl~ BEGIN
-  OUTER_SET $spell("spin562")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin564.spl~ BEGIN
-  OUTER_SET $spell("spin564")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin575.spl~ BEGIN
-  OUTER_SET $spell("spin575")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin597.spl~ BEGIN
-  OUTER_SET $spell("spin597")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin673.spl~ BEGIN
-  OUTER_SET $spell("spin673")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin674.spl~ BEGIN
-  OUTER_SET $spell("spin674")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin675.spl~ BEGIN
-  OUTER_SET $spell("spin675")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin681.spl~ BEGIN
-  OUTER_SET $spell("spin681")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin688.spl~ BEGIN
-  OUTER_SET $spell("spin688")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin689.spl~ BEGIN
-  OUTER_SET $spell("spin689")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin692.spl~ BEGIN
-  OUTER_SET $spell("spin692")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin701.spl~ BEGIN
-  OUTER_SET $spell("spin701")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin704.spl~ BEGIN
-  OUTER_SET $spell("spin704")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin789.spl~ BEGIN
-  OUTER_SET $spell("spin789")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin819.spl~ BEGIN
-  OUTER_SET $spell("spin819")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin912.spl~ BEGIN
-  OUTER_SET $spell("spin912")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin914.spl~ BEGIN
-  OUTER_SET $spell("spin914")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin937.spl~ BEGIN
-  OUTER_SET $spell("spin937")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin940.spl~ BEGIN
-  OUTER_SET $spell("spin940")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin976.spl~ BEGIN
-  OUTER_SET $spell("spin976")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin977.spl~ BEGIN
-  OUTER_SET $spell("spin977")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin998.spl~ BEGIN
-  OUTER_SET $spell("spin998")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spin999.spl~ BEGIN
-  OUTER_SET $spell("spin999")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spinds2.spl~ BEGIN
-  OUTER_SET $spell("spinds2")=1
-END
-
-/*ACTION_IF FILE_EXISTS_IN_GAME ~spogre01.spl~ BEGIN
-  OUTER_SET $spell("spogre01")=1
-END */
-
-ACTION_IF FILE_EXISTS_IN_GAME ~sppr250.spl~ BEGIN
-  OUTER_SET $spell("sppr250")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~sppr901.spl~ BEGIN
-  OUTER_SET $spell("sppr901")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~sppr983.spl~ BEGIN
-  OUTER_SET $spell("sppr983")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~sppr988.spl~ BEGIN
-  OUTER_SET $spell("sppr988")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi001.spl~ BEGIN
-  OUTER_SET $spell("spwi001")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi004.spl~ BEGIN
-  OUTER_SET $spell("spwi004")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi009.spl~ BEGIN
-  OUTER_SET $spell("spwi009")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi016.spl~ BEGIN
-  OUTER_SET $spell("spwi016")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi018.spl~ BEGIN
-  OUTER_SET $spell("spwi018")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi953.spl~ BEGIN
-  OUTER_SET $spell("spwi953")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi955.spl~ BEGIN
-  OUTER_SET $spell("spwi955")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi956.spl~ BEGIN
-  OUTER_SET $spell("spwi956")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi957.spl~ BEGIN
-  OUTER_SET $spell("spwi957")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~yaga01.spl~ BEGIN
-  OUTER_SET $spell("yaga01")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#beng.spl~ BEGIN
-  OUTER_SET $spell("tg#beng")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di10.spl~ BEGIN
-  OUTER_SET $spell("tg#di10")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di12.spl~ BEGIN
-  OUTER_SET $spell("tg#di12")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di13.spl~ BEGIN
-  OUTER_SET $spell("tg#di13")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di14.spl~ BEGIN
-  OUTER_SET $spell("tg#di14")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di15.spl~ BEGIN
-  OUTER_SET $spell("tg#di15")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di16.spl~ BEGIN
-  OUTER_SET $spell("tg#di16")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#di18.spl~ BEGIN
-  OUTER_SET $spell("tg#di18")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#natw.spl~ BEGIN
-  OUTER_SET $spell("tg#natw")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#rec2.spl~ BEGIN
-  OUTER_SET $spell("tg#rec2")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~tg#shoc.spl~ BEGIN
-  OUTER_SET $spell("tg#shoc")=1
-END
-
-ACTION_FOR_EACH resource IN // IR compatibility
-  ~dvfball~
-  ~dvpexpl~
-  ~dvterri~
-  ~dvhorro~
-  ~dvconec~
-  //~dvckill~ // (stationary)
-  ~clck07~
-  ~misc3l~
-  ~misc3m~
-  ~staf12~
-  ~staf17~
-  ~staf20~
-  ~wand02~
-  ~wand05~
-  ~wand06~
-  ~wand08~
-  ~wand11~
-  ~wand13~
-  ~wand14~
-  ~wand19~
-  ~wa2harp~
+ACTION_FOR_EACH resource IN // Miscellaneous
+  ~abaz01~
+  ~amul01~
+  ~balth12~
+  ~mels545~
+  ~myst10~
+  ~nabpara~
+  ~ohbicew~
+  ~ohrdark~
+  ~ohrfear~
+  ~spctmd01~
+  ~spin560~
+  ~spin562~
+  ~spin564~
+  ~spin575~
+  ~spin597~
+  ~spin673~
+  ~spin674~
+  ~spin675~
+  ~spin681~
+  ~spin688~
+  ~spin689~
+  ~spin692~
+  ~spin701~
+  ~spin704~
+  ~spin789~
+  ~spin819~
+  ~spin912~
+  ~spin914~
+  ~spin937~
+  ~spin940~
+  ~spin976~
+  ~spin977~
+  ~spin998~
+  ~spin999~
+  ~spinds2~
+  ~sppr250~
+  ~sppr901~
+  ~sppr983~
+  ~sppr988~
+  ~spwi001~
+  ~spwi004~
+  ~spwi009~
+  ~spwi016~
+  ~spwi018~
+  ~spwi953~
+  ~spwi955~
+  ~spwi956~
+  ~spwi957~
+  ~yaga01~
+  ~tg#beng~
+  ~tg#di10~
+  ~tg#di12~
+  ~tg#di13~
+  ~tg#di14~
+  ~tg#di15~
+  ~tg#di16~
+  ~tg#di18~
+  ~tg#natw~
+  ~tg#rec2~
+  ~tg#shoc~
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
     OUTER_SET $spell("%resource%")=1
