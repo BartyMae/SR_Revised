@@ -28,7 +28,7 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt
     // ~DVTELPOR~ // Teleport Without Error
     ~SPIN683~ // Web Tangle
     ~SPIN788~ // Demilich Soul Trap
-    // ~SPIN789~ // Demilich Howl (what is this?)
+    ~SPIN789~ // Demilich Howl
     ~SPPR102~ // Command
     // ~SPPR104~ // Detect Alignment
     ~SPPR105~ // Entangle

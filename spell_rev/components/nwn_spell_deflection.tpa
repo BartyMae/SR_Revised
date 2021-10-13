@@ -48,7 +48,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~dvpr704~ => 1 // nature's beauty
 ~sppr706~ => 1 // symbol of pain
 ~sppr707~ => 1 // sunray
-//~sppr709~ => 1 // chaos (stationary)
+//~sppr709~ => 1 // sphere of chaos (stationary)
 ~sppr710~ => 1 // holy word
 ~sppr715~ => 1 // unholy word
 ~sppr717~ => 1 // creeping doom
@@ -78,7 +78,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~spwi507~ => 1 // hold monster
 ~spwi508~ => 1 // waves of fatigue
 ~spwi615~ => 1 // chain lightning
-//~spwi711~ => 1 // chaos (stationary)
+//~spwi711~ => 1 // sphere of chaos (stationary)
 ~spwi720~ => 1 // control undead
 ~spwi811~ => 1 // symbol of pain
 ~spwi812~ => 1 // abi-dalzim's horrid wilting
@@ -128,11 +128,6 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
   OUTER_SET $spell("dvwi922")=1 // dragon's breath
 END
 
-/*ACTION_IF FILE_EXISTS_IN_GAME ~tg#come.spl~ BEGIN
-  OUTER_SET $spell("tg#drgb")=1
-  OUTER_SET $spell("tg#come")=1
-END */
-
 ACTION_IF FILE_EXISTS_IN_GAME ~abaz01.spl~ BEGIN
   OUTER_SET $spell("abaz01")=1
 END
@@ -145,73 +140,9 @@ ACTION_IF FILE_EXISTS_IN_GAME ~balth12.spl~ BEGIN
   OUTER_SET $spell("balth12")=1
 END
 
-/* ACTION_IF FILE_EXISTS_IN_GAME ~bdneoawe.spl~ BEGIN
-  OUTER_SET $spell("bdneoawe")=1
-END 
-
-ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp00.spl~ BEGIN
-  OUTER_SET $spell("bw05sp00")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp00.spl~ BEGIN
-  OUTER_SET $spell("bw05sp00")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp01.spl~ BEGIN
-  OUTER_SET $spell("bw05sp01")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp04.spl~ BEGIN
-  OUTER_SET $spell("bw05sp04")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~bw05sp05.spl~ BEGIN
-  OUTER_SET $spell("bw05sp05")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvchao.spl~ BEGIN
-  OUTER_SET $spell("cvchao")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvcharm.spl~ BEGIN
-  OUTER_SET $spell("cvcharm")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvdeath.spl~ BEGIN
-  OUTER_SET $spell("cvdeath")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvjen02.spl~ BEGIN
-  OUTER_SET $spell("cvjen02")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvpest.spl~ BEGIN
-  OUTER_SET $spell("cvpest")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvsuns.spl~ BEGIN
-  OUTER_SET $spell("cvsuns")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~cvwail.spl~ BEGIN
-  OUTER_SET $spell("cvwail")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~drake03.spl~ BEGIN
-  OUTER_SET $spell("drake03")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~dvprexpl.spl~ BEGIN
-  OUTER_SET $spell("dvprexpl")=1
-END */
-
 ACTION_IF FILE_EXISTS_IN_GAME ~mels545.spl~ BEGIN
   OUTER_SET $spell("mels545")=1
 END
-
-/*ACTION_IF FILE_EXISTS_IN_GAME ~melspl07.spl~ BEGIN
-  OUTER_SET $spell("melspl07")=1
-END */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~myst10.spl~ BEGIN
   OUTER_SET $spell("myst10")=1
@@ -221,30 +152,9 @@ ACTION_IF FILE_EXISTS_IN_GAME ~nabpara.spl~ BEGIN
   OUTER_SET $spell("nabpara")=1
 END
 
-/*ACTION_IF FILE_EXISTS_IN_GAME ~ohbdemi2.spl~ BEGIN
-  OUTER_SET $spell("ohbdemi2")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~ntspwi81.spl~ BEGIN
-  OUTER_SET $spell("ntspwi81")=1
-END */
-
 ACTION_IF FILE_EXISTS_IN_GAME ~ohbicew.spl~ BEGIN
   OUTER_SET $spell("ohbicew")=1
 END
-
-
-/* ACTION_IF FILE_EXISTS_IN_GAME ~ohbquake.spl~ BEGIN
-  OUTER_SET $spell("ohbquake")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~ohbwfog.spl~ BEGIN
-  OUTER_SET $spell("ohbwfog")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~ohbwi304.spl~ BEGIN
-  OUTER_SET $spell("ohbwi304")=1
-END */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ohrdark.spl~ BEGIN
   OUTER_SET $spell("ohrdark")=1
@@ -253,18 +163,6 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~ohrfear.spl~ BEGIN
   OUTER_SET $spell("ohrfear")=1
 END
-
-/* ACTION_IF FILE_EXISTS_IN_GAME ~spblun29.spl~ BEGIN
-  OUTER_SET $spell("spblun29")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spcl911b.spl~ BEGIN
-  OUTER_SET $spell("spcl911b")=1
-END */
-
-/*ACTION_IF FILE_EXISTS_IN_GAME ~spcryo01.spl~ BEGIN
-  OUTER_SET $spell("spcryo01")=1
-END */
 
 ACTION_IF FILE_EXISTS_IN_GAME ~spctmd01.spl~ BEGIN
   OUTER_SET $spell("spctmd01")=1
@@ -426,54 +324,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~spwi957.spl~ BEGIN
   OUTER_SET $spell("spwi957")=1
 END
 
-/* ACTION_IF FILE_EXISTS_IN_GAME ~spwish24.spl~ BEGIN
-  OUTER_SET $spell("spwish24")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwish25.spl~ BEGIN
-  OUTER_SET $spell("spwish25")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwish32.spl~ BEGIN
-  OUTER_SET $spell("spwish32")=1
-END */
-
-ACTION_IF FILE_EXISTS_IN_GAME ~staf12a.spl~ BEGIN
-  OUTER_SET $spell("staf12a")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~staf17.spl~ BEGIN
-  OUTER_SET $spell("staf17")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~staf20.spl~ BEGIN
-  OUTER_SET $spell("staf20")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~wand02.spl~ BEGIN
-  OUTER_SET $spell("wand02")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~wand05a.spl~ BEGIN
-  OUTER_SET $spell("wand05a")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~wand08.spl~ BEGIN
-  OUTER_SET $spell("wand08")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~wand13.spl~ BEGIN
-  OUTER_SET $spell("wand13")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~wand14.spl~ BEGIN
-  OUTER_SET $spell("wand14")=1
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~wand19.spl~ BEGIN
-  OUTER_SET $spell("wand19")=1
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~yaga01.spl~ BEGIN
   OUTER_SET $spell("yaga01")=1
 END
@@ -522,25 +372,27 @@ ACTION_IF FILE_EXISTS_IN_GAME ~tg#shoc.spl~ BEGIN
   OUTER_SET $spell("tg#shoc")=1
 END
 
-/*ACTION_IF FILE_EXISTS_IN_GAME ~tg#volc.spl~ BEGIN
-  OUTER_SET $spell("tg#volc")=1
-END */
-
 ACTION_FOR_EACH resource IN // IR compatibility
   ~dvfball~
   ~dvpexpl~
   ~dvterri~
   ~dvhorro~
   ~dvconec~
-  //~dvckill~
-  ~clck07~ 
-  ~misc3l~ 
-  ~misc3m~ 
-  ~staf20~ 
-  ~wand05~ 
-  ~wand06~ 
-  ~wand08~ 
-  ~wand11~ 
+  //~dvckill~ // (stationary)
+  ~clck07~
+  ~misc3l~
+  ~misc3m~
+  ~staf12~
+  ~staf17~
+  ~staf20~
+  ~wand02~
+  ~wand05~
+  ~wand06~
+  ~wand08~
+  ~wand11~
+  ~wand13~
+  ~wand14~
+  ~wand19~
   ~wa2harp~
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
@@ -610,7 +462,7 @@ ACTION_PHP_EACH spell AS i2 => r2 BEGIN
       WRITE_ASCIIE (offset+0x14) ~%i2%%letter%~ (8) // resource
       WRITE_ASCII (offset+0x1c) ~~ (20) // clearing out the space
     BUT_ONLY
-    
+
   END
 
 END // ACTION_PHP_EACH

@@ -2,11 +2,16 @@ INCLUDE ~spell_rev\lib\cre_spell_immunity.tph~
 INCLUDE ~spell_rev\lib\manage_add_spell_references.tpa~
 INCLUDE ~spell_rev\lib\macros.tpa~
 
+COPY ~spell_rev\shared\dvimhere.mrk~     ~override~  // Used to detect if SR is installed
+COPY ~spell_rev\shared\dvsrv3.mrk~       ~override~  // Used to detect if SR V3 is installed
+COPY ~spell_rev\shared\dvsrv4here.mrk~   ~override~  // Used to detect if SR V4 is installed
+COPY ~spell_rev\shared\dvsrr.mrk~        ~override~  // Used to detect if SRR is installed
+
 /* ---------------- Manage ADD_SPELL References (Part 1) ---------------- */
 
-// Spells that will be installed with ADD_SPELL have an unknown final filename.
-// If any SPL/ITM/EFF files need to reference those new spells, they can do so using their current filenames in the mod folder.
-// This function will go through those files and replace the references to current filenames with temp filenames.
+// Spells that will be installed with ADD_SPELL have an unknown final filename
+// If any SPL/ITM/EFF files need to reference those new spells, they can do so using their current filenames in the mod folder
+// This function will go through those files and replace the references to current filenames with temp filenames
 LAF ASSIGN_TEMP_NAMES_FOR_NEW_SPELL_REFERENCES END
 
 /* ---------------- Miscellaneous ---------------- */
@@ -17,6 +22,10 @@ COPY ~spell_rev\shared\adscroll.itm~     ~override~
   SAY NAME2 @22000    SAY IDENTIFIED_DESC   @22001
 COPY ~spell_rev\shared\adscroll.bam~     ~override~
 
+// IWDEE AI can't effectively use SR's Cause Wounds spells
+// Until this is resolved, the spells won't be installed on IWDEE
+OUTER_SET install_cause_wounds = NOT GAME_IS ~iwdee~
+
 // SD: eliminate #bonecir.spl from IWDEE
 ACTION_IF GAME_IS ~iwdee~ BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME ~#bonecir.spl~ BEGIN
@@ -26,15 +35,6 @@ ACTION_IF GAME_IS ~iwdee~ BEGIN
     DELETE ~override/#bonecir.spl~
   END
 END
-
-// IWDEE AI can't effectively use SR's Cause Wounds spells
-// Until this is resolved, the spells won't be installed on IWDEE
-OUTER_SET install_cause_wounds = NOT GAME_IS ~iwdee~
-
-COPY ~spell_rev\shared\dvimhere.mrk~     ~override~  // Used to detect if SR is installed
-COPY ~spell_rev\shared\dvsrv3.mrk~       ~override~  // Used to detect if SR V3 is installed
-COPY ~spell_rev\shared\dvsrv4here.mrk~   ~override~  // Used to detect if SR V4 is installed
-COPY ~spell_rev\shared\dvsrr.mrk~        ~override~  // Used to detect if SRR is installed
 
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
   STRING_SET ~27982~ @21000 // replaces 'Protection from Illusions removed' with 'Illusionary Protections Removed'
@@ -88,7 +88,7 @@ COPY ~spell_rev\shared\illush.wav~       ~override~  // New illusion spell effec
 COPY ~spell_rev\shared\illush.bam~       ~override~
 COPY ~spell_rev\shared\illushvc.vvc~     ~override~
 
-COPY ~spell_rev\shared\spmagglo.vvc~     ~override~  // New Spell Deflection/Immunity animation
+COPY ~spell_rev\shared\spmagglo.vvc~     ~override~  // New Spell Deflection/Spell Immunity animation
 COPY ~spell_rev\shared\spmagglo.bam~     ~override~
 
 COPY ~spell_rev\shared\dvsun1.vvc~       ~override~  // New sunlight effect
@@ -102,7 +102,7 @@ COPY ~spell_rev\shared\spwi978.spl~      ~override~  // Shapeshift Natural Form
 
 COPY ~spell_rev\shared\wings~            ~override~  // 1PP attachable wings
 
-COPY ~spell_rev\shared\unddeath.eff~     ~override~  // Variant undead death effect
+COPY ~spell_rev\shared\unddeath.eff~     ~override~  // Undead death effect
 
 COPY ~spell_rev\shared\dvtsight.eff~     ~override~  // Highlight illusionary creatures
 COPY ~spell_rev\shared\dvtsight.spl~     ~override~
@@ -113,8 +113,7 @@ COPY ~spell_rev\shared\dvdinvis.eff~     ~override~
 COPY ~spell_rev\shared\dvknback.spl~     ~override~  // Knockback effect
 COPY ~spell_rev\shared\dvknback.eff~     ~override~
 
-COPY ~spell_rev\shared\bams~             ~override~  // Bams for new spells
-
+COPY ~spell_rev\shared\bams~             ~override~  // BAMs for new spells
 
 /* ---------------- Projectiles ---------------- */
 
@@ -214,6 +213,15 @@ COPY ~spell_rev\shared\elemtype.itm~     ~override~  // Elemental type character
 COPY ~spell_rev\shared\undtype.itm~      ~override~  // Undead type characteristics
 COPY ~spell_rev\shared\vermtype.itm~     ~override~  // Vermin type characteristics
 COPY ~spell_rev\shared\neckcrit.itm~     ~override~  // Critical hit protection necklace
+
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Class Abilities ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 /* ---------------- Bhaalspawn Abilities ---------------- */
 
@@ -335,6 +343,31 @@ COPY ~spell_rev\shared\spra302.spl~      ~override~  // Non-Detection
 COPY ~spell_rev\shared\spra303.spl~      ~override~  // Protection from Missiles
   SAY NAME1 @521    SAY UNIDENTIFIED_DESC @522
 
+
+/* ---------------- Character Abilities ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Bhaalspawn Abilities ---------------- */
+
+COPY ~spell_rev\shared\spin101.spl~      ~override~  // Cure Light Wounds
+  SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
+COPY ~spell_rev\shared\spin102.spl~      ~override~  // Slow Poison
+  SAY NAME1 @53    SAY UNIDENTIFIED_DESC @54
+COPY ~spell_rev\shared\spin103.spl~      ~override~  // Draw Upon Divine Might (previously named Draw Upon Holy Might)
+  SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
+COPY ~spell_rev\shared\spin104.spl~      ~override~  // Larloch's Minor Drain
+  SAY NAME1 @435    SAY UNIDENTIFIED_DESC @436
+COPY ~spell_rev\shared\spin104i.eff~     ~override~
+COPY ~spell_rev\shared\spin105.spl~      ~override~  // Horror
+  SAY NAME1 @457    SAY UNIDENTIFIED_DESC @458
+COPY ~spell_rev\shared\spin105d.eff~     ~override~
+COPY ~spell_rev\shared\spin105i.eff~     ~override~
+COPY ~spell_rev\shared\spin106.spl~      ~override~  // Vampiric Touch
+  SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
+COPY ~spell_rev\shared\spin106i.eff~     ~override~
+
 /* ---------------- Innate Abilities ---------------- */
 
 COPY ~spell_rev\shared\spcl233.spl~      ~override~  // Magic Circle Against Evil
@@ -349,7 +382,6 @@ COPY ~spell_rev\shared\dvin108i.spl~    ~override~
 COPY ~spell_rev\shared\dvin108.eff~     ~override~
 COPY ~spell_rev\shared\dvin108.spl~     ~override~
 END
-
 ACTION_IF alternative_dispel_magic=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spin112.save.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
@@ -360,7 +392,6 @@ END ELSE BEGIN
 COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548
 END
-
 /*
 COPY ~spell_rev\shared\spin109.spl~      ~override~  // Ajantis Lay on Hands
   SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
@@ -398,7 +429,6 @@ COPY ~spell_rev\shared\dvgasfrm.itm~     ~override~
 COPY ~spell_rev\shared\dvtelpor.spl~     ~override~  // Teleport Without Error
 
 COPY ~spell_rev\shared\spin683.spl~      ~override~  // Innate Web Tangle
-COPY ~spell_rev\shared\spin701i.eff~     ~override~
 
 COPY ~spell_rev\shared\spin788.spl~      ~override~  // Demilich Soul Trap
 COPY ~spell_rev\shared\spin789.spl~      ~override~  // Demilich Howl
@@ -411,7 +441,6 @@ COPY ~spell_rev\shared\spin789.spl~      ~override~  // Demilich Howl
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
-
 
 /* ---------------- Level 1 ---------------- */
 
@@ -564,7 +593,6 @@ ADD_SPELL ~spell_rev\sppr1##\sppr121.spl~ 1 1 ~CLERIC_OBSCURING_MIST~ // Obscuri
   SET dvobmist -= 1
 APPEND ~clearair.2da~ ~Obscuring_Mist             %dvobmist%~
 COPY ~spell_rev\sppr1##\dvomisti.eff~    ~override~
-
 
 /* ---------------- Level 2 ---------------- */
 
@@ -720,7 +748,6 @@ COPY ~spell_rev\sppr2##\dvdscent.spl~    ~override~
   WRITE_SHORT 0x98 %dvdscent%
 COPY ~spell_rev\sppr2##\dvdscent.eff~    ~override~
 
-
 /* ---------------- Level 3 ---------------- */
 
 COPY ~spell_rev\sppr3##\sppr301.spl~     ~override~  // Animate Dead
@@ -749,7 +776,6 @@ END ELSE BEGIN
 COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Dispel Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76
 END
-
 
 COPY ~spell_rev\sppr3##\sppr304.spl~     ~override~  // Glyph of Warding
   SAY NAME1 @77    SAY UNIDENTIFIED_DESC @78
@@ -876,7 +902,6 @@ ADD_SPELL ~spell_rev\sppr3##\sppr327.spl~ 1 3 ~CLERIC_CONTAGION~  // Contagion (
 COPY ~spell_rev\sppr3##\dvconta1.spl~    ~override~
 COPY ~spell_rev\sppr3##\dvconta2.spl~    ~override~
 COPY ~spell_rev\sppr3##\dvcontai.eff~    ~override~
-
 
 /* ---------------- Level 4 ---------------- */
 
@@ -1242,7 +1267,6 @@ ADD_SPELL ~spell_rev\sppr6##\sppr622.spl~ 1 6 ~CLERIC_CONJURE_EARTH_ELEMENTAL~  
 ADD_SPELL ~spell_rev\sppr6##\sppr623.spl~ 1 6 ~CLERIC_ANIMATE_SKELETON_WARRIOR~  // Animate Warrior (added to cleric spellbook)
   SAY NAME1 @225    SAY UNIDENTIFIED_DESC @226
 
-
 /* ---------------- Level 7 ---------------- */
 
 COPY ~spell_rev\sppr7##\sppr701.spl~     ~override~  // Shield of the Archons
@@ -1352,7 +1376,6 @@ COPY ~spell_rev\sppr7##\dvpr720.spl~     ~override~
 COPY ~spell_rev\sppr7##\dvpr720d.eff~    ~override~
 COPY ~spell_rev\sppr7##\dvpr720i.eff~    ~override~
 
-
 /* ---------------- Level 8 ---------------- */
 
 COPY ~spell_rev\sppr7##\sppr721.spl~     ~override~  // Energy Blades
@@ -1459,7 +1482,6 @@ COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
-
 
 /* ---------------- Level 1 ---------------- */
 
@@ -1957,7 +1979,6 @@ COPY ~spell_rev\spwi2##\hobshasu.itm~    ~override~
   SAY NAME1 @8057   SAY NAME2 @8057
 COPY ~spell_rev\spwi2##\dvhobsha.bcs~    ~override~
 
-
 /* ---------------- Level 3 ---------------- */
 
 COPY ~spell_rev\spwi3##\spwi301.spl~     ~override~  // Clairvoyance
@@ -2213,12 +2234,12 @@ COPY ~spell_rev\spwi4##\spwi405.spl~     ~override~  // Improved Invisibility
 COPY ~spell_rev\spwi4##\scrl1y.itm~      ~override~
   SAY NAME2 @569    SAY IDENTIFIED_DESC   @570
 
-ACTION_IF dispel_globes=0 BEGIN
+ACTION_IF dispel_globes=2 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi406n.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572
 COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
   SAY NAME2 @571    SAY IDENTIFIED_DESC   @572
-END ELSE ACTION_IF dispel_globes=2 BEGIN
+END ELSE ACTION_IF dispel_globes=0 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi406d.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572000
 COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
@@ -2778,12 +2799,12 @@ COPY ~spell_rev\spwi6##\stalkesu.itm~    ~override~
   SAY NAME1 @8169    SAY NAME2 @8169
 COPY ~spell_rev\spwi6##\stalker.itm~     ~override~
 
-ACTION_IF dispel_globes=0 BEGIN
+ACTION_IF dispel_globes=2 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi602n.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664
 COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
   SAY NAME2 @663    SAY IDENTIFIED_DESC   @664
-END ELSE ACTION_IF dispel_globes=2 BEGIN
+END ELSE ACTION_IF dispel_globes=0 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi602d.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664000
 COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
@@ -2951,7 +2972,6 @@ COPY ~spell_rev\spwi6##\scrl8c.itm~      ~override~  // Scroll used for Summon N
   SAY NAME2 @707    SAY IDENTIFIED_DESC   @708
 */
 
-
 /* ---------------- Level 7 ---------------- */
 
 COPY ~spell_rev\spwi7##\spwi701.spl~     ~override~  // Greater Spell Deflection (replaces Spell Turning)
@@ -3001,6 +3021,7 @@ END
 APPEND ~spell.ids~ ~2707 WIZARD_SUMMON_DEATH_KNIGHT~
 COPY ~spell_rev\shared\spin701.spl~      ~override~  // Unholy Fireball
   SAY NAME1 @8180
+COPY ~spell_rev\shared\spin701i.eff~     ~override~
 
 COPY ~spell_rev\spwi7##\spwi708.spl~     ~override~  // Prismatic Mantle
   SAY NAME1 @733    SAY UNIDENTIFIED_DESC @734
@@ -3131,7 +3152,6 @@ COPY ~spell_rev\spwi7##\otyughsu.cre~    ~override~
 COPY ~spell_rev\spwi7##\otyughsu.itm~    ~override~
   SAY NAME1 @8190   SAY NAME2 @8190
 APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_5% WIZARD_MONSTER_SUMMONING_LEVEL_7~
-
 
 /* ---------------- Level 8 ---------------- */
 
@@ -3287,7 +3307,6 @@ COPY ~spell_rev\shared\spin839.spl~      ~override~  // Umber Hulk Confusing Gaz
   SAY NAME1 @8195
 APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_6% WIZARD_MONSTER_SUMMONING_LEVEL_8~
 
-
 /* ---------------- Level 9 ---------------- */
 
 COPY ~spell_rev\spwi9##\spwi902.spl~     ~override~  // Spell Trap
@@ -3440,7 +3459,6 @@ COPY ~spell_rev\spwi9##\dvwis38.spl~     ~override~
 
 COPY ~spell_rev\spwi9##\p3-12m4.itm~     ~override~
 
-
 /* ---------------- Level 10 ---------------- */
 
 COPY ~spell_rev\spwi9##\spwi920.spl~     ~override~  // Energy Blades
@@ -3486,6 +3504,14 @@ END
 COPY ~spell_rev\spwi9##\spwi925.spl~     ~override~  // Comet
   SAY NAME1 @861    SAY UNIDENTIFIED_DESC @862
 
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/* ---------------- Miscellaneous ---------------- */
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
 /* ---------------- Projectile Protection Patching ---------------- */
 
@@ -3570,17 +3596,15 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 END
 END
 
-
 /* ---------------- IR Fixes ---------------- */
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~ir_mc.mrk~) BEGIN
   INCLUDE ~spell_rev\lib\item_revisions.tph~
 END
 
-
 /* ---------------- 1pp & EE graphical fixes ---------------- */
-INCLUDE ~spell_rev\lib\1pp.tph~
 
+INCLUDE ~spell_rev\lib\1pp.tph~
 
 /* ---------------- Manage ADD_SPELL References (Part 2) ---------------- */
 
@@ -3588,12 +3612,10 @@ INCLUDE ~spell_rev\lib\1pp.tph~
 // to our temp filenames with references to the final filenames assigned by ADD_SPELL.
 LAF ASSIGN_FINAL_NAMES_FOR_NEW_SPELL_REFERENCES END
 
-
 /* ---------------- Spell Shield Fix ---------------- */
 
 INCLUDE ~spell_rev\lib\ardanis_spell_shield.tph~
 LAF ardanis_spell_shield END
-
 
 /* ---------------- Custom Sec Types ---------------- */
 
@@ -3630,7 +3652,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
   INCLUDE ~spell_rev\lib\kreso_ee.tph~
   INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
 END
-
 
 /* ---------------- Tutu Scrolls ---------------- */
 
@@ -3726,7 +3747,6 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
   END
 END
 
-
 /* ---------------- "Fix" Invalid BG1EE Strings ---------------- */
 
 // BG1EE invalid string fixes
@@ -3797,6 +3817,53 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet
   END
 END
 
+/* ---------------- Remove Disabled Spell Scrolls ---------------- */
+
+// BG2 broken areas fix
+ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
+  COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
+  COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
+END
+
+COPY_EXISTING_REGEXP ~^.+\.cre$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+    REMOVE_CRE_ITEM SCRL5T
+  END
+BUT_ONLY
+
+COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN
+    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5t END
+  END
+BUT_ONLY
+
+COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+    REMOVE_STORE_ITEM SCRL5T
+  END
+BUT_ONLY
+
+/* ---------------- Protection from Evil ---------------- */
+
+ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet~) BEGIN
+  ACTION_FOR_EACH resource IN
+    ~SPCL213~
+    ~SPCL233~
+    ~SPIN121~
+    ~SPPR107~
+    ~SPPR408~
+    ~SPWI113~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        LPF DELETE_SPELL_EFFECT
+          INT_VAR opcode_to_delete = 100
+        END
+      END
+    END
+  END
+END
 
 /* ---------------- Add New Spell Scrolls ---------------- */
 
@@ -3925,75 +3992,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bg4804.are~) BEGIN // Nashkel Noble House
 END
 END
 
-/* ---------------- Remove Disabled Spell Scrolls ---------------- */
-
-// BG2 broken areas fix
-ACTION_IF (FILE_EXISTS_IN_GAME ~xr1200.are~) BEGIN
-  COPY_EXISTING ~xr1200.are~ ~override/xr2400.are~
-  COPY_EXISTING ~xr1200.are~ ~override/xr2600.are~
-END
-
-COPY_EXISTING_REGEXP ~^.+\.are$~ ~override~
-  PATCH_IF (SOURCE_SIZE > 0x11b) BEGIN
-    LPF DELETE_AREA_ITEM STR_VAR item_to_delete=scrl5t END
-  END
-BUT_ONLY
-
-COPY_EXISTING_REGEXP ~^.+\.sto$~ ~override~
-  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
-    REMOVE_STORE_ITEM SCRL5T
-  END
-BUT_ONLY
-
-
-/* ---------------- Spellcasting HLAs ---------------- */
-
-INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
-
-
-/* ---------------- Friendly Spells Pierce Spell Protections ---------------- */
-
-INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
-
-
-/* ---------------- Anti-magic Spells Pierce Improved Invisibility ---------------- */
-
-INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
-
-
-/* ---------------- Add Invisibility/Sanctuary-Breaking Flag (EEs) ---------------- */
-
-INCLUDE ~spell_rev\lib\ee_si.tph~
-
-
-/* ---------------- Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs) ---------------- */
-
-INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
-
-
-//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
-////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
-
-/* ---------------- Revised Saves ---------------- */
-
-ACTION_IF revised_saves BEGIN
-
-COPY ~spell_rev\revised_saves\savewar.2da~   ~override~  // Warrior saves
-COPY ~spell_rev\revised_saves\savemonk.2da~  ~override~  // Monk saves
-COPY ~spell_rev\revised_saves\saverog.2da~   ~override~  // Rogue saves
-COPY ~spell_rev\revised_saves\saveprs.2da~   ~override~  // Priest saves
-COPY ~spell_rev\revised_saves\savewiz.2da~   ~override~  // Mage saves
-
-COPY ~spell_rev\revised_saves\savecndh.2da~  ~override~  // Dwarf/Halfling save bonuses
-COPY ~spell_rev\revised_saves\savecng.2da~   ~override~  // Gnome save bonuses
-
-END
-
-
-//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
-////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
-
-// Non-EE fixes
+/* ---------------- Non-EE Fixes ---------------- */
 
 ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
   COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override // remove spellstates
@@ -4003,7 +4002,7 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
       PHP_EACH fx_array AS int => fx_off BEGIN
         READ_SHORT fx_off fx_type
         PATCH_IF fx_type > 318 BEGIN
-          //PATCH_PRINT "%SOURCE_RES%.spl has invalid opcode %fx_type%"
+          // PATCH_PRINT "%SOURCE_RES%.spl has invalid opcode %fx_type%"
         END
       END
     END
@@ -4017,5 +4016,29 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
       INT_VAR opcode_to_delete = 328
     END
   BUT_ONLY
-  //PRINT "All invalid opcodes 321/328 successfully removed!"
+  // PRINT "All invalid opcodes 321/328 successfully removed!"
 END
+
+/* ---------------- Spellcasting HLAs ---------------- */
+
+INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
+
+/* ---------------- Friendly Spells Pierce Spell Protections ---------------- */
+
+INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
+
+/* ---------------- Anti-magic Spells Pierce Improved Invisibility ---------------- */
+
+INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
+
+/* ---------------- Add Invisibility/Sanctuary-Breaking Flag (EEs) ---------------- */
+
+INCLUDE ~spell_rev\lib\ee_si.tph~
+
+/* ---------------- Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs) ---------------- */
+
+INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
+
+/* ---------------- Revised Saves ---------------- */
+
+INCLUDE ~spell_rev\lib\revised_saves.tph~

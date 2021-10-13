@@ -226,15 +226,10 @@
   <br />
   When set to 1, all anti-magic spells will always pierce through (i.e. be able to target creatures with) the improved invisibility status regardless of Detect Invisibility/True Seeing status. This applies to Spell Thrust, Secret Word, Pierce Magic, Ruby Ray of Reversal, Khelben's Warding Whip, Pierce Shield, and Spellstrike. When set to 2, Breach is also included.
   <p>
-  <strong>alternative_remove_magic </strong>(default 0)
-  <br />
-  When set to 1, Remove Magic no longer uses the caster level vs. target level mechanics of Dispel Magic, but instead a simple saving throw that scales with level (-1 for every 5 levels of the caster, up to a maximum of -4 at 20th level). When set to 0, the vanilla dispelling mechanics are used. When set to 2, Remove Magic becomes a sort of lesser Breach AoE effect - one combat and one specific protection are removed from each creature, growing to two of each at 10th level, then three of each at 15th level.
-  <p>
   </p>
-  </p>
-  <strong>alternative_dispel_magic </strong>(default 0)
+  <strong>spell_protections </strong> (default 0)
   <br />
-  Identical to the component above, but instead applies to cast versions of Dispel Magic (i.e. arcane, divine, Inquisitor's innate, and Yeslick's innate).
+  When set to 1, all spell protections (e.g. Globe of Invulnerability, Spell Deflection, Shield of the Archon et al.) will protect against Dispel and Remove Magic as if they were any other 3rd level spell.
   <p>
   </p>
   <strong>spellcasting_hlas </strong> (default 0)
@@ -242,10 +237,9 @@
   When set to 1, all arcane and divine HLAs will remain in spellbooks and take up spell slots to memorize and use. When set to 0, all arcane and divine HLAs will no longer be spells you can find in spellbooks but instead become innate abilities that can be used independently of normal spell memorization - however, they may only be taken and memorized once.
   <p>
   </p>
-  </p>
-  <strong>aoe_lower_resistance </strong>(default 0)
+  <strong>targetable_chant </strong>(default 0)
   <br />
-  When set to 1, Lower Resistance becomes a 20' radius AoE effect (makes it more feasible for use against e.g. groups of drow).
+  When set to 1, Chant can be directed at any point from within sight instead of automatically self-targeting (vanilla behavior). Currently unknown how this behaves with the AI attempting to use this spell.
   <p>
   </p>
   <strong>blindness </strong>(default 0)
@@ -253,19 +247,9 @@
   When set to 1, the arcane spell Blindness is restored to the slot that Obscuring Mist currently occupies (but remains in druids' spellbooks).
   <p>
   </p>
-  <strong>chaos </strong>(default 0)
-  <br />
-  When set to 1, the arcane spell Chaos is restored to the slot that Waves of Fatigue currently occupies.
-  <p>
-  </p>
   <strong>pick_familiar </strong>(default 0)
   <br />
   When set to 1, the Find Familiar spell allows you to choose the type of familiar you wish to have (note that EET games cannot benefit from this, as EET changes how this spell works too much in order to have the spell work properly across its different campaigns).
-  <p>
-  </p>
-  <strong>resist_imprisonment </strong>(default 0)
-  <br />
-  When set to 1, Imprisonment allows for a vs. spell saving throw at a -6 penalty (note that it is still not subject to magic resistance even when this is enabled).
   <p>
   </p>
   <strong>slowing_web </strong>(default 0)
@@ -273,14 +257,34 @@
   When set to 1, Web no longer holds characters but instead makes it so characters cannot attack or cast spells, are slowed down to 1/8th movement speed, and suffer a -4 penalty to AC.
   <p>
   </p>
-  <strong>targetable_chant </strong>(default 0)
+  <strong>alternative_dispel_magic </strong>(default 0)
   <br />
-  When set to 1, Chant can be directed at any point from within sight instead of automatically self-targeting (vanilla behavior). Currently unknown how this behaves with the AI attempting to use this spell.
+  Identical to the component above, but instead applies to cast versions of Dispel Magic (i.e. arcane, divine, Inquisitor's innate, and Yeslick's innate).
+  <p>
+  </p>
+  <strong>alternative_remove_magic </strong>(default 0)
+  <br />
+  When set to 1, Remove Magic no longer uses the caster level vs. target level mechanics of Dispel Magic, but instead a simple saving throw that scales with level (-1 for every 5 levels of the caster, up to a maximum of -4 at 20th level). When set to 0, the vanilla dispelling mechanics are used. When set to 2, Remove Magic becomes a sort of lesser Breach AoE effect - one combat and one specific protection are removed from each creature, growing to two of each at 10th level, then three of each at 15th level.
+  <p>
+  </p>
+  <strong>chaos </strong>(default 0)
+  <br />
+  When set to 1, the arcane spell Chaos is restored to the slot that Waves of Fatigue currently occupies.
+  <p>
+  </p>
+  <strong>aoe_lower_resistance </strong>(default 0)
+  <br />
+  When set to 1, Lower Resistance becomes a 20' radius AoE effect (makes it more feasible for use against e.g. groups of drow).
   <p>
   </p>
   <strong>spell_immunity </strong>(default 0)
   <br />
   Non-fuctional at this time, do not change.
+  <p>
+  </p>
+  <strong>resist_imprisonment </strong>(default 0)
+  <br />
+  When set to 1, Imprisonment allows for a vs. spell saving throw at a -6 penalty (note that it is still not subject to magic resistance even when this is enabled).
   <p>
   </p>
   <strong>ee_two_handed_shapeshifts </strong>(default 1, EE-only)

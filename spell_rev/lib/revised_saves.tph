@@ -1,0 +1,11 @@
+// Demi's revised saving throw tables
+
+ACTION_IF revised_saves BEGIN
+  COPY ~spell_rev\revised_saves\savewar.2da~   ~override~  // Warrior saves
+  COPY ~spell_rev\revised_saves\savemonk.2da~  ~override~  // Monk saves
+  COPY ~spell_rev\revised_saves\saverog.2da~   ~override~  // Rogue saves
+  COPY ~spell_rev\revised_saves\saveprs.2da~   ~override~  // Priest saves
+  COPY ~spell_rev\revised_saves\savewiz.2da~   ~override~  // Mage saves
+  COPY ~spell_rev\revised_saves\savecndh.2da~  ~override~  // Dwarf/Halfling save bonuses
+  COPY ~spell_rev\revised_saves\savecng.2da~   ~override~  // Gnome save bonuses
+END
