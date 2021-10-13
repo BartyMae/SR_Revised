@@ -146,7 +146,7 @@ ADD_PROJECTILE ~spell_rev/shared/1pp/projectiles/1dart04.pro~
 ADD_PROJECTILE ~spell_rev/shared/1pp/projectiles/1dart05.pro~
 ADD_PROJECTILE ~spell_rev/shared/1pp/projectiles/1dart08.pro~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN // Physical Mirror
 COPY_EXISTING ~sppr613.spl~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 SET "loop" = 1
@@ -824,7 +824,7 @@ END
 BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN // Arcane Protection from Missiles
 COPY_EXISTING ~spwi311.spl~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 SET "loop" = 1
@@ -1502,7 +1502,7 @@ END
 BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN
+ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN // Stalker Protection from Missiles
 COPY_EXISTING ~spra303.spl~ ~override~
 PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
 SET "loop" = 1
@@ -2180,6 +2180,680 @@ END
 BUT_ONLY_IF_IT_CHANGES
 END
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) BEGIN // Delryn Family Shield Protection from Missiles
+COPY_EXISTING ~npshld.spl~ ~override~
+PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = 55 // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow01% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow07% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow10% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow11% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1arow15% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe08% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe09% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe10% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1axe16% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt01% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt06% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bolt09% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1bull06% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg11% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg12% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dagg16% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart01% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart02% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart03% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart04% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart05% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 0			// timing type
+SET power = 3			// power
+SET resist_dispel = 3	// dispel/resitance
+SET duration = 60		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%1dart08% - 1) // param2
+SET header = 1
+LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+END
+BUT_ONLY_IF_IT_CHANGES
+END
+
 
 // Spell Deflection fixes
 ACTION_IF FILE_EXISTS_IN_GAME ~sppr701.spl~ BEGIN
@@ -2350,8 +3024,8 @@ END
 
 // 1pp graphical effects
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~SPWI317.SPL~) BEGIN // Ghost Armor animation
-  COPY_EXISTING ~SPWI317.SPL~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi317.spl~) BEGIN // Ghost Armor animation
+  COPY_EXISTING ~spwi317.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     READ_LONG  0x6a "fx_off"
     READ_SHORT 0x6e "fx_idx"
@@ -2369,8 +3043,8 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~SPWI317.SPL~) BEGIN // Ghost Armor animation
   BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~SPWI414.SPL~) BEGIN // Spirit Armor animation
-  COPY_EXISTING ~SPWI414.SPL~ ~override~
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi414.spl~) BEGIN // Spirit Armor animation
+  COPY_EXISTING ~spwi414.spl~ ~override~
   PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
     READ_LONG  0x6a "fx_off"
     READ_SHORT 0x6e "fx_idx"
