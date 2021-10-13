@@ -3625,121 +3625,95 @@ INCLUDE ~spell_rev\lib\dispelling_screen.tph~
 INCLUDE ~spell_rev\lib\insects.tph~
 INCLUDE ~spell_rev\lib\imprisonment.tph~
 INCLUDE ~spell_rev\lib\stat_drain.tph~
-
 INCLUDE ~spell_rev\lib\refinements.tph~
-
-// Kill double strings on spell removals
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi513b.spl~ BEGIN
-  COPY_EXISTING ~spwi513b.spl~             ~override~
-  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi805b.spl~ BEGIN
-  COPY_EXISTING ~spwi805b.spl~             ~override~
-  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
-END
-
-ACTION_IF FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN
-  COPY_EXISTING ~spwi903b.spl~             ~override~
-  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
-END
-
-// Sectype fixes for vanilla mess and some more
-INCLUDE ~spell_rev\lib\kreso_extra.tph~
-
-// EE component
-ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
-  INCLUDE ~spell_rev\lib\kreso_ee.tph~
-  INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
-END
 
 /* ---------------- Tutu Scrolls ---------------- */
 
 ACTION_IF (GAME_IS ~tutu tutu_totsc~) BEGIN
   ACTION_FOR_EACH scroll IN
-    ~scrl1b~  // agannazar's scorcher
-    ~scrl67~  // armor
-    ~scrl71~  // blindness
-    ~scrl85~  // blur
-    ~scrl68~  // burning hands
-    ~scrl5e~  // champion's strength
-    ~scrl5p~  // chaos
-    ~scrl5f~  // chaotic commands
-    ~scrl69~  // charm person
-    ~scrl82~  // chill touch
-    ~scrl83~  // chromatic orb
-    ~scrl1d~  // clairvoyance
-    ~scrl2e~  // cloudkill
-    ~scrl70~  // color spray
-    ~scrl1u~  // confusion
-    ~scrl56~  // cure serious wounds
-    ~scrl5b~  // defensive harmony
-    ~scrl86~  // detect evil
-    ~scrl87~  // detect invisibility
-    ~scrl1v~  // dimension door
-    ~scrl1s~  // dire charm
-    ~scrl1e~  // dispel magic
-    ~scrl5n~  // domination
-    ~scrl5h~  // emotion
-    ~scrl5q~  // feeblemind
-    ~scrl1g~  // fireball
-    ~scrl1f~  // flame arrow
-    ~scrl58~  // free action
-    ~scrl72~  // friends
-    ~scrl1t~  // ghost armor
-    ~scrl1c~  // ghoul touch
-    ~scrl66~  // grease
-    ~scrl5i~  // greater malison
-    ~scrl1h~  // haste
-    ~scrl5o~  // hold monster
-    ~scrl1i~  // hold person
-    ~scrl89~  // horror
-    ~scrl1y~  // improved invisibility
-    ~scrl76~  // infravision
-    ~scrl90~  // invisibility
-    ~scrl91~  // knock
-    ~scrl92~  // know opponent
-    ~scrl84~  // larloch's minor drain
-    ~scrl1k~  // lightning bolt
-    ~scrl93~  // luck
-    ~scrl77~  // magic missile
-    ~scrl95~  // melf's acid arrow
-    ~scrl5a~  // mental domination
-    ~scrl1z~  // minor globe of invulnerability
-    ~scrl96~  // mirror image
-    ~scrl1l~  // monster summoning i
-    ~scrl2a~  // monster summoning ii
-    ~scrl2g~  // monster summoning iii
-    ~scrl59~  // neutralize poison
-    ~scrl1m~  // non-detection
-    ~scrl5j~  // otiluke's resilient sphere
-    ~scrl5m~  // polymorph self
-    ~scrl78~  // protection from evil
-    ~scrl1n~  // protection from normal missiles
-    ~scrl73~  // protection from petrification
-    ~scrl03~  // protection from acid
-    ~scrl04~  // protection from cold
-    ~scrl05~  // protection from electricity
-    ~scrl5d~  // protection from evil 10' radius
-    ~scrl06~  // protection from fire
-    ~scrl5c~  // protection from electricity
-    ~scrl07~  // protection from magic
-    ~scrl15~  // protection from petrification
-    ~scrl08~  // protection from poison
-    ~scrl09~  // protection from undead
-    ~scrl5g~  // remove curse
-    ~scrl94~  // resist fear
-    ~scrl79~  // shield
-    ~scrl80~  // shocking grasp
-    ~scrl1p~  // skull trap
-    ~scrl81~  // sleep
-    ~scrl1o~  // slow
-    ~scrl5k~  // spirit armor
-    ~scrl97~  // stinking cloud
-    ~scrl98~  // strength
-    ~scrl1q~  // vampiric touch
-    ~scrl3g~  // vocalize
-    ~scrl99~  // web
+    ~scrl1b~  // Agannazar's Scorcher
+    ~scrl67~  // Armor
+    ~scrl71~  // Blindness
+    ~scrl85~  // Blur
+    ~scrl68~  // Burning Hands
+    ~scrl5e~  // Champion's Strength
+    ~scrl5p~  // Chaos
+    ~scrl5f~  // Chaotic Commands
+    ~scrl69~  // Charm Person
+    ~scrl82~  // Chill Touch
+    ~scrl83~  // Chromatic Orb
+    ~scrl1d~  // Clairvoyance
+    ~scrl2e~  // Cloudkill
+    ~scrl70~  // Color Spray
+    ~scrl1u~  // Confusion
+    ~scrl56~  // Cure Serious Wounds
+    ~scrl5b~  // Defensive Harmony
+    ~scrl86~  // Detect Evil
+    ~scrl87~  // Detect Invisibility
+    ~scrl1v~  // Dimension Door
+    ~scrl1s~  // Dire Charm
+    ~scrl1e~  // Dispel Magic
+    ~scrl5n~  // Domination
+    ~scrl5h~  // Emotion
+    ~scrl5q~  // Feeblemind
+    ~scrl1g~  // Fireball
+    ~scrl1f~  // Flame Arrow
+    ~scrl58~  // Free Action
+    ~scrl72~  // Friends
+    ~scrl1t~  // Ghost Armor
+    ~scrl1c~  // Ghoul Touch
+    ~scrl66~  // Grease
+    ~scrl5i~  // Greater Malison
+    ~scrl1h~  // Haste
+    ~scrl5o~  // Hold Monster
+    ~scrl1i~  // Hold Person
+    ~scrl89~  // Horror
+    ~scrl1y~  // Improved Invisibility
+    ~scrl76~  // Infravision
+    ~scrl90~  // Invisibility
+    ~scrl91~  // Knock
+    ~scrl92~  // Know Opponent
+    ~scrl84~  // Larloch's Minor Drain
+    ~scrl1k~  // Lightning Bolt
+    ~scrl93~  // Luck
+    ~scrl77~  // Magic Missile
+    ~scrl95~  // Melf's Acid Arrow
+    ~scrl5a~  // Mental Domination
+    ~scrl1z~  // Minor Globe of Invulnerability
+    ~scrl96~  // Mirror Image
+    ~scrl1l~  // Monster Summoning I
+    ~scrl2a~  // Monster Summoning II
+    ~scrl2g~  // Monster Summoning III
+    ~scrl59~  // Neutralize Poison
+    ~scrl1m~  // Non-Detection
+    ~scrl5j~  // Otiluke's Resilient Sphere
+    ~scrl5m~  // Polymorph Self
+    ~scrl78~  // Protection from Evil
+    ~scrl1n~  // Protection from Normal Missiles
+    ~scrl73~  // Protection from Petrification
+    ~scrl03~  // Protection from Acid
+    ~scrl04~  // Protection from Cold
+    ~scrl05~  // Protection from Electricity
+    ~scrl5d~  // Protection from Evil 10' Radius
+    ~scrl06~  // Protection from Fire
+    ~scrl5c~  // Protection from Electricity
+    ~scrl07~  // Protection from Magic
+    ~scrl15~  // Protection from Petrification
+    ~scrl08~  // Protection from Poison
+    ~scrl09~  // Protection from Undead
+    ~scrl5g~  // Remove Curse
+    ~scrl94~  // Resist Fear
+    ~scrl79~  // Shield
+    ~scrl80~  // Shocking Grasp
+    ~scrl1p~  // Skull Trap
+    ~scrl81~  // Sleep
+    ~scrl1o~  // Slow
+    ~scrl5k~  // Spirit Armor
+    ~scrl97~  // Stinking Cloud
+    ~scrl98~  // Strength
+    ~scrl1q~  // Vampiric Touch
+    ~scrl3g~  // Vocalize
+    ~scrl99~  // Web
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%scroll%.itm~) BEGIN
       COPY_EXISTING ~%scroll%.itm~ ~override/_%scroll%.itm~
@@ -3992,53 +3966,55 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~bg4804.are~) BEGIN // Nashkel Noble House
 END
 END
 
-/* ---------------- Non-EE Fixes ---------------- */
+/* ---------------- Fixes ---------------- */
 
-ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
-  COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override // remove spellstates
-    GET_OFFSET_ARRAY ab_array SPL_V10_HEADERS
-    PHP_EACH ab_array AS int => ab_off BEGIN
-      GET_OFFSET_ARRAY2 fx_array ab_off ITM_V10_HEAD_EFFECTS
-      PHP_EACH fx_array AS int => fx_off BEGIN
-        READ_SHORT fx_off fx_type
-        PATCH_IF fx_type > 318 BEGIN
-          // PATCH_PRINT "%SOURCE_RES%.spl has invalid opcode %fx_type%"
-        END
-      END
-    END
-  BUT_ONLY
-
-  COPY_EXISTING_REGEXP GLOB ~^.+\.spl$~ override
-    LPF DELETE_SPELL_EFFECT
-      INT_VAR opcode_to_delete = 321
-    END
-    LPF DELETE_SPELL_EFFECT
-      INT_VAR opcode_to_delete = 328
-    END
-  BUT_ONLY
-  // PRINT "All invalid opcodes 321/328 successfully removed!"
+// Kill double strings on spell removals
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi513b.spl~ BEGIN
+  COPY_EXISTING ~spwi513b.spl~             ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
 END
 
-/* ---------------- Spellcasting HLAs ---------------- */
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi805b.spl~ BEGIN
+  COPY_EXISTING ~spwi805b.spl~             ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
+END
 
-INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
+ACTION_IF FILE_EXISTS_IN_GAME ~spwi903b.spl~ BEGIN
+  COPY_EXISTING ~spwi903b.spl~             ~override~
+  LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 139 END
+END
 
-/* ---------------- Friendly Spells Pierce Spell Protections ---------------- */
+// Sectype fixes for vanilla mess and some more
+INCLUDE ~spell_rev\lib\kreso_extra.tph~
 
-INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
+// EE component
+ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
+  INCLUDE ~spell_rev\lib\kreso_ee.tph~
+  INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
+END
 
-/* ---------------- Anti-magic Spells Pierce Improved Invisibility ---------------- */
-
-INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
-
-/* ---------------- Add Invisibility/Sanctuary-Breaking Flag (EEs) ---------------- */
-
+// Add Invisibility/Sanctuary-Breaking Flag (EEs)
 INCLUDE ~spell_rev\lib\ee_si.tph~
 
-/* ---------------- Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs) ---------------- */
+// Non-EE Fixes
+INCLUDE ~spell_rev\lib\non_ee.tph~
 
-INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
+/* ---------------- Optional ---------------- */
 
-/* ---------------- Revised Saves ---------------- */
-
+// Revised Saves
 INCLUDE ~spell_rev\lib\revised_saves.tph~
+
+// Friendly Spells Pierce Spell Protections
+INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
+
+// Anti-magic Spells Pierce Improved Invisibility
+INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
+
+// Spell Protections
+INCLUDE ~spell_rev\lib\spell_protections.tph~
+
+// Spellcasting HLAs
+INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
+
+// Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs)
+INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
