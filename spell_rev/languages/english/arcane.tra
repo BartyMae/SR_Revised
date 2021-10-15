@@ -4521,3 +4521,5 @@ Launcher: Sling~
 @22005=~Freed from Petrification~
 @22006=~Freed from Imprisonment~
 @22007=~Statistics Restored~
+@100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
+@100401 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~

@@ -20,6 +20,7 @@ LAF ASSIGN_TEMP_NAMES_FOR_NEW_SPELL_REFERENCES END
 // adscroll.itm still copied over in case someone wants to CLUAConsole it for use on an old save game
 COPY ~spell_rev\shared\adscroll.itm~     ~override~
   SAY NAME2 @22000    SAY IDENTIFIED_DESC   @22001
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\shared\adscroll.bam~     ~override~
 
 // IWDEE AI can't effectively use SR's Cause Wounds spells
@@ -635,26 +636,37 @@ COPY ~spell_rev\sppr2##\fblade2.itm~     ~override~
 
 COPY ~spell_rev\sppr2##\sppr207.spl~     ~override~  // Goodberry (moved to level 1)
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @44
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4016
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry2.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4017
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry3.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4018
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry4.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4019
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry5.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4020
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry6.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4021
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry7.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4022
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry8.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4023
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry9.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4024
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\sppr2##\gberry0.itm~      ~override~
   SAY NAME1 @43    SAY UNIDENTIFIED_DESC @4025
+  LPF update_item_descriptions_to_bgee END
 APPEND ~spell.ids~ ~1207 CLERIC_GOOD_BERRIES_DEPRECATED~
 
 COPY ~spell_rev\sppr2##\sppr208.spl~     ~override~  // Hold Person
@@ -1692,90 +1704,105 @@ COPY ~spell_rev\spwi1##\famcat.cre~      ~override~
   SAY NAME1 @8000
   SAY NAME2 @8000
 COPY ~spell_rev\spwi1##\famcat.itm~      ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8001
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8001
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famcat25.cre~    ~override~
   SAY NAME1 @8000
   SAY NAME2 @8000
 COPY ~spell_rev\spwi1##\famcat25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8003
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8003
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famdust.cre~     ~override~
   SAY NAME1 @8005
   SAY NAME2 @8005
 COPY ~spell_rev\spwi1##\famdust.itm~     ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8006
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8006
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\mepfir.itm~      ~override~
   SAY NAME1 @8007
 COPY ~spell_rev\spwi1##\famdus25.cre~    ~override~
   SAY NAME1 @8005
   SAY NAME2 @8005
 COPY ~spell_rev\spwi1##\famdus25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8008
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8008
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfair.cre~     ~override~
   SAY NAME1 @8010
   SAY NAME2 @8010
 COPY ~spell_rev\spwi1##\famfair.itm~     ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8011
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8011
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfai25.cre~    ~override~
   SAY NAME1 @8010
   SAY NAME2 @8010
 COPY ~spell_rev\spwi1##\famfai25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8013
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8013
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfer.cre~      ~override~
   SAY NAME1 @8015
   SAY NAME2 @8015
 COPY ~spell_rev\spwi1##\famfer.itm~      ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8016
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8016
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfer25.cre~    ~override~
   SAY NAME1 @8015
   SAY NAME2 @8015
 COPY ~spell_rev\spwi1##\famfer25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8018
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8018
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famimp.cre~      ~override~
   SAY NAME1 @8020
   SAY NAME2 @8020
 COPY ~spell_rev\spwi1##\famimp.itm~      ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8021
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8021
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famimp25.cre~    ~override~
   SAY NAME1 @8020
   SAY NAME2 @8020
 COPY ~spell_rev\spwi1##\impclaw.itm~     ~override~
   SAY NAME1 @8022
 COPY ~spell_rev\spwi1##\famimp25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8023
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8023
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\fampsd.cre~      ~override~
   SAY NAME1 @8025
   SAY NAME2 @8025
 COPY ~spell_rev\spwi1##\fampsd.itm~      ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8026
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8026
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\psdclaw.itm~     ~override~
   SAY NAME1 @8027
 COPY ~spell_rev\spwi1##\fampsd25.cre~    ~override~
   SAY NAME1 @8025
   SAY NAME2 @8025
 COPY ~spell_rev\spwi1##\fampsd25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8028
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8028
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famquas.cre~     ~override~
   SAY NAME1 @8030
   SAY NAME2 @8030
 COPY ~spell_rev\spwi1##\famquas.itm~     ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8031
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8031
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\quasclaw.itm~    ~override~
   SAY NAME1 @8032
 COPY ~spell_rev\spwi1##\famqua25.cre~    ~override~
   SAY NAME1 @8030
   SAY NAME2 @8030
 COPY ~spell_rev\spwi1##\famqua25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8033
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8033
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famrab.cre~      ~override~
   SAY NAME1 @8035
   SAY NAME2 @8035
 COPY ~spell_rev\spwi1##\famrab.itm~      ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8036
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8036
+  LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famrab25.cre~    ~override~
   SAY NAME1 @8035
   SAY NAME2 @8035
 COPY ~spell_rev\spwi1##\famrab25.itm~    ~override~
-  SAY NAME1 @8218   SAY UNIDENTIFIED_DESC @8038
+  SAY NAME2 @8218   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8038
 END
 
 COPY ~spell_rev\spwi1##\spwi124.spl~     ~override~  // Nahal's Reckless Dweomer

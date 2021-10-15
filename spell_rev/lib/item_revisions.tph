@@ -473,3 +473,30 @@ LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
 END
 
 END // Lightning Spear
+
+ACTION_FOR_EACH resource IN
+  ~brac18~   // Gloves of Missile Snaring
+  ~shld24~   // Reflection Shield
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%dvfarrow% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END	BUT_ONLY_IF_IT_CHANGES
+  END
+END
