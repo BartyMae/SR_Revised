@@ -313,10 +313,36 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   SET "loop" = %loop% + 1
 END END END
 
+ACTION_FOR_EACH resource IN
+  ~brac18~   // Gloves of Missile Snaring
+  ~shld24~   // Reflection Shield
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+SET opcode = 83			// Set opcode
+SET target = 1			// target type
+SET timing = 2			// timing type
+SET power = 0			// power
+SET resist_dispel = 0	// dispel/resitance
+SET duration = 0		// duration
+SET probability1 = 100	// probability 1
+SET probability2 = 0	// probability 2
+SPRINT "resource" "" 		// resource
+SET dicenumber = 0		// dice number
+SET dicesize = 0		// dice size
+SET savingthrow = 0   // saving throw
+SET savebonus = 0		// saving throw bonus
+SET parameter1 = 0 // param1
+SET parameter2 = (%arowex% - 1) // param2
+LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END	BUT_ONLY_IF_IT_CHANGES
+  END
+END
+
 END // Arow of Detonation
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~bow19.pro~) BEGIN // Lightning Spear
-
 ADD_PROJECTILE ~item_rev/itm/bow19.pro~
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN
@@ -419,8 +445,6 @@ PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
   SET "loop" = %loop% + 1
 END END END
 
-END // Lightning Spear
-
 ACTION_FOR_EACH resource IN
   ~brac18~   // Gloves of Missile Snaring
   ~shld24~   // Reflection Shield
@@ -447,3 +471,5 @@ LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
     END	BUT_ONLY_IF_IT_CHANGES
   END
 END
+
+END // Lightning Spear
