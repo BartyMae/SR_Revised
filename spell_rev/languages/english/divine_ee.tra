@@ -259,9 +259,9 @@ Bat (1 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Blind Sense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
- Diseasing: target suffers a -1 penalty to Dexterity and Constitution for 8 hours (save vs. death neg.)
- Swarm: each bat within 10' receives a +2 bonus to THAC0~
+– Blind Sense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
+– Diseasing: target suffers a -1 penalty to Dexterity and Constitution for 8 hours (save vs. death neg.)
+– Swarm: each bat within 10' receives a +2 bonus to THAC0~
 
 @321=~Obscuring Mist~
 @322=~Obscuring Mist
@@ -571,7 +571,7 @@ War Dog (2 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Scent: detects invisible creatures within 10'~
+– Scent: detects invisible creatures within 10'~
 
 
 /*------------------Level 3------------------*/
@@ -603,8 +603,8 @@ Skeleton (2 HD):
  FR 0%, CR 100%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
+– Protected Against: Backstabs, Death, Petrification, and Poison
+– Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
 
 Greater Skeleton (5 HD):
  ST16, DE14, CO-, IN-, WI10, CH3
@@ -615,8 +615,8 @@ Greater Skeleton (5 HD):
  FR 0%, CR 100%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
+– Protected Against: Backstabs, Death, Petrification, and Poison
+– Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 @73=~Call Lightning~
 @74=~Call Lightning
@@ -875,7 +875,7 @@ Wolf (3 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Pack Attack: each wolf within 10' receives a +1 bonus to THAC0~
+– Pack Attack: each wolf within 10' receives a +1 bonus to THAC0~
 
 @107=~Cause Moderate Wounds~
 @108=~Cause Moderate Wounds
@@ -1023,7 +1023,7 @@ Leopard (4 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Pounce: the leopard can charge a target if they are at least 5 feet away, giving the leopard a +2 bonus to THAC0 and damage as well as double movement rate, but suffering a -2 penalty to AC~
+– Pounce: the leopard can charge a target if they are at least 5 feet away, giving the leopard a +2 bonus to THAC0 and damage as well as double movement rate, but suffering a -2 penalty to AC~
 
 @115=~Free Action~
 @116=~Free Action
@@ -1131,7 +1131,7 @@ Hamadryad (5 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 75%
+– Magic Resistance: 75%
 
 Known Spells:
  1° Cure Light Wounds (x2), Doom, Entangle, Shillelagh
@@ -1147,7 +1147,7 @@ Nymph (7 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 50%
+– Magic Resistance: 50%
 
 Known Spells:
  1° Cure Light Wounds (x2), Doom, Entangle, Shillelagh
@@ -1319,8 +1319,8 @@ Giant Snake (5 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Entangle, Grease, Web, and Poison
- Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)~
+– Protected Against: Entangle, Grease, Web, and Poison
+– Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)~
 
 @153=~Cure Critical Wounds~
 @154=~Cure Critical Wounds
@@ -1665,8 +1665,8 @@ Aerial Servant (12 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Hold, Poison, Sleep, and Stun
- Natural Invisibility: permanent improved invisibility~
+– Protected Against: Hold, Poison, Sleep, and Stun
+– Natural Invisibility: permanent improved invisibility~
 
 @193=~Animal Summoning VI~
 @194=~Animal Summoning VI
@@ -1732,7 +1732,7 @@ Fire Elemental (12 HD):
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
 
 Greater Fire Elemental (16 HD):
  ST18, DE19, CO18, IN6, WI11, CH11
@@ -1743,7 +1743,7 @@ Greater Fire Elemental (16 HD):
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
 
 @201=~Fire Seeds~
 @202=~Fire Seeds
@@ -1893,7 +1893,7 @@ Air Elemental (12 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
 
 Greater Air Elemental (16 HD):
  ST18, DE21, CO18, IN6, WI11, CH11
@@ -1904,7 +1904,7 @@ Greater Air Elemental (16 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
 
 @221=~Conjure Earth Elemental~
 @222=~Conjure Earth Elemental
@@ -1931,7 +1931,7 @@ Earth Elemental (12 HD):
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
 
 Greater Earth Elemental (16 HD):
  ST23, DE8, CO21, IN6, WI11, CH11
@@ -1942,7 +1942,7 @@ Greater Earth Elemental (16 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
 
 @311=~Regeneration~
 @312=~Regeneration
@@ -1992,9 +1992,9 @@ Skeleton Warrior (9 HD):
  FR 0%, CR 100%, ER 0%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 90%
- Protected Against: Backstabs, Death, Petrification, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
+– Magic Resistance: 90%
+– Protected Against: Backstabs, Death, Petrification, and Poison
+– Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 
 /*------------------Level 7------------------*/
@@ -2036,10 +2036,10 @@ Shambling Mound (16 HD):
  FR 100%, CR 50%, ER 125%, AR 0%
 
 Special Characteristics:
- Regeneration: 1 hp/round
- Protected Againt: Charm, Domination, Hold, Poison, Polymorph, Sleep, and Stun
- Constricting: creatures entangled by the shambler are entangled again and suffer 2D6 + 10 damage each round (save vs. breath neg.)
- Entangling: 50% chance target is entangled for 1 round (save vs. breath neg.)~
+– Regeneration: 1 hp/round
+– Protected Againt: Charm, Domination, Hold, Poison, Polymorph, Sleep, and Stun
+– Constricting: creatures entangled by the shambler are entangled again and suffer 2D6 + 10 damage each round (save vs. breath neg.)
+– Entangling: 50% chance target is entangled for 1 round (save vs. breath neg.)~
 
 @235=~Summon Death Knight~
 @236=~Summon Death Knight
@@ -2063,15 +2063,15 @@ Death Knight (13 HD):
  FR 0%, CR 100%, ER 0%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 75%
- Protected Againt: Backstabs, Death, Normal Weapons, and Poison
- Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
- Detect Invisibility (permanent)
- Aura of Fear: opponents in a 10' radius flee in terror (save vs. spell neg.)
- Unholy Fireball (1x per day)
+– Magic Resistance: 75%
+– Protected Againt: Backstabs, Death, Normal Weapons, and Poison
+– Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
+– Detect Invisibility (permanent)
+– Aura of Fear: opponents in a 10' radius flee in terror (save vs. spell neg.)
+– Unholy Fireball (1x per day)
 
 Known Spells:
- Dispel Magic (1x per 5 rounds), Power Word: Stun, Symbol of Death, Symbol of Pain, Power Word: Blind, Power Word: Kill~
+– Dispel Magic (1x per 5 rounds), Power Word: Stun, Symbol of Death, Symbol of Pain, Power Word: Blind, Power Word: Kill~
 
 @237=~Nature's Beauty~
 @238=~Nature's Beauty
@@ -2269,7 +2269,7 @@ Polar Bear (8 HD):
  FR 0%, CR 25%, ER 0%, AR 0%
 
 Special Characteristics:
- Spell Immunity: Ice Storm~
+– Spell Immunity: Ice Storm~
 
 @257=~Creeping Doom~
 @258=~Creeping Doom
@@ -2378,7 +2378,7 @@ Earth Elemental (12 HD):
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
 
 Air Elemental (12 HD):
  ST16, DE19, CO17, IN6, WI11, CH11
@@ -2389,7 +2389,7 @@ Air Elemental (12 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun
 
 Fire Elemental (12 HD):
  ST16, DE17, CO17, IN6, WI11, CH11
@@ -2400,7 +2400,7 @@ Fire Elemental (12 HD):
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
 
 @277=~Elemental Prince Call~
 @278=~Elemental Prince Call
@@ -2424,9 +2424,9 @@ Chan, Princess of Air (20 HD):
  FR 0%, CR 0%, ER 100%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 50%
- Protected Against: Fear, Hold, Poison, Polymorph, Normal/+1 Weapons, Sleep, and Stun
- Blade Barrier (permanent)
+– Magic Resistance: 50%
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal/+1 Weapons, Sleep, and Stun
+– Blade Barrier (permanent)
 
 Sunnis, Princess of Earth (20 HD):
  ST24, DE12, CO21, IN17, WI16, CH18
@@ -2437,9 +2437,9 @@ Sunnis, Princess of Earth (20 HD):
  FR 0%, CR 0%, ER 0%, AR 100%
 
 Special Characteristics:
- Magic Resistance: 50%
- Protected Against: Fear, Hold, Poison, Polymorph, Normal/+1 Weapons, Sleep, and Stun
- Stoneskin (1 skin per round)
+– Magic Resistance: 50%
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal/+1 Weapons, Sleep, and Stun
+– Stoneskin (1 skin per round)
 
 Zaaman Rul, Prince of Fire (20 HD):
  ST20, DE19, CO19, IN17, WI16, CH18
@@ -2450,11 +2450,11 @@ Zaaman Rul, Prince of Fire (20 HD):
  FR 125%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 50%
- Protected Against: Fear, Hold, Poison, Polymorph, Normal/+1 Weapons, Sleep, and Stun
+– Magic Resistance: 50%
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal/+1 Weapons, Sleep, and Stun
 
 Creature Abiliities:
- Fire Shield (permanent)~
+– Fire Shield (permanent)~
 
 @279=~Globe of Blades~
 @280=~Globe of Blades
@@ -2493,11 +2493,11 @@ Deva (14 HD):
  FR 50%, CR 100%, ER 100%, AR 0%
 
 Special Characteristics:
- Magic Resistance: 50%
- Protected Against: Backstabs, Death, Imprisonment, Level Drain, Maze, Normal/+1 Weapons, Petrification, and Poison
- Detect Invisibility (permanent)
- Disruption: undead creatures are destroyed (save vs. death neg.)
- Stunning: 50% chance target is stunned for 2 rounds (save vs. spell neg.)
+– Magic Resistance: 50%
+– Protected Against: Backstabs, Death, Imprisonment, Level Drain, Maze, Normal/+1 Weapons, Petrification, and Poison
+– Detect Invisibility (permanent)
+– Disruption: undead creatures are destroyed (save vs. death neg.)
+– Stunning: 50% chance target is stunned for 2 rounds (save vs. spell neg.)
 
 Known Spells:
  1° Bless (x3), Resist Fear (x3)
@@ -2530,11 +2530,11 @@ Fallen Deva (14 HD):
  FR 100%, CR 0%, ER 100%, AR 50%
 
 Special Characteristics:
- Magic Resistance: 50%
- Protected Against: Backstabs, Death, Imprisonment, Level Drain, Maze, Normal/+1 Weapons, Petrification, and Poison
- Detect Invisibility (permanent)
- Fiery: target suffers 1D6 fire damage
- Wounding: target suffers 1 bleeding damage every round for 5 rounds
+– Magic Resistance: 50%
+– Protected Against: Backstabs, Death, Imprisonment, Level Drain, Maze, Normal/+1 Weapons, Petrification, and Poison
+– Detect Invisibility (permanent)
+– Fiery: target suffers 1D6 fire damage
+– Wounding: target suffers 1 bleeding damage every round for 5 rounds
 
 Known Spells:
  1° Doom (x3), Resist Fear (x3)
@@ -2605,7 +2605,7 @@ Greater Fire Elemental (16 HD):
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
 
 @293=~Earth Elemental Transformation~
 @294=~Earth Elemental Transformation
@@ -2628,7 +2628,7 @@ Greater Earth Elemental (16 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
+– Protected Against: Fear, Hold, Poison, Polymorph, Normal Weapons, Sleep, and Stun~
 
 
 /*------------------Beast Master------------------*/
@@ -2655,7 +2655,7 @@ Leopard (4 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Pounce: the leopard can charge a target if they are at least 5 feet away, giving the leopard a +2 bonus to THAC0 and damage as well as double movement rate, but suffering a -2 penalty to AC~
+– Pounce: the leopard can charge a target if they are at least 5 feet away, giving the leopard a +2 bonus to THAC0 and damage as well as double movement rate, but suffering a -2 penalty to AC~
 
 @396=~Animal Summoning V~
 @397=~Animal Summoning V
@@ -2679,8 +2679,8 @@ Giant Snake (5 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Protected Against: Entangle, Grease, Web, and Poison
- Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)~
+– Protected Against: Entangle, Grease, Web, and Poison
+– Asp's Venom: target suffers 1 poison damage every second for 5 rounds (save vs. poison at -2 neg.)~
 
 @398=~Animal Summoning VI~
 @399=~Animal Summoning VI
@@ -2734,16 +2734,16 @@ This spell causes a 2 foot-diameter sphere to appear in the caster's hand. When 
 
 STATISTICS:
 
-Combat Abilities:
- Magical Stone: +3 bonus to damage against undead
+Combat abilities:
+– Magical Stone: +3 to damage against undead
 
-THAC0: +1 bonus
-Damage: 1D4 + 2
-Damage type: missile
-Weight: 0
+THAC0: +1
+Damage: 1d4+2 (missile)
 Speed Factor: 1
 Proficiency Type: None
-Type: 1-handed
+Type: One-handed
+
+Weight: 0
 Unusable By:
  Cavalier~
 @4002=~Shillelagh +1~

@@ -1898,7 +1898,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered to be melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ //Furthermore, the blade cannot harm inorganic things because it has no solid existence.
+This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered to be melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ // Furthermore, the blade cannot harm inorganic things because it has no solid existence.
 
 @647=~Spell Shield~
 @648=~Spell Shield
@@ -2096,7 +2096,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-When a Protection from Magic Energy spell is cast, the recipient receives complete protection from all magic damage-based attacks. 100% of the damage from attacks like Cause Wound will be absorbed, and the target creature will become completely immune to the effects of spells such as Magic Missile, Skull Trap, Disintegrate, and Horrid Wilting. Multiple castings of this spell are not cumulative.~ //Certain creatures are immune to the effects of this spell, including all undead.
+When a Protection from Magic Energy spell is cast, the recipient receives complete protection from all magic damage-based attacks. 100% of the damage from attacks like Cause Wound will be absorbed, and the target creature will become completely immune to the effects of spells such as Magic Missile, Skull Trap, Disintegrate, and Horrid Wilting. Multiple castings of this spell are not cumulative.~ // Certain creatures are immune to the effects of this spell, including all undead.
 
 @673=~Mislead~
 @674=~Mislead
