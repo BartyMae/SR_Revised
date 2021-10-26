@@ -1,4 +1,4 @@
-ACTION_IF spellcasting_hlas=0 BEGIN
+ACTION_IF spellbook_hlas=1 BEGIN
 
 ACTION_FOR_EACH resource IN // Spell type (arcane)
  ~spwi920~

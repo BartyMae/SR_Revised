@@ -223,25 +223,6 @@ COPY ~spell_rev\shared\neckcrit.itm~     ~override~  // Critical hit protection 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
 ////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
 
-/* ---------------- Bhaalspawn Abilities ---------------- */
-
-COPY ~spell_rev\shared\spin101.spl~      ~override~  // Cure Light Wounds
-  SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
-COPY ~spell_rev\shared\spin102.spl~      ~override~  // Slow Poison
-  SAY NAME1 @53    SAY UNIDENTIFIED_DESC @54
-COPY ~spell_rev\shared\spin103.spl~      ~override~  // Draw Upon Divine Might (previously named Draw Upon Holy Might)
-  SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
-COPY ~spell_rev\shared\spin104.spl~      ~override~  // Larloch's Minor Drain
-  SAY NAME1 @435    SAY UNIDENTIFIED_DESC @436
-COPY ~spell_rev\shared\spin104i.eff~     ~override~
-COPY ~spell_rev\shared\spin105.spl~      ~override~  // Horror
-  SAY NAME1 @457    SAY UNIDENTIFIED_DESC @458
-COPY ~spell_rev\shared\spin105d.eff~     ~override~
-COPY ~spell_rev\shared\spin105i.eff~     ~override~
-COPY ~spell_rev\shared\spin106.spl~      ~override~  // Vampiric Touch
-  SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
-COPY ~spell_rev\shared\spin106i.eff~     ~override~
-
 /* ---------------- Beast Master Abilities ---------------- */
 
 COPY ~spell_rev\shared\spra304.spl~      ~override~  // Animal Summoning IV
