@@ -1444,6 +1444,7 @@ COPY ~spell_rev\sppr7##\sppr730d.eff~    ~override~
 COPY ~spell_rev\sppr7##\sppr730e.spl~    ~override~
 COPY ~spell_rev\sppr7##\sppr730e.eff~    ~override~
 COPY ~spell_rev\sppr7##\dvflmhit.eff~    ~override~
+COPY ~spell_rev\sppr7##\dvflmhit.spl~    ~override~
 
 COPY ~spell_rev\sppr7##\sppr731.spl~     ~override~  // Fire Elemental Transformation
   SAY NAME1 @291    SAY UNIDENTIFIED_DESC @292
