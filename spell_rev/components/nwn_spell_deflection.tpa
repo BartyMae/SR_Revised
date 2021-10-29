@@ -92,25 +92,26 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~dgwhirl~ => 1
 ~beguile~ => 1
 
-//SRR additions
-~spcl742~ => 1 // priest of lathander's halt undead
-~spin105~ => 1 // bhaalspawn's horror
-~%sppr116%~ => 1 // fearie fire
-//~sppr121~ => 1 // obscuring mist (stationary)
-~sppr211~ => 1 // silence
-~%sppr216%~ => 1 // fire trap
-//~sppr325~ => 1 // spike growth (stationary)
-//~sppr418~ => 1 // ice storm (stationary)
-~%sppr620%~ => 1 // banishment
-~sppr720~ => 1 // earthquake
-~spwi103~ => 1 // burning hands
-//~spwi106~ => 1 // obscuring mist (stationary)
-~spwi605~ => 1 // banishment
-
 END
 
 ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
   ACTION_FOR_EACH resource IN
+    // SRR additions
+    ~spcl742~ // priest of lathander's halt undead
+    ~spin105~ // bhaalspawn's horror
+    ~%sppr116%~ // fearie fire
+    //~sppr121~ // obscuring mist (stationary)
+    ~sppr211~ // silence
+    ~%sppr216%~ // fire trap
+    //~sppr325~ // spike growth (stationary)
+    //~sppr418~ // ice storm (stationary)
+    ~%sppr620%~ // banishment
+    ~sppr720~ // earthquake
+    ~spwi103~ // burning hands
+    //~spwi106~ // obscuring mist (stationary)
+    ~spwi605~ // banishment
+
+    // SRR fixes
     ~dvdr601~ // chain lightning
     ~dvpr218~ // gust of wind
     ~dvpr720~ // earthquake
@@ -132,6 +133,34 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
   OUTER_SET $spell("spwi615")=0 // chain lightning
   OUTER_SET $spell("spwi913")=0 // wail of the banshee
   OUTER_SET $spell("spwi922")=0 // dragon's breath
+END
+
+ACTION_FOR_EACH resource IN // IR compatibility
+  ~dvfball~
+  ~dvpexpl~
+  ~dvterri~
+  ~dvhorro~
+  ~dvconec~
+  //~dvckill~ // (stationary)
+  ~clck07~
+  ~misc3l~
+  ~misc3m~
+  ~staf12~
+  ~staf17~
+  ~staf20~
+  ~wand02~
+  ~wand05~
+  ~wand06~
+  ~wand08~
+  ~wand11~
+  ~wand13~
+  ~wand14~
+  ~wand19~
+  ~wa2harp~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+    OUTER_SET $spell("%resource%")=1
+  END
 END
 
 ACTION_FOR_EACH resource IN // Miscellaneous
