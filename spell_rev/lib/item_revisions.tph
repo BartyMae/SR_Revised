@@ -24,9 +24,9 @@ ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_ICE_STORM [ %TAB
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr501 END
   END
 END
-/*ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]WIZARD_BALL_LIGHTNING [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Lightning scroll
+/* ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]WIZARD_BALL_LIGHTNING [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Lightning scroll
   LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~WIZARD_BALL_LIGHTNING~ RET spell_res END
-  OUTER_SPRINT ~ball_lightning~ ~%spell_res%~*/
+  OUTER_SPRINT ~ball_lightning~ ~%spell_res%~ */
   ACTION_IF (FILE_EXISTS_IN_GAME ~scrl05.spl~) THEN BEGIN
     COPY_EXISTING ~scrl05.spl~ ~override~
       //LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ball_lightning%~ END
@@ -34,7 +34,7 @@ END
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr601 END
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr601d END
   END
-//END
+//  END
 ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_FIRE_TRAP [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Fire scroll
   LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = ~CLERIC_FIRE_TRAP~ RET spell_res END
   OUTER_SPRINT ~fire_trap~ ~%spell_res%~
@@ -157,6 +157,8 @@ ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~
 COPY ~spell_rev\shared\item_rev\dvpexpl.spl~  ~override~ // Prismatic Explosion
   WRITE_SHORT 0x98 %dvpexpl%
   SAY NAME1 @401400
+COPY ~spell_rev\shared\item_rev\dvdomina.spl~ ~override~ // Domination
+  SAY NAME1 @621
 COPY ~spell_rev\shared\item_rev\dvreson.spl~  ~override~ // Resonating
   WRITE_SHORT 0x98 %dvsndbr%
 COPY ~spell_rev\shared\item_rev\dvsburst.spl~ ~override~ // Sonic Blast
@@ -169,6 +171,13 @@ COPY ~spell_rev\shared\item_rev\misc3l.spl~   ~override~ // Silence
 COPY ~spell_rev\shared\item_rev\npshld.spl~   ~override~ // Protection from Missiles
   SAY NAME1 @180500
 COPY ~spell_rev\shared\item_rev\misc3c.eff~   ~override~ // Summon Efreeti
+ACTION_IF slowing_web=1 BEGIN
+COPY ~spell_rev\shared\alternatives\wand14.spl~   ~override~ // Web
+  SAY NAME1 @477
+END ELSE BEGIN
+COPY ~spell_rev\shared\item_rev\wand14.spl~   ~override~ // Web
+  SAY NAME1 @477
+END
 
 ACTION_IF dispel_globes=2 BEGIN
   COPY ~spell_rev\shared\item_rev\misc73n.spl~     ~override\misc73.spl~  // Globe of Power
