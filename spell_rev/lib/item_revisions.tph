@@ -12,7 +12,7 @@ ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]WIZARD_VITRIOLIC_SPHERE
   OUTER_SPRINT ~vitriolic_sphere~ ~%spell_res%~
   ACTION_IF (FILE_EXISTS_IN_GAME ~scrl03.spl~) THEN BEGIN
     COPY_EXISTING ~scrl03.spl~ ~override~
-      // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%vitriolic_sphere%~ END
+ // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%vitriolic_sphere%~ END
   END
 END
 ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_ICE_STORM [ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN // Protection from Cold scroll
@@ -20,7 +20,7 @@ ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_ICE_STORM [ %TAB
   OUTER_SPRINT ~ice_storm~ ~%spell_res%~
   ACTION_IF (FILE_EXISTS_IN_GAME ~scrl04.spl~) THEN BEGIN
     COPY_EXISTING ~scrl04.spl~ ~override~
-      // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ice_storm%~ END
+ // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ice_storm%~ END
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr501 END
   END
 END
@@ -29,7 +29,7 @@ END
   OUTER_SPRINT ~ball_lightning~ ~%spell_res%~ */
   ACTION_IF (FILE_EXISTS_IN_GAME ~scrl05.spl~) THEN BEGIN
     COPY_EXISTING ~scrl05.spl~ ~override~
-      // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ball_lightning%~ END
+ // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%ball_lightning%~ END
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spwi615d END
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr601 END
       LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=spdr601d END
@@ -40,7 +40,7 @@ ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]CLERIC_FIRE_TRAP [ %TAB
   OUTER_SPRINT ~fire_trap~ ~%spell_res%~
   ACTION_IF (FILE_EXISTS_IN_GAME ~scrl06.spl~) THEN BEGIN
     COPY_EXISTING ~scrl06.spl~ ~override~
-      // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%fire_trap%~ END
+ // LPF ADD_SPELL_EFFECT INT_VAR opcode=206 target=2 duration=300 resist_dispel=3 STR_VAR resource=~%fire_trap%~ END
   END
 END
 
@@ -149,42 +149,42 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.spl~) THEN BEGIN
 END
 
 // SRR spell updates
-COPY ~spell_rev\shared\item_rev\dvbram.spl~   ~override~ // Battering Ram
-COPY ~spell_rev\shared\item_rev\dvmcure.spl~  ~override~ // Mass Cure
+COPY ~spell_rev\shared\item_rev\dvbram.spl~ ~override~ // Battering Ram
+COPY ~spell_rev\shared\item_rev\dvmcure.spl~ ~override~ // Mass Cure
   WRITE_SHORT 0x98 %dvmscure%
   SAY NAME1 @177
 ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~
-COPY ~spell_rev\shared\item_rev\dvpexpl.spl~  ~override~ // Prismatic Explosion
+COPY ~spell_rev\shared\item_rev\dvpexpl.spl~ ~override~ // Prismatic Explosion
   WRITE_SHORT 0x98 %dvpexpl%
   SAY NAME1 @401400
 COPY ~spell_rev\shared\item_rev\dvdomina.spl~ ~override~ // Domination
   SAY NAME1 @621
-COPY ~spell_rev\shared\item_rev\dvreson.spl~  ~override~ // Resonating
+COPY ~spell_rev\shared\item_rev\dvreson.spl~ ~override~ // Resonating
   WRITE_SHORT 0x98 %dvsndbr%
 COPY ~spell_rev\shared\item_rev\dvsburst.spl~ ~override~ // Sonic Blast
   WRITE_SHORT 0x98 %dvsndbr%
-COPY ~spell_rev\shared\item_rev\hamm11.spl~   ~override~ // Champion's Strength
+COPY ~spell_rev\shared\item_rev\hamm11.spl~ ~override~ // Champion's Strength
   SAY NAME1 @163
-COPY ~spell_rev\shared\item_rev\misc3l.spl~   ~override~ // Silence
+COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~ // Silence
   WRITE_SHORT 0x98 %dvsilenc%
   SAY NAME1 @51
-COPY ~spell_rev\shared\item_rev\npshld.spl~   ~override~ // Protection from Missiles
+COPY ~spell_rev\shared\item_rev\npshld.spl~ ~override~ // Protection from Missiles
   SAY NAME1 @180500
-COPY ~spell_rev\shared\item_rev\misc3c.eff~   ~override~ // Summon Efreeti
+COPY ~spell_rev\shared\item_rev\misc3c.eff~ ~override~ // Summon Efreeti
 ACTION_IF slowing_web=1 BEGIN
-COPY ~spell_rev\shared\alternatives\wand14.spl~   ~override~ // Web
+COPY ~spell_rev\shared\alternatives\wand14.spl~ ~override~ // Web
   SAY NAME1 @477
 END ELSE BEGIN
-COPY ~spell_rev\shared\item_rev\wand14.spl~   ~override~ // Web
+COPY ~spell_rev\shared\item_rev\wand14.spl~ ~override~ // Web
   SAY NAME1 @477
 END
 
 ACTION_IF dispel_globes=2 BEGIN
-  COPY ~spell_rev\shared\item_rev\misc73n.spl~     ~override\misc73.spl~  // Globe of Power
-  COPY ~spell_rev\shared\item_rev\dvginvuln.spl~   ~override\dvginvul.spl~  // Globe of Invulnerability
+  COPY ~spell_rev\shared\item_rev\misc73n.spl~ ~override\misc73.spl~ // Globe of Power
+  COPY ~spell_rev\shared\item_rev\dvginvuln.spl~ ~override\dvginvul.spl~ // Globe of Invulnerability
 END ELSE ACTION_IF dispel_globes=0 BEGIN
-  COPY ~spell_rev\shared\item_rev\misc73d.spl~     ~override\misc73.spl~  // Globe of Power
-  COPY ~spell_rev\shared\item_rev\dvginvuld.spl~   ~override\dvginvul.spl~  // Globe of Invulnerability
+  COPY ~spell_rev\shared\item_rev\misc73d.spl~ ~override\misc73.spl~ // Globe of Power
+  COPY ~spell_rev\shared\item_rev\dvginvuld.spl~ ~override\dvginvul.spl~ // Globe of Invulnerability
 END
 
 // Fix tooltips
@@ -224,130 +224,139 @@ END
 ACTION_IF (FILE_EXISTS_IN_GAME ~arowex.pro~) BEGIN // Arrow of Detonation
 ADD_PROJECTILE ~item_rev/itm/arowex.pro~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN
-COPY_EXISTING ~spra303.spl~      ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 37) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (84 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%arowex% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN // Protection from Missiles
+  COPY_EXISTING ~spra303.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 37) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 3
+      SET resist_dispel = 3
+      SET duration = (84 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%arowex% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN
-COPY_EXISTING ~sppr613.spl~     ~override~  // Physical Mirror
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 31) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (120 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%arowex% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN // Physical Mirror
+  COPY_EXISTING ~sppr613.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 31) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 6
+      SET resist_dispel = 3
+      SET duration = (120 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%arowex% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN
-COPY_EXISTING ~spwi311.spl~     ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 37) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (84 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%arowex% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN // Protection from Missiles
+  COPY_EXISTING ~spwi311.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 37) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 3
+      SET resist_dispel = 3
+      SET duration = (84 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%arowex% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) BEGIN
-COPY_EXISTING ~npshld.spl~     ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 2) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (54 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%arowex% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) BEGIN // Protection from Missiles
+  COPY_EXISTING ~npshld.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 2) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 3
+      SET resist_dispel = 3
+      SET duration = (54 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%arowex% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
 ACTION_FOR_EACH resource IN
-  ~brac18~   // Gloves of Missile Snaring
-  ~shld24~   // Reflection Shield
+  ~brac18~ // Gloves of Missile Snaring
+  ~shld24~ // Reflection Shield
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-SET opcode = 83            // Set opcode
-SET target = 1            // target type
-SET timing = 2            // timing type
-SET power = 0            // power
-SET resist_dispel = 0    // dispel/resitance
-SET duration = 0        // duration
-SET probability1 = 100    // probability 1
-SET probability2 = 0    // probability 2
-SPRINT "resource" ""         // resource
-SET dicenumber = 0        // dice number
-SET dicesize = 0        // dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0        // saving throw bonus
-SET parameter1 = 0 // param1
-SET parameter2 = (%arowex% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-    END    BUT_ONLY_IF_IT_CHANGES
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%arowex% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END
+    BUT_ONLY_IF_IT_CHANGES
   END
 END
 
@@ -356,158 +365,579 @@ END // Arow of Detonation
 ACTION_IF (FILE_EXISTS_IN_GAME ~bow19.pro~) BEGIN // Lightning Spear
 ADD_PROJECTILE ~item_rev/itm/bow19.pro~
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN
-COPY_EXISTING ~spra303.spl~      ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 37) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (84 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%bow19% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) BEGIN // Protection from Missiles
+  COPY_EXISTING ~spra303.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 37) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 3
+      SET resist_dispel = 3
+      SET duration = (84 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%bow19% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN
-COPY_EXISTING ~sppr613.spl~     ~override~  // Physical Mirror
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 31) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (120 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%bow19% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) BEGIN // Physical Mirror
+  COPY_EXISTING ~sppr613.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 31) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 6
+      SET resist_dispel = 3
+      SET duration = (120 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%bow19% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN
-COPY_EXISTING ~spwi311.spl~     ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 37) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (84 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%bow19% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) BEGIN // Protection from Missiles
+  COPY_EXISTING ~spwi311.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 37) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 3
+      SET resist_dispel = 3
+      SET duration = (84 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%bow19% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) BEGIN
-COPY_EXISTING ~npshld.spl~     ~override~  // Protection from Missiles
-PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
-  SET "loop" = 1
-  WHILE (%loop% < 2) BEGIN
-  SET opcode = 83
-  SET target = 1
-  SET timing = 0
-  SET power = 6
-  SET resist_dispel = 3
-  SET duration = (54 + (%loop% * 6))
-  SET probability1 = 100
-  SET probability2 = 0
-  SPRINT "resource" ""
-  SET dicenumber = 0
-  SET dicesize = 0
-  SET savingthrow = 0
-  SET savebonus = 0
-  SET parameter1 = 0
-  SET parameter2 = (%bow19% - 1)
-  SET header = %loop%
-  LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
-  SET "loop" = %loop% + 1
-END END END
+ACTION_IF (FILE_EXISTS_IN_GAME ~npshld.spl~) BEGIN // Protection from Missiles
+  COPY_EXISTING ~npshld.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 2) BEGIN
+      SET opcode = 83
+      SET target = 1
+      SET timing = 0
+      SET power = 3
+      SET resist_dispel = 3
+      SET duration = (54 + (%loop% * 6))
+      SET probability1 = 100
+      SET probability2 = 0
+      SPRINT "resource" ""
+      SET dicenumber = 0
+      SET dicesize = 0
+      SET savingthrow = 0
+      SET savebonus = 0
+      SET parameter1 = 0
+      SET parameter2 = (%bow19% - 1)
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET "loop" = %loop% + 1
+    END
+  END
+END
 
 ACTION_FOR_EACH resource IN
-  ~brac18~   // Gloves of Missile Snaring
-  ~shld24~   // Reflection Shield
+  ~brac18~ // Gloves of Missile Snaring
+  ~shld24~ // Reflection Shield
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-SET opcode = 83            // Set opcode
-SET target = 1            // target type
-SET timing = 2            // timing type
-SET power = 0            // power
-SET resist_dispel = 0    // dispel/resitance
-SET duration = 0        // duration
-SET probability1 = 100    // probability 1
-SET probability2 = 0    // probability 2
-SPRINT "resource" ""         // resource
-SET dicenumber = 0        // dice number
-SET dicesize = 0        // dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0        // saving throw bonus
-SET parameter1 = 0 // param1
-SET parameter2 = (%bow19% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-    END    BUT_ONLY_IF_IT_CHANGES
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%bow19% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END
+    BUT_ONLY_IF_IT_CHANGES
   END
 END
 
 END // Lightning Spear
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~pshamma.pro~) BEGIN // Thrown Hammers
+ADD_PROJECTILE ~item_rev/itm/pshamma.pro~
+ADD_PROJECTILE ~item_rev/itm/pshammb.pro~
+ADD_PROJECTILE ~item_rev/itm/pshammg.pro~
+ADD_PROJECTILE ~item_rev/itm/pshammn.pro~
+ADD_PROJECTILE ~item_rev/itm/pshammo.pro~
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~sppr613.spl~) THEN BEGIN // Physical Mirror
+  COPY_EXISTING ~sppr613.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 31) BEGIN
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 6				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (120 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshamma% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 6				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (120 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammb% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 6				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (120 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammg% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 6				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (120 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammn% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+  
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 6				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (120 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammo% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET "loop" = %loop% + 1
+    END
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spwi311.spl~) THEN BEGIN // Protection from Missiles
+  COPY_EXISTING ~spwi311.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 37) BEGIN
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (84 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshamma% - 1) // param2
+      SET header = %loop%
+
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (84 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammb% - 1) // param2
+      SET header = %loop%
+
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (84 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammg% - 1) // param2
+      SET header = %loop%
+
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (84 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammn% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (84 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammo% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET "loop" = %loop% + 1
+    END
+  END
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~spra303.spl~) THEN BEGIN // Protection from Missiles
+  COPY_EXISTING ~spra303.spl~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    SET "loop" = 1
+    WHILE (%loop% < 2) BEGIN
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (54 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshamma% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (54 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammb% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (54 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammg% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (54 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammn% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET opcode = 83			// Set opcode
+      SET target = 1			// target type
+      SET timing = 0			// timing type
+      SET power = 3				// power
+      SET resist_dispel = 3		// dispel/resistance
+      SET duration = (54 + (%loop% * 6))		// duration
+      SET probability1 = 100	// probability 1
+      SET probability2 = 0		// probability 2
+      SPRINT "resource" "" 		// resource
+      SET dicenumber = 0		// dice number
+      SET dicesize = 0			// dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0		// saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammo% - 1) // param2
+      SET header = %loop%
+      LAUNCH_PATCH_MACRO ADD_SPELL_EFFECT
+
+      SET "loop" = %loop% + 1
+    END
+  END
+END
+
 ACTION_FOR_EACH resource IN
-  ~brac18~   // Gloves of Missile Snaring
-  ~shld24~   // Reflection Shield
+  ~brac18~ // Gloves of Missile Snaring
+  ~shld24~ // Reflection Shield
 BEGIN
   ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
     COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-SET opcode = 83            // Set opcode
-SET target = 1            // target type
-SET timing = 2            // timing type
-SET power = 0            // power
-SET resist_dispel = 0    // dispel/resitance
-SET duration = 0        // duration
-SET probability1 = 100    // probability 1
-SET probability2 = 0    // probability 2
-SPRINT "resource" ""         // resource
-SET dicenumber = 0        // dice number
-SET dicesize = 0        // dice size
-SET savingthrow = 0   // saving throw
-SET savebonus = 0        // saving throw bonus
-SET parameter1 = 0 // param1
-SET parameter2 = (%dvfarrow% - 1) // param2
-LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
-    END    BUT_ONLY_IF_IT_CHANGES
+
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshamma% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammb% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammg% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammn% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%pshammo% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+
+    END 
+    BUT_ONLY_IF_IT_CHANGES
+  END
+END
+
+END // Thrown Hammers
+
+// Flame Arrow
+ACTION_FOR_EACH resource IN
+  ~brac18~ // Gloves of Missile Snaring
+  ~shld24~ // Reflection Shield
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      SET opcode = 83 // Set opcode
+      SET target = 1 // target type
+      SET timing = 2 // timing type
+      SET power = 0 // power
+      SET resist_dispel = 0 // dispel/resitance
+      SET duration = 0 // duration
+      SET probability1 = 100 // probability 1
+      SET probability2 = 0 // probability 2
+      SPRINT "resource" "" // resource
+      SET dicenumber = 0 // dice number
+      SET dicesize = 0 // dice size
+      SET savingthrow = 0 // saving throw
+      SET savebonus = 0 // saving throw bonus
+      SET parameter1 = 0 // param1
+      SET parameter2 = (%dvfarrow% - 1) // param2
+      LAUNCH_PATCH_MACRO ADD_ITEM_EQEFFECT
+    END
+    BUT_ONLY_IF_IT_CHANGES
   END
 END
