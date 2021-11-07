@@ -1824,7 +1824,6 @@ COPY ~spell_rev\spwi2##\spwi203.spl~     ~override~  // Detect Invisibility
 COPY ~spell_rev\spwi2##\scrl87.itm~      ~override~
   SAY NAME2 @455    SAY IDENTIFIED_DESC   @456
 COPY ~spell_rev\spwi2##\spwi203d.spl~    ~override~
-  SAY NAME1 @455
 
 COPY ~spell_rev\spwi2##\spwi205.spl~     ~override~  // Horror
   SAY NAME1 @457    SAY UNIDENTIFIED_DESC @458
