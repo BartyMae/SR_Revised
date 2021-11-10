@@ -2,9 +2,9 @@ INCLUDE ~spell_rev\lib\manage_add_spell_references.tpa~
 
 LAF GET_NEW_SPELL_RESREFS RET_ARRAY new_spell_resrefs END
 
-OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~sppr116~)
-OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~sppr216~)
-OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~sppr620~)
+OUTER_TEXT_SPRINT sppr116 $new_spell_resrefs(~sppr116~)
+OUTER_TEXT_SPRINT sppr216 $new_spell_resrefs(~sppr216~)
+OUTER_TEXT_SPRINT sppr620 $new_spell_resrefs(~sppr620~)
 OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~spwi427~)
 //OUTER_TEXT_SPRINT spwi427 $new_spell_resrefs(~spwi524~)
 
