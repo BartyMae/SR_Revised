@@ -344,15 +344,15 @@ END
 
 DEFINE_PATCH_MACRO ~update_item_descriptions~ BEGIN
   ident=1
-  FOR (index = 0x54 ; index >= 0x50 ; index -= 4) BEGIN // loop through descriptions
+  FOR (index = 0x54 ; index >= 0x50 ; index -= 4) BEGIN // Loop through descriptions
     READ_LONG "%index%" "valid"
-    PATCH_IF ("%valid%" < 2147483646) AND ("%valid%" >= 0) BEGIN // verify description is valid
+    PATCH_IF ("%valid%" < 2147483646) AND ("%valid%" >= 0) BEGIN // Verify description is valid
       READ_STRREF "%index%" "description"
       INNER_PATCH_SAVE new_desc ~%description%~ BEGIN
         LAUNCH_PATCH_MACRO ~%text_update%~
       END
       SAY_EVALUATED "%index%" ~%new_desc%~
-  //    PATCH_PRINT ~%new_desc%~
+     // PATCH_PRINT ~%new_desc%~
       ident -=1
     END
   END
@@ -367,7 +367,7 @@ DEFINE_ACTION_FUNCTION tooltips STR_VAR item=~ag#dummy~ BEGIN
 
 COPY_EXISTING tooltip.2da override
 
-  // find the item entry
+  // Find the item entry
   COUNT_2DA_COLS cn
   READ_2DA_ENTRIES_NOW rn cn
   row= 0 - 1
@@ -383,7 +383,7 @@ COPY_EXISTING tooltip.2da override
     END
   END
 
-  // if it doesn't exist, add new one
+  // If it doesn't exist, add new one
   PATCH_IF row<0 BEGIN
     row=rn
     SPRINT add ~~
@@ -393,7 +393,7 @@ COPY_EXISTING tooltip.2da override
     INSERT_2DA_ROW rn cn ~%item%%add%~
   END
 
-  // preset entries, check if there're enough columns
+  // Preset entries, check if there are enough columns
   d=0
   PHP_EACH tip AS i => r BEGIN
     SET $ EVAL rn("%i%") = r
@@ -404,7 +404,7 @@ COPY_EXISTING tooltip.2da override
     END
   END
 
-  // insert strrefs, check if there're enough columns
+  // Insert strrefs, check if there are enough columns
   hc=0
   PATCH_IF FILE_EXISTS_IN_GAME ~%item%.itm~ BEGIN
     INNER_PATCH_FILE ~%item%.itm~ BEGIN
@@ -413,7 +413,7 @@ COPY_EXISTING tooltip.2da override
   END
   PHP_EACH insert AS i => r BEGIN
     SET_2DA_ENTRY_LATER sl row i ~%r%~
-    PATCH_IF hc > cn - 1 BEGIN // no point in shifting columns if there are not that many headers
+    PATCH_IF hc > cn - 1 BEGIN // No point in shifting columns if there are not that many headers
       d+=1
       cn+=1
     END
@@ -424,7 +424,7 @@ COPY_EXISTING tooltip.2da override
     END
   END
 
-  // if there're not enough columns, extend the 2da
+  // If there are not enough columns, extend the 2da
   PATCH_IF d BEGIN
     SPRINT add ~~
     FOR (i=cn - d;i<cn;i+=1) BEGIN
@@ -450,7 +450,7 @@ COPY_EXISTING tooltip.2da override
     END ~%MATCH1%%nl%~
   END
 
-  // shift entries if something was inserted in the midst
+  // Shift entries if something was inserted in the midst
   PHP_EACH rn AS i => r BEGIN
     PHP_EACH insert AS i2 => r2 BEGIN
       PATCH_IF i2<=i BEGIN
@@ -470,9 +470,9 @@ OUTER_SPRINT unus @100401 // ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%
 
 DEFINE_PATCH_FUNCTION ~update_item_descriptions_to_bgee~ BEGIN
   PATCH_IF (ENGINE_IS ~bgee bg2ee~) BEGIN
-    FOR (index = 0x54 ; index >= 0x50 ; index -= 4) BEGIN // loop through descriptions
+    FOR (index = 0x54 ; index >= 0x50 ; index -= 4) BEGIN // Loop through descriptions
       READ_LONG index strref
-      PATCH_IF (strref < 2147483646 && strref >= 0) BEGIN // verify description is valid
+      PATCH_IF (strref < 2147483646 && strref >= 0) BEGIN // Verify description is valid
         READ_STRREF index description
         INNER_PATCH_SAVE new_desc ~%description%~ BEGIN
           REPLACE_TEXTUALLY ~\(\([%LNL%%MNL%%WNL%][ %TAB%]*\(%usab%\|%unus%\)[ %TAB%]*\)\(\([%LNL%%MNL%%WNL%].*\)*\)?\)~  ~~

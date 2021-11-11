@@ -1353,7 +1353,7 @@ Upon casting a Flame Strike spell, a vertical column of fire roars downward, str
 Level: 5
 School: Necromancy
 Sphere: Necromantic
-Range: Short
+Range: Touch
 Duration: Permanent
 Casting Time: 1 round
 Area of Effect: 1 person
@@ -1366,7 +1366,7 @@ When the priest casts a Raise Dead spell, life can be restored to a dead comrade
 Level: 5
 School: Necromancy
 Sphere: Necromantic
-Range: Short
+Range: Touch
 Duration: Permanent
 Casting Time: 1 round
 Area of Effect: 1 person
