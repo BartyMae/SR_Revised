@@ -52,13 +52,6 @@ COPY_EXISTING ~brac23.itm~ ~override~
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
-ACTION_IF (FILE_EXISTS_IN_GAME ~hamm03.itm~) THEN BEGIN
-COPY_EXISTING ~hamm03.itm~ ~override~
-  SPRINT old_spell_name @1550000 // 4D4
-  SPRINT new_spell_name @155000 // 5D4
-  TEXT_SPRINT text_update ~replace_spell_name~
-  LPM ~update_item_descriptions~
-END
 ACTION_IF (FILE_EXISTS_IN_GAME ~hamm11.itm~) THEN BEGIN
 COPY_EXISTING ~hamm11.itm~ ~override~
   SPRINT old_spell_name @1566000 // Champion's Strength (1x per day): +5 bonus for 1 turn
@@ -77,13 +70,6 @@ COPY_EXISTING ~misc3a8.itm~ ~override~
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END
-ACTION_IF (FILE_EXISTS_IN_GAME ~misc3h.itm~) THEN BEGIN
-COPY_EXISTING ~misc3h.itm~ ~override~
-  SPRINT old_spell_name @1550000 // 4D4
-  SPRINT new_spell_name @155000 // 5D4
-  TEXT_SPRINT text_update ~replace_spell_name~
-  LPM ~update_item_descriptions~
-END
 ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.itm~) THEN BEGIN
 COPY_EXISTING ~misc3l.itm~ ~override~
   SPRINT old_spell_name @1723000 // Silence 15' Radius
@@ -91,7 +77,7 @@ COPY_EXISTING ~misc3l.itm~ ~override~
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
   SPRINT old_spell_name @1723010 // (3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)
-  SPRINT new_spell_name @172301 // (3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)
+  SPRINT new_spell_name @172301 // (3x per day): opponents within 10' are silenced for 1 turn (save vs. spell at -4 neg.)
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
   SPRINT old_spell_name @172301000
@@ -110,13 +96,6 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~ring39.itm~) THEN BEGIN
 COPY_EXISTING ~ring39.itm~ ~override~
   SPRINT old_spell_name @1903000 // Energy Drain
   SPRINT new_spell_name @190300 // Larloch's Energy Drain
-  TEXT_SPRINT text_update ~replace_spell_name~
-  LPM ~update_item_descriptions~
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~slng06.itm~) THEN BEGIN
-COPY_EXISTING ~slng06.itm~ ~override~
-  SPRINT old_spell_name @1550000 // 4D4
-  SPRINT new_spell_name @155000 // 5D4
   TEXT_SPRINT text_update ~replace_spell_name~
   LPM ~update_item_descriptions~
 END

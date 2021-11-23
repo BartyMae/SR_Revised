@@ -118,80 +118,81 @@ COPY ~spell_rev\shared\bams~             ~override~  // BAMs for new spells
 /* ---------------- Projectiles ---------------- */
 
 ADD_PROJECTILE ~spell_rev\projectles\dvmainpr.pro~  // 1 target, no animation, 200 speed
-ADD_PROJECTILE ~spell_rev\projectles\dvinmedp.pro~  // inareasm, but 10' radius
 
 COPY_EXISTING ~bignarea.pro~ ~override~
-  WRITE_SHORT 0x204 426
-  WRITE_SHORT 0x206 426  // 50' AoE
+  WRITE_SHORT 0x204 512
+  WRITE_SHORT 0x206 512  // 30' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~iceglyp.pro~  ~override~  // Symbol of Death/Stun/Weakness
   WRITE_SHORT 0x200 77   // Don't affect caster and allied creatures
-  WRITE_SHORT 0x204 128  // 15' Trigger
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x204 128  // 7.5' radius trigger
+  WRITE_SHORT 0x206 170  // 10' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~trapglyp.pro~ ~override~  // Fire Trap/Glyph of Warding
   WRITE_SHORT 0x200 77   // Don't affect caster and allied creatures
-  WRITE_SHORT 0x204 128  // 15' Trigger
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x204 128  // 7.5' radius trigger
+  WRITE_SHORT 0x206 170  // 10' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~spklargr.pro~ ~override~  // Dispel Magic
   WRITE_SHORT 0x204 256
-  WRITE_SHORT 0x206 256  // 30' AoE
+  WRITE_SHORT 0x206 256  // 15' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~spargrnp.pro~ ~override~  // Remove Magic
   WRITE_SHORT 0x204 170
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x206 170  // 10' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~inareasm.pro~ ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~inmed.pro~    ~override~
   WRITE_SHORT 0x204 170
-  WRITE_SHORT 0x206 170  // 10' AoE
+  WRITE_SHORT 0x206 170  // 10' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~newbolt1.pro~ ~override~  // Lightning Bolt's "new" projectile
-  WRITE_SHORT 0x0a 30    // Increase speed to 30
+  WRITE_SHORT 0x0a 30    // 30 speed
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~lightcha.pro~ ~override~  // Chain Lightning projectile
-  WRITE_SHORT 0x0a 30    // Increase speed to 30
+  WRITE_SHORT 0x0a 30    // 30 speed
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~smllarnc.pro~ ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~smllnpc.pro~  ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~hold.pro~     ~override~  // Hold
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~holdnecr.pro~ ~override~  // Halt/Control Undead
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~insec2.pro~   ~override~  // Insect Plague and Creeping Doom
-  WRITE_SHORT 0x0a 10    // Increase speed to 10 to match Sumon Insect's one
+  WRITE_SHORT 0x0a 10    // 30 speed
+  WRITE_SHORT 0x204 256
+  WRITE_SHORT 0x206 256   // 15' radius AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~metswarm.pro~ ~override~  // Firestorm and vanilla's Meteor Swarm
-  WRITE_SHORT 0x0a 40    // Increase speed to 40
-  WRITE_BYTE 0x216 5     // Fix duration to 5 rounds
+  WRITE_SHORT 0x0a 40    // 30 speed
+  WRITE_BYTE 0x216 5     // 5 rounds
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~dfirebl.pro~  ~override~  // Trap-like projectiles trigger more quickly
@@ -800,14 +801,14 @@ COPY ~spell_rev\sppr3##\sppr313.spl~     ~override~  // Holy Smite
 COPY ~spell_rev\projectles\pholyst.pro~  ~override~
 COPY_EXISTING ~pholyst.pro~              ~override~
   WRITE_SHORT 0x204 170
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x206 170  // 10' radius AoE
 
 COPY ~spell_rev\sppr3##\sppr314.spl~     ~override~  // Unholy Blight
   SAY NAME1 @97    SAY UNIDENTIFIED_DESC @98
 COPY ~spell_rev\projectles\punhlst.pro~  ~override~
 COPY_EXISTING ~punhlst.pro~              ~override~
   WRITE_SHORT 0x204 170
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x206 170  // 10' radius AoE
 
 COPY ~spell_rev\sppr3##\sppr315.spl~     ~override~  // Cure Medium Wounds
   SAY NAME1 @109    SAY UNIDENTIFIED_DESC @110
@@ -1189,7 +1190,7 @@ COPY ~spell_rev\sppr6##\fireseed.itm~    ~override~
   SAY NAME1 @201    SAY NAME1 @201
 COPY_EXISTING ~bolt2.pro~                ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
 
 COPY ~spell_rev\sppr6##\sppr607.spl~     ~override~  // Heal
   SAY NAME1 @203    SAY UNIDENTIFIED_DESC @204
@@ -1469,7 +1470,7 @@ COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
 /* ---------------- Level 1 ---------------- */
 
 COPY_EXISTING ~grease.pro~               ~override~  // Grease projectile
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x206 170  // 10' radius AoE
 COPY ~spell_rev\spwi1##\spwi101.spl~     ~override~  // Grease
   SAY NAME1 @401    SAY UNIDENTIFIED_DESC @402
 COPY ~spell_rev\spwi1##\scrl66.itm~      ~override~
@@ -1963,7 +1964,7 @@ COPY ~spell_rev\spwi2##\scrl98.itm~      ~override~
 
 COPY_EXISTING ~web.pro~                  ~override~  // Web projectile
   WRITE_SHORT 0x204 170
-  WRITE_SHORT 0x206 170  // 20' AoE
+  WRITE_SHORT 0x206 170  // 10' radius AoE
 ACTION_IF slowing_web=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi215.spl~     ~override~  // Web
   SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478000
@@ -2117,9 +2118,10 @@ COPY ~spell_rev\spwi3##\scrl1i.itm~      ~override~
 COPY ~spell_rev\spwi3##\spwi306d.spl~     ~override~
 COPY ~spell_rev\spwi3##\spwi306d.eff~     ~override~
 
+ADD_PROJECTILE ~spell_rev\projectles\dvinvsph.pro~
 COPY ~spell_rev\spwi3##\spwi307.spl~     ~override~  // Invisibility Sphere ("replaces" Invisibility 10' Radius)
   SAY NAME1 @513    SAY UNIDENTIFIED_DESC @514
-  WRITE_SHORT 0x98 %dvinmedp%
+  WRITE_SHORT 0x98 %dvinvsph%
 COPY ~spell_rev\spwi3##\scrl1j.itm~      ~override~
   SAY NAME2 @513    SAY IDENTIFIED_DESC   @514
 
@@ -2241,7 +2243,7 @@ COPY ~spell_rev\spwi3##\spwi324d.spl~      ~override~
 COPY ~spell_rev\spwi3##\spwi324d.eff~      ~override~
 COPY_EXISTING ~holdnecr.pro~             ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
 
 COPY ~spell_rev\spwi3##\spwi325.spl~     ~override~  // Melf's Minute Meteors
   SAY NAME1 @545    SAY UNIDENTIFIED_DESC @546
@@ -3342,7 +3344,7 @@ COPY ~spell_rev\spwi8##\scrl9j.itm~      ~override~
 END
 COPY_EXISTING ~holdsumm.pro~             ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85   // 10' AoE
+  WRITE_SHORT 0x206 85   // 5' radius AoE
 
 COPY ~spell_rev\spwi8##\spwi816.spl~     ~override~  // Symbol of Stunning
   SAY NAME1 @793    SAY UNIDENTIFIED_DESC @794

@@ -1,7 +1,5 @@
 @130800 = ~Righteous Fury~
 @1308000 = ~Righteous Magic~
-@155000 = ~4D4~
-@1550000 = ~5D4~
 @156600 = ~Champion's Strength (1x per day): +5 bonus for 1 turn~
 @1566000 = ~Champion's Strength (1x per day): +6 bonus for 1 turn~
 @15660000 = ~Champion's Strength (once per day): +5 bonus for 1 turn~
@@ -10,9 +8,9 @@
 @1699000 = ~Animate Dead~
 @172300 = ~Silence~
 @1723000 = ~Silence 15' Radius~
-@172301 = ~(3x per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)~
+@172301 = ~(3x per day): opponents within 10' are silenced for 1 turn (save vs. spell at -4 neg.)~
 @1723010 = ~(3x per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)~
-@17230100 = ~(three times per day): opponents within 20' are silenced for 1 turn (save vs. spell at -4 neg.)~
+@17230100 = ~(three times per day): opponents within 10' are silenced for 1 turn (save vs. spell at -4 neg.)~
 @172301000 = ~(three times per day): opponents within 15' are silenced for 1 turn (save vs. spell at -4 neg.)~
 @190300 = ~Energy Drain~
 @1903000 = ~Larloch's Energy Drain~

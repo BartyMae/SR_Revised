@@ -8,10 +8,10 @@ Sphere: All
 Range: Long
 Duration: 5 turns
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all eligible creatures in a 30 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
+Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all eligible creatures in a 15 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
 
 @3=~Command~
 @4=~Command
@@ -60,7 +60,7 @@ Sphere: Plant
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath partial
 
 By means of this spell, the caster causes plants to spring up from the ground and entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about creatures in the area, holding them fast for the duration of the spell. Those held receive a -2 penalty to THAC0 and AC. Creatures that make a save vs. breath temporarily avoid entanglement and can move at half their normal movement rate through the area, but must make an additional saving throw each round that they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.~
@@ -99,10 +99,10 @@ Sphere: Charm
 Range: Long
 Duration: 5 turns
 Casting Time: 1
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-The priest instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 30 foot radius centered on the point selected by the caster.~
+The priest instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 15 foot radius centered on the point selected by the caster.~
 
 @17=~Sanctuary~
 @18=~Sanctuary
@@ -164,7 +164,7 @@ Sphere: Weather
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Special
 
 When this spell is cast, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Invisible creatures are revealed, and those who do not successfully make a saving throw vs. spell are distinctly outlined for the next 5 rounds. Outlined creatures do not benefit from the concealment normally provided by stealth, invisibility, or similar effects, and suffer a -2 penalty to AC. The faerie fire light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light, and does not cause any harm to the objects or creatures thus outlined. Multiple castings of this spell or similar effects are not cumulative.~
@@ -261,7 +261,7 @@ Bat (1 HD):
 Special Characteristics:
  Blind Sense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
  Diseasing: target suffers a -1 penalty to Dexterity and Constitution for 8 hours (save vs. death neg.)
- Swarm: each bat within 10' receives a +2 bonus to THAC0~
+ Swarm: each bat within 5' receives a +2 bonus to THAC0~
 
 @321=~Obscuring Mist~
 @322=~Obscuring Mist
@@ -271,7 +271,7 @@ Sphere: Weather
 Range: Long
 Duration: 5 rounds
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
 When this spell is cast, a misty bank of fog billows out from the designated point, obscuring all sight. Everyone within the cloud suffers a -2 penalty to THAC0 while their visibility range is reduced by half, and anyone inside or outside the cloud trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to THAC0. Creatures that do not rely on sight can fight within the cloud without penalties.~
@@ -313,7 +313,7 @@ Sphere: Combat
 Range: Personal
 Duration: 1 turn
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 By means of the Chant spell, the priest brings special favor upon themselves and their party while causing harm to their enemies. When the chant is completed, the THAC0, damage, and saving throws of those in the area of effect who are friendly to the priest gain a +1 bonus, while those hostile to the priest suffer a -1 penalty. Multiple castings of this spell are not cumulative.~
@@ -326,7 +326,7 @@ Sphere: Combat
 Range: Long
 Duration: 1 turn
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 By means of the Chant spell, the priest brings special favor upon themselves and their party while causing harm to their enemies. When the chant is completed, the THAC0, damage, and saving throws of those in the area of effect who are friendly to the priest gain a +1 bonus, while those hostile to the priest suffer a -1 penalty. Multiple castings of this spell are not cumulative.~
@@ -354,10 +354,10 @@ Sphere: Divination
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-When a priest casts a Find Traps spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to them. Once per round, all traps within a 30 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can create a sudden or unexpected result, the caster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, "traps" include glyphs and similar spells and devices.~
+When a priest casts a Find Traps spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to them. Once per round, all traps within a 15 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can create a sudden or unexpected result, the caster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, "traps" include glyphs and similar spells and devices.~
 
 @41=~Flame Blade~
 @42=~Flame Blade
@@ -434,7 +434,7 @@ Sphere: Guardian
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
 Upon casting this spell, complete silence prevails in the affected area. All sound is stopped: conversation is impossible and spells cannot be cast unless an affected creature then casts Vocalize. All enemies in the area must make a save vs. spell at a -4 penalty or be silenced for the duration of the spell.~
@@ -499,12 +499,12 @@ Sphere: Elemental (Fire)
 Range: Short
 Duration: Special
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath half
 
 This powerful trap harms those who enter, pass, or open the selected area or object. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any enemy violating the warded area will trigger the trap.
 
-When the spell is cast, the druid weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 15 feet of the trap, it is triggered and explodes, damaging every enemy within a 20 foot radius. The trap deals 1D4 fire damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
+When the spell is cast, the druid weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 7.5 feet of the trap, it is triggered and explodes, damaging every enemy within a 10 foot radius. The trap deals 1D4 fire damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
 
 @303=~Regenerate Moderate Wounds~
 @304=~Regenerate Moderate Wounds
@@ -530,7 +530,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Special
 
-This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 10 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
+This spell creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 5 feet must make a save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) as well as any insect swarms in the caster's current area.~
 
 @317=~Cause Medium Wounds~
 @318=~Cause Medium Wounds
@@ -571,7 +571,7 @@ War Dog (2 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Scent: detects invisible creatures within 10'~
+ Scent: detects invisible creatures within 5'~
 
 
 /*------------------Level 3------------------*/
@@ -639,7 +639,7 @@ Sphere: All
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
@@ -653,7 +653,7 @@ Sphere: All
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
@@ -665,7 +665,7 @@ Sphere: All
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Dispel Magic dispels one specific and one combat protection on each creature within the area of effect. Additional protections are dispelled at 10th level and again at 15th level, up to a maximum of 3 each. Magic resistance, if any, does not affect this spell.
@@ -682,12 +682,12 @@ Sphere: Guardian
 Range: Short
 Duration: Special
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath half
 
 A glyph of warding is a powerful inscription magically drawn to prevent unauthorized or hostile creatures from passing, entering, or opening. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any enemy violating the warded area will trigger the trap.
 
-When the spell is cast, the priest weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 15 feet of the glyph, it is triggered and explodes, damaging every enemy within a 20 foot radius. The glyph deals 1D4 electrical damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
+When the spell is cast, the priest weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 7.5 feet of the glyph, it is triggered and explodes, damaging every enemy within a 10 foot radius. The glyph deals 1D4 electrical damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
 
 @79=~Hold Person or Animal~
 @80=~Hold Person or Animal
@@ -725,7 +725,7 @@ Sphere: Necromantic, Protection
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 By the use of this spell, the priest can free several creatures from the effects of any paralyzation or related magic (such as a ghoul's touch, a Hold spell, or Power Word Stun).~
@@ -777,10 +777,10 @@ Sphere: Law
 Range: Personal
 Duration: 1 turn
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast, all party members within 30 feet of the caster gain a +2 bonus to Strength. If a party member ends up with a Strength value of 18, then their Strength will be set to 18/75. Multiple castings of this spell are not cumulative.~
+When this spell is cast, all party members within 15 feet of the caster gain a +2 bonus to Strength. If a party member ends up with a Strength value of 18, then their Strength will be set to 18/75. Multiple castings of this spell are not cumulative.~
 
 @95=~Holy Smite~
 @96=~Holy Smite
@@ -790,7 +790,7 @@ Sphere: Necromantic
 Range: Long
 Duration: Special
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell partial
 
 With this spell the priest draws down holy power to smite their enemies. Opponents within the area of effect suffer 1D4 magic damage for every experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. spell will receive only half damage, while those who fail their saving throw will also be blinded for 1 round.~
@@ -803,7 +803,7 @@ Sphere: Necromantic
 Range: Long
 Duration: Special
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell partial
 
 With this spell the priest calls up unholy power to smite their enemies. The power takes the form of a chilling, cloying miasma of darkness. Opponents within the area of effect suffer 1D4 magic damage for every experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. spell will receive only half damage, while those who fail their save will also receive a -2 penalty to THAC0 and saving throws for 5 rounds.~
@@ -875,7 +875,7 @@ Wolf (3 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
- Pack Attack: each wolf within 10' receives a +1 bonus to THAC0~
+ Pack Attack: each wolf within 5' receives a +1 bonus to THAC0~
 
 @107=~Cause Moderate Wounds~
 @108=~Cause Moderate Wounds
@@ -937,7 +937,7 @@ Sphere: Animal
 Range: Long
 Duration: 5 turns
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 This spell turns natural weapons (such as teeth, claws, etc.) of friendly animals within the area of effect into magical weapons, effectively granting a +1 enhancement bonus to THAC0 and damage. For every five extra experience levels of the caster, this bonus increases by one, up to a maximum of +3 at 15th level. Multiple castings of this spell are not cumulative.~
@@ -950,7 +950,7 @@ Sphere: Plant
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath partial
 
 By means of this spell, the caster causes the ground to sprout vicious spikes and thorns that catch and prick all creatures in the area of effect. Those caught in the spike growth suffer 2D4 piercing damage every round that they remain within the affected area. The spikes can also embed themselves in victims' legs, causing them to move at half of their normal movement rate and suffer 1 bleeding damage every round for 2 rounds. Those who save vs. breath will receive only half damage and avoid the reduced movement rate and bleeding. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.~
@@ -1074,7 +1074,7 @@ Sphere: Law
 Range: Personal
 Duration: 1 turn
 Casting Time: 1
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
 Defensive Harmony grants the affected creatures a defensive bonus by enhancing the coordination of their attacks and defenses. This allows a group of creatures to act as a cohesive unit for a single battle or encounter. The effect is always centered on the caster, but affects all those within a 10 foot radius. The affected creatures can move outside of this radius after the spell is cast and still enjoy the benefits of Defensive Harmony. While the spell is in effect, each affected creature gains a +4 bonus to AC. Multiple castings of this spell are not cumulative.~
@@ -1087,7 +1087,7 @@ Sphere: Protection
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 Upon casting this spell, the priest causes all friendly creatures within the area of effect to be affected by the spell Protection from Evil. Multiple castings of this spell or similar effects are not cumulative.~
@@ -1230,10 +1230,10 @@ Sphere: Charm
 Range: Personal
 Duration: 1 turn
 Casting Time: 1
-Area of Effect: 10' radius
+Area of Effect: 5' radius
 Saving Throw: Special
 
-Cloak of Fear empowers the caster to radiate a personal aura of fear out to a 10' radius. Every round, enemies within this aura not immune to fear suffer a -2 penalty to THAC0 and must make a save vs. spell or run away in panic for 1 round.~
+Cloak of Fear empowers the caster to radiate a personal aura of fear out to a 5' radius. Every round, enemies within this aura not immune to fear suffer a -2 penalty to THAC0 and must make a save vs. spell or run away in panic for 1 round.~
 
 @143=~Lesser Restoration~
 @144=~Lesser Restoration
@@ -1258,10 +1258,10 @@ Sphere: Elemental (Water)
 Range: Long
 Duration: 5 rounds
 Casting Time: 4
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 80% and receive 2D8 cold damage for each round they remain inside the storm.~
+When this spell is cast, great magical hailstones pound down for 5 rounds within a 15 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 80% and receive 2D8 cold damage for each round they remain inside the storm.~
 
 @307=~Regenerate Serious Wounds~
 @308=~Regenerate Serious Wounds
@@ -1477,10 +1477,10 @@ Sphere: Charm, Combat, Law
 Range: Long
 Duration: 1 turn
 Casting Time: 1
-Area of Effect: Target, and enemies within 20'
+Area of Effect: Target, and enemies within 10'
 Saving Throw: Special
 
-As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 20 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After 1 turn, any creatures still sleeping will awaken.~ // Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
+As with the first level spell Command, this spell enables the priest to command other creatures to lie down and take no action (sleep). The effects of this spell last up to 1 turn, however, and every enemy within 10 feet of the target is affected unless they make a save vs. spell at a -4 penalty. At the start of each round after the first, those affected make another saving throw in an attempt to break free from the spell. After 1 turn, any creatures still sleeping will awaken.~ // Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, elementals, illusions, and dragons are completely immune to magically-induced sleep.
 
 @175=~Righteous Fury~
 @176=~Righteous Fury
@@ -1529,7 +1529,7 @@ Sphere: Combat
 Range: Personal
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 This spell creates a pinch of pixie dust that the caster can toss into the air. Allies covered by the dust are affected by improved invisibility for 1 turn.~
@@ -1542,10 +1542,10 @@ Sphere: Animal
 Range: Long
 Duration: 5 rounds
 Casting Time: 5
-Area of Effect: Target, and enemies within 30'
+Area of Effect: Target, and enemies within 15'
 Saving Throw: Special
 
-When an Insect Plague spell is cast, a massive swarm of creeping, hopping, and flying insects gather, first attacking the target and then spreading to all other enemies within 30 feet of the target.
+When an Insect Plague spell is cast, a massive swarm of creeping, hopping, and flying insects gather, first attacking the target and then spreading to all other enemies within 15 feet of the target.
 
 For the duration of the spell, the affected creatures fight with a -2 penalty to THAC0 and AC. Every round, they must also make a save vs. breath at a -2 penalty or suffer 100% chance of spell failure and 4D2 piercing damage from insect bites. A successful saving throw allows those affected to avoid most of the swarm and receive only half damage while completely negating the spell failure. Magic resistance does not affect this spell.~
 
@@ -1622,7 +1622,7 @@ Sphere: Animal
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 When this spell is cast, the caster causes all friendly animals within range to become tougher and more tenacious, granting them a +2 bonus to THAC0, damage, AC, and saving throws. The spell also increases their hit points by 50%, and these bonus hit points are lost first when they take damage. Multiple castings of this spell are not cumulative.~
@@ -1700,10 +1700,10 @@ Sphere: Guardian, Creation
 Range: Personal
 Duration: 1 turn
 Casting Time: 6
-Area of Effect: 10' radius
+Area of Effect: 5' radius
 Saving Throw: None
 
-The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 10' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell and Globe of Blades are not cumulative.
+The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 5 foot radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell and Globe of Blades are not cumulative.
 
 Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
@@ -1756,7 +1756,7 @@ Casting Time: 6
 Area of Effect: Special
 Saving Throw: Breath half
 
-This spell enables the druid to create one fire seed for every 2 experience levels of the caster, up to a maximum of 10 at 20th level. When thrown, each fire seed will explode into a small fireball and deal 6D6 fire damage to the target and everyone within a 10 foot radius, and the caster can hurl up to five fire seeds per round. Those who save vs. breath at a -2 penalty will receive only half damage. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The seeds can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
+This spell enables the druid to create one fire seed for every 2 experience levels of the caster, up to a maximum of 10 at 20th level. When thrown, each fire seed will explode into a small fireball and deal 6D6 fire damage to the target and everyone within a 5 foot radius, and the caster can hurl up to five fire seeds per round. Those who save vs. breath at a -2 penalty will receive only half damage. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The seeds can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
 
 @203=~Heal~
 @204=~Heal
@@ -1792,10 +1792,10 @@ Sphere: Sun
 Range: Personal
 Duration: 1 turn
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Special
 
-By drawing on the power of the sun, a False Dawn spell causes the caster's body to emanate a blazing light that extends 20 feet in all directions. Each round, opponents within the area suffer 1D6 fire damage and must make a save vs. breath at a -2 penalty or be blinded for 1 round. Undead creatures and other monsters vulnerable to bright light suffer double damage for each round they are exposed to the false dawn. Magic resistance does not affect this spell.~
+By drawing on the power of the sun, a False Dawn spell causes the caster's body to emanate a blazing light that extends 10 feet in all directions. Each round, opponents within the area suffer 1D6 fire damage and must make a save vs. breath at a -2 penalty or be blinded for 1 round. Undead creatures and other monsters vulnerable to bright light suffer double damage for each round they are exposed to the false dawn. Magic resistance does not affect this spell.~
 
 @209=~Dolorous Decay~
 @210=~Dolorous Decay
@@ -1866,7 +1866,7 @@ Casting Time: 6
 Area of Effect: Special
 Saving Throw: Breath partial
 
-When the spell is completed, it creates a glowing gem that must be thrown at an opponent within 5 rounds, or it will become too hot to hold. When it hits, the gem bursts with a brilliant, searing flash that deals 10D6 fire damage to anyone within 30 feet. Furhermore, creatures in the area of effect continue to burn after the initial blast, suffering an additional 1D6 fire damage every round for 1 turn. Those who make a save vs. breath at a -4 penalty receive only half damage and avoid the afterburn. The gem can be used only by the caster, and remains in their hand for the duration of the spell or until used. Magic resistance does not affect this spell.~
+When the spell is completed, it creates a glowing gem that must be thrown at an opponent within 5 rounds, or it will become too hot to hold. When it hits, the gem bursts with a brilliant, searing flash that deals 10D6 fire damage to anyone within 15 feet. Furhermore, creatures in the area of effect continue to burn after the initial blast, suffering an additional 1D6 fire damage every round for 1 turn. Those who make a save vs. breath at a -4 penalty receive only half damage and avoid the afterburn. The gem can be used only by the caster, and remains in their hand for the duration of the spell or until used. Magic resistance does not affect this spell.~
 
 @219=~Conjure Air Elemental~
 @220=~Conjure Air Elemental
@@ -1965,7 +1965,7 @@ Sphere: Wards
 Range: Long
 Duration: Instant
 Casting Time: 6
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 The Banishment spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (such as fiends, celestials, and elemental princes) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
@@ -2067,7 +2067,7 @@ Special Characteristics:
  Protected Againt: Backstabs, Death, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Detect Invisibility (permanent)
- Aura of Fear: opponents in a 10' radius flee in terror (save vs. spell neg.)
+ Aura of Fear: opponents with 5' flee in terror (save vs. spell neg.)
  Unholy Fireball (1x per day)
 
 Known Spells:
@@ -2081,7 +2081,7 @@ Sphere: Elemental
 Range: Personal
 Duration: 1 turn
 Casting Time: 7
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 When this spell is cast, the caster appears to undergo a remarkable transformation. The caster becomes the very ideal of beauty - for a male, this is usually a nymph or a dryad, while for a female, the image varies. The transformation is instantaneous, but lasts only seconds, and any person (excluding party members) viewing the illusion must save vs. spell at a -4 penalty or be charmed for 1 turn. The term "person" includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others. If the affected creatures fail their saving throws, they regard the caster as a trusted friend and ally to be heeded and protected for the duration of the spell. The caster may give them orders, and the charmed creatures will carry them out as quickly as possible.
@@ -2096,10 +2096,10 @@ Sphere: Combat, Elemental (Fire)
 Range: Long
 Duration: 5 rounds
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath half
 
-When a Fire Storm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Those caught in the inferno suffer 2D8 + 10, but may save vs. breath at a -4 penalty to receive only half damage. This assault will last for 5 rounds, continuing to damage all creatures who remain within the area of effect. An area 10 feet around the caster will be protected from the storm.~
+When a Fire Storm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Those caught in the inferno suffer 2D8 + 10, but may save vs. breath at a -4 penalty to receive only half damage. This assault will last for 5 rounds, continuing to damage all creatures who remain within the area of effect. An area of a 5 foot radius around the caster will be protected from the storm.~
 
 @241=~Symbol of Pain~
 @242=~Symbol of Pain
@@ -2109,10 +2109,10 @@ Sphere: Combat
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
+Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
 
 /*@241=~Symbol of Weakness~
 @242=~Symbol of Weakness
@@ -2122,10 +2122,10 @@ Sphere: Combat
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
+Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
 
 @243=~Sunray~
 @244=~Sunray
@@ -2135,10 +2135,10 @@ Sphere: Sun
 Range: Personal
 Duration: Special
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
-When this spell is cast, it causes a ray of sunlight to beam down upon the caster and a globe of searing radiance to explode in a 30 foot radius. All hostile creatures in the area of effect are blinded for 1 turn. Living creatures suffer 10D6 fire damage, while undead creatures caught within the sunburst instead suffer 1D6 fire damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. A successful save vs. breath at a -4 penalty negates the blindness and reduces the damage by half. The burst also results in the destruction of all undead creatures specifically averse to bright light (such as vampires, shadows, and wraiths) that fail a save vs. spell at a -2 penalty. Magic resistance does not affect this spell.~
+When this spell is cast, it causes a ray of sunlight to beam down upon the caster and a globe of searing radiance to explode in a 15 foot radius. All hostile creatures in the area of effect are blinded for 1 turn. Living creatures suffer 10D6 fire damage, while undead creatures caught within the sunburst instead suffer 1D6 fire damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. A successful save vs. breath at a -4 penalty negates the blindness and reduces the damage by half. The burst also results in the destruction of all undead creatures specifically averse to bright light (such as vampires, shadows, and wraiths) that fail a save vs. spell at a -2 penalty. Magic resistance does not affect this spell.~
 
 @245=~Finger of Death~
 @246=~Finger of Death
@@ -2161,7 +2161,7 @@ Sphere: Chaos
 Range: Long
 Duration: 1 turn
 Casting Time: 7
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 This spell allows the caster to create a sphere of chaotic magic. All enemies within the area must make a save vs. spell at a -4 penalty for every round that they remain in the sphere or suffer one of the following random effects for the following round: feeblemindedness, confusion, paralysis, unconsciousness, or panic.~
@@ -2279,10 +2279,10 @@ Sphere: Animal
 Range: Long
 Duration: 5 rounds
 Casting Time: 5
-Area of Effect: Target, and enemies within 30'
+Area of Effect: Target, and enemies within 15'
 Saving Throw: Special
 
-When the caster utters the spell Creeping Doom, they call forth a horde of venomous, biting, and stinging arachnids, insects, and myriapods. This carpet-like mass swarms over a large area, first attacking the target and then spreading to all other enemies within 30 feet of the target.
+When the caster utters the spell Creeping Doom, they call forth a horde of venomous, biting, and stinging arachnids, insects, and myriapods. This carpet-like mass swarms over a large area, first attacking the target and then spreading to all other enemies within 15 feet of the target.
 
 For the duration of the spell, the affected creatures fight with a -2 penalty to THAC0 and AC. Every round, they must also make a save vs. breath at a -4 penalty or suffer 100% chance of spell failure and 8D2 piercing damage from insect bites. A successful saving throw allows those affected to avoid most of the swarm and receive only half damage while completely negating the spell failure. They must also make a save vs. death at a -2 penalty or be poisoned, suffering 1 poison damage every second for that round. Magic resistance does not affect this spell.~
 
@@ -2294,10 +2294,10 @@ Sphere: Combat
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
+Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
 
 @261=~Earthquake~
 @262=~Earthquake
@@ -2307,7 +2307,7 @@ Sphere: Elemental (Earth)
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 When this spell is cast by a druid, a local earthquake rips through the ground. There are a total of three tremors that are caused by the earthquake, which are staggered and occur once per round starting immediately upon the completion of the spell. The eartquake affects everyone (except earth elementals and flying creatures) in the area of affect, so care must be taken in its use. Magic resistance does not affect this spell.
@@ -2322,10 +2322,10 @@ Sphere: Combat
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Death negates
 
-Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
+Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 
 
 /*------------------Level 8------------------*/
@@ -2351,7 +2351,7 @@ Sphere: War, Weather
 Range: Long
 Duration: 5 rounds
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Casting this spell causes the earth to shake and the heavens to boil with blood and energy. All hostile creatures within the area are struck by a storm of acidic, poisonous rain and lightning. Each round, enemies suffer 2D6 electrical damage and 2D6 acid damage, though they may save vs. breath at a -4 penalty to receive only half. They must also save vs. death at a -4 penalty every round or be poisoned and suffer 1 poison damage per second for that round.~
@@ -2464,10 +2464,10 @@ Sphere: Guardian, Creation
 Range: Personal
 Duration: 1 turn
 Casting Time: 1 round
-Area of Effect: 10' radius
+Area of Effect: 5' radius
 Saving Throw: None
 
-The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 10' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell and Blade Barrier are not cumulative.
+The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 5 foot radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell and Blade Barrier are not cumulative.
 
 Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
@@ -2579,7 +2579,7 @@ Sphere: Protection, Elemental (Fire)
 Range: Personal
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 10' radius
+Area of Effect: Special
 Saving Throw: None
 
 This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 10 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
