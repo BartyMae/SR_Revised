@@ -118,22 +118,23 @@ COPY ~spell_rev\shared\bams~             ~override~  // BAMs for new spells
 /* ---------------- Projectiles ---------------- */
 
 ADD_PROJECTILE ~spell_rev\projectles\dvmainpr.pro~  // 1 target, no animation, 200 speed
+ADD_PROJECTILE ~spell_rev\projectles\dvinmedp.pro~  // inareasm, but 10' radius
 
 COPY_EXISTING ~bignarea.pro~ ~override~
   WRITE_SHORT 0x204 426
-  WRITE_SHORT 0x206 426 // 50' AoE
+  WRITE_SHORT 0x206 426  // 50' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~iceglyp.pro~  ~override~  // Symbol of Death/Stun/Weakness
-  WRITE_SHORT 0x200 77  // Don't affect caster and allied creatures
-  WRITE_SHORT 0x204 128 // 15' Trigger
-  WRITE_SHORT 0x206 170 // 20' AoE
+  WRITE_SHORT 0x200 77   // Don't affect caster and allied creatures
+  WRITE_SHORT 0x204 128  // 15' Trigger
+  WRITE_SHORT 0x206 170  // 20' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~trapglyp.pro~ ~override~  // Fire Trap/Glyph of Warding
-  WRITE_SHORT 0x200 77  // Don't affect caster and allied creatures
-  WRITE_SHORT 0x204 128 // 15' Trigger
-  WRITE_SHORT 0x206 170 // 20' AoE
+  WRITE_SHORT 0x200 77   // Don't affect caster and allied creatures
+  WRITE_SHORT 0x204 128  // 15' Trigger
+  WRITE_SHORT 0x206 170  // 20' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~spklargr.pro~ ~override~  // Dispel Magic
@@ -148,7 +149,7 @@ COPY_EXISTING ~spargrnp.pro~ ~override~  // Remove Magic
 
 COPY_EXISTING ~inareasm.pro~ ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85  // 10' AoE
+  WRITE_SHORT 0x206 85   // 10' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~inmed.pro~    ~override~
@@ -157,40 +158,40 @@ COPY_EXISTING ~inmed.pro~    ~override~
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~newbolt1.pro~ ~override~  // Lightning Bolt's "new" projectile
-  WRITE_SHORT 0x0a 30  // Increase speed to 30
+  WRITE_SHORT 0x0a 30    // Increase speed to 30
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~lightcha.pro~ ~override~  // Chain Lightning projectile
-  WRITE_SHORT 0x0a 30  // Increase speed to 30
+  WRITE_SHORT 0x0a 30    // Increase speed to 30
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~smllarnc.pro~ ~override~
-  WRITE_SHORT 0x204 42
-  WRITE_SHORT 0x206 42  // 5' AoE
+  WRITE_SHORT 0x204 85
+  WRITE_SHORT 0x206 85   // 10' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~smllnpc.pro~  ~override~
-  WRITE_SHORT 0x204 42
-  WRITE_SHORT 0x206 42  // 5' AoE
+  WRITE_SHORT 0x204 85
+  WRITE_SHORT 0x206 85   // 10' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~hold.pro~     ~override~  // Hold
-  WRITE_SHORT 0x204 42
-  WRITE_SHORT 0x206 42  // 5' AoE
+  WRITE_SHORT 0x204 85
+  WRITE_SHORT 0x206 85   // 10' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~holdnecr.pro~ ~override~  // Halt/Control Undead
-  WRITE_SHORT 0x204 42
-  WRITE_SHORT 0x206 42  // 5' AoE
+  WRITE_SHORT 0x204 85
+  WRITE_SHORT 0x206 85   // 10' AoE
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~insec2.pro~   ~override~  // Insect Plague and Creeping Doom
-  WRITE_SHORT 0x0a 10  // Increase speed to 10 to match Sumon Insect's one
+  WRITE_SHORT 0x0a 10    // Increase speed to 10 to match Sumon Insect's one
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~metswarm.pro~ ~override~  // Firestorm and vanilla's Meteor Swarm
-  WRITE_SHORT 0x0a 40  // Increase speed to 40
-  WRITE_BYTE 0x216 5  // Fix duration to 5 rounds
+  WRITE_SHORT 0x0a 40    // Increase speed to 40
+  WRITE_BYTE 0x216 5     // Fix duration to 5 rounds
   BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~dfirebl.pro~  ~override~  // Trap-like projectiles trigger more quickly
@@ -1188,7 +1189,7 @@ COPY ~spell_rev\sppr6##\fireseed.itm~    ~override~
   SAY NAME1 @201    SAY NAME1 @201
 COPY_EXISTING ~bolt2.pro~                ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85 // 10' AoE
+  WRITE_SHORT 0x206 85   // 10' AoE
 
 COPY ~spell_rev\sppr6##\sppr607.spl~     ~override~  // Heal
   SAY NAME1 @203    SAY UNIDENTIFIED_DESC @204
@@ -1468,7 +1469,7 @@ COPY ~spell_rev\sppr7##\sppr732.itm~     ~override~
 /* ---------------- Level 1 ---------------- */
 
 COPY_EXISTING ~grease.pro~               ~override~  // Grease projectile
-  WRITE_SHORT 0x206 170 // 20' AoE
+  WRITE_SHORT 0x206 170  // 20' AoE
 COPY ~spell_rev\spwi1##\spwi101.spl~     ~override~  // Grease
   SAY NAME1 @401    SAY UNIDENTIFIED_DESC @402
 COPY ~spell_rev\spwi1##\scrl66.itm~      ~override~
@@ -1664,6 +1665,66 @@ COPY ~spell_rev\shared\alternatives\spwi123g.spl~     ~override~
 COPY ~spell_rev\shared\alternatives\spwi123h.spl~     ~override~
   SAY NAME1 @8030
 COPY ~spell_rev\shared\alternatives\dvfindfa.2da~     ~override~
+COPY_EXISTING FAMIL1.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~OR(2)
+Alignment(Player1,MASK_LAWFUL)
+Alignment(Player1,MASK_LCNEUTRAL)~
+    ~Global("DVFAMTYP","GLOBAL",1)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_CHAOTIC)~
+    ~Global("DVFAMTYP","GLOBAL",2)~
+  COMPILE_D_TO_DLG
+BUT_ONLY IF_EXISTS
+COPY_EXISTING FAMIL125.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~OR(2)
+Alignment(Player1,MASK_LAWFUL)
+Alignment(Player1,MASK_LCNEUTRAL)~
+    ~Global("DVFAMTYP","GLOBAL",1)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_CHAOTIC)~
+    ~Global("DVFAMTYP","GLOBAL",2)~
+  COMPILE_D_TO_DLG
+BUT_ONLY IF_EXISTS
+COPY_EXISTING FAMIL2.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LAWFUL)~
+    ~Global("DVFAMTYP","GLOBAL",3)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LCNEUTRAL)~
+    ~Global("DVFAMTYP","GLOBAL",4)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_CHAOTIC)~
+    ~Global("DVFAMTYP","GLOBAL",5)~
+  COMPILE_D_TO_DLG
+BUT_ONLY IF_EXISTS
+COPY_EXISTING FAMIL225.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LAWFUL)~
+    ~Global("DVFAMTYP","GLOBAL",3)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LCNEUTRAL)~
+    ~Global("DVFAMTYP","GLOBAL",4)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_CHAOTIC)~
+    ~Global("DVFAMTYP","GLOBAL",5)~
+  COMPILE_D_TO_DLG
+BUT_ONLY IF_EXISTS
+COPY_EXISTING FAMIL3.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LAWFUL)~
+    ~Global("DVFAMTYP","GLOBAL",6)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LCNEUTRAL)~
+    ~Global("DVFAMTYP","GLOBAL",7)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_CHAOTIC)~
+    ~Global("DVFAMTYP","GLOBAL",8)~
+  COMPILE_D_TO_DLG
+BUT_ONLY IF_EXISTS
+COPY_EXISTING FAMIL325.dlg override
+  DECOMPILE_DLG_TO_D
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LAWFUL)~
+    ~Global("DVFAMTYP","GLOBAL",6)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_LCNEUTRAL)~
+    ~Global("DVFAMTYP","GLOBAL",7)~
+    REPLACE_TEXTUALLY CASE_INSENSITIVE ~Alignment(Player1,MASK_CHAOTIC)~
+    ~Global("DVFAMTYP","GLOBAL",8)~
+  COMPILE_D_TO_DLG
+BUT_ONLY IF_EXISTS
 END ELSE BEGIN
 COPY ~spell_rev\spwi1##\spwi123.spl~     ~override~  // Find Familiar
   SAY NAME1 @439    SAY UNIDENTIFIED_DESC @440
@@ -1773,6 +1834,21 @@ COPY ~spell_rev\spwi1##\famrab25.cre~    ~override~
   SAY NAME2 @8035
 COPY ~spell_rev\spwi1##\famrab25.itm~    ~override~
   SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8038
+ACTION_FOR_EACH resource IN // Give generic icon to familiar weapons
+  ~MEPFIR~
+  ~MEPLIG~
+  ~IMPCLAW~
+  ~QUASCLAW~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+      WRITE_LONG  0x3E 0
+      WRITE_ASCII 0x3A ~IWOLF~
+      WRITE_LONG  0x7A 0
+      WRITE_ASCII 0x76 ~IWOLF~
+    BUT_ONLY
+  END
+END
 END
 
 COPY ~spell_rev\spwi1##\spwi124.spl~     ~override~  // Nahal's Reckless Dweomer
@@ -1886,7 +1962,8 @@ COPY ~spell_rev\spwi2##\scrl98.itm~      ~override~
   SAY NAME2 @475    SAY IDENTIFIED_DESC   @476
 
 COPY_EXISTING ~web.pro~                  ~override~  // Web projectile
-  WRITE_SHORT 0x206 170 // 20' AoE
+  WRITE_SHORT 0x204 170
+  WRITE_SHORT 0x206 170  // 20' AoE
 ACTION_IF slowing_web=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi215.spl~     ~override~  // Web
   SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478000
@@ -2042,6 +2119,7 @@ COPY ~spell_rev\spwi3##\spwi306d.eff~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi307.spl~     ~override~  // Invisibility Sphere ("replaces" Invisibility 10' Radius)
   SAY NAME1 @513    SAY UNIDENTIFIED_DESC @514
+  WRITE_SHORT 0x98 %dvinmedp%
 COPY ~spell_rev\spwi3##\scrl1j.itm~      ~override~
   SAY NAME2 @513    SAY IDENTIFIED_DESC   @514
 
@@ -2162,8 +2240,8 @@ COPY ~spell_rev\spwi3##\scrl6l.itm~      ~override~
 COPY ~spell_rev\spwi3##\spwi324d.spl~      ~override~
 COPY ~spell_rev\spwi3##\spwi324d.eff~      ~override~
 COPY_EXISTING ~holdnecr.pro~             ~override~
-  WRITE_SHORT 0x204 42
-  WRITE_SHORT 0x206 42 // 5' AoE
+  WRITE_SHORT 0x204 85
+  WRITE_SHORT 0x206 85   // 10' AoE
 
 COPY ~spell_rev\spwi3##\spwi325.spl~     ~override~  // Melf's Minute Meteors
   SAY NAME1 @545    SAY UNIDENTIFIED_DESC @546
@@ -3264,7 +3342,7 @@ COPY ~spell_rev\spwi8##\scrl9j.itm~      ~override~
 END
 COPY_EXISTING ~holdsumm.pro~             ~override~
   WRITE_SHORT 0x204 85
-  WRITE_SHORT 0x206 85 // 10' AoE
+  WRITE_SHORT 0x206 85   // 10' AoE
 
 COPY ~spell_rev\spwi8##\spwi816.spl~     ~override~  // Symbol of Stunning
   SAY NAME1 @793    SAY UNIDENTIFIED_DESC @794
@@ -3838,24 +3916,24 @@ END
 /* ---------------- Add New Spell Scrolls ---------------- */
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~highhedg.sto~) BEGIN
-COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
-  ADD_STORE_ITEM ~dvscrlfr~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scrolls
-  ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scrolls
-  ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scrolls
-  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+  COPY_EXISTING ~highhedg.sto~             ~override~  // High Hedge
+    ADD_STORE_ITEM ~dvscrlfr~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scrolls
+    ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scrolls
+    ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scrolls
+    PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
     END
   BUT_ONLY_IF_IT_CHANGES
 END
 
 ACTION_IF (FILE_EXISTS_IN_GAME ~sto0703.sto~) BEGIN
-COPY_EXISTING ~sto0703.sto~              ~override~  // Sorcerous Sundries
-  ADD_STORE_ITEM ~dvscrlfr~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scrolls
-  ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scrolls
-  ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scrolls
-  PATCH_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
-    ADD_STORE_ITEM ~scrl1v~ AFTER ~scrl1u~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Dimension Jump scrolls to EE games
-  END
-  PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
+  COPY_EXISTING ~sto0703.sto~              ~override~  // Sorcerous Sundries
+    ADD_STORE_ITEM ~dvscrlfr~ AFTER ~scrl84~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Friends scrolls
+    ADD_STORE_ITEM ~dvscrlpp~ AFTER ~dvscrlfr~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Protection from Petrification scrolls
+    ADD_STORE_ITEM ~dvscrlda~ AFTER ~dvscrlpp~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Detect Alignment scrolls
+    PATCH_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+      ADD_STORE_ITEM ~scrl1v~ AFTER ~scrl1u~ #1 #0 #0 ~IDENTIFIED~ #2 // Adds 2 Dimension Jump scrolls to EE games
+    END
+    PATCH_IF (SOURCE_SIZE > 0x9b) BEGIN
     END
   BUT_ONLY_IF_IT_CHANGES
 END
@@ -3909,57 +3987,57 @@ BEGIN
 END
 
 ACTION_IF (GAME_IS ~bgt~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgee bg2ee eet~) BEGIN // BGT
-ACTION_IF (FILE_EXISTS_IN_GAME ~ar7101.are~) BEGIN // High Hedge Cabin
-  COPY_EXISTING ar7101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
-  END BUT_ONLY
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~ar9702.are~) BEGIN // Trade Way North Cave
-  COPY_EXISTING ar9702.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
-  END BUT_ONLY
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~ar3704.are~) BEGIN // Nashkel Noble House
-  COPY_EXISTING ar3704.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
-  END BUT_ONLY
-END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar7101.are~) BEGIN // High Hedge Cabin
+    COPY_EXISTING ar7101.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+    END BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar9702.are~) BEGIN // Trade Way North Cave
+    COPY_EXISTING ar9702.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
+    END BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3704.are~) BEGIN // Nashkel Noble House
+    COPY_EXISTING ar3704.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+    END BUT_ONLY
+  END
 END
 
-ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN // BGEE
-ACTION_IF (FILE_EXISTS_IN_GAME ~ar3201.are~) BEGIN // High Hedge Cabin
-  COPY_EXISTING ar3201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
-  END BUT_ONLY
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~ar3802.are~) BEGIN // Trade Way North Cave
-  COPY_EXISTING ar3802.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
-  END BUT_ONLY
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~ar4804.are~) BEGIN // Nashkel Noble House
-  COPY_EXISTING ar4804.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
-  END BUT_ONLY
-END
+ACTION_IF (GAME_IS ~tutu tutu_totsc bgee~ AND NOT GAME_IS ~bg2 tob bgt bg2ee eet~) BEGIN // BGEE
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3201.are~) BEGIN // High Hedge Cabin
+    COPY_EXISTING ar3201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+    END BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar3802.are~) BEGIN // Trade Way North Cave
+    COPY_EXISTING ar3802.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
+    END BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~ar4804.are~) BEGIN // Nashkel Noble House
+    COPY_EXISTING ar4804.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+    END BUT_ONLY
+  END
 END
 
 ACTION_IF (GAME_IS ~eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee~) BEGIN // EET
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg3201.are~) BEGIN // High Hedge Cabin
-  COPY_EXISTING bg3201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
-  END BUT_ONLY
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg3802.are~) BEGIN // Trade Way North Cave
-  COPY_EXISTING bg3802.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
-  END BUT_ONLY
-END
-ACTION_IF (FILE_EXISTS_IN_GAME ~bg4804.are~) BEGIN // Nashkel Noble House
-  COPY_EXISTING bg4804.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
-    LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
-  END BUT_ONLY
-END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~bg3201.are~) BEGIN // High Hedge Cabin
+    COPY_EXISTING bg3201.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+    END BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~bg3802.are~) BEGIN // Trade Way North Cave
+    COPY_EXISTING bg3802.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlpp END
+    END BUT_ONLY
+  END
+  ACTION_IF (FILE_EXISTS_IN_GAME ~bg4804.are~) BEGIN // Nashkel Noble House
+    COPY_EXISTING bg4804.are override PATCH_IF SOURCE_SIZE>0x11c BEGIN
+      LPF ADD_AREA_ITEM INT_VAR container_to_add_to=1 STR_VAR item_to_add=dvscrlfr END
+    END BUT_ONLY
+  END
 END
 
 /* ---------------- Fixes ---------------- */
