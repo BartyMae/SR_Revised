@@ -4509,9 +4509,6 @@ Launcher: Sling~
 
 /*------------------Miscellaneous------------------*/
 
-@8218=~Familiar~
-@3527=~A Vampiric Touch spell is already active~
-@3583=~Saving Throws Lowered~
 @21000=~Illusionary Protections Removed~
 @22000=~Dispelling Screen Dispelled~
 @22001=~Insects Dispersed~
@@ -4521,6 +4518,32 @@ Launcher: Sling~
 @22005=~Freed from Petrification~
 @22006=~Freed from Imprisonment~
 @22007=~Statistics Restored~
-@100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
-@100401 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-@100402 = ~Scroll of Restoration~
+@23000=~Charmed~
+@23001=~Disease Cured~
+@23002=~Dominated~
+@23003=~Decaying~
+@23004=~Protected by Shield of the Archons~
+@23005=~Saving Throws Lowered~
+@23006=~Stunned~
+@23007=~Energy Blades Created~
+@23008=~Spell Ineffective~
+@23009=~Enfeebled~
+@23010=~A Vampiric Touch spell is already active~
+@23011=~Protected by Minor Spell Deflection~
+@23012=~Confused~
+@23013=~Protected from Normal Weapons~
+@23014=~Protected by Spell Deflection~
+@23015=~Protection from Magical Energy~
+@23016=~Protection from Magical Weapons~
+@23017=~Protected by Spell Deflection~
+@23018=~Protected by Greater Spell Deflection~
+@23019=~Protection from the Elements~
+@23020=~Protection from Energy~
+@23021=~Four Levels Drained~
+@23022=~Shapechange abilities have been added to your Special Abilities menu~
+
+
+@100400=~Usable[ %tab%]+[Bb]y[ %tab%]*:~
+@100401=~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@100402=~Familiar~
+@100403=~Scroll of Restoration~

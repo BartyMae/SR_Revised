@@ -19,7 +19,7 @@ LAF ASSIGN_TEMP_NAMES_FOR_NEW_SPELL_REFERENCES END
 // Scroll of Restoration
 // adscroll.itm still copied over in case someone wants to CLUAConsole it for use on an old save game
 COPY ~spell_rev\shared\adscroll.itm~     ~override~
-  SAY NAME2 @100402
+  SAY NAME2 @100403
 COPY ~spell_rev\shared\adscroll.bam~     ~override~
 
 // IWDEE AI can't effectively use SR's Cause Wounds spells
@@ -364,6 +364,7 @@ COPY ~spell_rev\shared\dvin108i.eff~    ~override~
 COPY ~spell_rev\shared\dvin108i.spl~    ~override~
 COPY ~spell_rev\shared\dvin108.eff~     ~override~
 COPY ~spell_rev\shared\dvin108.spl~     ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23000) END
 END
 ACTION_IF alternative_dispel_magic=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spin112.save.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
@@ -414,6 +415,7 @@ COPY ~spell_rev\shared\dvtelpor.spl~     ~override~  // Teleport Without Error
 COPY ~spell_rev\shared\spin683.spl~      ~override~  // Innate Web Tangle
 
 COPY ~spell_rev\shared\spin788.spl~      ~override~  // Demilich Soul Trap
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 40979 parameter1 = RESOLVE_STR_REF(@23021) END
 COPY ~spell_rev\shared\spin789.spl~      ~override~  // Demilich Howl
 
 
@@ -602,6 +604,7 @@ COPY ~spell_rev\sppr2##\dvpr204i.eff~    ~override~
 COPY ~spell_rev\sppr2##\dvpr204i.spl~    ~override~
 COPY ~spell_rev\sppr2##\dvpr204.eff~     ~override~
 COPY ~spell_rev\sppr2##\dvpr204.spl~     ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23000) END
 
 COPY ~spell_rev\sppr2##\sppr205.spl~     ~override~  // Find Traps
   SAY NAME1 @39    SAY UNIDENTIFIED_DESC @40
@@ -817,6 +820,7 @@ COPY ~spell_rev\sppr3##\scrl56.itm~      ~override~
 
 COPY ~spell_rev\sppr3##\sppr317.spl~     ~override~  // Cure Disease
   SAY NAME1 @99    SAY UNIDENTIFIED_DESC @100
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 2449 parameter1 = RESOLVE_STR_REF(@23001) END
 
 COPY ~spell_rev\sppr3##\sppr318.spl~     ~override~  // Zone of Sweet Air
   SAY NAME1 @101    SAY UNIDENTIFIED_DESC @102
@@ -914,6 +918,7 @@ COPY ~spell_rev\sppr4##\sppr404.spl~     ~override~  // Neutralize Poison
 
 COPY ~spell_rev\sppr4##\sppr405.spl~     ~override~  // Mental Domination
   SAY NAME1 @119    SAY UNIDENTIFIED_DESC @120
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 8364 parameter1 = RESOLVE_STR_REF(@23002) END
 COPY ~spell_rev\sppr4##\scrl5a.itm~      ~override~
   SAY NAME2 @119    SAY IDENTIFIED_DESC   @120
 
@@ -1213,6 +1218,7 @@ COPY ~spell_rev\sppr6##\sppr609.eff~     ~override~
 
 COPY ~spell_rev\sppr6##\sppr610.spl~     ~override~  // Dolorous Decay
   SAY NAME1 @209    SAY UNIDENTIFIED_DESC @210
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 34569 parameter1 = RESOLVE_STR_REF(@23003) END
 COPY ~spell_rev\sppr6##\sppr610d.spl~    ~override~  // Slow effect
 COPY ~spell_rev\sppr6##\sppr610i.eff~    ~override~
 
@@ -1254,6 +1260,7 @@ ADD_SPELL ~spell_rev\sppr6##\sppr623.spl~ 1 6 ~CLERIC_ANIMATE_SKELETON_WARRIOR~ 
 
 COPY ~spell_rev\sppr7##\sppr701.spl~     ~override~  // Shield of the Archons
   SAY NAME1 @231    SAY UNIDENTIFIED_DESC @232
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 11046 parameter1 = RESOLVE_STR_REF(@23004) END
 
 COPY ~spell_rev\sppr7##\sppr702.spl~     ~override~  // Summon Shambling Mound (replaces Conjure Earth Elemental)
   SAY NAME1 @233    SAY UNIDENTIFIED_DESC @234
@@ -1282,6 +1289,7 @@ COPY ~spell_rev\sppr7##\dvpr704i.eff~    ~override~
 COPY ~spell_rev\sppr7##\dvpr704i.spl~    ~override~
 COPY ~spell_rev\sppr7##\dvpr704.eff~     ~override~
 COPY ~spell_rev\sppr7##\dvpr704.spl~     ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23000) END
 
 COPY ~spell_rev\sppr7##\sppr705.spl~     ~override~  // Fire Storm
   SAY NAME1 @239    SAY UNIDENTIFIED_DESC @240
@@ -1291,6 +1299,7 @@ COPY ~spell_rev\sppr7##\sppr705e.spl~    ~override~
 
 COPY ~spell_rev\sppr7##\sppr706.spl~     ~override~  // Symbol of Pain (replaces Symbol of Fear)
   SAY NAME1 @241    SAY UNIDENTIFIED_DESC @242
+LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 44916 parameter1 = RESOLVE_STR_REF(@23005) END
 COPY ~spell_rev\sppr7##\a#spain.bam~     ~override~
 COPY ~spell_rev\sppr7##\a#ispain.vvc~    ~override~
 APPEND ~spell.ids~ ~1706 CLERIC_SYMBOL_WEAKNESS~
@@ -1345,6 +1354,7 @@ APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~sppr717d.spl    233     3     120 
 
 COPY ~spell_rev\sppr7##\sppr718.spl~     ~override~  // Symbol of Stunning
   SAY NAME1 @259    SAY UNIDENTIFIED_DESC @260
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1280 parameter1 = RESOLVE_STR_REF(@23006) END
 COPY ~spell_rev\sppr7##\a#shope.bam~     ~override~
 COPY ~spell_rev\sppr7##\a#ishope.vvc~    ~override~
 
@@ -1363,6 +1373,7 @@ COPY ~spell_rev\sppr7##\dvpr720i.eff~    ~override~
 
 COPY ~spell_rev\sppr7##\sppr721.spl~     ~override~  // Energy Blades
   SAY NAME1 @271    SAY UNIDENTIFIED_DESC @272
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 63617 parameter1 = RESOLVE_STR_REF(@23007) END
 
 ADD_PROJECTILE ~spell_rev\projectles\dvstormv.pro~
 COPY ~spell_rev\sppr7##\sppr722.spl~     ~override~  // Storm of Vengeance
@@ -1502,6 +1513,7 @@ COPY ~spell_rev\spwi1##\dvwi104i.eff~    ~override~
 COPY ~spell_rev\spwi1##\dvwi104i.spl~    ~override~
 COPY ~spell_rev\spwi1##\dvwi104.eff~     ~override~
 COPY ~spell_rev\spwi1##\dvwi104.spl~     ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23000) END
 
 COPY ~spell_rev\spwi1##\spwi105.spl~     ~override~  // Color Spray
   SAY NAME1 @409    SAY UNIDENTIFIED_DESC @410
@@ -1595,6 +1607,7 @@ COPY ~spell_rev\spwi1##\spwi115d.spl~    ~override~
 
 COPY ~spell_rev\spwi1##\spwi116.spl~     ~override~  // Sleep
   SAY NAME1 @429    SAY UNIDENTIFIED_DESC @430
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 4742 parameter1 = RESOLVE_STR_REF(@23008) END
 COPY ~spell_rev\spwi1##\scrl81.itm~      ~override~
   SAY NAME2 @429    SAY IDENTIFIED_DESC   @430
 COPY ~spell_rev\spwi1##\spwi116d.spl~    ~override~
@@ -1736,19 +1749,19 @@ COPY ~spell_rev\spwi1##\famcat.cre~      ~override~
   SAY NAME1 @8000
   SAY NAME2 @8000
 COPY ~spell_rev\spwi1##\famcat.itm~      ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8001
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8001
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famcat25.cre~    ~override~
   SAY NAME1 @8000
   SAY NAME2 @8000
 COPY ~spell_rev\spwi1##\famcat25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8003
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8003
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famdust.cre~     ~override~
   SAY NAME1 @8005
   SAY NAME2 @8005
 COPY ~spell_rev\spwi1##\famdust.itm~     ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8006
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8006
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\mepfir.itm~      ~override~
   SAY NAME1 @8007
@@ -1756,37 +1769,37 @@ COPY ~spell_rev\spwi1##\famdus25.cre~    ~override~
   SAY NAME1 @8005
   SAY NAME2 @8005
 COPY ~spell_rev\spwi1##\famdus25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8008
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8008
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfair.cre~     ~override~
   SAY NAME1 @8010
   SAY NAME2 @8010
 COPY ~spell_rev\spwi1##\famfair.itm~     ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8011
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8011
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfai25.cre~    ~override~
   SAY NAME1 @8010
   SAY NAME2 @8010
 COPY ~spell_rev\spwi1##\famfai25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8013
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8013
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfer.cre~      ~override~
   SAY NAME1 @8015
   SAY NAME2 @8015
 COPY ~spell_rev\spwi1##\famfer.itm~      ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8016
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8016
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famfer25.cre~    ~override~
   SAY NAME1 @8015
   SAY NAME2 @8015
 COPY ~spell_rev\spwi1##\famfer25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8018
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8018
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famimp.cre~      ~override~
   SAY NAME1 @8020
   SAY NAME2 @8020
 COPY ~spell_rev\spwi1##\famimp.itm~      ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8021
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8021
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famimp25.cre~    ~override~
   SAY NAME1 @8020
@@ -1794,13 +1807,13 @@ COPY ~spell_rev\spwi1##\famimp25.cre~    ~override~
 COPY ~spell_rev\spwi1##\impclaw.itm~     ~override~
   SAY NAME1 @8022
 COPY ~spell_rev\spwi1##\famimp25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8023
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8023
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\fampsd.cre~      ~override~
   SAY NAME1 @8025
   SAY NAME2 @8025
 COPY ~spell_rev\spwi1##\fampsd.itm~      ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8026
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8026
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\psdclaw.itm~     ~override~
   SAY NAME1 @8027
@@ -1808,13 +1821,13 @@ COPY ~spell_rev\spwi1##\fampsd25.cre~    ~override~
   SAY NAME1 @8025
   SAY NAME2 @8025
 COPY ~spell_rev\spwi1##\fampsd25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8028
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8028
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famquas.cre~     ~override~
   SAY NAME1 @8030
   SAY NAME2 @8030
 COPY ~spell_rev\spwi1##\famquas.itm~     ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8031
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8031
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\quasclaw.itm~    ~override~
   SAY NAME1 @8032
@@ -1822,19 +1835,19 @@ COPY ~spell_rev\spwi1##\famqua25.cre~    ~override~
   SAY NAME1 @8030
   SAY NAME2 @8030
 COPY ~spell_rev\spwi1##\famqua25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8033
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8033
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famrab.cre~      ~override~
   SAY NAME1 @8035
   SAY NAME2 @8035
 COPY ~spell_rev\spwi1##\famrab.itm~      ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8036
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8036
   LPF update_item_descriptions_to_bgee END
 COPY ~spell_rev\spwi1##\famrab25.cre~    ~override~
   SAY NAME1 @8035
   SAY NAME2 @8035
 COPY ~spell_rev\spwi1##\famrab25.itm~    ~override~
-  SAY NAME2 @8218   SAY UNIDENTIFIED_DESC @8038
+  SAY NAME2 @100402  SAY UNIDENTIFIED_DESC @8038
 ACTION_FOR_EACH resource IN // Give generic icon to familiar weapons
   ~MEPFIR~
   ~MEPLIG~
@@ -2004,6 +2017,7 @@ COPY ~spell_rev\spwi2##\spwi220i.eff~    ~override~
 
 COPY ~spell_rev\spwi2##\spwi221.spl~     ~override~  // Ray of Enfeeblement
   SAY NAME1 @487    SAY UNIDENTIFIED_DESC @488
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7924 parameter1 = RESOLVE_STR_REF(@23009) END
 COPY ~spell_rev\spwi2##\scrl6f.itm~      ~override~
   SAY NAME2 @487    SAY IDENTIFIED_DESC   @488
 COPY ~spell_rev\spwi2##\scrl6f.itm~      ~override\scrlai.itm~ // BG1 scroll
@@ -2172,7 +2186,7 @@ COPY ~spell_rev\spwi3##\spwi313i.eff~    ~override~
 COPY ~spell_rev\spwi3##\spwi314.spl~     ~override~  // Vampiric Touch
   SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
 COPY ~spell_rev\spwi3##\spwi314d.spl~    ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 206 match_parameter1 = 61914 parameter1 = RESOLVE_STR_REF(@3527) END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 206 match_parameter1 = 61914 parameter1 = RESOLVE_STR_REF(@23010) END
 COPY ~spell_rev\spwi3##\spwi314e.spl~    ~override~
 COPY ~spell_rev\spwi3##\scrl1q.itm~      ~override~
   SAY NAME2 @527    SAY IDENTIFIED_DESC   @528
@@ -2194,6 +2208,7 @@ COPY ~spell_rev\spwi3##\dvwi316i.eff~    ~override~
 COPY ~spell_rev\spwi3##\dvwi316i.spl~    ~override~
 COPY ~spell_rev\spwi3##\dvwi316.eff~     ~override~
 COPY ~spell_rev\spwi3##\dvwi316.spl~     ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23003) END
 
 COPY ~spell_rev\spwi3##\spwi317.spl~     ~override~  // Ghost Armor
   SAY NAME1 @531    SAY UNIDENTIFIED_DESC @532
@@ -2204,6 +2219,7 @@ COPY ~spell_rev\spwi3##\gharmor.bam~     ~override~
 
 COPY ~spell_rev\spwi3##\spwi318.spl~     ~override~  // Minor Spell Deflection
   SAY NAME1 @533    SAY UNIDENTIFIED_DESC @534
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 10882 parameter1 = RESOLVE_STR_REF(@23011) END
 COPY ~spell_rev\spwi3##\scrl6g.itm~      ~override~
   SAY NAME2 @533    SAY IDENTIFIED_DESC   @534
 
@@ -2283,6 +2299,7 @@ COPY ~spell_rev\spwi3##\scrl6i.itm~      ~override~  // vanilla's Protection fro
 
 COPY ~spell_rev\spwi4##\spwi401.spl~     ~override~  // Confusion
   SAY NAME1 @561    SAY UNIDENTIFIED_DESC @562
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14782 parameter1 = RESOLVE_STR_REF(@23012) END
 COPY ~spell_rev\spwi4##\scrl1u.itm~      ~override~
   SAY NAME2 @561    SAY IDENTIFIED_DESC   @562
 
@@ -2360,7 +2377,7 @@ COPY ~spell_rev\spwi4##\scrl5h.itm~      ~override~
 
 COPY ~spell_rev\spwi4##\spwi412.spl~     ~override~  // Greater Malison
   SAY NAME1 @583    SAY UNIDENTIFIED_DESC @584
-  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 44916 parameter1 = RESOLVE_STR_REF(@3583) END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 44916 parameter1 = RESOLVE_STR_REF(@23002) END
 COPY ~spell_rev\spwi4##\scrl5i.itm~      ~override~
   SAY NAME2 @583    SAY IDENTIFIED_DESC   @584
 
@@ -2604,6 +2621,7 @@ COPY ~spell_rev\spwi5##\dvsdoor.vvc~     ~override~
 
 COPY ~spell_rev\spwi5##\spwi506.spl~     ~override~  // Domination
   SAY NAME1 @621    SAY UNIDENTIFIED_DESC @622
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 8364 parameter1 = RESOLVE_STR_REF(@23004) END
 COPY ~spell_rev\spwi5##\scrl5n.itm~      ~override~
   SAY NAME2 @621    SAY IDENTIFIED_DESC   @622
 
@@ -2617,6 +2635,7 @@ COPY ~spell_rev\spwi5##\spwi507d.eff~     ~override~
 ACTION_IF chaos=1 BEGIN
 COPY ~spell_rev\shared\alternatives\spwi508.spl~     ~override~  // Chaos
   SAY NAME1 @625000    SAY UNIDENTIFIED_DESC @626000
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14782 parameter1 = RESOLVE_STR_REF(@23012) END
 COPY ~spell_rev\shared\alternatives\scrl5p.itm~      ~override~
   SAY NAME2 @625000    SAY IDENTIFIED_DESC   @626000
 END ELSE BEGIN
@@ -2668,6 +2687,7 @@ END
 
 COPY ~spell_rev\spwi5##\spwi511.spl~     ~override~  // Protection from Normal Weapons
   SAY NAME1 @631    SAY UNIDENTIFIED_DESC @632
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7608 parameter1 = RESOLVE_STR_REF(@23013) END
 COPY ~spell_rev\spwi5##\scrl6t.itm~      ~override~
   SAY NAME2 @631    SAY IDENTIFIED_DESC   @632
 
@@ -2790,6 +2810,7 @@ COPY ~spell_rev\spwi5##\elearsu3.itm~    ~override~
 
 COPY ~spell_rev\spwi5##\spwi522.spl~     ~override~  // Spell Deflection (replaces Minor Spell Turning, disabled at level six)
   SAY NAME1 @653    SAY UNIDENTIFIED_DESC @654
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 10884 parameter1 = RESOLVE_STR_REF(@23014) END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~spwi522.spl    233     1     116   201    n     A~
 COPY ~spell_rev\spwi5##\scrl7d.itm~      ~override~
   SAY NAME2 @653    SAY IDENTIFIED_DESC   @654
@@ -2914,6 +2935,7 @@ APPEND ~spell.ids~ ~2605 WIZARD_BANISHMENT~
 
 COPY ~spell_rev\spwi6##\spwi606.spl~     ~override~  // Protection from Magic Energy
   SAY NAME1 @671    SAY UNIDENTIFIED_DESC @672
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7568 parameter1 = RESOLVE_STR_REF(@23015) END
 COPY ~spell_rev\spwi6##\scrl7j.itm~      ~override~
   SAY NAME2 @671    SAY IDENTIFIED_DESC   @672
 
@@ -2937,6 +2959,7 @@ COPY ~spell_rev\spwi6##\spwi609d.spl~    ~override~
 
 COPY ~spell_rev\spwi6##\spwi611.spl~     ~override~  // Protection from Magical Weapons
   SAY NAME1 @679    SAY UNIDENTIFIED_DESC @680
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7609 parameter1 = RESOLVE_STR_REF(@23016) END
 COPY ~spell_rev\spwi6##\scrl7o.itm~      ~override~
   SAY NAME2 @679    SAY IDENTIFIED_DESC   @680
 
@@ -2980,6 +3003,7 @@ COPY ~spell_rev\spwi6##\scrl7u.itm~      ~override~
 
 COPY ~spell_rev\spwi6##\spwi618.spl~     ~override~  // Spell Deflection (moved to 5th level)
   SAY NAME1 @693    SAY UNIDENTIFIED_DESC @694
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 10884 parameter1 = RESOLVE_STR_REF(@23017) END
 /*
 COPY ~spell_rev\spwi6##\scrl7v.itm~      ~override~  // Scroll used for Greater Spell Deflection
   SAY NAME2 @721    SAY IDENTIFIED_DESC   @722
@@ -3052,6 +3076,7 @@ COPY ~spell_rev\spwi6##\scrl8c.itm~      ~override~  // Scroll used for Summon N
 
 COPY ~spell_rev\spwi7##\spwi701.spl~     ~override~  // Greater Spell Deflection (replaces Spell Turning)
   SAY NAME1 @721    SAY UNIDENTIFIED_DESC @722
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 10884 parameter1 = RESOLVE_STR_REF(@23018) END
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~spwi701.spl    233     2     116   201    n     A~
 COPY ~spell_rev\spwi7##\scrl7v.itm~      ~override~  // vanilla's Spell Deflection
   SAY NAME2 @721    SAY IDENTIFIED_DESC   @722
@@ -3059,6 +3084,7 @@ APPEND ~spell.ids~ ~2701 WIZARD_GREATER_SPELL_DEFLECTION~
 
 COPY ~spell_rev\spwi7##\spwi702.spl~     ~override~  // Protection from the Elements
   SAY NAME1 @723    SAY UNIDENTIFIED_DESC @724
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7569 parameter1 = RESOLVE_STR_REF(@23019) END
 COPY ~spell_rev\spwi7##\scrl8e.itm~      ~override~
   SAY NAME2 @723    SAY IDENTIFIED_DESC   @724
 
@@ -3146,6 +3172,7 @@ COPY ~spell_rev\projectles\pspray.pro~   ~override~
 
 COPY ~spell_rev\spwi7##\spwi715.spl~     ~override~  // Power Word: Stun
   SAY NAME1 @745    SAY UNIDENTIFIED_DESC @746
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1280 parameter1 = RESOLVE_STR_REF(@23006) END
 COPY ~spell_rev\spwi7##\scrl8q.itm~      ~override~
   SAY NAME2 @745    SAY IDENTIFIED_DESC   @746
 
@@ -3246,6 +3273,7 @@ APPEND ~spell.ids~ ~2802 WIZARD_MIND_BLANK~
 
 COPY ~spell_rev\spwi8##\spwi803.spl~     ~override~  // Protection from Energy
   SAY NAME1 @771    SAY UNIDENTIFIED_DESC @772
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7570 parameter1 = RESOLVE_STR_REF(@23020) END
 COPY ~spell_rev\spwi8##\scrl8y.itm~      ~override~
   SAY NAME2 @771    SAY IDENTIFIED_DESC   @772
 
@@ -3348,6 +3376,7 @@ COPY_EXISTING ~holdsumm.pro~             ~override~
 
 COPY ~spell_rev\spwi8##\spwi816.spl~     ~override~  // Symbol of Stunning
   SAY NAME1 @793    SAY UNIDENTIFIED_DESC @794
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1280 parameter1 = RESOLVE_STR_REF(@23006) END
 COPY ~spell_rev\spwi8##\scrlap.itm~      ~override~
   SAY NAME2 @793    SAY IDENTIFIED_DESC   @794
 COPY ~spell_rev\shared\spwi898.spl~      ~override~  // Innate Symbol of Stunning
@@ -3474,6 +3503,7 @@ COPY ~spell_rev\spwi9##\scrl9v.itm~      ~override~
 
 COPY ~spell_rev\spwi9##\spwi914.spl~     ~override~  // Larloch's Energy Drain
   SAY NAME1 @831    SAY UNIDENTIFIED_DESC @832
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 40979 parameter1 = RESOLVE_STR_REF(@23021) END
 COPY ~spell_rev\spwi9##\spwi914d.spl~    ~override~
 COPY ~spell_rev\spwi9##\scrl9w.itm~      ~override~
   SAY NAME2 @831    SAY IDENTIFIED_DESC   @832
@@ -3489,6 +3519,7 @@ COPY ~spell_rev\spwi9##\blakblad.spl~    ~override~
 
 COPY ~spell_rev\spwi9##\spwi916.spl~     ~override~  // Shapechange
   SAY NAME1 @835    SAY UNIDENTIFIED_DESC @836
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 8203 parameter1 = RESOLVE_STR_REF(@23022) END
 COPY ~spell_rev\spwi9##\scrl9y.itm~      ~override~
   SAY NAME2 @835    SAY IDENTIFIED_DESC   @836
 COPY ~spell_rev\spwi9##\spwi971.spl~     ~override~
@@ -3523,6 +3554,7 @@ COPY ~spell_rev\spwi9##\spwi918.spl~     ~override~  // Bigby's Crushing Hand
 COPY ~spell_rev\spwi9##\scrlb2.itm~      ~override~
   SAY NAME2 @839    SAY IDENTIFIED_DESC   @840
 COPY ~spell_rev\spwi9##\spwi918d.spl~    ~override~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1280 parameter1 = RESOLVE_STR_REF(@23006) END
 
 COPY ~spell_rev\spwi9##\spwi919.spl~     ~override~  // Wish
   SAY NAME1 @841    SAY UNIDENTIFIED_DESC @842
@@ -3539,6 +3571,7 @@ COPY ~spell_rev\spwi9##\p3-12m4.itm~     ~override~
 
 COPY ~spell_rev\spwi9##\spwi920.spl~     ~override~  // Energy Blades
   SAY NAME1 @851    SAY UNIDENTIFIED_DESC @852
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 63617 parameter1 = RESOLVE_STR_REF(@23007) END
 COPY ~spell_rev\spwi9##\eneblade.itm~    ~override~
   SAY NAME1 @8212   SAY NAME2 @8212
 
@@ -3804,40 +3837,6 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet
   ACTION_FOR_EACH resource IN
     ~DVWIS38B~
     ~DVWIS26B~
-    ~SPIN788~
-    ~SPPR204~
-    ~SPPR317~
-    ~SPPR405~
-    ~SPPR610~
-    ~SPPR701~
-    ~SPPR704~
-    ~SPPR706~
-    ~SPPR718~
-    ~SPPR721~
-    ~SPWI104~
-    ~SPWI116~
-    ~SPWI221~
-    ~SPWI316~
-    ~SPWI318~
-    ~SPWI506~
-    ~SPWI508~
-    ~SPWI511~
-    ~SPWI522~
-    ~SPWI524~
-    ~SPWI525~
-    ~SPWI606~
-    ~SPWI611~
-    ~SPWI618~
-    ~SPWI701~
-    ~SPWI702~
-    ~SPWI715~
-    ~SPWI803~
-    ~SPWI811~
-    ~SPWI816~
-    ~SPWI914~
-    ~SPWI916~
-    ~SPWI918D~
-    ~SPWI920~
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
       COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
