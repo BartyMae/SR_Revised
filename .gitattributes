@@ -1,2 +1,2 @@
-*.bcs eol=crlf
-*.BCS eol=crlf
+*.bcs eol=lf
+*.BCS eol=lf
