@@ -1,143 +1,143 @@
 ACTION_IF friendly_spells_pierce=1 BEGIN
   ACTION_FOR_EACH resource IN
-    ~spin101~
-    ~spin102~
-    // ~spin103~
-    ~spcl211~
-    // ~spcl212~
-    ~spcl213~
-    ~spcl222~
-    // ~spcl721~
-    // ~spcl731~
-    // ~spcl741~
-    ~spdr401~
-    ~spra301~
-    ~spra302~
-    // ~spra303~
-    ~spcl233~
-    // ~spin113~
-    // ~spin118~
-    ~spin109~
-    // ~spin120~
-    ~spin121~
-    ~spin676~
-    // ~spin826~
-    ~spin827~
-    // ~spin828~
-    ~sppr101~
-    ~sppr103~
-    // ~sppr104~
-    // ~sppr106~
-    ~sppr107~
-    ~sppr108~
-    // ~sppr109~
-    // ~sppr110~
-    // ~sppr111~
-    ~sppr201~
-    ~sppr202~
-    ~sppr203~
-    // ~sppr205~
-    // ~sppr206~
-    // ~sppr207~
-    ~sppr212~
-    // ~sppr213~
-    // ~sppr214~
+    ~spin101~ // Cure Light Wounds
+    ~spin102~ // Slow Poison
+    // ~spin103~ // Draw Upon Divine Might
+    ~spcl211~ // Lay on Hands
+    // ~spcl212~ // Detect Evil
+    /// ~spcl213~ // Protection from Evil
+    //// ~spcl222~ // Remove Fear
+    // ~spcl721~ // Storm Shield
+    // ~spcl731~ // Seeking Sword
+    // ~spcl741~ // Boon of Lathander
+    /// ~spdr401~ // Improved Invisibility
+    //// ~spra301~ // Haste
+    /// ~spra302~ // Non-Detection
+    // ~spra303~ // Protection from Missiles
+    //// ~spcl233~ // Magic Circle Against Evil
+	~spin109~ // Ajantis Lay on Hands
+    // ~spin113~ // Branwen Spiritual Hammer
+    // ~spin118~ // Quayle Invisibility
+    // ~spin120~ // Ajantis Detect Evil
+    /// ~spin121~ // Ajantis Protection from Evil
+    //// ~spin676~ // Mazzy Invoke Courage
+    // ~spin826~ // Mazzy Strength
+    ~spin827~ // Mazzy Lay on Hands
+    // ~spin828~ // Mazzy Haste
+    //// ~sppr101~ // Bless
+    ~sppr103~ // Cure Light Wounds
+    // ~sppr104~ // Detect Alignment
+    // ~sppr106~ // Magical Stone
+    /// ~sppr107~ // Protection from Evil
+    //// ~sppr108~ // Resist Fear
+    // ~sppr109~ // Sanctuary
+    // ~sppr110~ // Shillelagh
+    // ~sppr111~ // Armor of Faith
+    ~sppr201~ // Aid
+    /// ~sppr202~ // Barkskin
+    //// ~sppr203~ // Chant
+    // ~sppr205~ // Find Traps
+    // ~sppr206~ // Flame Blade
+    // ~sppr207~ // Goodberry
+    ~sppr212~ // Slow Poison
+    // ~sppr213~ // Spiritual Hammer
+    // ~sppr214~ // Draw Upon Divine Might
     // ~sppr214w~
-    ~sppr306~
-    ~sppr307~
-    ~sppr308~
-    ~sppr312~
-    ~sppr315~
-    ~sppr317~
-    // ~sppr318~
-    ~sppr401~
-    ~sppr403~
-    ~sppr404~
-    ~sppr406~
-    ~sppr407~
-    ~sppr408~
-    ~sppr409~
-    // ~sppr412~
-    ~sppr413~
-    // ~sppr414~
-    // ~sppr415~
-    ~sppr417~
-    ~sppr502~
-    ~sppr504~
-    // ~sppr506~
-    ~sppr507~
-    ~sppr508~
-    ~sppr509~
-    ~sppr510~
-    // ~sppr511~
-    // ~sppr513~
-    ~sppr514~
-    ~sppr516~
-    ~dvanigro~
-    ~spja01~
-    // ~sppr606~
-    ~sppr607~
-    ~sppr608~
-    // ~sppr611~
-    // ~sppr613~
+    /// ~sppr306~ // Protection from Fire
+    ~sppr307~ // Break Enchantment
+    ~sppr308~ // Remove Paralysis
+    //// ~sppr312~ // Strength of One
+    ~sppr315~ // Cure Medium Wounds
+    ~sppr317~ // Cure Disease
+    // ~sppr318~ // Zone of Sweet Air
+    ~sppr401~ // Cure Serious Wounds
+    /// ~sppr403~ // Free Action
+    ~sppr404~ // Neutralize Poison
+    //// ~sppr406~ // Defensive Harmony
+    /// ~sppr407~ // Protection from Electricity
+    //// ~sppr408~ // Magic Circle Against Evil
+    //// ~sppr409~ // Death Ward
+    // ~sppr412~ // Divine Power
+    /// ~sppr413~ // Negative Plane Protection
+    // ~sppr414~ // Cause Serious Wounds
+    // ~sppr415~ // Farsight
+    ~sppr417~ // Lesser Restoration
+    ~sppr502~ // Cure Critical Wounds
+    ~sppr504~ // Raise Dead
+    // ~sppr506~ // Stoneskin
+    /// ~sppr507~ // Champion's Strength
+    /// ~sppr508~ // Chaotic Commands
+    /// ~sppr509~ // Magic Resistance
+    // ~sppr510~ // Cause Critical Wounds
+    // ~sppr511~ // Slay Living
+    // ~sppr513~ // Righteous Fury
+    ~sppr514~ // Mass Cure
+    //// ~sppr516~ // Pixie Dust
+    //// ~dvanigro~ // Animal Growth
+    ~spja01~ // Harper's Call
+    // ~sppr606~ // Fire Seeds
+    ~sppr607~ // Heal
+    // ~sppr608~ // Harm
+    // ~sppr611~ // Wondrous Recall
+    // ~sppr613~ // Physical Mirror
     // ~sppr613d~
-    // ~sppr701~
-    ~sppr711~
-    ~sppr712~
-    ~sppr713~
-    // ~sppr721~
-    ~sppr729~
-    // ~sppr730~
-    // ~sppr731~
-    // ~sppr732~
-    // ~spwi102~
-    // ~spwi107~
-    ~spwi108~
-    // ~spwi110~
-    // ~spwi111~
-    ~spwi113~
-    ~spwi114~
-    // ~spwi115~
-    // ~spwi117~
-    // ~spwi120~
-    // ~spwi123~
-    // ~spwi124~
-    // ~spwi201~
-    ~spwi206~
-    ~spwi209~
-    ~spwi210~
-    // ~spwi212~
-    ~spwi214~
-    // ~spwi218~
-    // ~spwi219~
-    // ~spwi222~
-    // ~spwi301~
-    ~spwi305~
-    ~spwi307~
-    ~spwi310~
-    // ~spwi311~
-    // ~spwi315~
-    // ~spwi317~
-    // ~spwi318~
-    ~spwi319~
-    ~spwi320~
-    // ~spwi325~
-    // ~spwi402~
-    // ~spwi403~
-    ~spwi405~
-    // ~spwi406~
-    // ~spwi408~
-    ~spwi410~
-    ~spwi413~
-    ~spwi413e~
-    // ~spwi414~
-    // ~spwi416~
-    // ~spwi417~
-    // ~spwi418~
-    // ~spwi420~
-    ~spwi420d~
-    // ~spwi424~
-    // ~spwi505~
+    // ~sppr701~ // Shield of the Archons
+    ~sppr711~ // Regeneration
+    ~sppr712~ // Resurrection
+    ~sppr713~ // Greater Restoration
+    // ~sppr721~ // Energy Blades
+    ~sppr729~ // Mass Raise Dead
+    // ~sppr730~ // Aura of Flaming Death
+    // ~sppr731~ // Fire Elemental Transformation
+    // ~sppr732~ // Earth Elemental Transformation
+    // ~spwi102~ // Mage Armor
+    // ~spwi107~ // Friends
+    /// ~spwi108~ // Protection from Petrification
+    // ~spwi110~ // Identify
+    // ~spwi111~ // True Strike
+    /// ~spwi113~ // Protection from Evil
+    // ~spwi114~ // Shield
+    // ~spwi115~ // Shocking Grasp
+    // ~spwi117~ // Chill Touch
+    // ~spwi120~ // Reflected Image
+    // ~spwi123~ // Find Familiar
+    // ~spwi124~ // Nahal's Reckless Dweomer
+    // ~spwi201~ // Blur
+    /// ~spwi206~ // Invisibility
+    /// ~spwi209~ // Luck
+    //// ~spwi210~ // Resist Fear
+    // ~spwi212~ // Mirror Image
+    /// ~spwi214~ // Strength
+    // ~spwi218~ // Ghoul Touch
+    // ~spwi219~ // Vocalize
+    // ~spwi222~ // Chaos Shield
+    // ~spwi301~ // Clairvoyance
+    //// ~spwi305~ // Haste
+    //// ~spwi307~ // Invisibility Sphere
+    /// ~spwi310~ // Non-Detection
+    // ~spwi311~ // Protection from Missiles
+    // ~spwi315~ // Wraithform
+    // ~spwi317~ // Ghost Armor
+    // ~spwi318~ // Minor Spell Deflection
+    /// ~spwi319~ // Protection from Fire
+    /// ~spwi320~ // Protection from Cold
+    // ~spwi325~ // Melf's Minute Meteors
+    // ~spwi402~ // Dimension Jump
+    // ~spwi403~ // Mestil's Acid Sheath
+    /// ~spwi405~ // Improved Invisibility
+    // ~spwi406~ // Minor Globe of Invulnerability
+    // ~spwi408~ // Stoneskin
+    ~spwi410~ // Break Enchantment
+    /// ~spwi413~ // Otiluke's Resilient Sphere
+    /// ~spwi413e~
+    // ~spwi414~ // Spirit Armor
+    // ~spwi416~ // Polymorph Self
+    // ~spwi417~ // Enchanted Weapon
+    // ~spwi418~ // Fire Shield
+    // ~spwi420~ // Simbul's Spell Matrix
+    /// ~spwi420d~
+    // ~spwi424~ // Farsight
+    // ~spwi505~ // Shadow Door
     // ~spwi590~
     // ~spwi591~
     // ~spwi592~
@@ -146,64 +146,65 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     // ~spwi595~
     // ~spwi596~
     // ~spwi597~
-    // ~spwi511~
-    ~spwi512~
-    ~spwi517~
-    // ~spwi518~
-    // ~spwi519~
-    // ~spwi522~
-    ~dvscreen~
-    // ~spwi602~
-    // ~spwi603~
-    ~spwi606~
-    // ~spwi607~
+    // ~spwi511~ // Protection from Normal Weapons
+    /// ~spwi512~ // Protection from Electricity
+    /// ~spwi517~ // Protection from Acid
+    // ~spwi518~ // Phantom Blade
+    // ~spwi519~ // Spell Shield
+    // ~spwi522~ // Spell Deflection
+    //// ~dvscreen~ // Dispelling Screen
+    // ~spwi602~ // Globe of Invulnerability
+    // ~spwi603~ // Tenser's Transformation
+    /// ~spwi606~ // Protection from Magic Energy
+    // ~spwi607~ // Mislead
     // ~mislead~
     // ~dvnosong~
-    // ~spwi611~
-    ~spwi613~
-    // ~spwi617~
-    // ~spwi618~
-    // ~spwi701~
-    // ~spwi702~
-    // ~spwi703~
+    // ~spwi611~ // Protection from Magical Weapons
+    /// ~spwi613~ // Improved Haste
+    // ~spwi617~ // Contingency
+    // ~spwi618~ // Spell Deflection
+    // ~spwi701~ // Greater Spell Deflection
+    // ~spwi702~ // Protection from the Elements
+    // ~spwi703~ // Project Image
     // ~projimag~
-    // ~spwi708~
-    // ~spwi710~
-    ~spwi710d~
-    ~spwi721~
-    // ~spwi722~
-    // ~spwi801~
-    ~spwi802~
-    ~spwi803~
-    // ~spwi804~
-    // ~spwi808~
-    // ~spwi809~
-    ~spwi809d~
-    // ~spwi902~
-    // ~spwi907~
-    // ~spwi908~
-    // ~spwi915~
-    // ~spwi916~
-    ~spwi917~
-    // ~spwi920~
-    // ~spwi921~
-    // ~spwi971~
+    // ~spwi708~ // Prismatic Mantle
+    // ~spwi710~ // Simbul's Spell Sequencer
+    /// ~spwi710d~
+    //// ~spwi721~ // Mass Invisibility
+    // ~spwi722~ // Limited Wish
+    // ~spwi801~ // Ghostform
+    /// ~spwi802~ // Mind Blank
+    /// ~spwi803~ // Protection from Energy
+    // ~spwi804~ // Simulacrum
+    // ~spwi808~ // Moment of Prescience
+    // ~spwi809~ // Simbul's Spell Trigger
+    /// ~spwi809d~
+    // ~spwi902~ // Spell Trap
+    // ~spwi907~ // Absolute Immunity
+    // ~spwi908~ // Chain Contingency
+    // ~spwi915~ // Black Blade of Disaster
+    // ~spwi916~ // Shapechange
+	// ~spwi971~
     // ~spwi972~
     // ~spwi973~
     // ~spwi974~
     // ~spwi975~
-    ~dvmcure~
-	~amul26~
-	~misc3n~
-	~misc3o~
-	~scrl03~
-	~scrl04~
-	~scrl05~
-	~scrl06~
-	~scrl07~
-	~scrl08~
-	~scrl09~
-	~scrl15~
+    ~spwi917~ // Freedom
+    // ~spwi920~ // Energy Blades
+    // ~spwi921~ // Improved Alacrity
+
+    ~dvmcure~ // Mass Cure
+	//// ~amul26~ // Amulet of Cheetah Speed's Improved Haste
+	//// ~misc3n~ // Azlaer's Harp's Resist Fear
+	~misc3o~ // Methild's Harp's Break Enchantment
+	// ~scrl03~ // Protection from Acid
+	// ~scrl04~ // Protection from Cold
+	// ~scrl05~ // Protection from Electricity
+	// ~scrl06~ // Protection from Fire
+	// ~scrl07~ // Protection from Magic
+	// ~scrl08~ // Protection from Ailments
+	// ~scrl09~ // Protection from Undead
+	// ~scrl15~ // Protection from Alterations
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
       COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
@@ -218,29 +219,29 @@ ACTION_IF friendly_spells_pierce=1 BEGIN
     CLERIC_REGENERATE_LIGHT_WOUNDS
     // CLERIC_GOOD_BERRIES
     // CLERIC_CAUSE_LIGHT_WOUNDS
-    CLERIC_RESIST_ELEMENTS
+    /// CLERIC_RESIST_ELEMENTS
     CLERIC_CURE_MODERATE_WOUNDS
     CLERIC_REGENERATE_MODERATE_WOUNDS
     // CLERIC_CAUSE_MODERATE_WOUNDS
     // CLERIC_CAUSE_MEDIUM_WOUNDS
     // CLERIC_STORM_SHIELD
     CLERIC_REGENERATE_MEDIUM_WOUNDS
-    CLERIC_MAGIC_FANG
+    /// CLERIC_MAGIC_FANG
     CLERIC_REGENERATE_SERIOUS_WOUNDS
-    CLERIC_PROTECTION_FROM_ACID
-    CLERIC_PROTECTION_FROM_COLD
-    CLERIC_PROTECTION_FROM_LIGHTNING
-    CLERIC_PROTECTION_FROM_FIRE
+    /// CLERIC_PROTECTION_FROM_ACID
+    /// CLERIC_PROTECTION_FROM_COLD
+    /// CLERIC_PROTECTION_FROM_LIGHTNING
+    /// CLERIC_PROTECTION_FROM_FIRE
     CLERIC_MASS_REGENERATE
-    CLERIC_ANIMAL_GROWTH
+    // CLERIC_ANIMAL_GROWTH
     CLERIC_REGENERATE_CRITICAL_WOUNDS
     CLERIC_REGENERATION_DRUID_VERSION
     // WIZARD_DIMENSION_JUMP
-    WIZARD_EXPEDITIOUS_RETREAT
-    WIZARD_RESIST_ELEMENTS
+    // WIZARD_EXPEDITIOUS_RETREAT
+    /// WIZARD_RESIST_ELEMENTS
     // WIZARD_PROTECTION_FROM_ELEMENTAL_ENERGY
     // WIZARD_MESTILS_ACID_SHEATH
-    WIZARD_DISPELLING_SCREEN
+    // WIZARD_DISPELLING_SCREEN
   BEGIN
     ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]%add_spl%[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
       LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = EVAL ~%add_spl%~ RET spell_res END
