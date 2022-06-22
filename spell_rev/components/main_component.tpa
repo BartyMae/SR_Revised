@@ -935,7 +935,7 @@ COPY ~spell_rev\sppr4##\sppr407.spl~     ~override~  // Protection from Electric
 COPY_EXISTING ~spell.ids~ ~override~
   REPLACE_TEXTUALLY ~^1407[ %TAB%]+CLERIC_PROTECTION_FROM_LIGHTNING\b~ ~1407 CLERIC_PROTECTION_FROM_LIGHTNING_DEPRECATED~
 
-COPY ~spell_rev\sppr4##\sppr408.spl~     ~override~  // Magic Circle against Evil (previously named Protection from Evil 10' Radius)
+COPY ~spell_rev\sppr4##\sppr408.spl~     ~override~  // Magic Circle Against Evil (previously named Protection from Evil 10' Radius)
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
 COPY ~spell_rev\sppr4##\scrl5d.itm~      ~override~
   SAY NAME2 @125    SAY IDENTIFIED_DESC   @126
