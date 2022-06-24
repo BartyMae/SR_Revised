@@ -1888,6 +1888,8 @@ COPY ~spell_rev\spwi1##\gibbersu.cre~    ~override~
   SAY NAME1 @8045   SAY NAME2 @8045
 COPY ~spell_rev\spwi1##\gibbersu.itm~    ~override~
   SAY NAME1 @8046   SAY NAME2 @8046
+COPY ~spell_rev\spwi1##\dvgibber.eff~    ~override~
+COPY ~spell_rev\spwi1##\dvgibber.cre~    ~override~
 
 ADD_SPELL ~spell_rev\spwi1##\spwi128.spl~ 2 1 ~WIZARD_EXPEDITIOUS_RETREAT~  // Expeditious Retreat
   SAY NAME1 @415    SAY UNIDENTIFIED_DESC @416

@@ -254,7 +254,7 @@ Bat (1 HD):
  ST9, DE14, CO11, IN4, WI11, CH4
  HP 4, AC 8, THAC0 20, APR 1
  1D2 Piercing (Bite)
- Saving Throws 13/17/15/13/17, AL TN
+ Saving Throws 13/17/13/15/17, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -870,7 +870,7 @@ Wolf (3 HD):
  ST13, DE15, CO15, IN6, WI12, CH6
  HP 22, AC 6, THAC0 17, APR 1
  1D6 Piercing (Bite)
- Saving Throws 15/17/15/13/17, AL TN
+ Saving Throws 13/17/13/15/17, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 

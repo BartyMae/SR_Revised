@@ -362,13 +362,21 @@ Saving Throw: None
 By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
 
 1st: 2 gibberlings
-3rd: 3 gibberlings
-5th: 4 gibberlings
-7th: 5 gibberlings
+3rd: 2 gibberlings, 1 mutated gibberling
+5th: 1 gibberlings, 2 mutated gibberling
+7th: 3 mutated gibberlings
 
 Gibberling (1 HD):
  ST10, DE10, CO10, IN6, WI7, CH4
  HP 8, AC 10, THAC0 19, APR 1
+ 1D6 Piercing (Short Sword)
+ Saving Throws 13/17/15/13/17, AL CN
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%~
+
+Mutated Gibberling (2 HD):
+ ST11, DE11, CO11, IN6, WI7, CH4
+ HP 16, AC 7, THAC0 17, APR 2
  1D6 Piercing (Short Sword)
  Saving Throws 13/17/15/13/17, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
