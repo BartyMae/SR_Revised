@@ -1890,6 +1890,7 @@ COPY ~spell_rev\spwi1##\gibbersu.itm~    ~override~
   SAY NAME1 @8046   SAY NAME2 @8046
 COPY ~spell_rev\spwi1##\dvgibber.eff~    ~override~
 COPY ~spell_rev\spwi1##\dvgibber.cre~    ~override~
+  SAY NAME1 @8218   SAY NAME2 @8218
 
 ADD_SPELL ~spell_rev\spwi1##\spwi128.spl~ 2 1 ~WIZARD_EXPEDITIOUS_RETREAT~  // Expeditious Retreat
   SAY NAME1 @415    SAY UNIDENTIFIED_DESC @416
@@ -3256,6 +3257,11 @@ COPY ~spell_rev\spwi7##\otyughsu.cre~    ~override~
   SAY NAME1 @8189   SAY NAME2 @8189
 COPY ~spell_rev\spwi7##\otyughsu.itm~    ~override~
   SAY NAME1 @8190   SAY NAME2 @8190
+COPY ~spell_rev\spwi7##\dvnotysu.eff~    ~override~
+COPY ~spell_rev\spwi7##\dvnotysu.cre~    ~override~
+  SAY NAME1 @8220   SAY NAME2 @8220
+COPY ~spell_rev\spwi7##\dvnotysu.itm~    ~override~
+  SAY NAME1 @8221   SAY NAME2 @8221
 APPEND ~spell.ids~ ~%WIZARD_MONSTER_SUMMONING_5% WIZARD_MONSTER_SUMMONING_LEVEL_7~
 
 /* ---------------- Level 8 ---------------- */

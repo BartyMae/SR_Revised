@@ -2831,7 +2831,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 16th: 2 otyughs, 1 neo-otyugh
 
 Otyugh (7 HD):
- ST14, DE10, CO13, IN5, WI12, CH5
+ ST14, DE10, CO13, IN10, WI10, CH5
  HP 76, AC 3, THAC0 10, APR 3
  1D8 Piercing/Crushing (Bite & Tentacles +3)
  Saving Throws 9/11/10/10/12, AL TN
@@ -2841,6 +2841,18 @@ Otyugh (7 HD):
 Special Characteristics:
  Protected Against: Disease
  Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)
+
+Neo-Otyugh (12 HD):
+ ST18, DE12, CO16, IN12, WI12, CH5
+ HP 96, AC 0, THAC0 8, APR 3
+ 2D6 Piercing/Crushing (Bite & Tentacles +3)
+ Saving Throws 7/9/8/8/10, AL TN
+ SR 10%, CR 10%, PR 10%, MR 100%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+ Protected Against: Disease
+ Diseasing: target suffers 2 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)~
 
 
 /*------------------Level 8------------------*/
@@ -4485,7 +4497,7 @@ Launcher: Sling~
 @8186=~Scimitar +2~
 @8187=~Hakeashar~
 @8188=~Contact +3~
-@8189=~Otyugh~
+@8189=~Neo-Otyugh~
 @8190=~Bite & Tentacles +3~
 @8191=~Glabrezu~
 @8192=~Pincers & Claws +3~
@@ -4514,6 +4526,10 @@ Launcher: Sling~
 @8215=~Two-Handed Sword +3~
 @8216=~Fallen Planetar~
 @8217=~Two-Handed Sword +3~
+@8218=~Mutated Gibberling~
+@8219=~Reserved~
+@8220=~Neo-Otyugh~
+@8221=~Claws & Tentacles +3~
 
 /*------------------Miscellaneous------------------*/
 
