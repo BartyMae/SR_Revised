@@ -372,7 +372,7 @@ Gibberling (1 HD):
  1D6 Piercing (Short Sword)
  Saving Throws 13/17/15/13/17, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
- FR 0%, CR 0%, ER 0%, AR 0%~
+ FR 0%, CR 0%, ER 0%, AR 0%
 
 Mutated Gibberling (2 HD):
  ST11, DE11, CO11, IN6, WI7, CH4
@@ -2827,8 +2827,8 @@ Saving Throw: None
 
 By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
 
-14th: 2 otyughs
-16th: 3 otyughs
+14th: 3 otyughs
+16th: 2 otyughs, 1 neo-otyugh
 
 Otyugh (7 HD):
  ST14, DE10, CO13, IN5, WI12, CH5
@@ -2840,7 +2840,7 @@ Otyugh (7 HD):
 
 Special Characteristics:
  Protected Against: Disease
- Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)~
+ Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)
 
 
 /*------------------Level 8------------------*/
