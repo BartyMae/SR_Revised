@@ -1,0 +1,74 @@
+ACTION_IF ranged_curing>0 BEGIN
+  ACTION_FOR_EACH resource IN
+    ~spin101~ // Cure Light Wounds
+    ~spin102~ // Slow Poison
+    // ~spcl211~ // Lay on Hands
+    // ~spin109~ // Ajantis Lay on Hands
+    // ~spin827~ // Mazzy Lay on Hands
+    ~sppr103~ // Cure Light Wounds
+    ~sppr212~ // Slow Poison
+    ~sppr315~ // Cure Medium Wounds
+    ~sppr317~ // Cure Disease
+    ~sppr401~ // Cure Serious Wounds
+    ~sppr404~ // Neutralize Poison
+    ~sppr417~ // Lesser Restoration
+    ~sppr502~ // Cure Critical Wounds
+    ~sppr607~ // Heal
+    ~sppr711~ // Regeneration
+    ~sppr713~ // Greater Restoration
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        READ_SHORT 0x68 "number_of_headers"
+        SET "loop" = 0
+        WHILE (%loop% < %number_of_headers%) BEGIN
+          SET range_offset = (0x80 + (%loop% * 0x28))
+          PATCH_IF ranged_curing=1 BEGIN
+            WRITE_SHORT %range_offset% 0x0a
+          END ELSE PATCH_IF ranged_curing=2 BEGIN
+            WRITE_SHORT %range_offset% 0x14
+          END ELSE PATCH_IF ranged_curing=3 BEGIN
+            WRITE_SHORT %range_offset% 0x1e
+          END
+          SET "loop" = %loop% + 1
+        END
+      END
+      BUT_ONLY
+    END
+  END
+  ACTION_FOR_EACH add_spl IN
+    CLERIC_REGENERATE_LIGHT_WOUNDS
+    CLERIC_CURE_MODERATE_WOUNDS
+    CLERIC_REGENERATE_MODERATE_WOUNDS
+    CLERIC_REGENERATE_MEDIUM_WOUNDS
+    CLERIC_REGENERATE_SERIOUS_WOUNDS
+    CLERIC_MASS_REGENERATE
+    CLERIC_REGENERATE_CRITICAL_WOUNDS
+    CLERIC_REGENERATION_DRUID_VERSION
+  BEGIN
+    ACTION_IF (FILE_CONTAINS_EVALUATED (~SPELL.IDS~ ~[ %TAB%]%add_spl%[ %TAB%%LNL%%MNL%%WNL%]~)) BEGIN
+      LAF RES_NUM_OF_SPELL_NAME STR_VAR spell_name = EVAL ~%add_spl%~ RET spell_res END
+      OUTER_SPRINT $add_spl_spells(~%spell_res%~) ~%add_spl%~
+    END
+  END
+  ACTION_PHP_EACH add_spl_spells AS %spell_res% => %add_spl% BEGIN
+    COPY_EXISTING ~%spell_res%.spl~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      READ_SHORT 0x68 "number_of_headers"
+      SET "loop" = 0
+      WHILE (%loop% < %number_of_headers%) BEGIN
+        SET range_offset = (0x80 + (%loop% * 0x28))
+        PATCH_IF ranged_curing=1 BEGIN
+          WRITE_SHORT %range_offset% 0x0a
+        END ELSE PATCH_IF ranged_curing=2 BEGIN
+          WRITE_SHORT %range_offset% 0x14
+        END ELSE PATCH_IF ranged_curing=3 BEGIN
+          WRITE_SHORT %range_offset% 0x1e
+        END
+        SET "loop" = %loop% + 1
+      END
+    END
+    BUT_ONLY
+  END
+END

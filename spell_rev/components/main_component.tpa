@@ -4090,6 +4090,9 @@ INCLUDE ~spell_rev\lib\revised_saves.tph~
 // Friendly Spells Pierce Spell Protections
 INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
 
+// Ranged Curing
+INCLUDE ~spell_rev\lib\ranged_curing.tph~
+
 // Anti-magic Spells Pierce Improved Invisibility
 INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
 
