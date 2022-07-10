@@ -1,3 +1,48 @@
+ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
+  OUTER_SPRINT feet ~feet~
+END ELSE BEGIN
+  OUTER_SPRINT feet ~ft.~
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) BEGIN
+  DEFINE_PATCH_MACRO update_range_touch_short BEGIN
+    SPRINT t1 ~Range:.*~
+    SPRINT t2 ~Range: Short~
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+
+  DEFINE_PATCH_MACRO update_range_touch_medium BEGIN
+    SPRINT t1 ~Range:.*~
+    SPRINT t2 ~Range: Medium~
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+
+  DEFINE_PATCH_MACRO update_range_touch_long BEGIN
+    SPRINT t1 ~Range:.*~
+    SPRINT t2 ~Range: Long~
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+END ELSE BEGIN
+  ACTION_IF 
+  DEFINE_PATCH_MACRO update_range_touch_short BEGIN
+    SPRINT t1 ~Range:.*~
+    SPRINT t2 ~Range: 10 %feet%~
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+
+  DEFINE_PATCH_MACRO update_range_touch_medium BEGIN
+    SPRINT t1 ~Range:.*~
+    SPRINT t2 ~Range: 20 %feet%~
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+
+  DEFINE_PATCH_MACRO update_range_touch_long BEGIN
+    SPRINT t1 ~Range:.*~
+    SPRINT t2 ~Range: 30 %feet%~
+    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+  END
+END
+
 ACTION_IF ranged_curing>0 BEGIN
   ACTION_FOR_EACH resource IN
     ~spin101~ // Cure Light Wounds
@@ -26,10 +71,16 @@ ACTION_IF ranged_curing>0 BEGIN
           SET range_offset = (0x80 + (%loop% * 0x28))
           PATCH_IF ranged_curing=1 BEGIN
             WRITE_SHORT %range_offset% 0x0a
+            SPRINT text_update update_range_touch_short
+            LPM update_spell_descriptions
           END ELSE PATCH_IF ranged_curing=2 BEGIN
             WRITE_SHORT %range_offset% 0x14
+			SPRINT text_update update_range_touch_medium
+            LPM update_spell_descriptions
           END ELSE PATCH_IF ranged_curing=3 BEGIN
             WRITE_SHORT %range_offset% 0x1e
+            SPRINT text_update update_range_touch_long
+            LPM update_spell_descriptions
           END
           SET "loop" = %loop% + 1
         END
@@ -60,10 +111,16 @@ ACTION_IF ranged_curing>0 BEGIN
         SET range_offset = (0x80 + (%loop% * 0x28))
         PATCH_IF ranged_curing=1 BEGIN
           WRITE_SHORT %range_offset% 0x0a
+          SPRINT text_update update_range_touch_short
+          LPM update_spell_descriptions
         END ELSE PATCH_IF ranged_curing=2 BEGIN
           WRITE_SHORT %range_offset% 0x14
+          SPRINT text_update update_range_touch_medium
+          LPM update_spell_descriptions
         END ELSE PATCH_IF ranged_curing=3 BEGIN
           WRITE_SHORT %range_offset% 0x1e
+          SPRINT text_update update_range_touch_long
+          LPM update_spell_descriptions
         END
         SET "loop" = %loop% + 1
       END

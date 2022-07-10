@@ -482,3 +482,19 @@ DEFINE_PATCH_FUNCTION ~update_item_descriptions_to_bgee~ BEGIN
     END
   END
 END
+
+DEFINE_PATCH_MACRO ~update_spell_descriptions~ BEGIN
+  ident=1
+  FOR (index = 0x54 ; index >= 0x50 ; index -= 4) BEGIN // Loop through descriptions
+    READ_LONG "%index%" "valid"
+    PATCH_IF ("%valid%" < 2147483646) AND ("%valid%" >= 0) BEGIN // Verify description is valid
+      READ_STRREF "%index%" "description"
+      INNER_PATCH_SAVE new_desc ~%description%~ BEGIN
+        LAUNCH_PATCH_MACRO ~%text_update%~
+      END
+      SAY_EVALUATED "%index%" ~%new_desc%~
+     // PATCH_PRINT ~%new_desc%~
+      ident -=1
+    END
+  END
+END
