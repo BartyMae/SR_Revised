@@ -4,46 +4,36 @@ END ELSE BEGIN
   OUTER_SPRINT feet ~ft.~
 END
 
-ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) BEGIN
-  DEFINE_PATCH_MACRO update_range_touch_short BEGIN
-    SPRINT t1 ~Range:.*~
-    SPRINT t2 ~Range: Short~
-    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+ACTION_IF ranged_curing=1 BEGIN
+  OUTER_SET curing_range = 0x0a
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) BEGIN
+    OUTER_SPRINT curing_range_text ~Short~
+  END ELSE BEGIN
+    OUTER_SPRINT curing_range_text ~10 %feet%~
   END
-
-  DEFINE_PATCH_MACRO update_range_touch_medium BEGIN
-    SPRINT t1 ~Range:.*~
-    SPRINT t2 ~Range: Medium~
-    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END ELSE ACTION_IF ranged_curing=2 BEGIN
+  OUTER_SET curing_range = 0x14
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) BEGIN
+    OUTER_SPRINT curing_range_text ~Medium~
+  END ELSE BEGIN
+    OUTER_SPRINT curing_range_text ~20 %feet%~
   END
-
-  DEFINE_PATCH_MACRO update_range_touch_long BEGIN
-    SPRINT t1 ~Range:.*~
-    SPRINT t2 ~Range: Long~
-    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
-  END
-END ELSE BEGIN
-  ACTION_IF 
-  DEFINE_PATCH_MACRO update_range_touch_short BEGIN
-    SPRINT t1 ~Range:.*~
-    SPRINT t2 ~Range: 10 %feet%~
-    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
-  END
-
-  DEFINE_PATCH_MACRO update_range_touch_medium BEGIN
-    SPRINT t1 ~Range:.*~
-    SPRINT t2 ~Range: 20 %feet%~
-    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
-  END
-
-  DEFINE_PATCH_MACRO update_range_touch_long BEGIN
-    SPRINT t1 ~Range:.*~
-    SPRINT t2 ~Range: 30 %feet%~
-    REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END ELSE ACTION_IF ranged_curing=3 BEGIN
+  OUTER_SET curing_range = 0x1e
+  ACTION_IF (FILE_EXISTS_IN_GAME ~dvsrv3.mrk~) BEGIN
+    OUTER_SPRINT curing_range_text ~Medium~
+  END ELSE BEGIN
+    OUTER_SPRINT curing_range_text ~30 %feet%~
   END
 END
 
-ACTION_IF ranged_curing>0 BEGIN
+DEFINE_PATCH_MACRO update_curing_range BEGIN
+  SPRINT t1 ~Range:.*~
+  SPRINT t2 ~Range: %curing_range_text%~
+  REPLACE_TEXTUALLY ~%t1%~ ~%t2%~
+END
+
+ACTION_IF (ranged_curing>0 AND ranged_curing<4) BEGIN
   ACTION_FOR_EACH resource IN
     ~spin101~ // Cure Light Wounds
     ~spin102~ // Slow Poison
@@ -69,19 +59,9 @@ ACTION_IF ranged_curing>0 BEGIN
         SET "loop" = 0
         WHILE (%loop% < %number_of_headers%) BEGIN
           SET range_offset = (0x80 + (%loop% * 0x28))
-          PATCH_IF ranged_curing=1 BEGIN
-            WRITE_SHORT %range_offset% 0x0a
-            SPRINT text_update update_range_touch_short
-            LPM update_spell_descriptions
-          END ELSE PATCH_IF ranged_curing=2 BEGIN
-            WRITE_SHORT %range_offset% 0x14
-			SPRINT text_update update_range_touch_medium
-            LPM update_spell_descriptions
-          END ELSE PATCH_IF ranged_curing=3 BEGIN
-            WRITE_SHORT %range_offset% 0x1e
-            SPRINT text_update update_range_touch_long
-            LPM update_spell_descriptions
-          END
+          WRITE_SHORT %range_offset% %curing_range%
+          SPRINT text_update update_curing_range
+          LPM update_spell_descriptions
           SET "loop" = %loop% + 1
         END
       END
@@ -110,17 +90,11 @@ ACTION_IF ranged_curing>0 BEGIN
       WHILE (%loop% < %number_of_headers%) BEGIN
         SET range_offset = (0x80 + (%loop% * 0x28))
         PATCH_IF ranged_curing=1 BEGIN
-          WRITE_SHORT %range_offset% 0x0a
-          SPRINT text_update update_range_touch_short
+          SET range_offset = (0x80 + (%loop% * 0x28))
+          WRITE_SHORT %range_offset% %curing_range%
+          SPRINT text_update update_curing_range
           LPM update_spell_descriptions
-        END ELSE PATCH_IF ranged_curing=2 BEGIN
-          WRITE_SHORT %range_offset% 0x14
-          SPRINT text_update update_range_touch_medium
-          LPM update_spell_descriptions
-        END ELSE PATCH_IF ranged_curing=3 BEGIN
-          WRITE_SHORT %range_offset% 0x1e
-          SPRINT text_update update_range_touch_long
-          LPM update_spell_descriptions
+          SET "loop" = %loop% + 1
         END
         SET "loop" = %loop% + 1
       END
