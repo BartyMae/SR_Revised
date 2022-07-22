@@ -89,13 +89,9 @@ ACTION_IF (ranged_curing>0 AND ranged_curing<4) BEGIN
       SET "loop" = 0
       WHILE (%loop% < %number_of_headers%) BEGIN
         SET range_offset = (0x80 + (%loop% * 0x28))
-        PATCH_IF ranged_curing=1 BEGIN
-          SET range_offset = (0x80 + (%loop% * 0x28))
-          WRITE_SHORT %range_offset% %curing_range%
-          SPRINT text_update update_curing_range
-          LPM update_spell_descriptions
-          SET "loop" = %loop% + 1
-        END
+        WRITE_SHORT %range_offset% %curing_range%
+        SPRINT text_update update_curing_range
+        LPM update_spell_descriptions
         SET "loop" = %loop% + 1
       END
     END
