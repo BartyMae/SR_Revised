@@ -777,6 +777,7 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = belt09 END
 END
 
+/*
 ACTION_IF FILE_EXISTS_IN_GAME ~dvwere.spl~ THEN BEGIN  // Cloak of the Wolf's Shapeshifts Wolfwere
 COPY_EXISTING ~dvwere.spl~ ~override~
 LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = dvwere END
@@ -794,6 +795,7 @@ COPY_EXISTING ~dvjelly.spl~ ~override~
 LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = dvjelly END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = dvjelly END
 END
+*/
 
 ACTION_IF FILE_EXISTS_IN_GAME ~hamm11.spl~ THEN BEGIN  // Runehammer's Champion's Strength
 COPY_EXISTING ~hamm11.spl~ ~override~
@@ -805,11 +807,13 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = sw1h65 END
 END
 
+/*
 ACTION_IF FILE_EXISTS_IN_GAME ~dvtroll.spl~ THEN BEGIN  // Pearly White Ioun Stone's Shapeshifts Troll
 COPY_EXISTING ~dvtroll.spl~ ~override~
 LPF DELETE_EFFECT INT_VAR opcode_to_delete = 206 STR_VAR match_resource = dvtroll END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = dvtroll END
 END
+*/
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ring27.spl~ THEN BEGIN  // Ring of Fire Control's Fire Shield
 COPY_EXISTING ~ring27.spl~ ~override~
