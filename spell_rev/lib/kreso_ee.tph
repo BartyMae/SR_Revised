@@ -777,7 +777,7 @@ LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR re
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 2 STR_VAR resource = belt09 END
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~dvwere.spl~ THEN BEGIN  // Cloak of the Wolf's Shapeshifts Wolfwere
+ACTION_IF FILE_EXISTS_IN_GAME ~dvwere.spl~ THEN BEGIN  // Cloak of the Wolf's Shapeshifts Werewolf
 COPY_EXISTING ~dvwere.spl~ ~override~
 LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = dvwere END
 LPF ADD_SPELL_EFFECT INT_VAR opcode = 321 insert_point = 0 target = 1 STR_VAR resource = dvwere END
