@@ -33,8 +33,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell BEGIN
 ~spwi714~ => 1 // prismatic spray
 //~spwi810~ => 1 // incendiary cloud (stationary)
 ~spwi911~ => 1 // meteor swarm
-~spwi922~ => 1 // dragon's breath
-~spwi925~ => 1 // comet
+// ~spwi922~ => 1 // dragon's breath
+// ~spwi925~ => 1 // comet
 
 // AoE spells without MR issues
 
@@ -118,7 +118,7 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
     ~dvwi523~ // fireburst
     ~dvwi615~ // chain lightning
     ~dvwi913~ // wail of the banshee
-    ~dvwi922~ // dragon's breath
+    //~dvwi922~ // dragon's breath
   BEGIN
     ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
       OUTER_SET $spell("%resource%")=1
@@ -132,7 +132,7 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
   OUTER_SET $spell("spwi523")=0 // fireburst
   OUTER_SET $spell("spwi615")=0 // chain lightning
   OUTER_SET $spell("spwi913")=0 // wail of the banshee
-  OUTER_SET $spell("spwi922")=0 // dragon's breath
+  //OUTER_SET $spell("spwi922")=0 // dragon's breath
 END
 
 ACTION_FOR_EACH resource IN // IR compatibility
