@@ -1610,7 +1610,6 @@ COPY ~spell_rev\spwi1##\spwi116.spl~     ~override~  // Sleep
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 4742 parameter1 = RESOLVE_STR_REF(@23008) END
 COPY ~spell_rev\spwi1##\scrl81.itm~      ~override~
   SAY NAME2 @429    SAY IDENTIFIED_DESC   @430
-COPY ~spell_rev\spwi1##\spwi116d.spl~    ~override~
 COPY ~spell_rev\spwi1##\spwi116i.eff~    ~override~
 
 COPY ~spell_rev\spwi1##\spwi117.spl~     ~override~  // Chill Touch
@@ -2211,7 +2210,7 @@ COPY ~spell_rev\spwi3##\dvwi316i.eff~    ~override~
 COPY ~spell_rev\spwi3##\dvwi316i.spl~    ~override~
 COPY ~spell_rev\spwi3##\dvwi316.eff~     ~override~
 COPY ~spell_rev\spwi3##\dvwi316.spl~     ~override~
-  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23003) END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23000) END
 
 COPY ~spell_rev\spwi3##\spwi317.spl~     ~override~  // Ghost Armor
   SAY NAME1 @531    SAY UNIDENTIFIED_DESC @532
