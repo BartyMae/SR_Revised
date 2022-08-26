@@ -310,8 +310,8 @@ COPY ~spell_rev\shared\spdr301.spl~      ~override~  // Lightning Bolt
   SAY NAME1 @515    SAY UNIDENTIFIED_DESC @516
 COPY ~spell_rev\shared\spdr401.spl~      ~override~  // Improved Invisibility
   SAY NAME1 @569    SAY UNIDENTIFIED_DESC @570
-COPY ~spell_rev\shared\spdr501.spl~      ~override~  // Cone of Cold (replaces Chaos)
-  SAY NAME1 @615    SAY UNIDENTIFIED_DESC @616
+COPY ~spell_rev\shared\spdr501.spl~      ~override~  // Chaos
+  SAY NAME1 @625000    SAY UNIDENTIFIED_DESC @626000
 COPY ~spell_rev\shared\spdr601.spl~      ~override~  // Chain Lightning
   SAY NAME1 @687    SAY UNIDENTIFIED_DESC @688
 COPY ~spell_rev\shared\spdr601d.spl~     ~override~

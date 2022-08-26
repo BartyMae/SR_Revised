@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 (Revised v1.3.902)~
+VERSION ~v4 (Revised v1.3.903)~
 
 ALWAYS
   OUTER_PATCH ~~ BEGIN
@@ -58,11 +58,13 @@ ACTION_IF install_tobex && (ENGINE_IS ~tob~) BEGIN
     REPLACE_TEXTUALLY ~Apply Concentration Check On Damage=0~ ~Apply Concentration Check On Damage=1~
 END
 
+/*
 ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
   COPY_EXISTING ~concentr.2da~ ~override~
     SET_2DA_ENTRY 2 1 2 ~1~ // enable concentration check on EE games
   BUT_ONLY
 END
+*/
 
 INCLUDE ~spell_rev/lib/ds.tph~
 
