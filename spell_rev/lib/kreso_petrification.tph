@@ -2,7 +2,7 @@
 
 ACTION_IF petrification=0 BEGIN
 
-  COPY ~spell_rev\shared\alternatives\spwi604.spl~ ~override~
+  COPY ~spell_rev\spalt\spwi604.spl~ ~override~
 
   COPY_EXISTING_REGEXP GLOB ~.*\.itm$~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
@@ -124,8 +124,8 @@ ACTION_IF petrification >= 1 BEGIN
   END
 
   ACTION_IF petrification=2 BEGIN
-    COPY ~spell_rev\shared\alternatives\spwi604d.spl~ ~override~
-    COPY ~spell_rev\shared\alternatives\spwi604d.eff~ ~override~
+    COPY ~spell_rev\spalt\spwi604d.spl~ ~override~
+    COPY ~spell_rev\spalt\spwi604d.eff~ ~override~
   END
 
 END

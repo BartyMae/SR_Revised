@@ -128,42 +128,42 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~misc3l.spl~) THEN BEGIN
 END
 
 // SRR spell updates
-COPY ~spell_rev\shared\item_rev\dvbram.spl~ ~override~ // Battering Ram
-COPY ~spell_rev\shared\item_rev\dvmcure.spl~ ~override~ // Mass Cure
+COPY ~spell_rev\spir\dvbram.spl~ ~override~ // Battering Ram
+COPY ~spell_rev\spir\dvmcure.spl~ ~override~ // Mass Cure
   WRITE_SHORT 0x98 %dvmscure%
   SAY NAME1 @177
-ADD_PROJECTILE ~spell_rev\shared\item_rev\dvpexpl.pro~
-COPY ~spell_rev\shared\item_rev\dvpexpl.spl~ ~override~ // Prismatic Explosion
+ADD_PROJECTILE ~spell_rev\spir\dvpexpl.pro~
+COPY ~spell_rev\spir\dvpexpl.spl~ ~override~ // Prismatic Explosion
   WRITE_SHORT 0x98 %dvpexpl%
   SAY NAME1 @401400
-COPY ~spell_rev\shared\item_rev\dvdomina.spl~ ~override~ // Domination
+COPY ~spell_rev\spir\dvdomina.spl~ ~override~ // Domination
   SAY NAME1 @621
-COPY ~spell_rev\shared\item_rev\dvreson.spl~ ~override~ // Resonating
+COPY ~spell_rev\spir\dvreson.spl~ ~override~ // Resonating
   WRITE_SHORT 0x98 %dvsndbr%
-COPY ~spell_rev\shared\item_rev\dvsburst.spl~ ~override~ // Sonic Blast
+COPY ~spell_rev\spir\dvsburst.spl~ ~override~ // Sonic Blast
   WRITE_SHORT 0x98 %dvsndbr%
-COPY ~spell_rev\shared\item_rev\hamm11.spl~ ~override~ // Champion's Strength
+COPY ~spell_rev\spir\hamm11.spl~ ~override~ // Champion's Strength
   SAY NAME1 @163
-COPY ~spell_rev\shared\item_rev\misc3l.spl~ ~override~ // Silence
+COPY ~spell_rev\spir\misc3l.spl~ ~override~ // Silence
   WRITE_SHORT 0x98 %dvsilenc%
   SAY NAME1 @51
-COPY ~spell_rev\shared\item_rev\npshld.spl~ ~override~ // Protection from Missiles
+COPY ~spell_rev\spir\npshld.spl~ ~override~ // Protection from Missiles
   SAY NAME1 @180500
-COPY ~spell_rev\shared\item_rev\misc3c.eff~ ~override~ // Summon Efreeti
+COPY ~spell_rev\spir\misc3c.eff~ ~override~ // Summon Efreeti
 ACTION_IF slowing_web=1 BEGIN
-COPY ~spell_rev\shared\alternatives\wand14.spl~ ~override~ // Web
+COPY ~spell_rev\spalt\wand14.spl~ ~override~ // Web
   SAY NAME1 @477
 END ELSE BEGIN
-COPY ~spell_rev\shared\item_rev\wand14.spl~ ~override~ // Web
+COPY ~spell_rev\spir\wand14.spl~ ~override~ // Web
   SAY NAME1 @477
 END
 
 ACTION_IF dispel_globes=2 BEGIN
-  COPY ~spell_rev\shared\item_rev\misc73n.spl~ ~override\misc73.spl~ // Globe of Power
-  COPY ~spell_rev\shared\item_rev\dvginvuln.spl~ ~override\dvginvul.spl~ // Globe of Invulnerability
+  COPY ~spell_rev\spir\misc73n.spl~ ~override\misc73.spl~ // Globe of Power
+  COPY ~spell_rev\spir\dvginvuln.spl~ ~override\dvginvul.spl~ // Globe of Invulnerability
 END ELSE ACTION_IF dispel_globes=0 BEGIN
-  COPY ~spell_rev\shared\item_rev\misc73d.spl~ ~override\misc73.spl~ // Globe of Power
-  COPY ~spell_rev\shared\item_rev\dvginvuld.spl~ ~override\dvginvul.spl~ // Globe of Invulnerability
+  COPY ~spell_rev\spir\misc73d.spl~ ~override\misc73.spl~ // Globe of Power
+  COPY ~spell_rev\spir\dvginvuld.spl~ ~override\dvginvul.spl~ // Globe of Invulnerability
 END
 
 // Fix tooltips

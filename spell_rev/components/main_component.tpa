@@ -253,10 +253,10 @@ COPY ~spell_rev\shared\spcl222.spl~      ~override~  // Remove Fear (Resist Fear
 /* ---------------- Inquisitor Abilities ---------------- */
 
 ACTION_IF alternative_dispel_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spcl231.save.spl~     ~override\spcl231.spl~  // Dispel Magic
+COPY ~spell_rev\spalt\spcl231.save.spl~     ~override\spcl231.spl~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spcl231.breach.spl~     ~override\spcl231.spl~  // Dispel Magic
+COPY ~spell_rev\spalt\spcl231.breach.spl~     ~override\spcl231.spl~  // Dispel Magic
   SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
 END ELSE BEGIN
 COPY ~spell_rev\shared\spcl231.spl~      ~override~  // Dispel Magic
@@ -299,7 +299,7 @@ COPY ~spell_rev\shared\spcl742d.eff~      ~override~
 COPY ~spell_rev\shared\spdr101.spl~      ~override~  // Chromatic Orb
   SAY NAME1 @433000    SAY UNIDENTIFIED_DESC @434000
 ACTION_IF slowing_web=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spdr201.spl~      ~override~  // Web
+COPY ~spell_rev\spalt\spdr201.spl~      ~override~  // Web
   SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478000
 END ELSE BEGIN
 COPY ~spell_rev\shared\spdr201.spl~      ~override~  // Web
@@ -367,10 +367,10 @@ COPY ~spell_rev\shared\dvin108.spl~     ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 1476 parameter1 = RESOLVE_STR_REF(@23000) END
 END
 ACTION_IF alternative_dispel_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spin112.save.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
+COPY ~spell_rev\spalt\spin112.save.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spin112.breach.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
+COPY ~spell_rev\spalt\spin112.breach.spl~     ~override\spin112.spl~  // Yeslick Dispel Magic
   SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
 END ELSE BEGIN
 COPY ~spell_rev\shared\spin112.spl~      ~override~  // Yeslick Dispel Magic
@@ -588,9 +588,9 @@ COPY ~spell_rev\sppr2##\sppr202.spl~     ~override~  // Barkskin
   SAY NAME1 @33    SAY UNIDENTIFIED_DESC @34
 
 ACTION_IF targetable_chant=1 BEGIN
-COPY ~spell_rev\shared\alternatives\sppr203.spl~     ~override~  // Chant
+COPY ~spell_rev\spalt\sppr203.spl~     ~override~  // Chant
   SAY NAME1 @35000    SAY UNIDENTIFIED_DESC @36000
-COPY ~spell_rev\shared\alternatives\sppr203d.spl~    ~override~
+COPY ~spell_rev\spalt\sppr203d.spl~    ~override~
 END ELSE BEGIN
 COPY ~spell_rev\sppr2##\sppr203.spl~     ~override~  // Chant
   SAY NAME1 @35    SAY UNIDENTIFIED_DESC @36
@@ -753,10 +753,10 @@ COPY ~spell_rev\sppr3##\sppr302.spl~     ~override~  // Call Lightning
   SAY NAME1 @73    SAY UNIDENTIFIED_DESC @74
 
 ACTION_IF alternative_dispel_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\sppr303.save.spl~     ~override\sppr303.spl~  // Dispel Magic
+COPY ~spell_rev\spalt\sppr303.save.spl~     ~override\sppr303.spl~  // Dispel Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\sppr303.breach.spl~     ~override\sppr303.spl~  // Dispel Magic
+COPY ~spell_rev\spalt\sppr303.breach.spl~     ~override\sppr303.spl~  // Dispel Magic
   SAY NAME1 @75    SAY UNIDENTIFIED_DESC @76000000
 END ELSE BEGIN
 COPY ~spell_rev\sppr3##\sppr303.spl~     ~override~  // Dispel Magic
@@ -1535,14 +1535,14 @@ APPEND ~spell.ids~ ~2106 WIZARD_OBSCURING_MIST~
 
 ACTION_IF blindness=1 BEGIN
 ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN // -10 THAC0 vs. -4 THAC0 for blindness
-COPY ~spell_rev\shared\alternatives\spwi106.spl~     ~override~  // (original Blindness)
+COPY ~spell_rev\spalt\spwi106.spl~     ~override~  // (original Blindness)
   SAY NAME1 @411000    SAY UNIDENTIFIED_DESC @412000
-COPY ~spell_rev\shared\alternatives\scrl71.itm~      ~override~
+COPY ~spell_rev\spalt\scrl71.itm~      ~override~
   SAY NAME2 @411000    SAY IDENTIFIED_DESC   @412000
 END ELSE BEGIN
-COPY ~spell_rev\shared\alternatives\spwi106.spl~     ~override~  // (original Blindness)
+COPY ~spell_rev\spalt\spwi106.spl~     ~override~  // (original Blindness)
   SAY NAME1 @411000    SAY UNIDENTIFIED_DESC @412000000
-COPY ~spell_rev\shared\alternatives\scrl71.itm~      ~override~
+COPY ~spell_rev\spalt\scrl71.itm~      ~override~
   SAY NAME2 @411000    SAY IDENTIFIED_DESC   @412000000
 END
 END
@@ -1657,27 +1657,27 @@ COPY ~spell_rev\spwi1##\spwi120d.spl~    ~override~
 
 ACTION_IF NOT GAME_IS ~eet~ BEGIN
 ACTION_IF pick_familiar=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi123.spl~     ~override~  // Find Familiar
+COPY ~spell_rev\spalt\spwi123.spl~     ~override~  // Find Familiar
   SAY NAME1 @439    SAY UNIDENTIFIED_DESC @440
 COPY ~spell_rev\spwi1##\scrl6d.itm~      ~override~
   SAY NAME2 @439    SAY IDENTIFIED_DESC   @440
-COPY ~spell_rev\shared\alternatives\spwi123a.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123a.spl~     ~override~
   SAY NAME1 @8025
-COPY ~spell_rev\shared\alternatives\spwi123b.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123b.spl~     ~override~
   SAY NAME1 @8010
-COPY ~spell_rev\shared\alternatives\spwi123c.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123c.spl~     ~override~
   SAY NAME1 @8015
-COPY ~spell_rev\shared\alternatives\spwi123d.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123d.spl~     ~override~
   SAY NAME1 @8035
-COPY ~spell_rev\shared\alternatives\spwi123e.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123e.spl~     ~override~
   SAY NAME1 @8000
-COPY ~spell_rev\shared\alternatives\spwi123f.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123f.spl~     ~override~
   SAY NAME1 @8020
-COPY ~spell_rev\shared\alternatives\spwi123g.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123g.spl~     ~override~
   SAY NAME1 @8005
-COPY ~spell_rev\shared\alternatives\spwi123h.spl~     ~override~
+COPY ~spell_rev\spalt\spwi123h.spl~     ~override~
   SAY NAME1 @8030
-COPY ~spell_rev\shared\alternatives\dvfindfa.2da~     ~override~
+COPY ~spell_rev\spalt\dvfindfa.2da~     ~override~
 COPY_EXISTING FAMIL1.dlg override
   DECOMPILE_DLG_TO_D
     REPLACE_TEXTUALLY CASE_INSENSITIVE ~OR(2)
@@ -1981,7 +1981,7 @@ COPY_EXISTING ~web.pro~                  ~override~  // Web projectile
   WRITE_SHORT 0x204 170
   WRITE_SHORT 0x206 170  // 10' radius AoE
 ACTION_IF slowing_web=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi215.spl~     ~override~  // Web
+COPY ~spell_rev\spalt\spwi215.spl~     ~override~  // Web
   SAY NAME1 @477    SAY UNIDENTIFIED_DESC @478000
 COPY ~spell_rev\spwi2##\scrl99.itm~      ~override~
   SAY NAME2 @477    SAY IDENTIFIED_DESC   @478000
@@ -2077,12 +2077,12 @@ COPY ~spell_rev\spwi3##\scrl1d.itm~      ~override~
   SAY NAME2 @501    SAY IDENTIFIED_DESC   @502
 
 ACTION_IF alternative_remove_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi302.save.spl~     ~override\spwi302.spl~  // Remove Magic
+COPY ~spell_rev\spalt\spwi302.save.spl~     ~override\spwi302.spl~  // Remove Magic
   SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME2 @503    SAY IDENTIFIED_DESC   @504000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi302.breach.spl~     ~override\spwi302.spl~  // Remove Magic
+COPY ~spell_rev\spalt\spwi302.breach.spl~     ~override\spwi302.spl~  // Remove Magic
   SAY NAME1 @503    SAY UNIDENTIFIED_DESC @504000000
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME2 @503    SAY IDENTIFIED_DESC   @504000000
@@ -2271,12 +2271,12 @@ COPY ~spell_rev\spwi3##\melfmet.itm~     ~override~
   SAY NAME1 @8062   SAY NAME2 @8046
 
 ACTION_IF alternative_dispel_magic=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi326.save.spl~     ~override\spwi326.spl~  // Dispel Magic
+COPY ~spell_rev\spalt\spwi326.save.spl~     ~override\spwi326.spl~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000
 END ELSE ACTION_IF alternative_remove_magic=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi326.breach.spl~     ~override\spwi326.spl~  // Dispel Magic
+COPY ~spell_rev\spalt\spwi326.breach.spl~     ~override\spwi326.spl~  // Dispel Magic
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000000
 COPY ~spell_rev\spwi3##\scrla7.itm~      ~override~
   SAY NAME1 @547    SAY UNIDENTIFIED_DESC @548000000
@@ -2330,12 +2330,12 @@ COPY ~spell_rev\spwi4##\scrl1y.itm~      ~override~
   SAY NAME2 @569    SAY IDENTIFIED_DESC   @570
 
 ACTION_IF dispel_globes=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi406n.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
+COPY ~spell_rev\spalt\spwi406n.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572
 COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
   SAY NAME2 @571    SAY IDENTIFIED_DESC   @572
 END ELSE ACTION_IF dispel_globes=0 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi406d.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
+COPY ~spell_rev\spalt\spwi406d.spl~     ~override\spwi406.spl~  // Minor Globe of Invulnerability
   SAY NAME1 @571    SAY UNIDENTIFIED_DESC @572000
 COPY ~spell_rev\spwi4##\scrl1z.itm~      ~override~
   SAY NAME2 @571    SAY IDENTIFIED_DESC   @572000
@@ -2450,9 +2450,9 @@ COPY ~spell_rev\spwi4##\enchwp~          ~override~
 
 ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 ACTION_IF ee_enchanted_weapon=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi417.spl~     ~override~  // Enchanted Weapon
+COPY ~spell_rev\spalt\spwi417.spl~     ~override~  // Enchanted Weapon
   SAY NAME1 @593    SAY UNIDENTIFIED_DESC @594000
-COPY ~spell_rev\shared\alternatives\scrl6m.itm~      ~override~
+COPY ~spell_rev\spalt\scrl6m.itm~      ~override~
   SAY NAME2 @593    SAY IDENTIFIED_DESC   @594000
 END
 END
@@ -2635,10 +2635,10 @@ COPY ~spell_rev\spwi5##\spwi507d.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi507d.eff~     ~override~
 
 ACTION_IF chaos=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi508.spl~     ~override~  // Chaos
+COPY ~spell_rev\spalt\spwi508.spl~     ~override~  // Chaos
   SAY NAME1 @625000    SAY UNIDENTIFIED_DESC @626000
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 14782 parameter1 = RESOLVE_STR_REF(@23012) END
-COPY ~spell_rev\shared\alternatives\scrl5p.itm~      ~override~
+COPY ~spell_rev\spalt\scrl5p.itm~      ~override~
   SAY NAME2 @625000    SAY IDENTIFIED_DESC   @626000
 END ELSE BEGIN
 COPY ~spell_rev\spwi5##\spwi508.spl~     ~override~  // Waves of Fatigue (replaces Chaos)
@@ -2656,9 +2656,9 @@ COPY ~spell_rev\spwi5##\scrl5q.itm~      ~override~
 COPY ~spell_rev\spwi5##\spwi509i.eff~     ~override~
 
 ACTION_IF spell_immunity=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi510.spl~     ~override~
+COPY ~spell_rev\spalt\spwi510.spl~     ~override~
   SAY NAME1 @629000    SAY UNIDENTIFIED_DESC @630000
-COPY ~spell_rev\shared\alternatives\dvscrlsi.itm~      ~override~
+COPY ~spell_rev\spalt\dvscrlsi.itm~      ~override~
   SAY NAME2 @629000    SAY IDENTIFIED_DESC   @630000
 COPY ~spell_rev\spwi5##\spwi590.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi591.spl~     ~override~
@@ -2669,21 +2669,21 @@ COPY ~spell_rev\spwi5##\spwi595.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi596.spl~     ~override~
 COPY ~spell_rev\spwi5##\spwi597.spl~     ~override~
 END ELSE BEGIN
-COPY ~spell_rev\shared\alternatives\spwi590.spl~     ~override~  // SI: Abjuration replaced by Dispelling Screen
+COPY ~spell_rev\spalt\spwi590.spl~     ~override~  // SI: Abjuration replaced by Dispelling Screen
   SAY NAME1 @629    SAY UNIDENTIFIED_DESC @630
-COPY ~spell_rev\shared\alternatives\spwi591.spl~     ~override~  // SI: Conjuration replaced by 2x Animate Warrior
+COPY ~spell_rev\spalt\spwi591.spl~     ~override~  // SI: Conjuration replaced by 2x Animate Warrior
   SAY NAME1 @703    SAY UNIDENTIFIED_DESC @704
-COPY ~spell_rev\shared\alternatives\spwi592.spl~     ~override~  // SI: Divination replaced by Non-Detection + Improved Invisibility
+COPY ~spell_rev\spalt\spwi592.spl~     ~override~  // SI: Divination replaced by Non-Detection + Improved Invisibility
   SAY NAME1 @519    SAY UNIDENTIFIED_DESC @520
-COPY ~spell_rev\shared\alternatives\spwi593.spl~     ~override~  // SI: Enchantment replaced by Mind Blank
+COPY ~spell_rev\spalt\spwi593.spl~     ~override~  // SI: Enchantment replaced by Mind Blank
   SAY NAME1 @769    SAY UNIDENTIFIED_DESC @770
-COPY ~spell_rev\shared\alternatives\spwi594.spl~     ~override~  // SI: Illusion replaced by Oracle + True Seeing
+COPY ~spell_rev\spalt\spwi594.spl~     ~override~  // SI: Illusion replaced by Oracle + True Seeing
   SAY NAME1 @677    SAY UNIDENTIFIED_DESC @678
-COPY ~spell_rev\shared\alternatives\spwi595.spl~     ~override~  // SI: Evocation replaced by Protection from Energy
+COPY ~spell_rev\spalt\spwi595.spl~     ~override~  // SI: Evocation replaced by Protection from Energy
   SAY NAME1 @771    SAY UNIDENTIFIED_DESC @772
-COPY ~spell_rev\shared\alternatives\spwi596.spl~     ~override~  // SI: Necromancy replaced by Invisible Stalker + Summon Nishruu
+COPY ~spell_rev\spalt\spwi596.spl~     ~override~  // SI: Necromancy replaced by Invisible Stalker + Summon Nishruu
   SAY NAME1 @705    SAY UNIDENTIFIED_DESC @706
-COPY ~spell_rev\shared\alternatives\spwi597.spl~     ~override~  // SI: Alteration replaced by Ghostform
+COPY ~spell_rev\spalt\spwi597.spl~     ~override~  // SI: Alteration replaced by Ghostform
   SAY NAME1 @767    SAY UNIDENTIFIED_DESC @768
 END
 
@@ -2706,7 +2706,7 @@ COPY ~spell_rev\spwi5##\scrl6u.itm~      ~override~
 
 ACTION_IF aoe_lower_resistance=1 BEGIN
 ADD_PROJECTILE ~spell_rev\projectles\dvlowres.pro~
-COPY ~spell_rev\shared\alternatives\spwi514.spl~     ~override~  // Lower Resistance
+COPY ~spell_rev\spalt\spwi514.spl~     ~override~  // Lower Resistance
   SAY NAME1 @637    SAY UNIDENTIFIED_DESC @638000
   WRITE_SHORT 0x98 %dvlowres%
   SET "loop" = 42
@@ -2899,12 +2899,12 @@ COPY ~spell_rev\spwi6##\stalkesu.itm~    ~override~
 COPY ~spell_rev\spwi6##\stalker.itm~     ~override~
 
 ACTION_IF dispel_globes=2 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi602n.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
+COPY ~spell_rev\spalt\spwi602n.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664
 COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
   SAY NAME2 @663    SAY IDENTIFIED_DESC   @664
 END ELSE ACTION_IF dispel_globes=0 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi602d.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
+COPY ~spell_rev\spalt\spwi602d.spl~     ~override\spwi602.spl~  // Globe of Invulnerability
   SAY NAME1 @663    SAY UNIDENTIFIED_DESC @664000
 COPY ~spell_rev\spwi6##\scrl7f.itm~      ~override~
   SAY NAME2 @663    SAY IDENTIFIED_DESC   @664000
@@ -3474,7 +3474,7 @@ COPY ~spell_rev\spwi9##\scrl9r.itm~      ~override~
   SAY NAME2 @821    SAY IDENTIFIED_DESC   @822
 
 ACTION_IF resist_imprisonment=1 BEGIN
-COPY ~spell_rev\shared\alternatives\spwi910.spl~     ~override~  // Imprisonment
+COPY ~spell_rev\spalt\spwi910.spl~     ~override~  // Imprisonment
   SAY NAME1 @823    SAY UNIDENTIFIED_DESC @824000
 COPY ~spell_rev\spwi9##\scrl9s.itm~      ~override~
   SAY NAME2 @823    SAY IDENTIFIED_DESC   @824000
