@@ -505,7 +505,7 @@ Casting Time: 1
 Area of Effect: 15' radius
 Saving Throw: None
 
-The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 15 foot radius centered on the point selected by the caster.~
+The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 15' radius centered on the point selected by the caster.~
 
 @469=~Melf's Acid Arrow~
 @470=~Melf's Acid Arrow
@@ -660,7 +660,7 @@ Casting Time: 2
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Breath partial
 
-The Sound Blast spell blasts an area with a tremendous cacophony. Enemies within 5 feet of the epicenter suffer 4D4 crushing damage and must save vs. breath at a -2 penalty or be deafened for 1 turn, while those only within 10 feet instead suffer 2D4 crushing damage and are not defeaned. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Break Enchantment, Cure Disease, Dispel Magic, Heal, or Greater Restoration spell.~
+The Sound Burst spell blasts an area with a tremendous cacophony. Enemies within 5 feet of the epicenter suffer 4D4 crushing damage and must save vs. breath at a -2 penalty or be deafened for 1 turn, while those only within 10 feet instead suffer 2D4 crushing damage and are not defeaned. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Break Enchantment, Cure Disease, Dispel Magic, Heal, or Greater Restoration spell.~
 
 @493=~Glitterdust~
 @494=~Glitterdust
@@ -941,7 +941,7 @@ Casting Time: 3
 Area of Effect: 10' radius
 Saving Throw: Breath half
 
-Upon casting this spell, the caster hurls a magical skull at the chosen area, where it is stationary and floats until a creature comes within 7.5 feet of the trap. When this happens, the skull is triggered and explodes, and everyone within a 10 foot radius suffers 1D6 magic damage for every experience level of the caster, up to a maximum of 10D6 at 10th level. Those who make a save vs. breath at a -2 penalty will receive only half damage. When casting this spell, it is wise to set it far away from the party to prevent it from being set off accidentally.~
+Upon casting this spell, the caster hurls a magical skull at the chosen area, where it is stationary and floats until a creature comes within 7.5 feet of the trap. When this happens, the skull is triggered and explodes, and everyone within a 10' radius suffers 1D6 magic damage for every experience level of the caster, up to a maximum of 10D6 at 10th level. Those who make a save vs. breath at a -2 penalty will receive only half damage. When casting this spell, it is wise to set it far away from the party to prevent it from being set off accidentally.~
 
 @527=~Vampiric Touch~
 @528=~Vampiric Touch
@@ -1177,7 +1177,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 10' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
+This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 5' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
 
 @567=~Ice Storm~
 @568=~Ice Storm
@@ -1189,7 +1189,7 @@ Casting Time: 4
 Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast, great magical hailstones pound down for 5 rounds within a 15 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 75%, and receive 2D8 cold damage for each round they remain inside the storm.~
+When this spell is cast, great magical hailstones pound down for 5 rounds within a 15' radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 75%, and receive 2D8 cold damage for each round they remain inside the storm.~
 
 @569=~Improved Invisibility~
 @570=~Improved Invisibility
@@ -1440,7 +1440,7 @@ Casting Time: 4
 Area of Effect: Special
 Saving Throw: None
 
-This spell protects the wizard by surrounding them with a circular wall of flames. This shield not only grants a +50% bonus to fire and cold resistance, but opponents that hit the caster with a weapon or spell from within a 10' radius will suffer 1D6 + 1/two levels fire damage, up to a maximum of 1D6 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the fire shield. Magic resistance does not affect this spell.~
+This spell protects the wizard by surrounding them with a circular wall of flames. This shield not only grants a +50% bonus to fire and cold resistance, but opponents that hit the caster with a weapon or spell from within a 5' radius will suffer 1D6 + 1/two levels fire damage, up to a maximum of 1D6 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the fire shield. Magic resistance does not affect this spell.~
 
 @597=~Secret Word~
 @598=~Secret Word
@@ -1565,7 +1565,7 @@ Casting Time: 4
 Area of Effect: Target, and anyone within 10'
 Saving Throw: Breath partial
 
-When this spell is cast, a glowing orb of emerald acid streaks towards the target and explodes, drenching everyone within 10 feet in potent acid. Each creature in the area immediately suffers 1D4 acid damage for each level of experience of the caster, up to a maximum of 10D4 at 10th level. After the initial round, those covered in the sphere's acid continue to suffer two less dice of acid damage in the following rounds. For example, an 8th-level wizard inflicts 8D4 damage with this spell in the first round, 6D4 in the second round, 4D4 in the third round, and 2D4 in the fourth round. During each round except the first, those affected can make a save vs. breath at a -2 penalty to reduce that round's damage by half and avoid further damage in any remaining rounds.~
+When this spell is cast, a glowing orb of emerald acid streaks towards the target and explodes, drenching everyone within a 10' radius in potent acid. Each creature in the area immediately suffers 1D4 acid damage for each level of experience of the caster, up to a maximum of 10D4 at 10th level. After the initial round, those covered in the sphere's acid continue to suffer two less dice of acid damage in the following rounds. For example, an 8th-level wizard inflicts 8D4 damage with this spell in the first round, 6D4 in the second round, 4D4 in the third round, and 2D4 in the fourth round. During each round except the first, those affected can make a save vs. breath at a -2 penalty to reduce that round's damage by half and avoid further damage in any remaining rounds.~
 
 /*------------------Level 5------------------*/
 
@@ -1827,25 +1827,12 @@ School: Alteration
 Range: Long
 Duration: 1 round/level
 Casting Time: 5
-Area of Effect: 1 creature
-Saving Throw: None
-
-When cast upon a creature, this spell will lower their magic resistance by 10% + 2%/level, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
-
-For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 20. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 30% (initial casting) - 30% (current casting), which would leave the creature with 0% magic resistance after both spells have been cast.~
-
-@638000=~Lower Resistance
-Level: 5
-School: Alteration
-Range: Long
-Duration: 1 round/level
-Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: None
 
-This spell will lower the magic resistance of enemies within the area of effect by 2% for every experience level of the caster, up to a maximum of 40% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
+This spell will lower the magic resistance of enemies within the area of effect by 10 + 2% for every experience level of the caster, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
 
-For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 20%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 20% (initial casting) - 20% (current casting), which would leave the creature with 10% magic resistance after both spells have been cast.~
+For example, if a creature has 75% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 45%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 75% - 30% (initial casting) - 30% (current casting), which would leave the creature with 15% magic resistance after both spells have been cast.~
 
 @639=~Oracle~
 @640=~Oracle
@@ -2004,7 +1991,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 10' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
+This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 5' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
 
 /*------------------Level 6------------------*/
 
@@ -2571,7 +2558,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10 foot radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
+When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 5' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
 
 Red - 6D6 fire damage (save vs. breath half)
 Orange - Stun for 5 rounds (save vs. polymorph neg.)
@@ -2615,7 +2602,7 @@ Casting Time: 7
 Area of Effect: 15' radius
 Saving Throw: Breath half
 
-This spell creates a fireball that hovers at a point determined by the caster. The fireball will stay in position until someone walks within 10 feet of it. When this happens, the fireball is triggered and explodes, damaging everyone within a 15 foot radius. The explosion will deal 1D6 fire damage for each level of experience of the spellcaster, up to a maximum of 20D6 at 20th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
+This spell creates a fireball that hovers at a point determined by the caster. The fireball will stay in position until someone walks within 10 feet of it. When this happens, the fireball is triggered and explodes, damaging everyone within a 15' radius. The explosion will deal 1D6 fire damage for each level of experience of the spellcaster, up to a maximum of 20D6 at 20th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
 
 @741=~Finger of Death~
 @742=~Finger of Death
@@ -2998,7 +2985,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within 10 feet to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
+Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
 
 /*@785=~Symbol of Weakness~
 @786=~Symbol of Weakness
@@ -3010,7 +2997,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
+Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
 
 @787=~Abi-Dalzim's Horrid Wilting~
 @788=~Abi-Dalzim's Horrid Wilting
@@ -3080,7 +3067,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
+Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
 
 @795=~Symbol of Death~
 @796=~Symbol of Death
@@ -3092,7 +3079,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Death negates
 
-Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
+Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 
 @797=~Bigby's Icy Grasp~
 @798=~Bigby's Icy Grasp

@@ -2704,10 +2704,9 @@ COPY ~spell_rev\spwi5##\spwi513.spl~     ~override~  // Breach
 COPY ~spell_rev\spwi5##\scrl6u.itm~      ~override~
   SAY NAME2 @635    SAY IDENTIFIED_DESC   @636
 
-ACTION_IF aoe_lower_resistance=1 BEGIN
 ADD_PROJECTILE ~spell_rev\projectles\dvlowres.pro~
-COPY ~spell_rev\spalt\spwi514.spl~     ~override~  // Lower Resistance
-  SAY NAME1 @637    SAY UNIDENTIFIED_DESC @638000
+COPY ~spell_rev\spwi5##\spwi514.spl~     ~override~  // Lower Resistance
+  SAY NAME1 @637    SAY UNIDENTIFIED_DESC @638
   WRITE_SHORT 0x98 %dvlowres%
   SET "loop" = 42
   WHILE ("%loop%" > 0) BEGIN
@@ -2715,13 +2714,7 @@ COPY ~spell_rev\spalt\spwi514.spl~     ~override~  // Lower Resistance
     SET "loop" = "%loop%" - 1
   END
 COPY ~spell_rev\spwi5##\scrl6v.itm~      ~override~
-  SAY NAME2 @637    SAY IDENTIFIED_DESC   @638000
-END ELSE BEGIN
-COPY ~spell_rev\spwi5##\spwi514.spl~     ~override~  // Lower Resistance
-  SAY NAME1 @637    SAY UNIDENTIFIED_DESC @638
-COPY ~spell_rev\spwi5##\scrl6v.itm~      ~override~
   SAY NAME2 @637    SAY IDENTIFIED_DESC   @638
-END
 
 COPY ~spell_rev\spwi5##\spwi515.spl~     ~override~  // Oracle
   SAY NAME1 @639    SAY UNIDENTIFIED_DESC @640

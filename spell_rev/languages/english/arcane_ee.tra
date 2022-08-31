@@ -7,7 +7,7 @@ School: Conjuration
 Range: Medium
 Duration: 1 turn
 Casting Time: 1
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath partial
 
 A Grease spell covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at a +2 bonus or fall to the ground for 1 round. Those who enter the area or remain within it must make a saving throw each round until they reach the nearest non-greased surface. A creature that successfully makes their saving throw can walk within and through the grease, but at 25% of their normal movement rate. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.~
@@ -34,7 +34,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: None
 
-When the wizard casts a Burning Hands spell, a cone of searing flames shoots from their fingertips towards the designated point. Their hands must be held so as to send forth a fan-like sheet of flames: the wizard's thumbs must touch each other and their fingers must be spread. The burning hands send out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the caster. All creatures caught in the flames suffer 1D6 fire damage as well an additional 1D6 fire damage for every two extra experience levels of the caster, up to a maximum of 5D6 at 9th level.~
+When the wizard casts a Burning Hands spell, a cone of searing flames shoots from their fingertips towards the designated point. Their hands must be held so as to send forth a fan-like sheet of flames: the wizard's thumbs must touch each other and their fingers must be spread. The burning hands send out 10 foot-long jets of flame in a horizontal arc of about 90 degrees in front of the caster. All creatures caught in the flames suffer 1d6 fire damage as well an additional 1d6 fire damage for every two extra experience levels of the caster, up to a maximum of 5d6 at 9th level.~
 
 @407=~Charm Person~
 @408=~Charm Person
@@ -60,7 +60,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Spell negates
 
-Upon casting this spell, the wizard causes a vivid, fan-shaped spray of clashing colors to spring forth from their hand. The spray is 20 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster, while the effects differ depending upon the experience level of the caster and those affected. The effects are concurrent and cumulative.
+Upon casting this spell, the wizard causes a vivid, fan-shaped spray of clashing colors to spring forth from their hand. The spray is 30 feet in length and spread out in a horizontal arc of about 90 degrees in front of the caster, while the effects differ depending upon the experience level of the caster and those affected. The effects are concurrent and cumulative.
 
 Target's Hit Dice - Effects of Color Spray
  All enemies - Confusion for 1 round
@@ -74,7 +74,7 @@ School: Conjuration
 Range: Long
 Duration: 5 rounds
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
 When this spell is cast, a misty bank of fog billows out from the designated point, obscuring all sight. Everyone within the cloud suffers a -2 penalty to THAC0 while their visibility range is reduced by half, and anyone inside or outside the cloud trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to THAC0. Creatures that do not rely on sight can fight within the cloud without penalties.~
@@ -172,7 +172,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-One of the most popular 1st-level spells, this spell creates missiles of magical energy that dart forth from the wizard's fingertip and unerringly strike their target. Each missile deals 1D4 + 1 magic damage. For every two extra experience levels of the caster, the wizard gains an additional missile, up to a maximum of five missiles at 9th level.~
+One of the most popular 1st-level spells, this spell creates missiles of magical energy that dart forth from the wizard's fingertip and unerringly strike their target. Each missile deals 1d4 + 1 magic damage. For every two extra experience levels of the caster, the wizard gains an additional missile, up to a maximum of five missiles at 9th level.~
 
 @423=~Protection from Evil~
 @424=~Protection from Evil
@@ -208,7 +208,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: Special
 
-When the wizard touches a creature while this spell is in effect, a powerful electrical surge discharges upon the target. This surge deals 1D6 electrical damage and an additional 1D6 electrical damage for every two extra experience levels of the caster, up to a maximum of 5D6 at 9th level. The target must also save vs. breath or be stunned for 1 round. The spell expires once the caster makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed.~
+When the wizard touches a creature while this spell is in effect, a powerful electrical surge discharges upon the target. This surge deals 1d6 electrical damage and an additional 1d6 electrical damage for every two extra experience levels of the caster, up to a maximum of 5d6 at 9th level. The target must also save vs. breath or be stunned for 1 round. The spell expires once the caster makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed.~
 
 @429=~Sleep~
 @430=~Sleep
@@ -217,7 +217,7 @@ School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 When a wizard casts a Sleep spell, they cause a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a save vs. spell or fall asleep for the duration of the spell, though any further attempts to harm the targets will awaken them. Enemies that are higher level than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as constructs, dragons, elementals, and illusions are immune to magically-induced sleep.~
@@ -232,7 +232,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Special
 
-When the caster completes this spell, a blue glow encompasses their hand. This energy attacks the life force of any living creature upon which the wizard makes a successful melee attack. The touched creature suffers 1D6 cold damage and an additional 1D6 cold damage for every two extra experience levels of the caster, up to a maximum of 5D6 at 9th level. The target must also save vs. death or suffer a -2 penalty to THAC0 and damage for 5 rounds. The spell expires once the caster makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed.~
+When the caster completes this spell, a blue glow encompasses their hand. This energy attacks the life force of any living creature upon which the wizard makes a successful melee attack. The touched creature suffers 1d6 cold damage and an additional 1d6 cold damage for every two extra experience levels of the caster, up to a maximum of 5d6 at 9th level. The target must also save vs. death or suffer a -2 penalty to THAC0 and damage for 5 rounds. The spell expires once the caster makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed.~
 
 @433=~Chromatic Orb~
 @434=~Chromatic Orb
@@ -246,13 +246,13 @@ Saving Throw: Spell partial
 
 This spell causes a 2-foot-diameter sphere to appear in the caster's hand. When thrown, the sphere heads unerringly towards its target, dealing magic damage and causing different effects depending upon its color. As the level of the caster improves, both the damage dealt and number of colors known increases. The color of any given orb is chosen randomly from the colors known at the wizard's level, and the orb is occasionally even multicolored, causing multiple effects. The target cannot avoid the initial damage, but can save vs. spell to negate the secondary effects.
 
-1st: White, 1D4 damage - Light, -4 penalty to saving throws
-3rd: Aquamarine, 1D6 damage - Magnetism, -4 penalty to AC
-5th: Red, 1D8 damage - Wound, 1 bleeding damage every round
-7th: Green, 1D10 damage - Poison, 2 poison damage every round
-9th: Yellow, 2D6 damage - Blindness
-12th: Violet, 2D8 damage - Slow
-14th: Blue, 2D10 damage - Paralysis~
+1st: White, 1d4 damage - Light, -4 penalty to saving throws
+3rd: Aquamarine, 1d6 damage - Magnetism, -4 penalty to AC
+5th: Red, 1d8 damage - Wound, 1 bleeding damage every round
+7th: Green, 1d10 damage - Poison, 2 poison damage every round
+9th: Yellow, 2d6 damage - Blindness
+12th: Violet, 2d8 damage - Slow
+14th: Blue, 2d10 damage - Paralysis~
 
 @435=~Larloch's Minor Drain~
 @436=~Larloch's Minor Drain
@@ -362,14 +362,22 @@ Saving Throw: None
 By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
 
 1st: 2 gibberlings
-3rd: 3 gibberlings
-5th: 4 gibberlings
-7th: 5 gibberlings
+3rd: 2 gibberlings, 1 mutated gibberling
+5th: 1 gibberlings, 2 mutated gibberling
+7th: 3 mutated gibberlings
 
 Gibberling (1 HD):
  ST10, DE10, CO10, IN6, WI7, CH4
  HP 8, AC 10, THAC0 19, APR 1
- 1D6 Piercing (Short Sword)
+ 1d6 Piercing (Short Sword)
+ Saving Throws 13/17/15/13/17, AL CN
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Mutated Gibberling (2 HD):
+ ST11, DE11, CO11, IN6, WI7, CH4
+ HP 16, AC 7, THAC0 17, APR 2
+ 1d6 Piercing (Short Sword)
  Saving Throws 13/17/15/13/17, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%~
@@ -399,7 +407,7 @@ Casting Time: 2
 Area of Effect: Caster
 Saving Throw: None
 
-A Blur spell causes the wizard's form and spirit to become blurred, shifting and wavering. This distortion causes all attacks against the caster to be made with a -3 penalty, while all saving throws vs. spell are made by the caster with a +3 bonus. Multiple castings of this spell are not cumulative.~
+A Blur spell causes the wizard's form and spirit to become blurred, shifting, and wavering. This distortion causes all attacks against the caster to be made with a -3 penalty, while all saving throws vs. spell are made by the caster with a +3 bonus. Multiple castings of this spell are not cumulative.~
 
 @453=~Detect Alignment~
 @454=~Detect Alignment
@@ -434,7 +442,7 @@ School: Necromancy
 Range: Long
 Duration: 5 rounds
 Casting Time: 2
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 When this spell is cast, all enemies within the area of effect must save vs. spell or flee in terror. Certain creatures are immune to fear, including undead.~
@@ -461,7 +469,7 @@ Casting Time: 2
 Area of Effect: 1 creature or object
 Saving Throw: Breath partial
 
-This spell creates a ram-like force that can strike with considerable power. The ram can be used to open or smash locked, held, or magic-locked doors, as well as locked boxes or chests, but it does not raise barred gates or similar impediments. If used against a creature, the target suffers 2D8 crushing damage, and must save vs. breath at a -2 penalty to avoid being knocked away unconscious for 1 round.~
+This spell creates a ram-like force that can strike with considerable power. The ram can be used to open or smash locked, held, or magic-locked doors, as well as locked boxes or chests, but it does not raise barred gates or similar impediments. If used against a creature, the target suffers 2d8 crushing damage, and must save vs. breath at a -2 penalty to avoid being knocked away unconscious for 1 round.~
 
 @463=~Know Opponent~
 @464=~Know Opponent
@@ -494,10 +502,10 @@ School: Abjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 30 foot radius centered on the point selected by the caster.~
+The wizard instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 15' radius centered on the point selected by the caster.~
 
 @469=~Melf's Acid Arrow~
 @470=~Melf's Acid Arrow
@@ -509,7 +517,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-By means of this spell, the wizard creates a magical arrow that speeds to its target unerringly. The arrow deals 1D6 + 2 missile damage and 2D4 acid damage, and will deal an additional 2D4 acid damage at the end of each round for the duration of the spell, up to a maximum of 5 rounds at 15th level.~
+By means of this spell, the wizard creates a magical arrow that speeds to its target unerringly. The arrow deals 1d6 + 2 missile damage and 2d4 acid damage, and will deal an additional 2d4 acid damage at the end of each round for the duration of the spell, up to a maximum of 5 rounds at 15th level.~
 
 @471=~Mirror Image~
 @472=~Mirror Image
@@ -530,7 +538,7 @@ School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 2
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Poison partial
 
 When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud suffers a -2 penalty to THAC0 and AC, and must make a save vs. poison or be nauseated for 1 round. Nauseated creatures are unable to attack or cast spells, but can still move at half of their normal movement rate. A dispel magic will temporarily remove the nausea from a particular creature, but they will continue to be subjected to the spell's effects each round so long as they remain within the cloud. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
@@ -554,10 +562,10 @@ School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath partial
 
-A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
+A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 10 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
 
 @478000=~Web
 Level: 2
@@ -565,10 +573,10 @@ School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath partial
 
-A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means that the creature is caught in the webs, suffering a -4 penalty to AC, further reducing their movement rate to 25%, and becoming unable to attack or cast spells for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
+A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 10 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath at a -2 penalty can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means that the creature is caught in the webs, suffering a -4 penalty to AC, further reducing their movement rate to 25%, and becoming unable to attack or cast spells for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
 
 @479=~Agannazar's Scorcher~
 @480=~Agannazar's Scorcher
@@ -580,7 +588,7 @@ Casting Time: 2
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, a jet of flame appears at the caster's fingertips and bursts out toward one target of the caster's choice. The targeted creature will be hit by this flame for 3D6 damage, and the fiery ray will persist for one further round, burning the victim for another 3D6 fire damage. Other creatures who cross the path of the flame jet will also take damage as long as they stand in the flame. There is no saving throw against this spell, though anti-fire capabilities such as fire resistance will apply and may reduce or eliminate the damage.~
+Upon casting this spell, a jet of flame appears at the caster's fingertips and bursts out toward one target of the caster's choice. The targeted creature will be hit by this flame for 3d6 damage, and the fiery ray will persist for one further round, burning the victim for another 3d6 fire damage. Other creatures who cross the path of the flame jet will also take damage as long as they stand in the flame. There is no saving throw against this spell, though anti-fire capabilities such as fire resistance will apply and may reduce or eliminate the damage.~
 
 @481=~Ghoul Touch~
 @482=~Ghoul Touch
@@ -592,7 +600,7 @@ Casting Time: 2
 Area of Effect: Special
 Saving Throw: Death partial
 
-When the caster completes this spell, a red glow encompasses their hand. On successful touches from the caster, the spell deals 1D8 magic damage and paralyzes the target for 5 rounds (save vs. death at -2 neg. paralysis). The ghoul hand is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. Attacks with the ghoul hand are considered to be melee touch attacks (+4 bonus to THAC0), and Strength modifiers do not apply to THAC0 or damage. The ghoul hand lasts for the duration of the spell or until dispelled.~
+When the caster completes this spell, a red glow encompasses their hand. On successful touches from the caster, the spell deals 1d8 magic damage and paralyzes the target for 5 rounds (save vs. death at -2 neg. paralysis). The ghoul hand is considered to be of +1 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. Attacks with the ghoul hand are considered to be melee touch attacks (+4 bonus to THAC0), and Strength modifiers do not apply to THAC0 or damage. The ghoul hand lasts for the duration of the spell or until dispelled.~
 
 @483=~Vocalize~
 @484=~Vocalize
@@ -652,7 +660,7 @@ Casting Time: 2
 Area of Effect: Target, and enemies within 10'
 Saving Throw: Breath partial
 
-The Sound Brust spell blasts an area with a tremendous cacophony. Enemies within the area suffer 5D4 crushing damage, and must save vs. breath at a -2 penalty or be deafened for 1 turn. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Dispel Magic, Cure Disease, Heal, or Greater Restoration spell.~
+The Sound Burst spell blasts an area with a tremendous cacophony. Enemies within 5 feet of the epicenter suffer 4d4 crushing damage and must save vs. breath at a -2 penalty or be deafened for 1 turn, while those only within 10 feet instead suffer 2d4 crushing damage and are not defeaned. Deafened spellcasters have a 50% chance to miscast any spell. Deafness caused by this spell may be cured by a Break Enchantment, Cure Disease, Dispel Magic, Heal, or Greater Restoration spell.~
 
 @493=~Glitterdust~
 @494=~Glitterdust
@@ -661,7 +669,7 @@ School: Conjuration
 Range: Medium
 Duration: 1 turn
 Casting Time: 2
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 This spell creates a cloud of glittering golden particles within the area of effect. The sparkling dust dazzles all opponents within the area, revealing who are invisible and causing them to suffer a -2 penalty to THAC0 for 1 turn. Those affected must also save vs. breath to avoid becoming completely covered by the dust, which cannot be removed and continues to sparkle for 1 turn. Creatures failing their saving throw remain unable to successfully hide themselves until the dust fades. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
@@ -697,8 +705,8 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Hobgoblin Archer (2 HD):
  ST14, DE10, CO12, IN8, WI10, CH8
  HP 16, AC 3, THAC0 18, APR 2
- 1D6 + 2 Missile (Short Bow & Arrow)
- 2D4 Slashing (Bastard Sword)
+ 1d6 + 2 Missile (Short Bow & Arrow)
+ 2d4 Slashing (Bastard Sword)
  Saving Throws 14/16/15/17/17, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -706,7 +714,7 @@ Hobgoblin Archer (2 HD):
 Hobgoblin Shaman (4 HD):
  ST14, DE11, CO15, IN9, WI12, CH9
  HP 36, AC 2, THAC0 17, APR 1
- 1D6 + 2 Crushing (Mace +1)
+ 1d6 + 2 Crushing (Mace +1)
  Saving Throws 9/13/12/15/14, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -736,7 +744,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Special
 
 Remove Magic dispels the magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
@@ -749,7 +757,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
 Remove Magic dispels the magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
@@ -760,7 +768,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
 Remove Magic dispels one specific and one combat protection on each enemy within the area of effect. Additional protections are dispelled at 10th level and again at 15th level, up to a maximum of 3 each. Magic resistance, if any, does not affect this spell.
@@ -779,7 +787,7 @@ Casting Time: 3
 Area of Effect: Special
 Saving Throw: None
 
-This spell enables the wizard to hurl flaming arrows at their enemies. The caster receives one arrow for every two experience levels of the caster, up to a maximum of five at 10th level. Each arrow deals 1D6 + 3 missile damage and 1D6 fire damage. Upon completion of the spell, the first arrow will streak towards the creature targeted by the caster, while additional arrows will randomly target opponents within visual range of the caster.~
+This spell enables the wizard to hurl flaming arrows at their enemies. The caster receives one arrow for every two experience levels of the caster, up to a maximum of five at 10th level. Each arrow deals 1d6 + 3 missile damage and 1d6 fire damage. Upon completion of the spell, the first arrow will streak towards the creature targeted by the caster, while additional arrows will randomly target opponents within visual range of the caster.~
 
 @507=~Fireball~
 @508=~Fireball
@@ -788,10 +796,10 @@ School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath half
 
-A fireball is an explosive burst of flame that detonates with a low roar, delivering fire damage proportional to the level of the wizard who cast it. The wizard points their finger and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the pointing digit and, unless impacting upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). The fireball deals 1D6 fire damage for each level of experience of the caster, up to a maximum of 10D6 at 10th level. Creatures who save vs. breath at a -2 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
+A fireball is an explosive burst of flame that detonates with a low roar, delivering fire damage proportional to the level of the wizard who cast it. The wizard points their finger and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the pointing digit and, unless impacting upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). The fireball deals 1d6 fire damage for each level of experience of the caster, up to a maximum of 10d6 at 10th level. Creatures who save vs. breath at a -2 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
 
 @509=~Haste~
 @510=~Haste
@@ -800,7 +808,7 @@ School: Alteration
 Range: Medium
 Duration: 1 turn + 1 round/level
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 When this spell is cast, all affected creatures gain a +4 bonus to their normal movement rate and receive an extra half attack per round. Spellcasting and spell effects are not affected, though Haste negates and counters the effects of a Slow spell. Note that affected creatures expend as much energy during this spell as they would normally in a whole day, causing them to become exhausted for 2 rounds after the duration of the spell. While exhausted, the affected creatures suffer a -2 penalty to THAC0, damage, and AC. Spellcasting and spell effects are not affected, though Haste negates and counters the effects of a Slow spell. This spell is not cumulative with itself or other similar magic.~
@@ -841,7 +849,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: Breath half
 
-Upon casting this spell, the wizard releases a powerful stroke of electrical energy towards the target that deals 1D6 electrical damage for every experience level of the caster, up to a maximum of 10D6 at 10th level. A successful save vs. breath at a -4 penalty reduces the damage by half.~
+Upon casting this spell, the wizard releases a powerful stroke of electrical energy towards the target that deals 1d6 electrical damage for every experience level of the caster, up to a maximum of 10d6 at 10th level. A successful save vs. breath at a -4 penalty reduces the damage by half.~
 
 @517=~Monster Summoning III~
 @518=~Monster Summoning III
@@ -862,7 +870,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Gray Ooze (3 HD):
  ST14, DE10, CO-, IN3, WI3, CH3
  HP 30, AC 8, THAC0 17, APR 1
- 2D8 Acid (Pseudopod)
+ 2d8 Acid (Pseudopod)
  Saving Throws 11/13/12/13/14, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 100%, ER 0%, AR 0%
@@ -875,7 +883,7 @@ Special Characteristics:
 Ochre Jelly (5 HD):
  ST14, DE10, CO-, IN3, WI3, CH3
  HP 42, AC 4, THAC0 15, APR 1
- 3D4 Acid (Pseudopod +1)
+ 3d4 Acid (Pseudopod +1)
  Saving Throws 10/12/11/12/13, AL TN
  SR 0%, CR 0%, PR 0%, MR 100%
  FR 0%, CR 50%, ER 0%, AR 0%
@@ -918,7 +926,7 @@ School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Polymorph negates
 
 A Slow spell causes enemies to move, attack, and cast spells at half of their normal rates unless a save vs. polymorph at a -2 penalty is made. Those who are slowed also suffer a -2 penalty to THAC0 and AC and a -3 penalty to saving throws vs. breath. Additionally, the rate at which slowed creatures regenerate or suffer damage from poison is halved, and the effects of a Haste spell are negated. Multiple castings of this spell or similar effects are not cumulative.~
@@ -930,10 +938,10 @@ School: Necromancy
 Range: Long
 Duration: Special
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath half
 
-Upon casting this spell, the caster hurls a magical skull at the chosen area, where it is stationary and floats until a creature comes within 15'. When this happens, the skull is triggered and explodes, and everyone within 20' suffer 1D6 magic damage for every experience level of the caster, up to a maximum of 10D6 at 10th level. Those who make a save vs. breath at a -2 penalty will receive only half damage. When casting this spell, it is wise to set it far away from the party to prevent it from being set off accidentally.~
+Upon casting this spell, the caster hurls a magical skull at the chosen area, where it is stationary and floats until a creature comes within 7.5 feet of the trap. When this happens, the skull is triggered and explodes, and everyone within a 10' radius suffers 1d6 magic damage for every experience level of the caster, up to a maximum of 10d6 at 10th level. Those who make a save vs. breath at a -2 penalty will receive only half damage. When casting this spell, it is wise to set it far away from the party to prevent it from being set off accidentally.~
 
 @527=~Vampiric Touch~
 @528=~Vampiric Touch
@@ -1034,7 +1042,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: None
 
 When this spell is cast, it will dispel one spell protection of 5th level or lower on all enemies within the area of effect. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
@@ -1048,10 +1056,10 @@ School: Divination
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast at a point designated by the wizard, an area roughly 30 feet in radius will be affected. All hostile illusion spells of 4th level and lower in this area will be dispelled. Magic resistance does not affect this spell.
+When this spell is cast at a point designated by the wizard, an area roughly 15 feet in radius will be affected. All hostile illusion spells of 4th level and lower in this area will be dispelled. Magic resistance does not affect this spell.
 
 The illusion spells dispelled by Detect Illusion are: Reflected Image, Blur, Invisibility, Mirror Image, Ghost Armor, Invisibility Sphere, and Improved Invisibility.~
 
@@ -1079,7 +1087,7 @@ Casting Time: 3
 Area of Effect: Special
 Saving Throw: None
 
-This spell enables the wizard to summon one small globe of fire for each experience level of the caster (up to a maximum of 20 at 20th level), which, when thrown, burst upon impact and deal 1D4 + 2 piercing damage and 2D4 fire damage to the creature struck. The wizard gains a +5 bonus to THAC0 with the missiles, and each meteor is considered to be of +2 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The wizard may discharge up to five missiles per round.~
+This spell enables the wizard to summon one small globe of fire for each experience level of the caster (up to a maximum of 20 at 20th level), which, when thrown, burst upon impact and deal 1d4 + 2 piercing damage and 2d4 fire damage to the creature struck. The wizard gains a +5 bonus to THAC0 with the missiles, and each meteor is considered to be of +2 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The wizard may discharge up to five missiles per round.~
 
 @547=~Dispel Magic~
 @548=~Dispel Magic
@@ -1088,7 +1096,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
@@ -1101,7 +1109,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
@@ -1112,7 +1120,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 Dispel Magic dispels one specific and one combat protection on each creature within the area of effect. Additional protections are dispelled at 10th level and again at 15th level, up to a maximum of 3 each. Magic resistance, if any, does not affect this spell.
@@ -1131,7 +1139,7 @@ Casting Time: 3
 Area of Effect: 1 creature
 Saving Throw: Special
 
-When this spell is cast, a sharp spear of ice impales the target, dealing 1D6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5D6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for 1 round.~
+When this spell is cast, a sharp spear of ice impales the target, dealing 1d6 of both piercing and cold damage for every two experience levels of the caster, up to a maximum of 5d6 at 10th level. A successful save vs. breath at a -2 penalty negates the cold damage, though the target must also make a save vs. paralysis at a -2 penalty to avoid being held for 1 round.~
 
 /*------------------Level 4------------------*/
 
@@ -1142,7 +1150,7 @@ School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 4
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 This spell causes confusion to one or more creatures within the area, creating indecision and the inability to take effective action. All hostile creatures within the area of effect must save vs. spell at a -2 penalty or either go berserk, stand confused, or wander about for the duration of the spell. Wandering creatures tend to move as far from the caster as possible, but any confused creature that is attacked perceives the attacker as an enemy and acts according to their basic nature.~
@@ -1169,7 +1177,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 10' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
+This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 5' radius will suffer 2d4 + 1/two levels acid damage, up to a maximum of 2d4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
 
 @567=~Ice Storm~
 @568=~Ice Storm
@@ -1178,10 +1186,10 @@ School: Evocation
 Range: Long
 Duration: 5 rounds
 Casting Time: 4
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast, great magical hailstones pound down for 5 rounds within a 30 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 75%, and receive 2D8 cold damage for each round they remain inside the storm.~
+When this spell is cast, great magical hailstones pound down for 5 rounds within a 15' radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 75%, and receive 2d8 cold damage for each round they remain inside the storm.~
 
 @569=~Improved Invisibility~
 @570=~Improved Invisibility
@@ -1263,7 +1271,7 @@ School: Enchantment
 Range: Long
 Duration: 2 rounds/level
 Casting Time: 4
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 When this spell is cast, the wizard can disturb the emotional state of those around them, inflicting a feeling of absolute hopelessness upon enemies. Upon a failed save vs. spell at a -2 penalty, those affected will suffer a -4 penalty to THAC0, damage, and AC. Multiple castings of this spell are not cumulative.~
@@ -1275,7 +1283,7 @@ School: Enchantment
 Range: Long
 Duration: 2 rounds/level
 Casting Time: 4
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 The spell allows the caster to adversely affect the dice rolls of their enemies. The effect is applied to all hostile creatures within the area of effect. Those under the influence of this spell make all their saving throws at a penalty of -2 and also suffer a -1 penalty to luck. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
@@ -1304,7 +1312,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-This spell taps the recipient's life force to create a corporeal barrier around their body. When cast, the recipient's AC is set to 0, and saving throws vs. death will be made with a +3 bonus. There is a danger in using this spell, however, as the external portion of the target's spirit is temporarily lost when the spell duration expires, dealing 1D6 damage to the recipient. This spell will not function with any other form of magical body armor, but it is cumulative with Dexterity and other AC bonuses. The spirit armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully dispelled.~
+This spell taps the recipient's life force to create a corporeal barrier around their body. When cast, the recipient's AC is set to 0, and saving throws vs. death will be made with a +3 bonus. There is a danger in using this spell, however, as the external portion of the target's spirit is temporarily lost when the spell duration expires, dealing 1d6 damage to the recipient. This spell will not function with any other form of magical body armor, but it is cumulative with Dexterity and other AC bonuses. The spirit armor does not hinder movement, adds no weight or encumbrance, and does not prevent spellcasting. The armor lasts for the duration of the spell or until successfully dispelled.~
 
 @589=~Polymorph Other~
 @590=~Polymorph Other
@@ -1335,7 +1343,7 @@ When this spell is cast, the wizard is able to assume the forms of six creatures
 Mustard Jelly (7 HD):
  STR 14, DEX 10, CON 10
  AC 4, THAC0 13, APR 1
- 5D4 Acidic (Corrosive Spore +2)
+ 5d4 Acidic (Corrosive Spore +2)
  SR 30%, CR 30%, PR 100%, MR 85%
  FR 0%, CR 50%, ER 100%, AR 0%
 
@@ -1349,7 +1357,7 @@ Special Characteristics:
 Ogre Mage (7 HD):
  STR 18/100, DEX 10, CON 16
  AC 2, THAC0 12, APR 2
- 1D10 + 3 Slashing (Katana +1)
+ 1d10 + 3 Slashing (Katana +1)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -1360,17 +1368,17 @@ Special Characteristics:
 Salamander (7 HD):
  STR 18/76, DEX 19, CON 15
  AC 2, THACO 13, APR 2
- 1D6 Piercing (Spear +2)
+ 1d6 Piercing (Spear +2)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR -50%, ER 50%, AR 0%
 
 Special Characteristics:
-– Fiery: target suffers 1D6 fire damage
+– Fiery: target suffers 1d6 fire damage
 
 Sword Spider (5 HD):
  STR 17, DEX 16, CON 15
  AC 3, THAC0 15, APR 4
- 2D6 Piercing (Legs & Bite +1)
+ 2d6 Piercing (Legs & Bite +1)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -1381,7 +1389,7 @@ Special Characteristics:
 Troll (7 HD):
  STR 18/00, DEX 16, CON 20
  AC 4, THAC0 12, APR 3
- 1D6 Piercing (Claws +2)
+ 1d6 Piercing (Claws +2)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -1397,7 +1405,7 @@ Winter Wolf (6 HD):
  FR -25%, CR 100%, ER 0%, AR 0%
 
 Special Characteristics:
-– Frostbite: target is blasted with icy breath, suffering 6D4 cold damage (save vs. breath half)~
+– Frostbite: target is blasted with icy breath, suffering 6d4 cold damage (save vs. breath half)~
 
 @593=~Enchanted Weapon~
 @594=~Enchanted Weapon
@@ -1432,7 +1440,7 @@ Casting Time: 4
 Area of Effect: Special
 Saving Throw: None
 
-This spell protects the wizard by surrounding them with a circular wall of flames. This shield not only grants a +50% bonus to fire and cold resistance, but opponents that hit the caster with a weapon or spell from within a 10' radius will suffer 1D6 + 1/two levels fire damage, up to a maximum of 1D6 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the fire shield. Magic resistance does not affect this spell.~
+This spell protects the wizard by surrounding them with a circular wall of flames. This shield not only grants a +50% bonus to fire and cold resistance, but opponents that hit the caster with a weapon or spell from within a 5' radius will suffer 1d6 + 1/two levels fire damage, up to a maximum of 1d6 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the fire shield. Magic resistance does not affect this spell.~
 
 @597=~Secret Word~
 @598=~Secret Word
@@ -1467,7 +1475,7 @@ School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 4
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 With this spell, the wizard instigates a teleportation effect as far as they can see. All enemies in this area are randomly teleported for the duration of the spell unless they make a save vs. spell at a -4 penalty. This spell is best used against multiple enemies, serving to confuse them and allowing the caster to concentrate on activating their defenses. Magic resistance does not affect this spell.~
@@ -1491,7 +1499,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Giant Spider (4 HD):
  ST14, DE16, CO12, IN5, WI10, CH3
  HP 35, AC 4, THAC0 15, APR 1
- 1D8 Piercing (Bite)
+ 1d8 Piercing (Bite)
  Saving Throws 10/13/10/13/13, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -1503,7 +1511,7 @@ Special Characteristics:
 Sword Spider (5 HD):
  ST17, DE14, CO15, IN6, WI11, CH3
  HP 45, AC 3, THAC0 14, APR 4
- 2D6 Piercing (Legs & Bite +1)
+ 2d6 Piercing (Legs & Bite +1)
  Saving Throws 9/12/9/12/12, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -1557,7 +1565,7 @@ Casting Time: 4
 Area of Effect: Target, and anyone within 10'
 Saving Throw: Breath partial
 
-When this spell is cast, a glowing orb of emerald acid streaks towards the target and explodes, drenching everyone within a 10' radius in potent acid. Each creature in the area immediately suffers 1D4 acid damage for each level of experience of the caster, up to a maximum of 10D4 at 10th level. After the initial round, those covered in the sphere's acid continue to suffer two less dice of acid damage in the following rounds. For example, an 8th-level wizard inflicts 8D4 damage with this spell in the first round, 6D4 in the second round, 4D4 in the third round, and 2D4 in the fourth round. During each round except the first, those affected can make a save vs. breath at a -2 penalty to reduce that round's damage by half and avoid further damage in any remaining rounds.~
+When this spell is cast, a glowing orb of emerald acid streaks towards the target and explodes, drenching everyone within a 10' radius in potent acid. Each creature in the area immediately suffers 1d4 acid damage for each level of experience of the caster, up to a maximum of 10d4 at 10th level. After the initial round, those covered in the sphere's acid continue to suffer two less dice of acid damage in the following rounds. For example, an 8th-level wizard inflicts 8d4 damage with this spell in the first round, 6d4 in the second round, 4d4 in the third round, and 2d4 in the fourth round. During each round except the first, those affected can make a save vs. breath at a -2 penalty to reduce that round's damage by half and avoid further damage in any remaining rounds.~
 
 /*------------------Level 5------------------*/
 
@@ -1581,7 +1589,7 @@ By means of this spell, the caster creates a number of shadows, undead monsters 
 Shadow (5 HD):
  ST13, DE10, CO-, IN10, WI11, CH11
  HP 34, AC 7, THAC0 14, APR 1
- 1D8 Slashing (Touch)
+ 1d8 Slashing (Touch)
  Saving Throws 11/13/11/13/13, AL CE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 100%, ER 0%, AR 100%
@@ -1594,7 +1602,7 @@ Special Characteristics:
 Wraith (7 HD):
  ST14, DE12, CO-, IN10, WI12, CH10
  HP 43, AC 4, THAC0 12, APR 3/2
- 1D8 Slashing (Touch +1)
+ 1d8 Slashing (Touch +1)
  Saving Throws 10/13/10/13/13, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 100%, ER 0%, AR 100%
@@ -1611,10 +1619,10 @@ School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
-This spell generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with fewer than 4 hit dice, while creatures with 4 to 6 hit dice must save vs. poison at a -4 penalty to avoid being slain. Those with more than 6 hit dice must leave the cloud immediately or suffer 1D10 poison damage each round while in the area of effect. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
+This spell generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with fewer than 4 hit dice, while creatures with 4 to 6 hit dice must save vs. poison at a -4 penalty to avoid being slain. Those with more than 6 hit dice must leave the cloud immediately or suffer 1d10 poison damage each round while in the area of effect. The undead and certain other creatures such as constructs, elementals, and illusions do not need to breathe and are immune to the effects of the cloud.~
 
 @615=~Cone of Cold~
 @616=~Cone of Cold
@@ -1626,7 +1634,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Breath half
 
-When this spell is cast, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster, draining heat and causing 1D4 + 1 cold damage for every experience level of the caster, up to a maximum of 15D4 + 15 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage.~
+When this spell is cast, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster, draining heat and causing 1d4 + 1 cold damage for every experience level of the caster, up to a maximum of 15d4 + 15 at 15th level. Those who make a save vs. breath at a -4 penalty will receive only half damage.~
 
 @617=~Monster Summoning V~
 @618=~Monster Summoning V
@@ -1647,7 +1655,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Ogre Berserker (5 HD):
  ST18, DE10, CO18, IN8, WI10, CH7
  HP 60, AC 3, THAC0 14, APR 3/2
- 1D10 + 3 Crushing (Great M Star +1)
+ 1d10 + 3 Crushing (Great M Star +1)
  Saving Throws 11/13/12/13/14, AL CE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -1658,7 +1666,7 @@ Special Characteristics:
 Ogre Mage (7 HD):
  ST18, DE10, CO16, IN15, WI11, CH13
  HP 56, AC 2, THAC0 12, APR 2
- 1D10 + 3 Slashing (Katana +1)
+ 1d10 + 3 Slashing (Katana +1)
  Saving Throws 9/11/10/11/12, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -1719,7 +1727,7 @@ School: Necromancy
 Range: Long
 Duration: 1 turn
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 Surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested for a day. While fatigued, they suffer a -2 penalty to luck, movement rate, casting speed, and speed factor. Multiple castings of this spell are not cumulative.~
@@ -1755,7 +1763,7 @@ School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 By casting this spell, the caster creates transparent, permeable barriers that shield the caster and their allies from Dispel Magic, Remove Magic, and Breach spells. An individual barrier dissipates after one instance of any of these spells affecting the shielded character.~
@@ -1832,7 +1840,7 @@ School: Alteration
 Range: Long
 Duration: 1 round/level
 Casting Time: 5
-Area of Effect: Target, and enemies within 20' radius
+Area of Effect: Target, and enemies within 10'
 Saving Throw: None
 
 This spell will lower the magic resistance of enemies within the area of effect by 2% for every experience level of the caster, up to a maximum of 40% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
@@ -1868,7 +1876,7 @@ Upon casting this spell, the caster opens a special gate to the Elemental Plane 
 Lesser Fire Elemental (8 HD):
  ST14, DE16, CO16, IN6, WI11, CH11
  HP 80, AC 3, THAC0 12, APR 2
- 2D4 Slashing/Fire (Fist +2)
+ 2d4 Slashing/Fire (Fist +2)
  Saving Throws 10/12/11/11/13, AL TN
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 100%, CR 0%, ER 0%, AR 0%
@@ -1898,7 +1906,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1D12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered to be melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ // Furthermore, the blade cannot harm inorganic things because it has no solid existence.
+This spell creates a translucent, weightless, and shadow-like sword made of material from the Plane of Shadow that extends 3 feet from the caster's hand. The caster wields the phantom blade as if proficient and at their normal base THAC0, and it is considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit. The sword deals 1d12 + 4 magic damage to its victims, and an additional 10 damage is dealt against undead creatures. Furthermore, a successful hit temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. spell at -4 neg.). Due to its ethereal nature, Strength modifiers do not apply to THAC0 or damage, and attacks with the shadow blade are considered to be melee touch attacks (+4 bonus to THAC0). The phantom blade can only be used by the caster, and remains in their hand for the duration of the spell or until dispelled.~ // Furthermore, the blade cannot harm inorganic things because it has no solid existence.
 
 @647=~Spell Shield~
 @648=~Spell Shield
@@ -1929,7 +1937,7 @@ Upon casting this spell, the caster opens a special gate to the Elemental Plane 
 Lesser Air Elemental (8 HD):
  ST14, DE17, CO16, IN6, WI11, CH11
  HP 80, AC 4, THAC0 10, APR 3
- 1D6 Piercing (Fist +2)
+ 1d6 Piercing (Fist +2)
  Saving Throws 10/12/11/11/13, AL TN
  SR 20%, CR 20%, PR 20%, MR 60%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -1952,7 +1960,7 @@ Upon casting this spell, the caster opens a special gate to the Elemental Plane 
 Lesser Earth Elemental (8 HD):
  ST19, DE8, CO18, IN6, WI11, CH11
  HP 96, AC 2, THAC0 13, APR 2
- 2D6 Crushing (Fist +2)
+ 2d6 Crushing (Fist +2)
  Saving Throws 10/12/11/11/13, AL TN
  SR 40%, CR 0%, PR 40%, MR 40%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -1981,10 +1989,10 @@ School: Evocation
 Range: Personal
 Duration: Instant
 Casting Time: 1
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Breath half
 
-The Fireburst spell creates an explosive burst of flame that detonates with a low roar and delivers damage proportional to the level of the wizard who cast it, similar to a fireball. The wizard gestures with their hand and the entire area around them erupts in flames, striking all enemies and causing 1D6 fire damage for each experience level of the spellcaster, up to a maximum of 15D6 at 15th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
+The Fireburst spell creates an explosive burst of flame that detonates with a low roar and delivers damage proportional to the level of the wizard who cast it, similar to a fireball. The wizard gestures with their hand and the entire area around them erupts in flames, striking all enemies and causing 1d6 fire damage for each experience level of the spellcaster, up to a maximum of 15d6 at 15th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
 
 @565=~Mestil's Acid Sheath~
 @566=~Mestil's Acid Sheath
@@ -1996,7 +2004,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 10' radius will suffer 2D4 + 1/two levels acid damage, up to a maximum of 2D4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
+This spell conjures a boiling acid barrier around the wizard. The shield grants the caster 50% acid resistance and opponents that hit them with a weapon or spell from within a 5' radius will suffer 2d4 + 1/two levels acid damage, up to a maximum of 2d4 + 10 at 20th level. Multiple castings of this spell are not cumulative, but it can be used in conjunction with other similar spells. Insect swarms cannot pass through the acid sheath. Magic resistance does not affect this spell.~
 
 /*------------------Level 6------------------*/
 
@@ -2015,7 +2023,7 @@ This spell summons an invisible stalker from the Elemental Plane of Air. This cr
 Invisible Stalker (8 HD):
  ST16, DE17, CO14, IN14, WI14, CH11
  HP 64, AC 3, THAC0 11, APR 3/2
- 2D8 Crushing (Fist +2)
+ 2d8 Crushing (Fist +2)
  Saving Throws 10/12/11/12/13, AL TN
  SR 20%, CR 20%, PR 20%, MR 60%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2060,7 +2068,7 @@ Saving Throw: None
 
 Tenser's Transformation is a sight guaranteed to astound any creature not aware of its power. For when the wizard casts the spell, they undergo a startling transformation which alters their body and mind into that of a warrior. The wizard gains 2 hit points per caster level (up to a maximum of 40), and all damage they sustain comes first from the magical points gained. The AC of the caster is 4 better than they possessed prior casting the spell, and all attacks are made with the THAC0 of a fighter of the same level as the caster. The wizard gains extra attacks as a fighter of the same level, thus an extra half attack per round at 7th level and another half attack per round at 13th level. Furthermore, each attack is made at a +2 bonus, each successful hit in combat deals +2 damage, and saving throws against death/poison are made by the caster with a +5 bonus, but casting speed is penalized by 2 and saving throws against spell are made by the caster with a -3 penalty. The transformation lasts for the duration of the spell or until successfully dispelled, but cannot be used in conjunction with other shapeshifting spells such as Polymorph Self and Shapechange.
 
-NOTE: This spell does not give any extra attacks to multiclassed or dual-classed fighter/mages if they have already received them as a part of their class, as they normally gain additional attacks per round due to their fighter experience levels.~
+NOTE: This spell does not give any extra attacks to multi-classed or dual-classed fighter/mages if they have already received them as a part of their class, as they normally gain additional attacks per round due to their fighter experience levels.~
 
 @667=~Flesh to Stone~
 @668=~Flesh to Stone
@@ -2081,7 +2089,7 @@ School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 6
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Special
 
 The Banishment spell forces hostile summoned creatures in the area back to their home plane. Gated creatures (including fiends, celestials, elementals, and genies) may make a save vs. spell at a -4 penalty to resist being banished. Magic resistance does not affect this spell.~
@@ -2169,7 +2177,7 @@ School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 6
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 When this spell is cast, all affected creatures gain a +4 bonus to their normal movement rate and receive an extra attack per round, as well as a +2 bonus to THAC0 and AC and a +3 bonus to saving throws vs. breath. Spellcasting and spell effects are not affected, though Improved Haste negates and counters the effects of a Slow spell. Unlike the third level arcane spell Haste, there is no period of exhaustion following the expiration of the spell, and this haste spell cannot be countered by Slow. This spell is not cumulative with itself or other similar magic.~
@@ -2181,7 +2189,7 @@ School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 6
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 The Acid Fog spell creates a thick, clinging, greenish cloud. All creatures who aren't immune to acid suffer 10 damage for each round they are exposed to the vapors of the Acid Fog. In addition, due to reduced visibility, creatures inside the cloud move at half of their normal movement rate.~
@@ -2193,10 +2201,10 @@ School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 6
-Area of Effect: Target, and enemies within 30'
+Area of Effect: Target, and enemies within 15'
 Saving Throw: Breath half
 
-The Chain Lightning spell creates an electrical discharge that begins as a single stroke commencing from the caster's fingertips. Unlike Lightning Bolt, Chain Lightning strikes one object or creature initially, then arcs to other targets. These brilliant arcs of lightning leap at all enemies within range, burning them with electrical damage. The lightning causes 1D6 damage for every experience level of the caster to the primary target (up to a maximum of 20D6) and 1D6 for every two levels to subsequent targets (up to a maximum of 10D6). Those who make a save vs. breath at a -4 penalty manage to partially avoid direct impact from the lightning and hence receive only half damage.~
+The Chain Lightning spell creates an electrical discharge that begins as a single stroke commencing from the caster's fingertips. Unlike Lightning Bolt, Chain Lightning strikes one object or creature initially, then arcs to other targets. These brilliant arcs of lightning leap at all enemies within range, burning them with electrical damage. The lightning causes 1d6 damage for every experience level of the caster to the primary target (up to a maximum of 20d6) and 1d6 for every two levels to subsequent targets (up to a maximum of 10d6). Those who make a save vs. breath at a -4 penalty manage to partially avoid direct impact from the lightning and hence receive only half damage.~
 
 @689=~Disintegrate~
 @690=~Disintegrate
@@ -2208,7 +2216,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: Breath partial
 
-Upon casting this spell at another creature, a thin green ray shoots unerringly from the caster's fingertip toward the target. Upon contact, the creature must make a save vs. breath at a -2 penalty or suffer 2D6 magic damage per caster level (to a maximum of 40D6). A creature that makes a successful save is partially affected, taking only 5D6 damage. The ray affects even objects constructed entirely of force, such as a Mordenkainen's Sword, which is automatically destroyed when struck. This spell has no affect on clothing or equipment carried by the target.~
+Upon casting this spell at another creature, a thin green ray shoots unerringly from the caster's fingertip toward the target. Upon contact, the creature must make a save vs. breath at a -2 penalty or suffer 2d6 magic damage per caster level (to a maximum of 40d6). A creature that makes a successful save is partially affected, taking only 5d6 damage. The ray affects even objects constructed entirely of force, such as a Mordenkainen's Sword, which is automatically destroyed when struck. This spell has no affect on clothing or equipment carried by the target.~
 
 @691=~Contingency~
 @692=~Contingency
@@ -2255,8 +2263,8 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Wyvern (7 HD):
  ST16, DE14, CO15, IN6, WI12, CH9
  HP 63, AC 1, THAC0 13, APR 2
- 2D8 Slashing (Claws & Bite +2)
- 1D6 Piercing (Stinger +2)
+ 2d8 Slashing (Claws & Bite +2)
+ 1d6 Piercing (Stinger +2)
  Saving Throws 10/14/10/12/14, AL NE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2269,8 +2277,8 @@ Special Characteristics:
 Greater Wyvern (9 HD):
  ST18, DE16, CO16, IN6, WI12, CH9
  HP 81, AC -2, THAC0 11, APR 3
- 2D8 Slashing (Claws & Bite +2)
- 1D6 Piercing (Stinger +2)
+ 2d8 Slashing (Claws & Bite +2)
+ 1d6 Piercing (Stinger +2)
  Saving Throws 8/11/8/10/8, AL NE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2298,7 +2306,7 @@ Upon completing this spell, the caster opens a special gate to the Elemental Pla
 Fire Elemental (12 HD):
  ST16, DE17, CO17, IN6, WI11, CH11
  HP 116, AC 2, THAC0 10, APR 2
- 2D6 Slashing/Fire (Fist +3)
+ 2d6 Slashing/Fire (Fist +3)
  Saving Throws 7/9/8/8/10, AL TN
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 100%, CR 0%, ER 0%, AR 0%
@@ -2309,7 +2317,7 @@ Special Characteristics:
 Greater Fire Elemental (16 HD):
  ST18, DE19, CO18, IN6, WI11, CH11
  HP 138, AC 1, THAC0 7, APR 2
- 2D8 Slashing/Fire (Fist +3)
+ 2d8 Slashing/Fire (Fist +3)
  Saving Throws 4/6/5/4/7, AL TN
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 100%, CR 0%, ER 0%, AR 0%
@@ -2335,7 +2343,7 @@ Upon completing this spell, the caster opens a special gate to the Elemental Pla
 Air Elemental (12 HD):
  ST16, DE19, CO17, IN6, WI11, CH11
  HP 116, AC 3, THAC0 8, APR 3
- 1D8 Piercing (Fist +3)
+ 1d8 Piercing (Fist +3)
  Saving Throws 7/9/8/8/10, AL TN
  SR 20%, CR 20%, PR 20%, MR 60%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2346,7 +2354,7 @@ Special Characteristics:
 Greater Air Elemental (16 HD):
  ST18, DE21, CO18, IN6, WI11, CH11
  HP 138, AC 2, THAC0 5, APR 3
- 1D10 Piercing (Fist +3)
+ 1d10 Piercing (Fist +3)
  Saving Throws 4/6/5/4/7, AL TN
  SR 20%, CR 20%, PR 20%, MR 60%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2372,7 +2380,7 @@ Upon completing this spell, the caster opens a special gate to the Elemental Pla
 Earth Elemental (12 HD):
  ST21, DE8, CO19, IN6, WI11, CH11
  HP 126, AC 1, THAC0 11, APR 2
- 2D8 Crushing (Fist +3)
+ 2d8 Crushing (Fist +3)
  Saving Throws 7/9/8/8/10, AL TN
  SR 40%, CR 0%, PR 40%, MR 40%
  FR 100%, CR 0%, ER 0%, AR 0%
@@ -2383,7 +2391,7 @@ Special Characteristics:
 Greater Earth Elemental (16 HD):
  ST23, DE8, CO21, IN6, WI11, CH11
  HP 152, AC 0, THAC0 8, APR 2
- 2D10 Crushing (Fist +3)
+ 2d10 Crushing (Fist +3)
  Saving Throws 4/6/5/4/7, AL TN
  SR 40%, CR 0%, PR 40%, MR 40%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2406,7 +2414,7 @@ This spell animates the corpse of a skilled warrior to rise up and serve the wiz
 Skeleton Warrior (9 HD):
  ST18, DE14, CO-, IN15, WI14, CH12
  HP 108, AC 2, THAC0 8, APR 2
- 2D6 + 4 Slashing (2H Sword +1)
+ 2d6 + 4 Slashing (2H Sword +1)
  Saving Throws 5/7/6/5/8, AL NE
  SR 40%, CR 0%, PR 50%, MR 60%
  FR 0%, CR 100%, ER 0%, AR 0%
@@ -2437,7 +2445,7 @@ Nishruu (9 HD):
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Absorb Magic: every spell cast against the nishruu is absorbed and instead heals the creature by 1D8 + 1 hit points
+– Absorb Magic: every spell cast against the nishruu is absorbed and instead heals the creature by 1d8 + 1 hit points
 – Drain Magic: arcane casters struck lose one memorized spell chosen at random from the highest level possible
 – Feeblemindness: target is feebleminded for 1 turn (save vs. spell at -2 neg.)~
 
@@ -2537,7 +2545,7 @@ By means of this spell, the caster calls an outer planar creature to attack thei
 Death Knight (13 HD):
  ST18, DE18, CO-, IN18, WI16, CH16
  HP 112, AC -2, THAC0 1, APR 3
- 2D6 + 6 Slashing (2H Sword +3)
+ 2d6 + 6 Slashing (2H Sword +3)
  Saving Throws 5/7/5/9/7, AL LE
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 0%, CR 100%, ER 0%, AR 0%
@@ -2546,7 +2554,7 @@ Special Characteristics:
 – Magic Resistance: 75%
 – Protected Againt: Backstabs, Death, Normal Weapons, and Poison
 – Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
-– Aura of Fear: opponents in a 10' radius flee in terror (save vs. spell neg.)
+– Aura of Fear: opponents in a 5' radius flee in terror (save vs. spell neg.)
 – Detect Invisibility (permanent)
 – Unholy Fireball (1x per day)
 
@@ -2563,13 +2571,13 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 10' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
+When this spell is cast, an opaque globe of shimmering, multicolored light temporarily surrounds the caster. This magical mantle confers complete invulnerability to all weapons of those of +3 or less enchantment and protects the caster from attacks made within a 5' radius of the caster. Opponents that hit the caster with a weapon or spell from within this radius are subject to a random prismatic effect once per round. The possible effects of the prismatic mantle are listed below and all saves are made at a -2 penalty. Due to this spell's short casting time and duration, it is mainly used to buy the wizard a few rounds in the thick of combat.
 
-Red - 6D6 fire damage (save vs. breath half)
+Red - 6d6 fire damage (save vs. breath half)
 Orange - Stun for 5 rounds (save vs. polymorph neg.)
-Yellow - 6D6 electrical damage (save vs. breath half)
-Green - Death (save vs. poison for 3D4 poison damage)
-Blue - 6D6 cold damage (save vs. breath half)
+Yellow - 6d6 electrical damage (save vs. breath half)
+Green - Death (save vs. poison for 3d4 poison damage)
+Blue - 6d6 cold damage (save vs. breath half)
 Violet - Confusion for 5 rounds (save vs. wand neg.)
 Pink - Maze (save vs. spell neg.)~
 
@@ -2592,7 +2600,7 @@ School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 7
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Spell negates
 
 This spell allows the caster to create a sphere of chaotic magic. All enemies within the area must make a save vs. spell at a -4 penalty for every round that they remain in the sphere or suffer one of the following random effects for the following round: feeblemindedness, confusion, paralysis, unconsciousness, or panic.~
@@ -2604,10 +2612,10 @@ School: Evocation
 Range: Long
 Duration: Special
 Casting Time: 7
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath half
 
-This spell creates a fireball that hovers at a point determined by the caster. The fireball will stay in position until someone walks within 20 feet of it. When this happens, the fireball is triggered and explodes, damaging everyone within a 30 foot radius. The explosion will deal 1D6 fire damage for each level of experience of the spellcaster, up to a maximum of 20D6 at 20th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
+This spell creates a fireball that hovers at a point determined by the caster. The fireball will stay in position until someone walks within 10 feet of it. When this happens, the fireball is triggered and explodes, damaging everyone within a 15' radius. The explosion will deal 1d6 fire damage for each level of experience of the spellcaster, up to a maximum of 20d6 at 20th level. Creatures who save vs. breath at a -4 penalty manage to dodge, fall flat, or roll aside, and receive only half damage from the blast.~
 
 @741=~Finger of Death~
 @742=~Finger of Death
@@ -2619,7 +2627,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Death partial
 
-The Finger of Death spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1D6 magic damage for every two experience levels of the caster, up to a maximum of 10D6 at 20th level.~
+The Finger of Death spell snuffs out the chosen target's life force. The caster points their finger at the victim once the incantation is complete and death occurs unless a save vs. death at a -4 penalty is made. A creature who successfully makes their saving throw still suffers 1d6 magic damage for every two experience levels of the caster, up to a maximum of 10d6 at 20th level.~
 
 @743=~Prismatic Spray~
 @744=~Prismatic Spray
@@ -2631,13 +2639,13 @@ Casting Time: 1
 Area of Effect: Cone
 Saving Throw: Special
 
-When this spell is cast, the wizard causes seven shimmering, multicolored rays of light to flash from their hand. These include all colors of the visible spectrum, and each ray has a different power and purpose. The spray is 20 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster. Any creature that is caught within the area of effect will be touched by one or more rays: there is a 50% chance that they will be affected by two or more rays, and a 25% chance that they will be affected by three rays. Additionally, creatures with 8 hit dice or fewer struck by any type of ray are also blinded for 5 rounds. The effects of the rays are listed below and all saves are made at a -4 penalty.
+When this spell is cast, the wizard causes seven shimmering, multicolored rays of light to flash from their hand. These include all colors of the visible spectrum, and each ray has a different power and purpose. The spray is 30 feet in length and spread out in a horizontal arc of about 60 degrees in front of the caster. Any creature that is caught within the area of effect will be touched by one or more rays: there is a 50% chance that they will be affected by two or more rays, and a 25% chance that they will be affected by three rays. Additionally, creatures with 8 hit dice or fewer struck by any type of ray are also blinded for 5 rounds. The effects of the rays are listed below and all saves are made at a -4 penalty.
 
-Red - 10D6 fire damage (save vs. breath half)
+Red - 10d6 fire damage (save vs. breath half)
 Orange - Stun for 1 turn (save vs. polymorph neg.)
-Yellow - 10D6 electrical damage (save vs. breath half)
-Green - Death (save vs. poison for 5D4 poison damage)
-Blue - 10D6 cold damage (save vs. breath half)
+Yellow - 10d6 electrical damage (save vs. breath half)
+Green - Death (save vs. poison for 5d4 poison damage)
+Blue - 10d6 cold damage (save vs. breath half)
 Violet - Confusion for 1 turn (save vs. wand neg.)
 Pink - Maze (save vs. spell neg.)~
 
@@ -2651,7 +2659,7 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this power word is uttered, any creature of the wizard's choice within visual range is stunned for a length of time dependent upon its current hit points. Creatures with 1 to 29 hit points are stunned for 4D4 rounds, those with 30 to 59 are stunned for 2D4 rounds, those with 60 to 89 are stunned for 1D4 rounds, and those with 90 or more are stunned for only 1 round. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect.~
+When this power word is uttered, any creature of the wizard's choice within visual range is stunned for a length of time dependent upon its current hit points. Creatures with 1 to 29 hit points are stunned for 4d4 rounds, those with 30 to 59 are stunned for 2d4 rounds, those with 60 to 89 are stunned for 1d4 rounds, and those with 90 or more are stunned for only 1 round. Note that if a creature is weakened so that its hit points are below its usual maximum, its current number of hit points are used to determine the spell's effect.~
 
 @747=~Mordenkainen's Sword~
 @748=~Mordenkainen's Sword
@@ -2663,11 +2671,11 @@ Casting Time: 7
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, the wizard brings into being a shimmering, sword-like plane of force. Once the spell is cast, the sword will float in the air completely under the control of the caster for duration of the spell duration or until the sword is dispelled or slain. The sword acts as a +3 weapon in all respects and attacks on its own twice each round, dealing 5D4 damage when it hits a target. The sword is also immune to mild-affecting magic and has near total immunity most forms of damage, but is vulnerable to pure magic damage. Note that this spell does not prevent the caster from performing any other actions while the spell is in effect.
+Upon casting this spell, the wizard brings into being a shimmering, sword-like plane of force. Once the spell is cast, the sword will float in the air completely under the control of the caster for duration of the spell duration or until the sword is dispelled or slain. The sword acts as a +3 weapon in all respects and attacks on its own twice each round, dealing 5d4 damage when it hits a target. The sword is also immune to mild-affecting magic and has near total immunity most forms of damage, but is vulnerable to pure magic damage. Note that this spell does not prevent the caster from performing any other actions while the spell is in effect.
 
 Magical Sword (10 HD):
  HP 40, AC 0, THAC0 5, APR 2
- 5D4 + 6 Slashing (Magical Sword +3)
+ 5d4 + 6 Slashing (Magical Sword +3)
  Saving Throws 7/11/7/11/11, AL TN
  SR 95%, CR 95%, PR 95%, MR 95%
  FR 100%, CR 100%, ER 100%, AR 100%
@@ -2691,13 +2699,13 @@ With this spell, the conjurer can cajole an efreeti, a massive genie with powerf
 Efreeti (10 HD):
  ST19, DE17, CO16, IN14, WI14, CH15
  HP 98, AC 2, THAC0 6, APR 2
- 1D8 + 5 Slashing (Scimitar +2)
+ 1d8 + 5 Slashing (Scimitar +2)
  Saving Throws 8/11/8/11/11, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
-– Fiery: target suffers 1D4 fire damage
+– Fiery: target suffers 1d4 fire damage
 
 Known Spells:
  1° Burning Hands, Magic Missile (x2), Shield
@@ -2721,7 +2729,7 @@ With this spell, the conjurer can cajole a djinni, a massive genie with powerful
 Djinni (10 HD):
  ST17, DE19, CO15, IN14, WI14, CH15
  HP 88, AC 0, THAC0 6, APR 3
- 1D8 + 5 Slashing (Scimitar +2)
+ 1d8 + 5 Slashing (Scimitar +2)
  Saving Throws 11/7/11/7/7, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -2755,7 +2763,7 @@ Hakeashar (12 HD):
 
 Special Characteristics:
 – Protected Against: Normal Weapons
-– Absorb Magic: every spell cast against the hakeshar is absorbed and instead heals the creature by 1D8 + 1 hit points
+– Absorb Magic: every spell cast against the hakeshar is absorbed and instead heals the creature by 1d8 + 1 hit points
 – Drain Magic: arcane casters struck lose one memorized spell chosen at random from the highest level possible
 – Mindbreaking: target is feebleminded permanently (save vs. spell at -2 neg.)~
 
@@ -2778,7 +2786,7 @@ School: Illusion
 Range: Long
 Duration: 1 round/level
 Casting Time: 7
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: None
 
 Upon casting this spell, the wizard causes all friendly creatures within the area of effect to be affected by the spell Improved Invisibility. Creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.~
@@ -2819,20 +2827,32 @@ Saving Throw: None
 
 By means of this spell, the caster summons a number of monsters, which serve the wizard under any and all conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell. The summoned creatures will remain under the caster's control until they are slain or the spell duration expires.
 
-14th: 2 otyughs
-16th: 3 otyughs
+14th: 3 otyughs
+16th: 2 otyughs, 1 neo-otyugh
 
 Otyugh (7 HD):
- ST14, DE10, CO13, IN5, WI12, CH5
+ ST14, DE10, CO13, IN10, WI10, CH5
  HP 76, AC 3, THAC0 10, APR 3
- 1D8 Piercing/Crushing (Bite & Tentacles +3)
+ 1d8 Piercing/Crushing (Bite & Tentacles +3)
  Saving Throws 9/11/10/10/12, AL TN
  SR 5%, CR 5%, PR 5%, MR 100%
  FR 0%, CR 0%, ER 0%, AR 0%
 
 Special Characteristics:
 – Protected Against: Disease
-– Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)~
+– Diseasing: target suffers 1 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)
+
+Neo-Otyugh (12 HD):
+ ST18, DE12, CO16, IN12, WI12, CH5
+ HP 96, AC 0, THAC0 8, APR 3
+ 2d6 Piercing/Crushing (Bite & Tentacles +3)
+ Saving Throws 7/9/8/8/10, AL TN
+ SR 10%, CR 10%, PR 10%, MR 100%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+– Protected Against: Disease
+– Diseasing: target suffers 2 damage per round and slowness for 1 turn (save vs. poison at -2 neg.)~
 
 
 /*------------------Level 8------------------*/
@@ -2918,7 +2938,7 @@ By means of this spell, the caster calls an outer planar creature to attack thei
 Glabrezu (15 HD):
  ST20, DE10, CO21, IN16, WI17, CH16
  HP 160, AC -6, THAC0 2, APR 4
- 2D6 Piercing (Pincers & Claws +3)
+ 2d6 Piercing (Pincers & Claws +3)
  Saving Throws 6/8/6/10/8, AL CE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 50%, CR 50%, ER 100%, AR 50%
@@ -2963,10 +2983,10 @@ School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 8
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath partial
 
-This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4D6 fire damage each round to everything remaining within the area of effect. A save vs. breath at a -4 penalty reduces the damage by half. Fire dwellers like efreet, fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
+This spell creates a cloud of roiling smoke and roaring flame, which obscures all sight beyond 15 feet (including darkvision). Creatures within the cloud suffer a -4 penalty to THAC0 and AC, and the flames deal 4d6 fire damage each round to everything remaining within the area of effect. A save vs. breath at a -4 penalty reduces the damage by half. Fire dwellers like efreet, fire elementals, fire giants, and salamanders are immune to the effects of this spell.~
 
 @785=~Symbol of Pain~
 @786=~Symbol of Pain
@@ -2975,10 +2995,10 @@ School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
+Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
 
 /*@785=~Symbol of Weakness~
 @786=~Symbol of Weakness
@@ -2987,10 +3007,10 @@ School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
+Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
 
 @787=~Abi-Dalzim's Horrid Wilting~
 @788=~Abi-Dalzim's Horrid Wilting
@@ -2999,10 +3019,10 @@ School: Necromancy
 Range: Long
 Duration: Instant
 Casting Time: 8
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Death half
 
-This spell evaporates moisture in the bodies of all living opponents within the area of effect, dealing 1D6 magic damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. Those who make a save vs. death at a -2 penalty will receive only half damage. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to wilting.~
+This spell evaporates moisture in the bodies of all living opponents within the area of effect, dealing 1d6 magic damage for every experience level of the caster, up to a maximum of 20d6 at 20th level. Those who make a save vs. death at a -2 penalty will receive only half damage. The undead and certain other creatures such as constructs, elementals, and illusions are completely immune to wilting.~
 
 @789=~Maze~
 @790=~Maze
@@ -3018,12 +3038,12 @@ An extradimensional space is brought into being upon utterance of a Maze spell. 
 
 Intelligence - Time trapped in maze
  1 to 2 - eternity
- 3 to 5 - 10D4 rounds
- 6 to 8 - 5D4 rounds
- 9 to 11 - 4D4 rounds
- 12 to 14 - 3D4 rounds
- 15 to 17 - 2D4 rounds
- 18 and up - 1D4 rounds
+ 3 to 5 - 10d4 rounds
+ 6 to 8 - 5d4 rounds
+ 9 to 11 - 4d4 rounds
+ 12 to 14 - 3d4 rounds
+ 15 to 17 - 2d4 rounds
+ 18 and up - 1d4 rounds
 
 If the 9th level spell Freedom is cast in the area where a creature is mazed, it will immediately bring them back to this plane, ending the spell prematurely. Otherwise, the effect lasts for the duration of the spell. A mazed creature cannot be freed through a dispel magic. The target's magic resistance, if any, does not affect this spell.~
 
@@ -3057,10 +3077,10 @@ School: Conjuration
 Range: Long
 Duration: 5 rounds
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
+Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
 
 @795=~Symbol of Death~
 @796=~Symbol of Death
@@ -3069,10 +3089,10 @@ School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 1 round
-Area of Effect: 20' radius
+Area of Effect: 10' radius
 Saving Throw: Death negates
 
-Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 15 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 20 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
+Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 
 @797=~Bigby's Icy Grasp~
 @798=~Bigby's Icy Grasp
@@ -3084,7 +3104,7 @@ Casting Time: 8
 Area of Effect: 1 creature
 Saving Throw: Special
 
-This spell creates a huge disembodied hand that grabs a victim and pins them to the ground. Each round, the massive hand squeezes the target for 2D8 cold damage and holds them for 1 round. A successful save vs. breath at a -2 penalty reduces the damage by half and negates the hold for the given round. Certain creatures such as elementals, illusions, and incorporeals are immune to being pinned.~
+This spell creates a huge disembodied hand that grabs a victim and pins them to the ground. Each round, the massive hand squeezes the target for 2d8 cold damage and holds them for 1 round. A successful save vs. breath at a -2 penalty reduces the damage by half and negates the hold for the given round. Certain creatures such as elementals, illusions, and incorporeals are immune to being pinned.~
 
 @868=~Monster Summoning VIII~
 @869=~Monster Summoning VIII
@@ -3104,7 +3124,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Umber Hulk (8 HD):
  ST20, DE18, CO14, IN11, WI9, CH8
  HP 90, AC 2, THAC0 10, APR 3
- 1D12 Slashing/Piercing (Claws & Bite +3)
+ 1d12 Slashing/Piercing (Claws & Bite +3)
  Saving Throws 10/12/12/14/12, AL TN
  SR 5%, CR 5%, PR 5%, MR 100%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -3159,7 +3179,7 @@ By means of this spell, the caster calls an outer planar creature to attack thei
 Pit Fiend (20 HD):
  ST24, DE16, CO19, IN20, WI16, CH25
  HP 170, AC -8, THAC0 -7, APR 5
- 2D6 Piercing (Claws, Bite, & Tail +4)
+ 2d6 Piercing (Claws, Bite, & Tail +4)
  Saving Throws 10/12/12/14/12, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 50%, ER 0%, AR 0%
@@ -3193,7 +3213,7 @@ By means of this spell, the caster summons a number of monsters, which serve the
 Greater Wolfwere (11 HD):
  ST19, DE19, CO16, IN17, WI10, CH12
  HP 87, AC 2, THAC0 8, APR 3
- 1D12 Slashing/Piercing (Claws & Bite +3)
+ 1d12 Slashing/Piercing (Claws & Bite +3)
  Saving Throws 7/6/5/6/5, AL CE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 50%, CR 50%, ER 50%, AR 50%
@@ -3273,10 +3293,10 @@ School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath half
 
-Upon completion of this spell, a swarm of minute meteors bombards the affected area, dealing devastating damage to friend and foe. Any creature caught in the destructive path of the meteors will suffer 40D4 fire damage, with a save vs. breath at a -4 penalty allowed for half damage. The caster is well advised to be careful in their use of this spell. Magic resistance does not affect this spell.~
+Upon completion of this spell, a swarm of minute meteors bombards the affected area, dealing devastating damage to friend and foe. Any creature caught in the destructive path of the meteors will suffer 40d4 fire damage, with a save vs. breath at a -4 penalty allowed for half damage. The caster is well advised to be careful in their use of this spell. Magic resistance does not affect this spell.~
 
 @827=~Power Word: Kill~
 @828=~Power Word: Kill
@@ -3326,7 +3346,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell enables the caster to create a black, blade-shaped planar rift, about 5 feet long. It jumps into the caster's hand and is used as a normal sword, remaining there for the duration of the spell. The sword deals 2D12 slashing damage each hit, and there is a 15% chance the victim is disintegrated and suffers 40D6 magic damage (save vs. breath at -2 for 5D6). The caster wields the blade as if proficient and at a base THAC0 of 0, and it is considered to be of +5 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit.~
+This spell enables the caster to create a black, blade-shaped planar rift, about 5 feet long. It jumps into the caster's hand and is used as a normal sword, remaining there for the duration of the spell. The sword deals 2d12 slashing damage each hit, and there is a 15% chance the victim is disintegrated and suffers 40d6 magic damage (save vs. breath at -2 for 5d6). The caster wields the blade as if proficient and at a base THAC0 of 0, and it is considered to be of +5 enchantment (with appropriate THAC0 and damage bonuses) to determine what it can hit.~
 
 @835=~Shapechange~
 @836=~Shapechange
@@ -3343,7 +3363,7 @@ With this spell, a wizard is able to assume the forms of five powerful creatures
 Iron Golem (18 HD):
  STR 24, DEX 10, CON -
  AC 2, THAC0 2, APR 1
- 4D10 Crushing (Fist +4)
+ 4d10 Crushing (Fist +4)
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 125%, CR 100%, ER 100%, AR 100%
 
@@ -3355,7 +3375,7 @@ Special Characteristics:
 Mind Flayer (12 HD):
  STR 10, DEX 10, CON 12
  AC 5, THAC0 12, APR 4
- 1D6 Piercing (Claws & Tentacles +3)
+ 1d6 Piercing (Claws & Tentacles +3)
  SR 50%, CR 50%, PR 50%, MR 50%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -3363,12 +3383,12 @@ Special Characteristics:
 – Magic Resistance: 90%
 – Spellcasting: spells can be cast in this form
 – Devour Brain: target suffers a -2 penalty to Intelligence for 5 rounds
-– Psionic Blast (1x per day): target and enemies within 20' are stunned for 1 turn (save vs. spell neg.)
+– Psionic Blast (1x per day): target and enemies within 10' are stunned for 1 turn (save vs. spell neg.)
 
 Nycaloth (12 HD):
  STR 20, DEX 18, CON 18
  AC -6, THAC0 2, APR 1
- 2D8 Slashing (Claws +3)
+ 2d8 Slashing (Claws +3)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR -100%, ER 0%, AR 100%
 
@@ -3381,7 +3401,7 @@ Special Characteristics:
 Elder Spirit Troll (15 HD):
  STR 20, DEX 21, CON 20
  AC 0, THAC0 6, APR 3
- 2D6 Piercing (Claws +3)
+ 2d6 Piercing (Claws +3)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 100%, ER 25%, AR 0%
 
@@ -3397,7 +3417,7 @@ Special Characteristics:
 Alpha Wolfwere (14 HD):
  STR 20, DEX 20, CON 18
  AC 0, THAC0 7, APR 3
- 2D8 Slashing (Claws & Bite +3)
+ 2d8 Slashing (Claws & Bite +3)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 50%, CR 50%, ER 50%, AR 50%
 
@@ -3428,7 +3448,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: Special
 
-This spell creates a huge disembodied hand that crushes a victim and knocks them senseless. Each round, the massive hand smashes the target for 2D10 crushing damage and stuns them for 1 round. A successful save vs. paralyzation at a -4 penalty reduces the damage by half and negates the stun for the given round.~
+This spell creates a huge disembodied hand that crushes a victim and knocks them senseless. Each round, the massive hand smashes the target for 2d10 crushing damage and stuns them for 1 round. A successful save vs. paralyzation at a -4 penalty reduces the damage by half and negates the stun for the given round.~
 
 @841=~Wish~
 @842=~Wish
@@ -3455,7 +3475,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-An energy blade is a discus made of pure energy. The discs are thrown with a +10 bonus to THAC0, dealing 1D4 + 5 missile damage and 1D10 electrical damage, and are considered to be of +5 enchantment to determine what they can hit. This spell creates 20 energy discs and sets the caster's number of attacks per round to 10 as long as the discs are held.~
+An energy blade is a discus made of pure energy. The discs are thrown with a +10 bonus to THAC0, dealing 1d4 + 5 missile damage and 1d10 electrical damage, and are considered to be of +5 enchantment to determine what they can hit. This spell creates 20 energy discs and sets the caster's number of attacks per round to 10 as long as the discs are held.~
 
 @853=~Improved Alacrity~
 @854=~Improved Alacrity
@@ -3476,10 +3496,10 @@ School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 5
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Breath partial
 
-This spell causes the disembodied head of a red dragon to appear and breathe fire with the Strength of an adult red dragon. In addition to the enormous 25D6 fireball, the force of the dragon's breath knocks opponents away from the caster and leaves them unconscious for 1 round. Those affected can save vs. breath at a -2 penalty to take only half damage and not be blown backwards. This spell will not harm party members. Magic resistance does not affect this spell.~
+This spell causes the disembodied head of a red dragon to appear and breathe fire with the strength of an adult red dragon. In addition to the enormous 25d6 fireball, the force of the dragon's breath knocks opponents away from the caster and leaves them unconscious for 1 round. Those affected can save vs. breath at a -2 penalty to take only half damage and not be blown backwards. This spell will not harm party members. Magic resistance does not affect this spell.~
 
 @857=~Summon Planetar~
 @858=~Summon Planetar
@@ -3496,7 +3516,7 @@ This spell opens a celestial gate and calls forth a planetar to fight at the cas
 Planetar (18 HD):
  ST19, DE19, CO18, IN18, WI21, CH22
  HP 152, AC -3, THAC0 -3, APR 5/2
- 1D10 + 10 Slashing (2H Sword +3)
+ 1d10 + 10 Slashing (2H Sword +3)
  Saving Throws 3/5/4/4/6, AL CG
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 50%, CR 50%, ER 100%, AR 100%
@@ -3532,7 +3552,7 @@ This spell opens an abyssal gate and calls forth a fallen planetar to fight at t
 Fallen Planetar (18 HD):
  ST19, DE18, CO18, IN18, WI21, CH22
  HP 152, AC -3, THAC0 -3, APR 5/2
- 1D10 + 10 Slashing (2H Sword +3)
+ 1d10 + 10 Slashing (2H Sword +3)
  Saving Throws 3/5/4/4/6, AL CE
  SR 20%, CR 20%, PR 20%, MR 20%
  FR 100%, CR 0%, ER 100%, AR 50%
@@ -3560,10 +3580,10 @@ School: Conjuration
 Range: Long
 Duration: Instantaneous
 Casting Time: 1 round
-Area of Effect: 30' radius
+Area of Effect: 15' radius
 Saving Throw: Paralyzation partial
 
-When this spell is cast, a huge meteor or comet strikes the earth, damaging all enemies in its path and sending out a powerful shockwave that knocks away all foes in the area of effect. Those caught in the impact suffer 10D10 crushing damage and must make a save vs. paralyzation at a -4 penalty or be knocked unconscious for 2 rounds. This spell will not harm party members. Magic resistance does not affect this spell.~
+When this spell is cast, a huge meteor or comet strikes the earth, damaging all enemies in its path and sending out a powerful shockwave that knocks away all foes in the area of effect. Those caught in the impact suffer 10d10 crushing damage and must make a save vs. paralyzation at a -4 penalty or be knocked unconscious for 2 rounds. This spell will not harm party members. Magic resistance does not affect this spell.~
 
 
 /*------------------Creatures and Items------------------*/
@@ -3574,7 +3594,7 @@ When this spell is cast, a huge meteor or comet strikes the earth, damaging all 
 Cat (3 HD):
  HP 24, AC -4, THAC0 17, APR 3
  Saving Throws 13/15/14/16/16, AL CN
- 1D3 Slashing (Paws)
+ 1d3 Slashing (Paws)
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
 
@@ -3594,7 +3614,7 @@ Usable By:
 
 Cat (8 HD):
  HP 48, AC -8, THAC0 12, APR 3
- 1D3 Slashing (Paws)
+ 1d3 Slashing (Paws)
  Saving Throws 10/12/11/13/13, AL CN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -3616,7 +3636,7 @@ Usable By:
 
 Dust Mephit (3 HD):
  HP 24, AC 2, THAC0 17, APR 2
- 1D3 + 1 Piercing (Claws)
+ 1d3 + 1 Piercing (Claws)
  Saving Throws 13/15/14/16/16, AL NE
  SR 50%, CR 0%, PR 50%, MR 50%
  FR 100%, CR 0%, ER 0%, AR 0%
@@ -3634,7 +3654,7 @@ Usable By:
 
 Dust Mephit (8 HD):
  HP 48, AC -2, THAC0 12, APR 2
- 1D3 + 1 Piercing (Claws)
+ 1d3 + 1 Piercing (Claws)
  Saving Throws 10/12/11/13/13, AL NE
  SR 50%, CR 0%, PR 50%, MR 50%
  FR 100%, CR 0%, ER 0%, AR 0%
@@ -3655,7 +3675,7 @@ Usable By:
 
 Fairy Dragon (3 HD):
  HP 24, AC 0, THAC0 17, APR 2
- 1D3 + 1 Slashing (Paws)
+ 1d3 + 1 Slashing (Paws)
  Saving Throws 13/15/14/16/16, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 100%, AR 0%
@@ -3673,7 +3693,7 @@ Usable By:
 
 Fairy Dragon (8 HD):
  HP 48, AC -4, THAC0 12, APR 2
- 1D3 + 1 Slashing (Paws)
+ 1d3 + 1 Slashing (Paws)
  Saving Throws 10/12/11/13/13, AL CG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 100%, AR 0%
@@ -3693,7 +3713,7 @@ Usable By:
 
 Ferret (3 HD):
  HP 24, AC -4, THAC0 17, APR 2
- 1D3 Slashing (Paws)
+ 1d3 Slashing (Paws)
  Saving Throws 13/15/14/16/16, AL LN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -3714,7 +3734,7 @@ Usable By:
 
 Ferret (8 HD):
  HP 48, AC -8, THAC0 12, APR 2
- 1D3 Slashing (Paws)
+ 1d3 Slashing (Paws)
  Saving Throws 10/12/11/13/13, AL LN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -3736,7 +3756,7 @@ Usable By:
 
 Imp (3 HD):
  HP 24, AC 2, THAC0 17, APR 2
- 1D3 + 1 Piercing (Claws)
+ 1d3 + 1 Piercing (Claws)
  Saving Throws 10/12/11/13/13, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 100%, ER 100%, AR 0%
@@ -3755,7 +3775,7 @@ Usable By:
 
 Imp (8 HD):
  HP 48, AC -4, THAC0 12, APR 2
- 1D3 + 1 Piercing (Claws)
+ 1d3 + 1 Piercing (Claws)
  Saving Throws 7/9/8/9/10, AL LE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 100%, ER 100%, AR 0%
@@ -3777,7 +3797,7 @@ Usable By:
 
 Pseudodragon (3 HD):
  HP 24, AC 0, THAC0 13, APR 2
- 1D6 Piercing (Claws)
+ 1d6 Piercing (Claws)
  Saving Throws 13/15/14/16/16, AL NG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -3797,7 +3817,7 @@ Usable By:
 
 Pseudodragon (8 HD):
  HP 48, AC -4, THAC0 8, APR 2
- 1D6 Piercing (Claws)
+ 1d6 Piercing (Claws)
  Saving Throws 10/12/11/13/13, AL NG
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 0%, CR 0%, ER 0%, AR 0%
@@ -3818,7 +3838,7 @@ Usable By:
 
 Quasit (3 HD):
  HP 24, AC 2, THAC0 17, APR 2
- 1D6 Piercing (Claws)
+ 1d6 Piercing (Claws)
  Saving Throws 10/12/11/13/13, AL CE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 100%, ER 100%, AR 0%
@@ -3838,7 +3858,7 @@ Usable By:
 
 Quasit (8 HD):
  HP 48, AC -2, THAC0 12, APR 2
- 1D6 Piercing (Claws)
+ 1d6 Piercing (Claws)
  Saving Throws 7/9/8/9/10, AL CE
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 100%, CR 100%, ER 100%, AR 0%
@@ -3861,7 +3881,7 @@ Usable By:
 
 Rabbit (3 HD):
  HP 24, AC -4, THAC0 17, APR 2
- 1D2 Slashing (Paws)
+ 1d2 Slashing (Paws)
  Saving Throws 13/15/14/16/16, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 50%, CR 50%, ER 50%, AR 50%
@@ -3881,7 +3901,7 @@ Usable By:
 
 Rabbit (8 HD):
  HP 48, AC -8, THAC0 12, APR 2
- 1D2 Slashing (Paws)
+ 1d2 Slashing (Paws)
  Saving Throws 10/12/11/13/13, AL TN
  SR 0%, CR 0%, PR 0%, MR 0%
  FR 50%, CR 50%, ER 50%, AR 50%
@@ -4507,7 +4527,7 @@ Weight: 0~
 @8186=~Scimitar +2~
 @8187=~Hakeashar~
 @8188=~Contact +3~
-@8189=~Otyugh~
+@8189=~Neo-Otyugh~
 @8190=~Bite & Tentacles +3~
 @8191=~Glabrezu~
 @8192=~Pincers & Claws +3~
@@ -4531,17 +4551,18 @@ Weight: 0~
 @8210=~Shapeshifts Alpha Wolfwere~
 @8211=~Claws & Bite +3~
 @8212=~Energy Blades +5~
-@8213=~This disc was created by the Energy Blades spell. When thrown at opponents, it deals 1D4 + 5 missile damage as well as 1D10 electrical damage.~
+@8213=~This disc was created by the Energy Blades spell. When thrown at opponents, it deals 1d4 + 5 missile damage as well as 1d10 electrical damage.~
 @8214=~Planetar~
 @8215=~Two-Handed Sword +3~
 @8216=~Fallen Planetar~
 @8217=~Two-Handed Sword +3~
+@8218=~Mutated Gibberling~
+@8219=~Reserved~
+@8220=~Neo-Otyugh~
+@8221=~Claws & Tentacles +3~
 
 /*------------------Miscellaneous------------------*/
 
-@8218=~Familiar~
-@3527=~A Vampiric Touch spell is already active~
-@3583=~Saving Throws Lowered~
 @21000=~Illusionary Protections Removed~
 @22000=~Dispelling Screen Dispelled~
 @22001=~Insects Dispersed~
@@ -4551,6 +4572,31 @@ Weight: 0~
 @22005=~Freed from Petrification~
 @22006=~Freed from Imprisonment~
 @22007=~Statistics Restored~
-@100400 = ~Usable[ %tab%]+[Bb]y[ %tab%]*:~
-@100401 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-@100402 = ~Scroll of Restoration~
+@23000=~Charmed~
+@23001=~Disease Cured~
+@23002=~Dominated~
+@23003=~Decaying~
+@23004=~Protected by Shield of the Archons~
+@23005=~Saving Throws Lowered~
+@23006=~Stunned~
+@23007=~Energy Blades Created~
+@23008=~Spell Ineffective~
+@23009=~Enfeebled~
+@23010=~A Vampiric Touch spell is already active~
+@23011=~Protected by Minor Spell Deflection~
+@23012=~Confused~
+@23013=~Protected from Normal Weapons~
+@23014=~Protected by Spell Deflection~
+@23015=~Protection from Magical Energy~
+@23016=~Protection from Magical Weapons~
+@23017=~Protected by Spell Deflection~
+@23018=~Protected by Greater Spell Deflection~
+@23019=~Protection from the Elements~
+@23020=~Protection from Energy~
+@23021=~Four Levels Drained~
+@23022=~Shapechange abilities have been added to your Special Abilities menu~
+
+@100400=~Usable[ %tab%]+[Bb]y[ %tab%]*:~
+@100401=~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@100402=~Familiar~
+@100403=~Scroll of Restoration~

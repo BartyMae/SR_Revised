@@ -11,7 +11,7 @@ Casting Time: 5
 Area of Effect: 15' radius
 Saving Throw: None
 
-Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all eligible creatures in a 15 foot radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
+Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, and morale to friendly creatures. The caster determines at what range they will cast the spell, and the instant the spell is completed, it affects all eligible creatures in a 15' radius centered on the point selected by the caster. Multiple castings of this spell are not cumulative.~
 
 @3=~Command~
 @4=~Command
@@ -102,7 +102,7 @@ Casting Time: 1
 Area of Effect: 15' radius
 Saving Throw: None
 
-The priest instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 15 foot radius centered on the point selected by the caster.~
+The priest instills courage in allies, raising their morale to its highest. If the recipients are affected by magical fear, this is negated, and they are protected from it for the duration of the spell. The instant the spell is completed, it affects all eligible creatures in a 15' radius centered on the point selected by the caster.~
 
 @17=~Sanctuary~
 @18=~Sanctuary
@@ -357,7 +357,7 @@ Casting Time: 5
 Area of Effect: 15' radius
 Saving Throw: None
 
-When a priest casts a Find Traps spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to them. Once per round, all traps within a 15 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can create a sudden or unexpected result, the caster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, "traps" include glyphs and similar spells and devices.~
+When a priest casts a Find Traps spell, all traps - concealed normally or magically - of magical or mechanical nature become apparent to them. Once per round, all traps within a 15' radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can create a sudden or unexpected result, the caster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, "traps" include glyphs and similar spells and devices.~
 
 @41=~Flame Blade~
 @42=~Flame Blade
@@ -504,7 +504,7 @@ Saving Throw: Breath half
 
 This powerful trap harms those who enter, pass, or open the selected area or object. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any enemy violating the warded area will trigger the trap.
 
-When the spell is cast, the druid weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 7.5 feet of the trap, it is triggered and explodes, damaging every enemy within a 10 foot radius. The trap deals 1D4 fire damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
+When the spell is cast, the druid weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 7.5 feet of the trap, it is triggered and explodes, damaging every enemy within a 10' radius. The trap deals 1D4 fire damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
 
 @303=~Regenerate Moderate Wounds~
 @304=~Regenerate Moderate Wounds
@@ -687,7 +687,7 @@ Saving Throw: Breath half
 
 A glyph of warding is a powerful inscription magically drawn to prevent unauthorized or hostile creatures from passing, entering, or opening. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any enemy violating the warded area will trigger the trap.
 
-When the spell is cast, the priest weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 7.5 feet of the glyph, it is triggered and explodes, damaging every enemy within a 10 foot radius. The glyph deals 1D4 electrical damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
+When the spell is cast, the priest weaves a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 7.5 feet of the glyph, it is triggered and explodes, damaging every enemy within a 10' radius. The glyph deals 1D4 electrical damage per experience level of the caster, up to a maximum of 10D4 at 10th level. Those who make a save vs. breath will receive only half damage. This spell will not harm party members.~
 
 @79=~Hold Person or Animal~
 @80=~Hold Person or Animal
@@ -1077,7 +1077,7 @@ Casting Time: 1
 Area of Effect: 10' radius
 Saving Throw: None
 
-Defensive Harmony grants the affected creatures a defensive bonus by enhancing the coordination of their attacks and defenses. This allows a group of creatures to act as a cohesive unit for a single battle or encounter. The effect is always centered on the caster, but affects all those within a 10 foot radius. The affected creatures can move outside of this radius after the spell is cast and still enjoy the benefits of Defensive Harmony. While the spell is in effect, each affected creature gains a +4 bonus to AC. Multiple castings of this spell are not cumulative.~
+Defensive Harmony grants the affected creatures a defensive bonus by enhancing the coordination of their attacks and defenses. This allows a group of creatures to act as a cohesive unit for a single battle or encounter. The effect is always centered on the caster, but affects all those within a 10' radius. The affected creatures can move outside of this radius after the spell is cast and still enjoy the benefits of Defensive Harmony. While the spell is in effect, each affected creature gains a +4 bonus to AC. Multiple castings of this spell are not cumulative.~
 
 @125=~Magic Circle Against Evil~
 @126=~Magic Circle Against Evil
@@ -1261,7 +1261,7 @@ Casting Time: 4
 Area of Effect: 15' radius
 Saving Throw: None
 
-When this spell is cast, great magical hailstones pound down for 5 rounds within a 15 foot radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 80% and receive 2D8 cold damage for each round they remain inside the storm.~
+When this spell is cast, great magical hailstones pound down for 5 rounds within a 15' radius of a point selected by the caster. Creatures within the area of effect have their movement rate reduced to 80% and receive 2D8 cold damage for each round they remain inside the storm.~
 
 @307=~Regenerate Serious Wounds~
 @308=~Regenerate Serious Wounds
@@ -1703,7 +1703,7 @@ Casting Time: 6
 Area of Effect: 5' radius
 Saving Throw: None
 
-The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 5 foot radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell and Globe of Blades are not cumulative.
+The priest employs this spell to create a wall of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous barrier. Those within a 5' radius of the caster suffer 2D8 slashing damage every round. Magic resistance does not affect this spell. Multiple castings of this spell and Globe of Blades are not cumulative.
 
 Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Blade Barrier. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
@@ -1756,7 +1756,7 @@ Casting Time: 6
 Area of Effect: Special
 Saving Throw: Breath half
 
-This spell enables the druid to create one fire seed for every 2 experience levels of the caster, up to a maximum of 10 at 20th level. When thrown, each fire seed will explode into a small fireball and deal 6D6 fire damage to the target and everyone within a 5 foot radius, and the caster can hurl up to five fire seeds per round. Those who save vs. breath at a -2 penalty will receive only half damage. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The seeds can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
+This spell enables the druid to create one fire seed for every 2 experience levels of the caster, up to a maximum of 10 at 20th level. When thrown, each fire seed will explode into a small fireball and deal 6D6 fire damage to the target and everyone within a 5' radius, and the caster can hurl up to five fire seeds per round. Those who save vs. breath at a -2 penalty will receive only half damage. The caster wields them as if proficient and at their normal base THAC0, and they are considered to be of +4 enchantment (with appropriate THAC0 and damage bonuses) to determine what they can hit. The seeds can be used only by the caster, and remain in their hand for the duration of the spell or until used.~
 
 @203=~Heal~
 @204=~Heal
@@ -1840,7 +1840,7 @@ Creature Type: Damage
  Elemental: 4D6
  Humanoid: 6D6
  Undead: 8D6
- Demonic: 10D6~
+ Fiend: 10D6~
 
 @215=~Physical Mirror~
 @216=~Physical Mirror
@@ -2067,7 +2067,7 @@ Special Characteristics:
  Protected Againt: Backstabs, Death, Normal Weapons, and Poison
  Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
  Detect Invisibility (permanent)
- Aura of Fear: opponents with 5' flee in terror (save vs. spell neg.)
+ Aura of Fear: opponents within 5' flee in terror (save vs. spell neg.)
  Unholy Fireball (1x per day)
 
 Known Spells:
@@ -2099,7 +2099,7 @@ Casting Time: 1 round
 Area of Effect: 15' radius
 Saving Throw: Breath half
 
-When a Fire Storm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Those caught in the inferno suffer 2D8 + 10, but may save vs. breath at a -4 penalty to receive only half damage. This assault will last for 5 rounds, continuing to damage all creatures who remain within the area of effect. An area of a 5 foot radius around the caster will be protected from the storm.~
+When a Fire Storm spell is cast, the whole area is shot through with sheets of roaring flame and then pelted with fiery balls of lava. Those caught in the inferno suffer 2D8 + 10, but may save vs. breath at a -4 penalty to receive only half damage. This assault will last for 5 rounds, continuing to damage all creatures who remain within the area of effect. An area of a 5' radius around the caster will be protected from the storm.~
 
 @241=~Symbol of Pain~
 @242=~Symbol of Pain
@@ -2112,7 +2112,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
+Symbol of Pain is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or be stricken with wracking pains, suffering a -4 penalty to THAC0, damage, AC, and saving throws for 1 turn.~
 
 /*@241=~Symbol of Weakness~
 @242=~Symbol of Weakness
@@ -2125,7 +2125,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
+Symbol of Weakness is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or suffer a -5 penalty to Strength, Dexterity, and Constitution. The characteristic points lost from this spell can only be restored with a Cure Disease, Heal, or Greater Restoration spell.~*/
 
 @243=~Sunray~
 @244=~Sunray
@@ -2138,7 +2138,7 @@ Casting Time: 5
 Area of Effect: 15' radius
 Saving Throw: Special
 
-When this spell is cast, it causes a ray of sunlight to beam down upon the caster and a globe of searing radiance to explode in a 15 foot radius. All hostile creatures in the area of effect are blinded for 1 turn. Living creatures suffer 10D6 fire damage, while undead creatures caught within the sunburst instead suffer 1D6 fire damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. A successful save vs. breath at a -4 penalty negates the blindness and reduces the damage by half. The burst also results in the destruction of all undead creatures specifically averse to bright light (such as vampires, shadows, and wraiths) that fail a save vs. spell at a -2 penalty. Magic resistance does not affect this spell.~
+When this spell is cast, it causes a ray of sunlight to beam down upon the caster and a globe of searing radiance to explode in a 15' radius. All hostile creatures in the area of effect are blinded for 1 turn. Living creatures suffer 10D6 fire damage, while undead creatures caught within the sunburst instead suffer 1D6 fire damage for every experience level of the caster, up to a maximum of 20D6 at 20th level. A successful save vs. breath at a -4 penalty negates the blindness and reduces the damage by half. The burst also results in the destruction of all undead creatures specifically averse to bright light (such as vampires, shadows, and wraiths) that fail a save vs. spell at a -2 penalty. Magic resistance does not affect this spell.~
 
 @245=~Finger of Death~
 @246=~Finger of Death
@@ -2297,7 +2297,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Spell negates
 
-Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
+Symbol of Stunning is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. spell at a -4 penalty or be stunned for 5 rounds.~
 
 @261=~Earthquake~
 @262=~Earthquake
@@ -2325,7 +2325,7 @@ Casting Time: 1 round
 Area of Effect: 10' radius
 Saving Throw: Death negates
 
-Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10 foot radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
+Symbol of Death is a powerful enchantment that allows the caster to inscribe a symbol on the ground or any other surface. The symbol will remain there until a hostile creature comes within 7.5 feet of the glyph, at which point it is triggered and explodes, causing all enemies within a 10' radius to make a save vs. death or die. Creatures who currently have less than 60 hit points make their saving throw at a -4 penalty.~
 
 
 /*------------------Level 8------------------*/
@@ -2467,7 +2467,7 @@ Casting Time: 1 round
 Area of Effect: 5' radius
 Saving Throw: None
 
-The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 5 foot radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell and Blade Barrier are not cumulative.
+The priest employs this spell to create a globe of circling, razor-sharp blades. These blades whirl and flash around the caster, forming a dangerous and impenetrable barrier. Those within a 5' radius of the caster suffer 4D8 slashing damage every round, and the globe also provides the caster a +4 bonus to AC. Magic resistance does not affect this spell. Multiple castings of this spell and Blade Barrier are not cumulative.
 
 Note that invisibility or invisibility-like spells and effects such as Sanctuary and Invisibility will not function on the caster when protected by Globe of Blades. Furthermore, cleric/thieves and cleric/rangers who cast this will not be able to hide in shadows until the spell expires.~
 
@@ -2582,7 +2582,7 @@ Casting Time: 5
 Area of Effect: Special
 Saving Throw: None
 
-This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 10 foot radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
+This spell causes the caster to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the caster 100% fire resistance and protects them from all non-magical weapons, but can also damage creatures within a 5' radius and enflame weapons held by the caster. Opponents that hit the caster with a weapon or spell from within this radius will suffer 1D8 + 10 fire damage, and whenever the caster strikes an opponent with a melee weapon, they deal an additional 1D8 fire damage. Insect swarms cannot pass through the aura. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.~
 
 @291=~Fire Elemental Transformation~
 @292=~Fire Elemental Transformation
