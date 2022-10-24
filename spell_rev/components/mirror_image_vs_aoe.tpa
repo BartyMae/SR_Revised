@@ -175,12 +175,18 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN // Only in SR
     END
   END
 END ELSE BEGIN // Only in vanilla  
-  COPY_EXISTING ~fireseed.itm~ ~override~ // Fire Seeds
-                ~sppr951d.itm~ ~override~ // Fire Shield Blue
-                ~sppr952d.itm~ ~override~ // Fire Shield Red
-  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-    LPF bypass_mirror_image INT_VAR skip_check=1 END
-  END BUT_ONLY
+  ACTION_FOR_EACH resource IN
+    ~fireseed.itm~ ~override~ // Fire Seeds
+    ~sppr951d.itm~ ~override~ // Fire Shield Blue
+    ~sppr952d.itm~ ~override~ // Fire Shield Red
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      COPY_EXISTING 
+      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+        LPF bypass_mirror_image INT_VAR skip_check=1 END
+      END
+    END
+  END
 END
 
 COPY ~spell_rev\shared\dvmirror.mrk~        ~override~  // Used to detect if SR's Mirror Image Fix is installed
