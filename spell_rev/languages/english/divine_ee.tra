@@ -2,8 +2,9 @@
 
 @1=~Bless~
 @2=~Bless
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Sphere: All
 Range: Long
 Duration: 5 turns
@@ -15,8 +16,9 @@ Upon uttering the Bless spell, the priest grants a +1 bonus to THAC0, damage, an
 
 @3=~Command~
 @4=~Command
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Sphere: Charm, Combat, Law
 Range: Long
 Duration: 1 round
@@ -28,8 +30,9 @@ This spell enables the priest to command another creature to lie down and take n
 
 @5=~Cure Light Wounds~
 @6=~Cure Light Wounds
+(Necromancy)
+
 Level: 1
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Permanent
@@ -41,8 +44,9 @@ When casting this spell and laying their hand upon a creature, the priest heals 
 
 @7=~Detect Alignment~
 @8=~Detect Alignment
+(Divination)
+
 Level: 1
-School: Divination
 Sphere: Divination
 Range: Personal
 Duration: Instant
@@ -54,8 +58,9 @@ This spell allows the priest to search out the feelings of all creatures within 
 
 @9=~Entangle~
 @10=~Entangle
+(Alteration)
+
 Level: 1
-School: Alteration
 Sphere: Plant
 Range: Long
 Duration: 1 turn
@@ -67,8 +72,9 @@ By means of this spell, the caster causes plants to spring up from the ground an
 
 @11=~Magical Stone~
 @12=~Magical Stone
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Sphere: Combat
 Range: Personal
 Duration: Special
@@ -80,8 +86,9 @@ Using this spell, the priest can temporarily enchant ten small stones, no larger
 
 @13=~Protection from Evil~
 @14=~Protection from Evil
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Sphere: Protection
 Range: Touch
 Duration: 5 turns
@@ -93,8 +100,9 @@ When this spell is cast, it creates a magical barrier around the recipient at a 
 
 @15=~Resist Fear~
 @16=~Resist Fear
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Sphere: Charm
 Range: Long
 Duration: 5 turns
@@ -106,8 +114,9 @@ The priest instills courage in allies, raising their morale to its highest. If t
 
 @17=~Sanctuary~
 @18=~Sanctuary
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Sphere: Charm, Protection
 Range: Personal
 Duration: 1 turn
@@ -119,8 +128,9 @@ When the priest casts a Sanctuary spell, it causes all opponents to ignore their
 
 @19=~Shillelagh~
 @20=~Shillelagh
+(Alteration)
+
 Level: 1
-School: Alteration
 Sphere: Combat, Plant
 Range: Personal
 Duration: 1 turn + 1 round/level
@@ -132,8 +142,9 @@ This spell enables the caster to create a magical cudgel. Dealing 2d4 + 1 crushi
 
 @21=~Armor of Faith~
 @22=~Armor of Faith
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Sphere: Protection
 Range: Personal
 Duration: 5 turns
@@ -145,8 +156,9 @@ The caster of the Armor of Faith spell receives significant protection against p
 
 @23=~Doom~
 @24=~Doom
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Sphere: Charm
 Range: Long
 Duration: 1 turn
@@ -158,8 +170,9 @@ This spell causes a feeling of doom to overwhelm the target. For the duration of
 
 @25=~Faerie Fire~
 @26=~Faerie Fire
+(Evocation)
+
 Level: 1
-School: Evocation
 Sphere: Weather
 Range: Long
 Duration: 5 rounds
@@ -171,8 +184,9 @@ When this spell is cast, a pale glow surrounds and outlines all enemies within t
 
 @27=~Strength of Stone~
 @28=~Strength of Stone
+(Alteration)
+
 Level: 1
-School: Alteration
 Sphere: Elemental (Earth)
 Range: Personal
 Duration: 5 turns
@@ -184,8 +198,9 @@ Calling upon the strength of the earth, the caster gains some of the solidity an
 
 @29=~Sunscorch~
 @30=~Sunscorch
+(Evocation)
+
 Level: 1
-School: Evocation
 Sphere: Sun
 Range: Long
 Duration: Special
@@ -197,8 +212,9 @@ When this spell is cast, a brilliant ray of scorching heat slants down from the 
 
 @301=~Regenerate Light Wounds~
 @302=~Regenerate Light Wounds
+(Alteration)
+
 Level: 1
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 5 rounds
@@ -209,8 +225,9 @@ Saving Throw: None
 This spell enables the caster to mend the wounds and injuries of the target by granting them temporary regeneration. The affected creature will regenerate 15 + 1.5/two levels hit points over the duration of the spell, up to a maximum of 30 at 20th level.~
 
 @44000=~Goodberry
+(Alteration)
+
 Level: 1
-School: Alteration
 Sphere: Plant
 Range: Personal
 Duration: Special
@@ -222,8 +239,9 @@ Casting a Goodberry spell creates 3 magical berries that the caster can carry wi
 
 @315=~Cause Light Wounds~
 @316=~Cause Light Wounds
+(Necromancy)
+
 Level: 1
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Special
@@ -235,8 +253,9 @@ This spell is the reverse of Cure Light Wounds. Instead of healing the creature 
 
 @319=~Animal Summoning I~
 @320=~Animal Summoning I
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -265,8 +284,9 @@ Special Characteristics:
 
 @321=~Obscuring Mist~
 @322=~Obscuring Mist
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Sphere: Weather
 Range: Long
 Duration: 5 rounds
@@ -281,8 +301,9 @@ When this spell is cast, a misty bank of fog billows out from the designated poi
 
 @31=~Aid~
 @32=~Aid
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Sphere: Combat, Necromantic
 Range: Touch
 Duration: 1 turn/level
@@ -294,8 +315,9 @@ The recipient of this spell gains a +1 bonus to THAC0, damage, and saving throws
 
 @33=~Barkskin~
 @34=~Barkskin
+(Alteration)
+
 Level: 2
-School: Alteration
 Sphere: Plant
 Range: Touch
 Duration: 5 turns
@@ -307,8 +329,9 @@ When a druid casts the Barkskin spell upon a creature, their skin becomes as tou
 
 @35=~Chant~
 @36=~Chant
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Sphere: Combat
 Range: Personal
 Duration: 1 turn
@@ -320,8 +343,9 @@ By means of the Chant spell, the priest brings special favor upon themselves and
 
 @35000=~Chant~
 @36000=~Chant
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Sphere: Combat
 Range: Long
 Duration: 1 turn
@@ -333,8 +357,9 @@ By means of the Chant spell, the priest brings special favor upon themselves and
 
 @37=~Charm Person or Animal~
 @38=~Charm Person or Animal
+(Enchantment)
+
 Level: 2
-School: Enchantment
 Sphere: Animal
 Range: Long
 Duration: 1 turn
@@ -348,8 +373,9 @@ Creatures that are currently neutral to the caster are more amenable to helping 
 
 @39=~Find Traps~
 @40=~Find Traps
+(Divination)
+
 Level: 2
-School: Divination
 Sphere: Divination
 Range: Personal
 Duration: 5 turns
@@ -361,8 +387,9 @@ When a priest casts a Find Traps spell, all traps - concealed normally or magica
 
 @41=~Flame Blade~
 @42=~Flame Blade
+(Evocation)
+
 Level: 2
-School: Evocation
 Sphere: Elemental (Fire)
 Range: Personal
 Duration: 1 turn + 1 round/level
@@ -374,8 +401,9 @@ With this spell, the caster causes a blazing ray of red-hot fire to spring forth
 
 @43=~Goodberry~
 @44=~Goodberry
+(Alteration)
+
 Level: 2
-School: Alteration
 Sphere: Plant
 Range: Personal
 Duration: Special
@@ -387,8 +415,9 @@ Casting a Goodberry spell creates 3 magical berries that the caster can carry wi
 
 @45=~Hold Person~
 @46=~Hold Person
+(Enchantment)
+
 Level: 2
-School: Enchantment
 Sphere: Charm, Law
 Range: Long
 Duration: 1 turn
@@ -402,8 +431,9 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 @47=~Know Opponent~
 @48=~Know Opponent
+(Divination)
+
 Level: 2
-School: Divination
 Sphere: Divination
 Range: Long
 Duration: 1 turn + 1 round/level
@@ -415,8 +445,9 @@ When a Know Opponent spell is cast, the priest's eyes glow with magical energy, 
 
 @49=~Resist Elements~
 @50=~Resist Elements
+(Abjuration)
+
 Level: 2
-School: Abjuration
 Sphere: Protection
 Range: Touch
 Duration: 1 turn + 1 round/level
@@ -428,8 +459,9 @@ Upon the casting of this spell, the recipient gains a +25% bonus to elemental re
 
 @51=~Silence~
 @52=~Silence
+(Alteration)
+
 Level: 2
-School: Alteration
 Sphere: Guardian
 Range: Long
 Duration: 1 turn
@@ -441,8 +473,9 @@ Upon casting this spell, complete silence prevails in the affected area. All sou
 
 @53=~Slow Poison~
 @54=~Slow Poison
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Instant
@@ -454,8 +487,9 @@ When this spell is cast upon a poisoned individual, it greatly slows the effects
 
 @55=~Spiritual Hammer~
 @56=~Spiritual Hammer
+(Evocation)
+
 Level: 2
-School: Evocation
 Sphere: Combat
 Range: Personal
 Duration: 1 turn + 1 round/level
@@ -467,8 +501,9 @@ By calling upon their deity, the caster of a Spiritual Hammer spell brings into 
 
 @57=~Draw Upon Divine Might~
 @58=~Draw Upon Divine Might
+(Evocation)
+
 Level: 2
-School: Evocation
 Sphere: Combat
 Range: Personal
 Duration: 1 turn
@@ -480,8 +515,9 @@ When this spell is cast, the priest's body shudders and glows with a shimmering 
 
 @59=~Cure Medium Wounds~
 @60=~Cure Medium Wounds
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Permanent
@@ -493,8 +529,9 @@ When casting this spell and laying their hand upon a creature, the priest heals 
 
 @61=~Fire Trap~
 @62=~Fire Trap
+(Abjuration)
+
 Level: 2
-School: Abjuration
 Sphere: Elemental (Fire)
 Range: Short
 Duration: Special
@@ -508,8 +545,9 @@ When the spell is cast, the druid weaves a tracery of faintly glowing lines arou
 
 @303=~Regenerate Moderate Wounds~
 @304=~Regenerate Moderate Wounds
+(Alteration)
+
 Level: 2
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 5 rounds
@@ -521,8 +559,9 @@ This spell enables the caster to mend the wounds and injuries of the target by g
 
 @313=~Gust of Wind~
 @314=~Gust of Wind
+(Evocation)
+
 Level: 2
-School: Evocation
 Sphere: Elemental (Air)
 Range: Personal
 Duration: Instant
@@ -534,8 +573,9 @@ This spell creates a severe blast of air that originates from the caster, affect
 
 @317=~Cause Medium Wounds~
 @318=~Cause Medium Wounds
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Special
@@ -547,8 +587,9 @@ This spell is the reverse of Cure Medium Wounds. Instead of healing the creature
 
 @323=~Animal Summoning II~
 @324=~Animal Summoning II
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -578,8 +619,9 @@ Special Characteristics:
 
 @71=~Animate Dead~
 @72=~Animate Dead
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Sphere: Necromantic
 Range: Long
 Duration: 8 hours
@@ -620,8 +662,9 @@ Special Characteristics:
 
 @73=~Call Lightning~
 @74=~Call Lightning
+(Alteration)
+
 Level: 3
-School: Alteration
 Sphere: Weather
 Range: Long
 Duration: Special
@@ -633,8 +676,9 @@ Immediately upon completion of the spell and once per round thereafter, the cast
 
 @75=~Dispel Magic~
 @76=~Dispel Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: All
 Range: Long
 Duration: Instant
@@ -647,8 +691,9 @@ Dispel Magic dispels the magical effects upon any creatures within the area of e
 The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Dispel Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Dispel Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
 
 @76000=~Dispel Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: All
 Range: Long
 Duration: Instant
@@ -659,8 +704,9 @@ Saving Throw: Special
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
 
 @76000000=~Dispel Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: All
 Range: Long
 Duration: Instant
@@ -676,8 +722,9 @@ The combat protection spells dispelled by Remove Magic are: Mage Armor, Shield, 
 
 @77=~Glyph of Warding~
 @78=~Glyph of Warding
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: Guardian
 Range: Short
 Duration: Special
@@ -691,8 +738,9 @@ When the spell is cast, the priest weaves a tracery of faintly glowing lines aro
 
 @79=~Hold Person or Animal~
 @80=~Hold Person or Animal
+(Enchantment)
+
 Level: 3
-School: Enchantment
 Sphere: Animal
 Range: Long
 Duration: 1 turn
@@ -706,8 +754,9 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 @83=~Break Enchantment~
 @84=~Break Enchantment
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: All
 Range: Short
 Duration: Instant
@@ -719,8 +768,9 @@ Upon casting this spell, the caster is able to free a victim from enchantments a
 
 @85=~Remove Paralysis~
 @86=~Remove Paralysis
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: Necromantic, Protection
 Range: Long
 Duration: Instant
@@ -732,8 +782,9 @@ By the use of this spell, the priest can free several creatures from the effects
 
 @87=~Invisibility Purge~
 @88=~Invisibility Purge
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: Wards
 Range: Personal
 Duration: 1 turn
@@ -745,8 +796,9 @@ Instantly and once each round for 1 turn after this spell is cast, all concealed
 
 @89=~Miscast Magic~
 @90=~Miscast Magic
+(Enchantment)
+
 Level: 3
-School: Enchantment
 Sphere: Chaos
 Range: Long
 Duration: 5 rounds
@@ -758,8 +810,9 @@ Miscast Magic causes spells cast by the affected creature to take on an effect d
 
 @91=~Rigid Thinking~
 @92=~Rigid Thinking
+(Enchantment)
+
 Level: 3
-School: Enchantment
 Sphere: Thought
 Range: Long
 Duration: 1 turn
@@ -771,8 +824,9 @@ This spell causes confusion to the target, creating indecision and the inability
 
 @93=~Strength of One~
 @94=~Strength of One
+(Alteration)
+
 Level: 3
-School: Alteration
 Sphere: Law
 Range: Personal
 Duration: 1 turn
@@ -784,8 +838,9 @@ When this spell is cast, all party members within 15 feet of the caster gain a +
 
 @95=~Holy Smite~
 @96=~Holy Smite
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Sphere: Necromantic
 Range: Long
 Duration: Special
@@ -797,8 +852,9 @@ With this spell the priest draws down holy power to smite their enemies. Opponen
 
 @97=~Unholy Blight~
 @98=~Unholy Blight
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Sphere: Necromantic
 Range: Long
 Duration: Special
@@ -810,8 +866,9 @@ With this spell the priest calls up unholy power to smite their enemies. The pow
 
 @99=~Cure Disease~
 @100=~Cure Disease
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: Healing
 Range: Touch
 Duration: Instant
@@ -823,8 +880,9 @@ By laying their hands upon a sickly person, the caster can cure almost any disea
 
 @101=~Zone of Sweet Air~
 @102=~Zone of Sweet Air
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: Wards, Elemental (Air)
 Range: Personal
 Duration: 5 rounds
@@ -836,8 +894,9 @@ Zone of Sweet Air repels all noxious elements from poisonous vapors (including m
 
 @103=~Summon Insects~
 @104=~Summon Insects
+(Conjuration)
+
 Level: 3
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 rounds
@@ -851,8 +910,9 @@ For the duration of the spell, the target fights with a -2 penalty to THAC0 and 
 
 @325=~Animal Summoning III~
 @326=~Animal Summoning III
+(Conjuration)
+
 Level: 3
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -879,8 +939,9 @@ Special Characteristics:
 
 @107=~Cause Moderate Wounds~
 @108=~Cause Moderate Wounds
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Special
@@ -892,8 +953,9 @@ This spell is the reverse of Cure Moderate Wounds. Instead of healing the creatu
 
 @109=~Cure Moderate Wounds~
 @110=~Cure Moderate Wounds
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Permanent
@@ -905,8 +967,9 @@ When casting this spell and laying their hand upon a creature, the priest heals 
 
 @1109=~Storm Shield~
 @1110=~Storm Shield
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Sphere: Weather, Elemental (Air)
 Range: Personal
 Duration: 1 turn
@@ -918,8 +981,9 @@ This spell surrounds the caster with invisible curtains of stormy winds that mov
 
 @305=~Regenerate Medium Wounds~
 @306=~Regenerate Medium Wounds
+(Alteration)
+
 Level: 3
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 5 rounds
@@ -931,8 +995,9 @@ This spell enables the caster to mend the wounds and injuries of the target by g
 
 @327=~Magic Fang~
 @328=~Magic Fang
+(Alteration)
+
 Level: 3
-School: Alteration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -944,8 +1009,9 @@ This spell turns natural weapons (such as teeth, claws, etc.) of friendly animal
 
 @333=~Spike Growth~
 @334=~Spike Growth
+(Alteration)
+
 Level: 3
-School: Alteration
 Sphere: Plant
 Range: Long
 Duration: 1 turn
@@ -957,8 +1023,9 @@ By means of this spell, the caster causes the ground to sprout vicious spikes an
 
 @335=~Icelance~
 @336=~Icelance
+(Evocation)
+
 Level: 3
-School: Evocation
 Sphere: Elemental (Water)
 Range: Long
 Duration: Special
@@ -970,8 +1037,9 @@ When this spell is cast, a sharp spear of ice impales the target, dealing 1d6 of
 
 @91000=~Contagion~
 @92000=~Contagion
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Sphere: Necromantic
 Range: Short
 Duration: Special
@@ -986,8 +1054,9 @@ This spell causes a major disease and weakness in a creature. For the following 
 
 @111=~Cure Serious Wounds~
 @112=~Cure Serious Wounds
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Permanent
@@ -999,8 +1068,9 @@ When casting this spell and laying their hand upon a creature, the priest heals 
 
 @113=~Animal Summoning IV~
 @114=~Animal Summoning IV
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -1027,8 +1097,9 @@ Special Characteristics:
 
 @115=~Free Action~
 @116=~Free Action
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Sphere: Charm
 Range: Touch
 Duration: 1 turn/level
@@ -1040,8 +1111,9 @@ While under the effects of this spell, the recipient becomes immune to everythin
 
 @117=~Neutralize Poison~
 @118=~Neutralize Poison
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: 1 turn/level
@@ -1053,8 +1125,9 @@ This spell removes all toxins from the body, both natural and magical in nature.
 
 @119=~Mental Domination~
 @120=~Mental Domination
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Sphere: Thought
 Range: Long
 Duration: 1 turn
@@ -1068,8 +1141,9 @@ If the caster attempts to harm the dominated creature, or if a dispel magic is s
 
 @121=~Defensive Harmony~
 @122=~Defensive Harmony
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Sphere: Law
 Range: Personal
 Duration: 1 turn
@@ -1081,8 +1155,9 @@ Defensive Harmony grants the affected creatures a defensive bonus by enhancing t
 
 @125=~Magic Circle Against Evil~
 @126=~Magic Circle Against Evil
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Sphere: Protection
 Range: Personal
 Duration: 5 turns
@@ -1094,8 +1169,9 @@ Upon casting this spell, the priest causes all friendly creatures within the are
 
 @127=~Death Ward~
 @128=~Death Ward
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Sphere: Necromantic
 Range: Touch
 Duration: 1 turn/level
@@ -1107,8 +1183,9 @@ While under the effects of this spell, the recipient is immune to all forms of i
 
 @129=~Call Woodland Beings~
 @130=~Call Woodland Beings
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -1157,8 +1234,9 @@ Known Spells:
 
 @131=~Poison~
 @132=~Poison
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Sphere: Healing
 Range: Short
 Duration: 1 round/2 levels
@@ -1170,8 +1248,9 @@ Through this spell, the caster can poison a single victim. The target suffers an
 
 @133=~Divine Power~
 @134=~Divine Power
+(Evocation)
+
 Level: 4
-School: Evocation
 Sphere: Combat
 Range: Personal
 Duration: 1 round/level
@@ -1185,8 +1264,9 @@ NOTE: This spell does not give any extra attacks to multiclassed or dual-classed
 
 @135=~Negative Plane Protection~
 @136=~Negative Plane Protection
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Sphere: Necromantic, Protection
 Range: Touch
 Duration: 1 turn/level
@@ -1198,8 +1278,9 @@ When a Negative Plane Protection spell is cast, the recipient receives complete 
 
 @137=~Cause Serious Wounds~
 @138=~Cause Serious Wounds
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Special
@@ -1211,8 +1292,9 @@ This spell is the reverse of Cure Serious Wounds. Instead of healing the creatur
 
 @139=~Farsight~
 @140=~Farsight
+(Divination)
+
 Level: 4
-School: Divination
 Sphere: Divination
 Range: Personal
 Duration: 5 turns
@@ -1224,8 +1306,9 @@ When Farsight is cast, the caster is able to view an area of an unexplored map. 
 
 @141=~Cloak of Fear~
 @142=~Cloak of Fear
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Sphere: Charm
 Range: Personal
 Duration: 1 turn
@@ -1237,8 +1320,9 @@ Cloak of Fear empowers the caster to radiate a personal aura of fear out to a 5'
 
 @143=~Lesser Restoration~
 @144=~Lesser Restoration
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Sphere: Necromantic
 Range: Touch
 Duration: Instant
@@ -1252,8 +1336,9 @@ The casting of this spell is very draining on the priest, leaving them physicall
 
 @145=~Ice Storm~
 @146=~Ice Storm
+(Evocation)
+
 Level: 4
-School: Evocation
 Sphere: Elemental (Water)
 Range: Long
 Duration: 5 rounds
@@ -1265,8 +1350,9 @@ When this spell is cast, great magical hailstones pound down for 5 rounds within
 
 @307=~Regenerate Serious Wounds~
 @308=~Regenerate Serious Wounds
+(Alteration)
+
 Level: 4
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 5 rounds
@@ -1278,8 +1364,9 @@ This spell enables the caster to mend the wounds and injuries of the target by g
 
 @185=~Polymorph Other~
 @186=~Polymorph Other
+(Alteration)
+
 Level: 4
-School: Alteration
 Sphere: Animal
 Range: Long
 Duration: Permanent
@@ -1296,8 +1383,9 @@ Note that all clothes and equipment that the target was wearing will mold into t
 
 @151=~Animal Summoning V~
 @152=~Animal Summoning V
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -1324,8 +1412,9 @@ Special Characteristics:
 
 @153=~Cure Critical Wounds~
 @154=~Cure Critical Wounds
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Permanent
@@ -1337,8 +1426,9 @@ Upon casting this spell and laying their hand upon a creature, the priest heals 
 
 @155=~Flame Strike~
 @156=~Flame Strike
+(Evocation)
+
 Level: 5
-School: Evocation
 Sphere: Combat, Elemental (Fire)
 Range: Long
 Duration: Instant
@@ -1350,8 +1440,9 @@ Upon casting a Flame Strike spell, a vertical column of fire roars downward, str
 
 @157=~Raise Dead~
 @158=~Raise Dead
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Sphere: Necromantic
 Range: Touch
 Duration: Permanent
@@ -1363,8 +1454,9 @@ When the priest casts a Raise Dead spell, life can be restored to a dead comrade
 
 @2157=~Harper's Call~
 @2158=~Harper's Call
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Sphere: Necromantic
 Range: Touch
 Duration: Permanent
@@ -1376,8 +1468,9 @@ This spell is only available to Harpers. The Harper's Call restores a comrade to
 
 @159=~True Seeing~
 @160=~True Seeing
+(Divination)
+
 Level: 5
-School: Divination
 Sphere: All
 Range: Personal
 Duration: 1 turn
@@ -1391,8 +1484,9 @@ Creatures affected by improved invisibility will be revealed to the party, but c
 
 @161=~Stoneskin~
 @162=~Stoneskin
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Elemental (Earth)
 Range: Personal
 Duration: 8 hours
@@ -1406,8 +1500,9 @@ It is important to note that this will not protect the druid from any area of ef
 
 @163=~Champion's Strength~
 @164=~Champion's Strength
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Law
 Range: Medium
 Duration: 1 round/level
@@ -1419,8 +1514,9 @@ When this spell is cast, the priest draws on the power of their god and lends it
 
 @165=~Chaotic Commands~
 @166=~Chaotic Commands
+(Enchantment)
+
 Level: 5
-School: Enchantment
 Sphere: Chaos
 Range: Touch
 Duration: 1 turn/level
@@ -1432,8 +1528,9 @@ While under the effects of a Chaotic Commands spell, the recipient becomes immun
 
 @167=~Magic Resistance~
 @168=~Magic Resistance
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Protection
 Range: Touch
 Duration: 2 rounds/level
@@ -1445,8 +1542,9 @@ Upon the casting of this spell, the recipient receives a +2% bonus to magic resi
 
 @169=~Cause Critical Wounds~
 @170=~Cause Critical Wounds
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Sphere: Healing
 Range: Personal
 Duration: Special
@@ -1458,8 +1556,9 @@ This spell is the reverse of Cure Critical Wounds. Instead of healing the creatu
 
 @171=~Slay Living~
 @172=~Slay Living
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Special
@@ -1471,8 +1570,9 @@ Upon a successful touch from the priest after casting this spell, the target is 
 
 @173=~Greater Command~
 @174=~Greater Command
+(Enchantment)
+
 Level: 5
-School: Enchantment
 Sphere: Charm, Combat, Law
 Range: Long
 Duration: 1 turn
@@ -1484,8 +1584,9 @@ As with the first level spell Command, this spell enables the priest to command 
 
 @175=~Righteous Fury~
 @176=~Righteous Fury
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Combat
 Range: Personal
 Duration: 1 round/level
@@ -1497,8 +1598,9 @@ This is a powerful combat spell that enhances the priest's physical prowess, cha
 
 @177=~Mass Cure~
 @178=~Mass Cure
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Sphere: Healing
 Range: Personal
 Duration: Permanent
@@ -1510,8 +1612,9 @@ When casting this spell, the priest must picture the faces of their fellow party
 
 @105=~Repulsion~
 @106=~Repulsion
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Sphere: Wards
 Range: Personal
 Duration: 1 turn
@@ -1523,8 +1626,9 @@ An invisible, mobile field surrounds the caster and prevents creatures from appr
 
 @179=~Pixie Dust~
 @180=~Pixie Dust
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Sphere: Combat
 Range: Personal
 Duration: 1 turn
@@ -1536,8 +1640,9 @@ This spell creates a pinch of pixie dust that the caster can toss into the air. 
 
 @181=~Insect Plague~
 @182=~Insect Plague
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 rounds
@@ -1551,8 +1656,9 @@ For the duration of the spell, the affected creatures fight with a -2 penalty to
 
 @187=~Protection from Acid~
 @188=~Protection from Acid
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Sphere: Elemental, Protection
 Range: Touch
 Duration: 1 turn/level
@@ -1564,8 +1670,9 @@ When this spell is cast, the recipient receives complete protection from all aci
 
 @189=~Protection from Cold~
 @190=~Protection from Cold
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Sphere: Elemental, Protection
 Range: Touch
 Duration: 1 turn/level
@@ -1577,8 +1684,9 @@ When this spell is cast, the recipient receives complete protection from cold-ba
 
 @123=~Protection from Electricity~
 @124=~Protection from Electricity
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Sphere: Elemental, Protection
 Range: Touch
 Duration: 1 turn/level
@@ -1590,8 +1698,9 @@ When this spell is cast, the recipient receives complete protection from all ele
 
 @81=~Protection from Fire~
 @82=~Protection from Fire
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Sphere: Elemental, Protection
 Range: Touch
 Duration: 1 turn/level
@@ -1603,8 +1712,9 @@ When this spell is cast, the recipient receives complete protection from all fir
 
 @309=~Mass Regenerate~
 @310=~Mass Regenerate
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 5 rounds
@@ -1616,8 +1726,9 @@ When casting this spell, the druid must picture the faces of their fellow party 
 
 @329=~Animal Growth~
 @330=~Animal Growth
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Animal
 Range: Personal
 Duration: 5 turns
@@ -1629,8 +1740,9 @@ When this spell is cast, the caster causes all friendly animals within range to 
 
 @30700=~Regenerate Critical Wounds~
 @30800=~Regenerate Critical Wounds
+(Alteration)
+
 Level: 5
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 5 rounds
@@ -1645,8 +1757,9 @@ This spell enables the caster to mend the wounds and injuries of the target by g
 
 @191=~Aerial Servant~
 @192=~Aerial Servant
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Summoning
 Range: Long
 Duration: 1 turn/level
@@ -1670,8 +1783,9 @@ Special Characteristics:
 
 @193=~Animal Summoning VI~
 @194=~Animal Summoning VI
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -1694,8 +1808,9 @@ Cave Bear (6 HD):
 
 @195=~Blade Barrier~
 @196=~Blade Barrier
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Guardian, Creation
 Range: Personal
 Duration: 1 turn
@@ -1709,8 +1824,9 @@ Note that invisibility or invisibility-like spells and effects such as Sanctuary
 
 @199=~Conjure Fire Elemental~
 @200=~Conjure Fire Elemental
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Elemental (Fire)
 Range: Long
 Duration: 1 turn + 1 round/level
@@ -1747,8 +1863,9 @@ Special Characteristics:
 
 @201=~Fire Seeds~
 @202=~Fire Seeds
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Elemental (Fire)
 Range: Personal
 Duration: 5 turns
@@ -1760,8 +1877,9 @@ This spell enables the druid to create one fire seed for every 2 experience leve
 
 @203=~Heal~
 @204=~Heal
+(Necromancy)
+
 Level: 6
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: Instant
@@ -1773,8 +1891,9 @@ The very potent Heal spell enables the priest to wipe away the wounds and injuri
 
 @205=~Harm~
 @206=~Harm
+(Necromancy)
+
 Level: 6
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Special
@@ -1786,8 +1905,9 @@ This spell is the reverse of Heal. Instead of healing the creature touched, it c
 
 @207=~False Dawn~
 @208=~False Dawn
+(Evocation)
+
 Level: 6
-School: Evocation
 Sphere: Sun
 Range: Personal
 Duration: 1 turn
@@ -1799,8 +1919,9 @@ By drawing on the power of the sun, a False Dawn spell causes the caster's body 
 
 @209=~Dolorous Decay~
 @210=~Dolorous Decay
+(Necromancy)
+
 Level: 6
-School: Alteration, Necromancy
 Sphere: Combat, Necromantic
 Range: Medium
 Duration: Special
@@ -1812,8 +1933,9 @@ Dolorous Decay is a rotting and withering of the body that affects a single livi
 
 @211=~Wondrous Recall~
 @212=~Wondrous Recall
+(Alteration)
+
 Level: 6
-School: Alteration
 Sphere: Charm, Creation
 Range: Personal
 Duration: Instant
@@ -1825,8 +1947,9 @@ This spell enables the caster to bring back into memory two spells that have bee
 
 @213=~Bolt of Glory~
 @214=~Bolt of Glory
+(Evocation)
+
 Level: 6
-School: Evocation
 Sphere: Combat, Summoning
 Range: Long
 Duration: Instant
@@ -1844,8 +1967,9 @@ Creature Type: Damage
 
 @215=~Physical Mirror~
 @216=~Physical Mirror
+(Alteration)
+
 Level: 6
-School: Alteration
 Sphere: Numbers
 Range: Personal
 Duration: 1 turn + 1 round/level
@@ -1857,8 +1981,9 @@ This spell causes a localized folding of space. The folded space takes the form 
 
 @217=~Sol's Searing Orb~
 @218=~Sol's Searing Orb
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Elemental (Fire)
 Range: Personal
 Duration: Special
@@ -1870,8 +1995,9 @@ When the spell is completed, it creates a glowing gem that must be thrown at an 
 
 @219=~Conjure Air Elemental~
 @220=~Conjure Air Elemental
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Elemental (Air)
 Range: Long
 Duration: 1 turn + 1 round/level
@@ -1908,8 +2034,9 @@ Special Characteristics:
 
 @221=~Conjure Earth Elemental~
 @222=~Conjure Earth Elemental
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Sphere: Elemental (Earth)
 Range: Long
 Duration: 1 turn + 1 round/level
@@ -1946,8 +2073,9 @@ Special Characteristics:
 
 @311=~Regeneration~
 @312=~Regeneration
+(Alteration)
+
 Level: 6
-School: Alteration
 Sphere: Healing
 Range: Touch
 Duration: 2 rounds/level
@@ -1959,8 +2087,9 @@ This powerful spell enables the caster to imbue a creature with the ability to r
 
 @223=~Banishment~
 @224=~Banishment
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Sphere: Wards
 Range: Long
 Duration: Instant
@@ -1972,8 +2101,9 @@ The Banishment spell forces hostile summoned creatures in the area back to their
 
 @225=~Animate Warrior~
 @226=~Animate Warrior
+(Necromancy)
+
 Level: 6
-School: Necromancy
 Sphere: Necromantic
 Range: Long
 Duration: 8 hours
@@ -2001,8 +2131,9 @@ Special Characteristics:
 
 @231=~Shield of the Archons~
 @232=~Shield of the Archons
+(Abjuration)
+
 Level: 7
-School: Abjuration
 Sphere: Protection
 Range: Personal
 Duration: 1 turn
@@ -2016,8 +2147,9 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, but 
 
 @233=~Summon Shambling Mound~
 @234=~Summon Shambling Mound
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Plant
 Range: Long
 Duration: 8 hours
@@ -2043,8 +2175,9 @@ Special Characteristics:
 
 @235=~Summon Death Knight~
 @236=~Summon Death Knight
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Sphere: All
 Range: Medium
 Duration: 5 turns
@@ -2075,8 +2208,9 @@ Known Spells:
 
 @237=~Nature's Beauty~
 @238=~Nature's Beauty
+(Illusion)
+
 Level: 7
-School: Illusion
 Sphere: Elemental
 Range: Personal
 Duration: 1 turn
@@ -2090,8 +2224,9 @@ If the caster attempts to harm a charmed creature, or if a dispel magic is succe
 
 @239=~Fire Storm~
 @240=~Fire Storm
+(Evocation)
+
 Level: 7
-School: Evocation
 Sphere: Combat, Elemental (Fire)
 Range: Long
 Duration: 5 rounds
@@ -2103,8 +2238,9 @@ When a Fire Storm spell is cast, the whole area is shot through with sheets of r
 
 @241=~Symbol of Pain~
 @242=~Symbol of Pain
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Combat
 Range: Long
 Duration: Special
@@ -2116,8 +2252,9 @@ Symbol of Pain is a powerful enchantment that allows the caster to inscribe a sy
 
 /*@241=~Symbol of Weakness~
 @242=~Symbol of Weakness
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Combat
 Range: Long
 Duration: Special
@@ -2129,8 +2266,9 @@ Symbol of Weakness is a powerful enchantment that allows the caster to inscribe 
 
 @243=~Sunray~
 @244=~Sunray
+(Evocation)
+
 Level: 7
-School: Evocation
 Sphere: Sun
 Range: Personal
 Duration: Special
@@ -2142,8 +2280,9 @@ When this spell is cast, it causes a ray of sunlight to beam down upon the caste
 
 @245=~Finger of Death~
 @246=~Finger of Death
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Sphere: War
 Range: Long
 Duration: Instant
@@ -2155,8 +2294,9 @@ The Finger of Death spell snuffs out the chosen target's life force. The caster 
 
 @297=~Sphere of Chaos~
 @298=~Sphere of Chaos
+(Enchantment)
+
 Level: 7
-School: Enchantment
 Sphere: Chaos
 Range: Long
 Duration: 1 turn
@@ -2168,8 +2308,9 @@ This spell allows the caster to create a sphere of chaotic magic. All enemies wi
 
 @247=~Holy Word~
 @248=~Holy Word
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Combat
 Range: Personal
 Duration: Special
@@ -2187,8 +2328,9 @@ Target's Hit Dice - Effects of Holy Word
 
 @249=~Regeneration~
 @250=~Regeneration
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Sphere: Healing
 Range: Touch
 Duration: 2 rounds/level
@@ -2200,8 +2342,9 @@ This powerful spell enables the caster to imbue a creature with the ability to r
 
 @251=~Resurrection~
 @252=~Resurrection
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Sphere: Necromantic
 Range: Touch
 Duration: Permanent
@@ -2213,8 +2356,9 @@ Like the 5th level spell Raise Dead, Resurrection will return a character back t
 
 @253=~Greater Restoration~
 @254=~Greater Restoration
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Sphere: Necromantic
 Range: Touch
 Duration: Permanent
@@ -2228,8 +2372,9 @@ The casting of this spell is very draining on the priest, leaving them physicall
 
 @255=~Unholy Word~
 @256=~Unholy Word
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Combat
 Range: Personal
 Duration: Special
@@ -2247,8 +2392,9 @@ Target's Hit Dice - Effects of Unholy Word
 
 @331=~Animal Summoning VII~
 @332=~Animal Summoning VII
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -2273,8 +2419,9 @@ Special Characteristics:
 
 @257=~Creeping Doom~
 @258=~Creeping Doom
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 rounds
@@ -2288,8 +2435,9 @@ For the duration of the spell, the affected creatures fight with a -2 penalty to
 
 @259=~Symbol of Stunning~
 @260=~Symbol of Stunning
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Combat
 Range: Long
 Duration: Special
@@ -2301,8 +2449,9 @@ Symbol of Stunning is a powerful enchantment that allows the caster to inscribe 
 
 @261=~Earthquake~
 @262=~Earthquake
+(Alteration)
+
 Level: 7
-School: Alteration
 Sphere: Elemental (Earth)
 Range: Long
 Duration: Special
@@ -2316,8 +2465,9 @@ The first tremor causes all creatures to fall to the ground for 2 rounds and suf
 
 @295=~Symbol of Death~
 @296=~Symbol of Death
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Sphere: Combat
 Range: Long
 Duration: Special
@@ -2332,8 +2482,9 @@ Symbol of Death is a powerful enchantment that allows the caster to inscribe a s
 
 @271=~Energy Blades~
 @272=~Energy Blades
+(Evocation)
+
 Level: Quest
-School: Evocation
 Sphere: Creation, Combat
 Range: Personal
 Duration: 5 turns
@@ -2345,8 +2496,9 @@ An energy blade is a discus made of pure energy. The discs are thrown with a +10
 
 @273=~Storm of Vengeance~
 @274=~Storm of Vengeance
+(Evocation)
+
 Level: Quest
-School: Evocation
 Sphere: War, Weather
 Range: Long
 Duration: 5 rounds
@@ -2358,8 +2510,9 @@ Casting this spell causes the earth to shake and the heavens to boil with blood 
 
 @275=~Elemental Swarm~
 @276=~Elemental Swarm
+(Conjuration)
+
 Level: Quest
-School: Conjuration
 Sphere: Elemental, Summoning
 Range: Long
 Duration: 1 turn + 1 round/level
@@ -2404,8 +2557,9 @@ Special Characteristics:
 
 @277=~Elemental Prince Call~
 @278=~Elemental Prince Call
+(Conjuration)
+
 Level: Quest
-School: Conjuration
 Sphere: Elemental, Summoning
 Range: Long
 Duration: 1 turn
@@ -2458,8 +2612,9 @@ Creature Abiliities:
 
 @279=~Globe of Blades~
 @280=~Globe of Blades
+(Evocation)
+
 Level: Quest
-School: Evocation
 Sphere: Guardian, Creation
 Range: Personal
 Duration: 1 turn
@@ -2473,8 +2628,9 @@ Note that invisibility or invisibility-like spells and effects such as Sanctuary
 
 @281=~Summon Deva~
 @282=~Summon Deva
+(Conjuration)
+
 Level: Quest
-School: Conjuration
 Sphere: All, Summoning
 Range: Long
 Duration: 1 round/level
@@ -2510,8 +2666,9 @@ Known Spells:
 
 @283=~Summon Fallen Deva~
 @284=~Summon Fallen Deva
+(Conjuration)
+
 Level: Quest
-School: Conjuration
 Sphere: All, Summoning
 Range: Long
 Duration: 1 round/level
@@ -2547,8 +2704,9 @@ Known Spells:
 
 @285=~Implosion~
 @286=~Implosion
+(Alteration)
+
 Level: Quest
-School: Alteration
 Sphere: Combat, Numbers
 Range: Long
 Duration: 1 round
@@ -2560,8 +2718,9 @@ This fearsome spell creates a destructive resonance in a corporeal creature's bo
 
 @287=~Mass Raise Dead~
 @288=~Mass Raise Dead
+(Necromancy)
+
 Level: Quest
-School: Necromancy
 Sphere: Necromantic
 Range: Personal
 Duration: Permanent
@@ -2573,8 +2732,9 @@ A more powerful version of Raise Dead, this spell brings up to 5 party members b
 
 @289=~Aura of Flaming Death~
 @290=~Aura of Flaming Death
+(Evocation)
+
 Level: Quest
-School: Evocation
 Sphere: Protection, Elemental (Fire)
 Range: Personal
 Duration: 1 turn
@@ -2586,8 +2746,9 @@ This spell causes the caster to be enveloped by an aura of intense flame that bo
 
 @291=~Fire Elemental Transformation~
 @292=~Fire Elemental Transformation
+(Alteration)
+
 Level: Quest
-School: Alteration
 Sphere: Combat, Elemental (Fire)
 Range: Personal
 Duration: 5 turns
@@ -2609,8 +2770,9 @@ Special Characteristics:
 
 @293=~Earth Elemental Transformation~
 @294=~Earth Elemental Transformation
+(Alteration)
+
 Level: Quest
-School: Alteration
 Sphere: Combat, Elemental (Earth)
 Range: Personal
 Duration: 5 turns
@@ -2635,8 +2797,9 @@ Special Characteristics:
 
 @394=~Animal Summoning IV~
 @395=~Animal Summoning IV
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -2659,8 +2822,9 @@ Special Characteristics:
 
 @396=~Animal Summoning V~
 @397=~Animal Summoning V
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -2684,8 +2848,9 @@ Special Characteristics:
 
 @398=~Animal Summoning VI~
 @399=~Animal Summoning VI
+(Conjuration)
+
 Level: 3
-School: Conjuration
 Sphere: Animal
 Range: Long
 Duration: 5 turns
@@ -2708,8 +2873,9 @@ Cave Bear (6 HD):
 
 @433000=~Chromatic Orb~
 @434000=~Chromatic Orb
+(Alteration)
+
 Level: 1
-School: Alteration
 Range: Long
 Duration: 5 rounds
 Casting Time: 1

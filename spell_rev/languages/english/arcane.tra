@@ -1428,7 +1428,7 @@ Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast on a creature it enchants any weapons that it currently wields. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.~
+When this spell is cast on a creature, it enchants any weapons that it currently wields. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.~
 
 @595=~Fire Shield~
 @596=~Fire Shield
@@ -1905,7 +1905,7 @@ Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast the wizard is protected from the next magical attack against them. If one of those spells is cast at the wizard, this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
+When this spell is cast, the wizard is protected from the next magical attack against them. If one of those spells is cast at the wizard, this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
 
 The spells that Spell Shield protects the caster from are: Spell Thrust, Secret Word, Pierce Magic, Ruby Ray of Reversal, Khelben's Warding Whip, Pierce Shield, and Spellstrike.~
 
@@ -2103,7 +2103,18 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast the wizard is affected with an Improved Invisibility spell and is teleported a few feet away from their original position. Meanwhile an exact image of the caster is created where they used to be with exactly the same hit points as the caster. The illusory double vanishes after the duration of the spell and cannot perform any actions at all, like attacking or casting spells. It can, however, move around and act as a decoy for the invisible wizard. As long as the image isn't destroyed, the caster can attack and cast spells while remaining completely hidden. The image will remain under the control of the caster until it is reduced to 0 hit points, or until it is affected by a dispel magic or a spell that destroys the illusion.~
+When this spell is cast, the wizard is affected with an Improved Invisibility spell and is teleported a few feet away from their original position. Meanwhile, an exact image of the caster is created where they used to be, with exactly the same hit points as the caster. The image cannot perform any actions at all, such as attacking or casting spells. It can, however, move around and act as a decoy for the invisible wizard. As long as the image isn't destroyed, the caster can attack and cast spells while remaining completely hidden. The image will remain under the control of the caster for the duration of the spell until it is reduced to 0 hit points, or until it is affected by a dispel magic or a spell that destroys the illusion.~
+
+@674000=~Mislead
+Level: 6
+School: Illusion
+Range: Personal
+Duration: 2 rounds/level
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+When this spell is cast, the wizard is affected with an Improved Invisibility spell and is teleported a few feet away from their original position. Meanwhile, an exact image of the caster is created where they used to be with exactly the same hit points as the caster. The illusory double vanishes after the duration of the spell and cannot perform any actions at all, like attacking or casting spells. It can, however, move around and act as a decoy for the invisible wizard. The image will remain under the control of the caster until it is reduced to 0 hit points, or until it is affected by a dispel magic or a spell that destroys the illusion.~
 
 @675=~Pierce Magic~
 @676=~Pierce Magic
@@ -2115,7 +2126,7 @@ Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast upon a target creature there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance does not affect this spell.
+When this spell is cast upon a target creature, there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Pierce Magic are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Mind Blank.~
 
@@ -2499,7 +2510,7 @@ Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
+When this spell is cast, it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Ruby Ray of Reversal are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
 

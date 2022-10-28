@@ -109,7 +109,6 @@ ACTION_FOR_EACH ~pro~ IN // mod-added projectiles
   //~staf09~   // IR's Aura of Command
   //~sw1h36~   // IR's Silence
   ~wand11~   // IR's Flame Strike
-  
 BEGIN
   OUTER_SET pronumber = IDS_OF_SYMBOL (projectl ~%pro%~) + 1
   ACTION_IF (pronumber > 0) BEGIN

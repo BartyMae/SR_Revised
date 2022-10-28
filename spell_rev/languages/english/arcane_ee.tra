@@ -2,8 +2,9 @@
 
 @401=~Grease~
 @402=~Grease
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Range: Medium
 Duration: 1 turn
 Casting Time: 1
@@ -14,8 +15,9 @@ A Grease spell covers a material surface with a slippery layer of a fatty, greas
 
 @403=~Mage Armor~
 @404=~Mage Armor
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Range: Personal
 Duration: 8 hours
 Casting Time: 1 round
@@ -26,8 +28,9 @@ By means of this spell, the wizard creates a magical force field that sets their
 
 @405=~Burning Hands~
 @406=~Burning Hands
+(Evocation)
+
 Level: 1
-School: Evocation
 Range: Special
 Duration: Instant
 Casting Time: 1
@@ -38,8 +41,9 @@ When the wizard casts a Burning Hands spell, a cone of searing flames shoots fro
 
 @407=~Charm Person~
 @408=~Charm Person
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
@@ -52,8 +56,9 @@ Creatures that are currently neutral to the caster are more amenable to helping 
 
 @409=~Color Spray~
 @410=~Color Spray
+(Alteration)
+
 Level: 1
-School: Alteration
 Range: Short
 Duration: Special
 Casting Time: 1
@@ -69,8 +74,9 @@ Target's Hit Dice - Effects of Color Spray
 
 @411=~Obscuring Mist~
 @412=~Obscuring Mist
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Range: Long
 Duration: 5 rounds
 Casting Time: 5
@@ -81,8 +87,9 @@ When this spell is cast, a misty bank of fog billows out from the designated poi
 
 @411000=~Blindness~
 @412000=~Blindness
+(Illusion)
+
 Level: 1
-School: Illusion
 Range: Long
 Duration: 1 turn
 Casting Time: 2
@@ -104,8 +111,9 @@ When this spell is cast, the target is temporarily blinded for the duration of t
 
 @413000=~Friends~
 @414000=~Friends
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Range: Personal
 Duration: 5 turns
 Casting Time: 1
@@ -116,8 +124,9 @@ A Friends spell causes the wizard to temporarily gain a +5 bonus to Charisma. Th
 
 @415000=~Protection from Petrification~
 @416000=~Protection from Petrification
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Range: Touch
 Duration: 5 turns
 Casting Time: 1
@@ -128,8 +137,9 @@ This spell grants the recipient immunity to all petrification attacks. This incl
 
 @563=~Dimension Jump~
 @564=~Dimension Jump
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Range: Sight
 Duration: Instant
 Casting Time: 1
@@ -140,8 +150,9 @@ This spell transports the caster to any place within sight. When the spell is ca
 
 @417=~Identify~
 @418=~Identify
+(Divination)
+
 Level: 1
-School: Divination
 Range: Personal
 Duration: Instant
 Casting Time: Special
@@ -152,8 +163,9 @@ When this spell is cast, name and enchantments (including curses) of one item su
 
 @419=~True Strike~
 @420=~True Strike
+(Divination)
+
 Level: 1
-School: Divination
 Range: Personal
 Duration: Special
 Casting Time: 1
@@ -164,8 +176,9 @@ This spell grants the wizard otherworldly sight, resulting in preternatural accu
 
 @421=~Magic Missile~
 @422=~Magic Missile
+(Evocation)
+
 Level: 1
-School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 1
@@ -176,8 +189,9 @@ One of the most popular 1st-level spells, this spell creates missiles of magical
 
 @423=~Protection from Evil~
 @424=~Protection from Evil
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Range: Touch
 Duration: 5 turns
 Casting Time: 1
@@ -188,8 +202,9 @@ When this spell is cast, it creates a magical barrier around the recipient at a 
 
 @425=~Shield~
 @426=~Shield
+(Abjuration)
+
 Level: 1
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 1
@@ -200,8 +215,9 @@ When this spell is cast, an invisible barrier comes into being in front of the w
 
 @427=~Shocking Grasp~
 @428=~Shocking Grasp
+(Evocation)
+
 Level: 1
-School: Evocation
 Range: Personal
 Duration: Special
 Casting Time: 1
@@ -212,8 +228,9 @@ When the wizard touches a creature while this spell is in effect, a powerful ele
 
 @429=~Sleep~
 @430=~Sleep
+(Enchantment)
+
 Level: 1
-School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
@@ -224,8 +241,9 @@ When a wizard casts a Sleep spell, they cause a comatose slumber to come upon on
 
 @431=~Chill Touch~
 @432=~Chill Touch
+(Necromancy)
+
 Level: 1
-School: Necromancy
 Range: Personal
 Duration: 1 turn
 Casting Time: 1
@@ -236,8 +254,9 @@ When the caster completes this spell, a blue glow encompasses their hand. This e
 
 @433=~Chromatic Orb~
 @434=~Chromatic Orb
+(Alteration)
+
 Level: 1
-School: Alteration
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
@@ -256,8 +275,9 @@ This spell causes a 2-foot-diameter sphere to appear in the caster's hand. When 
 
 @435=~Larloch's Minor Drain~
 @436=~Larloch's Minor Drain
+(Necromancy)
+
 Level: 1
-School: Necromancy
 Range: Long
 Duration: Special
 Casting Time: 1
@@ -268,8 +288,9 @@ With this spell, the wizard drains the life force from a creature and adds it to
 
 @437=~Reflected Image~
 @438=~Reflected Image
+(Illusion)
+
 Level: 1
-School: Illusion
 Range: Personal
 Duration: 5 rounds + 1 round/3 levels
 Casting Time: 1
@@ -280,8 +301,9 @@ Upon casting this spell, the wizard creates one illusory image of themselves tha
 
 @439=~Find Familiar~
 @440=~Find Familiar
+(Universal)
+
 Level: 1
-School: Universal
 Range: Personal
 Duration: Permanent
 Casting Time: 1 round
@@ -312,8 +334,9 @@ You can view your familiar's statistics from the inventory screen.~
 
 @441=~Nahal's Reckless Dweomer~
 @442=~Nahal's Reckless Dweomer
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Range: Personal
 Duration: Special
 Casting Time: 1
@@ -328,8 +351,9 @@ Because the release of energy is planned by the wizard, their level is added to 
 
 @443=~Spook~
 @444=~Spook
+(Illusion)
+
 Level: 1
-School: Illusion
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
@@ -339,8 +363,9 @@ Saving Throw: Spell negates
 A Spook spell enables the wizard to play upon natural fears to cause the target creature to perceive the caster as someone or something inimical which then appears to advance upon it in a threatening manner. If the creature does not successfully make a save vs. spell, it turns and flees at maximum speed as far from the caster as possible. The creature has a saving throw penalty of -1 for every two extra experience levels of the caster, up to a maximum of -4 at 9th level. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion such as dragons, and those with no Intelligence score are unaffected by this spell, as are creatures under the effects of a True Seeing spell.~
 
 @454000=~Detect Alignment
+(Divination)
+
 Level: 1
-School: Divination
 Range: Personal
 Duration: Instant
 Casting Time: 1
@@ -351,8 +376,9 @@ This spell allows the wizard to search out the feelings of all creatures within 
 
 @413=~Monster Summoning I~
 @414=~Monster Summoning I
+(Conjuration)
+
 Level: 1
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -384,8 +410,9 @@ Mutated Gibberling (2 HD):
 
 @415=~Expeditious Retreat~
 @416=~Expeditious Retreat
+(Alteration)
+
 Level: 1
-School: Alteration
 Range: Personal
 Duration: 5 rounds
 Casting Time: 1
@@ -399,8 +426,9 @@ When cast, this spell provides all party members in the area with amazing fleetn
 
 @451=~Blur~
 @452=~Blur
+(Illusion)
+
 Level: 2
-School: Illusion
 Range: Personal
 Duration: 5 turns
 Casting Time: 2
@@ -411,8 +439,9 @@ A Blur spell causes the wizard's form and spirit to become blurred, shifting, an
 
 @453=~Detect Alignment~
 @454=~Detect Alignment
+(Divination)
+
 Level: 2
-School: Divination
 Range: Personal
 Duration: Instant
 Casting Time: 2
@@ -423,8 +452,9 @@ This spell allows the wizard to search out the feelings of all creatures within 
 
 @455=~Detect Invisibility~
 @456=~Detect Invisibility
+(Divination)
+
 Level: 2
-School: Divination
 Range: Personal
 Duration: 5 rounds
 Casting Time: 2
@@ -437,8 +467,9 @@ Creatures affected by improved invisibility will be revealed to the party, but c
 
 @457=~Horror~
 @458=~Horror
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Range: Long
 Duration: 5 rounds
 Casting Time: 2
@@ -449,8 +480,9 @@ When this spell is cast, all enemies within the area of effect must save vs. spe
 
 @459=~Invisibility~
 @460=~Invisibility
+(Illusion)
+
 Level: 2
-School: Illusion
 Range: Touch
 Duration: 8 hours
 Casting Time: 2
@@ -461,8 +493,9 @@ This spell causes the creature touched to vanish from sight and be undetectable 
 
 @461=~Battering Ram~
 @462=~Battering Ram
+(Evocation)
+
 Level: 2
-School: Evocation
 Range: Medium
 Duration: Instant
 Casting Time: 2
@@ -473,8 +506,9 @@ This spell creates a ram-like force that can strike with considerable power. The
 
 @463=~Know Opponent~
 @464=~Know Opponent
+(Divination)
+
 Level: 2
-School: Divination
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 2
@@ -485,8 +519,9 @@ When a Know Opponent spell is cast, the wizard's eyes glow with magical energy, 
 
 @465=~Luck~
 @466=~Luck
+(Enchantment)
+
 Level: 2
-School: Enchantment
 Range: Medium
 Duration: 5 turns
 Casting Time: 2
@@ -497,8 +532,9 @@ The recipient of this spell is lucky in everything that they do for the next hou
 
 @467=~Resist Fear~
 @468=~Resist Fear
+(Abjuration)
+
 Level: 2
-School: Abjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1
@@ -509,8 +545,9 @@ The wizard instills courage in allies, raising their morale to its highest. If t
 
 @469=~Melf's Acid Arrow~
 @470=~Melf's Acid Arrow
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Range: Long
 Duration: 1 round/3 levels
 Casting Time: 2
@@ -521,8 +558,9 @@ By means of this spell, the wizard creates a magical arrow that speeds to its ta
 
 @471=~Mirror Image~
 @472=~Mirror Image
+(Illusion)
+
 Level: 2
-School: Illusion
 Range: Personal
 Duration: 5 turns
 Casting Time: 2
@@ -533,8 +571,9 @@ When a Mirror Image spell is invoked, the wizard causes a number of illusory dup
 
 @473=~Stinking Cloud~
 @474=~Stinking Cloud
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 2
@@ -545,8 +584,9 @@ When casting a Stinking Cloud spell, a billowing mass of nauseous vapors appears
 
 @475=~Strength~
 @476=~Strength
+(Alteration)
+
 Level: 2
-School: Alteration
 Range: Short
 Duration: 1 turn/level
 Casting Time: 2
@@ -557,8 +597,9 @@ Application of this spell sets the Strength of the target to 18 and adds an addi
 
 @477=~Web~
 @478=~Web
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -568,8 +609,9 @@ Saving Throw: Breath partial
 A Web spell creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. The Web spell covers a maximum area of about 10 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that successfully make a save vs. breath can move at half of their normal movement rate through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.~
 
 @478000=~Web
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -580,8 +622,9 @@ A Web spell creates a many-layered mass of strong, sticky strands similar to spi
 
 @479=~Agannazar's Scorcher~
 @480=~Agannazar's Scorcher
+(Evocation)
+
 Level: 2
-School: Evocation
 Range: Medium
 Duration: Special
 Casting Time: 2
@@ -592,8 +635,9 @@ Upon casting this spell, a jet of flame appears at the caster's fingertips and b
 
 @481=~Ghoul Touch~
 @482=~Ghoul Touch
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Range: Personal
 Duration: 1 turn
 Casting Time: 2
@@ -604,8 +648,9 @@ When the caster completes this spell, a red glow encompasses their hand. On succ
 
 @483=~Vocalize~
 @484=~Vocalize
+(Alteration)
+
 Level: 2
-School: Alteration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 2
@@ -616,8 +661,9 @@ The caster of this spell gains the ability to cast spells with a verbal componen
 
 @485=~Power Word: Sleep~
 @486=~Power Word: Sleep
+(Enchantment)
+
 Level: 2
-School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 1
@@ -628,8 +674,9 @@ When this power word is uttered, the target enters a comatose slumber for 5 roun
 
 @487=~Ray of Enfeeblement~
 @488=~Ray of Enfeeblement
+(Necromancy)
+
 Level: 2
-School: Necromancy
 Range: Long
 Duration: 1 turn
 Casting Time: 2
@@ -640,8 +687,9 @@ By means of a Ray of Enfeeblement spell, a wizard weakens an opponent, sapping t
 
 @489=~Chaos Shield~
 @490=~Chaos Shield
+(Abjuration)
+
 Level: 2
-School: Abjuration
 Range: Personal
 Duration: 1 turn + 1 round/level
 Casting Time: 2
@@ -652,8 +700,9 @@ Chaos Shield increases a wild mage's chance to gain a favorable result when a wi
 
 @491=~Sound Burst~
 @492=~Sound Burst
+(Evocation)
+
 Level: 2
-School: Evocation
 Range: Long
 Duration: 1 turn
 Casting Time: 2
@@ -664,8 +713,9 @@ The Sound Burst spell blasts an area with a tremendous cacophony. Enemies within
 
 @493=~Glitterdust~
 @494=~Glitterdust
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Range: Medium
 Duration: 1 turn
 Casting Time: 2
@@ -676,8 +726,9 @@ This spell creates a cloud of glittering golden particles within the area of eff
 
 @864=~Resist Elements~
 @865=~Resist Elements
+(Abjuration)
+
 Level: 2
-School: Abjuration
 Range: Touch
 Duration: 1 turn + 1 round/level
 Casting Time: 2
@@ -688,8 +739,9 @@ Upon the casting of this spell, the recipient gains a +25% bonus to elemental re
 
 @573=~Monster Summoning II~
 @574=~Monster Summoning II
+(Conjuration)
+
 Level: 2
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -727,8 +779,9 @@ Known Spells:
 
 @501=~Clairvoyance~
 @502=~Clairvoyance
+(Divination)
+
 Level: 3
-School: Divination
 Range: Personal
 Duration: 1 turn + 1 round/level
 Casting Time: 3
@@ -739,8 +792,9 @@ The Clairvoyance spell grants an unnatural perception of things to come. Once ca
 
 @503=~Remove Magic~
 @504=~Remove Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -752,8 +806,9 @@ Remove Magic dispels the magical effects upon any enemies within the area of eff
 The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Remove Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Remove Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
 
 @504000=~Remove Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -763,8 +818,9 @@ Saving Throw: Spell negates
 Remove Magic dispels the magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
 
 @504000000=~Remove Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -779,8 +835,9 @@ The combat protection spells dispelled by Remove Magic are: Mage Armor, Shield, 
 
 @505=~Flame Arrow~
 @506=~Flame Arrow
+(Conjuration)
+
 Level: 3
-School: Conjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -791,8 +848,9 @@ This spell enables the wizard to hurl flaming arrows at their enemies. The caste
 
 @507=~Fireball~
 @508=~Fireball
+(Evocation)
+
 Level: 3
-School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -803,8 +861,9 @@ A fireball is an explosive burst of flame that detonates with a low roar, delive
 
 @509=~Haste~
 @510=~Haste
+(Alteration)
+
 Level: 3
-School: Alteration
 Range: Medium
 Duration: 1 turn + 1 round/level
 Casting Time: 3
@@ -815,8 +874,9 @@ When this spell is cast, all affected creatures gain a +4 bonus to their normal 
 
 @511=~Hold Person~
 @512=~Hold Person
+(Enchantment)
+
 Level: 3
-School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -829,8 +889,9 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 @513=~Invisibility Sphere~
 @514=~Invisibility Sphere
+(Illusion)
+
 Level: 3
-School: Illusion
 Range: Personal
 Duration: 1 turn
 Casting Time: 1
@@ -841,8 +902,9 @@ This spell confers invisibility upon all friendly creatures within 10 feet of th
 
 @515=~Lightning Bolt~
 @516=~Lightning Bolt
+(Evocation)
+
 Level: 3
-School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -853,8 +915,9 @@ Upon casting this spell, the wizard releases a powerful stroke of electrical ene
 
 @517=~Monster Summoning III~
 @518=~Monster Summoning III
+(Conjuration)
+
 Level: 3
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -895,8 +958,9 @@ Special Characteristics:
 
 @519=~Non-Detection~
 @520=~Non-Detection
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Touch
 Duration: 8 hours
 Casting Time: 3
@@ -909,8 +973,9 @@ Specific creatures affected with Detect Invisibility or True Seeing will still b
 
 @521=~Protection from Missiles~
 @522=~Protection from Missiles
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Personal
 Duration: 1 turn + 1 round/level
 Casting Time: 3
@@ -921,8 +986,9 @@ By means of this spell, the wizard bestows upon a creature total invulnerability
 
 @523=~Slow~
 @524=~Slow
+(Alteration)
+
 Level: 3
-School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 3
@@ -933,8 +999,9 @@ A Slow spell causes enemies to move, attack, and cast spells at half of their no
 
 @525=~Skull Trap~
 @526=~Skull Trap
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Range: Long
 Duration: Special
 Casting Time: 3
@@ -945,8 +1012,9 @@ Upon casting this spell, the caster hurls a magical skull at the chosen area, wh
 
 @527=~Vampiric Touch~
 @528=~Vampiric Touch
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Range: Touch
 Duration: Special
 Casting Time: 3
@@ -959,8 +1027,9 @@ NOTE: This may spell may not be cast multiple times to radically increase the ca
 
 @1025=~Wraithform~
 @1026=~Wraithform
+(Alteration)
+
 Level: 3
-School: Alteration
 Range: Personal
 Duration: 1 turn
 Casting Time: 3
@@ -973,8 +1042,9 @@ While in wraith form, the caster also has a base AC of 4 and is immune to the ef
 
 @529=~Dire Charm~
 @530=~Dire Charm
+(Enchantment)
+
 Level: 3
-School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 3
@@ -987,8 +1057,9 @@ Creatures that are currently neutral to the caster are more amenable to helping 
 
 @531=~Ghost Armor~
 @532=~Ghost Armor
+(Illusion)
+
 Level: 3
-School: Illusion
 Range: Touch
 Duration: 5 turns
 Casting Time: 3
@@ -999,8 +1070,9 @@ When this spell is cast, the wizard creates an insubstantial but quasi-real suit
 
 @533=~Minor Spell Deflection~
 @534=~Minor Spell Deflection
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 3
@@ -1013,8 +1085,9 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, thou
 
 @535=~Protection from Fire~
 @536=~Protection from Fire
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Touch
 Duration: 1 turn/level
 Casting Time: 5
@@ -1025,8 +1098,9 @@ When this spell is cast, the recipient receives complete protection from all fir
 
 @537=~Protection from Cold~
 @538=~Protection from Cold
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Touch
 Duration: 1 turn/level
 Casting Time: 5
@@ -1037,8 +1111,9 @@ When this spell is cast, the recipient receives complete protection from cold-ba
 
 @539=~Spell Thrust~
 @540=~Spell Thrust
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -1051,8 +1126,9 @@ The spell protection spells dispelled by Spell Thrust are: Minor Spell Deflectio
 
 @541=~Detect Illusion~
 @542=~Detect Illusion
+(Divination)
+
 Level: 3
-School: Divination
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -1065,8 +1141,9 @@ The illusion spells dispelled by Detect Illusion are: Reflected Image, Blur, Inv
 
 @543=~Halt Undead~
 @544=~Halt Undead
+(Necromancy)
+
 Level: 3
-School: Necromancy
 Range: Long
 Duration: 1 turn
 Casting Time: 3
@@ -1079,8 +1156,9 @@ Those affected become unable move or groan, but they remain aware of events arou
 
 @545=~Melf's Minute Meteors~
 @546=~Melf's Minute Meteors
+(Conjuration)
+
 Level: 3
-School: Conjuration
 Range: Personal
 Duration: Special
 Casting Time: 3
@@ -1091,8 +1169,9 @@ This spell enables the wizard to summon one small globe of fire for each experie
 
 @547=~Dispel Magic~
 @548=~Dispel Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -1104,8 +1183,9 @@ Dispel Magic dispels the magical effects upon any creatures within the area of e
 The chance of the dispel succeeding is determined by the experience level of the caster and the experience level of the caster whose magic is being dispelled. The base chance of successfully dispelling is 50%. For every level that the caster of Dispel Magic is above the level of the caster whose magic they are trying to dispel, their chance of success increases by 5%. For every level that the caster of Dispel Magic is below the level of the caster whose magic they are attempting to dispel, their chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if a caster is 10 levels higher than the magic they are trying to dispel, there is only a 1% chance of failure. Similarly, if the caster is 4 levels lower than the magic they are trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the caster.~
 
 @548000=~Dispel Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -1115,8 +1195,9 @@ Saving Throw: Special
 Dispel Magic dispels the magical effects upon any creatures within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. The affected creatures have a saving throw penalty of -1 for every five experience levels of the caster, up to a maximum of -4 at 20th level. Magic resistance does not affect this spell.~
 
 @548000000=~Dispel Magic
+(Abjuration)
+
 Level: 3
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 3
@@ -1131,8 +1212,9 @@ The combat protection spells dispelled by Remove Magic are: Mage Armor, Shield, 
 
 @875=~Icelance~
 @876=~Icelance
+(Evocation)
+
 Level: 3
-School: Evocation
 Range: Long
 Duration: Special
 Casting Time: 3
@@ -1145,8 +1227,9 @@ When this spell is cast, a sharp spear of ice impales the target, dealing 1d6 of
 
 @561=~Confusion~
 @562=~Confusion
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 4
@@ -1157,8 +1240,9 @@ This spell causes confusion to one or more creatures within the area, creating i
 
 @563000=~Dimension Jump~
 @564000=~Dimension Jump
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Range: Personal
 Duration: Instant
 Casting Time: 1
@@ -1169,8 +1253,9 @@ This spell transports the caster to any place within sight. When the spell is ca
 
 @565000=~Mestil's Acid Sheath~
 @566000=~Mestil's Acid Sheath
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 5
@@ -1181,8 +1266,9 @@ This spell conjures a boiling acid barrier around the wizard. The shield grants 
 
 @567=~Ice Storm~
 @568=~Ice Storm
+(Evocation)
+
 Level: 4
-School: Evocation
 Range: Long
 Duration: 5 rounds
 Casting Time: 4
@@ -1193,8 +1279,9 @@ When this spell is cast, great magical hailstones pound down for 5 rounds within
 
 @569=~Improved Invisibility~
 @570=~Improved Invisibility
+(Illusion)
+
 Level: 4
-School: Illusion
 Range: Touch
 Duration: 5 rounds + 1 round/level
 Casting Time: 4
@@ -1205,8 +1292,9 @@ This spell is similar to the Invisibility spell, but the recipient is able to at
 
 @571=~Minor Globe of Invulnerability~
 @572=~Minor Globe of Invulnerability
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 4
@@ -1216,8 +1304,9 @@ Saving Throw: None
 This spell creates a faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fourth and higher level spells are not affected by the globe. The globe can be brought down by magical attacks such as Spell Thrust, Secret Word, and Pierce Magic.~
 
 @572000=~Minor Globe of Invulnerability
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 4
@@ -1228,8 +1317,9 @@ This spell creates a faintly shimmering magical sphere around the caster that pr
 
 @575=~Stoneskin~
 @576=~Stoneskin
+(Alteration)
+
 Level: 4
-School: Alteration
 Range: Personal
 Duration: 8 hours
 Casting Time: 1
@@ -1242,8 +1332,9 @@ It is important to note that this will not protect the wizard from any area of e
 
 @577=~Contagion~
 @578=~Contagion
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Range: Short
 Duration: Special
 Casting Time: 4
@@ -1254,8 +1345,9 @@ This spell causes a major disease and weakness in a creature. For the following 
 
 @579=~Break Enchantment~
 @580=~Break Enchantment
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Range: Short
 Duration: Instant
 Casting Time: 5
@@ -1266,8 +1358,9 @@ Upon casting this spell, the caster is able to free a victim from enchantments a
 
 @581=~Emotion: Despair~
 @582=~Emotion: Despair
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Range: Long
 Duration: 2 rounds/level
 Casting Time: 4
@@ -1278,8 +1371,9 @@ When this spell is cast, the wizard can disturb the emotional state of those aro
 
 @583=~Greater Malison~
 @584=~Greater Malison
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Range: Long
 Duration: 2 rounds/level
 Casting Time: 4
@@ -1290,8 +1384,9 @@ The spell allows the caster to adversely affect the dice rolls of their enemies.
 
 @585=~Otiluke's Resilient Sphere~
 @586=~Otiluke's Resilient Sphere
+(Alteration)
+
 Level: 4
-School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 4
@@ -1304,8 +1399,9 @@ The caster has the option of using the spell to protect their allies. Resistance
 
 @587=~Spirit Armor~
 @588=~Spirit Armor
+(Necromancy)
+
 Level: 4
-School: Necromancy
 Range: Touch
 Duration: 5 turns
 Casting Time: 4
@@ -1316,8 +1412,9 @@ This spell taps the recipient's life force to create a corporeal barrier around 
 
 @589=~Polymorph Other~
 @590=~Polymorph Other
+(Alteration)
+
 Level: 4
-School: Alteration
 Range: Long
 Duration: Permanent
 Casting Time: 4
@@ -1330,8 +1427,9 @@ Note that all clothes and equipment that the target was wearing will mold into t
 
 @591=~Polymorph Self~
 @592=~Polymorph Self
+(Alteration)
+
 Level: 4
-School: Alteration
 Range: Personal
 Duration: 5 turns
 Casting Time: 4
@@ -1409,8 +1507,9 @@ Special Characteristics:
 
 @593=~Enchanted Weapon~
 @594=~Enchanted Weapon
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Range: Personal
 Duration: 1 day
 Casting Time: 4
@@ -1420,20 +1519,22 @@ Saving Throw: None
 This spell conjures forth a +3 enchanted weapon that can be given to anyone. The weapon may be of any type, or the caster may alternatively decide to conjure 40 magical arrows, bolts, or bullets. The weapon stays in existence for no longer than a day.~
 
 @594000=~Enchanted Weapon
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Range: Touch
 Duration: 8 hours
 Casting Time: 4
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast on a creature it enchants any weapons that it currently wields. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.~
+When this spell is cast on a creature, it enchants any weapons that it currently wields. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.~
 
 @595=~Fire Shield~
 @596=~Fire Shield
+(Evocation)
+
 Level: 4
-School: Evocation
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 4
@@ -1444,8 +1545,9 @@ This spell protects the wizard by surrounding them with a circular wall of flame
 
 @597=~Secret Word~
 @598=~Secret Word
+(Enchantment)
+
 Level: 4
-School: Enchantment
 Range: Long
 Duration: Instant
 Casting Time: 1
@@ -1458,8 +1560,9 @@ The spell protection spells dispelled by Secret Word are: Minor Spell Deflection
 
 @599=~Simbul's Spell Matrix~
 @600=~Simbul's Spell Matrix
+(Universal)
+
 Level: 4
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -1470,8 +1573,9 @@ This spell allows a wizard to prepare a magical matrix that can store spells to 
 
 @601=~Teleport Field~
 @602=~Teleport Field
+(Alteration)
+
 Level: 4
-School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 4
@@ -1482,8 +1586,9 @@ With this spell, the wizard instigates a teleportation effect as far as they can
 
 @603=~Monster Summoning IV~
 @604=~Monster Summoning IV
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -1521,8 +1626,9 @@ Special Characteristics:
 
 @605=~Farsight~
 @606=~Farsight
+(Divination)
+
 Level: 4
-School: Divination
 Range: Personal
 Duration: 5 turns
 Casting Time: 4
@@ -1533,8 +1639,9 @@ When Farsight is cast, the caster is able to view an area of an unexplored map. 
 
 @607=~Wizard Eye~
 @608=~Wizard Eye
+(Divination)
+
 Level: 4
-School: Divination
 Range: Short
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -1545,8 +1652,9 @@ When this spell is employed, the wizard creates an invisible sensory organ that 
 
 @873=~Protection from Elemental Energy~
 @874=~Protection from Elemental Energy
+(Abjuration)
+
 Level: 4
-School: Abjuration
 Range: Touch
 Duration: 1 turn/level
 Casting Time: 5
@@ -1557,8 +1665,9 @@ When this spell is cast, the recipient receives complete protection from one dam
 
 @877=~Vitriolic Sphere~
 @878=~Vitriolic Sphere
+(Conjuration)
+
 Level: 4
-School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 4
@@ -1571,8 +1680,9 @@ When this spell is cast, a glowing orb of emerald acid streaks towards the targe
 
 @611=~Summon Shadow~
 @612=~Summon Shadow
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Range: Long
 Duration: 8 hours
 Casting Time: 1 round
@@ -1614,8 +1724,9 @@ Special Characteristics:
 
 @613=~Cloudkill~
 @614=~Cloudkill
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -1626,8 +1737,9 @@ This spell generates a billowing cloud of ghastly, yellowish green vapors that i
 
 @615=~Cone of Cold~
 @616=~Cone of Cold
+(Evocation)
+
 Level: 5
-School: Evocation
 Range: Short
 Duration: Instant
 Casting Time: 1
@@ -1638,8 +1750,9 @@ When this spell is cast, it causes a cone-shaped spray of extreme cold to spring
 
 @617=~Monster Summoning V~
 @618=~Monster Summoning V
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -1682,8 +1795,9 @@ Known Spells:
 
 @619=~Shadow Door~
 @620=~Shadow Door
+(Illusion)
+
 Level: 5
-School: Illusion
 Range: Personal
 Duration: 1 round/level
 Casting Time: 1
@@ -1694,8 +1808,9 @@ By means of this spell, the wizard creates the illusion of a door. The illusion 
 
 @621=~Domination~
 @622=~Domination
+(Enchantment)
+
 Level: 5
-School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -1708,8 +1823,9 @@ If the caster attempts to harm the dominated creature, or if a dispel magic is s
 
 @623=~Hold Monster~
 @624=~Hold Monster
+(Enchantment)
+
 Level: 5
-School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -1722,8 +1838,9 @@ Held creatures cannot move or speak, but they remain aware of events around them
 
 @625=~Waves of Fatigue~
 @626=~Waves of Fatigue
+(Necromancy)
+
 Level: 5
-School: Necromancy
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -1734,8 +1851,9 @@ Surges of negative energy render all hostile living creatures in the spell's are
 
 @625000=~Chaos~
 @626000=~Chaos
+(Enchantment)
+
 Level: 5
-School: Enchantment
 Range: Long
 Duration: 5 rounds
 Casting Time: 5
@@ -1746,8 +1864,9 @@ The effects of this spell are identical to the spell Confusion in all but one re
 
 @627=~Feeblemind~
 @628=~Feeblemind
+(Enchantment)
+
 Level: 5
-School: Enchantment
 Range: Long
 Duration: Permanent
 Casting Time: 5
@@ -1758,8 +1877,9 @@ Feeblemind causes the subject's intellect to degenerate into that of a simple be
 
 @629=~Dispelling Screen~
 @630=~Dispelling Screen
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
@@ -1770,8 +1890,9 @@ By casting this spell, the caster creates transparent, permeable barriers that s
 
 @629000=~Spell Immunity~
 @630000=~Spell Immunity
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Personal
 Duration: 1 round/level
 Casting Time: 5
@@ -1782,8 +1903,9 @@ Casting this spell grants the wizard protection from one spell school of their c
 
 @631=~Protection from Normal Weapons~
 @632=~Protection from Normal Weapons
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Personal
 Duration: 1 round/level
 Casting Time: 5
@@ -1794,8 +1916,9 @@ This spell creates an immobile, faintly shimmering magical sphere around the cas
 
 @633=~Protection from Electricity~
 @634=~Protection from Electricity
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Touch
 Duration: 1 turn/level
 Casting Time: 5
@@ -1806,8 +1929,9 @@ When a Protection from Electricity spell is cast, the recipient receives complet
 
 @635=~Breach~
 @636=~Breach
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 5
@@ -1822,35 +1946,24 @@ The combat protection spells dispelled by Breach are: Mage Armor, Shield, Armor 
 
 @637=~Lower Resistance~
 @638=~Lower Resistance
+(Alteration)
+
 Level: 5
-School: Alteration
-Range: Long
-Duration: 1 round/level
-Casting Time: 5
-Area of Effect: 1 creature
-Saving Throw: None
-
-When cast upon a creature, this spell will lower their magic resistance by 10% + 2%/level, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
-
-For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 20. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 30% (initial casting) - 30% (current casting), which would leave the creature with 0% magic resistance after both spells have been cast.~
-
-@638000=~Lower Resistance
-Level: 5
-School: Alteration
 Range: Long
 Duration: 1 round/level
 Casting Time: 5
 Area of Effect: Target, and enemies within 10'
 Saving Throw: None
 
-This spell will lower the magic resistance of enemies within the area of effect by 2% for every experience level of the caster, up to a maximum of 40% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
+This spell will lower the magic resistance of enemies within the area of effect by 10 + 2% for every experience level of the caster, up to a maximum of 50% at 20th level. There is no saving throw against this spell and magic resistance is ignored. This spell is not affected by dispel magic, so once it has been cast, there is no way to cancel the effects until the spell expires.
 
-For example, if a creature has 50% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 20%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 50% - 20% (initial casting) - 20% (current casting), which would leave the creature with 10% magic resistance after both spells have been cast.~
+For example, if a creature has 75% magic resistance and this spell is cast on it by a 10th level wizard, then its magic resistance would be lowered to 45%. This effect is cumulative for each casting of this spell. If this spell was cast upon this same creature again, the creature's magic resistance would be 75% - 30% (initial casting) - 30% (current casting), which would leave the creature with 15% magic resistance after both spells have been cast.~
 
 @639=~Oracle~
 @640=~Oracle
+(Divination)
+
 Level: 5
-School: Divination
 Range: Personal
 Duration: Instant
 Casting Time: 5
@@ -1863,8 +1976,9 @@ The spells that are affected by this are: Reflected Image, Invisibility, Blur, M
 
 @641=~Conjure Lesser Fire Elemental~
 @642=~Conjure Lesser Fire Elemental
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -1886,8 +2000,9 @@ Special Characteristics:
 
 @643=~Protection from Acid~
 @644=~Protection from Acid
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Touch
 Duration: 1 turn/level
 Casting Time: 5
@@ -1898,8 +2013,9 @@ When this spell is cast, the recipient receives complete protection from all aci
 
 @645=~Phantom Blade~
 @646=~Phantom Blade
+(Illusion)
+
 Level: 5
-School: Illusion
 Range: Personal
 Duration: 1 round/level
 Casting Time: 5
@@ -1910,22 +2026,24 @@ This spell creates a translucent, weightless, and shadow-like sword made of mate
 
 @647=~Spell Shield~
 @648=~Spell Shield
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast the wizard is protected from the next magical attack against them. If one of those spells is cast at the wizard, this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
+When this spell is cast, the wizard is protected from the next magical attack against them. If one of those spells is cast at the wizard, this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
 
 The spells that Spell Shield protects the caster from are: Spell Thrust, Secret Word, Pierce Magic, Ruby Ray of Reversal, Khelben's Warding Whip, Pierce Shield, and Spellstrike.~
 
 @649=~Conjure Lesser Air Elemental~
 @650=~Conjure Lesser Air Elemental
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -1947,8 +2065,9 @@ Special Characteristics:
 
 @651=~Conjure Lesser Earth Elemental~
 @652=~Conjure Lesser Earth Elemental
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -1970,8 +2089,9 @@ Special Characteristics:
 
 @653=~Spell Deflection~
 @654=~Spell Deflection
+(Abjuration)
+
 Level: 5
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
@@ -1984,8 +2104,9 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, thou
 
 @655=~Fireburst~
 @656=~Fireburst
+(Evocation)
+
 Level: 5
-School: Evocation
 Range: Personal
 Duration: Instant
 Casting Time: 1
@@ -1996,8 +2117,9 @@ The Fireburst spell creates an explosive burst of flame that detonates with a lo
 
 @565=~Mestil's Acid Sheath~
 @566=~Mestil's Acid Sheath
+(Conjuration)
+
 Level: 5
-School: Conjuration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 5
@@ -2010,8 +2132,9 @@ This spell conjures a boiling acid barrier around the wizard. The shield grants 
 
 @661=~Invisible Stalker~
 @662=~Invisible Stalker
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 1 turn/level
 Casting Time: 1 round
@@ -2035,8 +2158,9 @@ Special Characteristics:
 
 @663=~Globe of Invulnerability~
 @664=~Globe of Invulnerability
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 6
@@ -2046,8 +2170,9 @@ Saving Throw: None
 This spell creates an immobile, faintly shimmering magical sphere around the caster that prevents any 1st, 2nd, 3rd or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the globe of invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Fifth and higher level spells are not affected by the globe. The globe can be brought down by magical attacks such as Khelben's Warding Whip, Ruby Ray of Reversal, Pierce Shield, and Spellstrike.~
 
 @664000=~Globe of Invulnerability
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Personal
 Duration: 5 rounds + 1 round/level
 Casting Time: 6
@@ -2058,8 +2183,9 @@ This spell creates an immobile, faintly shimmering magical sphere around the cas
 
 @665=~Tenser's Transformation~
 @666=~Tenser's Transformation
+(Alteration)
+
 Level: 6
-School: Alteration
 Range: Personal
 Duration: 1 round/level
 Casting Time: 6
@@ -2072,8 +2198,9 @@ NOTE: This spell does not give any extra attacks to multi-classed or dual-classe
 
 @667=~Flesh to Stone~
 @668=~Flesh to Stone
+(Alteration)
+
 Level: 6
-School: Alteration
 Range: Long
 Duration: Special
 Casting Time: 6
@@ -2084,8 +2211,9 @@ This incantation is a powerful magic that permanently turns the flesh of the tar
 
 @669=~Banishment~
 @670=~Banishment
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Long
 Duration: Instant
 Casting Time: 6
@@ -2096,8 +2224,9 @@ The Banishment spell forces hostile summoned creatures in the area back to their
 
 @671=~Protection from Magic Energy~
 @672=~Protection from Magic Energy
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Touch
 Duration: 1 turn/level
 Casting Time: 6
@@ -2108,34 +2237,49 @@ When a Protection from Magic Energy spell is cast, the recipient receives comple
 
 @673=~Mislead~
 @674=~Mislead
+(Illusion)
+
 Level: 6
-School: Illusion
 Range: Personal
 Duration: 1 round/level
 Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast the wizard is affected with an Improved Invisibility spell and is teleported a few feet away from their original position. Meanwhile an exact image of the caster is created where they used to be with exactly the same hit points as the caster. The illusory double vanishes after the duration of the spell and cannot perform any actions at all, like attacking or casting spells. It can, however, move around and act as a decoy for the invisible wizard. As long as the image isn't destroyed, the caster can attack and cast spells while remaining completely hidden. The image will remain under the control of the caster until it is reduced to 0 hit points, or until it is affected by a dispel magic or a spell that destroys the illusion.~
+When this spell is cast, the wizard is affected with an Improved Invisibility spell and is teleported a few feet away from their original position. Meanwhile, an exact image of the caster is created where they used to be, with exactly the same hit points as the caster. The image cannot perform any actions at all, such as attacking or casting spells. It can, however, move around and act as a decoy for the invisible wizard. As long as the image isn't destroyed, the caster can attack and cast spells while remaining completely hidden. The image will remain under the control of the caster for the duration of the spell until it is reduced to 0 hit points, or until it is affected by a dispel magic or a spell that destroys the illusion.~
+
+@674000=~Mislead
+(Illusion)
+
+Level: 6
+Range: Personal
+Duration: 2 rounds/level
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+When this spell is cast, the wizard is affected with an Improved Invisibility spell and is teleported a few feet away from their original position. Meanwhile, an exact image of the caster is created where they used to be with exactly the same hit points as the caster. The illusory double vanishes after the duration of the spell and cannot perform any actions at all, like attacking or casting spells. It can, however, move around and act as a decoy for the invisible wizard. The image will remain under the control of the caster until it is reduced to 0 hit points, or until it is affected by a dispel magic or a spell that destroys the illusion.~
 
 @675=~Pierce Magic~
 @676=~Pierce Magic
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Long
 Duration: Special
 Casting Time: 6
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast upon a target creature there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance does not affect this spell.
+When this spell is cast upon a target creature, there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Pierce Magic are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Mind Blank.~
 
 @677=~True Seeing~
 @678=~True Seeing
+(Divination)
+
 Level: 6
-School: Divination
 Range: Personal
 Duration: 1 turn
 Casting Time: 6
@@ -2148,8 +2292,9 @@ Creatures affected by improved invisibility will be revealed to the party, but c
 
 @679=~Protection from Magical Weapons~
 @680=~Protection from Magical Weapons
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Personal
 Duration: 4 rounds
 Casting Time: 1
@@ -2160,8 +2305,9 @@ This spell creates an immobile, faintly shimmering magical sphere around the cas
 
 @681=~Power Word: Silence~
 @682=~Power Word: Silence
+(Enchantment)
+
 Level: 6
-School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 1
@@ -2172,8 +2318,9 @@ When this power word is uttered, the target becomes unable make any sound for 1 
 
 @683=~Improved Haste~
 @684=~Improved Haste
+(Alteration)
+
 Level: 6
-School: Alteration
 Range: Long
 Duration: 1 turn
 Casting Time: 6
@@ -2184,8 +2331,9 @@ When this spell is cast, all affected creatures gain a +4 bonus to their normal 
 
 @685=~Acid Fog~
 @686=~Acid Fog
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 6
@@ -2196,8 +2344,9 @@ The Acid Fog spell creates a thick, clinging, greenish cloud. All creatures who 
 
 @687=~Chain Lightning~
 @688=~Chain Lightning
+(Evocation)
+
 Level: 6
-School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 6
@@ -2208,8 +2357,9 @@ The Chain Lightning spell creates an electrical discharge that begins as a singl
 
 @689=~Disintegrate~
 @690=~Disintegrate
+(Alteration)
+
 Level: 6
-School: Alteration
 Range: Long
 Duration: Instant
 Casting Time: 6
@@ -2220,8 +2370,9 @@ Upon casting this spell at another creature, a thin green ray shoots unerringly 
 
 @691=~Contingency~
 @692=~Contingency
+(Universal)
+
 Level: 6
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -2232,8 +2383,9 @@ Upon casting this spell, the wizard is allowed to choose a spell out of their re
 
 @693=~Spell Deflection~
 @694=~Spell Deflection
+(Abjuration)
+
 Level: 6
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
@@ -2246,8 +2398,9 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, thou
 
 @695=~Monster Summoning VI~
 @696=~Monster Summoning VI
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -2290,8 +2443,9 @@ Special Characteristics:
 
 @697=~Conjure Fire Elemental~
 @698=~Conjure Fire Elemental
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2327,8 +2481,9 @@ Special Characteristics:
 
 @699=~Conjure Air Elemental~
 @700=~Conjure Air Elemental
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2364,8 +2519,9 @@ Special Characteristics:
 
 @701=~Conjure Earth Elemental~
 @702=~Conjure Earth Elemental
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2401,8 +2557,9 @@ Special Characteristics:
 
 @703=~Animate Warrior~
 @704=~Animate Warrior
+(Necromancy)
+
 Level: 6
-School: Necromancy
 Range: Long
 Duration: 8 hours
 Casting Time: 1 round
@@ -2426,8 +2583,9 @@ Special Characteristics:
 
 @705=~Summon Nishruu~
 @706=~Summon Nishruu
+(Conjuration)
+
 Level: 6
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2451,8 +2609,9 @@ Special Characteristics:
 
 @707=~Stone to Flesh~
 @708=~Stone to Flesh
+(Alteration)
+
 Level: 6
-School: Alteration
 Range: Long
 Duration: Permanent
 Casting Time: 6
@@ -2466,8 +2625,9 @@ This spell is the reverse of Flesh to Stone and will return any creature that ha
 
 @721=~Greater Spell Deflection~
 @722=~Greater Spell Deflection
+(Abjuration)
+
 Level: 7
-School: Abjuration
 Range: Personal
 Duration: 5 turns
 Casting Time: 7
@@ -2480,8 +2640,9 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, thou
 
 @723=~Protection from the Elements~
 @724=~Protection from the Elements
+(Abjuration)
+
 Level: 7
-School: Abjuration
 Range: Touch
 Duration: 1 turn/2 levels
 Casting Time: 7
@@ -2492,8 +2653,9 @@ When this spell is cast, it confers complete protection from all elemental attac
 
 @725=~Project Image~
 @726=~Project Image
+(Illusion)
+
 Level: 7
-School: Illusion
 Range: Personal
 Duration: 1 round/level
 Casting Time: 1
@@ -2504,22 +2666,24 @@ When this spell is cast, an illusory copy of the wizard appears to step out of t
 
 @727=~Ruby Ray of Reversal~
 @728=~Ruby Ray of Reversal
+(Alteration)
+
 Level: 7
-School: Alteration
 Range: Long
 Duration: Instant
 Casting Time: 5
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this spell is cast it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
+When this spell is cast, it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
 The spell protection spells dispelled by Ruby Ray of Reversal are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
 
 @729=~Khelben's Warding Whip~
 @730=~Khelben's Warding Whip
+(Evocation)
+
 Level: 7
-School: Evocation
 Range: Medium
 Duration: Special
 Casting Time: 7
@@ -2532,8 +2696,9 @@ The spell protection spells dispelled by Khelben's Warding Whip are: Minor Spell
 
 @731=~Summon Death Knight~
 @732=~Summon Death Knight
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Range: Medium
 Duration: 5 turns
 Casting Time: 1 round
@@ -2563,8 +2728,9 @@ Known Spells:
 
 @733=~Prismatic Mantle~
 @734=~Prismatic Mantle
+(Abjuration)
+
 Level: 7
-School: Abjuration
 Range: Personal
 Duration: 4 rounds
 Casting Time: 1
@@ -2583,8 +2749,9 @@ Pink - Maze (save vs. spell neg.)~
 
 @735=~Simbul's Spell Sequencer~
 @736=~Simbul's Spell Sequencer
+(Universal)
+
 Level: 7
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -2595,8 +2762,9 @@ This spell allows a wizard to prepare a magical sequencer that can store spells 
 
 @737=~Sphere of Chaos~
 @738=~Sphere of Chaos
+(Enchantment)
+
 Level: 7
-School: Enchantment
 Range: Long
 Duration: 1 turn
 Casting Time: 7
@@ -2607,8 +2775,9 @@ This spell allows the caster to create a sphere of chaotic magic. All enemies wi
 
 @739=~Delayed Blast Fireball~
 @740=~Delayed Blast Fireball
+(Evocation)
+
 Level: 7
-School: Evocation
 Range: Long
 Duration: Special
 Casting Time: 7
@@ -2619,8 +2788,9 @@ This spell creates a fireball that hovers at a point determined by the caster. T
 
 @741=~Finger of Death~
 @742=~Finger of Death
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Range: Long
 Duration: Instant
 Casting Time: 5
@@ -2631,8 +2801,9 @@ The Finger of Death spell snuffs out the chosen target's life force. The caster 
 
 @743=~Prismatic Spray~
 @744=~Prismatic Spray
+(Alteration)
+
 Level: 7
-School: Alteration
 Range: Short
 Duration: Special
 Casting Time: 1
@@ -2651,8 +2822,9 @@ Pink - Maze (save vs. spell neg.)~
 
 @745=~Power Word: Stun~
 @746=~Power Word: Stun
+(Enchantment)
+
 Level: 7
-School: Enchantment
 Range: Long
 Duration: Special
 Casting Time: 1
@@ -2663,8 +2835,9 @@ When this power word is uttered, any creature of the wizard's choice within visu
 
 @747=~Mordenkainen's Sword~
 @748=~Mordenkainen's Sword
+(Evocation)
+
 Level: 7
-School: Evocation
 Range: Personal
 Duration: 1 round/level
 Casting Time: 7
@@ -2686,8 +2859,9 @@ Special Characteristics:
 
 @749=~Summon Efreeti~
 @750=~Summon Efreeti
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2716,8 +2890,9 @@ Known Spells:
 
 @751=~Summon Djinni~
 @752=~Summon Djinni
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2743,8 +2918,9 @@ Known Spells:
 
 @753=~Summon Hakeashar~
 @754=~Summon Hakeashar
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Range: Long
 Duration: 1 turn + 1 round/level
 Casting Time: 1 round
@@ -2769,8 +2945,9 @@ Special Characteristics:
 
 @755=~Control Undead~
 @756=~Control Undead
+(Necromancy)
+
 Level: 7
-School: Necromancy
 Range: Long
 Duration: 5 turns
 Casting Time: 7
@@ -2781,8 +2958,9 @@ The Control Undead spell allows the caster to take control of undead creatures w
 
 @757=~Mass Invisibility~
 @758=~Mass Invisibility
+(Illusion)
+
 Level: 7
-School: Illusion
 Range: Long
 Duration: 1 round/level
 Casting Time: 7
@@ -2793,8 +2971,9 @@ Upon casting this spell, the wizard causes all friendly creatures within the are
 
 @759=~Limited Wish~
 @760=~Limited Wish
+(Universal)
+
 Level: 7
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -2805,8 +2984,9 @@ Limited Wish is a very potent but difficult spell. It will fulfill literally, bu
 
 @761=~Improved Chaos Shield~
 @762=~Improved Chaos Shield
+(Abjuration)
+
 Level: 7
-School: Abjuration
 Range: Personal
 Duration: 1 turn + 1 round/level
 Casting Time: 7
@@ -2817,8 +2997,9 @@ Improved Chaos Shield increases a wild mage's chance to gain a favorable result 
 
 @866=~Monster Summoning VII~
 @867=~Monster Summoning VII
+(Conjuration)
+
 Level: 7
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -2859,8 +3040,9 @@ Special Characteristics:
 
 @767=~Ghostform~
 @768=~Ghostform
+(Alteration)
+
 Level: 8
-School: Alteration
 Range: Personal
 Duration: 1 round/level
 Casting Time: 8
@@ -2873,8 +3055,9 @@ While in ghost form, the caster also has a base AC of 0 and is immune to the eff
 
 @769=~Mind Blank~
 @770=~Mind Blank
+(Abjuration)
+
 Level: 8
-School: Abjuration
 Range: Touch
 Duration: 8 hours
 Casting Time: 8
@@ -2885,8 +3068,9 @@ A Mind Blank spell protects the recipient against all spells, abilities, and dev
 
 @771=~Protection from Energy~
 @772=~Protection from Energy
+(Abjuration)
+
 Level: 8
-School: Abjuration
 Range: Touch
 Duration: 2 rounds/level
 Casting Time: 8
@@ -2897,8 +3081,9 @@ When this spell is cast, it confers complete protection from all energy attacks 
 
 @773=~Simulacrum~
 @774=~Simulacrum
+(Illusion)
+
 Level: 8
-School: Illusion
 Range: Personal
 Duration: 1 round/level
 Casting Time: 1 round
@@ -2909,8 +3094,9 @@ When this spell is cast, the caster taps energy from the Plane of Shadow to crea
 
 @775=~Pierce Shield~
 @776=~Pierce Shield
+(Abjuration)
+
 Level: 8
-School: Abjuration
 Range: Long
 Duration: Special
 Casting Time: 8
@@ -2925,8 +3111,9 @@ The combat protection spells dispelled by Pierce Shield are: Mage Armor, Shield,
 
 @777=~Summon Fiend~
 @778=~Summon Fiend
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Medium
 Duration: 5 turns
 Casting Time: 1 round
@@ -2954,8 +3141,9 @@ Known Spells:
 
 @779=~Moment of Prescience~
 @780=~Moment of Prescience
+(Divination)
+
 Level: 8
-School: Divination
 Range: Personal
 Duration: 4 rounds
 Casting Time: 1
@@ -2966,8 +3154,9 @@ This spell grants an almost omniscient perception of things to come. For the dur
 
 @781=~Simbul's Spell Trigger~
 @782=~Simbul's Spell Trigger
+(Universal)
+
 Level: 8
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -2978,8 +3167,9 @@ This spell allows a wizard to prepare a magical trigger that can store spells to
 
 @783=~Incendiary Cloud~
 @784=~Incendiary Cloud
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Long
 Duration: 1 turn
 Casting Time: 8
@@ -2990,8 +3180,9 @@ This spell creates a cloud of roiling smoke and roaring flame, which obscures al
 
 @785=~Symbol of Pain~
 @786=~Symbol of Pain
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 1 round
@@ -3002,8 +3193,9 @@ Symbol of Pain is a powerful enchantment that allows the caster to inscribe a sy
 
 /*@785=~Symbol of Weakness~
 @786=~Symbol of Weakness
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 1 round
@@ -3014,8 +3206,9 @@ Symbol of Weakness is a powerful enchantment that allows the caster to inscribe 
 
 @787=~Abi-Dalzim's Horrid Wilting~
 @788=~Abi-Dalzim's Horrid Wilting
+(Necromancy)
+
 Level: 8
-School: Necromancy
 Range: Long
 Duration: Instant
 Casting Time: 8
@@ -3026,8 +3219,9 @@ This spell evaporates moisture in the bodies of all living opponents within the 
 
 @789=~Maze~
 @790=~Maze
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Short
 Duration: Special
 Casting Time: 5
@@ -3049,8 +3243,9 @@ If the 9th level spell Freedom is cast in the area where a creature is mazed, it
 
 @791=~Power Word: Blind~
 @792=~Power Word: Blind
+(Enchantment)
+
 Level: 8
-School: Enchantment
 Range: Long
 Duration: Special
 Casting Time: 1
@@ -3060,8 +3255,9 @@ Saving Throw: None
 When this power word is uttered, any creature of the wizard's choice within visual range becomes sightless. Creatures with less than 6 hit dice are blinded permanently, while other creatures are blinded for 1 turn or until dispelled. All of the effects of blindness apply to the victim, including a -10 penalty to THAC0 and decreased visibility range.~
 
 @792000=~Power Word: Blind
+(Enchantment)
+
 Level: 8
-School: Enchantment
 Range: Long
 Duration: Special
 Casting Time: 1
@@ -3072,8 +3268,9 @@ When this power word is uttered, any creature of the wizard's choice within visu
 
 @793=~Symbol of Stunning~
 @794=~Symbol of Stunning
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Long
 Duration: 5 rounds
 Casting Time: 1 round
@@ -3084,8 +3281,9 @@ Symbol of Stunning is a powerful enchantment that allows the caster to inscribe 
 
 @795=~Symbol of Death~
 @796=~Symbol of Death
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Long
 Duration: Special
 Casting Time: 1 round
@@ -3096,8 +3294,9 @@ Symbol of Death is a powerful enchantment that allows the caster to inscribe a s
 
 @797=~Bigby's Icy Grasp~
 @798=~Bigby's Icy Grasp
+(Evocation)
+
 Level: 8
-School: Evocation
 Range: Long
 Duration: 1 turn
 Casting Time: 8
@@ -3108,8 +3307,9 @@ This spell creates a huge disembodied hand that grabs a victim and pins them to 
 
 @868=~Monster Summoning VIII~
 @869=~Monster Summoning VIII
+(Conjuration)
+
 Level: 8
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -3138,8 +3338,9 @@ Special Characteristics:
 
 @811=~Spell Trap~
 @812=~Spell Trap
+(Abjuration)
+
 Level: 9
-School: Abjuration
 Range: Personal
 Duration: 1 round/level
 Casting Time: 1 round
@@ -3152,8 +3353,9 @@ Spells cast from scrolls and innate spell-like abilities are also absorbed, but 
 
 @813=~Spellstrike~
 @814=~Spellstrike
+(Abjuration)
+
 Level: 9
-School: Abjuration
 Range: Long
 Duration: Special
 Casting Time: 5
@@ -3166,8 +3368,9 @@ The spell protection spells dispelled by Spellstrike are: Minor Spell Deflection
 
 @815=~Gate~
 @816=~Gate
+(Conjuration)
+
 Level: 9
-School: Conjuration
 Range: Medium
 Duration: 5 turns
 Casting Time: 1 round
@@ -3198,8 +3401,9 @@ Known Spells:
 
 @870=~Monster Summoning IX~
 @871=~Monster Summoning IX
+(Conjuration)
+
 Level: 9
-School: Conjuration
 Range: Long
 Duration: 5 turns
 Casting Time: 1 round
@@ -3225,8 +3429,9 @@ Special Characteristics:
 
 @817=~Absolute Immunity~
 @818=~Absolute Immunity
+(Abjuration)
+
 Level: 9
-School: Abjuration
 Range: Personal
 Duration: 4 rounds
 Casting Time: 1
@@ -3237,8 +3442,9 @@ When Absolute Immunity is cast, the caster gains complete invulnerability to phy
 
 @819=~Chain Contingency~
 @820=~Chain Contingency
+(Universal)
+
 Level: 9
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -3249,8 +3455,9 @@ Chain Contingency channels some of the magical energy of the wizard and releases
 
 @821=~Time Stop~
 @822=~Time Stop
+(Alteration)
+
 Level: 9
-School: Alteration
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -3261,8 +3468,9 @@ Upon casting a Time Stop spell, the wizard causes the flow of time to stop in th
 
 @823=~Imprisonment~
 @824=~Imprisonment
+(Abjuration)
+
 Level: 9
-School: Abjuration
 Range: Short
 Duration: Permanent
 Casting Time: 1 round
@@ -3274,8 +3482,9 @@ When the Imprisonment spell is cast, the target becomes entombed in a small sphe
 NOTE: Due to game engine limitations, party members affected by this spell will instead be Mazed for 1 turn before being slain. This will allow you to leave the current area if necessary, and will not remove them from your party.~
 
 @824000=~Imprisonment
+(Abjuration)
+
 Level: 9
-School: Abjuration
 Range: Short
 Duration: Permanent
 Casting Time: 1 round
@@ -3288,8 +3497,9 @@ NOTE: Due to game engine limitations, party members affected by this spell will 
 
 @825=~Meteor Swarm~
 @826=~Meteor Swarm
+(Evocation)
+
 Level: 9
-School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 1 round
@@ -3300,8 +3510,9 @@ Upon completion of this spell, a swarm of minute meteors bombards the affected a
 
 @827=~Power Word: Kill~
 @828=~Power Word: Kill
+(Enchantment)
+
 Level: 9
-School: Enchantment
 Range: Long
 Duration: Instant
 Casting Time: 1
@@ -3312,8 +3523,9 @@ When this power word is uttered, one creature targeted by the caster is slain. C
 
 @829=~Wail of the Banshee~
 @830=~Wail of the Banshee
+(Necromancy)
+
 Level: 9
-School: Necromancy
 Range: Personal
 Duration: Instant
 Casting Time: 1 round
@@ -3324,8 +3536,9 @@ At the culmination of this dreadful spell, the wizard screams like a banshee (gr
 
 @831=~Larloch's Energy Drain~
 @832=~Larloch's Energy Drain
+(Necromancy)
+
 Level: 9
-School: Necromancy
 Range: Short
 Duration: Special
 Casting Time: 5
@@ -3338,8 +3551,9 @@ NOTE: This may spell may not be cast multiple times to radically increase the ca
 
 @833=~Black Blade of Disaster~
 @834=~Black Blade of Disaster
+(Conjuration)
+
 Level: 9
-School: Conjuration
 Range: Personal
 Duration: 1 round/level
 Casting Time: 5
@@ -3350,8 +3564,9 @@ This spell enables the caster to create a black, blade-shaped planar rift, about
 
 @835=~Shapechange~
 @836=~Shapechange
+(Alteration)
+
 Level: 9
-School: Alteration
 Range: Personal
 Duration: 5 turns
 Casting Time: 1 round
@@ -3428,8 +3643,9 @@ Special Characteristics:
 
 @837=~Freedom~
 @838=~Freedom
+(Abjuration)
+
 Level: 9
-School: Abjuration
 Range: Personal
 Duration: Instant
 Casting Time: 1 round
@@ -3440,8 +3656,9 @@ When this spell is cast, all friendly creatures in the area are freed from spell
 
 @839=~Bigby's Crushing Hand~
 @840=~Bigby's Crushing Hand
+(Evocation)
+
 Level: 9
-School: Evocation
 Range: Long
 Duration: 1 turn
 Casting Time: 5
@@ -3452,8 +3669,9 @@ This spell creates a huge disembodied hand that crushes a victim and knocks them
 
 @841=~Wish~
 @842=~Wish
+(Universal)
+
 Level: 9
-School: Universal
 Range: Personal
 Duration: Special
 Casting Time: 5
@@ -3467,8 +3685,9 @@ Wish is a more potent version of the Limited Wish spell. It will fulfill literal
 
 @851=~Energy Blades~
 @852=~Energy Blades
+(Evocation)
+
 Level: Epic
-School: Evocation
 Range: Personal
 Duration: 5 turns
 Casting Time: 5
@@ -3479,8 +3698,9 @@ An energy blade is a discus made of pure energy. The discs are thrown with a +10
 
 @853=~Improved Alacrity~
 @854=~Improved Alacrity
+(Alteration)
+
 Level: Epic
-School: Alteration
 Range: Personal
 Duration: Special
 Casting Time: 1 round
@@ -3491,8 +3711,9 @@ Improved Alacrity essentially erases the pause between casting spells. When cast
 
 @855=~Dragon's Breath~
 @856=~Dragon's Breath
+(Evocation)
+
 Level: Epic
-School: Evocation
 Range: Long
 Duration: Instant
 Casting Time: 5
@@ -3503,8 +3724,9 @@ This spell causes the disembodied head of a red dragon to appear and breathe fir
 
 @857=~Summon Planetar~
 @858=~Summon Planetar
+(Conjuration)
+
 Level: Epic
-School: Conjuration
 Range: Long
 Duration: 1 round/level
 Casting Time: 1 round
@@ -3539,8 +3761,9 @@ Known Spells:
 
 @859=~Summon Dark Planetar~
 @860=~Summon Dark Planetar
+(Conjuration)
+
 Level: Epic
-School: Conjuration
 Range: Long
 Duration: 1 round/level
 Casting Time: 1 round
@@ -3575,8 +3798,9 @@ Known Spells:
 
 @861=~Comet~
 @862=~Comet
+(Conjuration)
+
 Level: Epic
-School: Conjuration
 Range: Long
 Duration: Instantaneous
 Casting Time: 1 round
