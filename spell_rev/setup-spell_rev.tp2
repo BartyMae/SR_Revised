@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 (Revised v1.3.908)~
+VERSION ~v4 (Revised v1.3.909)~
 
 ALWAYS
 
@@ -24,7 +24,7 @@ ALWAYS
     LOAD_TRA ~spell_rev\languages\english\divine.tra~
     LOAD_TRA ~spell_rev\languages\english\hla.tra~
     LOAD_TRA ~spell_rev\languages\english\item_revisions.tra~
-    ACTION_IF (spell_description_style=0 AND (GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~)) OR spell_description_style=2 BEGIN
+    ACTION_IF (spell_description_style=0 AND ((GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) OR MOD_IS_INSTALLED ~setup-bg2gtueestyle.tp2~ ~0~)) OR (spell_ spell_description_style=2 BEGIN
       LOAD_TRA ~spell_rev\languages\english\arcane_ee.tra~
       LOAD_TRA ~spell_rev\languages\english\divine_ee.tra~
       LOAD_TRA ~spell_rev\languages\english\item_revisions_ee.tra~
