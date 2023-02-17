@@ -553,7 +553,7 @@ Casting Time: 2
 Area of Effect: 1 creature
 Saving Throw: None
 
-Application of this spell sets the Strength of the target to 18 and adds an additional +50 exceptional Strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. Multiple castings of this spell are not cumulative.~
+Application of this spell sets the Strength of the target to 18 and adds an additional +50 Exceptional Strength on top of this, and they receive any Strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then their Strength will just be set to 18/00, while if a character has a Strength between 18/01 and 18/50, then their Strength will become 18/50 + the original percentage. If their Strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more. Multiple castings of this spell are not cumulative.~
 
 @477=~Web~
 @478=~Web
