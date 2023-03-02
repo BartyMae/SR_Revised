@@ -1,28 +1,29 @@
 /// PETRIFICATION ///
 
+ADD_SECTYPE ~k1#Petrify~ @22005 // String to counter Petrify - "Petrification effect removed"
+
 ACTION_IF petrification=0 BEGIN
 
   COPY ~spell_rev\spalt\spwi604.spl~ ~override~
+  COPY ~spell_rev\spalt\dvbaspet.spl~ ~override~
 
   COPY_EXISTING_REGEXP GLOB ~.*\.itm$~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604d silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = spwi604d silent = 1 END
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
     END
   BUT_ONLY
 
   COPY_EXISTING_REGEXP GLOB ~.*\.spl$~ ~override~
     PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604d silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = spwi604d silent = 1 END
+      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
     END
   BUT_ONLY
 
 END
 
 ACTION_IF petrification >= 1 BEGIN
-
-  ADD_SECTYPE ~k1#Petrify~ @22005 // String to counter Petrify - "Petrification effect removed"
 
   /// GLOBAL PATCH ///
 
@@ -77,55 +78,67 @@ ACTION_IF petrification >= 1 BEGIN
   END
   BUT_ONLY
 
+END
 
-  COPY_EXISTING ~spwi604.spl~ ~override~
-    WRITE_BYTE 0x27 "%k1#Petrify%"
-  BUT_ONLY
+COPY_EXISTING ~spwi604.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Petrify%"
+BUT_ONLY
 
-  COPY_EXISTING ~spwi604d.spl~ ~override~
-    WRITE_BYTE 0x27 "%k1#Petrify%"
-  BUT_ONLY
+COPY_EXISTING ~spwi604d.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Petrify%"
+BUT_ONLY
 
+COPY_EXISTING ~dvbaspet.spl~ ~override~
+  WRITE_BYTE 0x27 "%k1#Petrify%"
+BUT_ONLY
 
-  /// All items/spells using Flesh to Stone remove sectype
+/// All items/spells using Flesh to Stone remove sectype
 
-  COPY_EXISTING_REGEXP GLOB ~.*\.itm$~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      LPF CLONE_EFFECT INT_VAR match_opcode = 43 opcode = 221  parameter2 = %k1#Petrify% silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604  silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604d silent = 1 END
-      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 134 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604d silent = 1 END
-    END
-  BUT_ONLY
+COPY_EXISTING_REGEXP GLOB ~.*\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    LPF CLONE_EFFECT INT_VAR match_opcode = 43 opcode = 221 parameter1 = 9 parameter2 = %k1#Petrify% silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = spwi604  silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = spwi604d silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = dvbaspet silent = 1 END
+    LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 134 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604d silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = dvbaspet silent = 1 END
+  END
+BUT_ONLY
 
-  COPY_EXISTING_REGEXP GLOB ~.*\.spl$~ ~override~
-    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-      LPF CLONE_EFFECT INT_VAR match_opcode = 43 opcode = 221  parameter2 = %k1#Petrify% silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604  silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 101 opcode = 206 match_parameter2 = 134  STR_VAR resource = spwi604d silent = 1 END
-      LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 134 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
-      LPF CLONE_EFFECT INT_VAR multi_match = 1 match_opcode = 83 opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604d silent = 1 END
-    END
-  BUT_ONLY
+COPY_EXISTING_REGEXP GLOB ~.*\.spl$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    LPF CLONE_EFFECT INT_VAR match_opcode = 43 opcode = 221 parameter1 = 9 parameter2 = %k1#Petrify% silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = spwi604  silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = spwi604d silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 101 opcode = 206 match_parameter2 = 134 STR_VAR resource = dvbaspet silent = 1 END 
+    LPF DELETE_SPELL_EFFECT INT_VAR opcode_to_delete = 134 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604  silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = spwi604d silent = 1 END
+    LPF CLONE_EFFECT INT_VAR multi_match = 1  match_opcode = 83  opcode = 206 match_parameter2 = 64  STR_VAR resource = dvbaspet silent = 1 END
+  END
+BUT_ONLY
 
-  ACTION_FOR_EACH resource IN // Remove basilisks' extra hold effect
-    ~basilg1~
-    ~basill1~
-  BEGIN
-    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
-      COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
-      PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN
-        LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 109 END
-      END
+ACTION_FOR_EACH resource IN // Basilisk gaze attacks petrify in 1 round
+  ~basilg1~
+  ~basill1~
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.itm~) BEGIN
+    COPY_EXISTING ~%resource%.itm~ ~override\%resource%.itm~
+    PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 109 END
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 126 END
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 139 END
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 141 END
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 142 END
+      LPF DELETE_ITEM_EFFECT INT_VAR opcode_to_delete = 146 END
+	  LPF ADD_ITEM_EFFECT INT_VAR opcode = 146 target = 2 parameter2 = 1 timing = 1 probability1 = 100 type = 2 header = 1 STR_VAR resource = "dvbaspet" END
     END
   END
+END
 
-  ACTION_IF petrification=2 BEGIN
-    COPY ~spell_rev\spalt\spwi604d.spl~ ~override~
-    COPY ~spell_rev\spalt\spwi604d.eff~ ~override~
-  END
-
+ACTION_IF petrification=2 BEGIN
+  COPY ~spell_rev\spalt\spwi604d.spl~ ~override~
+  COPY ~spell_rev\spalt\spwi604d.eff~ ~override~
 END

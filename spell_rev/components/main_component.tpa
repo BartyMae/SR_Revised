@@ -2921,6 +2921,7 @@ COPY ~spell_rev\spwi6##\scrl7h.itm~      ~override~
   SAY NAME2 @667    SAY IDENTIFIED_DESC   @668
 COPY ~spell_rev\spwi6##\spwi604i.eff~    ~override~
 COPY ~spell_rev\spwi6##\spwi604d.spl~    ~override~
+COPY ~spell_rev\spwi6##\dvbaspet.spl~    ~override~
 
 COPY ~spell_rev\spwi6##\spwi605.spl~     ~override~  // Banishment ("replaces" Death Spell)
   SAY NAME1 @669    SAY UNIDENTIFIED_DESC @670
