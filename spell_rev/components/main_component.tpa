@@ -413,6 +413,7 @@ COPY ~spell_rev\shared\dvgasfrm.itm~     ~override~
 COPY ~spell_rev\shared\dvtelpor.spl~     ~override~  // Teleport Without Error
 
 COPY ~spell_rev\shared\spin683.spl~      ~override~  // Innate Web Tangle
+  SAY NAME1 @23023
 
 COPY ~spell_rev\shared\spin788.spl~      ~override~  // Demilich Soul Trap
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 40979 parameter1 = RESOLVE_STR_REF(@23021) END
