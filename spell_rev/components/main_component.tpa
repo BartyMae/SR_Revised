@@ -578,6 +578,7 @@ ADD_SPELL ~spell_rev\sppr1##\sppr121.spl~ 1 1 ~CLERIC_OBSCURING_MIST~ // Obscuri
   WRITE_SHORT 0x98 %dvobmist%
   SET dvobmist -= 1
 APPEND ~clearair.2da~ ~Obscuring_Mist             %dvobmist%~
+COPY ~spell_rev\sppr1##\dvomisti.spl~    ~override~
 COPY ~spell_rev\sppr1##\dvomisti.eff~    ~override~
 
 /* ---------------- Level 2 ---------------- */
@@ -1531,7 +1532,6 @@ COPY ~spell_rev\spwi1##\spwi106.spl~     ~override~  // Obscuring Mist (replaces
 APPEND ~clearair.2da~ ~Fog_Cloud             %dvfogc%~
 COPY ~spell_rev\spwi1##\scrl71.itm~      ~override~
   SAY NAME2 @411    SAY IDENTIFIED_DESC   @412
-COPY ~spell_rev\spwi1##\spwi106i.eff~    ~override~
 APPEND ~spell.ids~ ~2106 WIZARD_OBSCURING_MIST~
 
 ACTION_IF blindness=1 BEGIN
