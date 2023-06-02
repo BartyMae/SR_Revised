@@ -1,4 +1,4 @@
-COPY ~spell_rev/shared/1pp/animations~ ~override~ // animations borrowed from 1pp
+COPY ~spell_rev/shared/1pp/animations~ ~override~ // Animations borrowed from 1pp
 
 // 1pp macros
 
