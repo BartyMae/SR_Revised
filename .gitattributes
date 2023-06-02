@@ -8,3 +8,7 @@
 *.TPH eol=crlf
 *.ini eol=crlf
 *.INI eol=crlf
+*.2da eol=crlf
+*.2DA eol=crlf
+*.ini eol=crlf
+*.INI eol=crlf
