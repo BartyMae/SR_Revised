@@ -3305,7 +3305,7 @@ END ELSE BEGIN
 COPY ~spell_rev\spwi8##\scrl9b.itm~      ~override~  // For price
 END
 
-COPY ~spell_rev\spwi8##\spwi808.spl~     ~override~  // Moment of Prescience
+COPY ~spell_rev\spwi8##\spwi808.spl~     ~override~  // Moment of Prescience (replaces Improved Mantle)
   SAY NAME1 @779    SAY UNIDENTIFIED_DESC @780
 COPY ~spell_rev\spwi8##\scrl9c.itm~      ~override~
   SAY NAME2 @779    SAY IDENTIFIED_DESC   @780

@@ -1,2 +1,8 @@
 *.bcs eol=lf
 *.BCS eol=lf
+*.tra eol=crlf
+*.TRA eol=crlf
+*.tpa eol=crlf
+*.TPA eol=crlf
+*.tph eol=crlf
+*.TPH eol=crlf
