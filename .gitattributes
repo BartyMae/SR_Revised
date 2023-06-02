@@ -6,3 +6,5 @@
 *.TPA eol=crlf
 *.tph eol=crlf
 *.TPH eol=crlf
+*.ini eol=crlf
+*.INI eol=crlf
