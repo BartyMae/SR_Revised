@@ -698,7 +698,10 @@ COPY ~spell_rev\sppr2##\sppr214.spl~     ~override~  // Draw Upon Divine Might (
   SAY NAME1 @57    SAY UNIDENTIFIED_DESC @58
 COPY ~spell_rev\sppr2##\sppr214w.spl~    ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~12108~ @57 // Change portrait icon name into Draw Upon Divine Might
+  STRING_SET ~12108~ @57 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @57 // Change portrait icon name to Draw Upon Divine Might
 END
 
 ADD_SPELL ~spell_rev\sppr2##\sppr215.spl~ 1 2 ~CLERIC_CURE_MODERATE_WOUNDS~ // Cure Moderate Wounds (new cleric spell)
@@ -969,7 +972,10 @@ COPY ~spell_rev\sppr4##\sppr412.spl~     ~override~  // Divine Power (renamed fr
 COPY ~spell_rev\sppr4##\sppr412a.eff~    ~override~
 COPY ~spell_rev\sppr4##\sppr412b.eff~    ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~8267~ @133 // Change portrait icon name into Divine Power
+  STRING_SET ~8267~ @133 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @133 // Change portrait icon name
 END
 
 COPY ~spell_rev\sppr4##\sppr413.spl~     ~override~  // Negative Plane Protection
@@ -1091,7 +1097,10 @@ COPY ~spell_rev\sppr5##\sppr513.spl~     ~override~  // Righteous Fury (previous
   SAY NAME1 @175    SAY UNIDENTIFIED_DESC @176
 COPY ~spell_rev\sppr5##\dvmgchit.eff~    ~override~  // 1D6 magic damage on hit
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~8272~ @133 // Change portrait icon name into Righteous Fury
+  STRING_SET ~8272~ @133 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~8272~ @133 // Change portrait icon name
 END
 
 ADD_PROJECTILE ~spell_rev\projectles\dvmscure.pro~
@@ -2488,11 +2497,11 @@ COPY ~spell_rev\spwi4##\spwi418o.spl~    ~override~
 COPY ~spell_rev\spwi4##\spwi418o.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418p.spl~    ~override~
 COPY ~spell_rev\spwi4##\spwi418p.eff~    ~override~
-ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN
-  STRING_SET ~8277~ @595 // Change portrait icon from Fire Shield (Red) to Fire Shield
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8277~ @595 // Change portrait icon name
 END
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
-  STRING_SET ~25058~ @595 // Change portrait icon from Fire Shield (Red) to Fire Shield
+  STRING_SET ~25058~ @595 // Change portrait icon name Fire Shield
 END
 
 COPY ~spell_rev\spwi4##\spwi419.spl~     ~override~  // Secret Word
@@ -2869,10 +2878,10 @@ COPY ~spell_rev\spwi5##\dvmestin.eff~    ~override~
 COPY ~spell_rev\spwi5##\mestsh.vvc~      ~override~
 COPY ~spell_rev\spwi5##\mestsh.bam~      ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~8279~ @565 // Change portrait icon from Fire Shield (Blue) to Mestil's Acid Sheath
+  STRING_SET ~8279~ @565 // Change portrait icon name
 END
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
-  STRING_SET ~25059~ @565 // Change portrait icon from Fire Shield (Blue) to Mestil's Acid Sheath
+  STRING_SET ~25059~ @565 // Change portrait icon name
 END
 
 ADD_SPELL ~spell_rev\spwi5##\spwi527.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)
@@ -3135,7 +3144,12 @@ COPY ~spell_rev\spwi7##\spwi708e.spl~    ~override~
 COPY ~spell_rev\spwi7##\spwi708e.eff~    ~override~
 COPY ~spell_rev\spwi7##\dvmantle.vvc~    ~override~
 COPY ~spell_rev\spwi7##\dvmantle.bam~    ~override~
-
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~34571~ @733 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @733 // Change portrait icon name
+END
 
 COPY ~spell_rev\spwi7##\spwi710.spl~     ~override~  // Simbul's Spell Sequencer (previously named Spell Sequencer)
   SAY NAME1 @735    SAY UNIDENTIFIED_DESC @736
@@ -3364,17 +3378,11 @@ COPY ~spell_rev\spwi8##\spwi813.spl~     ~override~  // Maze
 COPY ~spell_rev\spwi8##\scrl9h.itm~      ~override~
   SAY NAME2 @789    SAY IDENTIFIED_DESC   @790
 
-ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN // -10 THAC0 vs. -4 THAC0 for blindness
 COPY ~spell_rev\spwi8##\spwi815.spl~     ~override~  // Power Word: Blind
   SAY NAME1 @791    SAY UNIDENTIFIED_DESC @792
 COPY ~spell_rev\spwi8##\scrl9j.itm~      ~override~
   SAY NAME2 @791    SAY IDENTIFIED_DESC   @792
-END ELSE BEGIN
-COPY ~spell_rev\spwi8##\spwi815.spl~     ~override~  // Power Word: Blind
-  SAY NAME1 @791    SAY UNIDENTIFIED_DESC @792000
-COPY ~spell_rev\spwi8##\scrl9j.itm~      ~override~
-  SAY NAME2 @791    SAY IDENTIFIED_DESC   @792000
-END
+
 COPY_EXISTING ~holdsumm.pro~             ~override~
   WRITE_SHORT 0x204 85
   WRITE_SHORT 0x206 85   // 5' radius AoE

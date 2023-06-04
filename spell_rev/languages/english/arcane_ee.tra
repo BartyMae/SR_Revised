@@ -3241,18 +3241,6 @@ Casting Time: 1
 Area of Effect: 1 creature
 Saving Throw: None
 
-When this power word is uttered, any creature of the wizard's choice within visual range becomes sightless. Creatures with less than 6 hit dice are blinded permanently, while other creatures are blinded for 1 turn or until dispelled. All of the effects of blindness apply to the victim, including a -10 penalty to THAC0 and decreased visibility range.~
-
-@792000=~Power Word: Blind
-(Enchantment)
-
-Level: 8
-Range: Long
-Duration: Special
-Casting Time: 1
-Area of Effect: 1 creature
-Saving Throw: None
-
 When this power word is uttered, any creature of the wizard's choice within visual range becomes sightless. Creatures with less than 6 hit dice are blinded permanently, while other creatures are blinded for 1 turn or until dispelled. All of the effects of blindness apply to the victim, including a -4 penalty to THAC0 and decreased visibility range.~
 
 @793=~Symbol of Stunning~
