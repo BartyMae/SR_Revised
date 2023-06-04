@@ -37,11 +37,11 @@ ACTION_IF GAME_IS ~iwdee~ BEGIN
 END
 
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~27982~ @21000 // replaces 'Protection from Illusions removed' with 'Illusionary Protections Removed'
-  STRING_SET ~12122~ @49 // replaces 'Resist Fire and Cold' with 'Resist Elements'
-  STRING_SET ~17417~ @49 // replaces 'Resist Fire/Cold' with 'Resist Elements'
-  STRING_SET ~54307~ @629 // replaces 'Spell Immunity' with 'Dispelling Screen'
-  STRING_SET ~8275~  @105 // replaces 'Repulsing Undead' with 'Repulsion'
+  STRING_SET ~27982~ @21000 // Replaces 'Protection from Illusions removed' with 'Illusionary Protections Removed'
+  STRING_SET ~12122~ @49 // Replaces 'Resist Fire and Cold' with 'Resist Elements'
+  STRING_SET ~17417~ @49 // Replaces 'Resist Fire/Cold' with 'Resist Elements'
+  STRING_SET ~54307~ @629 // Replaces 'Spell Immunity' with 'Dispelling Screen'
+  STRING_SET ~8275~  @105 // Replaces 'Repulsing Undead' with 'Repulsion'
 END
 
 COPY_EXISTING ~intmod.2da~ ~override~  // Int Modifier for Maze & Imprisonment
@@ -969,7 +969,7 @@ COPY ~spell_rev\sppr4##\sppr412.spl~     ~override~  // Divine Power (renamed fr
 COPY ~spell_rev\sppr4##\sppr412a.eff~    ~override~
 COPY ~spell_rev\sppr4##\sppr412b.eff~    ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~8267~ @133 // change portrait icon name into Divine Power
+  STRING_SET ~8267~ @133 // Change portrait icon name into Divine Power
 END
 
 COPY ~spell_rev\sppr4##\sppr413.spl~     ~override~  // Negative Plane Protection
@@ -1091,7 +1091,7 @@ COPY ~spell_rev\sppr5##\sppr513.spl~     ~override~  // Righteous Fury (previous
   SAY NAME1 @175    SAY UNIDENTIFIED_DESC @176
 COPY ~spell_rev\sppr5##\dvmgchit.eff~    ~override~  // 1D6 magic damage on hit
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~8272~ @133 // change portrait icon name into Righteous Fury
+  STRING_SET ~8272~ @133 // Change portrait icon name into Righteous Fury
 END
 
 ADD_PROJECTILE ~spell_rev\projectles\dvmscure.pro~
@@ -1534,18 +1534,11 @@ COPY ~spell_rev\spwi1##\scrl71.itm~      ~override~
   SAY NAME2 @411    SAY IDENTIFIED_DESC   @412
 APPEND ~spell.ids~ ~2106 WIZARD_OBSCURING_MIST~
 
-ACTION_IF blindness=1 BEGIN
-ACTION_IF (GAME_IS ~bg2 tob bgt~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN // -10 THAC0 vs. -4 THAC0 for blindness
+ACTION_IF blindness=1 BEGIN // -10 THAC0 for oBG2/Tutu vs. -4 THAC0 for EEs
 COPY ~spell_rev\spalt\spwi106.spl~     ~override~  // (original Blindness)
   SAY NAME1 @411000    SAY UNIDENTIFIED_DESC @412000
 COPY ~spell_rev\spalt\scrl71.itm~      ~override~
   SAY NAME2 @411000    SAY IDENTIFIED_DESC   @412000
-END ELSE BEGIN
-COPY ~spell_rev\spalt\spwi106.spl~     ~override~  // (original Blindness)
-  SAY NAME1 @411000    SAY UNIDENTIFIED_DESC @412000000
-COPY ~spell_rev\spalt\scrl71.itm~      ~override~
-  SAY NAME2 @411000    SAY IDENTIFIED_DESC   @412000000
-END
 END
 
 COPY ~spell_rev\spwi1##\spwi107.spl~     ~override~  // Friends
@@ -2870,7 +2863,7 @@ COPY ~spell_rev\spwi5##\dvmestin.eff~    ~override~
 COPY ~spell_rev\spwi5##\mestsh.vvc~      ~override~
 COPY ~spell_rev\spwi5##\mestsh.bam~      ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~13070~ @565 // change portrait icon from Fire Shield (Blue) to Acid Sheath
+  STRING_SET ~13070~ @565 // Change portrait icon from Fire Shield (Blue) to Acid Sheath
 END
 
 ADD_SPELL ~spell_rev\spwi5##\spwi527.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)

@@ -96,17 +96,6 @@ Casting Time: 2
 Area of Effect: 1 person
 Saving Throw: Spell negates
 
-When this spell is cast, the target is temporarily blinded for the duration of the spell. A blinded victim suffers a -10 penalty to THAC0 and decreased visibility range, but avoids all harmful effects if they successfully make a save vs. spell.~
-
-@412000000=~Blindness
-Level: 1
-School: Illusion
-Range: Long
-Duration: 1 turn
-Casting Time: 2
-Area of Effect: 1 person
-Saving Throw: Spell negates
-
 When this spell is cast, the target is temporarily blinded for the duration of the spell. A blinded victim suffers a -4 penalty to THAC0 and decreased visibility range, but avoids all harmful effects if they successfully make a save vs. spell.~
 
 @413000=~Friends~
