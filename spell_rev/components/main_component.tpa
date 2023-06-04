@@ -2488,6 +2488,12 @@ COPY ~spell_rev\spwi4##\spwi418o.spl~    ~override~
 COPY ~spell_rev\spwi4##\spwi418o.eff~    ~override~
 COPY ~spell_rev\spwi4##\spwi418p.spl~    ~override~
 COPY ~spell_rev\spwi4##\spwi418p.eff~    ~override~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee bg2ee eet~) BEGIN
+  STRING_SET ~8277~ @595 // Change portrait icon from Fire Shield (Red) to Fire Shield
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  STRING_SET ~25058~ @595 // Change portrait icon from Fire Shield (Red) to Fire Shield
+END
 
 COPY ~spell_rev\spwi4##\spwi419.spl~     ~override~  // Secret Word
   SAY NAME1 @597    SAY UNIDENTIFIED_DESC @598
@@ -2617,7 +2623,7 @@ COPY ~spell_rev\spwi5##\dvsdoor.vvc~     ~override~
 
 COPY ~spell_rev\spwi5##\spwi506.spl~     ~override~  // Domination
   SAY NAME1 @621    SAY UNIDENTIFIED_DESC @622
-  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 8364 parameter1 = RESOLVE_STR_REF(@23004) END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 8364 parameter1 = RESOLVE_STR_REF(@23002) END
 COPY ~spell_rev\spwi5##\scrl5n.itm~      ~override~
   SAY NAME2 @621    SAY IDENTIFIED_DESC   @622
 
@@ -2863,7 +2869,10 @@ COPY ~spell_rev\spwi5##\dvmestin.eff~    ~override~
 COPY ~spell_rev\spwi5##\mestsh.vvc~      ~override~
 COPY ~spell_rev\spwi5##\mestsh.bam~      ~override~
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
-  STRING_SET ~13070~ @565 // Change portrait icon from Fire Shield (Blue) to Acid Sheath
+  STRING_SET ~8279~ @565 // Change portrait icon from Fire Shield (Blue) to Mestil's Acid Sheath
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  STRING_SET ~25059~ @565 // Change portrait icon from Fire Shield (Blue) to Mestil's Acid Sheath
 END
 
 ADD_SPELL ~spell_rev\spwi5##\spwi527.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dispelling Screen (replaces Spell Immunity)
@@ -3126,6 +3135,7 @@ COPY ~spell_rev\spwi7##\spwi708e.spl~    ~override~
 COPY ~spell_rev\spwi7##\spwi708e.eff~    ~override~
 COPY ~spell_rev\spwi7##\dvmantle.vvc~    ~override~
 COPY ~spell_rev\spwi7##\dvmantle.bam~    ~override~
+
 
 COPY ~spell_rev\spwi7##\spwi710.spl~     ~override~  // Simbul's Spell Sequencer (previously named Spell Sequencer)
   SAY NAME1 @735    SAY UNIDENTIFIED_DESC @736
