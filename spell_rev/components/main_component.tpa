@@ -38,10 +38,6 @@ END
 
 ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
   STRING_SET ~27982~ @21000 // Replaces 'Protection from Illusions removed' with 'Illusionary Protections Removed'
-  STRING_SET ~12122~ @49 // Replaces 'Resist Fire and Cold' with 'Resist Elements'
-  STRING_SET ~17417~ @49 // Replaces 'Resist Fire/Cold' with 'Resist Elements'
-  STRING_SET ~54307~ @629 // Replaces 'Spell Immunity' with 'Dispelling Screen'
-  STRING_SET ~8275~  @105 // Replaces 'Repulsing Undead' with 'Repulsion'
 END
 
 COPY_EXISTING ~intmod.2da~ ~override~  // Int Modifier for Maze & Imprisonment
@@ -432,6 +428,12 @@ COPY ~spell_rev\shared\spin789.spl~      ~override~  // Demilich Howl
 
 COPY ~spell_rev\sppr1##\sppr101.spl~     ~override~  // Bless
   SAY NAME1 @1     SAY UNIDENTIFIED_DESC @2
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~17408~ @1 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @1 // Change portrait icon name
+END
 
 COPY ~spell_rev\sppr1##\sppr102.spl~     ~override~  // Command
   SAY NAME1 @3     SAY UNIDENTIFIED_DESC @4
@@ -448,6 +450,12 @@ COPY ~spell_rev\sppr1##\sppr105.spl~     ~override~  // Entangle
 COPY ~spell_rev\sppr1##\dventang.eff~    ~override~
 COPY ~spell_rev\shared\spentaai.bam~     ~override~  // IWD's Entangle Animation
 COPY ~spell_rev\shared\spentaci.bam~     ~override~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~47835~ @7 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @7 // Change portrait icon name
+END
 
 COPY ~spell_rev\sppr1##\sppr106.spl~     ~override~  // Magical Stone
   SAY NAME1 @11    SAY UNIDENTIFIED_DESC @12
@@ -662,6 +670,12 @@ ACTION_IF (GAME_IS ~iwdee~) BEGIN // SPPR216 is Resist Fire/Cold in IWDEE
     LPF ALTER_EFFECT STR_VAR match_resource = ~SPPR210~ resource = ~SPPR216~ END
 END
 APPEND ~spell.ids~ ~1210 CLERIC_RESIST_ELEMENTS~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~12122~ @49 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @49 // Change portrait icon name
+END
 
 ADD_PROJECTILE ~spell_rev\projectles\dvsilenc.pro~
 COPY ~spell_rev\sppr2##\sppr211.spl~     ~override~  // Silence
@@ -701,7 +715,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   STRING_SET ~12108~ @57 // Change portrait icon name
 END
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
-  // STRING_SET ~~ @57 // Change portrait icon name to Draw Upon Divine Might
+  // STRING_SET ~~ @57 // Change portrait icon name
 END
 
 ADD_SPELL ~spell_rev\sppr2##\sppr215.spl~ 1 2 ~CLERIC_CURE_MODERATE_WOUNDS~ // Cure Moderate Wounds (new cleric spell)
@@ -1055,6 +1069,12 @@ COPY ~spell_rev\sppr5##\sppr507.spl~     ~override~  // Champion's Strength
   SAY NAME1 @163    SAY UNIDENTIFIED_DESC @164
 COPY ~spell_rev\sppr5##\scrl5e.itm~      ~override~
   SAY NAME2 @163    SAY IDENTIFIED_DESC   @164
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~23746~ @163 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @163 // Change portrait icon name
+END
 
 COPY ~spell_rev\sppr5##\sppr508.spl~     ~override~  // Chaotic Commands
   SAY NAME1 @165    SAY UNIDENTIFIED_DESC @166
@@ -1118,6 +1138,12 @@ ADD_PROJECTILE ~spell_rev\projectles\dvrepuls.pro~
 COPY ~spell_rev\sppr5##\sppr515d.spl~    ~override~
   WRITE_SHORT 0x98 %dvrepuls%
 APPEND ~spell.ids~ ~1515 CLERIC_REPULSION~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8275~ @105 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~8272~ @105 // Change portrait icon name
+END
 
 COPY ~spell_rev\sppr5##\sppr516.spl~     ~override~  // Pixie Dust
   SAY NAME1 @179    SAY UNIDENTIFIED_DESC @180
@@ -2055,6 +2081,12 @@ ADD_SPELL ~spell_rev\spwi2##\spwi225.spl~ 2 2 ~WIZARD_RESIST_ELEMENTS~  // Resis
   SAY NAME1 @864    SAY UNIDENTIFIED_DESC @865
 COPY ~spell_rev\spwi2##\scrl86.itm~      ~override~  // Detect Evil's scroll
   SAY NAME2 @864    SAY IDENTIFIED_DESC   @865
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~17417~ @864 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @864 // Change portrait icon name
+END
 
 ADD_SPELL ~spell_rev\spwi2##\spwi226.spl~ 2 2 ~WIZARD_MONSTER_SUMMONING_LEVEL_2~  // Monster Summoning II
   SAY NAME1 @573    SAY UNIDENTIFIED_DESC @574
@@ -2170,6 +2202,12 @@ COPY ~spell_rev\spwi3##\spwi310.spl~     ~override~  // Non-Detection
 APPEND_OUTER ~spell_rev/lib/ds_sr_extra.2da~ ~spwi310.spl    282     3     6     142    n     A~
 COPY ~spell_rev\spwi3##\scrl1m.itm~      ~override~
   SAY NAME2 @519    SAY IDENTIFIED_DESC   @520
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~17422~ @519 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @519 // Change portrait icon name
+END
 
 COPY ~spell_rev\spwi3##\spwi311.spl~     ~override~  // Protection from Missiles ("replaces" Protection from Normal Missiles)
   SAY NAME1 @521    SAY UNIDENTIFIED_DESC @522
@@ -2501,7 +2539,7 @@ ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee
   STRING_SET ~8277~ @595 // Change portrait icon name
 END
 ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
-  STRING_SET ~25058~ @595 // Change portrait icon name Fire Shield
+  STRING_SET ~25058~ @595 // Change portrait icon name
 END
 
 COPY ~spell_rev\spwi4##\spwi419.spl~     ~override~  // Secret Word
@@ -2889,6 +2927,12 @@ ADD_SPELL ~spell_rev\spwi5##\spwi527.spl~ 2 5 ~WIZARD_DISPELLING_SCREEN~  // Dis
 COPY ~spell_rev\spwi5##\scrl6s.itm~      ~override~
   SAY NAME2 @629    SAY IDENTIFIED_DESC   @630
 COPY ~spell_rev\spwi5##\dvscreen.spl~    ~override~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~54307~ @629 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @629 // Change portrait icon name
+END
 
 /* ---------------- Level 6 ---------------- */
 
@@ -2926,6 +2970,12 @@ COPY ~spell_rev\spwi6##\scrl7g.itm~      ~override~
   SAY NAME2 @665    SAY IDENTIFIED_DESC   @666
 COPY ~spell_rev\spwi6##\spwi603a.eff~    ~override~
 COPY ~spell_rev\spwi6##\spwi603b.eff~    ~override~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8284~ @665 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @665 // Change portrait icon name
+END
 
 COPY ~spell_rev\spwi6##\spwi604.spl~     ~override~  // Flesh to Stone
   SAY NAME1 @667    SAY UNIDENTIFIED_DESC @668
@@ -2970,6 +3020,12 @@ COPY ~spell_rev\spwi6##\spwi611.spl~     ~override~  // Protection from Magical 
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7609 parameter1 = RESOLVE_STR_REF(@23016) END
 COPY ~spell_rev\spwi6##\scrl7o.itm~      ~override~
   SAY NAME2 @679    SAY IDENTIFIED_DESC   @680
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8282~ @679 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @679 // Change portrait icon name
+END
 
 COPY ~spell_rev\spwi6##\spwi612.spl~     ~override~  // Power Word: Silence
   SAY NAME1 @681    SAY UNIDENTIFIED_DESC @682
@@ -3095,12 +3151,24 @@ COPY ~spell_rev\spwi7##\spwi702.spl~     ~override~  // Protection from the Elem
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7569 parameter1 = RESOLVE_STR_REF(@23019) END
 COPY ~spell_rev\spwi7##\scrl8e.itm~      ~override~
   SAY NAME2 @723    SAY IDENTIFIED_DESC   @724
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8293~ @723 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @723 // Change portrait icon name
+END
 
 COPY ~spell_rev\spwi7##\spwi703.spl~     ~override~  // Project Image
   SAY NAME1 @725    SAY UNIDENTIFIED_DESC @726
 COPY ~spell_rev\spwi7##\scrl8f.itm~      ~override~
   SAY NAME2 @725    SAY IDENTIFIED_DESC   @726
 COPY ~spell_rev\spwi7##\projimag.spl~    ~override~
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8296~ @725 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @725 // Change portrait icon name
+END
 
 /* ADD_PROJECTILE ~spell_rev\projectles\dvrubray.pro~ */
 COPY ~spell_rev\spwi7##\spwi704.spl~     ~override~  // Ruby Ray of Reversal
@@ -3295,6 +3363,12 @@ COPY ~spell_rev\spwi8##\spwi803.spl~     ~override~  // Protection from Energy
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 7570 parameter1 = RESOLVE_STR_REF(@23020) END
 COPY ~spell_rev\spwi8##\scrl8y.itm~      ~override~
   SAY NAME2 @771    SAY IDENTIFIED_DESC   @772
+ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~8324~ @771 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @771 // Change portrait icon name
+END
 
 COPY ~spell_rev\spwi8##\spwi804.spl~     ~override~  // Simulacrum
   SAY NAME1 @773    SAY UNIDENTIFIED_DESC @774
