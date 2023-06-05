@@ -135,15 +135,17 @@ ACTION_IF (MOD_IS_INSTALLED ~setup-spell_rev.tp2~ 0) BEGIN
   //OUTER_SET $spell("spwi922")=0 // dragon's breath
 END
 
-ACTION_FOR_EACH resource IN // spell_protections=1
-  ~spcl231~
-  ~spin112~
-  ~sppr303~
-  ~spwi302~
-  ~spwi326~
-BEGIN
-  ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-    OUTER_SET $spell("%resource%")=1
+ACTION_IF spell_protections=1 BEGIN
+  ACTION_FOR_EACH resource IN
+    ~spcl231~
+    ~spin112~
+    ~sppr303~
+    ~spwi302~
+    ~spwi326~
+  BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+      OUTER_SET $spell("%resource%")=1
+    END
   END
 END
 
