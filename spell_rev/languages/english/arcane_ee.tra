@@ -2262,7 +2262,7 @@ Saving Throw: None
 
 When this spell is cast upon a target creature, there will be two major effects. The first is that it will dispel one spell protection of 8th level or lower from the creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. The second effect of the spell is that the creature's magic resistance is temporary nullified. The resistance remains lowered for 2 rounds, and this effect cannot be negated in any way. Magic resistance does not affect this spell.
 
-The spell protection spells dispelled by Pierce Magic are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Mind Blank.~
+The spell protection spells dispelled by Pierce Magic are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, and Shield of the Archons.~
 
 @677=~True Seeing~
 @678=~True Seeing
@@ -2666,7 +2666,7 @@ Saving Throw: None
 
 When this spell is cast, it will dispel one spell protection of any level on the target. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
-The spell protection spells dispelled by Ruby Ray of Reversal are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
+The spell protection spells dispelled by Ruby Ray of Reversal are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Spell Trap.~
 
 @729=~Khelben's Warding Whip~
 @730=~Khelben's Warding Whip
@@ -2681,7 +2681,7 @@ Saving Throw: None
 
 When this spell is cast on the target creature, it will dispel one spell protection of up to 8th level or lower. At the beginning of each of the next 3 rounds, another spell protection will be removed from the target. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
 
-The spell protection spells dispelled by Khelben's Warding Whip are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Mind Blank.~
+The spell protection spells dispelled by Khelben's Warding Whip are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, and Shield of the Archons.~
 
 @731=~Summon Death Knight~
 @732=~Summon Death Knight
@@ -3094,7 +3094,7 @@ Saving Throw: None
 
 By means of this spell, the wizard may launch a massive attack on a target's physical and magical defenses. Pierce Shield will dispel one spell protection of any level from the target creature. This will always dispel the highest level of spell protection on the target first. If the target has two or more protections tied for the highest level, the choice will be random. After piercing through magical protections, this powerful spell will breach each and every combat protection on the target creature. Magic resistance does not affect this spell.
 
-The spell protection spells dispelled by Pierce Shield are: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.
+The spell protection spells dispelled by Pierce Shield are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Spell Trap.
 
 The combat protection spells dispelled by Pierce Shield are: Mage Armor, Shield, Armor of Faith, Barkskin, Protection from Missiles, Spirit Armor, Stoneskin, Protection from Normal Weapons, Protection from Magical Weapons, Physical Mirror, Prismatic Mantle, and Absolute Immunity.~
 
@@ -3341,7 +3341,7 @@ Saving Throw: None
 
 When this spell is cast, it will dispel all spell protections on the target. Additionally, the affected creature will suffer 100% spell failure rate for 1 round, followed by 50% spell failure for the round after. Magic resistance does not affect this spell.
 
-The spell protection spells dispelled by Spellstrike are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, Mind Blank, and Spell Trap.~
+The spell protection spells dispelled by Spellstrike are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Spell Shield, Globe of Invulnerability, Greater Spell Deflection, Shield of the Archons, and Spell Trap.~
 
 @815=~Gate~
 @816=~Gate

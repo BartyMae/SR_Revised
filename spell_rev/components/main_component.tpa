@@ -2417,6 +2417,12 @@ COPY ~spell_rev\spwi4##\spwi411.spl~     ~override~  // Emotion: Despair
   SAY NAME1 @581    SAY UNIDENTIFIED_DESC @582
 COPY ~spell_rev\spwi4##\scrl5h.itm~      ~override~
   SAY NAME2 @581    SAY IDENTIFIED_DESC   @582
+/* ACTION_IF (GAME_IS ~bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+  STRING_SET ~23740~ @581 // Change portrait icon name
+END
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~bg2 tob bgt tutu tutu_totsc bg2ee eet~) BEGIN
+  // STRING_SET ~~ @581 // Change portrait icon name
+END */
 
 COPY ~spell_rev\spwi4##\spwi412.spl~     ~override~  // Greater Malison
   SAY NAME1 @583    SAY UNIDENTIFIED_DESC @584
@@ -4172,7 +4178,7 @@ INCLUDE ~spell_rev\lib\friendly_spells_pierce.tph~
 // Ranged Curing
 INCLUDE ~spell_rev\lib\ranged_curing.tph~
 
-// Anti-magic Spells Pierce Improved Invisibility
+// Anti-Magic Spells Pierce Improved Invisibility
 INCLUDE ~spell_rev\lib\anti_magic_spells_pierce.tph~
 
 // Spell Protections
