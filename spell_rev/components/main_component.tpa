@@ -961,6 +961,9 @@ COPY ~spell_rev\sppr4##\scrl5d.itm~      ~override~
 
 COPY ~spell_rev\sppr4##\sppr409.spl~     ~override~  // Death Ward
   SAY NAME1 @127    SAY UNIDENTIFIED_DESC @128
+  PATCH_IF (GAME_IS ~bg2 tob bgt bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bgee~) BEGIN
+    REPLACE_TEXTUALLY ~SPIN996~ ~BGIN996~
+  END
 
 COPY ~spell_rev\sppr4##\sppr410.spl~     ~override~  // Call Woodland Beings
   SAY NAME1 @129    SAY UNIDENTIFIED_DESC @130
@@ -2498,7 +2501,7 @@ COPY ~spell_rev\spwi4##\scrl6m.itm~      ~override~
   SAY NAME2 @593    SAY IDENTIFIED_DESC   @594
 COPY ~spell_rev\spwi4##\enchwp~          ~override~
 
-ACTION_IF (GAME_IS ~bgee bg2ee eet~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+ACTION_IF (GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 ACTION_IF ee_enchanted_weapon=1 BEGIN
 COPY ~spell_rev\spalt\spwi417.spl~     ~override~  // Enchanted Weapon
   SAY NAME1 @593    SAY UNIDENTIFIED_DESC @594000
@@ -3990,7 +3993,7 @@ BUT_ONLY
 
 /* ---------------- Protection from Evil ---------------- */
 
-ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet~) BEGIN
+ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet iwdee~) BEGIN
   ACTION_FOR_EACH resource IN
     ~SPCL213~
     ~SPCL233~
