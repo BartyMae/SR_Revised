@@ -26,3 +26,11 @@ ACTION_IF anti_magic_spells_pierce=2 BEGIN
   BUT_ONLY
   END
 END
+
+ACTION_IF anti_magic_spells_pierce=3 BEGIN
+  COPY_EXISTING_REGEXP GLOB ~.*\.spl$~ ~override~
+    PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+      WRITE_BYTE 0x1b (BYTE_AT 0x1b BOR 1)
+    END
+  BUT_ONLY
+END
