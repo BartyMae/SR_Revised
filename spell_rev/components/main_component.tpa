@@ -4195,3 +4195,6 @@ INCLUDE ~spell_rev\lib\spellcasting_hlas.tph~
 
 // Add Two-Handed Flag for Shapeshifts/Polymorphs (EEs)
 INCLUDE ~spell_rev\lib\ee_2h_flag.tph~
+
+// Original Lightning Bolt
+INCLUDE ~spell_rev\lib\original_lightning_bolt.tph~
