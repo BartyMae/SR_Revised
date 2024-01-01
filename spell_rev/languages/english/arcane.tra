@@ -4115,7 +4115,7 @@ Not Usable By:
  Thief
  Beast Master~
 @8099=~Mace +3~
-@8101=~This mace has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8100=~This mace has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4133,8 +4133,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@8102=~Morning Star +3~
-@8103=~This morning star has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8101=~Morning Star +3~
+@8102=~This morning star has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4152,8 +4152,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@8104=~War Hammer +3~
-@8105=~This war hammer has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8103=~War Hammer +3~
+@8104=~This war hammer has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4171,8 +4171,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@8106=~Club +3~
-@8107=~This club has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8105=~Club +3~
+@8106=~This club has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4186,8 +4186,8 @@ Type: 1-handed
 Requires: 5 Strength
 Not Usable By:
  Mage~
-@8108=~Two-Handed Sword +3~
-@8109=~This two-handed sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8107=~Two-Handed Sword +3~
+@8108=~This two-handed sword has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4206,10 +4206,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@8110=~Halberd +3~
-@8111=~This halberd has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
-
-Consisting of a cleaver-like axe blade mounted on a staff averaging six feet in length, the halberd is the oldest and most often used polearm. The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd is best described as a cross between a spear and an axe. This particular halberd is enchanted, gifted with an enhanced ability to slaughter foes.
+@8109=~Halberd +3~
+@8110=~This halberd has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4228,8 +4226,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@8112=~Spear +3~
-@8113=~This spear has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8111=~Spear +3~
+@8112=~This spear has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4247,8 +4245,8 @@ Not Usable By:
  Monk
  Thief
  Beast Master~
-@8114=~Quarterstaff +3~
-@8115=~This quarterstaff has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8113=~Quarterstaff +3~
+@8114=~This quarterstaff has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4262,8 +4260,8 @@ Type: 2-handed
 Requires: 5 Strength
 Not Usable By:
  Monk~
-@8116=~Composite Long Bow +3~
-@8117=~This composite long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8115=~Composite Long Bow +3~
+@8116=~This composite long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4283,8 +4281,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@8118=~Long Bow +3~
-@8119=~This long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8117=~Long Bow +3~
+@8118=~This long bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4302,8 +4300,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@8120=~Short Bow +3~
-@8121=~This short bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8119=~Short Bow +3~
+@8120=~This short bow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4320,8 +4318,8 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@8122=~Heavy Crossbow +3~
-@8123=~This heavy crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8121=~Heavy Crossbow +3~
+@8122=~This heavy crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4340,8 +4338,8 @@ Not Usable By:
  Thief
  Cavalier
  Kensai~
-@8124=~Light Crossbow +3~
-@8125=~This light crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8123=~Light Crossbow +3~
+@8124=~This light crossbow has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4359,8 +4357,8 @@ Not Usable By:
  Monk
  Cavalier
  Kensai~
-@8126=~Sling +3~
-@8127=~This sling has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
+@8125=~Sling +3~
+@8126=~This sling has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.
 
 STATISTICS:
 
@@ -4374,8 +4372,8 @@ Requires: 3 Strength
 Not Usable By:
  Cavalier
  Kensai~
-@8128=~Dart +3~
-@8129=~These darts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8127=~Dart +3~
+@8128=~These darts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4390,8 +4388,8 @@ Not Usable By:
  Cleric
  Cavalier
  Kensai~
-@8130=~Arrow +3~
-@8131=~These arrows have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8129=~Arrow +3~
+@8130=~These arrows have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4400,8 +4398,8 @@ Damage: 1D6
 Damage type: missile
 Weight: 0
 Launcher: Bow~
-@8132=~Bolt +3~
-@8133=~These bolts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8131=~Bolt +3~
+@8132=~These bolts have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4410,8 +4408,8 @@ Damage: 1D8
 Damage type: missile
 Weight: 0
 Launcher: Crossbow~
-@8134=~Bullet +3~
-@8135=~These bullets have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
+@8133=~Bullet +3~
+@8134=~These bullets have been created by the Enchanted Weapon spell. They behave as +3 weapons in all respects.
 
 STATISTICS:
 
@@ -4420,6 +4418,7 @@ Damage: 1D4 + 4
 Damage type: missile
 Weight: 0
 Launcher: Sling~
+@8135=~This weapon has been created by the Enchanted Weapon spell. It behaves as a +3 weapon in all respects.~
 @8136=~Giant Spider~
 @8137=~Bite~
 @8138=~Sword Spider~

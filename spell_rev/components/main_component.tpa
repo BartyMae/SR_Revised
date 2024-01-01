@@ -1642,8 +1642,8 @@ COPY ~spell_rev\spwi1##\spwi115d.spl~    ~override~
 
 COPY ~spell_rev\spwi1##\spwi116.spl~     ~override~  // Sleep
   SAY NAME1 @429    SAY UNIDENTIFIED_DESC @430
-COPY ~spell_rev\spwi1##\spwi116d.spl~    ~override~
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 4742 parameter1 = RESOLVE_STR_REF(@23008) END
+COPY ~spell_rev\spwi1##\spwi116d.spl~    ~override~
 COPY ~spell_rev\spwi1##\scrl81.itm~      ~override~
   SAY NAME2 @429    SAY IDENTIFIED_DESC   @430
 COPY ~spell_rev\spwi1##\spwi116i.eff~    ~override~
@@ -2501,6 +2501,146 @@ COPY ~spell_rev\spwi4##\spwi417.spl~     ~override~  // Enchanted Weapon
 COPY ~spell_rev\spwi4##\scrl6m.itm~      ~override~
   SAY NAME2 @593    SAY IDENTIFIED_DESC   @594
 COPY ~spell_rev\spwi4##\enchwp~          ~override~
+COPY ~spell_rev\spwi4##\enchwp\dvench01.spl~ ~override~
+  SAY NAME1 @8079
+COPY ~spell_rev\spwi4##\enchwp\dvench02.spl~ ~override~
+  SAY NAME1 @8081
+COPY ~spell_rev\spwi4##\enchwp\dvench03.spl~ ~override~
+  SAY NAME1 @8083
+COPY ~spell_rev\spwi4##\enchwp\dvench04.spl~ ~override~
+  SAY NAME1 @8085
+COPY ~spell_rev\spwi4##\enchwp\dvench05.spl~ ~override~
+  SAY NAME1 @8087
+COPY ~spell_rev\spwi4##\enchwp\dvench06.spl~ ~override~
+  SAY NAME1 @8089
+COPY ~spell_rev\spwi4##\enchwp\dvench07.spl~ ~override~
+  SAY NAME1 @8091
+COPY ~spell_rev\spwi4##\enchwp\dvench08.spl~ ~override~
+  SAY NAME1 @8093
+COPY ~spell_rev\spwi4##\enchwp\dvench09.spl~ ~override~
+  SAY NAME1 @8095
+COPY ~spell_rev\spwi4##\enchwp\dvench10.spl~ ~override~
+  SAY NAME1 @8097
+COPY ~spell_rev\spwi4##\enchwp\dvench11.spl~ ~override~
+  SAY NAME1 @8099
+COPY ~spell_rev\spwi4##\enchwp\dvench12.spl~ ~override~
+  SAY NAME1 @8101
+COPY ~spell_rev\spwi4##\enchwp\dvench13.spl~ ~override~
+  SAY NAME1 @8103
+COPY ~spell_rev\spwi4##\enchwp\dvench14.spl~ ~override~
+  SAY NAME1 @8105
+COPY ~spell_rev\spwi4##\enchwp\dvench15.spl~ ~override~
+  SAY NAME1 @8107
+COPY ~spell_rev\spwi4##\enchwp\dvench16.spl~ ~override~
+  SAY NAME1 @8109
+COPY ~spell_rev\spwi4##\enchwp\dvench17.spl~ ~override~
+  SAY NAME1 @8111
+COPY ~spell_rev\spwi4##\enchwp\dvench18.spl~ ~override~
+  SAY NAME1 @8113
+COPY ~spell_rev\spwi4##\enchwp\dvench19.spl~ ~override~
+  SAY NAME1 @8115
+COPY ~spell_rev\spwi4##\enchwp\dvench20.spl~ ~override~
+  SAY NAME1 @8117
+COPY ~spell_rev\spwi4##\enchwp\dvench21.spl~ ~override~
+  SAY NAME1 @8119
+COPY ~spell_rev\spwi4##\enchwp\dvench22.spl~ ~override~
+  SAY NAME1 @8121
+COPY ~spell_rev\spwi4##\enchwp\dvench23.spl~ ~override~
+  SAY NAME1 @8123
+COPY ~spell_rev\spwi4##\enchwp\dvench24.spl~ ~override~
+  SAY NAME1 @8125
+COPY ~spell_rev\spwi4##\enchwp\dvench25.spl~ ~override~
+  SAY NAME1 @8127
+COPY ~spell_rev\spwi4##\enchwp\dvench26.spl~ ~override~
+  SAY NAME1 @8129
+COPY ~spell_rev\spwi4##\enchwp\dvench27.spl~ ~override~
+  SAY NAME1 @8131
+COPY ~spell_rev\spwi4##\enchwp\dvench28.spl~ ~override~
+  SAY NAME1 @8133
+COPY ~spell_rev\spwi4##\enchwp\dvenbasw.itm~ ~override~
+  SAY NAME2 @8079   SAY IDENTIFIED_DESC   @8080
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenlosw.itm~ ~override~
+  SAY NAME2 @8081   SAY IDENTIFIED_DESC   @8082
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenshsw.itm~ ~override~
+  SAY NAME2 @8083   SAY IDENTIFIED_DESC   @8084
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenscim.itm~ ~override~
+  SAY NAME2 @8085   SAY IDENTIFIED_DESC   @8086
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenkata.itm~ ~override~
+  SAY NAME2 @8087   SAY IDENTIFIED_DESC   @8088
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenwaki.itm~ ~override~
+  SAY NAME2 @8089   SAY IDENTIFIED_DESC   @8090
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenninj.itm~ ~override~
+  SAY NAME2 @8091   SAY IDENTIFIED_DESC   @8092
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvendagg.itm~ ~override~
+  SAY NAME2 @8093   SAY IDENTIFIED_DESC   @8094
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenbaxe.itm~ ~override~
+  SAY NAME2 @8095   SAY IDENTIFIED_DESC   @8096
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenfla.itm~  ~override~
+  SAY NAME2 @8097   SAY IDENTIFIED_DESC   @8098
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenmace.itm~ ~override~
+  SAY NAME2 @8099   SAY IDENTIFIED_DESC   @8100
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenstar.itm~ ~override~
+  SAY NAME2 @8101   SAY IDENTIFIED_DESC   @8102
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenhamm.itm~ ~override~
+  SAY NAME2 @8103   SAY IDENTIFIED_DESC   @8104
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenclub.itm~ ~override~
+  SAY NAME2 @8105   SAY IDENTIFIED_DESC   @8106
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvensw2h.itm~ ~override~
+  SAY NAME2 @8107   SAY IDENTIFIED_DESC   @8108
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenhalb.itm~ ~override~
+  SAY NAME2 @8109   SAY IDENTIFIED_DESC   @8110
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvensper.itm~ ~override~
+  SAY NAME2 @8111   SAY IDENTIFIED_DESC   @8112
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenstaf.itm~ ~override~
+  SAY NAME2 @8113   SAY IDENTIFIED_DESC   @8114
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvencbow.itm~ ~override~
+  SAY NAME2 @8115   SAY IDENTIFIED_DESC   @8116
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenlbow.itm~ ~override~
+  SAY NAME2 @8117   SAY IDENTIFIED_DESC   @8118
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvensbow.itm~ ~override~
+  SAY NAME2 @8119   SAY IDENTIFIED_DESC   @8120
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenhxbw.itm~ ~override~
+  SAY NAME2 @8121   SAY IDENTIFIED_DESC   @8122
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenlxbw.itm~ ~override~
+  SAY NAME2 @8123   SAY IDENTIFIED_DESC   @8124
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenslng.itm~ ~override~
+  SAY NAME2 @8125   SAY IDENTIFIED_DESC   @8126
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvendart.itm~ ~override~
+  SAY NAME2 @8127   SAY IDENTIFIED_DESC   @8128
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenarow.itm~ ~override~
+  SAY NAME2 @8129   SAY IDENTIFIED_DESC   @8130
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenbolt.itm~ ~override~
+  SAY NAME2 @8131   SAY IDENTIFIED_DESC   @8132
+  LPF update_item_descriptions_to_bgee END
+COPY ~spell_rev\spwi4##\enchwp\dvenbull.itm~ ~override~
+  SAY NAME2 @8133   SAY IDENTIFIED_DESC   @8134
+  LPF update_item_descriptions_to_bgee END
 
 ACTION_IF (GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
 ACTION_IF ee_enchanted_weapon=1 BEGIN
