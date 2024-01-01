@@ -239,7 +239,7 @@ Casting Time: 1
 Area of Effect: Special
 Saving Throw: Special
 
-When the caster completes this spell, a blue glow encompasses their hand. This energy attacks the life force of any living creature upon which the wizard makes a successful melee attack. The touched creature suffers 1d6 cold damage and an additional 1d6 cold damage for every two extra experience levels of the caster, up to a maximum of 5d6 at 9th level. The target must also save vs. death or suffer a -2 penalty to THAC0 and damage for 5 rounds. The spell expires once the caster makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed.~
+When the caster completes this spell, a blue glow encompasses their hand. This energy attacks the life force of any living creature upon which the wizard makes a successful melee attack. The touched creature suffers 1d6 cold damage and an additional 1d6 cold damage for every two extra experience levels of the caster, up to a maximum of 5d6 at 9th level. The target must also save vs. death or suffer a -2 penalty to THAC0 and damage for 1 turn. The spell expires once the caster makes a successful melee touch attack (+4 bonus to THAC0) or after 1 turn has passed.~
 
 @433=~Chromatic Orb~
 @434=~Chromatic Orb
