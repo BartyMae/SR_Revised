@@ -909,7 +909,7 @@ Level: 3
 School: Abjuration
 Sphere: Weather, Elemental (Air)
 Range: Personal
-Duration: 1 turn
+Duration: 1 turn + 1 round/level
 Casting Time: 5
 Area of Effect: Caster
 Saving Throw: None
