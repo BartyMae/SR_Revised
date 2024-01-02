@@ -1,25 +1,51 @@
 ACTION_IF original_lightning_bolt=1 BEGIN
-  ADD_PROJECTILE ~spell_rev\projectles\lightb.pro~
-  ACTION_FOR_EACH resource IN
-    ~spcl722~ // Priest of Talos Lightning Bolt
-    ~spdr301~ // Avenger Lightning Bolt
-    ~spwi308~ // Lightning Bolt
-    ~wand07~  // Wand of Lightning
-    ~dvlight~
-    ~dvlightb~
-  BEGIN
-    ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
-      COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
-      PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
-        READ_SHORT 0x68 "number_of_headers"
-        SET "loop" = 0
-        WHILE (%loop% < %number_of_headers%) BEGIN
-          SET projectile_offset = (0x98 + (%loop% * 0x28))
-          WRITE_SHORT %projectile_offset% %lightb%
-          SET "loop" = %loop% + 1
+  ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet iwdee~) BEGIN
+    ADD_PROJECTILE ~spell_rev\projectles\lightblt.pro~
+    ACTION_FOR_EACH resource IN
+      ~spcl722~ // Priest of Talos Lightning Bolt
+      ~spdr301~ // Avenger Lightning Bolt
+      ~spwi308~ // Lightning Bolt
+      ~wand07~  // Wand of Lightning
+      ~dvlight~
+      ~dvlightb~
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+        COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+        PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+          READ_SHORT 0x68 "number_of_headers"
+          SET "loop" = 0
+          WHILE (%loop% < %number_of_headers%) BEGIN
+            SET projectile_offset = (0x98 + (%loop% * 0x28))
+            WRITE_SHORT %projectile_offset% %lightb%
+            SET "loop" = %loop% + 1
+          END
         END
+        BUT_ONLY
       END
-      BUT_ONLY
+    END
+  END ELSE ACTION_IF (GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) BEGIN
+    ADD_PROJECTILE ~spell_rev\projectles\lightb.pro~
+    ACTION_FOR_EACH resource IN
+      ~spcl722~ // Priest of Talos Lightning Bolt
+      ~spdr301~ // Avenger Lightning Bolt
+      ~spwi308~ // Lightning Bolt
+      ~wand07~  // Wand of Lightning
+      ~dvlight~
+      ~dvlightb~
+    BEGIN
+      ACTION_IF (FILE_EXISTS_IN_GAME ~%resource%.spl~) BEGIN
+        COPY_EXISTING ~%resource%.spl~ ~override\%resource%.spl~
+        PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+          READ_SHORT 0x68 "number_of_headers"
+          SET "loop" = 0
+          WHILE (%loop% < %number_of_headers%) BEGIN
+            SET projectile_offset = (0x98 + (%loop% * 0x28))
+            WRITE_SHORT %projectile_offset% %lightb%
+            SET "loop" = %loop% + 1
+          END
+        END
+        BUT_ONLY
+      END
     END
   END
 END
