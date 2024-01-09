@@ -1642,6 +1642,7 @@ COPY ~spell_rev\spwi1##\spwi115d.spl~    ~override~
 
 COPY ~spell_rev\spwi1##\spwi116.spl~     ~override~  // Sleep
   SAY NAME1 @429    SAY UNIDENTIFIED_DESC @430
+COPY ~spell_rev\spwi1##\spwi116d.spl~    ~override~  // Sleep
   LPF ALTER_EFFECT INT_VAR match_opcode = 139 match_parameter1 = 4742 parameter1 = RESOLVE_STR_REF(@23008) END
 COPY ~spell_rev\spwi1##\scrl81.itm~      ~override~
   SAY NAME2 @429    SAY IDENTIFIED_DESC   @430
