@@ -5,6 +5,7 @@ ADD_SECTYPE ~k1#Petrify~ @22005 // String to counter Petrify - "Petrification ef
 ACTION_IF petrification=0 BEGIN
 
   COPY ~spell_rev\spalt\spwi604.spl~ ~override~
+    SAY NAME1 @667    SAY UNIDENTIFIED_DESC @668
   COPY ~spell_rev\spalt\dvbaspet.spl~ ~override~
 
   COPY_EXISTING_REGEXP GLOB ~.*\.itm$~ ~override~

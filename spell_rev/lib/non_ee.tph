@@ -23,5 +23,5 @@ ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt~ AND NOT GAME_IS ~bgee bg2ee eet
       INT_VAR opcode_to_delete = 61
     END
   BUT_ONLY
-  // PRINT "All invalid opcodes 321 and 328 successfully removed!"
+  // PRINT "All invalid opcodes 61, 321, and 328 successfully removed!"
 END
