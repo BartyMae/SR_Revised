@@ -9,3 +9,7 @@ This ability allows the warrior to unleash a flurry of super-fast blows. For 2 r
 A more powerful version of the Whirlwind Attack, Greater Whirlwind gives the fighter the same bonuses without penalties.
 
 Requires: Whirlwind Attack~
+
+@9006 = ~War Cry~
+@9007 = ~War Cry
+With a War Cry, the warrior emits a powerful and frightening yell that will leave all opponents in a 15' radius absolutely shaken, inflicting a -2 penalty to THAC0, damage, and AC with no save. In addition, enemies must make a save vs. spell or flee in terror. The effects last for 1 turn.~
