@@ -1825,6 +1825,19 @@ END*/
 		END
 	BUT_ONLY IF_EXISTS
 
+	COPY_EXISTING	~spin733.spl~	override		// Limited Wish
+		LPF	ADD_SPELL_EFFECT
+			INT_VAR
+				insert_point = 0
+				opcode = 324
+				target = 3
+				parameter2 = POISN
+				duration = 1
+			STR_VAR
+				resource = EVAL ~%SOURCE_RES%~
+		END
+	BUT_ONLY IF_EXISTS
+
 	COPY_EXISTING	~spin927.spl~	override		// boiling rain storm, stun and poison damage, assume stun is from poison
 		LPF	ADD_SPELL_EFFECT
 			INT_VAR
