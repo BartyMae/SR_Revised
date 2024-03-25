@@ -265,7 +265,7 @@ Casting Time: 1
 Area of Effect: Caster
 Saving Throw: None
 
-Upon casting this spell, the wizard creates one illusory image of themselves that will travel alongside them. The image performs all of the actions that the wizard does, and there is a 50% chance that an attacker will attack the image and a 50% chance that they will attack the caster. If the image is struck, then it will temporarily disappear before reappearing the next round. The image will also disappear if a dispel magic or a detect illusion spell is cast upon it. Multiple castings of this spell or similar effects will not create additional images.~
+Upon casting this spell, the wizard creates one illusory image of themselves that will travel alongside them. The image performs all of the actions that the wizard does, and there is a 50% chance that an attacker will attack the image and a 50% chance that they will attack the caster. If the image is struck, then it will temporarily disappear before reappearing the next round. The image will also permanently dissipate if a dispel magic or a detect illusion spell is cast upon it. Multiple castings of this spell or similar effects will not create additional images.~
 
 @439=~Find Familiar~
 @440=~Find Familiar
