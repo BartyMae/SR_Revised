@@ -2833,7 +2833,7 @@ Casting Time: 7
 Area of Effect: Special
 Saving Throw: None
 
-Upon casting this spell, the wizard brings into being a shimmering, sword-like plane of force. Once the spell is cast, the sword will float in the air completely under the control of the caster for duration of the spell duration or until the sword is dispelled or slain. The sword acts as a +3 weapon in all respects and attacks on its own twice each round, dealing 5d4 damage when it hits a target. The sword is also immune to mild-affecting magic and has near total immunity most forms of damage, but is vulnerable to pure magic damage. Note that this spell does not prevent the caster from performing any other actions while the spell is in effect.
+Upon casting this spell, the wizard brings into being a shimmering, sword-like plane of force. Once the spell is cast, the sword will float in the air completely under the control of the caster for the duration of the spell or until the sword is slain. The sword acts as a +3 weapon in all respects and attacks on its own twice each round, dealing 5d4 damage when it hits a target. The sword is immune to mind-affecting magic and also has near total immunity to most forms of damage, but is vulnerable to pure magic damage. Note that this spell does not prevent the caster from performing any other actions while the spell is in effect.
 
 Magical Sword (10 HD):
  HP 40, AC 0, THAC0 5, APR 2
@@ -3780,7 +3780,7 @@ Known Spells:
 Level: Epic
 Range: Long
 Duration: Instantaneous
-Casting Time: 1 round
+Casting Time: 3
 Area of Effect: 15' radius
 Saving Throw: Paralyzation partial
 
