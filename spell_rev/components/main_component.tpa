@@ -4106,6 +4106,14 @@ ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet
   END
 END
 
+// Fix Mendas werewolf dialogue
+ACTION_IF (GAME_IS ~bgee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt bg2ee eet~) BEGIN
+  COPY_EXISTING menda4.dlg override
+    DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY CASE_INSENSITIVE ~ActionOverride("Baresh",ApplySpell(Myself,BERESH_CHANGE))~ ~ ~
+    COMPILE_D_TO_DLG
+END
+
 /* ---------------- Remove Disabled Spell Scrolls ---------------- */
 
 // BG2 broken areas fix
