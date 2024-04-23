@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 (Revised v1.3.957)~
+VERSION ~v4 (Revised v1.3.958)~
 
 ALWAYS
 
@@ -166,7 +166,7 @@ INCLUDE ~spell_rev/components/nwn_spell_deflection.tpa~
 BEGIN @10006
 DESIGNATED 60
 LABEL "dv-spell_rev-update_npc_spellbooks"
-REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee eet~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee eet iwdee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
 REQUIRE_COMPONENT ~setup-spell_rev.tp2~ 0 @10100 // ~This component requires that the main Spell Revisions component be installed.~
 
 PRINT @10104 // ~Patching spellbooks of joinable NPCs, this may take a moment...~

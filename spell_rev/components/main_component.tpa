@@ -232,6 +232,7 @@ COPY ~spell_rev\shared\spra306.spl~      ~override~  // Animal Summoning VI
 
 /* ---------------- Paladin Abilities ---------------- */
 
+ACTION_IF (GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~iwdee~) BEGIN
 /*
 COPY ~spell_rev\shared\spcl211.spl~      ~override~  // Lay on Hands
   SAY NAME1 @0    SAY UNIDENTIFIED_DESC @0
@@ -240,6 +241,7 @@ COPY ~spell_rev\shared\spcl212.spl~      ~override~  // Detect Evil
 //  SAY NAME1 @0     SAY UNIDENTIFIED_DESC @0
 COPY ~spell_rev\shared\spcl213.spl~      ~override~  // Protection from Evil
   SAY NAME1 @13    SAY UNIDENTIFIED_DESC @14
+END
 
 /* ---------------- Cavalier Abilities ---------------- */
 
@@ -330,6 +332,7 @@ COPY ~spell_rev\shared\spra303.spl~      ~override~  // Protection from Missiles
 
 /* ---------------- Bhaalspawn Abilities ---------------- */
 
+ACTION_IF (GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~iwdee~) BEGIN
 COPY ~spell_rev\shared\spin101.spl~      ~override~  // Cure Light Wounds
   SAY NAME1 @5     SAY UNIDENTIFIED_DESC @6
 COPY ~spell_rev\shared\spin102.spl~      ~override~  // Slow Poison
@@ -346,11 +349,14 @@ COPY ~spell_rev\shared\spin105i.eff~     ~override~
 COPY ~spell_rev\shared\spin106.spl~      ~override~  // Vampiric Touch
   SAY NAME1 @527    SAY UNIDENTIFIED_DESC @528
 COPY ~spell_rev\shared\spin106i.eff~     ~override~
+END
 
 /* ---------------- Innate Abilities ---------------- */
 
 COPY ~spell_rev\shared\spcl233.spl~      ~override~  // Magic Circle Against Evil
   SAY NAME1 @125 SAY UNIDENTIFIED_DESC @126
+
+ACTION_IF (GAME_IS ~tutu tutu_totsc bgee bg2 tob bgt bg2ee eet~ AND NOT GAME_IS ~iwdee~) BEGIN
 
 ACTION_IF (GAME_IS ~bg2 tob bgt tutu tutu_totsc~ AND NOT GAME_IS ~bgee bg2ee eet~) BEGIN
 COPY ~spell_rev\shared\spin108.spl~      ~override~  // Safana Charm Person
@@ -398,6 +404,8 @@ COPY ~spell_rev\shared\spin827.spl~      ~override~  // Mazzy Lay on Hands
 */
 COPY ~spell_rev\shared\spin828.spl~      ~override~  // Mazzy Haste
   SAY NAME1 @509    SAY UNIDENTIFIED_DESC @510
+
+END
 
 ADD_PROJECTILE ~spell_rev\projectles\dvclfear.pro~
 COPY ~spell_rev\shared\fearaura.spl~     ~override~  // Aura of Fear
@@ -4311,7 +4319,7 @@ END
 INCLUDE ~spell_rev\lib\kreso_extra.tph~
 
 // EE component
-ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
+ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ OR GAME_IS ~iwdee~ BEGIN // EE v2.0+
   INCLUDE ~spell_rev\lib\kreso_ee.tph~
   INCLUDE ~spell_rev\lib\kreso_eestatsr.tph~
 END
