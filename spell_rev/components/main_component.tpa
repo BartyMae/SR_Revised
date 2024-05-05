@@ -2493,14 +2493,14 @@ COPY ~spell_rev\spwi4##\spwi465.spl~     ~override~
   SAY NAME1 @8073
 COPY ~spell_rev\spwi4##\spwi465.itm~     ~override~
   SAY NAME1 @8074   SAY NAME2 @8074
-COPY ~spell_rev\spwi4##\spwi466.spl~     ~override~
+COPY ~spell_rev\spwi4##\dvwi466.spl~     ~override~
   SAY NAME1 @8075
-COPY ~spell_rev\spwi4##\spwi466.itm~     ~override~
+COPY ~spell_rev\spwi4##\dvwi466.itm~     ~override~
   SAY NAME1 @8076   SAY NAME2 @8076
 /*
-COPY ~spell_rev\spwi4##\spwi467.spl~     ~override~
+COPY ~spell_rev\spwi4##\dvwi467.spl~     ~override~
   SAY NAME1 @8077
-COPY ~spell_rev\spwi4##\spwi467.itm~     ~override~
+COPY ~spell_rev\spwi4##\dvwi467.itm~     ~override~
   SAY NAME1 @8078   SAY NAME2 @8078
 */
 

@@ -1425,7 +1425,28 @@ Casting Time: 4
 Area of Effect: Caster
 Saving Throw: None
 
-When this spell is cast, the wizard is able to assume the forms of six creatures: that of a mustard jelly, an ogre mage, a salamander, a sword spider, a troll, or a winter wolf. For the duration of the spell, the caster may transform into any of the new forms at any time, as many times as they wish. Physical characteristics are altered to that of the new form, and the caster gains their natural attacks but cannot cast spells while shapeshifted. However, the caster's mental characteristics are not affected, and nor is there a risk of changing their mental capabilities or personality. Additionally, any natural protections that the new form offers are conferred to the caster.
+When this spell is cast, the wizard is able to assume the forms of six creatures: that of a salamander, an ogre mage, a mustard jelly, a sword spider, a winter wolf, or a troll. For the duration of the spell, the caster may transform into any of the new forms at any time, as many times as they wish. Physical characteristics are altered to that of the new form, and the caster gains their natural attacks but cannot cast spells while shapeshifted. However, the caster's mental characteristics are not affected, and nor is there a risk of changing their mental capabilities or personality. Additionally, any natural protections that the new form offers are conferred to the caster.
+
+Salamander (7 HD):
+ STR 18/76, DEX 19, CON 15
+ AC 2, THACO 13, APR 2
+ 1d6 Piercing (Spear +2)
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 100%, CR -50%, ER 50%, AR 0%
+
+Special Characteristics:
+– Fiery: target suffers 1d6 fire damage
+
+Ogre Mage (7 HD):
+ STR 18/100, DEX 10, CON 16
+ AC 2, THAC0 12, APR 2
+ 1d10 + 3 Slashing (Katana +1)
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR 0%, CR 0%, ER 0%, AR 0%
+
+Special Characteristics:
+– Regeneration: 1 hp/round
+– Spellcasting: spells can be cast in this form
 
 Mustard Jelly (7 HD):
  STR 14, DEX 10, CON 10
@@ -1441,27 +1462,6 @@ Special Characteristics:
 – Slowing: target is slowed for 1 turn (save vs. breath at -2 neg.)
 – Venomous: target suffers 2 poison damage every round for 5 rounds (save vs. poison neg.)
 
-Ogre Mage (7 HD):
- STR 18/100, DEX 10, CON 16
- AC 2, THAC0 12, APR 2
- 1d10 + 3 Slashing (Katana +1)
- SR 0%, CR 0%, PR 0%, MR 0%
- FR 0%, CR 0%, ER 0%, AR 0%
-
-Special Characteristics:
-– Regeneration: 1 hp/round
-– Spellcasting: spells can be cast in this form
-
-Salamander (7 HD):
- STR 18/76, DEX 19, CON 15
- AC 2, THACO 13, APR 2
- 1d6 Piercing (Spear +2)
- SR 0%, CR 0%, PR 0%, MR 0%
- FR 100%, CR -50%, ER 50%, AR 0%
-
-Special Characteristics:
-– Fiery: target suffers 1d6 fire damage
-
 Sword Spider (5 HD):
  STR 17, DEX 16, CON 15
  AC 3, THAC0 15, APR 4
@@ -1473,6 +1473,16 @@ Special Characteristics:
 – Protected Against: Poison and Web
 – Venomous: target suffers 1 poison damage every second for 2 rounds (save vs. poison neg.)
 
+Winter Wolf (6 HD):
+ STR 15, DEX 17, CON 15
+ AC 5, THAC0 14, APR 1
+ Frostbite (Breath +2)
+ SR 0%, CR 0%, PR 0%, MR 0%
+ FR -25%, CR 100%, ER 0%, AR 0%
+
+Special Characteristics:
+– Frostbite: target is blasted with icy breath, suffering 6d4 cold damage (save vs. breath half)
+
 Troll (7 HD):
  STR 18/00, DEX 16, CON 20
  AC 4, THAC0 12, APR 3
@@ -1482,17 +1492,7 @@ Troll (7 HD):
 
 Special Characteristics:
 – Regeneration: 1 hp/second
-– Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects
-
-Winter Wolf (6 HD):
- STR 15, DEX 17, CON 15
- AC 5, THAC0 14, APR 1
- Frostbite (Breath +2)
- SR 0%, CR 0%, PR 0%, MR 0%
- FR -25%, CR 100%, ER 0%, AR 0%
-
-Special Characteristics:
-– Frostbite: target is blasted with icy breath, suffering 6d4 cold damage (save vs. breath half)~
+– Mind Shield: conferred protection against many forms of mind-affecting magic, such as charm, command, confusion, emotion, domination, fear, feeblemind, hold, sleep, stun, psionics, and other similar effects~
 
 @593=~Enchanted Weapon~
 @594=~Enchanted Weapon
