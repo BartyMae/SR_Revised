@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 (Revised v1.3.959)~
+VERSION ~v4 (Revised v1.3.960)~
 
 ALWAYS
 
@@ -139,7 +139,7 @@ INCLUDE ~spell_rev/components/mirror_image_vs_aoe.tpa~
 BEGIN @10003
 DESIGNATED 30
 LABEL "dv-spell_rev-dispel_magic_fix"
-REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee eet iwdee~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bgee bg2ee eet~) @10102 // ~This mod is designed for the Baldur's Gate II engine and will not function on other games.~
 
 INCLUDE ~spell_rev/components/dispellable_items.tpa~
 
@@ -197,3 +197,16 @@ REQUIRE_PREDICATE (ENGINE_IS ~soa tob bg2ee eet~) @10102 // ~This mod is designe
 INCLUDE ~spell_rev/lib/kreso_hla.tph~
 
 PRINT @10105 // ~Done!~
+
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
+////\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\
+
+/*------Revised Saving Throws------*/
+
+/* BEGIN @10008
+DESIGNATED 70
+LABEL "dv-spell_rev-revised_saving_throws"
+REQUIRE_PREDICATE (ENGINE_IS ~soa tob bg2ee eet~) @8996
+INCLUDE ~spell_rev/components/saving_throw_tables.tpa~ */
