@@ -21,13 +21,20 @@ ALWAYS
 
   ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet iwdee~) BEGIN
     LOAD_TRA ~spell_rev\languages\english\arcane.tra~
+	LOAD_TRA ~spell_rev\%LANGUAGE%\english\arcane.tra~
     LOAD_TRA ~spell_rev\languages\english\divine.tra~
+	LOAD_TRA ~spell_rev\%LANGUAGE%\english\divine.tra~
     LOAD_TRA ~spell_rev\languages\english\hla.tra~
+	LOAD_TRA ~spell_rev\%LANGUAGE%\english\hla.tra~
     LOAD_TRA ~spell_rev\languages\english\item_revisions.tra~
+	LOAD_TRA ~spell_rev\%LANGUAGE%\english\item_revisions.tra~
     ACTION_IF (spell_description_style=0 AND ((GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) OR (MOD_IS_INSTALLED ~setup-bg2gtueestyle.tp2~ ~0~)) OR spell_description_style=2) BEGIN
       LOAD_TRA ~spell_rev\languages\english\arcane_ee.tra~
+	  LOAD_TRA ~spell_rev\%LANGUAGE%\english\arcane_ee.tra~
       LOAD_TRA ~spell_rev\languages\english\divine_ee.tra~
+	  LOAD_TRA ~spell_rev\%LANGUAGE%\english\divine_ee.tra~
       LOAD_TRA ~spell_rev\languages\english\item_revisions_ee.tra~
+	  LOAD_TRA ~spell_rev\%LANGUAGE%\english\item_revisions_ee.tra~
     END
   END
 
@@ -41,6 +48,11 @@ END
 LANGUAGE ~English~
          ~english~
          ~spell_rev\languages\english\setup.tra~
+		 
+LANGUAGE ~Schinese~
+         ~schinese~
+         ~spell_rev\languages\english\setup.tra~
+		 ~spell_rev\languages\schinese\setup.tra~
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
