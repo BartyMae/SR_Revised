@@ -154,7 +154,7 @@ INCLUDE ~spell_rev/components/dispellable_items.tpa~
 
 /*------NWN-style Spell Deflection------*/
 
-BEGIN ~Spell Deflection blocks AoE spells~
+BEGIN @10009
 DESIGNATED 55
 LABEL "dv-spell_rev-nwn_style_spell_deflection"
 
