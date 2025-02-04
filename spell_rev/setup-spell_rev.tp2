@@ -14,20 +14,20 @@ ALWAYS
   // On EE games, convert tra files to utf-8 so that games don't crash for non-English
   ACTION_IF NOT VARIABLE_IS_SET cd_always THEN BEGIN
     OUTER_SET cd_always = 1
-    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN setup arcane_ee divine_ee item_revisions_ee END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
     ACTION_DEFINE_ARRAY cdreload BEGIN arcane divine END // List of tra files that contain strings used for game content that get converted in the next step
     LAF HANDLE_CHARSETS INT_VAR infer_charset = 1 STR_VAR tra_path = EVAL ~spell_rev/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
   END
 
   ACTION_IF (GAME_IS ~tutu tutu_totsc bg2 tob bgt bgee bg2ee eet iwdee~) BEGIN
-    LOAD_TRA ~spell_rev\languages\english\arcane.tra~
-    LOAD_TRA ~spell_rev\languages\english\divine.tra~
-    LOAD_TRA ~spell_rev\languages\english\hla.tra~
-    LOAD_TRA ~spell_rev\languages\english\item_revisions.tra~
+    LOAD_TRA ~spell_rev\languages\%LANGUAGE%\arcane.tra~
+    LOAD_TRA ~spell_rev\languages\%LANGUAGE%\divine.tra~
+    LOAD_TRA ~spell_rev\languages\%LANGUAGE%\hla.tra~
+    LOAD_TRA ~spell_rev\languages\%LANGUAGE%\item_revisions.tra~
     ACTION_IF (spell_description_style=0 AND ((GAME_IS ~bgee bg2ee eet iwdee~ AND NOT GAME_IS ~tutu tutu_totsc bg2 tob bgt~) OR (MOD_IS_INSTALLED ~setup-bg2gtueestyle.tp2~ ~0~)) OR spell_description_style=2) BEGIN
-      LOAD_TRA ~spell_rev\languages\english\arcane_ee.tra~
-      LOAD_TRA ~spell_rev\languages\english\divine_ee.tra~
-      LOAD_TRA ~spell_rev\languages\english\item_revisions_ee.tra~
+      LOAD_TRA ~spell_rev\languages\%LANGUAGE%\arcane_ee.tra~
+      LOAD_TRA ~spell_rev\languages\%LANGUAGE%\divine_ee.tra~
+      LOAD_TRA ~spell_rev\languages\%LANGUAGE%\item_revisions_ee.tra~
     END
   END
 
@@ -41,6 +41,10 @@ END
 LANGUAGE ~English~
          ~english~
          ~spell_rev\languages\english\setup.tra~
+		 
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+		 ~spell_rev\languages\schinese\setup.tra~
 
 
 //\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\//\\\\
@@ -150,7 +154,7 @@ INCLUDE ~spell_rev/components/dispellable_items.tpa~
 
 /*------NWN-style Spell Deflection------*/
 
-BEGIN ~Spell Deflection blocks AoE spells~
+BEGIN @10009
 DESIGNATED 55
 LABEL "dv-spell_rev-nwn_style_spell_deflection"
 
