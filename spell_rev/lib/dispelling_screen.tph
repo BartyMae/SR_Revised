@@ -114,7 +114,7 @@ BUT_ONLY_IF_IT_CHANGES
 ACTION_IF alternative_remove_magic=2 BEGIN
 ACTION_IF FILE_EXISTS_IN_GAME ~spwi302.spl~ BEGIN
 COPY_EXISTING ~spwi302.spl~ ~override~
-LPF ADD_SPELL_EFFECT INT_VAR opcode = 221 traget = 2 power = 3 parameter1 = 9 parameter2 = %sectype_k1#Dispel% savingthrow = 0 timing = 3 insert_point = 10 silent = 1 END
+LPF ADD_SPELL_EFFECT INT_VAR opcode = 221 target = 2 power = 3 parameter1 = 9 parameter2 = %sectype_k1#Dispel% savingthrow = 0 timing = 3 insert_point = 10 silent = 1 END
 END
 END
 
