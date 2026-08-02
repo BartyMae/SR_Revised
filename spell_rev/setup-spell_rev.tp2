@@ -4,7 +4,7 @@ README ~spell_rev\readme-spell_rev.html~
 
 ASK_EVERY_COMPONENT
 
-VERSION ~v4 (Revised v1.3.969)~
+VERSION ~v4 (Revised v1.3.970)~
 
 ALWAYS
 
@@ -77,7 +77,9 @@ ACTION_IF FILE_EXISTS_IN_GAME ~concentr.2da~ BEGIN // EE v2.0+
 END
 */
 
-INCLUDE ~spell_rev/lib/ds.tph~
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cddetect.spl~ BEGIN
+  INCLUDE ~spell_rev/lib/ds.tph~
+END
 
 // Actual component
 INCLUDE ~spell_rev/components/main_component.tpa~
